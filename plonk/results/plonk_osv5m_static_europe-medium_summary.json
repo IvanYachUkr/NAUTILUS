@@ -4,7 +4,7 @@
   "checkpoint": "nicolas-dufour/PLONK_OSV_5M",
   "device": "cpu",
   "n_images": 9,
-  "generated_at_utc": "2026-09-11T10:21:47.162277+00:00",
+  "generated_at_utc": "2026-09-13T13:00:50.650491+00:00",
   "distance_unit": "km",
   "reproducibility": {
     "base_seed": 42,
@@ -36,10 +36,11 @@
     "error_km": 489.503
   },
   "timing": {
-    "model_load_seconds": 4.533,
-    "mean_inference_seconds": 3.911,
-    "median_inference_seconds": 3.854,
-    "std_inference_seconds": 0.106,
-    "total_inference_seconds": 35.199
+    "definition": "Warm per-image inference after one-time model loading; includes pipeline preprocessing, generation and coordinate output; excludes image disk decoding and evaluation metrics.",
+    "model_load_seconds": 4.46,
+    "mean_inference_seconds": 3.89,
+    "median_inference_seconds": 3.885,
+    "std_inference_seconds": 0.017,
+    "total_inference_seconds": 35.007
   }
 }

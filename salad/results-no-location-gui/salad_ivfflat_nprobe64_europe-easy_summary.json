@@ -2,8 +2,9 @@
   "dataset": "europe-easy",
   "model": "SALAD + OSV-5M",
   "index": "ivfflat",
+  "device": "cuda",
   "n_images": 8,
-  "generated_at_utc": "2026-09-11T10:08:14.697295+00:00",
+  "generated_at_utc": "2026-09-13T12:52:19.858119+00:00",
   "distance_unit": "km",
   "top1_error": {
     "mean_km": 1086.708,
@@ -66,13 +67,17 @@
     }
   },
   "timing": {
-    "model_load_seconds": 22.741,
-    "index_load_seconds": 0.874,
-    "mean_descriptor_seconds": 0.711,
-    "shared_batched_search_seconds": 68.975,
-    "amortized_search_seconds_per_image": 8.622,
-    "mean_total_seconds_per_image_amortized": 9.333,
-    "total_descriptor_seconds": 5.686,
-    "total_pipeline_seconds_excluding_model_load": 74.661
+    "definition": "Warm per-image inference after one-time model/index loading; includes descriptor preprocessing/forward pass and an independent retrieval search for that query; excludes image disk decoding, the separate batched prediction search, and evaluation metrics.",
+    "model_load_seconds": 22.668,
+    "index_load_seconds": 0.898,
+    "batched_prediction_search_seconds": 68.412,
+    "mean_descriptor_seconds": 0.055,
+    "median_descriptor_seconds": 0.055,
+    "mean_search_seconds": 1.047,
+    "median_search_seconds": 0.962,
+    "mean_inference_seconds": 1.101,
+    "median_inference_seconds": 1.015,
+    "std_inference_seconds": 0.256,
+    "total_inference_seconds": 8.811
   }
 }

@@ -67,7 +67,7 @@ const BASELINES = [
     baselineDir: join(REPO_ROOT, "chipointv2"),
     filename: (dataset) => `chipointv2_local_static_${dataset}.csv`,
     errorColumn: "prediction_error_km",
-    durationColumn: null,
+    durationColumn: "inference_seconds",
     note:
       "Chipoint v2 public three-tower fused retrieval final cluster-consensus prediction.",
   },

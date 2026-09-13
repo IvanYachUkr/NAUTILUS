@@ -46,6 +46,7 @@ from typing import Any
 import torch
 from geoclip import GeoCLIP
 from geopy.distance import geodesic
+from PIL import Image
 
 
 # GeoCLIP's standard geolocation evaluation thresholds, in kilometers.
@@ -181,15 +182,39 @@ def round_float(value: float, digits: int = 6) -> float:
     return round(float(value), digits)
 
 
+@torch.inference_mode()
+def predict_preloaded_image(
+    model: GeoCLIP,
+    image: Image.Image,
+    top_k: int,
+):
+    """Match GeoCLIP.predict while keeping image disk I/O outside timing."""
+    image_tensor = model.image_encoder.preprocess_image(image)
+    image_tensor = image_tensor.to(model.device)
+    gps_gallery = model.gps_gallery.to(model.device)
+
+    logits_per_image = model.forward(image_tensor, gps_gallery)
+    probs_per_image = logits_per_image.softmax(dim=-1).cpu()
+    top_pred = torch.topk(probs_per_image, top_k, dim=1)
+
+    top_pred_gps = model.gps_gallery[top_pred.indices[0]]
+    top_pred_prob = top_pred.values[0]
+    return top_pred_gps, top_pred_prob
+
+
 def evaluate_one_image(
     model: GeoCLIP,
     image_path: Path,
     truth: dict[str, Any],
     top_k: int,
 ) -> dict[str, Any]:
+    # Disk decoding is deliberately outside inference_seconds so the timing
+    # matches PLONK, SALAD, and ChipointV2. Preprocessing remains timed.
+    with Image.open(image_path) as opened:
+        image = opened.convert("RGB").copy()
+
     start = time.perf_counter()
-    with torch.inference_mode():
-        top_gps, top_probs = model.predict(str(image_path), top_k=top_k)
+    top_gps, top_probs = predict_preloaded_image(model, image, top_k)
     inference_seconds = time.perf_counter() - start
 
     top_gps = top_gps.detach().cpu()
@@ -228,7 +253,6 @@ def evaluate_one_image(
         "candidates": candidates,
     }
 
-
 def build_summary(results: list[dict[str, Any]], dataset: str, model_load_seconds: float) -> dict[str, Any]:
     top1_errors = [float(r["top1"]["error_km"]) for r in results]
     topk_errors = [float(r["topk_best"]["error_km"]) for r in results]
@@ -249,6 +273,7 @@ def build_summary(results: list[dict[str, Any]], dataset: str, model_load_second
     return {
         "dataset": dataset,
         "model": "GeoCLIP",
+        "device": "cpu",
         "n_images": len(results),
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "distance_unit": "km",
@@ -280,6 +305,11 @@ def build_summary(results: list[dict[str, Any]], dataset: str, model_load_second
             "error_km": round_float(worst["top1"]["error_km"], 3),
         },
         "timing": {
+            "definition": (
+                "Warm per-image inference after one-time model loading; includes "
+                "preprocessing, model forward pass, gallery scoring and top-k "
+                "prediction; excludes image disk decoding and evaluation metrics."
+            ),
             "model_load_seconds": round_float(model_load_seconds, 3),
             "mean_inference_seconds": round_float(statistics.mean(inference_times), 3),
             "median_inference_seconds": round_float(statistics.median(inference_times), 3),
@@ -470,6 +500,18 @@ def main() -> None:
         model.eval()
         model_load_seconds = time.perf_counter() - model_load_start
         print(f"GeoCLIP loaded successfully in {model_load_seconds:.2f} s.")
+
+        # One unmeasured warm-up avoids charging first-use framework/kernel
+        # initialization to the first benchmark location.
+        with Image.open(images[0]) as opened:
+            warmup_image = opened.convert("RGB").copy()
+        _warmup_gps, _warmup_probs = predict_preloaded_image(
+            model,
+            warmup_image,
+            args.top_k,
+        )
+        del _warmup_gps, _warmup_probs, warmup_image
+        print("GeoCLIP warm-up complete (not included in inference_seconds).")
 
         results: list[dict[str, Any]] = []
 

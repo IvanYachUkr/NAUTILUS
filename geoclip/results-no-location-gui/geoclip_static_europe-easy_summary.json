@@ -1,8 +1,9 @@
 {
   "dataset": "europe-easy",
   "model": "GeoCLIP",
+  "device": "cpu",
   "n_images": 8,
-  "generated_at_utc": "2026-09-11T09:49:18.510886+00:00",
+  "generated_at_utc": "2026-09-13T12:34:10.619837+00:00",
   "distance_unit": "km",
   "top1_error": {
     "mean_km": 108.725,
@@ -41,10 +42,11 @@
     "error_km": 637.86
   },
   "timing": {
-    "model_load_seconds": 3.33,
-    "mean_inference_seconds": 15.154,
-    "median_inference_seconds": 15.147,
-    "std_inference_seconds": 0.097,
-    "total_inference_seconds": 121.229
+    "definition": "Warm per-image inference after one-time model loading; includes preprocessing, model forward pass, gallery scoring and top-k prediction; excludes image disk decoding and evaluation metrics.",
+    "model_load_seconds": 3.302,
+    "mean_inference_seconds": 15.117,
+    "median_inference_seconds": 15.039,
+    "std_inference_seconds": 0.196,
+    "total_inference_seconds": 120.932
   }
 }

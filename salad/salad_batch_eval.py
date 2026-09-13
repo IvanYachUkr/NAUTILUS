@@ -9,9 +9,10 @@ Maintained search modes:
 IVF-Flat does not compress the SALAD descriptors. It accelerates retrieval by
 probing only a configurable number of coarse inverted lists.
 
-All images in the selected dataset are embedded first and searched together.
-Thus exact FP32 mode scans the full reference database once per evaluator run,
-not once per query image.
+Predictions keep the original batched-search path. For comparable runtime
+measurement, the script also performs one warmed independent search per query
+and writes descriptor + independent-search latency as inference_seconds.
+One-time model/index loading and image disk decoding are excluded.
 
 Examples:
     .\.venv\Scripts\python.exe salad_batch_eval.py --dataset europe-easy --index ivfflat --nprobe 32 --top-k 5
@@ -127,7 +128,7 @@ def parse_args() -> argparse.Namespace:
         default=64,
         help=(
             "Number of IVF coarse lists to search. Higher is slower and "
-            "closer to exact FP32 retrieval. Default: 32."
+            "closer to exact FP32 retrieval. Default: 64."
         ),
     )
     parser.add_argument(
@@ -245,9 +246,19 @@ def load_salad(device: str):
     return model.eval().to(device)
 
 
-def embed_image(model, transform, image_path: Path, device: str) -> np.ndarray:
-    with Image.open(image_path) as image:
-        tensor = transform(image.convert("RGB")).unsqueeze(0).to(device)
+def synchronize_device(device: str) -> None:
+    if device == "cuda" and torch.cuda.is_available():
+        torch.cuda.synchronize()
+
+
+def embed_preloaded_image(
+    model,
+    transform,
+    image: Image.Image,
+    device: str,
+) -> np.ndarray:
+    # Image disk decoding is intentionally outside inference timing.
+    tensor = transform(image).unsqueeze(0).to(device)
 
     with torch.inference_mode():
         descriptor = model(tensor)
@@ -267,18 +278,26 @@ def embed_image(model, transform, image_path: Path, device: str) -> np.ndarray:
 def embed_images(model, transform, image_paths: list[Path], device: str):
     descriptors = []
     descriptor_seconds = []
-    total_start = time.perf_counter()
+    measured_total = 0.0
+
     for idx, image_path in enumerate(image_paths, start=1):
+        # Keep filesystem/image decoding out of inference_seconds.
+        with Image.open(image_path) as opened:
+            image = opened.convert("RGB").copy()
+
+        synchronize_device(device)
         start = time.perf_counter()
-        descriptor = embed_image(model, transform, image_path, device)
+        descriptor = embed_preloaded_image(model, transform, image, device)
+        synchronize_device(device)
         elapsed = time.perf_counter() - start
+
         descriptors.append(descriptor[0])
         descriptor_seconds.append(elapsed)
+        measured_total += elapsed
         print(f"[embed {idx}/{len(image_paths)}] {image_path.name} ({elapsed:.2f} s)")
-    queries = np.stack(descriptors, axis=0).astype(np.float32, copy=False)
-    total_seconds = time.perf_counter() - total_start
-    return queries, descriptor_seconds, total_seconds
 
+    queries = np.stack(descriptors, axis=0).astype(np.float32, copy=False)
+    return queries, descriptor_seconds, measured_total
 
 def embedding_shards(master_dir: Path) -> list[Path]:
     shards = sorted(master_dir.glob("embeddings_*.npy"))
@@ -319,12 +338,21 @@ class FP32ShardedSearcher:
     def __init__(self, master_dir: Path):
         self.shards = embedding_shards(master_dir)
 
-    def search(self, query: np.ndarray, k: int) -> tuple[np.ndarray, np.ndarray]:
+    def search(
+        self,
+        query: np.ndarray,
+        k: int,
+        verbose: bool = True,
+    ) -> tuple[np.ndarray, np.ndarray]:
         best_distances = np.full((len(query), k), np.inf, dtype=np.float32)
         best_indices = np.full((len(query), k), -1, dtype=np.int64)
 
         for shard_no, shard in enumerate(self.shards, start=1):
-            print(f"[search fp32] shard {shard_no}/{len(self.shards)} for {len(query)} queries")
+            if verbose:
+                print(
+                    f"[search fp32] shard {shard_no}/{len(self.shards)} "
+                    f"for {len(query)} queries"
+                )
             reference = np.load(shard, mmap_mode="r")
             if reference.shape[1] != DESCRIPTOR_DIM:
                 raise RuntimeError(
@@ -407,7 +435,12 @@ class IVFFlatSearcher:
         self.coarse = faiss.IndexFlatL2(DESCRIPTOR_DIM)
         self.coarse.add(np.asarray(self.centroids, dtype=np.float32))
 
-    def search(self, query: np.ndarray, k: int):
+    def search(
+        self,
+        query: np.ndarray,
+        k: int,
+        verbose: bool = True,
+    ):
         nquery = len(query)
         best_d = np.full((nquery, k), np.inf, dtype=np.float32)
         best_i = np.full((nquery, k), -1, dtype=np.int64)
@@ -424,11 +457,12 @@ class IVFFlatSearcher:
             int(self.offsets[l + 1] - self.offsets[l])
             for l in selected_lists
         )
-        print(
-            f"[search ivfflat] {nquery} queries, nprobe={self.nprobe}, "
-            f"{len(selected_lists)} unique lists, {total_rows:,} rows "
-            f"across selected lists"
-        )
+        if verbose:
+            print(
+                f"[search ivfflat] {nquery} queries, nprobe={self.nprobe}, "
+                f"{len(selected_lists)} unique lists, {total_rows:,} rows "
+                f"across selected lists"
+            )
 
         for pos, list_no in enumerate(selected_lists, start=1):
             start = int(self.offsets[list_no])
@@ -468,7 +502,9 @@ class IVFFlatSearcher:
             best_d[q_ids] = new_d
             best_i[q_ids] = new_i
 
-            if pos == 1 or pos % 25 == 0 or pos == len(selected_lists):
+            if verbose and (
+                pos == 1 or pos % 25 == 0 or pos == len(selected_lists)
+            ):
                 print(
                     f"  [ivf list {pos}/{len(selected_lists)}] "
                     f"list={list_no}, rows={end-start:,}"
@@ -516,7 +552,7 @@ def build_result_from_retrieval(
     distances_row: np.ndarray,
     indices_row: np.ndarray,
     descriptor_seconds: float,
-    shared_search_seconds: float,
+    search_seconds: float,
 ) -> dict[str, Any]:
     candidates: list[dict[str, Any]] = []
     for rank, (retrieval_distance, row_id) in enumerate(zip(distances_row, indices_row), start=1):
@@ -554,8 +590,8 @@ def build_result_from_retrieval(
         "topk_weighted": {"lat": weighted_lat, "lon": weighted_lon, "error_km": weighted_error},
         "topk_oracle": oracle,
         "descriptor_seconds": descriptor_seconds,
-        "search_seconds": shared_search_seconds,
-        "inference_seconds": descriptor_seconds + shared_search_seconds,
+        "search_seconds": search_seconds,
+        "inference_seconds": descriptor_seconds + search_seconds,
         "candidates": candidates,
     }
 
@@ -580,8 +616,10 @@ def build_summary(
     results: list[dict[str, Any]],
     dataset: str,
     index_name: str,
+    device: str,
     model_load_seconds: float,
     index_load_seconds: float,
+    batched_prediction_search_seconds: float,
 ) -> dict[str, Any]:
     top1_errors = [float(r["top1"]["error_km"]) for r in results]
     mean_errors = [float(r["topk_mean"]["error_km"]) for r in results]
@@ -590,14 +628,13 @@ def build_summary(
 
     descriptor_times = [float(r["descriptor_seconds"]) for r in results]
     search_times = [float(r["search_seconds"]) for r in results]
-    shared_search_seconds = search_times[0] if search_times else 0.0
-    total_descriptor_seconds = sum(descriptor_times)
-    total_pipeline_seconds = total_descriptor_seconds + shared_search_seconds
+    inference_times = [float(r["inference_seconds"]) for r in results]
 
     return {
         "dataset": dataset,
         "model": "SALAD + OSV-5M",
         "index": index_name,
+        "device": device,
         "n_images": len(results),
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "distance_unit": "km",
@@ -606,17 +643,27 @@ def build_summary(
         "topk_weighted_error": error_summary(weighted_errors),
         "topk_oracle_error": error_summary(oracle_errors),
         "timing": {
+            "definition": (
+                "Warm per-image inference after one-time model/index loading; "
+                "includes descriptor preprocessing/forward pass and an independent "
+                "retrieval search for that query; excludes image disk decoding, "
+                "the separate batched prediction search, and evaluation metrics."
+            ),
             "model_load_seconds": round_float(model_load_seconds, 3),
             "index_load_seconds": round_float(index_load_seconds, 3),
+            "batched_prediction_search_seconds": round_float(
+                batched_prediction_search_seconds, 3
+            ),
             "mean_descriptor_seconds": round_float(statistics.mean(descriptor_times), 3),
-            "shared_batched_search_seconds": round_float(shared_search_seconds, 3),
-            "amortized_search_seconds_per_image": round_float(shared_search_seconds / len(results), 3),
-            "mean_total_seconds_per_image_amortized": round_float(total_pipeline_seconds / len(results), 3),
-            "total_descriptor_seconds": round_float(total_descriptor_seconds, 3),
-            "total_pipeline_seconds_excluding_model_load": round_float(total_pipeline_seconds, 3),
+            "median_descriptor_seconds": round_float(statistics.median(descriptor_times), 3),
+            "mean_search_seconds": round_float(statistics.mean(search_times), 3),
+            "median_search_seconds": round_float(statistics.median(search_times), 3),
+            "mean_inference_seconds": round_float(statistics.mean(inference_times), 3),
+            "median_inference_seconds": round_float(statistics.median(inference_times), 3),
+            "std_inference_seconds": round_float(population_std(inference_times), 3),
+            "total_inference_seconds": round_float(sum(inference_times), 3),
         },
     }
-
 
 def write_csv(path: Path, results: list[dict[str, Any]]) -> None:
     fieldnames = [
@@ -715,10 +762,10 @@ def print_summary(summary: dict[str, Any]) -> None:
     print(f'  Model load:             {timing["model_load_seconds"]:.3f} s')
     print(f'  Index load:             {timing["index_load_seconds"]:.3f} s')
     print(f'  Mean descriptor/image:  {timing["mean_descriptor_seconds"]:.3f} s')
-    print(f'  Shared DB search:        {timing["shared_batched_search_seconds"]:.3f} s')
-    print(f'  Amortized search/image: {timing["amortized_search_seconds_per_image"]:.3f} s')
-    print(f'  Amortized total/image:  {timing["mean_total_seconds_per_image_amortized"]:.3f} s')
-    print(f'  Total pipeline:         {timing["total_pipeline_seconds_excluding_model_load"]:.3f} s')
+    print(f'  Mean search/image:      {timing["mean_search_seconds"]:.3f} s')
+    print(f'  Mean inference/image:   {timing["mean_inference_seconds"]:.3f} s')
+    print(f'  Median inference/image: {timing["median_inference_seconds"]:.3f} s')
+    print(f'  Total inference:        {timing["total_inference_seconds"]:.3f} s')
     print("=" * 72)
 
 
@@ -823,6 +870,21 @@ def main() -> None:
             f"nprobe={searcher.nprobe:,}, ntotal={searcher.ntotal:,}"
         )
 
+    # Warm the descriptor model once. The image is decoded before the warm-up,
+    # matching the inference timing boundary used for all four static baselines.
+    with Image.open(images[0]) as opened:
+        warmup_image = opened.convert("RGB").copy()
+    synchronize_device(args.device)
+    _warmup_descriptor = embed_preloaded_image(
+        model,
+        transform,
+        warmup_image,
+        args.device,
+    )
+    synchronize_device(args.device)
+    del _warmup_descriptor, warmup_image
+    print("SALAD encoder warm-up complete (not included in inference_seconds).")
+
     results: list[dict[str, Any]] = []
 
     try:
@@ -835,11 +897,41 @@ def main() -> None:
         )
         print(f"Embedded {len(images)} image(s) in {descriptor_total_seconds:.2f} s.")
 
-        print(f"\nSearching all {len(images)} queries together against '{args.index}'...")
+        print(f"\nSearching all {len(images)} queries together against '{args.index}' for predictions...")
         search_start = time.perf_counter()
         all_distances, all_indices = searcher.search(queries, args.top_k)
-        shared_search_seconds = time.perf_counter() - search_start
-        print(f"Shared batched search finished in {shared_search_seconds:.2f} s.")
+        batched_prediction_search_seconds = time.perf_counter() - search_start
+        print(
+            f"Batched prediction search finished in "
+            f"{batched_prediction_search_seconds:.2f} s."
+        )
+
+        # Warm the search path once before per-image timing. The actual
+        # predictions above remain the original batched-search predictions.
+        _warmup_distances, _warmup_indices = searcher.search(
+            queries[:1],
+            args.top_k,
+            verbose=False,
+        )
+        del _warmup_distances, _warmup_indices
+        print("SALAD search warm-up complete (not included in inference_seconds).")
+
+        individual_search_times: list[float] = []
+        print("\nMeasuring independent per-image retrieval latency...")
+        for query_index in range(len(images)):
+            search_start = time.perf_counter()
+            _timing_distances, _timing_indices = searcher.search(
+                queries[query_index : query_index + 1],
+                args.top_k,
+                verbose=False,
+            )
+            search_elapsed = time.perf_counter() - search_start
+            individual_search_times.append(search_elapsed)
+            del _timing_distances, _timing_indices
+            print(
+                f"[search {query_index + 1}/{len(images)}] "
+                f"{images[query_index].name} ({search_elapsed:.2f} s)"
+            )
 
         for index, image_path in enumerate(images, start=1):
             truth = ground_truth[image_path.stem]
@@ -851,7 +943,7 @@ def main() -> None:
                 distances_row=all_distances[index - 1],
                 indices_row=all_indices[index - 1],
                 descriptor_seconds=descriptor_times[index - 1],
-                shared_search_seconds=shared_search_seconds,
+                search_seconds=individual_search_times[index - 1],
             )
             results.append(result)
             top1 = result["top1"]
@@ -869,8 +961,8 @@ def main() -> None:
                 print(f'  Oracle top-{args.top_k}: rank={oracle["rank"]}, error={oracle["error_km"]:.2f} km')
             print(
                 f'  Descriptor: {result["descriptor_seconds"]:.2f} s | '
-                f'Shared search: {shared_search_seconds:.2f} s total '
-                f'({shared_search_seconds / len(images):.2f} s/image amortized)'
+                f'Search: {result["search_seconds"]:.2f} s | '
+                f'Inference: {result["inference_seconds"]:.2f} s'
             )
 
     except KeyboardInterrupt:
@@ -881,8 +973,10 @@ def main() -> None:
         results=results,
         dataset=args.dataset,
         index_name=args.index,
+        device=args.device,
         model_load_seconds=model_load_seconds,
         index_load_seconds=index_load_seconds,
+        batched_prediction_search_seconds=batched_prediction_search_seconds,
     )
     print_summary(summary)
 

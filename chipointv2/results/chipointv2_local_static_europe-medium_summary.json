@@ -9,7 +9,7 @@
   "gallery_chunk_rows": 500000,
   "top_k_prediction": 10,
   "n_images": 9,
-  "generated_at_utc": "2026-09-11T11:13:16.764562+00:00",
+  "generated_at_utc": "2026-09-13T13:17:07.307008+00:00",
   "distance_unit": "km",
   "prediction_error": {
     "mean_km": 254.803,
@@ -37,17 +37,37 @@
     "error_km": 509.68
   },
   "timing": {
+    "mode": "per-image-independent",
     "query_encoding_seconds_by_tower": {
-      "so400m256": 29.753,
-      "gopt": 16.579,
-      "dinov3": 10.387
+      "so400m256": 0.743,
+      "gopt": 1.471,
+      "dinov3": 0.607
     },
     "retrieval_seconds_by_tower": {
-      "so400m256": 158.717,
-      "gopt": 169.819,
-      "dinov3": 91.535
+      "so400m256": 6.933,
+      "gopt": 6.818,
+      "dinov3": 6.887
     },
-    "total_query_encoding_seconds": 56.719,
-    "total_gallery_retrieval_seconds": 420.071
+    "total_query_encoding_seconds": 2.82,
+    "total_gallery_retrieval_seconds": 20.638,
+    "inference_definition": "Per-image inference latency: three tower encodes + three independent full-gallery scans + fusion/cluster consensus. Predictions still use the original batched retrieval path; the independent scans are a separate warmed timing pass. Excludes model/download initialization and image disk decoding.",
+    "per_image_inference_seconds": {
+      "loc_009": 3.837,
+      "loc_010": 2.715,
+      "loc_011": 2.653,
+      "loc_012": 2.556,
+      "loc_013": 2.638,
+      "loc_014": 2.607,
+      "loc_015": 2.668,
+      "loc_016": 2.704,
+      "loc_017": 2.734
+    },
+    "inference_seconds_summary": {
+      "mean": 2.79,
+      "median": 2.668,
+      "std_population": 0.374,
+      "min": 2.556,
+      "max": 3.837
+    }
   }
 }

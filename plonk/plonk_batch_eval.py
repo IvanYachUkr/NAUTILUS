@@ -316,6 +316,11 @@ def build_summary(
             "error_km": round_float(worst["prediction"]["error_km"], 3),
         },
         "timing": {
+            "definition": (
+                "Warm per-image inference after one-time model loading; includes "
+                "pipeline preprocessing, generation and coordinate output; excludes "
+                "image disk decoding and evaluation metrics."
+            ),
             "model_load_seconds": round_float(model_load_seconds, 3),
             "mean_inference_seconds": round_float(
                 statistics.mean(inference_times),
@@ -549,6 +554,23 @@ def main() -> None:
             f"PLONK loaded successfully in "
             f"{model_load_seconds:.2f} s."
         )
+
+        # One unmeasured warm-up avoids charging first-use framework/model
+        # overhead to the first benchmark location. Use a fresh deterministic
+        # generator so the measured prediction remains unchanged.
+        warmup_seed = stable_sample_seed(BASE_SEED, images[0].stem)
+        warmup_generator = torch.Generator(device="cpu")
+        warmup_generator.manual_seed(warmup_seed)
+        with Image.open(images[0]) as opened:
+            warmup_image = opened.convert("RGB")
+        with torch.inference_mode():
+            _warmup_coords = pipeline(
+                warmup_image,
+                batch_size=SAMPLES_PER_IMAGE,
+                generator=warmup_generator,
+            )
+        del _warmup_coords, warmup_image, warmup_generator
+        print("PLONK warm-up complete (not included in inference_seconds).")
 
         results: list[dict[str, Any]] = []
 
