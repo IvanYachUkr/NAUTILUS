@@ -27,6 +27,7 @@ export const RECORDED_BENCHMARKS = [
     ],
     bestRun: { id: "run-2", label: "Run 2 (resumed)", points: 113_530 },
     predictionSource: { type: "glm-conversation", path: "runs/run-2/conversation.json" },
+    statisticsSource: { type: "curated-json", path: "statistics/all-runs.json" },
   },
   {
     id: "gpt-6-astra-low",
@@ -43,6 +44,7 @@ export const RECORDED_BENCHMARKS = [
     ],
     bestRun: { id: "run-2", label: "Run 2", points: 119_818 },
     predictionSource: { type: "curated-json", path: "runs/run-2/predictions.json" },
+    statisticsSource: { type: "curated-json", path: "statistics/all-runs.json" },
     predictionNotes: "Run 2 coordinates were recovered from browser result maps. Four are original numeric values; 21 are conservative map-pixel reconstructions with recorded uncertainty.",
   },
   {
@@ -60,6 +62,7 @@ export const RECORDED_BENCHMARKS = [
     ],
     bestRun: { id: "r2", label: "Run 2", points: 120_624 },
     predictionSource: { type: "recorded-directory", path: "runs/run-2" },
+    statisticsSource: { type: "recorded-runs", path: "runs" },
   },
   {
     id: "gemini-3-7-flash-medium-aided", dataDirectory: "gemini-3.7-flash-medium-aided",
@@ -72,6 +75,7 @@ export const RECORDED_BENCHMARKS = [
     ],
     bestRun: { id: "r3", label: "Run 3", points: 121_492 },
     predictionSource: { type: "recorded-directory", path: "runs/run-3" },
+    statisticsSource: { type: "recorded-runs", path: "runs" },
   },
   {
     id: "gemini-3-8-flash-high-aided", dataDirectory: "gemini-3.8-flash-high-aided",
@@ -84,6 +88,7 @@ export const RECORDED_BENCHMARKS = [
     ],
     bestRun: { id: "r1", label: "Run 1", points: 120_919 },
     predictionSource: { type: "recorded-directory", path: "runs/run-1" },
+    statisticsSource: { type: "recorded-runs", path: "runs" },
   },
   {
     id: "gemini-3-8-flash-medium-aided", dataDirectory: "gemini-3.8-flash-medium-aided",
@@ -96,6 +101,7 @@ export const RECORDED_BENCHMARKS = [
     ],
     bestRun: { id: "r3", label: "Run 3", points: 120_677 },
     predictionSource: { type: "recorded-directory", path: "runs/run-3" },
+    statisticsSource: { type: "recorded-runs", path: "runs" },
   },
   {
     id: "gpt-5-6-sol-xhigh",
@@ -107,6 +113,7 @@ export const RECORDED_BENCHMARKS = [
     sample: "3 runs · mean score",
     bestRun: { id: "r3", label: "Run 3", points: 114_716 },
     predictionSource: { type: "recorded-directory", path: "runs/run-3" },
+    statisticsSource: { type: "recorded-runs", path: "runs" },
   },
   {
     id: "gpt-5-6-sol-max",
@@ -118,6 +125,7 @@ export const RECORDED_BENCHMARKS = [
     sample: "3 runs · mean score",
     bestRun: { id: "r2", label: "Run 2", points: 114_794 },
     predictionSource: { type: "recorded-directory", path: "runs/run-2" },
+    statisticsSource: { type: "recorded-runs", path: "runs" },
   },
   {
     id: "grok-4-6-xhigh",
@@ -129,6 +137,7 @@ export const RECORDED_BENCHMARKS = [
     sample: "3 runs · mean score",
     bestRun: { id: "r1", label: "Run 1", points: 80_081 },
     predictionSource: { type: "recorded-directory", path: "runs/run-1" },
+    statisticsSource: { type: "recorded-runs", path: "runs" },
   },
   {
     id: "grok-4-6-xhigh-mcp",
@@ -147,6 +156,7 @@ export const RECORDED_BENCHMARKS = [
       type: "curated-json",
       path: "mcp-composite-best/predictions.json",
     },
+    statisticsSource: { type: "grok-mcp-runs" },
     predictionNotes: "Best available complete run is selected independently for each difficulty because this condition was evaluated as separate Easy, Medium, and Hard runs. The Medium round-1 marker is the recorded default Gulf of Guinea pin after a timeout.",
   },
   {
@@ -159,6 +169,7 @@ export const RECORDED_BENCHMARKS = [
     sample: "1 run",
     bestRun: { id: "r1", label: "Run 1", points: 64_350 },
     predictionSource: { type: "recorded-directory", path: "runs/run-1" },
+    statisticsSource: { type: "recorded-runs", path: "runs" },
   },
 ];
 

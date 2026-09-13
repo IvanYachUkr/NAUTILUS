@@ -150,6 +150,7 @@ test("detail utilities keep statistics in the top-right overlay and use a count 
   assert.ok(appSource.includes("compareConditionsCount.textContent = conditionCount ? String(conditionCount) : \"\""));
   assert.ok(!appSource.includes('` · ${conditionCount}`'));
   assert.match(expeditionStylesSource, /data-view-state="detail"[^}]*\.map-utility-actions\s*\{[^}]*top:\s*20px;[^}]*right:\s*20px;/s);
+  assert.match(expeditionStylesSource, /\.scene-clue-summary\s*\{[^}]*width:\s*min\(760px, calc\(100% - 190px\)\);/s);
 });
 
 test("static/NMPZ never creates a map playback descriptor", () => {

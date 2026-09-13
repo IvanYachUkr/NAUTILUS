@@ -2119,7 +2119,7 @@ export function createExplorer({
         <p class="drawer-muted">Current slice: ${escapeHtml(filterText || "all visible locations")}</p>
       </div>
       <div class="stat-grid">
-        ${metricMarkup("Benchmark cases", String(stats.caseCount), `${stats.pinRunCount} predictions with coordinates`)}
+        ${metricMarkup("Benchmark cases", String(stats.caseCount), `${stats.pinRunCount} recorded predictions`)}
         ${metricMarkup("Median error", formatDistance(stats.medianErrorKm), "robust location score")}
         ${metricMarkup("Mean error", formatDistance(stats.meanErrorKm), "sensitive to large misses")}
         ${metricMarkup("Country accuracy", formatPercent(stats.countryAccuracy), `${stats.countryRated} rated`)}
@@ -2843,7 +2843,7 @@ function hasCoordinate(value) {
   );
 }
 
-function computeStats(
+export function computeStats(
   cases,
   model,
   condition,
@@ -2856,7 +2856,10 @@ function computeStats(
     }))
     .filter(({ run }) => Boolean(run));
   const runs = selections.map(({ run }) => run);
-  const errors = runs.map((run) => run.errorKm).filter(Number.isFinite).sort((a, b) => a - b);
+  const scoredRuns = selections.flatMap(({ run }) =>
+    run.statisticsRuns?.length ? run.statisticsRuns : [run]
+  );
+  const errors = scoredRuns.map((run) => run.errorKm).filter(Number.isFinite).sort((a, b) => a - b);
   const clues = selections.flatMap(({ caseItem, run }) => {
     const clueSet = (caseItem.clueSets ?? []).find(
       (item) => item.benchmarkId === run.benchmarkId || item.id === run.benchmarkId,
@@ -2867,16 +2870,16 @@ function computeStats(
   const explorations = runs.map((run) => run.exploration).filter((exploration) => exploration?.path?.length > 1);
 
   return {
-    caseCount: cases.length,
-    runCount: runs.length,
+    caseCount: scoredRuns.length,
+    runCount: scoredRuns.length,
     pinRunCount: errors.length,
     medianErrorKm: median(errors),
     meanErrorKm: mean(errors),
     within25: ratio(errors.filter((km) => km <= 25).length, errors.length),
     within250: ratio(errors.filter((km) => km <= 250).length, errors.length),
     within750: ratio(errors.filter((km) => km <= 750).length, errors.length),
-    countryAccuracy: booleanRatio(runs.map((run) => run.accuracy?.country)),
-    countryRated: runs.filter((run) => typeof run.accuracy?.country === "boolean").length,
+    countryAccuracy: booleanRatio(scoredRuns.map((run) => run.accuracy?.country)),
+    countryRated: scoredRuns.filter((run) => typeof run.accuracy?.country === "boolean").length,
     cueCount: clues.length,
     cueRatings,
     cueVisible: cueRatings.visible.ratio,

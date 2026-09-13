@@ -35,6 +35,33 @@ test("the explorer includes Astra and the disclosed Grok MCP tier composite", as
     .sort((left, right) => left.id.localeCompare(right.id))
     .map((run) => run.durationSeconds);
   assert.deepEqual(easyTimings, [52.543, 95.16, 42.263, 65.076, 69.771, 180, 65.848, 26.031]);
+
+  const threeRunBenchmarkIds = [
+    "glm-5-3-flash-max",
+    "gpt-6-astra-low",
+    "gemini-3-7-flash-high-aided",
+    "gemini-3-7-flash-medium-aided",
+    "gemini-3-8-flash-high-aided",
+    "gemini-3-8-flash-medium-aided",
+    "gpt-5-6-sol-xhigh",
+    "gpt-5-6-sol-max",
+    "grok-4-6-xhigh",
+    "grok-4-6-xhigh-mcp",
+  ];
+  for (const benchmarkId of threeRunBenchmarkIds) {
+    const runs = atlasCases.flatMap((item) =>
+      item.runs.filter((run) => run.benchmarkId === benchmarkId),
+    );
+    assert.equal(runs.length, 25, `${benchmarkId} should cover all benchmark locations`);
+    assert.ok(
+      runs.every((run) => run.statisticsRuns?.length === 3),
+      `${benchmarkId} should retain all three predictions per location`,
+    );
+    assert.ok(
+      runs.every((run) => run.statisticsRuns.every((item) => typeof item.accuracy?.country === "boolean")),
+      `${benchmarkId} should rate country accuracy for every recorded prediction`,
+    );
+  }
 });
 
 test("covered static predictions retain the exact evaluated model/location coverage", async () => {

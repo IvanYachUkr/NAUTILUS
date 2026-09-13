@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { summarizeClueRatings } from "../src/app.js";
+import { computeStats, summarizeClueRatings } from "../src/app.js";
 
 const source = await readFile(new URL("../src/app.js", import.meta.url), "utf8");
 
@@ -53,4 +53,36 @@ test("statistics use human-review wording and suppress empty baseline explanatio
   assert.ok(source.includes('stats.cueCount ? `<div class="drawer-section">'));
   assert.ok(source.includes('stats.cueCount ? metricMarkup("Cue useful"'));
   assert.ok(!source.includes("<h4>Interactive exploration</h4>"));
+});
+
+test("prediction metrics aggregate repeated runs while cue review stays single-counted", () => {
+  const stats = computeStats([{
+    clueSets: [{
+      id: "benchmark-a",
+      benchmarkId: "benchmark-a",
+      cues: [{ annotationStatus: "reviewed", ratings: { useful: true } }],
+    }],
+    runs: [{
+      model: "Model A",
+      condition: "interactive-panorama",
+      benchmarkId: "benchmark-a",
+      errorKm: 9,
+      accuracy: { country: true },
+      statisticsRuns: [
+        { errorKm: 1, accuracy: { country: true } },
+        { errorKm: 9, accuracy: { country: false } },
+        { errorKm: 25, accuracy: { country: true } },
+      ],
+    }],
+  }], "Model A", "interactive-panorama");
+
+  assert.equal(stats.caseCount, 3);
+  assert.equal(stats.pinRunCount, 3);
+  assert.equal(stats.medianErrorKm, 9);
+  assert.equal(stats.meanErrorKm, 35 / 3);
+  assert.equal(stats.within25, 1);
+  assert.equal(stats.countryAccuracy, 2 / 3);
+  assert.equal(stats.countryRated, 3);
+  assert.equal(stats.cueCount, 1);
+  assert.equal(stats.cueUseful, 1);
 });

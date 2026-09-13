@@ -10,6 +10,7 @@
     "prepare:globe": "node scripts/prepare-globe-assets.mjs",
     "build:site": "npm run data:build && node scripts/build-site.mjs",
     "data:baselines": "node scripts/import-static-baselines.mjs",
+    "data:astra-statistics": "node scripts/import-astra-statistics.mjs",
     "data:build": "node scripts/build-project-data.mjs",
     "data:check": "node scripts/build-project-data.mjs --check",
     "links:inspect": "node scripts/inspect-links.mjs",
@@ -33,7 +34,10 @@
     "node": ">=20"
   },
   "dependencies": {
+    "@turf/boolean-point-in-polygon": "^7.4.0",
     "globe.gl": "2.46.2",
-    "three-globe": "2.44.0"
+    "three-globe": "2.44.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
   }
 }

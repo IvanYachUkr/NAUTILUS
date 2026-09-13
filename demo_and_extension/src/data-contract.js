@@ -223,6 +223,28 @@ export function validateCases(input) {
           }
         });
       }
+
+      if (run?.statisticsRuns !== undefined && !Array.isArray(run.statisticsRuns)) {
+        errors.push(`${runPath}.statisticsRuns must be an array when provided.`);
+      } else {
+        (run.statisticsRuns ?? []).forEach((statisticsRun, statisticsIndex) => {
+          const statisticsPath = `${runPath}.statisticsRuns[${statisticsIndex}]`;
+          if (!isNonEmptyString(statisticsRun?.id)) {
+            errors.push(`${statisticsPath}.id must be a non-empty string.`);
+          }
+          if (!isNonEmptyString(statisticsRun?.runId)) {
+            errors.push(`${statisticsPath}.runId must be a non-empty string.`);
+          }
+          collectCoordinateError(errors, statisticsRun?.prediction, `${statisticsPath}.prediction`);
+          if (
+            statisticsRun?.accuracy?.country !== undefined &&
+            statisticsRun.accuracy.country !== null &&
+            typeof statisticsRun.accuracy.country !== "boolean"
+          ) {
+            errors.push(`${statisticsPath}.accuracy.country must be boolean or null.`);
+          }
+        });
+      }
     });
   });
 
@@ -278,6 +300,15 @@ export function normalizeCases(input) {
           useful: cue.ratings?.useful ?? null,
           consistent: cue.ratings?.consistent ?? null,
         },
+      })),
+      statisticsRuns: (run.statisticsRuns ?? []).map((statisticsRun) => ({
+        ...statisticsRun,
+        durationSeconds: statisticsRun.durationSeconds ?? null,
+        accuracy: {
+          country: statisticsRun.accuracy?.country ?? null,
+          region: statisticsRun.accuracy?.region ?? null,
+        },
+        errorKm: haversineKm(item.groundTruth, statisticsRun.prediction),
       })),
       errorKm: run.prediction ? haversineKm(item.groundTruth, run.prediction) : null,
     })),

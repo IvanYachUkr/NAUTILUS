@@ -1,10 +1,12 @@
-import { existsSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
+import { readFile } from "node:fs/promises";
 import { basename, extname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseGoogleMapsStreetViewUrl } from "../shared/google-maps-url.js";
 import { validateCases } from "../src/data-contract.js";
 import { RECORDED_BENCHMARKS } from "../src/project-story.js";
 import { clueDocumentsByLocation, loadClueDocuments } from "./lib/clues.mjs";
+import { isPredictionInCountry } from "./lib/country-accuracy.mjs";
 import { matchRecordingToLocation } from "./lib/recordings.mjs";
 import {
   COMPETITIONS_DIR,
@@ -998,10 +1000,20 @@ async function loadRecordedBenchmarkPredictions(
       continue;
     }
     const predictions = benchmark.predictionSource.type === "glm-conversation"
-      ? await loadGlmConversationPredictions(join(benchmarkDirectory, benchmark.predictionSource.path), errors)
+      ? await loadGlmConversationPredictions(
+        join(benchmarkDirectory, benchmark.predictionSource.path),
+        errors,
+        benchmark.bestRun?.id,
+      )
       : benchmark.predictionSource.type === "curated-json"
         ? await loadCuratedBenchmarkPredictions(join(benchmarkDirectory, benchmark.predictionSource.path), errors)
         : await loadRecordedDirectoryPredictions(join(benchmarkDirectory, benchmark.predictionSource.path ?? "."), errors);
+    const statisticsPredictions = await loadBenchmarkStatisticsPredictions(
+      benchmark,
+      benchmarkDirectory,
+      errors,
+    );
+    const statisticsByLocation = groupStatisticsPredictionsByLocation(statisticsPredictions);
 
     if (predictions.length !== 25) {
       errors.push(`${benchmark.id}: best run ${benchmark.bestRun?.label ?? "selection"} must resolve to exactly 25 predictions; found ${predictions.length}.`);
@@ -1052,6 +1064,7 @@ async function loadRecordedBenchmarkPredictions(
             notes: benchmark.predictionNotes ?? "Canonical submitted benchmark pin; replay media is not required for this prediction.",
             isMock: false,
             accuracy: { country: null, region: null },
+            statisticsRuns: statisticsByLocation.get(location.id) ?? [],
             durationSeconds: Number.isFinite(input.durationMs)
               ? input.durationMs / 1000
               : null,
@@ -1174,6 +1187,174 @@ async function loadCuratedBenchmarkPredictions(path, errors) {
   return predictions.map((item) => ({ input: item, source }));
 }
 
+async function loadBenchmarkStatisticsPredictions(benchmark, benchmarkDirectory, errors) {
+  const source = benchmark.statisticsSource;
+  if (!source) return [];
+
+  if (source.type === "curated-json") {
+    const predictions = await loadCuratedBenchmarkPredictions(
+      join(benchmarkDirectory, source.path),
+      errors,
+    );
+    return predictions.map((item) => ({
+      ...item,
+      runId: item.input.runId ?? "recorded-run",
+    }));
+  }
+
+  if (source.type === "recorded-runs") {
+    const runsDirectory = join(benchmarkDirectory, source.path ?? "runs");
+    const runDirectories = existsSync(runsDirectory)
+      ? readdirSync(runsDirectory, { withFileTypes: true })
+        .filter((entry) => entry.isDirectory() && /^run-\d+$/i.test(entry.name))
+        .sort((left, right) => left.name.localeCompare(right.name, undefined, { numeric: true }))
+      : [];
+    const predictions = [];
+    for (const runDirectory of runDirectories) {
+      const items = await loadRecordedDirectoryPredictions(
+        join(runsDirectory, runDirectory.name),
+        errors,
+      );
+      predictions.push(...items.map((item) => ({ ...item, runId: runDirectory.name })));
+    }
+    const supplementalPath = join(benchmarkDirectory, "statistics", "supplemental.json");
+    if (existsSync(supplementalPath)) {
+      const supplements = await loadCuratedBenchmarkPredictions(supplementalPath, errors);
+      predictions.push(...supplements.map((item) => ({
+        ...item,
+        runId: item.input.runId ?? "supplemental",
+      })));
+    }
+    return predictions;
+  }
+
+  if (source.type === "glm-conversations") {
+    const runsDirectory = join(benchmarkDirectory, source.path ?? "runs");
+    const runDirectories = existsSync(runsDirectory)
+      ? readdirSync(runsDirectory, { withFileTypes: true })
+        .filter((entry) => entry.isDirectory() && /^run-\d+$/i.test(entry.name))
+        .sort((left, right) => left.name.localeCompare(right.name, undefined, { numeric: true }))
+      : [];
+    const predictions = [];
+    for (const runDirectory of runDirectories) {
+      const items = await loadGlmConversationPredictions(
+        join(runsDirectory, runDirectory.name, "conversation.json"),
+        errors,
+        runDirectory.name,
+      );
+      predictions.push(...items.map((item) => ({ ...item, runId: runDirectory.name })));
+    }
+    return predictions;
+  }
+
+  if (source.type === "grok-mcp-runs") {
+    return loadGrokMcpStatisticsPredictions(benchmarkDirectory, errors);
+  }
+
+  errors.push(`${benchmark.id}: unsupported statistics source type ${source.type}.`);
+  return [];
+}
+
+function groupStatisticsPredictionsByLocation(predictions) {
+  const byLocation = new Map();
+  for (const { input, source, runId } of predictions) {
+    if (!nonEmptyString(input?.atlasLocationId) || !isCoordinate(input?.prediction)) continue;
+    if (!byLocation.has(input.atlasLocationId)) byLocation.set(input.atlasLocationId, []);
+    byLocation.get(input.atlasLocationId).push({
+      id: input.id ?? `${runId}-${input.atlasLocationId}`,
+      runId,
+      prediction: {
+        lat: Number(input.prediction.lat),
+        lng: Number(input.prediction.lng),
+      },
+      durationSeconds: Number.isFinite(input.durationMs) ? input.durationMs / 1000 : null,
+      accuracy: { country: null, region: null },
+      sourceFile: source,
+    });
+  }
+  return byLocation;
+}
+
+async function loadGrokMcpStatisticsPredictions(benchmarkDirectory, errors) {
+  const predictions = [];
+  const easyRuns = ["mcp-assisted-r1", "mcp-assisted-r2", "mcp-assisted-r3"];
+  for (const runId of easyRuns) {
+    const path = join(benchmarkDirectory, "runs", runId, "README.md");
+    try {
+      const text = await readFile(path, "utf8");
+      for (const line of text.split(/\r?\n/)) {
+        const match = line.match(/^\|\s*(\d+)\s*\|.*?`\s*(-?\d+(?:\.\d+)?),\s*(-?\d+(?:\.\d+)?)\s*`/);
+        if (!match) continue;
+        const round = Number(match[1]);
+        predictions.push(statisticsPrediction(
+          runId,
+          "easy",
+          round,
+          Number(match[2]),
+          Number(match[3]),
+          relative(ROOT, path).replaceAll("\\", "/"),
+        ));
+      }
+    } catch (error) {
+      errors.push(`${relative(ROOT, path)}: could not load Grok MCP statistics (${error.message}).`);
+    }
+  }
+
+  const auditedRuns = [
+    { runId: "mcp-one-shot-medium-r1", tier: "medium", defaults: [1] },
+    { runId: "mcp-one-shot-medium-r2", tier: "medium", defaults: [1] },
+    { runId: "mcp-one-shot-medium-r3-retry2", tier: "medium", defaults: [1, 2] },
+    { runId: "mcp-one-shot-hard-r1", tier: "hard", defaults: [] },
+    { runId: "mcp-one-shot-hard-r2", tier: "hard", defaults: [1] },
+    { runId: "mcp-one-shot-hard-r3", tier: "hard", defaults: [1], roundOffset: 1 },
+  ];
+  for (const config of auditedRuns) {
+    const path = join(benchmarkDirectory, "runs", config.runId, "mcp-audit.jsonl");
+    const source = relative(ROOT, path).replaceAll("\\", "/");
+    for (const round of config.defaults) {
+      predictions.push(statisticsPrediction(config.runId, config.tier, round, 0, 0, source));
+    }
+    try {
+      const rows = (await readFile(path, "utf8"))
+        .split(/\r?\n/)
+        .filter(Boolean)
+        .map((line) => JSON.parse(line));
+      for (const row of rows) {
+        const pin = row.tool === "openguessr_submit_guess" && row.result?.submitted
+          ? row.result.pin
+          : null;
+        if (!Number.isFinite(pin?.latitude) || !Number.isFinite(pin?.longitude)) continue;
+        predictions.push(statisticsPrediction(
+          config.runId,
+          config.tier,
+          Number(row.round) + (config.roundOffset ?? 0),
+          Number(pin.latitude),
+          Number(pin.longitude),
+          source,
+        ));
+      }
+    } catch (error) {
+      errors.push(`${source}: could not load Grok MCP statistics (${error.message}).`);
+    }
+  }
+  return predictions;
+}
+
+function statisticsPrediction(runId, tier, round, lat, lng, source) {
+  const offsets = { easy: 0, medium: 8, hard: 17 };
+  const globalIndex = offsets[tier] + round;
+  return {
+    input: {
+      id: `${runId}-${tier}-${String(round).padStart(2, "0")}`,
+      atlasLocationId: `europe-${tier}--loc-${String(globalIndex).padStart(3, "0")}`,
+      condition: "interactive-panorama",
+      prediction: { lat, lng },
+    },
+    source,
+    runId,
+  };
+}
+
 async function loadRecordedDirectoryPredictions(directory, errors) {
   const localRoundFiles = (await listJsonFiles(directory, { recursive: true }))
     .filter((path) => {
@@ -1183,12 +1364,16 @@ async function loadRecordedDirectoryPredictions(directory, errors) {
     })
     .sort((left, right) => left.localeCompare(right));
 
-  if (localRoundFiles.length === 25) {
-    return Promise.all(localRoundFiles.map(async (path) => ({
-      input: withBenchmarkAtlasLocation(await readJson(path), relative(directory, path)),
+  const byLocation = new Map();
+  for (const path of localRoundFiles) {
+    const input = withBenchmarkAtlasLocation(await readJson(path), relative(directory, path));
+    if (!isCoordinate(input.prediction) || !nonEmptyString(input.atlasLocationId)) continue;
+    byLocation.set(input.atlasLocationId, {
+      input,
       source: relative(ROOT, path).replaceAll("\\", "/"),
-    })));
+    });
   }
+  if (byLocation.size === 25) return [...byLocation.values()];
 
   const sessionFiles = (await listJsonFiles(directory, { recursive: true }))
     .filter((path) => {
@@ -1196,7 +1381,6 @@ async function loadRecordedDirectoryPredictions(directory, errors) {
       return parts.length === 2 && /^europe-(?:easy|medium|hard)$/i.test(parts[0]) && parts[1] === "session.json";
     })
     .sort((left, right) => left.localeCompare(right));
-  const byLocation = new Map();
   for (const sessionPath of sessionFiles) {
     const session = await readJson(sessionPath);
     for (const round of session.rounds ?? []) {
@@ -1226,7 +1410,7 @@ function withBenchmarkAtlasLocation(input, relativePath) {
   return { ...input, atlasLocationId: `${match[1].toLowerCase()}--loc-${String(globalIndex).padStart(3, "0")}` };
 }
 
-async function loadGlmConversationPredictions(sourcePath, errors) {
+async function loadGlmConversationPredictions(sourcePath, errors, runId = "run-2") {
   const absolutePath = resolve(ROOT, sourcePath);
   if (!existsSync(absolutePath)) {
     errors.push(`${sourcePath}: GLM best-run conversation is missing.`);
@@ -1289,7 +1473,7 @@ async function loadGlmConversationPredictions(sourcePath, errors) {
     const competitionId = globalIndex <= 8 ? "europe-easy" : globalIndex <= 17 ? "europe-medium" : "europe-hard";
     return {
       input: {
-        id: `glm-run-2-round-${String(globalIndex).padStart(2, "0")}`,
+        id: `glm-${runId}-round-${String(globalIndex).padStart(2, "0")}`,
         atlasLocationId: `${competitionId}--loc-${String(globalIndex).padStart(3, "0")}`,
         condition: "interactive-panorama",
         prediction,
@@ -1894,6 +2078,8 @@ function compileAtlasCases({
       }
     }
 
+    const scoredRuns = runs.map((run) => addLocationAccuracy(run, location));
+
     if (runs.length === 0) {
       warnings.push(
         `${location.id} has no model result or matched recording yet.`,
@@ -1971,11 +2157,25 @@ function compileAtlasCases({
         }))
         .filter((clueSet) => clueSet.cues.length > 0),
 
-      runs,
+      runs: scoredRuns,
     });
   }
 
   return cases;
+}
+
+function addLocationAccuracy(run, location) {
+  const withAccuracy = (candidate) => ({
+    ...candidate,
+    accuracy: {
+      ...candidate.accuracy,
+      country: isPredictionInCountry(candidate.prediction, location.country),
+    },
+  });
+  return {
+    ...withAccuracy(run),
+    statisticsRuns: (run.statisticsRuns ?? []).map(withAccuracy),
+  };
 }
 
 function resolveStartingImage(
