@@ -1257,7 +1257,7 @@ async function loadBenchmarkStatisticsPredictions(benchmark, benchmarkDirectory,
 
 function groupStatisticsPredictionsByLocation(predictions) {
   const byLocation = new Map();
-  for (const { input, source, runId } of predictions) {
+  for (const { input, runId } of predictions) {
     if (!nonEmptyString(input?.atlasLocationId) || !isCoordinate(input?.prediction)) continue;
     if (!byLocation.has(input.atlasLocationId)) byLocation.set(input.atlasLocationId, []);
     byLocation.get(input.atlasLocationId).push({
@@ -1269,7 +1269,6 @@ function groupStatisticsPredictionsByLocation(predictions) {
       },
       durationSeconds: Number.isFinite(input.durationMs) ? input.durationMs / 1000 : null,
       accuracy: { country: null, region: null },
-      sourceFile: source,
     });
   }
   return byLocation;
