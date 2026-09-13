@@ -8,6 +8,8 @@ per round, Grok CLI 1.0.4, and the exact prompt at
 Prompt SHA-256:
 `9105E46B19BC1565670F05EA3352845DAC0BD2924B51EAB6E5F285EDE504CFB7`.
 
+**Recovered round timings:** [CSV](timing/round-timings.csv), [JSON with timestamp provenance](timing/round-timings.json), and [measurement notes](timing/README.md). The website's selected Easy R2 now has all eight durations: seven clock-derived and one explicitly inferred timeout. Timestamped player-tool records for all three Easy runs are preserved; two ambiguous R1 endpoints remain bounded rather than assigned invented finish times.
+
 | Run | Competition | Rounds | Official score | Defaults | Belief-to-pin mismatches | Audit |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
 | MCP R1 | `24612` | 8/8 | **39,661** | 0 | 0 | [run](../runs/mcp-assisted-r1/) |

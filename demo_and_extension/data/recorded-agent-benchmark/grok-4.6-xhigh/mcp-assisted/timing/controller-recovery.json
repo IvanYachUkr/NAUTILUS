@@ -1,0 +1,52 @@
+{
+  "sourceSession": "019fedcd-dd75-7f73-94db-ae5282ab822f",
+  "sourceFile": "rollout-2026-08-11T00-31-59-019fedcd-dd75-7f73-94db-ae5282ab822f.jsonl",
+  "sourceSha256": "cb3b3616512dea54e4474fa045e597b53e5ef8f1e270b13379e3bc5448f4e824",
+  "events": [
+    {
+      "run": "mcp-assisted-r1",
+      "round": 2,
+      "timestamp": "2026-09-01T00:47:53.586Z",
+      "sourceLine": 39523,
+      "toolCallId": "call_GkDeUfPLYzzYXnonKv3XF4Y5",
+      "output": [
+        {
+          "ok": true,
+          "action": "submit-guess",
+          "submitted": true,
+          "pin": {
+            "latitude": 52.5216,
+            "longitude": 13.4118
+          }
+        }
+      ]
+    },
+    {
+      "run": "mcp-assisted-r2",
+      "round": 6,
+      "timestamp": "2026-09-01T01:34:12.661Z",
+      "sourceLine": 40338,
+      "toolCallId": "call_OfUHedt4cLAtbwXZroNNYqhW",
+      "output": {
+        "placement": [
+          {
+            "type": "text",
+            "text": "{\"ok\":false,\"error\":\"Open the OpenGuessr guess map first, then retry coordinate placement.\"}"
+          }
+        ],
+        "state": [
+          {
+            "type": "text",
+            "text": "{\"ok\":true,\"action\":\"get-state\",\"path\":\"/\",\"controls\":{\"guess\":true,\"continue\":true},\"resultVisible\":true,\"verifiedPin\":{\"latitude\":50.89,\"longitude\":14.824}}"
+          }
+        ],
+        "submission": [
+          {
+            "type": "text",
+            "text": "{\"ok\":true,\"action\":\"submit-guess\",\"submitted\":true,\"pin\":{\"latitude\":50.89,\"longitude\":14.824}}"
+          }
+        ]
+      }
+    }
+  ]
+}

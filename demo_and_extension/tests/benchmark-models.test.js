@@ -29,10 +29,12 @@ test("the explorer includes Astra and the disclosed Grok MCP tier composite", as
   assert.ok(grokMcpRuns.every((run) => run.runKind === "model-prediction"));
   assert.ok(grokMcpRuns.every((run) => Number.isFinite(run.prediction?.lat) && Number.isFinite(run.prediction?.lng)));
   assert.ok(grokMcpRuns.every((run) => run.bestRunId === "tier-best-composite"));
-  assert.equal(grokMcpRuns.filter((run) => Number.isFinite(run.durationSeconds)).length, 17);
-  assert.ok(grokMcpRuns
-    .filter((run) => !Number.isFinite(run.durationSeconds))
-    .every((run) => run.id.includes("easy-r2")));
+  assert.equal(grokMcpRuns.filter((run) => Number.isFinite(run.durationSeconds)).length, 25);
+  const easyTimings = grokMcpRuns
+    .filter((run) => run.id.includes("easy-r2"))
+    .sort((left, right) => left.id.localeCompare(right.id))
+    .map((run) => run.durationSeconds);
+  assert.deepEqual(easyTimings, [52.543, 95.16, 42.263, 65.076, 69.771, 180, 65.848, 26.031]);
 });
 
 test("covered static predictions retain the exact evaluated model/location coverage", async () => {
