@@ -133,7 +133,23 @@ test("map overview only includes cases with a prediction for the selected run sl
       .map((entry) => entry.caseId),
     ["matching"],
   );
-  assert.ok(appSource.includes("${overviewRuns.length} prediction"));
+  assert.ok(appSource.includes("${filteredCases.length} benchmark location"));
+  assert.ok(!appSource.includes("${overviewRuns.length} prediction"));
+});
+
+test("detail runtime labels distinguish batched static evaluation from missing interactive timing", () => {
+  assert.ok(appSource.includes('? "Batch processed"'));
+  assert.ok(appSource.includes(': "Unavailable";'));
+  assert.ok(appSource.includes("Images were evaluated in batches, so per-location runtime is not comparable."));
+  assert.ok(!appSource.includes('"Not recorded"'));
+});
+
+test("detail utilities keep statistics in the top-right overlay and use a count badge", () => {
+  assert.ok(appSource.includes("elements.mapUtilityActions"));
+  assert.ok(!appSource.includes("isNarrowDetailViewport()\n      ? elements.leftRailStatsSlot"));
+  assert.ok(appSource.includes("compareConditionsCount.textContent = conditionCount ? String(conditionCount) : \"\""));
+  assert.ok(!appSource.includes('` · ${conditionCount}`'));
+  assert.match(expeditionStylesSource, /data-view-state="detail"[^}]*\.map-utility-actions\s*\{[^}]*top:\s*20px;[^}]*right:\s*20px;/s);
 });
 
 test("static/NMPZ never creates a map playback descriptor", () => {
@@ -212,7 +228,8 @@ test("the workflow navigation connects evenly centered controls instead of label
 });
 
 test("the mobile run method cards reserve separate columns for icon, label, and number", () => {
-  const mobileStart = expeditionStylesSource.lastIndexOf("@media (max-width: 680px)");
+  const journeyCardRule = expeditionStylesSource.indexOf("grid-template-columns: 32px minmax(0, 1fr) auto");
+  const mobileStart = expeditionStylesSource.lastIndexOf("@media (max-width: 680px)", journeyCardRule);
   const mobileEnd = expeditionStylesSource.indexOf("@media (min-width: 681px)", mobileStart);
   const mobileStyles = expeditionStylesSource.slice(mobileStart, mobileEnd);
 

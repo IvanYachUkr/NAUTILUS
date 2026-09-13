@@ -88,6 +88,22 @@ function runConditionLabel(run) {
   return `${condition} · ${variantLabel}`;
 }
 
+function runTimeLabel(run) {
+  if (Number.isFinite(run?.durationSeconds)) {
+    return `${Math.round(run.durationSeconds)} s`;
+  }
+
+  return isStaticImageCondition(run?.condition)
+    ? "Batch processed"
+    : "Unavailable";
+}
+
+function runTimeDescription(run) {
+  return isStaticImageCondition(run?.condition) && !Number.isFinite(run?.durationSeconds)
+    ? "Images were evaluated in batches, so per-location runtime is not comparable."
+    : "";
+}
+
 const STATIC_BASELINE_ORDER = [
   "GeoCLIP",
   "SALAD + OSV-5M",
@@ -1042,15 +1058,11 @@ export function createExplorer({
       }
     }
 
-    const statsInDetailControls = useDetailRail && window.matchMedia("(max-width: 680px)").matches;
-    const statsDestination = statsInDetailControls
-      ? elements.detailRunControls
-      : useDetailRail
-        ? elements.mapUtilityActions
-        : elements.experienceDock;
+    const statsDestination = useDetailRail
+      ? elements.mapUtilityActions
+      : elements.experienceDock;
     if (elements.globeStatsSlot.parentElement !== statsDestination) {
-      if (statsInDetailControls) statsDestination.append(elements.globeStatsSlot);
-      else statsDestination.prepend(elements.globeStatsSlot);
+      statsDestination.prepend(elements.globeStatsSlot);
     }
   }
 
@@ -1497,7 +1509,7 @@ export function createExplorer({
         ? competition.competitionName
         : "An atlas of machine perception";
       elements.mapTitle.innerHTML = "Follow the<br /><em>guess.</em>";
-      elements.mapSubtitle.textContent = `${overviewRuns.length} prediction${overviewRuns.length === 1 ? "" : "s"}. ${filteredCases.length} real place${filteredCases.length === 1 ? "" : "s"}. Explore the distance between what a model sees and where it thinks it is.`;
+      elements.mapSubtitle.textContent = `${filteredCases.length} benchmark location${filteredCases.length === 1 ? "" : "s"}. Explore the distance between what a model sees and where it thinks it is.`;
       return;
     }
 
@@ -1535,9 +1547,8 @@ export function createExplorer({
     elements.pinError.textContent = hasCoordinate(run.prediction)
       ? formatDistance(run.errorKm)
       : "Not captured";
-    elements.runTime.textContent = Number.isFinite(run.durationSeconds)
-      ? `${Math.round(run.durationSeconds)} s`
-      : "Not recorded";
+    elements.runTime.textContent = runTimeLabel(run);
+    elements.runTime.title = runTimeDescription(run);
 
     if (!sideMapController) {
       sideMapController = createMapController(elements.sideComparisonMap, {
@@ -1571,7 +1582,7 @@ export function createExplorer({
         : `Compare ${conditionCount} conditions`,
     );
     elements.compareConditionsButton.classList.toggle("is-active", compareConditions && visible);
-    elements.compareConditionsCount.textContent = conditionCount ? ` · ${conditionCount}` : "";
+    elements.compareConditionsCount.textContent = conditionCount ? String(conditionCount) : "";
     if (!visible) return;
 
     elements.modelComparisonTitle.textContent = compareConditions ? "Compare conditions" : "Compare models";
@@ -2193,7 +2204,7 @@ export function createExplorer({
         <div><dt>Selected run</dt><dd>${escapeHtml(run.bestRunLabel ?? "Best overall run")}</dd></div>
         <div><dt>Run score</dt><dd>${Number.isFinite(run.bestRunPoints) ? `${run.bestRunPoints.toLocaleString("en-US")} / 125,000` : "—"}</dd></div>
         <div><dt>3-run mean</dt><dd>${Number.isFinite(run.benchmarkMeanPoints) ? `${Math.round(run.benchmarkMeanPoints).toLocaleString("en-US")} pts` : "—"}</dd></div>
-        <div><dt>Run time</dt><dd>${Number.isFinite(run.durationSeconds) ? `${Math.round(run.durationSeconds)} s` : "Not recorded"}</dd></div>
+        <div><dt>Run time</dt><dd${runTimeDescription(run) ? ` title="${escapeAttribute(runTimeDescription(run))}"` : ""}>${escapeHtml(runTimeLabel(run))}</dd></div>
         ${isStaticBaselineModel(run.model)
         ? `<div><dt>Image variant</dt><dd>${escapeHtml(IMAGE_VARIANT_LABELS[runImageVariant(run)] ?? runImageVariant(run))}</dd></div>`
         : ""}
@@ -2515,7 +2526,7 @@ export function shellMarkup(cases = []) {
                 <i class="ph ph-stack" aria-hidden="true"></i><span>Compare models<b data-compare-models-count></b></span>
               </button>
               <button class="compare-models-button" type="button" data-toggle-condition-comparison hidden>
-                <i class="ph ph-arrows-left-right" aria-hidden="true"></i><span>Compare conditions<b data-compare-conditions-count></b></span>
+                <i class="ph ph-arrows-left-right" aria-hidden="true"></i><span><span>Compare conditions</span><b data-compare-conditions-count></b></span>
               </button>
               <button class="next-location" type="button" data-next-location hidden>
                 <span><small>Continue exploring</small><strong data-next-label>Next location</strong></span>

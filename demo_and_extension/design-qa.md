@@ -3,27 +3,24 @@
 ## Comparison target
 
 - Source visual truth:
-  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-8aaa901d-15ac-4d41-8231-f6df005b870e.png`
-  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-9a8096cf-6f97-41f5-9e84-bd4d0c64ad91.png`
-  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-f6615861-8543-4190-866e-3eaa473bd043.png`
-  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-49398272-5563-4ab5-a302-2f9efa80e07c.png`
-  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-8c672b3c-e161-4e5b-9504-c581ee529ba5.png`
-  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-f32b0bfe-b2d0-466c-810b-52a95b6460bc.png`
-- Implementation evidence: Codex in-app browser local captures.
-- Checked viewports: 390 x 844, 432 x 820, 540 x 960, and 1280 x 720 CSS px.
-- Checked state: Utrecht; Gemini 3.8 Flash medium, aided; Interactive panorama.
+  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-030e4fc5-1edc-40c2-81e3-7ee0271e86df.png`
+  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-8e746407-db1f-4da6-976a-b1bcd1bbaf9a.png`
+  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-b2148248-85cc-4690-a8fb-4309f64fbdfe.png`
+  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-9176d781-18fe-47e6-9f47-ac31fd684469.png`
+  - `C:\Users\vanya\AppData\Local\Temp\codex-clipboard-ba135920-4a76-4f7f-bb6e-f6929bd433c2.png`
+- Implementation evidence: local Playwright browser captures and accessibility snapshots.
+- Checked viewports: 1440 x 900 and 430 x 932 CSS px.
+- Checked states: Utrecht interactive and covered-static conditions; GLM-5.3-Flash + MCP, GPT-6 Astra, and Grok 4.6 + MCP runtime displays; overview with the covered-static filter retained.
 
 ## Findings
 
-- Walk here: passed. It always opens a direct, keyless Google Maps panorama URL, avoiding embedded-key referrer restrictions.
-- Comparison controls: passed. Compare models and Compare conditions share one equal-height row on mobile.
-- Selector density: passed. The model track is wider, the condition fits in its narrower track, and custom arrows no longer reserve excess text space.
-- Selector menus: passed. Detail and evidence-mode selects use the dark palette, and the full condition label fits without a detached native overflow label.
-- Condition comparison: passed. The control remains in the layout; models with one recorded condition show an accurate disabled `· 1` state instead of making the button disappear.
-- Mobile width: passed. The internal scroll rail no longer exposes a right-side gutter.
-- Mobile scene: passed. One 1920 x 945 scene scales to the viewport at its natural aspect ratio rather than being cropped.
-- Scene overlays: passed. The evidence control is a compact clues button, and the mobile legend uses the available width so all three labels remain readable in a thin single row. Mobile still shows only a small curved segment of the globe whose center sits beyond the image's bottom-right edge.
-- Desktop preservation: passed. The full-bleed backdrop remains active and the mobile scene copy stays hidden.
-- Console: no errors observed during responsive QA.
+- Statistics placement: passed. The control is in the image's top-right corner and matches the visual-evidence control height on desktop; it remains compact at the top-right on mobile.
+- Globe legend: passed. The desktop legend uses the released bottom width instead of crowding three labels; mobile retains a thin single row.
+- Condition comparison: passed. The count is a separate gold badge, so no isolated dot or count wraps onto an awkward line.
+- Runtime wording: passed. Missing per-location static timing reads `Batch processed`; its tooltip explains that batched timings are not comparable. Missing interactive timing reads `Unavailable`.
+- Runtime evidence: passed for every timestamped source. GLM and Astra show per-location values for all 25 scenes; Grok MCP shows all 17 timestamped medium/hard values and accurately leaves its eight unaudited easy scenes unavailable.
+- Overview copy: passed. It remains `25 benchmark locations` when the selected condition changes, instead of presenting partial covered-static prediction coverage as the dataset size.
+- Responsive composition: passed. The two comparison controls remain aligned, and the top controls and bottom legend do not overlap at 430 px.
+- Console: application code emitted no errors; the local server returned only an unrelated missing `favicon.ico` 404.
 
 final result: passed

@@ -2475,3 +2475,111 @@ button, select, input { max-width: 100%; }
     grid-template-columns: minmax(0, 1fr) 166px;
   }
 }
+
+/* Keep the location utilities at their point of use: evidence and statistics above,
+   the wider legend below. The transparent wrapper must never block globe input. */
+.atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utilities {
+  display: block;
+  inset: 0;
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  pointer-events: none;
+}
+.atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utilities .map-legend {
+  position: absolute;
+  right: auto;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  width: min(760px, calc(100% - 32px));
+  min-height: 48px;
+  pointer-events: auto;
+}
+.atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utility-actions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  height: 52px;
+  pointer-events: auto;
+}
+.atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utility-actions .globe-stats-slot {
+  display: flex;
+  height: 100%;
+}
+.atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utility-actions .globe-stats-button,
+.atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utility-actions .globe-stats-button[aria-expanded="true"] {
+  position: static;
+  inset: auto;
+  width: auto;
+  min-height: 52px;
+  height: 52px;
+  padding-inline: 18px;
+  border: 1px solid rgba(255, 173, 102, .62);
+  border-radius: 3px;
+  background: rgba(4, 24, 35, .9);
+  box-shadow: 0 10px 30px rgba(0, 8, 13, .2);
+  backdrop-filter: blur(12px);
+}
+
+.atlas-app[data-view-state="detail"] .detail-actions [data-toggle-condition-comparison] {
+  position: relative;
+  padding-right: 42px;
+}
+.atlas-app[data-view-state="detail"] .detail-actions [data-toggle-condition-comparison] > span {
+  min-width: 0;
+}
+.atlas-app[data-view-state="detail"] .detail-actions [data-toggle-condition-comparison] > span > span {
+  white-space: normal;
+}
+.atlas-app[data-view-state="detail"] .detail-actions [data-toggle-condition-comparison] [data-compare-conditions-count] {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: inline-grid;
+  min-width: 24px;
+  height: 24px;
+  place-items: center;
+  padding-inline: 5px;
+  border: 1px solid rgba(255, 173, 102, .68);
+  border-radius: 999px;
+  color: var(--atlas-accent);
+  font-size: 1rem;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 680px) {
+  .atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utilities {
+    inset: 0;
+    width: auto;
+  }
+  .atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utilities .map-legend {
+    right: auto;
+    bottom: 6px;
+    left: 6px;
+    width: min(360px, calc(100% - 72px));
+    min-height: 28px;
+  }
+  .atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utility-actions {
+    top: 6px;
+    right: 6px;
+    height: 32px;
+  }
+  .atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utility-actions .globe-stats-slot {
+    display: flex;
+  }
+  .atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utility-actions .globe-stats-button,
+  .atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utility-actions .globe-stats-button[aria-expanded="true"] {
+    width: auto;
+    min-height: 32px;
+    height: 32px;
+    padding: 4px 9px;
+    gap: 5px;
+    font-size: 1rem;
+  }
+  .atlas-app[data-view-state="detail"]:not([data-evidence-mode="true"]) .map-utility-actions .globe-stats-button i {
+    font-size: 1rem;
+  }
+}

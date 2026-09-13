@@ -1233,22 +1233,58 @@ async function loadGlmConversationPredictions(sourcePath, errors) {
     return [];
   }
   const conversation = await readJson(absolutePath);
-  const pins = [];
+  const toolEvents = [];
   const visit = (value) => {
     if (!value || typeof value !== "object") return;
-    if (typeof value.title === "string" && value.title.endsWith("openguessr_submit_guess") && nonEmptyString(value.output)) {
-      try {
-        const pin = JSON.parse(value.output)?.pin;
-        if (Number.isFinite(pin?.latitude) && Number.isFinite(pin?.longitude)) {
-          const previous = pins.at(-1);
-          if (!previous || previous.lat !== pin.latitude || previous.lng !== pin.longitude) pins.push({ lat: pin.latitude, lng: pin.longitude });
-        }
-      } catch { /* Ignore non-JSON presentation fragments. */ }
+    if (typeof value.title === "string" && Number.isFinite(value.time?.start)) {
+      toolEvents.push(value);
     }
     for (const child of Object.values(value)) visit(child);
   };
   visit(conversation);
-  return pins.map((prediction, index) => {
+  toolEvents.sort((left, right) => left.time.start - right.time.start);
+
+  // The immutable Run 2 export includes the start/finish timestamps for every
+  // browser and OpenGuessr tool. A confirmed competition entry or successful
+  // Continue starts the next round; the successful submit finishes it.
+  let roundStartedAt = null;
+  const rounds = [];
+  for (const event of toolEvents) {
+    if (
+      event.title.endsWith("browser_mouse_click_xy") &&
+      event.input?.x === 988 &&
+      event.input?.y === 466
+    ) {
+      roundStartedAt = event.time.end ?? event.time.start;
+      continue;
+    }
+
+    if (event.title.endsWith("openguessr_continue") && nonEmptyString(event.output)) {
+      try {
+        if (JSON.parse(event.output)?.continued) {
+          roundStartedAt = event.time.end ?? event.time.start;
+        }
+      } catch { /* Ignore non-JSON presentation fragments. */ }
+      continue;
+    }
+
+    if (!event.title.endsWith("openguessr_submit_guess") || !nonEmptyString(event.output)) continue;
+    try {
+      const result = JSON.parse(event.output);
+      const pin = result?.pin;
+      if (!result?.submitted || !Number.isFinite(pin?.latitude) || !Number.isFinite(pin?.longitude)) continue;
+      const previous = rounds.at(-1)?.prediction;
+      if (previous?.lat === pin.latitude && previous?.lng === pin.longitude) continue;
+      rounds.push({
+        prediction: { lat: pin.latitude, lng: pin.longitude },
+        durationMs: Number.isFinite(roundStartedAt)
+          ? Math.max(0, event.time.start - roundStartedAt)
+          : null,
+      });
+    } catch { /* Ignore non-JSON presentation fragments. */ }
+  }
+
+  return rounds.map(({ prediction, durationMs }, index) => {
     const globalIndex = index + 1;
     const competitionId = globalIndex <= 8 ? "europe-easy" : globalIndex <= 17 ? "europe-medium" : "europe-hard";
     return {
@@ -1257,7 +1293,7 @@ async function loadGlmConversationPredictions(sourcePath, errors) {
         atlasLocationId: `${competitionId}--loc-${String(globalIndex).padStart(3, "0")}`,
         condition: "interactive-panorama",
         prediction,
-        durationMs: null,
+        durationMs,
       },
       source: relative(ROOT, absolutePath).replaceAll("\\", "/"),
     };
