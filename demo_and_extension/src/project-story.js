@@ -280,7 +280,7 @@ export function projectStoryMarkup(snapshot = buildProjectSnapshot()) {
           <button type="button" data-scroll-target="evidence">Explainability</button>
           <button type="button" data-scroll-target="team">Team</button>
         </div>
-        <a class="story-nav__github" href="https://github.com/IvanYachUkr/NAUTILUS-" target="_blank" rel="noopener noreferrer">
+        <a class="story-nav__github" href="https://github.com/IvanYachUkr/NAUTILUS" target="_blank" rel="noopener noreferrer">
           <i class="ph ph-github-logo" aria-hidden="true"></i>
           <span>Source</span>
         </a>
@@ -488,7 +488,7 @@ export function projectStoryMarkup(snapshot = buildProjectSnapshot()) {
                 <i class="ph-fill ph-globe-hemisphere-west" aria-hidden="true"></i>
                 Enter the explorer
               </button>
-              <a class="story-cta story-cta--ghost" href="https://github.com/IvanYachUkr/NAUTILUS-" target="_blank" rel="noopener noreferrer">
+              <a class="story-cta story-cta--ghost" href="https://github.com/IvanYachUkr/NAUTILUS" target="_blank" rel="noopener noreferrer">
                 <i class="ph ph-github-logo" aria-hidden="true"></i>
                 View on GitHub
               </a>

@@ -154,7 +154,7 @@ test("project story renders every research section with live benchmark values", 
   assert.doesNotMatch(markup, /> Specific</);
   assert.doesNotMatch(markup, /Pin-consistent/);
   assert.ok(markup.includes('data-case-model="Gemini 3.7 Flash · high, aided"'));
-  assert.ok(markup.includes("https://github.com/IvanYachUkr/NAUTILUS-"));
+  assert.ok(markup.includes("https://github.com/IvanYachUkr/NAUTILUS"));
   assert.ok(markup.includes('alt="Paris street scene at Place de la Bastille"'));
 });
 
