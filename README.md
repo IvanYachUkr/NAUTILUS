@@ -2,13 +2,20 @@
 
 # NAUTILUS
 
-### An evidence-first atlas of machine geolocation
+### Navigational Agentic Understanding Through Interpretable Localization Using Streetscapes
 
-[Explore the atlas](https://nautilus-geolocation.ivanukr.chatgpt.site/) · [Run locally](#run-the-website) · [Browse the data](demo_and_extension/data/README.md)
+[![Explore the live atlas](https://img.shields.io/badge/Explore-Live_Atlas-F0AA63?style=for-the-badge&labelColor=0B1D27)](https://nautilus-geolocation.ivanukr.chatgpt.site/)
+[![Read the paper](https://img.shields.io/badge/Read-The_Paper-77A7FF?style=for-the-badge&labelColor=0B1D27)](docs/paper/NAUTILUS.pdf)
+[![Browse results](https://img.shields.io/badge/Browse-Results-BFEA7C?style=for-the-badge&labelColor=0B1D27)](demo_and_extension/data/README.md)
+[![Run locally](https://img.shields.io/badge/Run-Locally-F7F1E7?style=for-the-badge&labelColor=0B1D27)](#run-the-website)
+
+[![Animated view of the NAUTILUS benchmark atlas](docs/readme/nautilus-atlas.gif)](https://nautilus-geolocation.ivanukr.chatgpt.site/)
+
+**Follow the guess. Inspect every cue.**
 
 </div>
 
-NAUTILUS evaluates how multimodal agents and vision baselines geolocate the same 25 European places. It pairs every result with inspectable source evidence: competition definitions, predictions, recordings, visual clues, timings, and reproducible analysis.
+NAUTILUS evaluates how multimodal agents and vision baselines geolocate the same 25 European places. It pairs every result with inspectable source evidence: competition definitions, predictions, recordings, visual cues, timings, and reproducible analysis.
 
 ## At a glance
 
@@ -53,6 +60,15 @@ Results below use the same 25 canonical starting images. Values are mean / media
 | SALAD + OSV-5M (Europe) | 1,308.5 / 929.2 km | 20% |
 
 The runnable implementations and source CSVs are grouped under [`baselines/`](baselines/). Website-ready normalized records are derived from those CSVs during the data build.
+
+## Explore the evidence
+
+The public atlas connects every aggregate result to the scene, prediction, and human-reviewed evidence behind it.
+
+| Prediction atlas | Visual cue inspection | Per-location statistics |
+| --- | --- | --- |
+| [![Global prediction atlas with model errors](docs/readme/atlas-overview.webp)](https://nautilus-geolocation.ivanukr.chatgpt.site/) | [![Paris street scene with reviewed cue regions](docs/readme/visual-cues.webp)](https://nautilus-geolocation.ivanukr.chatgpt.site/#case=europe-easy--loc-001&model=GLM-5.3-Flash+%2B+MCP+%C2%B7+Max&condition=interactive-panorama) | [![Paris benchmark statistics and cue review](docs/readme/location-statistics.webp)](https://nautilus-geolocation.ivanukr.chatgpt.site/#case=europe-easy--loc-001&model=GLM-5.3-Flash+%2B+MCP+%C2%B7+Max&condition=interactive-panorama) |
+| Rotate the globe and follow every prediction path. | Open spatial and text-only cues in the source scene. | Compare repeated runs, error, accuracy, and cue quality. |
 
 ## Repository guide
 
