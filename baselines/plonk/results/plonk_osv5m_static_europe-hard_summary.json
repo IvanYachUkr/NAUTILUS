@@ -1,0 +1,46 @@
+{
+  "dataset": "europe-hard",
+  "model": "PLONK OSV-5M",
+  "checkpoint": "nicolas-dufour/PLONK_OSV_5M",
+  "device": "cpu",
+  "n_images": 8,
+  "generated_at_utc": "2026-09-13T13:01:41.949941+00:00",
+  "distance_unit": "km",
+  "reproducibility": {
+    "base_seed": 42,
+    "samples_per_image": 1
+  },
+  "prediction_error": {
+    "mean_km": 481.21,
+    "median_km": 390.744,
+    "std_km": 365.712,
+    "rmse_km": 604.408,
+    "min_km": 90.106,
+    "max_km": 1029.689
+  },
+  "prediction_threshold_accuracy": {
+    "within_1_km_percent": 0.0,
+    "within_25_km_percent": 0.0,
+    "within_200_km_percent": 37.5,
+    "within_750_km_percent": 62.5,
+    "within_2500_km_percent": 100.0
+  },
+  "best_prediction_case": {
+    "location_id": "loc_023",
+    "city_or_region": "Pašakiai, Radviliškis District Municipality, Šiauliai County",
+    "error_km": 90.106
+  },
+  "worst_prediction_case": {
+    "location_id": "loc_018",
+    "city_or_region": "Arcadia Regional Unit, Peloponnese",
+    "error_km": 1029.689
+  },
+  "timing": {
+    "definition": "Warm per-image inference after one-time model loading; includes pipeline preprocessing, generation and coordinate output; excludes image disk decoding and evaluation metrics.",
+    "model_load_seconds": 4.223,
+    "mean_inference_seconds": 3.923,
+    "median_inference_seconds": 3.909,
+    "std_inference_seconds": 0.041,
+    "total_inference_seconds": 31.385
+  }
+}

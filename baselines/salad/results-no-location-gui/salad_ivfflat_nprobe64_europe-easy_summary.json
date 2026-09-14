@@ -1,0 +1,83 @@
+{
+  "dataset": "europe-easy",
+  "model": "SALAD + OSV-5M",
+  "index": "ivfflat",
+  "device": "cuda",
+  "n_images": 8,
+  "generated_at_utc": "2026-09-13T12:52:19.858119+00:00",
+  "distance_unit": "km",
+  "top1_error": {
+    "mean_km": 1086.708,
+    "median_km": 1060.834,
+    "std_km": 733.269,
+    "rmse_km": 1310.96,
+    "min_km": 110.254,
+    "max_km": 2170.913,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 0.0,
+      "within_200_km_percent": 12.5,
+      "within_750_km_percent": 50.0,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "topk_mean_error": {
+    "mean_km": 714.286,
+    "median_km": 739.369,
+    "std_km": 283.467,
+    "rmse_km": 768.478,
+    "min_km": 217.254,
+    "max_km": 1082.663,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 0.0,
+      "within_200_km_percent": 0.0,
+      "within_750_km_percent": 50.0,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "topk_weighted_error": {
+    "mean_km": 713.925,
+    "median_km": 737.89,
+    "std_km": 281.804,
+    "rmse_km": 767.53,
+    "min_km": 217.662,
+    "max_km": 1084.565,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 0.0,
+      "within_200_km_percent": 0.0,
+      "within_750_km_percent": 50.0,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "topk_oracle_error": {
+    "mean_km": 392.514,
+    "median_km": 408.767,
+    "std_km": 328.649,
+    "rmse_km": 511.935,
+    "min_km": 25.554,
+    "max_km": 1118.51,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 0.0,
+      "within_200_km_percent": 37.5,
+      "within_750_km_percent": 87.5,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "timing": {
+    "definition": "Warm per-image inference after one-time model/index loading; includes descriptor preprocessing/forward pass and an independent retrieval search for that query; excludes image disk decoding, the separate batched prediction search, and evaluation metrics.",
+    "model_load_seconds": 22.668,
+    "index_load_seconds": 0.898,
+    "batched_prediction_search_seconds": 68.412,
+    "mean_descriptor_seconds": 0.055,
+    "median_descriptor_seconds": 0.055,
+    "mean_search_seconds": 1.047,
+    "median_search_seconds": 0.962,
+    "mean_inference_seconds": 1.101,
+    "median_inference_seconds": 1.015,
+    "std_inference_seconds": 0.256,
+    "total_inference_seconds": 8.811
+  }
+}

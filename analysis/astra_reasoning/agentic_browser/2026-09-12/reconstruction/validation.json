@@ -1,0 +1,108 @@
+{
+  "method": "Leave-one-out marker-anchor calibration; held-out exact predictions not used to calibrate their own anchor offset. Result distance only selects discrete map zoom; it is not fitted continuously.",
+  "controls": [
+    {
+      "run": 1,
+      "tier": "easy",
+      "round": 2,
+      "inferred_zoom": 20,
+      "held_out_coordinate_error_m": 0.0221,
+      "metres_per_pixel": 0.0907,
+      "error_in_pixels": 0.2438
+    },
+    {
+      "run": 1,
+      "tier": "easy",
+      "round": 8,
+      "inferred_zoom": 18,
+      "held_out_coordinate_error_m": 0.2511,
+      "metres_per_pixel": 0.2904,
+      "error_in_pixels": 0.8647
+    },
+    {
+      "run": 1,
+      "tier": "medium",
+      "round": 5,
+      "inferred_zoom": 20,
+      "held_out_coordinate_error_m": 0.0457,
+      "metres_per_pixel": 0.1139,
+      "error_in_pixels": 0.4013
+    },
+    {
+      "run": 1,
+      "tier": "medium",
+      "round": 6,
+      "inferred_zoom": 9,
+      "held_out_coordinate_error_m": 121.877,
+      "metres_per_pixel": 153.4068,
+      "error_in_pixels": 0.7945
+    },
+    {
+      "run": 2,
+      "tier": "easy",
+      "round": 4,
+      "inferred_zoom": 20,
+      "held_out_coordinate_error_m": 0.0364,
+      "metres_per_pixel": 0.0982,
+      "error_in_pixels": 0.3707
+    },
+    {
+      "run": 2,
+      "tier": "medium",
+      "round": 4,
+      "inferred_zoom": 16,
+      "held_out_coordinate_error_m": 0.5669,
+      "metres_per_pixel": 1.502,
+      "error_in_pixels": 0.3774
+    },
+    {
+      "run": 2,
+      "tier": "medium",
+      "round": 8,
+      "inferred_zoom": 9,
+      "held_out_coordinate_error_m": 196.3291,
+      "metres_per_pixel": 201.3382,
+      "error_in_pixels": 0.9751
+    },
+    {
+      "run": 2,
+      "tier": "medium",
+      "round": 9,
+      "inferred_zoom": 14,
+      "held_out_coordinate_error_m": 2.926,
+      "metres_per_pixel": 5.7061,
+      "error_in_pixels": 0.5128
+    },
+    {
+      "run": 3,
+      "tier": "medium",
+      "round": 6,
+      "inferred_zoom": 14,
+      "held_out_coordinate_error_m": 2.3554,
+      "metres_per_pixel": 4.7939,
+      "error_in_pixels": 0.4913
+    },
+    {
+      "run": 3,
+      "tier": "hard",
+      "round": 4,
+      "inferred_zoom": 15,
+      "held_out_coordinate_error_m": 2.0829,
+      "metres_per_pixel": 3.2723,
+      "error_in_pixels": 0.6365
+    }
+  ],
+  "excluded_control": {
+    "run": 1,
+    "tier": "medium",
+    "round": 7,
+    "reason": "Truth flag partly obscured by recorder overlay; original exact coordinate retained."
+  },
+  "anchor_offset_all_controls": [
+    9.935350127518177,
+    3.923897018074058
+  ],
+  "max_held_out_error_pixels": 0.9751,
+  "original_numeric_pairs_preserved": 11,
+  "reconstructed_pairs": 64
+}

@@ -1,0 +1,9 @@
+Run a static-image geolocation batch on every PNG in C:/tmp/nautilus-masked-inputs-20260911 (image_01.png through image_15.png). This folder contains only the 15 input images, with neutral filenames and no answer files.
+
+Automatically inspect each image visually, one by one, and finish all 15 without asking me to continue. You may list that folder and use your image-reading tools to view its PNGs. Base each prediction only on that image and your own knowledge. Do not use web search, MCP, browser/computer controls, image metadata, other folders/files, previous chats, or ground-truth answers.
+
+For EACH image give: (1) five concise visible cues and what they suggest, (2) best country and city/region, (3) up to two alternatives, (4) confidence, and (5) exactly one best-guess latitude and longitude in decimal degrees. Make one independent prediction per image. If an image cannot be viewed, mark it unavailable instead of inventing a guess and continue with the rest.
+
+Finish with a compact table containing filename, country, city/region, latitude, longitude, and confidence for all 15. Save the complete per-image cues and final summary to C:/tmp/nautilus-masked-sol-max-batch-20260911.md and provide the summary in your final response. Start now and complete the whole folder autonomously.
+
+Execution clarification: use the local view_image tool to see the pixels and the filesystem tools only to list/read these input PNGs and write your own report. The output path above is the only exception to the instruction against other folders/files. Do not read existing reports, repository files, memories, other agents' notes, or any answer mapping. Do not delegate to additional agents. No git operations are requested.

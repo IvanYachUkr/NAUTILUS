@@ -1,0 +1,46 @@
+{
+  "name": "@nautilus-benchmark/openguessr-mcp",
+  "version": "0.1.0",
+  "description": "A benchmark-safe OpenGuessr MCP built on top of Playwright MCP.",
+  "type": "module",
+  "keywords": [
+    "mcp",
+    "openguessr",
+    "playwright",
+    "geolocation",
+    "benchmark"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanYachUkr/NAUTILUS-.git",
+    "directory": "demo_and_extension/openguessr-mcp"
+  },
+  "exports": {
+    ".": "./src/proxy.js",
+    "./server": "./src/http-server.js"
+  },
+  "files": [
+    "bin",
+    "browser",
+    "src",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "openguessr-mcp": "bin/openguessr-mcp.js"
+  },
+  "scripts": {
+    "start": "node bin/openguessr-mcp.js",
+    "test": "node --test",
+    "test:playwright": "node --test integration/playwright-proxy.integration.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "@playwright/mcp": "0.0.79"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

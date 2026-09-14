@@ -1,0 +1,108 @@
+grok.exe : [2m2026-08-31T12:37:08.060370Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\Users\vanya\Documents\Computer_Vision_FInal_Project\scripts\Start-GrokNau
+tilusRecorded.ps1:136 char:1
++ & grok @grokArgs 2>&1 | Tee-Object -FilePath $transcriptFullPath
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-08-31T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-08-31T12:37:08.060467Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-08-31T12:37:10.686583Z[0m [31mERROR[0m fail to get common stream: 
+Client error: HTTP status client error (404 Not Found) for url 
+(http://localhost:8931/mcp)
+[2m2026-08-31T12:37:10.687812Z[0m [33m WARN[0m sse client event stream 
+terminated with error: Err(Client(reqwest::Error { kind: Status(404, None), 
+url: "http://localhost:8931/mcp" }))
+I'll start by loading the Playwright tool schemas, then screenshot the current competition modal and wait until the recorder shows ARMED.Taking the first full-viewport screenshot of the competition modal before any click.Recorder is ARMED with the correct dataset and participant. Clicking Confirm at the calibrated control.Round 1 is live: Competition, REC, timer 04:54. Cues point to Barcelona (`Carrer de` + Spanish street). Opening the guess map.World map is open; Competition 1/9 and 04:24 confirmed. Pinning Spain (Barcelona belief).Pin landed in eastern Canada — correcting once onto labeled Spain.Pin is on labeled Spain with Guess active. Submitting immediately.Round 1 saved (Valencia, 1,171.9 km). Clicking Continue.Round 2: Italian `Via Francesco` and cassonetti. Opening the map to pin Italy.Default pin is in Africa. Placing the first belief pin on labeled Italy.Pin is on Italy with Guess active. Submitting.Guess was swallowed; retrying the visible Guess button.Round 2 saved (Bologna, 411.4 km). Clicking Continue.Round 3: Dutch `Amsterdamseweg` and bikes. Opening the map to pin the Netherlands.Pinning the Netherlands, just east of the United Kingdom label.Pin is on the UK/Netherlands cluster with Guess active. Submitting.Round 3 saved (Netherlands, 402 km). Clicking Continue.Round 4: `N444` and Dutch `FOTO AKTIEF` — Flanders/Belgium. Opening the map.Default pin is in the Indian Ocean. Pinning Belgium, between France and Germany.Pin is on Iceland — correcting once onto Belgium, south of the UK label.Pin is on the UK/Belgium/France cluster. Submitting.Round 4 saved (Ghent, Belgium, 683.9 km). Clicking Continue.Recorder is still ARMED on round 5. Waiting one screenshot for REC before any pin or movement.REC is on. Opening the map to pin Portugal.Default pin is near Australia. Pinning Portugal, west of labeled Spain.Pin is offshore in the Atlantic. Correcting once onto Iberia, west of the Spain label.Pin is on Iberia (Spain/Portugal). Submitting.Round 5 saved (Coimbra, Portugal, 382.7 km). Clicking Continue.Round 6: Swedish `Bergagatan` and wooden houses. Opening the map to pin Sweden.Default pin is in West Africa. Pinning Sweden, east of the Norway label.Pin is on Scandinavia. Submitting.Round 6 saved (Uppsala, Sweden, 756.8 km). Clicking Continue.Round 7: Baltic suburban street, likely Estonian `Sepa-`. Opening the map.Pinning Estonia, north of labeled Poland.Pin is on the Poland/Baltic cluster. Submitting.Round 7 saved (Estonia, 723.5 km). Clicking Continue.Round 8: Alpine village and `Jelšova` — likely Slovenia. Opening the map.Default pin is near Australia. Pinning Slovenia, northeast of labeled Italy.Pin is on the Alps/Italy/Slovenia cluster. Submitting.Round 8 saved (Slovakia, 718.2 km). Clicking Continue.Round 9: yellow center line and stone walls — Ireland. Opening the map.Pinning Ireland, west of the United Kingdom label.Pin is on Ireland/UK. Submitting the final round.Round 9 saved (Galway, 287.3 km; 9/9 recorded). Clicking Continue for the leaderboard — not disarming yet.Leaderboard is up at 25,093 pts. Holding one more screenshot to confirm no Round 10, then disarming.Leaderboard held across two cycles with no Round 10. Clicking Done & disarm.Competition complete. Official total **25,093 Pts.** across **9/9** rounds, recorder **9/9 saved** then disarmed.
+
+---
+
+### Round 1 — Valencia, Spain
+**INITIAL:** `Carrer de…` (Catalan), green igloo glass bin, balcony street, GENERALLI. Belief: Barcelona / Catalonia, Spain. Alt: Valencia. Confidence: high for Catalan Spain.  
+**PROVISIONAL PIN:** First click hit eastern Canada; one correction onto labeled Spain.  
+**FINAL BELIEF + PIN:** Spain (Barcelona/Catalonia). World-zoom pin on the Spain label. Guess active.  
+**RESULT:** Revealed **València, Spain**. **1,171.9 km**. Country correct; pin sat in the Bay of Biscay. SAVED 1/9. Belief-to-pin: Spain, slightly offshore north of Iberia.
+
+### Round 2 — Bologna, Italy
+**INITIAL:** `Via Francesco…`, Italian cassonetti, red brick, blue P. Belief: Italy, likely north. Confidence: high Italy.  
+**PROVISIONAL PIN:** Default Africa discarded; first meaningful pin on Italy.  
+**FINAL BELIEF + PIN:** Italy. Pin on the Italy/Alps cluster.  
+**RESULT:** Revealed **Bologna, Italy**. **411.4 km**. First Guess swallowed (map collapsed); retry submitted. Pin landed near Aix/Marseille, France. SAVED 2/9. Belief-to-pin: Italy intent, France landfall at world zoom.
+
+### Round 3 — Netherlands (Amsterdam area)
+**INITIAL:** `Amsterdamseweg`, bikes, yellow bollards, brick, cycle track. Belief: Netherlands near Amsterdam. Confidence: high NL.  
+**PROVISIONAL PIN:** UK/Netherlands cluster, east of the UK label.  
+**FINAL BELIEF + PIN:** Netherlands. Coarse NW-Europe pin.  
+**RESULT:** Revealed **Netherlands** (Amsterdam area). **402 km**. Pin in southern England (South Downs). SAVED 3/9. Belief-to-pin: NL, UK landfall.
+
+### Round 4 — Ghent, Belgium
+**INITIAL:** `N444`, `FOTO AKTIEF` (Dutch), Flemish suburban houses, red brick sidewalks. Belief: Flanders, Belgium. Alt: Netherlands. Confidence: medium-high Belgium.  
+**PROVISIONAL PIN:** First click Iceland; one correction onto UK/France/Belgium.  
+**FINAL BELIEF + PIN:** Belgium. Pin on the Low Countries/UK blob.  
+**RESULT:** Revealed **Ghent, Belgium**. **683.9 km**. Pin in the Celtic Sea west of Wales. SAVED 4/9. Belief-to-pin: Belgium, offshore west of the UK.
+
+### Round 5 — Coimbra, Portugal
+**INITIAL:** `R. Figueira da F…`, azulejos, Portuguese façades. Recorder started ARMED; waited one frame until REC. Belief: Portugal. Confidence: high.  
+**PROVISIONAL PIN:** First pin in the Atlantic west of Iberia (offshore); one correction onto Iberia/Spain.  
+**FINAL BELIEF + PIN:** Portugal. Pin on Spain/Iberia.  
+**RESULT:** Revealed **Coimbra, Portugal**. **382.7 km**. Pin in northern Galicia, Spain. SAVED 5/9. Belief-to-pin: Portugal, Galicia landfall.
+
+### Round 6 — Uppsala, Sweden
+**INITIAL:** `Bergagatan` (`-gatan`), painted wooden houses. Belief: Sweden. Alt: Finland-Swedish. Confidence: high Sweden.  
+**PROVISIONAL PIN:** Default West Africa discarded; pin on Scandinavia near Norway.  
+**FINAL BELIEF + PIN:** Sweden. Pin on the Norway/Sweden peninsula.  
+**RESULT:** Revealed **Uppsala, Sweden**. **756.8 km**. Pin in the North Sea west of Norway. SAVED 6/9. Belief-to-pin: Sweden, offshore Norway.
+
+### Round 7 — Estonia
+**INITIAL:** `Sepaku…` / `Sepa-`, Baltic wooden house, metal fences. Belief: Estonia. Alt: Latvia. Confidence: medium-high Baltic.  
+**PROVISIONAL PIN:** North of Poland / Baltic–Poland cluster.  
+**FINAL BELIEF + PIN:** Estonia. Pin on Poland/Ukraine.  
+**RESULT:** Revealed **Estonia**. **723.5 km**. Pin in eastern Poland. SAVED 7/9. Belief-to-pin: Estonia, Poland landfall.
+
+### Round 8 — Slovakia
+**INITIAL:** `Jelšova`, Alpine village, metal roofs, forested mountains. Belief: Slovenia. Alt: Slovakia. Confidence: medium.  
+**PROVISIONAL PIN:** Default ocean near Australia discarded; pin on Italy/Alps.  
+**FINAL BELIEF + PIN:** Slovenia. Pin on the Italy/Germany/Alps cluster.  
+**RESULT:** Revealed **Slovakia** (Tatras). **718.2 km**. Pin on the Italy–Switzerland–Austria border. SAVED 8/9. Belief-to-pin: Slovenia intent; Slovakia was the named alternative and the true country.
+
+### Round 9 — Galway, Ireland
+**INITIAL:** Yellow dashed centre line, stone walls, white houses. Belief: Republic of Ireland. Confidence: high.  
+**PROVISIONAL PIN:** West of the United Kingdom label (Ireland).  
+**FINAL BELIEF + PIN:** Ireland. Pin on the Ireland/UK cluster.  
+**RESULT:** Revealed **Galway, Ireland**. **287.3 km**. Pin in the Atlantic SW of Ireland. SAVED 9/9. Belief-to-pin: Ireland, slightly offshore.
+
+---
+
+### FINAL ROUND RESULT
+Round 9 submitted and saved. Distance **287.3 km**, Galway, Ireland. Recorder showed **Competition recorded · 9/9 rounds saved**.
+
+### FINAL CONTINUE CLICKED
+Continue on the round-9 result screen was clicked once and produced the results modal. Not swallowed.
+
+### LEADERBOARD COMMITTED
+Results for **REC Grok R3 Medium 300s**: **#1 Ivan Iachnyk — 25,093 Pts.** (You & friends and All). Held across two screenshot cycles. No phantom Round 10.
+
+### RECORDER DONE
+Clicked **Done & disarm**. HUD disappeared. Last visible saved count was **9/9**.
+
+---
+
+**Summary**
+
+| Item | Value |
+|---|---|
+| Official total | **25,093 Pts.** |
+| Rounds played / saved | **9 / 9** |
+| Valid (non-default) markers submitted | **9 / 9** |
+| Timeouts / unplaced defaults submitted | **0** |
+| Swallowed actions | Round 2 Guess once (retried OK) |
+| Country-level semantic hits | 8/9 (R8 believed Slovenia, true Slovakia) |
+| Belief-to-pin | All 9 matched the intended country cluster at world zoom; several result pins were offshore or in an adjacent country because the map was never zoomed |
+| Distances (km) | 1172, 411, 402, 684, 383, 757, 724, 718, 287 |
+
+All pins were coarse world-map country pins under the controller-speed rule. Honest uncertainty: R8 Slovenia vs Slovakia, R4 Belgium vs Netherlands, R7 Estonia vs Latvia; world-zoom pin tips often sat in water even when the intended landmass was correct.

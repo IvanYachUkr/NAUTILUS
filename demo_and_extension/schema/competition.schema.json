@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/geo-evidence-atlas/competition.schema.json",
+  "title": "OpenGuessr competition definition",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "default": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Optional when the filename can be used as the competition id."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional; defaults to a humanized filename."
+    },
+    "shortName": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Compact label used on location cards and recorder controls."
+    },
+    "datasetId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Optional parent dataset identifier shared by related competition files."
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Optional display/export order for related competition definitions."
+    },
+    "description": {
+      "type": "string"
+    },
+    "splitIfNeeded": {
+      "type": "boolean",
+      "default": true,
+      "description": "Automatically export multiple OpenGuessr TXT files when the logical competition contains more than 20 locations."
+    },
+    "locations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/location"
+      },
+      "description": "Preferred format: location metadata and Google Street View URLs live directly in the competition definition."
+    },
+    "locationIds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      },
+      "description": "Legacy format referencing files under data/locations."
+    },
+    "openGuessr": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "roundLengthSeconds": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "duration": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "visibility": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "restriction": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "required": [
+        "locations"
+      ],
+      "not": {
+        "required": [
+          "locationIds"
+        ]
+      }
+    },
+    {
+      "required": [
+        "locationIds"
+      ],
+      "not": {
+        "required": [
+          "locations"
+        ]
+      }
+    }
+  ],
+  "$defs": {
+    "location": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "country",
+        "city_or_region",
+        "scene_type",
+        "difficulty",
+        "google_maps_link"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string",
+          "minLength": 1
+        },
+        "city_or_region": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scene_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "primary_clue_type": {
+          "type": "string"
+        },
+        "selection_notes": {
+          "type": "string"
+        },
+        "google_maps_link": {
+          "type": "string",
+          "format": "uri",
+          "description": "Full desktop Google Street View URL. Coordinates and camera state are derived from this field."
+        }
+      }
+    }
+  }
+}

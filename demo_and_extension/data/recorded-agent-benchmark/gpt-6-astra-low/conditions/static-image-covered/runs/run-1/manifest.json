@@ -1,0 +1,92 @@
+{
+  "condition": "masked starting images; static image batch",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "execution": "Codex subagent, fresh context (fork_turns=none)",
+  "status": "completed; report written",
+  "input_source_commit": "12b9790",
+  "input_images": [
+    {
+      "image": "image_01.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "sha256": "D2515D3CB4D4B4C9F7A4B91FE43322FCBE5EA0672FB3753D56D4C548FFB29D26"
+    },
+    {
+      "image": "image_02.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "sha256": "2B92C7B1A165617B37CC0BF7E4B83EAE18093000FD67D19E89041AFADFFE91D7"
+    },
+    {
+      "image": "image_03.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+      "sha256": "A400AAEAAF9E7F47B1E1AF0D071A22425A9F9CC0C85533833D712763051E37A7"
+    },
+    {
+      "image": "image_04.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+      "sha256": "FC67D6A2346F23BF98473FEF2D43FFC1A85EDA8EFD81B9AA4D2C8B28B517F980"
+    },
+    {
+      "image": "image_05.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "sha256": "F9172F7DF9BACCB3262A7E9DDCCB7DDD7BBBF9FC4AA55571882C5E4D25B96DD2"
+    },
+    {
+      "image": "image_06.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+      "sha256": "C073EC3E2FAF2D47C589E907DFD13BF98D3E6F60EAC2F48B8E810EFEC19793F6"
+    },
+    {
+      "image": "image_07.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+      "sha256": "7892DB3C226AABFEF1AEA5D350970EEF5F4BF792668BDE02E354ACF02FD89A30"
+    },
+    {
+      "image": "image_08.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+      "sha256": "46911CA47625990514DD063B7B136C9DF555A871C1CEEA9A17A692388AC8CBEA"
+    },
+    {
+      "image": "image_09.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+      "sha256": "03ADF164425ED1888DF34D8AC15119C80CEC3DCA8900295F48BA344698D37D7D"
+    },
+    {
+      "image": "image_10.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "sha256": "82A1581152BF27F76A5A34B8EDF464508A53DFEA7E42F6D5B00FBA7C4A515CAB"
+    },
+    {
+      "image": "image_11.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+      "sha256": "14F2905178D6C9828089B2A7D46A4C3EAB20B44D8B595B680457D931F3E3B5B2"
+    },
+    {
+      "image": "image_12.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+      "sha256": "9BF4CBD2181F41362582F725D51E6ECD0751BAF143480423456BB1B7A63C5A2B"
+    },
+    {
+      "image": "image_13.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+      "sha256": "81C801EFFA8439F415460E992F86F41CEB0A46D0C50AE9829842BC166407178C"
+    },
+    {
+      "image": "image_14.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+      "sha256": "F8D1B76E56281560D5D38701AB2DD36F4F8865982A9D6B67EED160A19FA0A8AC"
+    },
+    {
+      "image": "image_15.png",
+      "source": "demo_and_extension/data/starting-images-covered/map_metadata_cover/europe-hard/loc_025.png",
+      "sha256": "0FE348523B21557DA6D7B7066247F079D7A94B8C43081AAD39F4302090BC14B4"
+    }
+  ],
+  "prediction_count": 15,
+  "cue_count": 75,
+  "all_images_reported_viewable": true,
+  "report_sha256": "c26011bf1c847e55f53fcf53291b91ddf575d3a8ee2d333498353f6030f06350",
+  "exported_at_utc": "2026-09-11T16:23:32.414228+00:00",
+  "validation": "15 distinct image sections, exactly five cues per image, alternatives and confidence present, section coordinates match summary table, source image hashes match input copies and repository PNGs.",
+  "export_policy": "Delivered model report preserved byte-for-byte; structured predictions derived from its summary table. Source mapping added during export only."
+}

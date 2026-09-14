@@ -1,0 +1,182 @@
+{
+  "condition": "grok-4.6-xhigh-mcp-one-shot",
+  "model": "grok-4.6",
+  "reasoning_effort": "xhigh",
+  "grok_cli_version": "1.0.4",
+  "round_seconds": 300,
+  "prompts": {
+    "medium": {
+      "path": "../../../../openguessr-mcp/integration/grok-medium-one-shot-mcp-prompt.md",
+      "sha256": "7BB3BC0E898666A1C163595560E24D1EE0158B2F89070DB2BF7713E9A98BF7AB"
+    },
+    "hard": {
+      "path": "../../../../openguessr-mcp/integration/grok-hard-one-shot-mcp-prompt.md",
+      "sha256": "ED937BBFA0689A75D1677C923C51438BB2AEB1F7CCA0B7E21AF009913C99034B"
+    }
+  },
+  "prompt_selection": {
+    "dataset": "europe-medium",
+    "same_fixed_scenes": true,
+    "progressive": {
+      "competition_id": 24619,
+      "official_score": 35412,
+      "prompt_sha256": "A9D6D6A73D274329B5544E29F8839B0261F682415399C6C24FE34E3E3B52B1A7",
+      "run_directory": "../runs/mcp-refinement-medium-r1"
+    },
+    "one_shot_control": {
+      "competition_id": 24623,
+      "official_score": 36973,
+      "run_directory": "../runs/mcp-one-shot-medium-r1"
+    },
+    "one_shot_delta_points": 1561,
+    "one_shot_relative_improvement_percent": 4.407545464814752,
+    "selected_policy": "one-shot",
+    "reason": "Only one belief-driven refinement was observed and it slightly worsened the round; most extra map actions did not change the chosen coordinates."
+  },
+  "datasets": {
+    "europe-medium": {
+      "rounds_per_run": 9,
+      "maximum_points_per_run": 45000,
+      "runs": [
+        {
+          "run": "mcp-one-shot-medium-r1",
+          "competition_id": 24623,
+          "competition_name": "Grok Medium OneShot 300s R1",
+          "leaderboard_url": "https://openguessr.com/competitions?leaderboard=24623",
+          "official_score": 36973,
+          "completed_rounds": 9,
+          "submitted_rounds": 8,
+          "default_pins": 1,
+          "per_round_scores": [62, 4990, 4876, 4855, 4193, 4682, 4242, 4719, 4354],
+          "run_directory": "../runs/mcp-one-shot-medium-r1",
+          "evidence_sha256": {
+            "transcript.txt": "70BAB4EB35289CD5D05844E7B3F09F1FED96CBDD2B4063029673CE1A23FDE71A",
+            "mcp-audit.jsonl": "D2162399874F0EBEA0B7DE60939E9B855661511B2DBC6C9ECEE8B2F062D71911",
+            "official-result.png": "FCBBFE5624DA0CC3EF1F79E27114042F60E6743103A5588621C2B240E3B74FC5"
+          }
+        },
+        {
+          "run": "mcp-one-shot-medium-r2",
+          "competition_id": 24624,
+          "competition_name": "Grok Medium OneShot 300s R2",
+          "leaderboard_url": "https://openguessr.com/competitions?leaderboard=24624",
+          "official_score": 38125,
+          "completed_rounds": 9,
+          "submitted_rounds": 8,
+          "default_pins": 1,
+          "per_round_scores": [62, 4993, 4989, 4870, 4501, 4677, 4240, 4814, 4979],
+          "run_directory": "../runs/mcp-one-shot-medium-r2",
+          "evidence_sha256": {
+            "transcript.txt": "35229E865B3A6A4409774ADDE281A52390625CD1EC5F1FC6409D7492AED3F943",
+            "mcp-audit.jsonl": "F3F7E72C5C55BEB57E8A567D1338A6DB6E1E907B08116EE56B36253DD94909F1",
+            "official-result.png": "AD960D395019ACD5A77C5597405D63C6535CF5BB6D9ED8AA46C3E994AC059535"
+          }
+        },
+        {
+          "run": "mcp-one-shot-medium-r3-retry2",
+          "canonical_run": "mcp-one-shot-medium-r3",
+          "competition_id": 24629,
+          "competition_name": "Grok Medium OneShot 300s R3c",
+          "leaderboard_url": "https://openguessr.com/competitions?leaderboard=24629",
+          "official_score": 32122,
+          "completed_rounds": 9,
+          "submitted_rounds": 7,
+          "default_pins": 2,
+          "per_round_scores": [62, 31, 4867, 4965, 4195, 4696, 4250, 4497, 4559],
+          "run_directory": "../runs/mcp-one-shot-medium-r3-retry2",
+          "evidence_sha256": {
+            "transcript.txt": "6F9089D1289D25541C7967FC49ED8FCBF7E7538A3601F4FA2011CEA34A5E7427",
+            "mcp-audit.jsonl": "69ABD23314B3EDE7B9CD2FB0973CC43DF28B6159733FD91F08A684F587346361",
+            "official-result.png": "BABA41E1BC556507F9EDCBD4B19A4BC5986053DBE881AF747B29763570AC2363"
+          }
+        }
+      ],
+      "official_score_total": 107220,
+      "official_score_mean": 35740,
+      "mean_percent_of_maximum": 79.42222222222222,
+      "completed_rounds_total": 27,
+      "default_pins_total": 4
+    },
+    "europe-hard": {
+      "rounds_per_run": 8,
+      "maximum_points_per_run": 40000,
+      "runs": [
+        {
+          "run": "mcp-one-shot-hard-r1",
+          "competition_id": 24630,
+          "competition_name": "Grok Hard OneShot 300s R1",
+          "leaderboard_url": "https://openguessr.com/competitions?leaderboard=24630",
+          "official_score": 32428,
+          "completed_rounds": 8,
+          "submitted_rounds": 8,
+          "default_pins": 0,
+          "per_round_scores": [4363, 4977, 2616, 4905, 2451, 4885, 4478, 3753],
+          "run_directory": "../runs/mcp-one-shot-hard-r1",
+          "evidence_sha256": {
+            "transcript.txt": "9A49BD4410E0FDF37DBBDBF3BCC5FD9573EC6BA5AD4592BFA7B0100BBE1F4C79",
+            "mcp-audit.jsonl": "1D1896BCC8754C9B3CFE060E76B25A2F0F3AC603986B563C473AA1769DE335FB",
+            "official-result.png": "575B92FD468C3CD3DB68939AD9E4ECD6AA3A93A5F8ACB699E4D53F0BBD195A7C"
+          }
+        },
+        {
+          "run": "mcp-one-shot-hard-r2",
+          "competition_id": 24631,
+          "competition_name": "Grok Hard OneShot 300s R2",
+          "leaderboard_url": "https://openguessr.com/competitions?leaderboard=24631",
+          "official_score": 29646,
+          "completed_rounds": 8,
+          "submitted_rounds": 7,
+          "default_pins": 1,
+          "per_round_scores": [43, 4772, 2706, 4912, 4258, 4860, 4596, 3499],
+          "run_directory": "../runs/mcp-one-shot-hard-r2",
+          "evidence_sha256": {
+            "transcript.txt": "529B05F1287E26B7759F08932C51D74D18DDE0C8EF157BE8BAF90A9F543CF20D",
+            "mcp-audit.jsonl": "E7DE894CC62E73D2147BE4BD8A1B6DC05E724279CB60AD65B775A23563361DEF",
+            "official-result.png": "FC81FB4A523ACD8E2A53C3736A37B327832ECED4CCC850EF071BD13130684470"
+          }
+        },
+        {
+          "run": "mcp-one-shot-hard-r3",
+          "competition_id": 24632,
+          "competition_name": "Grok Hard OneShot 300s R3",
+          "leaderboard_url": "https://openguessr.com/competitions?leaderboard=24632",
+          "official_score": 26162,
+          "completed_rounds": 8,
+          "submitted_rounds": 7,
+          "default_pins": 1,
+          "per_round_scores": [43, 4637, 2651, 4801, 3899, 1948, 4607, 3576],
+          "round_1_score_basis": "Leaderboard residual after seven visible XP values",
+          "run_directory": "../runs/mcp-one-shot-hard-r3",
+          "evidence_sha256": {
+            "transcript.txt": "804A1C3B8B55897F75D72FEE73CB37C67DC5F01C7B30355688387214DD9E4CCA",
+            "mcp-audit.jsonl": "DBE13651A1A345B081F0E72BA83B99B7CA2A67BEA61F036FDA7434BFD484E317",
+            "official-result.png": "4171342BF4C17346FA13E8D9243CD44547C85E4A603BA4D92575CCD7A56BEB12"
+          }
+        }
+      ],
+      "official_score_total": 88236,
+      "official_score_mean": 29412,
+      "mean_percent_of_maximum": 73.53,
+      "completed_rounds_total": 24,
+      "default_pins_total": 2
+    }
+  },
+  "excluded_attempts": [
+    {
+      "competition_id": 24626,
+      "run_directory": "../runs/mcp-one-shot-medium-r3",
+      "reason": "Grok backend HTTP 520 before completion",
+      "transcript_sha256": "1EFFF48088E997BA2416F1BD75EEED4AE92C19FF18A648074E84A95C4FC5F8FE",
+      "audit_sha256": "30B3BAE4A3D4B063290226AE0B9C837C2C650719B031A419D8AB7A38D5F11299"
+    },
+    {
+      "competition_id": 24627,
+      "run_directory": "../runs/mcp-one-shot-medium-r3-retry",
+      "reason": "Chrome renderer and controller transport stopped responding before a leaderboard",
+      "transcript_sha256": "DAC7A60DB050B576D076B9B79F5D7A9C4A2A251F959493DADD83FEC4AD62369A",
+      "audit_sha256": "93537906928F662484285AF0B1C2C9BE80961DE48159916177DE210AE7275ABD"
+    }
+  ],
+  "historical_audit_note": "The immutable run-time audits contain 56 get-state results with path set only to '/'. No competition ID, query, target coordinate, or geographic answer is present. The current proxy strips all page paths and unexpected adapter fields.",
+  "comparability_note": "The earlier Easy MCP condition used a different 180-second prompt and was not rerun. Easy, Medium, and Hard MCP means must not be combined as one 25-round score."
+}

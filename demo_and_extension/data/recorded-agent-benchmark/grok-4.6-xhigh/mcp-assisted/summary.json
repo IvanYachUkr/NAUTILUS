@@ -1,0 +1,53 @@
+{
+  "condition": "grok-4.6-xhigh-mcp-assisted",
+  "model": "grok-4.6",
+  "reasoning_effort": "xhigh",
+  "grok_cli_version": "1.0.4",
+  "dataset": "europe-easy",
+  "rounds_per_run": 8,
+  "maximum_points_per_run": 40000,
+  "round_seconds": 180,
+  "prompt_sha256": "9105E46B19BC1565670F05EA3352845DAC0BD2924B51EAB6E5F285EDE504CFB7",
+  "runs": [
+    {
+      "run": "mcp-assisted-r1",
+      "competition_id": 24612,
+      "competition_name": "NAUTILUS Easy MCP Trial 3",
+      "leaderboard_url": "https://openguessr.com/competitions?leaderboard=24612",
+      "official_score": 39661,
+      "completed_rounds": 8,
+      "default_pins": 0,
+      "belief_to_pin_mismatches": 0,
+      "controller_recoveries": 1,
+      "transcript_sha256": "A83AE83217A15664742E87C3D6EB6A52BBAA288DA2BE3EA1940532590166CD64"
+    },
+    {
+      "run": "mcp-assisted-r2",
+      "competition_id": 24615,
+      "competition_name": "NAUTILUS Easy MCP Trial 6",
+      "leaderboard_url": "https://openguessr.com/competitions?leaderboard=24615",
+      "official_score": 39981,
+      "completed_rounds": 8,
+      "default_pins": 0,
+      "belief_to_pin_mismatches": 0,
+      "controller_recoveries": 1,
+      "transcript_sha256": "FECD93C164F6BDD784706D6440C7628D494668021A9F0BA60718EFF100C5C845"
+    },
+    {
+      "run": "mcp-assisted-r3",
+      "competition_id": 24616,
+      "competition_name": "NAUTILUS Easy MCP Trial 7",
+      "leaderboard_url": "https://openguessr.com/competitions?leaderboard=24616",
+      "official_score": 39979,
+      "completed_rounds": 8,
+      "default_pins": 0,
+      "belief_to_pin_mismatches": 0,
+      "controller_recoveries": 0,
+      "transcript_sha256": "05A3C43FAB784AA200A9FF3C61D518D4FCB8A22B211DB4A1419E1368EF2D9E43"
+    }
+  ],
+  "official_score_mean": 39873.666666666664,
+  "official_score_total": 119621,
+  "completed_rounds_total": 24,
+  "excluded_competition_ids": [24613, 24614]
+}

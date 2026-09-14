@@ -1,0 +1,83 @@
+{
+  "dataset": "europe-medium",
+  "model": "SALAD + OSV-5M",
+  "index": "ivfflat",
+  "device": "cuda",
+  "n_images": 9,
+  "generated_at_utc": "2026-09-13T12:54:27.499808+00:00",
+  "distance_unit": "km",
+  "top1_error": {
+    "mean_km": 653.731,
+    "median_km": 182.592,
+    "std_km": 724.931,
+    "rmse_km": 976.16,
+    "min_km": 0.004,
+    "max_km": 2098.19,
+    "threshold_accuracy": {
+      "within_1_km_percent": 11.111,
+      "within_25_km_percent": 22.222,
+      "within_200_km_percent": 55.556,
+      "within_750_km_percent": 55.556,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "topk_mean_error": {
+    "mean_km": 479.275,
+    "median_km": 335.671,
+    "std_km": 389.119,
+    "rmse_km": 617.348,
+    "min_km": 76.694,
+    "max_km": 1148.898,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 0.0,
+      "within_200_km_percent": 33.333,
+      "within_750_km_percent": 66.667,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "topk_weighted_error": {
+    "mean_km": 479.463,
+    "median_km": 337.326,
+    "std_km": 391.19,
+    "rmse_km": 618.801,
+    "min_km": 77.955,
+    "max_km": 1148.439,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 0.0,
+      "within_200_km_percent": 33.333,
+      "within_750_km_percent": 66.667,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "topk_oracle_error": {
+    "mean_km": 210.8,
+    "median_km": 61.341,
+    "std_km": 284.955,
+    "rmse_km": 354.452,
+    "min_km": 0.004,
+    "max_km": 897.602,
+    "threshold_accuracy": {
+      "within_1_km_percent": 11.111,
+      "within_25_km_percent": 33.333,
+      "within_200_km_percent": 66.667,
+      "within_750_km_percent": 88.889,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "timing": {
+    "definition": "Warm per-image inference after one-time model/index loading; includes descriptor preprocessing/forward pass and an independent retrieval search for that query; excludes image disk decoding, the separate batched prediction search, and evaluation metrics.",
+    "model_load_seconds": 19.984,
+    "index_load_seconds": 0.901,
+    "batched_prediction_search_seconds": 69.813,
+    "mean_descriptor_seconds": 0.048,
+    "median_descriptor_seconds": 0.048,
+    "mean_search_seconds": 1.136,
+    "median_search_seconds": 1.018,
+    "mean_inference_seconds": 1.184,
+    "median_inference_seconds": 1.066,
+    "std_inference_seconds": 0.298,
+    "total_inference_seconds": 10.658
+  }
+}

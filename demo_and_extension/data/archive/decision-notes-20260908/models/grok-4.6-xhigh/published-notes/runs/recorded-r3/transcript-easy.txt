@@ -1,0 +1,98 @@
+grok.exe : [2m2026-08-31T12:02:50.672519Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\Users\vanya\Documents\Computer_Vision_FInal_Project\scripts\Start-GrokNau
+tilusRecorded.ps1:136 char:1
++ & grok @grokArgs 2>&1 | Tee-Object -FilePath $transcriptFullPath
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-08-31T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-08-31T12:02:50.672614Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-08-31T12:02:52.183387Z[0m [31mERROR[0m fail to get common stream: 
+Client error: HTTP status client error (404 Not Found) for url 
+(http://localhost:8931/mcp)
+[2m2026-08-31T12:02:52.184373Z[0m [33m WARN[0m sse client event stream 
+terminated with error: Err(Client(reqwest::Error { kind: Status(404, None), 
+url: "http://localhost:8931/mcp" }))
+I'll start by loading the Playwright tool schemas, then take the first full-viewport screenshot of the competition modal.Taking the first full-viewport screenshot of the entry modal before any clicks.Recorder is ARMED with the expected dataset and participant. Clicking Confirm at the calibrated point.Round 1 is a Competition with REC live and ~5:00 on the clock. Place de la Bastille in Paris is visible; opening the guess map to pin France.Footer shows Competition `1/8` and 300s. Pinning France on the expanded map (default marker is in the ocean).The pin landed on North Africa, not France. Correcting once onto the France label.Pin is on land in France. Submitting Guess immediately.Guess was swallowed when the map collapsed. Clicking the still-active Guess button again.Retrying Guess on the center of the red button.Round 1 saved (Paris, 1,238.3 km). Clicking Continue.Round 2 is on screen; recorder is still ARMED. Waiting one screenshot for REC.REC is live on round 2/8. Alexanderplatz, Berlin is visible. Opening the map to pin Germany.Cursor is over southern Europe. Zooming the map before placing the pin.Map is on the Mediterranean. Dragging north toward Germany.The map collapsed. Timer is past 3:30, so I'll reopen it and pin Germany immediately.The map is ocean-only with an offshore pin. Zooming out to reach named land.Clicking the zoom-out control more precisely.Minus missed. Moving onto the map and scrolling to zoom out.Germany is visible. Pinning it now.Pin is on Ukraine, not Germany. Correcting once onto the Germany label.Pin is on land in the Germany region. Submitting Guess.Round 2 saved (Berlin, 239.4 km). Clicking Continue.Round 3 is on screen with the recorder still ARMED. Waiting one screenshot for REC.REC is live on round 3/8. This is Salzburg, Austria. Opening the guess map.Cursor is too far south. Moving it onto Germany/Austria before zooming.Cursor is on Italy, next to Austria. Zooming in moderately.Austria is labeled. Pinning it now.Pin sits on the Croatia label. Correcting once onto Austria.Pin is on Austria. Submitting Guess.Round 3 saved (Salzburg, 270.7 km). Clicking Continue.Round 4 is REC live. This looks like Český Krumlov, Czechia. Opening the map.Czechia is north of the visible Austria label. Panning north inside the map.The pan overshot to the Arctic. Dragging south toward Central Europe.The map collapsed. Reopening it.Zooming out from the Arctic to reach Europe.Europe is visible. Pinning Czechia between Germany and Poland.Pin is on Norway. Correcting once onto Germany/Czechia.Pin is on land in Poland, next to Czechia. Submitting Guess.Round 4 saved (Český Krumlov, 1,077.2 km). Clicking Continue.Round 5 looks like the Pula Arena in Croatia. Opening the map to pin it.Croatia is labeled. Pinning it now.Pin is on Serbia. Correcting once onto the Croatia label.Pin is on Croatia. Submitting Guess.Round 5 saved (Pula, 240.2 km). Clicking Continue.Round 6 shows a Zittau / B178 / Granica Państwa border scene in eastern Germany. Opening the map.Germany is just off the top. Pinning the northern edge above Austria, toward the Zittau tripoint.Pin is on Austria, not Germany. Zooming out slightly so Germany is visible for one correction.The pin reads as Germany at this zoom. Submitting Guess.Round 6 saved (Zittau area, 541.1 km). Clicking Continue.Round 7 has Ljubljana and Novo mesto signs — Slovenia. Opening the map.Slovenia sits between Austria, Italy, and Croatia. Pinning that junction.Pin is on France/Switzerland. Correcting once onto the Austria–Croatia junction (Slovenia).Pin is on the Austria–Croatia border, matching Slovenia. Submitting Guess.Round 7 saved (Slovenia, 43.8 km). Clicking Continue.Round 8 is Flåm, Norway — the booths are labeled. Opening the map.Norway is at the top of this view. Pinning the northern edge above Germany.Pin is on Poland/Germany. Panning north inside the map to reach Norway.Norway is labeled. Correcting the pin onto it.Pin is on Finland after the one allowed correction. Submitting Guess.Round 8 saved (Flåm, 1,172 km); 8/8 recorded. Clicking Continue for the leaderboard.Leaderboard shows 24,075 Pts. Taking a second screenshot to confirm no Round 9 before disarming.No Round 9. Clicking Done & disarm.All 8 rounds are submitted, the leaderboard is committed at **24,075 Pts**, and the recorder is disarmed with **8/8** saved.
+
+## Round 1
+**INITIAL:** Place de la Bastille, Paris. Cues: `Place de la Bast` road paint, July Column, Bastille station, Haussmann blocks. Belief: Paris, France. Alt: none. Confidence: very high. REC, Competition `1/8`, ~5:00.
+**PROVISIONAL PIN:** World map; first hit North Africa; one correction toward France.
+**FINAL BELIEF + PIN:** Paris, France. Coarse western-Europe pin. Guess swallowed twice after the map collapsed, then submitted.
+**RESULT:** Revealed Paris, France. **1,238.3 km**. Pin in the Mediterranean south of Palma. Belief correct; pin offshore. SAVED `1/8`.
+
+## Round 2
+**INITIAL:** Alexanderplatz, Berlin. Cues: Fernsehturm, U-Bahn Alexanderplatz, `030` / German truck text. Belief: Berlin, Germany. Confidence: very high. REC `2/8`.
+**PROVISIONAL PIN:** Zoomed into the Med, drag collapsed the map, zoomed back out; first pin Ukraine, one correction onto Germany.
+**FINAL BELIEF + PIN:** Berlin, Germany. Pin on northern Germany.
+**RESULT:** Revealed Berlin. **239.4 km**. Pin near Oldesloe/Hamburg. Correct country. SAVED `2/8`.
+
+## Round 3
+**INITIAL:** Hohensalzburg over the Salzach. Belief: Salzburg, Austria. Confidence: very high. REC `3/8`.
+**PROVISIONAL PIN:** Europe zoom; first pin Croatia; one correction onto Austria.
+**FINAL BELIEF + PIN:** Salzburg, Austria. Pin on the Austria/Croatia border.
+**RESULT:** Revealed Salzburg, Austria. **270.7 km**. Pin near Ljubljana, Slovenia. Belief correct; pin adjacent country. SAVED `3/8`.
+
+## Round 4
+**INITIAL:** Castle terrace over a Vltava oxbow and red roofs. Belief: Český Krumlov, Czechia. Confidence: high. REC `4/8`.
+**PROVISIONAL PIN:** North pan overshot to the Arctic; zoomed out; first pin Norway; one correction toward Czechia landed Poland/Ukraine.
+**FINAL BELIEF + PIN:** Český Krumlov, Czechia. Pin on eastern Poland/Ukraine.
+**RESULT:** Revealed Český Krumlov, Czechia. **1,077.2 km**. Pin at Vinnytsia, Ukraine. Belief correct; pin wrong country. SAVED `4/8`.
+
+## Round 5
+**INITIAL:** Intact Roman amphitheatre in a park. Belief: Pula, Croatia. Alt: Rome / Nîmes / Verona. Confidence: high. REC `5/8`.
+**PROVISIONAL PIN:** Europe zoom; first pin Serbia; one correction onto Croatia.
+**FINAL BELIEF + PIN:** Pula, Croatia. Pin on Croatia.
+**RESULT:** Revealed Pula, Croatia. **240.2 km**. Pin near Split/Šibenik. Correct country. SAVED `5/8`.
+
+## Round 6
+**INITIAL:** `Zittau PL D`, `B178`, Polish `Granica Państwa`. Belief: Zittau, Germany (PL/CZ tripoint). Confidence: very high. REC `6/8`.
+**PROVISIONAL PIN:** Germany cut off at the top; pin on Austria; zoom-out made it look like Germany.
+**FINAL BELIEF + PIN:** Zittau, Germany. Submitted that pin.
+**RESULT:** Revealed Zittau area (SE of Dresden), Germany. **541.1 km**. Pin near Zagreb. Belief correct; pin far south. SAVED `6/8`.
+
+## Round 7
+**INITIAL:** Yellow signs `Ljubljana` and `Novo mesto`, `Ulica` road paint. Belief: Slovenia, Ljubljana–Novo mesto corridor. Confidence: very high. REC `7/8`.
+**PROVISIONAL PIN:** First pin France/Switzerland; one correction onto the Austria–Croatia junction.
+**FINAL BELIEF + PIN:** Slovenia. Pin on that junction.
+**RESULT:** Revealed Slovenia (Grosuplje / Ivančna Gorica, A2 toward Novo mesto). **43.8 km**. Pin in SW Slovenia. Correct country. SAVED `7/8`.
+
+## Round 8
+**INITIAL:** Fjord, Norwegian flag, booths labeled `FLÅM`. Belief: Flåm, Norway. Confidence: very high. REC `8/8`.
+**PROVISIONAL PIN:** First pin Germany/Poland; panned to Scandinavia; one correction landed on Finland.
+**FINAL BELIEF + PIN:** Flåm, Norway. Pin on Finland (no second correction).
+**RESULT:** Revealed Flåm, Norway (inland of Bergen). **1,172 km**. Pin in Finland. Belief correct; pin wrong country. SAVED `8/8`. Competition recorded.
+
+## FINAL ROUND RESULT
+Round 8: Flåm, Norway, **1,172 km**, recorder **8/8 saved**.
+
+## FINAL CONTINUE CLICKED
+Continue on the round-8 result screen opened the results modal.
+
+## LEADERBOARD COMMITTED
+`Results for REC Grok R3 Easy 300s`: **#1 Ivan Iachnyk — 24,075 Pts.** Held for two screenshot cycles. No Round 9.
+
+## RECORDER DONE
+Clicked **Done & disarm**. HUD gone. Last visible saved count **8/8**.
+
+---
+
+| Metric | Value |
+|---|---|
+| Official total | **24,075 Pts** |
+| Rounds played | 8 |
+| Saved count | 8 |
+| On-land pins | 7 (R1 Mediterranean = offshore) |
+| Country-matched pins | 3 (R2 Germany, R5 Croatia, R7 Slovenia) |
+| Timeouts / defaults | None (no 0:00 auto-guess; default ocean pins were replaced) |
+| Semantic (belief vs revealed) | 8/8 location IDs correct |
+| Belief-to-pin | 3 country-matched; 5 drifted from coarse map clicks |
+| Distances | 1238.3, 239.4, 270.7, 1077.2, 240.2, 541.1, 43.8, 1172 km |
+| Swallowed actions | R1 Guess swallowed twice; map collapsed on off-panel drags (R2, R4) |
+
+Main uncertainty was map scale: beliefs were read from panorama labels, but world/Europe clicks often landed one country off.

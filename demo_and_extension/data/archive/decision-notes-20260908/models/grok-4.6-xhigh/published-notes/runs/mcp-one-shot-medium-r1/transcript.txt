@@ -1,0 +1,42 @@
+grok.exe : [2m2026-09-01T15:36:45.362793Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\tmp\nautilus-openguessr-mcp\demo_and_extension\openguessr-mcp\scripts\Sta
+rt-GrokOpenGuessr.ps1:297 char:5
++     & $grokCommand.Source @grokArgs 2>&1 | Tee-Object -FilePath $tran ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-09-01T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-09-01T15:36:45.362897Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-09-01T15:39:42.756863Z[0m [31mERROR[0m tool_error: 
+tool_output_error 
+[3msession_id[0m[2m=[0m01a05d9d-9fb4-79a3-af20-667bd6206cfd 
+[3mtool_name[0m[2m=[0m"use_tool" 
+[3meffective_tool_name[0m[2m=[0m"playwright__openguessr_place_guess" 
+[3mmodel_id[0m[2m=[0m"grok-4.6" 
+[3merror_kind[0m[2m=[0m"tool_output_error"
+I'll start by loading the OpenGuessr tool schemas, then screenshot the current competition so we can play from round 1.Schemas are loaded. Next I’ll screenshot the current viewport and confirm we’re on competition round 1.Round 1 is up (Competition, 04:21 left). The painted “Carrer de Costa” is Catalan, so I’ll pan for more street-level clues before placing.The first pan barely moved. I’ll drag farther across the street view and check shop names and the opposite direction.Mouse-drag isn’t rotating the panorama, so I’ll use the arrow keys instead.I’ll click the panorama to focus it, then try rotating again.The shop is “Mamo Racha” at a corner. I’ll look up the façade for a street plaque, then lock in a guess.Clues point to Barcelona: Catalan “Carrer de Costa,” Eixample façades, Generali, and Mamo Racha. I’ll pin about 41.395, 2.160.The guess map isn’t open yet. I’ll click the minimap to expand it, then place the pin.The last click moved the street view, not the map. Viewport looks ~1920px wide, so I’ll click the minimap itself.Timer is at 1:00. I’ll hover the minimap so it expands, then place immediately.Viewport looks like 1920×1080; I’ll click lower on the minimap and place immediately.State says the result is visible, but the pin is still empty. I’ll screenshot and confirm whether the map opened.Round 1 timed out with a default Gulf of Guinea pin (4,388.7 km). I’ll continue into round 2 and open the map first.Round 2 looks Italian: “Via Francesco…” and Bologna-style brick. I’ll read more of the street name, then open the map early so we don’t time out.Viewport looks about 1920×900. I’ll hover the minimap around (1650, 580) so it expands.I’ll click the minimap’s top-left expand control so the guess map actually opens.Street signs put this at Via Francesco Roncati × Via Alessandro Guidotti in Bologna. I’ll enter the minimap from the left so hover can expand it.Map sits lower on a 1920×1080 viewport. I’ll hover its center, then place Bologna.Hovering didn’t enlarge the map. I’ll place the Bologna pin now while the cursor is on the minimap.Pin is down at 44.503, 11.345. I’ll verify state, then submit.Round 2 landed 1,932 m away in Bologna. Continuing to round 3, and I’ll hover the minimap at (1650, 700) before placing.Round 3 is Dutch: Amsterdamseweg, red bike lane, Studio Holland. I’ll check the yellow building sign, then pin Amstelveen.Fysio Holland and Gezondheidscentrum at Amsterdamseweg 652 — that’s Amstelveen. Hovering the map, then placing.Round 3 was Utrecht, not Amstelveen — 25.1 km. Continuing to round 4.N44 with Dutch-language “FOTO AKTIEF” — Flanders or South Holland. I’ll check plates and the shop before placing.Map is open on round 4/9. N44 plus Flemish houses point to East Flanders; I’ll pin the Maldegem–Aalter stretch.Round 4 was 29.5 km south of Ghent. Continuing to round 5.Portuguese street: “R. Figueir…” and “P PRIVATIVO.” I’ll move forward to read the full name.Lisbon residential street, Rua Figueir-. I’ll hover the map and place.Round 5 was Coimbra, not Lisbon — 176 km. Continuing to round 6.Swedish street: Bergagatan and wooden houses. I’ll check plates and house details before choosing a city.Map is open on round 6/9. Bergagatan and wooden villas are Swedish; I’ll pin a southern Stockholm suburb.Round 6 was Uppsala, 65.7 km from Stockholm. Continuing to round 7.Street looks Estonian — “Sepa…” and Baltic houses. I’ll move forward to read the full name.Sepaküla tee and picket fences point to suburban Tallinn, likely Nõmme. Hovering the map and placing.Round 7 was Tartu, 164.4 km from Tallinn. Continuing to round 8.“Jelšová” and forested mountains look Slovak. I’ll move up the hill for more of the town.Jelšová and valley mountains point to Slovakia’s Malá Fatra, around Žilina. Placing that.Round 8 was Banská Bystrica, 57.8 km from Žilina. Continuing to the last round.Yellow edge line and limestone walls look like Ireland. I’ll scan for a town name, then place.L1322 and Boherboy confirm Ireland. I’ll read the wall sign, then pin Boherboy near Saggart.L1322 Boherboy Street and yellow edge lines are rural County Cork. Placing near 52.10, -8.50.Round 9 was Galway, 138.3 km from Cork. Continuing to the leaderboard.Competition complete. Official total **36,973 Pts.** (9/9 rounds). Round XP values sum to that leaderboard total, so those are the official round scores.
+
+| Round | Belief | Chosen pin | Distance | Official pts | Controller |
+|---|---|---|---|---|---|
+| 1 | Barcelona, Spain (Carrer de Costa / Mamo Racha) | 41.395, 2.160 **never placed** | 4,388.7 km | 62 | Timeout; default Gulf of Guinea pin |
+| 2 | Bologna, Via Francesco Roncati | 44.503, 11.345 | 1,932 m | 4,990 | Hover at (1650, 700) then place_guess worked |
+| 3 | Amstelveen, Amsterdamseweg 652 | 52.292, 4.857 | 25.1 km | 4,876 | OK; actual was Utrecht |
+| 4 | Belgium N44, Maldegem–Aalter | 51.175, 3.448 | 29.5 km | 4,855 | OK; actual was south of Ghent |
+| 5 | Lisbon, Rua Figueir- | 38.728, -9.135 | 176 km | 4,193 | OK; actual was Coimbra |
+| 6 | Sweden, Bergagatan, S. Stockholm | 59.30, 18.05 | 65.7 km | 4,682 | OK; actual was Uppsala |
+| 7 | Estonia, Sepaküla tee, Tallinn Nõmme | 59.39, 24.69 | 164.4 km | 4,242 | OK; actual was Tartu |
+| 8 | Slovakia, Jelšová, Žilina / Malá Fatra | 49.21, 18.75 | 57.8 km | 4,719 | OK; actual was Banská Bystrica |
+| 9 | Ireland, L1322 Boherboy St, Co. Cork | 52.10, -8.50 | 138.3 km | 4,354 | OK; actual was Galway |
+
+**Official total:** 36,973 Pts.  
+**Completed:** 9/9  
+**Timeouts/defaults:** 1 (round 1)  
+**Belief-to-pin mismatches:** 1 (round 1 only; rounds 2–9 verified pins matched the chosen coordinates)  
+**Semantic misses (wrong city, same country):** rounds 5 (Lisbon vs Coimbra), 7 (Tallinn vs Tartu), 9 (Cork vs Galway). Rounds 3, 4, 6, 8 were same-country near misses under ~70 km. Round 1 belief (Barcelona) was geographically right; the pin never landed.
+
+**MCP map control:** Materially helped after round 1. `place_guess` / `get_state` / `submit_guess` / `continue` were reliable once the minimap was hovered at about (1650, 700). Round 1 failed because that hover target was not found before time ran out, so a default Africa pin was scored.

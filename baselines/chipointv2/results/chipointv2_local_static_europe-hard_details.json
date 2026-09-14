@@ -1,0 +1,306 @@
+[
+  {
+    "location_id": "loc_018",
+    "image": "demo_and_extension/data/starting-images/europe-hard/loc_018.png",
+    "ground_truth": {
+      "lat": 37.3439407,
+      "lon": 22.5909077,
+      "country": "Greece",
+      "city_or_region": "Arcadia Regional Unit, Peloponnese",
+      "difficulty": "hard",
+      "primary_clue_type": "landscape"
+    },
+    "prediction": {
+      "lat": 32.182292306619566,
+      "lon": 34.955505600252955,
+      "raw_fused_top1_lat": 31.940128326416016,
+      "raw_fused_top1_lon": 35.03792190551758,
+      "raw_fused_top1_score": 6.958819389343262,
+      "cluster_size": 2,
+      "error_km": 1267.0966457984634
+    },
+    "inference_seconds": 5.197450099996786,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.157053,
+        "gopt": 0.235085,
+        "dinov3": 0.072375
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 1.489359,
+        "gopt": 1.00375,
+        "dinov3": 1.042219
+      },
+      "total_query_encoding_seconds": 0.464513,
+      "total_gallery_retrieval_seconds": 3.535327,
+      "fusion_and_consensus_seconds": 1.19761,
+      "inference_seconds": 5.19745
+    }
+  },
+  {
+    "location_id": "loc_019",
+    "image": "demo_and_extension/data/starting-images/europe-hard/loc_019.png",
+    "ground_truth": {
+      "lat": 45.8911426,
+      "lon": 24.3372001,
+      "country": "Romania",
+      "city_or_region": "Vurpăr, Sibiu County",
+      "difficulty": "hard",
+      "primary_clue_type": "architecture"
+    },
+    "prediction": {
+      "lat": 43.263952895378615,
+      "lon": 19.06555564371946,
+      "raw_fused_top1_lat": 40.436065673828125,
+      "raw_fused_top1_lon": 17.839494705200195,
+      "raw_fused_top1_score": 3.7623848915100098,
+      "cluster_size": 6,
+      "error_km": 510.24997731285214
+    },
+    "inference_seconds": 3.197744600005535,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.103112,
+        "gopt": 0.179492,
+        "dinov3": 0.067986
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.718248,
+        "gopt": 0.723665,
+        "dinov3": 0.771335
+      },
+      "total_query_encoding_seconds": 0.35059,
+      "total_gallery_retrieval_seconds": 2.213248,
+      "fusion_and_consensus_seconds": 0.633906,
+      "inference_seconds": 3.197745
+    }
+  },
+  {
+    "location_id": "loc_020",
+    "image": "demo_and_extension/data/starting-images/europe-hard/loc_020.png",
+    "ground_truth": {
+      "lat": 41.5643939,
+      "lon": 24.9701484,
+      "country": "Bulgaria",
+      "city_or_region": "Vărbina, Madan Municipality, Smolyan Province",
+      "difficulty": "hard",
+      "primary_clue_type": "architecture"
+    },
+    "prediction": {
+      "lat": 45.40309383832806,
+      "lon": 11.337092631748908,
+      "raw_fused_top1_lat": 46.13290786743164,
+      "raw_fused_top1_lon": 13.435598373413086,
+      "raw_fused_top1_score": 5.046749114990234,
+      "cluster_size": 5,
+      "error_km": 1180.6159395558925
+    },
+    "inference_seconds": 3.163318300001265,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.102424,
+        "gopt": 0.165673,
+        "dinov3": 0.067573
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.788817,
+        "gopt": 0.7406,
+        "dinov3": 0.745143
+      },
+      "total_query_encoding_seconds": 0.33567,
+      "total_gallery_retrieval_seconds": 2.27456,
+      "fusion_and_consensus_seconds": 0.553088,
+      "inference_seconds": 3.163318
+    }
+  },
+  {
+    "location_id": "loc_021",
+    "image": "demo_and_extension/data/starting-images/europe-hard/loc_021.png",
+    "ground_truth": {
+      "lat": 46.706018,
+      "lon": 20.0496719,
+      "country": "Hungary",
+      "city_or_region": "Csongrád District, Csongrád-Csanád County",
+      "difficulty": "hard",
+      "primary_clue_type": "landscape"
+    },
+    "prediction": {
+      "lat": 48.99007105982902,
+      "lon": 4.061501498652337,
+      "raw_fused_top1_lat": 48.923465728759766,
+      "raw_fused_top1_lon": 1.3600237369537354,
+      "raw_fused_top1_score": 4.707503795623779,
+      "cluster_size": 5,
+      "error_km": 1220.8184680595598
+    },
+    "inference_seconds": 3.071541999994224,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.100868,
+        "gopt": 0.180418,
+        "dinov3": 0.067524
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.729558,
+        "gopt": 0.726332,
+        "dinov3": 0.748076
+      },
+      "total_query_encoding_seconds": 0.348809,
+      "total_gallery_retrieval_seconds": 2.203966,
+      "fusion_and_consensus_seconds": 0.518766,
+      "inference_seconds": 3.071542
+    }
+  },
+  {
+    "location_id": "loc_022",
+    "image": "demo_and_extension/data/starting-images/europe-hard/loc_022.png",
+    "ground_truth": {
+      "lat": 57.1907677,
+      "lon": 26.1476727,
+      "country": "Latvia",
+      "city_or_region": "Ranka Parish, Gulbene Municipality",
+      "difficulty": "hard",
+      "primary_clue_type": "infrastructure"
+    },
+    "prediction": {
+      "lat": 52.676442849347076,
+      "lon": 10.093851768315766,
+      "raw_fused_top1_lat": 52.212459564208984,
+      "raw_fused_top1_lon": 8.841870307922363,
+      "raw_fused_top1_score": 7.1946845054626465,
+      "cluster_size": 5,
+      "error_km": 1141.472689762734
+    },
+    "inference_seconds": 3.2515870000024734,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.083163,
+        "gopt": 0.179586,
+        "dinov3": 0.067199
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.726893,
+        "gopt": 0.7376,
+        "dinov3": 0.748981
+      },
+      "total_query_encoding_seconds": 0.329948,
+      "total_gallery_retrieval_seconds": 2.213474,
+      "fusion_and_consensus_seconds": 0.708165,
+      "inference_seconds": 3.251587
+    }
+  },
+  {
+    "location_id": "loc_023",
+    "image": "demo_and_extension/data/starting-images/europe-hard/loc_023.png",
+    "ground_truth": {
+      "lat": 55.5966197,
+      "lon": 23.8297989,
+      "country": "Lithuania",
+      "city_or_region": "Pašakiai, Radviliškis District Municipality, Šiauliai County",
+      "difficulty": "hard",
+      "primary_clue_type": "infrastructure"
+    },
+    "prediction": {
+      "lat": 57.30012660004977,
+      "lon": 25.750515094231154,
+      "raw_fused_top1_lat": 56.31708908081055,
+      "raw_fused_top1_lon": 24.796113967895508,
+      "raw_fused_top1_score": 4.331514835357666,
+      "cluster_size": 5,
+      "error_km": 223.60987974187051
+    },
+    "inference_seconds": 3.193758200002776,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.098443,
+        "gopt": 0.165554,
+        "dinov3": 0.067671
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.737687,
+        "gopt": 0.738911,
+        "dinov3": 0.732999
+      },
+      "total_query_encoding_seconds": 0.331668,
+      "total_gallery_retrieval_seconds": 2.209597,
+      "fusion_and_consensus_seconds": 0.652494,
+      "inference_seconds": 3.193758
+    }
+  },
+  {
+    "location_id": "loc_024",
+    "image": "demo_and_extension/data/starting-images/europe-hard/loc_024.png",
+    "ground_truth": {
+      "lat": 56.601125,
+      "lon": 8.163942,
+      "country": "Denmark",
+      "city_or_region": "Lemvig Municipality, Central Denmark Region",
+      "difficulty": "hard",
+      "primary_clue_type": "landscape"
+    },
+    "prediction": {
+      "lat": 51.43213484813243,
+      "lon": 11.706247677940143,
+      "raw_fused_top1_lat": 47.324886322021484,
+      "raw_fused_top1_lon": 8.294737815856934,
+      "raw_fused_top1_score": 4.80433988571167,
+      "cluster_size": 7,
+      "error_km": 620.2170521689006
+    },
+    "inference_seconds": 2.9518205000022135,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.101907,
+        "gopt": 0.172614,
+        "dinov3": 0.067335
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.723441,
+        "gopt": 0.737336,
+        "dinov3": 0.739676
+      },
+      "total_query_encoding_seconds": 0.341856,
+      "total_gallery_retrieval_seconds": 2.200453,
+      "fusion_and_consensus_seconds": 0.409512,
+      "inference_seconds": 2.951821
+    }
+  },
+  {
+    "location_id": "loc_025",
+    "image": "demo_and_extension/data/starting-images/europe-hard/loc_025.png",
+    "ground_truth": {
+      "lat": 64.942839,
+      "lon": 26.9554129,
+      "country": "Finland",
+      "city_or_region": "Utajärvi Municipality, North Ostrobothnia",
+      "difficulty": "hard",
+      "primary_clue_type": "landscape"
+    },
+    "prediction": {
+      "lat": 53.05846023559571,
+      "lon": 14.627449035644531,
+      "raw_fused_top1_lat": 53.0584602355957,
+      "raw_fused_top1_lon": 14.627449035644531,
+      "raw_fused_top1_score": 5.028313636779785,
+      "cluster_size": 1,
+      "error_km": 1495.4448993943172
+    },
+    "inference_seconds": 3.1740937999966263,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.108068,
+        "gopt": 0.178224,
+        "dinov3": 0.067421
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.745299,
+        "gopt": 0.733228,
+        "dinov3": 0.741024
+      },
+      "total_query_encoding_seconds": 0.353713,
+      "total_gallery_retrieval_seconds": 2.219552,
+      "fusion_and_consensus_seconds": 0.600829,
+      "inference_seconds": 3.174094
+    }
+  }
+]

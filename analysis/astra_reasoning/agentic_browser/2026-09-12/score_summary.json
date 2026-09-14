@@ -1,0 +1,90 @@
+{
+  "model": "GPT-6 Astra",
+  "reasoning": "low",
+  "condition": "interactive-panorama",
+  "controller": "Chrome screenshot-based visual UI",
+  "secondsPerRound": 300,
+  "locationsPerRun": 25,
+  "runCount": 3,
+  "maxPoints": 125000,
+  "runs": [
+    {
+      "id": "run-1",
+      "easy": 39997,
+      "medium": 44189,
+      "hard": 34974,
+      "total": 119160,
+      "report": "reports/NAUTILUS_ASTRA_LOW_RUN_20260906.md",
+      "scoreProvenance": "Easy and Medium official leaderboards; Hard composite of six settled result scores (27800) and final-two official leaderboard (7174).",
+      "competitionIds": {
+        "easy": [
+          24697
+        ],
+        "medium": [
+          24699
+        ],
+        "hard": [
+          24700,
+          24707
+        ]
+      }
+    },
+    {
+      "id": "run-2",
+      "easy": 39998,
+      "medium": 44686,
+      "hard": 35134,
+      "total": 119818,
+      "report": "reports/NAUTILUS_ASTRA_LOW_RUN2_20260907.md",
+      "scoreProvenance": "All three official leaderboards.",
+      "competitionIds": {
+        "easy": [
+          24708
+        ],
+        "medium": [
+          24709
+        ],
+        "hard": [
+          24710
+        ]
+      }
+    },
+    {
+      "id": "run-3",
+      "easy": 39998,
+      "medium": 43482,
+      "hard": 35279,
+      "total": 118759,
+      "report": "reports/NAUTILUS_ASTRA_LOW_RUN3_20260907.md",
+      "scoreProvenance": "Easy and Hard official leaderboards; Medium composite of six settled result scores (28668) and final-three official leaderboard (14814). The contaminated original Medium attempt and unverified partial crash round are excluded.",
+      "competitionIds": {
+        "easy": [
+          24716
+        ],
+        "medium": [
+          24720,
+          24723
+        ],
+        "hard": [
+          24718
+        ]
+      }
+    }
+  ],
+  "mean": {
+    "easy": 39997.666666666664,
+    "medium": 44119,
+    "hard": 35129,
+    "total": 119245.66666666667
+  },
+  "meanPercentOfMaximum": 95.39653333333334,
+  "bestRun": "run-2",
+  "limits": [
+    "Same fixed 25 locations reused across runs; descriptive controller/run variability, not new-location generalization.",
+    "Run 1 Hard and Run 3 Medium are composites across interrupted sessions and continuations.",
+    "Raw recorder prediction coordinates are not validated and are not published as geographic predictions.",
+    "Videos remain local. No Astra files uploaded to Google Drive. Missing video does not imply missing scored result.",
+    "Run 1 Easy R1 and R2 have report entries and a tier leaderboard but no individual result screenshot."
+  ],
+  "evidenceManifest": "evidence-manifest.json"
+}

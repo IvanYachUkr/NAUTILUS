@@ -1,0 +1,30 @@
+2026-09-01T00:42:08.813271Z  WARN config: ignored unrecognized or invalid entry path=privacy field="(entry)" kind=UnknownField reason=unrecognized config key
+2026-09-01T00:42:08.813392Z  WARN config: parsed with warnings; run `grok inspect` for details warnings=1
+2026-09-01T00:43:44.148249Z ERROR tool_error: tool_output_error session_id=01a05a6a-941e-77f0-be28-b0afbc88539f tool_name="use_tool" effective_tool_name="playwright__openguessr_submit_guess" model_id="grok-4.6" error_kind="tool_output_error"
+2026-09-01T00:44:16.929781Z ERROR tool_error: tool_output_error session_id=01a05a6a-941e-77f0-be28-b0afbc88539f tool_name="use_tool" effective_tool_name="playwright__openguessr_submit_guess" model_id="grok-4.6" error_kind="tool_output_error"
+2026-09-01T00:46:27.283084Z ERROR tool_error: tool_output_error session_id=01a05a6a-941e-77f0-be28-b0afbc88539f tool_name="use_tool" effective_tool_name="playwright__openguessr_submit_guess" model_id="grok-4.6" error_kind="tool_output_error"
+I'll start by loading the OpenGuessr tool schemas and taking a full-viewport screenshot of the current round.Taking a full-viewport screenshot to confirm the first round is already on screen.Round 1 is Place de la Bastille in Paris — the July Column, Bastille bus stop, and road marking are all visible. Timer is already at 1:40, so I’m placing immediately.The pin matched, but Guess is still disabled. I’ll screenshot the map and retry placement once.Guess is red and enabled; timer is 36 seconds. I’ll recheck state and submit.Pin is verified and Guess is red. Submitting now — timer is under 40 seconds.Guess wasn’t found by the controller. I’ll open the mini-map with a click, then place again.Timer is at 1 second. Clicking Guess and retrying submit together.Round 1 landed 65 m away. Continuing to the next round.Round 2 is Alexanderplatz in Berlin — Fernsehturm, U-Bahn sign, and 030 numbers. I’ll open the guess map, then pin it.Hover didn’t expand the map. I’ll click the mini-map, then place.Map click missed the widget. Placing the Berlin pin and clicking the lower-right map area at a larger viewport size.Guess is red. Submitting with the tool, a click on the button, and Space.Clicks were likely off-viewport. Aiming at the red Guess button using 1280×720 coordinates.Timer is 22 seconds. Clicking the lower Guess button area.Round 2 was 251 m off. Continuing. The Guess click at 1145, 685 likely matched a ~1280×720 viewport.Round 3 is Salzburg from Kapuzinerberg, looking at Hohensalzburg across the Salzach. I’ll open the mini-map, then place.Map still collapsed. Placing Salzburg, then clicking Guess at the coordinates that worked last round.State shows Guess enabled. Submitting.Round 3 was 463 m off on Kapuzinerberg. Continuing.Round 4 is Český Krumlov Castle above the Vltava — red roofs, the weir, and the saint statue match. Placing that pin.Round 4 was Český Krumlov, 295 m off. Continuing.Round 5 looks like Pula Arena: yellow Croatian-style sign, cobbles, and the amphitheater on a park slope. Placing that.Round 5 was Pula, 215 m off. Continuing.Round 6 is the German–Polish border on B178 near Zittau — the Zittau sign, B178 marking, and “Granica Państwa” make that clear.Round 6 was Sieniawka, 1,159 m off. Continuing, and I’ll ignore the Discord popup.Round 7 is Vinica, Slovenia — Ljubljana and Novo mesto signs, plus the building name. Placing that.Round 7 was Slovenia, 67.9 km off — I had Vinica; the pin was near Grosuplje. Continuing to the last round.Round 8 is Flåm, Norway — the bus shelters are labeled FLÅM, with the fjord and a Norwegian flag. Placing that.Round 8 was 74 m off in Flåm. Continuing to the leaderboard.## Results
+
+Leaderboard: **NAUTILUS Easy MCP Trial 3** — **#1 Ivan Yachnik, 39,661 Pts.**
+
+Per-round official points were not labeled on the result overlay (only distance and `+XP`). Those eight `+XP` values sum to **39,661**, matching the leaderboard total, so they are treated as the round scores.
+
+| Rd | Belief | Pin | Distance | Score | Controller |
+|----|--------|-----|----------|-------|------------|
+| 1 | Place de la Bastille, Paris | 48.852, 2.3705 | 65 m | 5000 | `submit_guess` missed Guess control; verified pin went in as timer hit 0 |
+| 2 | Alexanderplatz, Berlin | 52.5216, 13.4118 | 251 m | 4999 | Same Guess-control miss; submitted via click/timer, not a default pin |
+| 3 | Kapuzinerberg, Salzburg | 47.8025, 13.0475 | 463 m | 4998 | Clean place → state → submit |
+| 4 | Český Krumlov Castle | 48.8127, 14.317 | 295 m | 4999 | Clean |
+| 5 | Pula Arena, Croatia | 44.8728, 13.8497 | 215 m | 4999 | Clean |
+| 6 | B178 Zittau–Sieniawka border | 50.8905, 14.847 | 1,159 m | 4994 | Clean |
+| 7 | Vinica, Slovenia | 45.462, 15.253 | 67.9 km | 4672 | Clean |
+| 8 | Flåm, Norway | 60.863, 7.117 | 74 m | 5000 | Clean |
+
+**Official total:** 39,661  
+**Rounds completed:** 8/8  
+**Timeouts / defaults:** Round 1 (and possibly 2) auto-sent a **verified** pin at time expiry — **0 default pins**  
+**Semantic misses:** 1 (round 7: Slovenia correct, town wrong — Vinica vs Grosuplje / Višnja Gora corridor)  
+**Belief-to-pin mismatches:** 0  
+**Unreadable:** Footer never showed `n/8`; round scores were only visible as `+XP` until the final **39,661 Pts.**
+
+**MCP map control:** Yes, it helped. `openguessr_place_guess` dropped an exact verified pin every round without opening the Africa-scale mini-map. After round 2, `get_state` + `submit_guess` were reliable. Early Guess-button detection failed twice and needed a click/timer retry.

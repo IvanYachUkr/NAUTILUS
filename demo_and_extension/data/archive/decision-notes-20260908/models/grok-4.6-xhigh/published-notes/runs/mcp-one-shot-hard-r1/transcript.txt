@@ -1,0 +1,42 @@
+grok.exe : [2m2026-09-01T17:39:16.540235Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\tmp\nautilus-openguessr-mcp\demo_and_extension\openguessr-mcp\scripts\Sta
+rt-GrokOpenGuessr.ps1:297 char:5
++     & $grokCommand.Source @grokArgs 2>&1 | Tee-Object -FilePath $tran ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-09-01T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-09-01T17:39:16.540359Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-09-01T17:41:58.801033Z[0m [31mERROR[0m tool_error: 
+tool_output_error 
+[3msession_id[0m[2m=[0m01a05e0d-c909-7da2-9508-a1dfb0e7506c 
+[3mtool_name[0m[2m=[0m"use_tool" 
+[3meffective_tool_name[0m[2m=[0m"playwright__openguessr_place_guess" 
+[3mmodel_id[0m[2m=[0m"grok-4.6" 
+[3merror_kind[0m[2m=[0m"tool_output_error"
+I'll start by discovering the Playwright/OpenGuessr tool schemas, then screenshot the current viewport and play all 8 rounds from the pixels.Taking the first full-viewport screenshot to confirm round 1 and check for cookie consent.Round 1 is a Greek-script provincial road in Mediterranean pine country. I'll pan for more visible clues before placing.The first pan barely moved. I'll drag farther across the panorama to read more of the road and surroundings.The panorama isn’t focused yet. I’ll click the scene, then pan and move forward for more clues.Moved forward; Greek road paint is still clear. I’ll click ahead toward the vehicle for a plate or town clue.The landscape opened up into dry grassland. I’ll pan left for hills, a town, or coastline.Panning still isn’t working. I’ll click the left hillside once more, then lock a Greece guess if nothing new appears.Clues are solid: Greek “Επαρχιακή Οδός – Παράκαμψη,” pine/maquis, dry grassland. I’ll pin northern Attica at 38.20, 23.70.The mini-map needs to be opened first. I’ll click it, then retry the pin.Map is open, round 1/8 confirmed. Placing the Greece pin now.Round 1 landed in the Peloponnese, 136.2 km off. Continuing to round 2.Round 2 looks like rural Eastern Europe. I’ll move forward for language, plates, or architecture.Village rooftops are visible ahead. I’ll click forward for houses, signs, or a car.Village houses match Romania or a nearby Balkan country. I’ll keep moving in for a sign or plate.The courtyard house looks Romanian. I’ll follow the village road for a name sign or plate.Road paint reads DJ106S — a Sibiu County road in Transylvania. Opening the map and pinning that area.Round 2 was 4.7 km off near Țichindeal. Continuing to round 3.Round 3 is a forested mountain village. I’ll move toward the houses for language or plates.I pointed too low and dropped to the pavement. Returning to the previous view.Closer now: stucco house, satellite dish, blue hydrant. I’ll push up to the parked car.Balkan house architecture is clear. I’ll go back to the road and look for a car or sign.Houses climb the hillside past a yield sign. I’ll follow the road up for a town name.Map is already open on 3/8. I’ll pin central Bosnia at 44.15, 17.85.Round 3 was southern Bulgaria, 647 km off. Continuing to round 4.Round 4 is a dead-flat sunflower/wheat/corn plain. I’ll look along the road for signs or poles.Sunflowers, wheat, corn, and a black-and-white roadside post point to the Hungarian Great Plain. Opening the map to pin it.Round 4 was 19.1 km off near Csongrád. Continuing to round 5.Round 5 is a straight dirt track through temperate scrub. I’ll move forward for poles, water, or signs.The track isn’t giving more clues. I’ll pin central Poland at 52.10, 19.40.Round 5 was Latvia, 713 km off. Continuing to round 6.Road 3426 is painted on the gravel, with Soviet-style farm ruins. I’ll move in for language or more numbering.Painted 4-digit 3426 on gravel is a Lithuanian regional-road tell. Opening the map to pin northern Lithuania.Round 6 was 23.3 km off near Panevėžys. Continuing to round 7.Road paint reads Skalvej — Danish. I’ll move forward for a town or more of the landscape.Country is locked as Denmark. Pinning east-central Jutland at 56.35, 9.90.Round 7 was 110 km off on Jutland’s west coast. Continuing to the last round.Round 8 is a boreal road with a visible car hood and white center lines. I’ll move forward for language or markers.Boreal pine/birch, white lines, and a visible car hood point to Finland. Opening the map to pin central Finland.Round 8 was Finland, 287 km off. Continuing to the leaderboard.Official total: **32,428 Pts.** (8/8 submitted, leaderboard shown). Per-round XP summed to that total, so those values are the official points.
+
+| Rd | Belief | Pin | Distance | Pts | Notes |
+|---|---|---|---|---|---|
+| 1 | Greece, N Attica | 38.20, 23.70 | 136.2 km | 4363 | Peloponnese near Astros. Map had to be opened before place. |
+| 2 | Romania, Sibiu Co. (DJ106S) | 45.85, 24.35 | 4.681 km | 4977 | Near Țichindeal |
+| 3 | Bosnia, central | 44.15, 17.85 | 647.4 km | 2616 | **Miss:** southern Bulgaria |
+| 4 | Hungary, Alföld | 46.70, 20.30 | 19.1 km | 4905 | Csongrád |
+| 5 | Poland, central | 52.10, 19.40 | 712.7 km | 2451 | **Miss:** Latvia (Valmiera) |
+| 6 | Lithuania, N-central (road 3426) | 55.60, 24.20 | 23.3 km | 4885 | Panevėžys area |
+| 7 | Denmark, E Jutland (Skalvej) | 56.35, 9.90 | 110.2 km | 4478 | Harboøre, W Jutland |
+| 8 | Finland, central | 62.40, 26.00 | 286.6 km | 3753 | NE of Oulu |
+
+- **Official total:** 32,428
+- **Completed:** 8/8
+- **Timeouts/defaults:** 0
+- **Semantic misses:** 2 (Bosnia vs Bulgaria; Poland vs Latvia)
+- **Belief-to-pin mismatches:** 0
+- **Unreadable:** none on the final board; round screens showed XP, not a separate points field
+
+**MCP map control:** Materially helpful. `place_guess` refused until the guess map was open, then verified the pin; `get_state` confirmed it; submit never used a default West Africa pin. Street View pan/drag/keyboard was unreliable; click-to-move worked.

@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schema/competition.schema.json",
+  "schemaVersion": "1.0",
+  "datasetId": "dataset-slug",
+  "order": 1,
+  "id": "competition-slug",
+  "shortName": "Compact label",
+  "name": "Readable competition name",
+  "description": "Purpose of this setup.",
+  "splitIfNeeded": false,
+  "openGuessr": {
+    "roundLengthSeconds": 180,
+    "duration": "2d",
+    "visibility": "private",
+    "restriction": "moving-allowed"
+  },
+  "locations": [
+    {
+      "id": "loc_001",
+      "country": "Country",
+      "city_or_region": "City or region",
+      "scene_type": "urban",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark",
+      "selection_notes": "Why this scene was selected.",
+      "google_maps_link": "PASTE_FULL_GOOGLE_STREET_VIEW_URL_HERE"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "schemaVersion": "2.0",
+  "recordingType": "openguessr-round",
+  "recorder": {
+    "name": "OpenGuessr Research Round Recorder",
+    "version": "0.7.8"
+  },
+  "id": "ogrr-2026-09-03T14-29-28-941Z-cd60f1a8-ea9e-40ae-81de-1a565bd60a78",
+  "sessionId": "session-2026-09-03T14-15-10-551Z-13c7236b-af27-40d6-9730-8ae37c419fc0",
+  "sourceApplication": "OpenGuessr",
+  "pageUrl": "https://openguessr.com/",
+  "competitionId": "europe-easy",
+  "competitionOverallIndex": 6,
+  "openGuessrCompetitionHint": null,
+  "model": "gemini-3.7-flash-medium aided run2",
+  "condition": "interactive-panorama",
+  "configuredCondition": null,
+  "captureMode": "interactive",
+  "restriction": null,
+  "staticImage": null,
+  "playbackActions": [],
+  "departureFrames": [],
+  "finalView": null,
+  "video": null,
+  "partial": true,
+  "startedAt": "2026-09-03T14:29:28.941Z",
+  "stoppedAt": "2026-09-03T14:29:29.464Z",
+  "durationMs": 523,
+  "stopReason": "new_streetview_frame",
+  "prediction": null,
+  "config": {
+    "sampleIntervalMs": 250,
+    "positionThresholdM": 0.5,
+    "angleThresholdDeg": 1,
+    "pitchThresholdDeg": 1,
+    "zoomThreshold": 0.05,
+    "maxSilentIntervalMs": 2000,
+    "maxSamples": 50000
+  },
+  "round": {
+    "index": 5,
+    "id": "round-6",
+    "detectedAt": "2026-09-03T14:29:28.941Z",
+    "detectedAtMs": 1788445768941,
+    "endedAt": "2026-09-03T14:29:29.464Z",
+    "endedAtMs": 1788445769464,
+    "roundSignal": "098a5760-dd73-4410-97f7-cc263539124a|0,0|none",
+    "spawnRequested": {
+      "lat": 0,
+      "lng": 0,
+      "heading": null,
+      "pitch": null,
+      "zoom": null,
+      "fov": 90,
+      "panoId": null
+    },
+    "actualStart": {
+      "lat": 0,
+      "lng": 0,
+      "capturedAt": "2026-09-03T14:29:28.941Z",
+      "panoId": null
+    },
+    "sampleCount": 1,
+    "firstSampleSeq": 0,
+    "lastSampleSeq": 0,
+    "frameInstanceId": "098a5760-dd73-4410-97f7-cc263539124a",
+    "competitionRound": 6,
+    "pageRoundNumber": null,
+    "pageRoundTotal": null,
+    "captureMode": "interactive",
+    "startSource": "streetview-frame",
+    "provisional": false,
+    "frozenAt": null,
+    "freezeReason": null,
+    "staticImage": null,
+    "playbackActionCount": 0,
+    "departureFrameCount": 0,
+    "finalView": null,
+    "video": null
+  },
+  "rounds": [
+    {
+      "index": 5,
+      "id": "round-6",
+      "detectedAt": "2026-09-03T14:29:28.941Z",
+      "detectedAtMs": 1788445768941,
+      "endedAt": "2026-09-03T14:29:29.464Z",
+      "endedAtMs": 1788445769464,
+      "roundSignal": "098a5760-dd73-4410-97f7-cc263539124a|0,0|none",
+      "spawnRequested": {
+        "lat": 0,
+        "lng": 0,
+        "heading": null,
+        "pitch": null,
+        "zoom": null,
+        "fov": 90,
+        "panoId": null
+      },
+      "actualStart": {
+        "lat": 0,
+        "lng": 0,
+        "capturedAt": "2026-09-03T14:29:28.941Z",
+        "panoId": null
+      },
+      "sampleCount": 1,
+      "firstSampleSeq": 0,
+      "lastSampleSeq": 0,
+      "frameInstanceId": "098a5760-dd73-4410-97f7-cc263539124a",
+      "competitionRound": 6,
+      "pageRoundNumber": null,
+      "pageRoundTotal": null,
+      "captureMode": "interactive",
+      "startSource": "streetview-frame",
+      "provisional": false,
+      "frozenAt": null,
+      "freezeReason": null,
+      "staticImage": null,
+      "playbackActionCount": 0,
+      "departureFrameCount": 0,
+      "finalView": null,
+      "video": null
+    }
+  ],
+  "captureSources": {
+    "synthetic": 1
+  },
+  "sampleCount": 1,
+  "keyMoments": [],
+  "diagnostics": {
+    "events": [
+      {
+        "name": "round_started",
+        "at": "2026-09-03T14:29:29.057Z",
+        "details": {
+          "frameInstanceId": "098a5760-dd73-4410-97f7-cc263539124a",
+          "spawnRequested": {
+            "lat": 0,
+            "lng": 0,
+            "heading": null,
+            "pitch": null,
+            "zoom": null,
+            "fov": 90,
+            "panoId": null
+          },
+          "competitionRound": 6,
+          "pageRoundNumber": null,
+          "pageRoundTotal": null,
+          "captureMode": "interactive",
+          "startSource": "streetview-frame",
+          "provisional": false
+        }
+      },
+      {
+        "name": "api-constructor-hooked",
+        "at": "2026-09-03T14:29:29.194Z",
+        "details": {
+          "frameInstanceId": "098a5760-dd73-4410-97f7-cc263539124a",
+          "at": "2026-09-03T14:29:29.048Z"
+        }
+      },
+      {
+        "name": "leaflet_prediction_hook_installed",
+        "at": "2026-09-03T14:29:29.300Z",
+        "details": {
+          "name": "leaflet_prediction_hook_installed",
+          "at": "2026-09-03T14:29:29.212Z"
+        }
+      }
+    ],
+    "firstCaptureAt": "2026-09-03T14:29:28.941Z",
+    "lastCaptureAt": "2026-09-03T14:29:28.941Z",
+    "truncated": false,
+    "lastPageProbe": {
+      "trigger": "initial",
+      "at": "2026-09-03T14:29:28.681Z",
+      "atMs": 1788445768681,
+      "pageUrl": "https://openguessr.com/",
+      "pathname": "/",
+      "title": null,
+      "pageState": "other",
+      "roundLikelyActive": false,
+      "competitionStartPromptVisible": false,
+      "competitionStartLabel": null,
+      "competitionStartSignature": null,
+      "guessControlVisible": false,
+      "nextControlVisible": false,
+      "resultVisible": false,
+      "roundNumber": null,
+      "roundTotal": null,
+      "modeHint": null,
+      "primaryView": null,
+      "controlLabels": [],
+      "diagnostics": {
+        "iframeCount": 0,
+        "imageCount": 0,
+        "streetViewCandidateCount": 0,
+        "nmpzTextDetected": false
+      }
+    }
+  },
+  "samples": [
+    {
+      "seq": 0,
+      "roundIndex": 5,
+      "tMs": 0,
+      "capturedAt": "2026-09-03T14:29:28.941Z",
+      "receivedAt": "2026-09-03T14:29:29.464Z",
+      "lat": 0,
+      "lng": 0,
+      "heading": null,
+      "pitch": null,
+      "zoom": null,
+      "fov": 90,
+      "panoId": null,
+      "source": "synthetic",
+      "reason": "finalize_start_fallback",
+      "frameInstanceId": "098a5760-dd73-4410-97f7-cc263539124a"
+    }
+  ],
+  "receivedAt": "2026-09-03T14:29:29.477Z",
+  "competitionPartId": null,
+  "competitionPart": null,
+  "competitionRound": null,
+  "atlasLocationId": null,
+  "locationId": null,
+  "locationMatch": null
+}

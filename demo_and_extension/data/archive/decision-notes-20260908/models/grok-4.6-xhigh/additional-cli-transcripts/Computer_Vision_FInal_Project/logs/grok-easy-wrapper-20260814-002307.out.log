@@ -1,0 +1,137 @@
+I'll start by locating the six allowed Playwright tools, then screenshot the current competition modal before doing anything else.Taking the first full-viewport screenshot of the competition modal before any click.Recorder shows ARMED with the expected dataset and participant. Clicking Confirm at the calibrated point.Confirm was clicked. Capturing the first round now.Round 1 is a Competition with REC, timer 04:59. Scene is Place de la Bastille, Paris. Opening the guess map to pin Paris.Default pin is in Africa. Placing the first meaningful pin on France (Paris).Pin landed on Spain, not France. Correcting once onto France.Pin is on France with Guess active. Submitting immediately.Round 1 saved (1/8). Actual was Paris; pin landed in Spain. Clicking Continue.Recorder is still ARMED on round 2. Waiting one screenshot for REC before any movement.Still ARMED. Taking one Street View step to trigger REC.REC is on. Scene is Alexanderplatz, Berlin. Opening the map to pin Germany.Default Africa pin is still there. Hovering Germany and zooming before placing a pin.Zooming the map on Germany before placing the pin.Zoom landed on North Africa. Dragging the map north to Europe.Map collapsed and time is at 3:32. Reopening and pinning Germany immediately.Tiles are missing over Central Europe. Pinning just south of the North Sea/Baltic, where Germany should be.Time is past 3:00. The pin sits south of the North Sea in the Germany region. Submitting now.Round 2 saved (2/8): Berlin, pin in western Poland, 206.8 km. Clicking Continue.Round 3 looks like Salzburg. Recorder is ARMED — waiting one screenshot for REC.Still ARMED. Taking one Street View step to start REC.Street View click didn’t change the view and REC is still off. Waiting on another screenshot.The first Street View click was swallowed. Retrying the arrow to trigger REC.Arrows didn’t move this photosphere. Dragging the view once to trigger REC.REC is on and time is 03:15. Opening the map to pin Austria immediately.Default pin is in Africa. Timer is 02:51 — pinning Austria now.Pin is on Italy/Balkans, not Austria. Correcting once north toward Austria.Pin is on Central Europe near Austria. Guess is active — submitting.Round 3 saved (3/8): Salzburg; pin landed in the Adriatic. Clicking Continue.Round 4 looks like Český Krumlov. Recorder is ARMED — waiting one screenshot.Still ARMED. Dragging the photosphere once to start REC.REC is on. Opening the map to pin the Czech Republic.Double-clicking Central Europe to zoom and drop a pin on the Czech Republic.Pin is on Central Europe (Czech region) with Guess active. Submitting.Round 4 saved (4/8): Czechia, pin in Montenegro, 781.8 km. Clicking Continue.Round 5 looks like Pula Arena. Recorder is ARMED — waiting one screenshot.Taking one Street View step to trigger REC.Road text “Starih stadiona” confirms Pula, Croatia. Opening the map.At the 3:30 pin deadline. Dropping a pin on the Italy/Croatia Adriatic now.Pin is on the Italy/Alps landmass. Time is 02:58 — submitting.Round 5 saved (5/8): Pula, pin in Tuscany, 318.5 km. Clicking Continue.Round 6 is the Zittau / Germany–Poland border. Recorder is ARMED — waiting one screenshot.Taking one Street View step to start REC.REC is on. Opening the map to pin Zittau, Germany.Zooming with + before placing a pin so I can hit Germany more accurately.Zoom didn’t take and time is 03:20. Pinning Germany now.Pin is on Germany/Poland, matching Zittau. Submitting.Round 6 saved (6/8): Zittau area, pin near Passau, 285.3 km. Clicking Continue.Round 7 is Višnja Gora, Slovenia. Recorder is ARMED — waiting one screenshot.Taking one Street View step to start REC.Arrow click was swallowed. Retrying the left Street View arrow.Arrows aren’t moving the view. Dragging the panorama to trigger REC.REC is on and time is 03:37. Opening the map to pin Slovenia.Timer is 03:10. Pinning Slovenia, south of Germany and east of Italy.Pin is on the Italy/Slovenia region. Submitting.Round 7 saved (7/8): Slovenia, pin in eastern Croatia, 260.7 km. Clicking Continue.Round 8 is Flåm, Norway — the gate is labeled. Recorder is ARMED; waiting one screenshot.Dragging the view once to start REC.REC is on. Opening the map to pin Norway (Flåm).Pinning western Norway, north of the United Kingdom.Pin is on Scandinavia, matching Norway. Submitting.Round 8 saved (8/8): Flåm, pin near Berlin, 1,029.5 km. Clicking Continue on the result screen.Leaderboard shows #1 Ivan Yachnik at 23,729 points. Holding for a second heartbeat before disarming.No Round 9. Clicking Done & disarm.Competition complete. Official total **23,729** points. Recorder disarmed after exactly **8/8** saved rounds. No Round 9.
+
+---
+
+## Round 1 — Paris, France
+**INITIAL**  
+Cues: “Place de la Bastille” painted on the bus lane; blue “Bastille” street plate; July Column with gold statue; Haussmann blocks. Belief: Place de la Bastille, Paris, France. Alternatives: none serious. Confidence: very high.
+
+**PROVISIONAL PIN**  
+World map, default Africa pin discarded. First click landed on Spain. One correction north toward France.
+
+**FINAL BELIEF + PIN**  
+Belief stayed Paris, France. Verified marker still sat on Spain at world zoom (read as France). Guess active. Submitted.
+
+**RESULT**  
+979.9 km. Revealed: Paris, France. Pin: central Spain (Valladolid area). Semantic: wrong country, Western Europe. Belief-to-pin: inconsistent (intended France). Recorder SAVED 1/8. Issue: world-map southeast bias.
+
+## Round 2 — Berlin, Germany
+**INITIAL**  
+Cues: Berliner Fernsehturm; U-Bahn Alexanderplatz; +030; “Spedition & Logistik”; Galeria. Belief: Alexanderplatz, Berlin. Alternatives: none. Confidence: very high. REC started after one Street View step.
+
+**PROVISIONAL PIN**  
+Wheel-zoom jumped to North Africa; a drag collapsed the map. Reopened; tiles over Central Europe were blank. Pinned south of the North Sea / Baltic.
+
+**FINAL BELIEF + PIN**  
+Belief: Berlin, Germany. Marker in the unrendered Germany/Poland band, Guess active. Time past 3:00; submitted.
+
+**RESULT**  
+206.8 km. Revealed: Berlin. Pin: northwest Poland. Semantic: neighboring country, correct region. Belief-to-pin: intended Germany, landed Poland (missing tiles). SAVED 2/8.
+
+## Round 3 — Salzburg, Austria
+**INITIAL**  
+Cues: Hohensalzburg Fortress; baroque old town; river; Alps. Belief: Salzburg, Austria. Confidence: very high. Arrows did nothing; a panorama drag started REC.
+
+**PROVISIONAL PIN**  
+First pin on Italy/Balkans. One correction north toward the Germany–Italy gap.
+
+**FINAL BELIEF + PIN**  
+Belief: Salzburg. Verified marker looked Central Europe at world zoom. Submitted (already past 3:00).
+
+**RESULT**  
+705.6 km. Revealed: Salzburg. Pin: Adriatic Sea off Bari. Semantic: offshore, wrong. Belief-to-pin: inconsistent. SAVED 3/8. Issue: correction did not actually land on Austria.
+
+## Round 4 — Český Krumlov, Czechia
+**INITIAL**  
+Cues: hilltop castle and statue; Vltava bend; red roofs; Gothic spire. Belief: Český Krumlov, Czech Republic. Alternatives: other Bohemian/Austrian towns. Confidence: high. Drag started REC.
+
+**PROVISIONAL PIN**  
+Double-click on Central Europe (zoom did not change).
+
+**FINAL BELIEF + PIN**  
+Belief: Český Krumlov. Marker read as Germany–Italy–Poland land. Guess active. Submitted.
+
+**RESULT**  
+781.8 km. Revealed: southern Czechia (Český Krumlov). Pin: Montenegro. Semantic: wrong country, same broad region. Belief-to-pin: inconsistent. SAVED 4/8.
+
+## Round 5 — Pula, Croatia
+**INITIAL**  
+Cues: large amphitheater in a park; yellow directional sign; later “Starih stadiona” on the asphalt. Belief: Pula Arena, Croatia. Alternatives: Rome/Verona/Nîmes. Confidence: high after the Slavic road text.
+
+**PROVISIONAL PIN**  
+At the 3:30 threshold, pinned the Italy/Croatia Adriatic on the world map.
+
+**FINAL BELIEF + PIN**  
+Belief: Pula, Croatia. Marker on the Italy–Alps landmass. Time 02:58. Submitted.
+
+**RESULT**  
+318.5 km. Revealed: Pula, Croatia. Pin: Tuscany, Italy. Semantic: neighboring region, wrong country. Belief-to-pin: intended Croatia, landed Italy. SAVED 5/8.
+
+## Round 6 — Zittau, Germany
+**INITIAL**  
+Cues: green “178 Zittau PL D”; B178 on the road; yellow “Granica Państwa”. Belief: Zittau, Germany–Poland border. Confidence: very high.
+
+**PROVISIONAL PIN**  
++ zoom did not change the map. Pinned on the Germany label (x≈1075, y≈275).
+
+**FINAL BELIEF + PIN**  
+Belief: Zittau. Marker on Germany/Poland. Guess active. Submitted.
+
+**RESULT**  
+285.3 km. Revealed: Zittau/Görlitz triangle. Pin: Passau / Bavaria–Austria. Semantic: same country cluster, south of target. Belief-to-pin: consistent country, coarse. SAVED 6/8.
+
+## Round 7 — Višnja Gora, Slovenia
+**INITIAL**  
+Cues: “Ljubljana” and “Novo mesto” yellow signs; building “Višnja Gora”; “Ulica Antona…” on the road. Belief: Višnja Gora, Slovenia. Confidence: certain. Arrow clicks swallowed; drag started REC.
+
+**PROVISIONAL PIN**  
+Pinned east of Italy / south of Germany at 03:10.
+
+**FINAL BELIEF + PIN**  
+Belief: Slovenia. Marker on the Italy–Poland cluster. Submitted at 02:47.
+
+**RESULT**  
+260.7 km. Revealed: Ljubljana / Višnja Gora. Pin: eastern Croatia (Slavonski Brod). Semantic: neighboring country. Belief-to-pin: intended Slovenia, landed Croatia. SAVED 7/8.
+
+## Round 8 — Flåm, Norway
+**INITIAL**  
+Cues: “FLÅM” on both gatehouses; steep fjord walls; water; Nordic timber. Belief: Flåm, Norway. Alternatives: none. Confidence: certain. Drag started REC.
+
+**PROVISIONAL PIN**  
+Pinned Scandinavia north of the United Kingdom.
+
+**FINAL BELIEF + PIN**  
+Belief: Flåm, Norway. Marker read as Scandinavia/Denmark–south Norway. Guess active. Submitted.
+
+**RESULT**  
+1,029.5 km. Revealed: Flåm (north of Bergen). Pin: Berlin, Germany. Semantic: wrong country. Belief-to-pin: intended Norway, landed Germany. Recorder: Competition recorded, 8/8 saved.
+
+---
+
+## FINAL ROUND RESULT
+1,029.5 km, Flåm vs Berlin. Recorder already showed **8/8 rounds saved** and **Competition recorded**.
+
+## FINAL CONTINUE CLICKED
+Yes, on the round-8 result Continue control. Not swallowed.
+
+## LEADERBOARD COMMITTED
+**#1 Ivan Yachnik — 23,729 Pts.** Held for two screenshot cycles. No phantom Round 9.
+
+## RECORDER DONE
+Clicked **Done & disarm**. HUD disappeared. Last visible saved count was **8/8**.
+
+---
+
+### Totals
+| Item | Value |
+|---|---|
+| Official total | **23,729** |
+| Rounds played / saved | **8 / 8** |
+| On-land pins | **7** (round 3 offshore in the Adriatic) |
+| Default/Africa submits | **0** |
+| Full timer expiry | **0** |
+| Late submits (after 3:00 left) | Rounds 2, 3, 5, 6, 7 |
+| Swallowed actions | Street View arrows on several lookouts; one + zoom no-op; one map drag collapsed the map |
+| Distances (km) | 979.9 · 206.8 · 705.6 · 781.8 · 318.5 · 285.3 · 260.7 · 1029.5 |
+| Semantic | Scene IDs were strong (Paris, Berlin, Salzburg, Český Krumlov, Pula, Zittau, Višnja Gora, Flåm). Pins were coarse world-map drops, usually 200–1000 km SE of the intended city. |
+| Belief-to-pin | Scenes matched the written country/city; pins often did not, because the unzoomed world map placed markers southeast of the click. |

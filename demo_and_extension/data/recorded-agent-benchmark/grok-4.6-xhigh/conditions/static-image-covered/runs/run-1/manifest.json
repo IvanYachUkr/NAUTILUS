@@ -1,0 +1,162 @@
+{
+  "condition": "masked starting images; static image batch",
+  "model": "grok-4.6",
+  "served_model": "grok-4.6-build",
+  "reasoning_effort": "xhigh",
+  "session": {
+    "info": {
+      "id": "ef9c3453-e9c1-4870-b0b3-a459a1857c76",
+      "cwd": "C:\\tmp\\nautilus-masked-inputs-20260911"
+    },
+    "generated_title": "Geolocate 15 PNG images, save markdown batch",
+    "created_at": "2026-09-11T15:33:38.213646700Z",
+    "updated_at": "2026-09-11T15:42:33.995889400Z",
+    "current_model_id": "grok-4.6",
+    "reasoning_effort": "xhigh",
+    "num_messages": 85,
+    "num_chat_messages": 40
+  },
+  "status": "predictions recovered; final write cancelled",
+  "stop_reason": "cancelled",
+  "report_origin": "Exact content of final write tool request, not a successfully saved model artifact.",
+  "input_source_commit": "12b9790",
+  "exported_at_utc": "2026-09-11T15:46:17.179859+00:00",
+  "prediction_count": 15,
+  "stored_update_count": 85,
+  "readable_reasoning_sections": 6,
+  "readable_reasoning_characters": 8970,
+  "reasoning_hashes": [
+    "95d85a17e1567cf81ca08d0bfcec51b75c35bb6cd967deeee42bb672ba060f11",
+    "1f0c89c948f9cdbe07bcee97250daa9fd91f00e814b3fe71f98b2379611ed87c",
+    "1817249a09215e10f698f2a8590e37283f333961d055c88541e8dac32947a99e",
+    "dc82e4d34958ea902fd729d307fe498c8d0088dc5b931e4ec634a9759ad9c668",
+    "2d60ea9b48c4c0d340d86c6d1274bdee0199d21ee77a7d13c0d451bfb6eabe99",
+    "4e6ae7bde236a1c357c5f465ae65f0a579a6468489beb224021a6e193fcea379"
+  ],
+  "tool_counts": {
+    "list_dir": 1,
+    "todo_write": 2,
+    "read_file": 19,
+    "write": 1
+  },
+  "read_counts": {
+    "image_01.png": 1,
+    "image_02.png": 2,
+    "image_03.png": 2,
+    "image_04.png": 2,
+    "image_05.png": 1,
+    "image_06.png": 2,
+    "image_07.png": 1,
+    "image_08.png": 1,
+    "image_09.png": 1,
+    "image_10.png": 1,
+    "image_11.png": 1,
+    "image_12.png": 1,
+    "image_13.png": 1,
+    "image_14.png": 1,
+    "image_15.png": 1
+  },
+  "input_images": [
+    {
+      "image": "image_01.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "sha256": "D2515D3CB4D4B4C9F7A4B91FE43322FCBE5EA0672FB3753D56D4C548FFB29D26"
+    },
+    {
+      "image": "image_02.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "sha256": "2B92C7B1A165617B37CC0BF7E4B83EAE18093000FD67D19E89041AFADFFE91D7"
+    },
+    {
+      "image": "image_03.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+      "sha256": "A400AAEAAF9E7F47B1E1AF0D071A22425A9F9CC0C85533833D712763051E37A7"
+    },
+    {
+      "image": "image_04.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+      "sha256": "FC67D6A2346F23BF98473FEF2D43FFC1A85EDA8EFD81B9AA4D2C8B28B517F980"
+    },
+    {
+      "image": "image_05.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "sha256": "F9172F7DF9BACCB3262A7E9DDCCB7DDD7BBBF9FC4AA55571882C5E4D25B96DD2"
+    },
+    {
+      "image": "image_06.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+      "sha256": "C073EC3E2FAF2D47C589E907DFD13BF98D3E6F60EAC2F48B8E810EFEC19793F6"
+    },
+    {
+      "image": "image_07.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+      "sha256": "7892DB3C226AABFEF1AEA5D350970EEF5F4BF792668BDE02E354ACF02FD89A30"
+    },
+    {
+      "image": "image_08.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+      "sha256": "46911CA47625990514DD063B7B136C9DF555A871C1CEEA9A17A692388AC8CBEA"
+    },
+    {
+      "image": "image_09.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+      "sha256": "03ADF164425ED1888DF34D8AC15119C80CEC3DCA8900295F48BA344698D37D7D"
+    },
+    {
+      "image": "image_10.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "sha256": "82A1581152BF27F76A5A34B8EDF464508A53DFEA7E42F6D5B00FBA7C4A515CAB"
+    },
+    {
+      "image": "image_11.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+      "sha256": "14F2905178D6C9828089B2A7D46A4C3EAB20B44D8B595B680457D931F3E3B5B2"
+    },
+    {
+      "image": "image_12.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+      "sha256": "9BF4CBD2181F41362582F725D51E6ECD0751BAF143480423456BB1B7A63C5A2B"
+    },
+    {
+      "image": "image_13.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+      "sha256": "81C801EFFA8439F415460E992F86F41CEB0A46D0C50AE9829842BC166407178C"
+    },
+    {
+      "image": "image_14.png",
+      "source": "demo_and_extension/data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+      "sha256": "F8D1B76E56281560D5D38701AB2DD36F4F8865982A9D6B67EED160A19FA0A8AC"
+    },
+    {
+      "image": "image_15.png",
+      "source": "demo_and_extension/data/starting-images-covered/map_metadata_cover/europe-hard/loc_025.png",
+      "sha256": "0FE348523B21557DA6D7B7066247F079D7A94B8C43081AAD39F4302090BC14B4"
+    }
+  ],
+  "usage": {
+    "inputTokens": 169617,
+    "outputTokens": 26624,
+    "totalTokens": 196241,
+    "cachedReadTokens": 108544,
+    "cacheCreationTokens": 0,
+    "reasoningTokens": 21616,
+    "modelCalls": 6,
+    "apiDurationMs": 529330,
+    "costUsdTicks": 571475400,
+    "modelUsage": {
+      "grok-4.6-build": {
+        "inputTokens": 169617,
+        "outputTokens": 26624,
+        "totalTokens": 196241,
+        "cachedReadTokens": 108544,
+        "cacheCreationTokens": 0,
+        "reasoningTokens": 21616,
+        "modelCalls": 6,
+        "apiDurationMs": 529330,
+        "costUsdTicks": 571475400
+      }
+    },
+    "numTurns": 6
+  },
+  "export_policy": "All conversation update text, readable reasoning, tool inputs/results, and cancellation evidence retained. Image payloads replaced by digests. Encrypted reasoning and unrelated runtime configuration not exported."
+}

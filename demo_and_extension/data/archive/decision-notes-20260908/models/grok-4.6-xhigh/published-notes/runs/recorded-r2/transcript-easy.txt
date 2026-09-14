@@ -1,0 +1,91 @@
+grok.exe : [2m2026-08-31T10:38:03.889224Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\Users\vanya\Documents\Computer_Vision_FInal_Project\scripts\Start-GrokNau
+tilusRecorded.ps1:136 char:1
++ & grok @grokArgs 2>&1 | Tee-Object -FilePath $transcriptFullPath
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-08-31T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-08-31T10:38:03.894453Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-08-31T10:38:06.353671Z[0m [31mERROR[0m fail to get common stream: 
+Client error: HTTP status client error (404 Not Found) for url 
+(http://localhost:8931/mcp)
+[2m2026-08-31T10:38:06.355885Z[0m [33m WARN[0m sse client event stream 
+terminated with error: Err(Client(reqwest::Error { kind: Status(404, None), 
+url: "http://localhost:8931/mcp" }))
+I'll start by locating the Playwright screenshot/click tools, then capture the competition modal before touching anything.The screenshot tool is available. I’ll capture the full viewport next and wait until the recorder shows ARMED before Confirm.Recorder is ARMED with the expected labels. I’ll click Confirm at the calibrated point and wait for round 1.Round 1 is a Competition with REC and ~5:00 on the clock. Scene is Place de la Bastille in Paris; I’ll open the guess map and pin France.Footer shows Competition 1/8 with a 5-minute timer. Default pin is in Africa; I’ll drop the first pin on France.Pin sits on France with Guess active. Submitting now.Round 1 saved (Paris, 1,239.3 km). Clicking Continue.Continue was missed; I’ll click the same control again.Round 2 is Alexanderplatz in Berlin. Opening the map to pin Germany.Default pin is still in Africa. I’ll click Germany on the world map, north of last round’s miss.Pin is on Germany with Guess active and 02:57 left. Submitting.Round 2 saved (Berlin, 567.1 km). Clicking Continue.Round 3 is Salzburg, Austria. Opening the map and zooming into Europe before the pin.Map is open. I’ll hover over Central Europe and zoom before placing the pin.Cursor is over Germany. Zooming in before I place the pin.Europe is zoomed; I’ll pin western Austria, on Salzburg.Pin is on Austria with Guess active. Submitting.Round 3 saved (Salzburg, 334.6 km). Clicking Continue.Round 4 is Český Krumlov, Czechia. Opening the map and zooming into Central Europe.Czechia is visible at the top of the map. Pinning southern Czechia.Pin is on Czechia with Guess active. Submitting.Round 4 saved (Český Krumlov, 345.3 km). Clicking Continue.Round 5 looks like Pula, Croatia (Roman arena plus a yellow directional sign). Opening the map to pin Croatia.Croatia is labeled at the top of the map. Pinning Istria/Pula.Pin is on the Croatia/Balkans landmass with Guess active. Submitting.Round 5 saved (Pula, 552.5 km). Clicking Continue.Round 6 is the Polish–German border at Zittau (`Granica Państwa`, B178). Opening the map to pin that crossing.Time is 03:29. Pinning the Germany–Czechia–Poland tripoint near Zittau.Pin is on Czechia/Slovakia land with 03:10 left. Submitting.Round 6 saved (Zittau/Görlitz, 494.1 km). Clicking Continue.Round 7 is Slovenia (signs for Ljubljana and Novo mesto). Opening the map to pin it.Europe is visible. Zooming once more onto the Austria–Croatia border to hit Slovenia.Time is 03:38. Pinning the Austria–Croatia gap (Slovenia).Pin is on the Austria/Slovenia border with Guess active. Submitting.Round 7 saved (Slovenia near Grosuplje, 159.1 km). Clicking Continue.Round 8 is Flåm, Norway — the booths are labeled. Opening the map to pin western Norway.Denmark is at the top of the map. I’ll drag south so Norway comes into view.The map overshot into the Arctic. Dragging back south toward Norway.The map jumped to Africa. Panning north toward Europe.The map collapsed and the clock is at 02:49. Reopening it to pin Norway immediately.The pin is in Africa, which is wrong. Zooming out to reach Norway.World map is back with Norway labeled. Pinning Norway now.Pin is on Norway. Submitting with 00:28 left.Round 8 saved (Flåm, 478.1 km; 8/8 recorded). Clicking Continue for the leaderboard.Leaderboard is up at 24,688 points. I’ll hold for a second screenshot to confirm no extra round starts.No Round 9. Clicking Done & disarm.Competition complete. Official total **24,688 Pts** across **8/8** recorded rounds. Recorder disarmed; HUD gone; no Round 9.
+
+## Round 1
+**INITIAL:** Place de la Bastille, Paris, France. Cues: `Place de la Bastille` road paint, July Column, Bastille bus stop, Haussmann blocks, French street. Belief: Paris, France. Alt: other French city. High confidence.
+**PROVISIONAL PIN:** World-map click on the France label.
+**FINAL BELIEF + PIN:** Paris, France. Marker looked like France at world scale; Guess active.
+**RESULT:** Revealed Paris, France. **1,239.3 km**. Pin actually in the Mediterranean (Palma–Algiers). “Right area, wrong spot.” +1447 XP. SAVED 1/8. Semantic: country correct. Belief-to-pin: inconsistent (offshore). Continue swallowed once, retry worked.
+
+## Round 2
+**INITIAL:** Alexanderplatz, Berlin, Germany. Cues: Fernsehturm, `Spedition & Logistik`, 030, U-Bahn Alexanderplatz, German `Solitär` ad. Belief: Berlin. High confidence.
+**PROVISIONAL PIN:** Germany on the world map.
+**FINAL BELIEF + PIN:** Berlin, Germany. Marker on southern Germany/Austria land. Guess active.
+**RESULT:** Revealed Berlin. **567.1 km**. Pin near Munich/Salzburg. “Yup, that was impressive.” +2835 XP. SAVED 2/8. Semantic: correct country. Belief-to-pin: country-matched, coarse.
+
+## Round 3
+**INITIAL:** Salzburg, Austria. Cues: Hohensalzburg, Salzach, Alps, baroque old town. Belief: Salzburg. High confidence.
+**PROVISIONAL PIN:** Western Austria after one Europe zoom.
+**FINAL BELIEF + PIN:** Salzburg, Austria. Marker on Austria/Alps land. Guess active.
+**RESULT:** Revealed Salzburg. **334.6 km**. Pin in Ticino, Switzerland. “Yup, that was impressive.” +3577 XP. SAVED 3/8. Semantic: correct country/region. Belief-to-pin: neighboring land.
+
+## Round 4
+**INITIAL:** Český Krumlov, Czechia. Cues: castle-terrace saint statue, Vltava horseshoe, red roofs, weir. Belief: Český Krumlov. High confidence.
+**PROVISIONAL PIN:** Czechia on the Europe map.
+**FINAL BELIEF + PIN:** Český Krumlov, Czechia. Marker on Czechia/Slovakia land. Guess active.
+**RESULT:** Revealed Český Krumlov. **345.3 km**. Pin near Esztergom, Hungary. “You're good at this.” +3539 XP. SAVED 4/8. Semantic: correct country. Belief-to-pin: neighboring land.
+
+## Round 5
+**INITIAL:** Pula, Croatia. Cues: Roman arena, yellow Croatian junction sign, cypress/pines, cobbles. Belief: Pula. Alt: Rome/Nîmes. High confidence.
+**PROVISIONAL PIN:** Croatia/Balkans after Europe zoom.
+**FINAL BELIEF + PIN:** Pula, Croatia. Marker on Croatia/Serbia land. Guess active.
+**RESULT:** Revealed Pula. **552.5 km**. Pin near Novi Pazar, Serbia. “That's how it's done.” +2877 XP. SAVED 5/8. Semantic: correct country. Belief-to-pin: neighboring land.
+
+## Round 6
+**INITIAL:** Polish–German border at Zittau. Cues: `Zittau PL D`, `B178`, `Granica Państwa`, green Polish signs. Belief: Poland at Zittau/Görlitz. High confidence.
+**PROVISIONAL PIN:** Czechia–Germany–Poland tripoint on the Europe map.
+**FINAL BELIEF + PIN:** Zittau border. Marker on Czechia/Slovakia land. Guess active (time at 3:10).
+**RESULT:** Revealed Zittau/Görlitz border. **494.1 km**. Pin near Prešov, Slovakia. “That's how it's done.” +3050 XP. SAVED 6/8. Semantic: correct region. Belief-to-pin: Central Europe, wrong country.
+
+## Round 7
+**INITIAL:** Slovenia. Cues: yellow `Ljubljana` and `Novo mesto` signs, `Ulica` road paint, hills, tile roofs. Belief: Slovenia between Ljubljana and Novo mesto. High confidence.
+**PROVISIONAL PIN:** Austria–Croatia gap (Slovenia).
+**FINAL BELIEF + PIN:** Slovenia. Marker on Austria/Slovenia land. Guess active.
+**RESULT:** Revealed Grosuplje area, Slovenia. **159.1 km**. Pin in NE Italy (Maniago/Udine). “You're good at this.” +4264 XP. SAVED 7/8. Semantic: correct country. Belief-to-pin: neighboring land. Closest round.
+
+## Round 8
+**INITIAL:** Flåm, Norway. Cues: `FLÅM` on kiosks, fjord walls, barrels, Norwegian flag. Belief: Flåm. High confidence.
+**PROVISIONAL PIN:** Accidental Africa pin (Cameroon) after Arctic/Africa pan and a collapsed map. Inconsistent with Norway; one allowed correction.
+**FINAL BELIEF + PIN:** Flåm, Norway. Corrected onto Norway/Sweden on the world map. Guess active at 00:28.
+**RESULT:** Revealed Nærøyfjorden/Flåm, Norway. **478.1 km**. Pin near Örebro, Sweden. “Almost there!” +3099 XP. SAVED 8/8. Semantic: correct country. Belief-to-pin: neighboring land after one Africa correction. Late submit; no default leftover.
+
+---
+
+**FINAL ROUND RESULT:** Flåm/Nærøyfjorden, Norway. 478.1 km. 8/8 saved. Competition recorded.
+
+**FINAL CONTINUE CLICKED:** Yes, on the round-8 result Continue control. Leaderboard appeared. No swallow on this Continue.
+
+**LEADERBOARD COMMITTED:** Yes. `#1 Ivan Iachnyk — 24,688 Pts.` on both You & friends and All. Held for two screenshot cycles. No Round 9.
+
+**RECORDER DONE:** Clicked `Done & disarm`. HUD gone. Last visible saved count **8/8**.
+
+| Metric | Value |
+|---|---|
+| Official total | **24,688 Pts** |
+| Rounds played / saved | 8 / 8 |
+| Valid on-land markers | 7/8 (round 1 offshore) |
+| Timeouts / leftover defaults | 0 |
+| Semantic (scene ID) | 8/8 correct country or city |
+| Belief-to-pin | 7/8 on land in the believed region; R1 offshore |
+| Distances (km) | 1239.3, 567.1, 334.6, 345.3, 552.5, 494.1, 159.1, 478.1 |
+| Swallowed actions | Round 1 Continue once (retried). Round 8 map-drag collapsed the map; recovered. |
+| Uncertainty | World-map pins were coarse by design; R8 pan almost left an Africa pin, corrected before Guess. XP bars are not official points. |

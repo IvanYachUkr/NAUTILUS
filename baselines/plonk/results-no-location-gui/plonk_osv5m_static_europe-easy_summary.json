@@ -1,0 +1,46 @@
+{
+  "dataset": "europe-easy",
+  "model": "PLONK OSV-5M",
+  "checkpoint": "nicolas-dufour/PLONK_OSV_5M",
+  "device": "cpu",
+  "n_images": 8,
+  "generated_at_utc": "2026-09-13T13:02:32.961240+00:00",
+  "distance_unit": "km",
+  "reproducibility": {
+    "base_seed": 42,
+    "samples_per_image": 1
+  },
+  "prediction_error": {
+    "mean_km": 352.945,
+    "median_km": 257.907,
+    "std_km": 441.826,
+    "rmse_km": 565.491,
+    "min_km": 3.554,
+    "max_km": 1456.278
+  },
+  "prediction_threshold_accuracy": {
+    "within_1_km_percent": 0.0,
+    "within_25_km_percent": 25.0,
+    "within_200_km_percent": 37.5,
+    "within_750_km_percent": 87.5,
+    "within_2500_km_percent": 100.0
+  },
+  "best_prediction_case": {
+    "location_id": "loc_001",
+    "city_or_region": "Paris",
+    "error_km": 3.554
+  },
+  "worst_prediction_case": {
+    "location_id": "loc_008",
+    "city_or_region": "Flåm, Aurland Municipality",
+    "error_km": 1456.278
+  },
+  "timing": {
+    "definition": "Warm per-image inference after one-time model loading; includes pipeline preprocessing, generation and coordinate output; excludes image disk decoding and evaluation metrics.",
+    "model_load_seconds": 4.097,
+    "mean_inference_seconds": 3.931,
+    "median_inference_seconds": 3.902,
+    "std_inference_seconds": 0.115,
+    "total_inference_seconds": 31.445
+  }
+}

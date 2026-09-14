@@ -1,0 +1,23 @@
+2026-09-01T01:40:27.582031Z  WARN config: ignored unrecognized or invalid entry path=privacy field="(entry)" kind=UnknownField reason=unrecognized config key
+2026-09-01T01:40:27.582131Z  WARN config: parsed with warnings; run `grok inspect` for details warnings=1
+I'll start by loading the OpenGuessr tool schemas, then screenshot the current competition viewport so we can confirm round 1/8.Schemas are loaded. Next I’ll capture the full viewport and confirm we’re on competition round 1/8.Round 1 is Place de la Bastille in Paris — the column, Bastille bus stop, and street marking are unambiguous. I’ll confirm round state, then place the pin.The scene is Place de la Bastille in Paris, with the July Column and Opéra Bastille. I’ll place the pin at that location.Round 1 landed 75 m away. Continuing to the next round.Round 2 is Alexanderplatz in Berlin: TV tower, U-Bahn sign, and Berlin area code. Placing that pin now.Round 2 was 182 m off. Continuing to round 3.Round 3 is Salzburg from Kapuzinerberg: Hohensalzburg Fortress, Salzach, and the old town. Placing that pin.Round 3 was 492 m off on Kapuzinerberg. Continuing to round 4.Round 4 looks like Český Krumlov Castle. I’ll pan once for extra confirmation, then place.The terrace and Vltava weir match Český Krumlov Castle’s Cloak Bridge. Placing the pin there.Round 4 was 134 m off. Continuing to round 5.Round 5 looks like Pula Arena. I’ll pan to the yellow sign for a street-level read, then place.The harbor and park sit just south of Pula Arena. Placing the pin at that junction.Round 5 was 307 m off. Continuing to round 6.Round 6 is the Zittau–Sieniawka border: B178, a Zittau sign, and “Granica Państwa.” I’ll pan for the village church, then place.The B178 roundabout is at the Porajów–Zittau border. Placing there.Round 6 was 2.56 km off, still near the tripoint. Continuing to round 7.Round 7 is Višnja Gora, Slovenia: station name plus Ljubljana and Novo mesto signs. Placing at the station.Round 7 was 177 m off. Continuing to the last round.Round 8 is Flåm, Norway: FLÅM bus shelters on the Aurlandsfjord waterfront. Placing that pin.Round 8 was 172 m off. Continuing once more to open the leaderboard.All 8 rounds are in. Official total is **39,979 Pts** on the NAUTILUS Easy MCP Trial 7 leaderboard.
+
+| Round | Belief | Coordinates | Distance | Official points | Controller |
+|---|---|---|---|---|---|
+| 1 | Place de la Bastille, Paris | 48.8528, 2.3695 | 75 m | not labeled (shown **+5000 XP**) | none |
+| 2 | Alexanderplatz, Berlin | 52.5216, 13.413 | 182 m | not labeled (shown **+4999 XP**) | none |
+| 3 | Kapuzinerberg, Salzburg | 47.803, 13.0475 | 492 m | not labeled (shown **+4998 XP**) | none |
+| 4 | Český Krumlov Castle (Cloak Bridge) | 48.8125, 14.3148 | 134 m | not labeled (shown **+4999 XP**) | pan drag did not change view |
+| 5 | Pula Arena, Croatia | 44.872, 13.85 | 307 m | not labeled (shown **+4998 XP**) | none |
+| 6 | B178 Zittau–Porajów border | 50.878, 14.841 | 2,564 m | not labeled (shown **+4987 XP**) | pan drag did not change view |
+| 7 | Višnja Gora station, Slovenia | 45.957, 14.7445 | 177 m | not labeled (shown **+4999 XP**) | none |
+| 8 | Flåm waterfront, Norway | 60.862, 7.117 | 172 m | not labeled (shown **+4999 XP**) | none |
+
+**Official total:** 39,979 Pts  
+**Completed rounds:** 8/8  
+**Timeouts / default pins:** 0  
+**Semantic misses:** 0 (every round was the correct city/landmark)  
+**Belief-to-pin mismatches:** 0 (`get_state` matched the chosen pin every round; Guess stayed enabled)  
+**Unreadable values:** per-round **Pts** were never printed on the result cards — only distance, flavor text, and XP. Those eight XP figures sum to 39,979, which matches the leaderboard, so they are almost certainly the official round scores, but that is inferred, not labeled.
+
+**MCP map control:** It helped. `place_guess` verified on the first try all 8 rounds; no manual map-click recovery was needed. Submit and Continue both worked without a retry. The only weak physical interactions were two Street View pans that did not move the camera.

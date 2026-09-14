@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "2.0",
+  "recordingType": "openguessr-round",
+  "recorder": {
+    "name": "OpenGuessr Research Round Recorder",
+    "version": "0.7.8"
+  },
+  "id": "ogrr-2026-09-09T10-34-19-773Z-1544fccd-c511-4c5c-82bf-00f9cd094f84",
+  "sessionId": "session-2026-09-09T09-30-36-285Z-17f63f19-7b3e-4488-aeb9-2fdbbe4984f9",
+  "sourceApplication": "OpenGuessr",
+  "pageUrl": "https://openguessr.com/",
+  "competitionId": "europe-medium",
+  "competitionOverallIndex": 8,
+  "openGuessrCompetitionHint": null,
+  "model": "gemini-3.8-flash-high aided run3",
+  "condition": "interactive-panorama",
+  "configuredCondition": null,
+  "captureMode": "interactive",
+  "restriction": null,
+  "staticImage": null,
+  "playbackActions": [],
+  "departureFrames": [],
+  "finalView": null,
+  "video": null,
+  "partial": true,
+  "startedAt": "2026-09-09T10:34:19.773Z",
+  "stoppedAt": "2026-09-09T10:35:18.384Z",
+  "durationMs": 58611,
+  "stopReason": "new_streetview_frame",
+  "prediction": null,
+  "config": {
+    "sampleIntervalMs": 250,
+    "positionThresholdM": 0.5,
+    "angleThresholdDeg": 1,
+    "pitchThresholdDeg": 1,
+    "zoomThreshold": 0.05,
+    "maxSilentIntervalMs": 2000,
+    "maxSamples": 50000
+  },
+  "round": {
+    "index": 7,
+    "id": "round-8",
+    "detectedAt": "2026-09-09T10:34:19.773Z",
+    "detectedAtMs": 1788950059773,
+    "endedAt": "2026-09-09T10:35:18.384Z",
+    "endedAtMs": 1788950118384,
+    "roundSignal": "bffe8ce6-2461-400c-a4d0-16174a14d9c1|48.7583857,19.1412898|none",
+    "spawnRequested": {
+      "lat": 48.7583857,
+      "lng": 19.1412898,
+      "heading": 342.1,
+      "pitch": null,
+      "zoom": null,
+      "fov": 90,
+      "panoId": null
+    },
+    "actualStart": {
+      "lat": 48.7583857,
+      "lng": 19.1412898,
+      "capturedAt": "2026-09-09T10:34:20.835Z",
+      "panoId": null
+    },
+    "sampleCount": 1,
+    "firstSampleSeq": 0,
+    "lastSampleSeq": 0,
+    "frameInstanceId": "bffe8ce6-2461-400c-a4d0-16174a14d9c1",
+    "competitionRound": 8,
+    "pageRoundNumber": null,
+    "pageRoundTotal": null,
+    "captureMode": "interactive",
+    "startSource": "streetview-frame",
+    "provisional": false,
+    "frozenAt": null,
+    "freezeReason": null,
+    "staticImage": null,
+    "playbackActionCount": 0,
+    "departureFrameCount": 0,
+    "finalView": null,
+    "video": null
+  },
+  "rounds": [
+    {
+      "index": 7,
+      "id": "round-8",
+      "detectedAt": "2026-09-09T10:34:19.773Z",
+      "detectedAtMs": 1788950059773,
+      "endedAt": "2026-09-09T10:35:18.384Z",
+      "endedAtMs": 1788950118384,
+      "roundSignal": "bffe8ce6-2461-400c-a4d0-16174a14d9c1|48.7583857,19.1412898|none",
+      "spawnRequested": {
+        "lat": 48.7583857,
+        "lng": 19.1412898,
+        "heading": 342.1,
+        "pitch": null,
+        "zoom": null,
+        "fov": 90,
+        "panoId": null
+      },
+      "actualStart": {
+        "lat": 48.7583857,
+        "lng": 19.1412898,
+        "capturedAt": "2026-09-09T10:34:20.835Z",
+        "panoId": null
+      },
+      "sampleCount": 1,
+      "firstSampleSeq": 0,
+      "lastSampleSeq": 0,
+      "frameInstanceId": "bffe8ce6-2461-400c-a4d0-16174a14d9c1",
+      "competitionRound": 8,
+      "pageRoundNumber": null,
+      "pageRoundTotal": null,
+      "captureMode": "interactive",
+      "startSource": "streetview-frame",
+      "provisional": false,
+      "frozenAt": null,
+      "freezeReason": null,
+      "staticImage": null,
+      "playbackActionCount": 0,
+      "departureFrameCount": 0,
+      "finalView": null,
+      "video": null
+    }
+  ],
+  "captureSources": {
+    "openguessr-dom": 1
+  },
+  "sampleCount": 1,
+  "keyMoments": [],
+  "diagnostics": {
+    "events": [
+      {
+        "name": "round_started",
+        "at": "2026-09-09T10:34:19.789Z",
+        "details": {
+          "frameInstanceId": "bffe8ce6-2461-400c-a4d0-16174a14d9c1",
+          "spawnRequested": {
+            "lat": 48.7583857,
+            "lng": 19.1412898,
+            "heading": 342.1,
+            "pitch": null,
+            "zoom": null,
+            "fov": 90,
+            "panoId": null
+          },
+          "competitionRound": 8,
+          "pageRoundNumber": null,
+          "pageRoundTotal": null,
+          "captureMode": "interactive",
+          "startSource": "streetview-frame",
+          "provisional": false
+        }
+      },
+      {
+        "name": "dom_probe",
+        "at": "2026-09-09T10:34:20.839Z",
+        "details": {
+          "pageState": "round",
+          "roundNumber": null,
+          "roundTotal": null,
+          "modeHint": "streetview",
+          "streetViewCandidateCount": 1
+        }
+      },
+      {
+        "name": "interactive_departure_without_sharp_frame",
+        "at": "2026-09-09T10:35:18.158Z",
+        "details": {
+          "at": "2026-09-09T10:35:18.155Z",
+          "pointerType": "mouse"
+        }
+      }
+    ],
+    "firstCaptureAt": "2026-09-09T10:34:20.835Z",
+    "lastCaptureAt": "2026-09-09T10:34:20.835Z",
+    "truncated": false,
+    "lastPageProbe": {
+      "trigger": "heartbeat",
+      "at": "2026-09-09T10:35:18.335Z",
+      "atMs": 1788950118335,
+      "pageUrl": "https://openguessr.com/",
+      "pathname": "/",
+      "title": "OpenGuessr - Free GeoGuessr Alternative",
+      "pageState": "round",
+      "roundLikelyActive": true,
+      "competitionStartPromptVisible": false,
+      "competitionStartLabel": null,
+      "competitionStartSignature": null,
+      "guessControlVisible": true,
+      "nextControlVisible": false,
+      "resultVisible": false,
+      "roundNumber": null,
+      "roundTotal": null,
+      "modeHint": "streetview",
+      "primaryView": {
+        "lat": 48.7583857,
+        "lng": 19.1412898,
+        "heading": 342.1,
+        "pitch": null,
+        "zoom": null,
+        "fov": 90,
+        "panoId": null,
+        "url": "https://www.google.com/maps/embed/v1/streetview?location=48.7583857%2C19.1412898&key=%5Bredacted%5D&fov=90&language=en&heading=342.1",
+        "urlFingerprint": "e19fc22a",
+        "source": "iframe"
+      },
+      "controlLabels": [
+        "Menu",
+        "Layers",
+        "Terms",
+        "Return",
+        "Guess",
+        "Pin Only",
+        "Pan Only",
+        "✨ Pan+Pin",
+        "🔍+",
+        "🔍−",
+        "z=8",
+        "z=12"
+      ],
+      "diagnostics": {
+        "iframeCount": 2,
+        "imageCount": 29,
+        "streetViewCandidateCount": 1,
+        "nmpzTextDetected": false
+      }
+    }
+  },
+  "samples": [
+    {
+      "seq": 0,
+      "roundIndex": 7,
+      "tMs": 1062,
+      "capturedAt": "2026-09-09T10:34:20.835Z",
+      "receivedAt": "2026-09-09T10:34:20.839Z",
+      "lat": 48.7583857,
+      "lng": 19.1412898,
+      "heading": 342.1,
+      "pitch": null,
+      "zoom": null,
+      "fov": 90,
+      "panoId": null,
+      "source": "openguessr-dom",
+      "reason": "dom_probe_initial_fallback",
+      "frameInstanceId": "bffe8ce6-2461-400c-a4d0-16174a14d9c1"
+    }
+  ],
+  "receivedAt": "2026-09-09T10:35:18.402Z",
+  "competitionPartId": "europe-medium",
+  "competitionPart": 1,
+  "competitionRound": 8,
+  "atlasLocationId": "europe-medium--loc-016",
+  "locationId": "loc_016",
+  "locationMatch": {
+    "method": "nearest-start-coordinate",
+    "distanceMeters": 0
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-09-13T17:29:53.289Z",
+  "maxLocationsPerCompetition": 20,
+  "competitions": [
+    {
+      "id": "europe-easy",
+      "name": "European Evaluation — Easy",
+      "shortName": "Easy",
+      "datasetId": "europe-evaluation-25",
+      "order": 1,
+      "description": "Eight European scenes with a strong landmark, text, or mixed clue intended to support exact or near-exact localization.",
+      "count": 8,
+      "partCount": 1,
+      "sourceFile": "data/competitions/europe-easy.json",
+      "parts": [
+        {
+          "id": "europe-easy",
+          "part": 1,
+          "partCount": 1,
+          "count": 8,
+          "filename": "europe-easy.txt",
+          "locationIds": [
+            "europe-easy--loc-001",
+            "europe-easy--loc-002",
+            "europe-easy--loc-003",
+            "europe-easy--loc-004",
+            "europe-easy--loc-005",
+            "europe-easy--loc-006",
+            "europe-easy--loc-007",
+            "europe-easy--loc-008"
+          ],
+          "localLocationIds": [
+            "loc_001",
+            "loc_002",
+            "loc_003",
+            "loc_004",
+            "loc_005",
+            "loc_006",
+            "loc_007",
+            "loc_008"
+          ]
+        }
+      ],
+      "archiveFilename": null
+    },
+    {
+      "id": "europe-medium",
+      "name": "European Evaluation — Medium",
+      "shortName": "Medium",
+      "datasetId": "europe-evaluation-25",
+      "order": 2,
+      "description": "Nine European scenes where country or city-level localization is plausible but the exact location is less directly identifiable.",
+      "count": 9,
+      "partCount": 1,
+      "sourceFile": "data/competitions/europe-medium.json",
+      "parts": [
+        {
+          "id": "europe-medium",
+          "part": 1,
+          "partCount": 1,
+          "count": 9,
+          "filename": "europe-medium.txt",
+          "locationIds": [
+            "europe-medium--loc-009",
+            "europe-medium--loc-010",
+            "europe-medium--loc-011",
+            "europe-medium--loc-012",
+            "europe-medium--loc-013",
+            "europe-medium--loc-014",
+            "europe-medium--loc-015",
+            "europe-medium--loc-016",
+            "europe-medium--loc-017"
+          ],
+          "localLocationIds": [
+            "loc_009",
+            "loc_010",
+            "loc_011",
+            "loc_012",
+            "loc_013",
+            "loc_014",
+            "loc_015",
+            "loc_016",
+            "loc_017"
+          ]
+        }
+      ],
+      "archiveFilename": null
+    },
+    {
+      "id": "europe-hard",
+      "name": "European Evaluation — Hard",
+      "shortName": "Hard",
+      "datasetId": "europe-evaluation-25",
+      "order": 3,
+      "description": "Eight European rural or village scenes without a uniquely identifying clue at first inspection.",
+      "count": 8,
+      "partCount": 1,
+      "sourceFile": "data/competitions/europe-hard.json",
+      "parts": [
+        {
+          "id": "europe-hard",
+          "part": 1,
+          "partCount": 1,
+          "count": 8,
+          "filename": "europe-hard.txt",
+          "locationIds": [
+            "europe-hard--loc-018",
+            "europe-hard--loc-019",
+            "europe-hard--loc-020",
+            "europe-hard--loc-021",
+            "europe-hard--loc-022",
+            "europe-hard--loc-023",
+            "europe-hard--loc-024",
+            "europe-hard--loc-025"
+          ],
+          "localLocationIds": [
+            "loc_018",
+            "loc_019",
+            "loc_020",
+            "loc_021",
+            "loc_022",
+            "loc_023",
+            "loc_024",
+            "loc_025"
+          ]
+        }
+      ],
+      "archiveFilename": null
+    }
+  ],
+  "files": [
+    {
+      "competitionId": "europe-easy",
+      "competitionName": "European Evaluation — Easy",
+      "partId": "europe-easy",
+      "part": 1,
+      "partCount": 1,
+      "filename": "europe-easy.txt",
+      "locationIds": [
+        "europe-easy--loc-001",
+        "europe-easy--loc-002",
+        "europe-easy--loc-003",
+        "europe-easy--loc-004",
+        "europe-easy--loc-005",
+        "europe-easy--loc-006",
+        "europe-easy--loc-007",
+        "europe-easy--loc-008"
+      ],
+      "localLocationIds": [
+        "loc_001",
+        "loc_002",
+        "loc_003",
+        "loc_004",
+        "loc_005",
+        "loc_006",
+        "loc_007",
+        "loc_008"
+      ],
+      "count": 8
+    },
+    {
+      "competitionId": "europe-medium",
+      "competitionName": "European Evaluation — Medium",
+      "partId": "europe-medium",
+      "part": 1,
+      "partCount": 1,
+      "filename": "europe-medium.txt",
+      "locationIds": [
+        "europe-medium--loc-009",
+        "europe-medium--loc-010",
+        "europe-medium--loc-011",
+        "europe-medium--loc-012",
+        "europe-medium--loc-013",
+        "europe-medium--loc-014",
+        "europe-medium--loc-015",
+        "europe-medium--loc-016",
+        "europe-medium--loc-017"
+      ],
+      "localLocationIds": [
+        "loc_009",
+        "loc_010",
+        "loc_011",
+        "loc_012",
+        "loc_013",
+        "loc_014",
+        "loc_015",
+        "loc_016",
+        "loc_017"
+      ],
+      "count": 9
+    },
+    {
+      "competitionId": "europe-hard",
+      "competitionName": "European Evaluation — Hard",
+      "partId": "europe-hard",
+      "part": 1,
+      "partCount": 1,
+      "filename": "europe-hard.txt",
+      "locationIds": [
+        "europe-hard--loc-018",
+        "europe-hard--loc-019",
+        "europe-hard--loc-020",
+        "europe-hard--loc-021",
+        "europe-hard--loc-022",
+        "europe-hard--loc-023",
+        "europe-hard--loc-024",
+        "europe-hard--loc-025"
+      ],
+      "localLocationIds": [
+        "loc_018",
+        "loc_019",
+        "loc_020",
+        "loc_021",
+        "loc_022",
+        "loc_023",
+        "loc_024",
+        "loc_025"
+      ],
+      "count": 8
+    }
+  ]
+}

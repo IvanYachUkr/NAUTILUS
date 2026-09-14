@@ -1,0 +1,3669 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-easy--loc-006",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "benchmarkId": "gemini-3-7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-aided-7c7645ea11",
+          "label": "Green Directional Sign",
+          "text": "Green Directional Sign",
+          "description": "Green directional sign for B178 towards \"Zittau\" with PL and D country codes.",
+          "groundingPhrase": "Green Directional Sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3825,
+            "w": 0.186,
+            "h": 0.06
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Green Directional Sign: Polish road directional sign indicating 178 Zittau PL D ->."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Green directional sign for B178 towards \"Zittau\" with PL and D country codes"
+            }
+          ],
+          "groundingLabel": "Green Directional Sign",
+          "ratingsReviewedAt": "2026-09-11T18:05:09.994Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-aided-94c9efc790",
+          "label": "Border Signage",
+          "text": "Border Signage",
+          "description": "Blue rectangular sign in Polish stating \"Granica Państwa\" (State Border).",
+          "groundingPhrase": "Border Signage",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.8998435054773083,
+            "y": 0.41855562720103173,
+            "w": 0.05868544600938963,
+            "h": 0.099995039928575
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Border Signage: Blue rectangular sign in Polish stating \"Granica Państwa\" (State Border)."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Polish \"Granica Państwa\" border sign."
+            }
+          ],
+          "groundingLabel": "Border Signage",
+          "ratingsReviewedAt": "2026-09-11T18:05:13.973Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-aided-ddecd60f76",
+          "label": "Historic Church Tower",
+          "text": "Historic Church Tower",
+          "description": "Central European Silesian-style church tower visible across roofs.",
+          "groundingPhrase": "Historic Church Tower",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.2338943661971831,
+            "y": 0.3324705371757353,
+            "w": 0.07745383411580595,
+            "h": 0.15377888001587223
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Historic Church Tower: Central European Silesian-style church tower visible across roofs."
+            }
+          ],
+          "groundingLabel": "Historic Church Tower",
+          "ratingsReviewedAt": "2026-09-11T18:05:18.119Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-aided-85de37c592",
+          "label": "Polish Pedestrian Signs",
+          "text": "Polish Pedestrian Signs",
+          "description": "Fluorescent yellow-green border on pedestrian crossing sign.",
+          "groundingPhrase": "Polish Pedestrian Signs",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.784216744913928,
+            "y": 0.4272616685680274,
+            "w": 0.037262910798122065,
+            "h": 0.06724329150339764
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Polish Pedestrian Signs: Fluorescent yellow-green border on pedestrian crossing sign."
+            }
+          ],
+          "groundingLabel": "Polish Pedestrian Signs",
+          "ratingsReviewedAt": "2026-09-11T18:05:21.434Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-aided-2d99bc907c",
+          "label": "Tri-border Corridor",
+          "text": "Tri-border Corridor",
+          "description": "Roadway connecting Porajów/Sieniawka (Poland) with Zittau (Germany).",
+          "groundingPhrase": "Tri-border Corridor",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Tri-border Corridor: Roadway connecting Porajów/Sieniawka (Poland) with Zittau (Germany)."
+            }
+          ],
+          "groundingLabel": "Tri-border Corridor",
+          "ratingsReviewedAt": "2026-09-11T18:05:52.276Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash-medium-aided",
+      "benchmarkId": "gemini-3-7-flash-medium-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-01f1c4d144",
+          "label": "Directional Road Sign",
+          "text": "Directional Road Sign",
+          "description": "Road surface lettering \"B178\" designating the German federal highway Bundesstraße 178.",
+          "groundingPhrase": "Directional Road Sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0,
+            "y": 0.37534191573188785,
+            "w": 0.19081551860649248,
+            "h": 0.0786970814825968
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Road surface lettering \"B178\" designating the German federal highway Bundesstraße 178."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Directional Road Sign: Green German highway directional sign pointing left: \"178 | Zittau | PL | D\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Road surface lettering \"B178\" designating the German federal highway Bundesstraße 178."
+            }
+          ],
+          "groundingLabel": "Directional Road Sign; Sign",
+          "ratingsReviewedAt": "2026-09-11T18:05:58.336Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-4c7986e97f",
+          "label": "Road Markings",
+          "text": "Road Markings",
+          "description": "German roadway markings, pedestrian crossing refuge bollard, and directional arrows.",
+          "groundingPhrase": "Road Markings",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7806809184481394,
+            "y": 0.4251298652412859,
+            "w": 0.04750593824228022,
+            "h": 0.07227282993299705
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "German roadway markings, pedestrian crossing refuge bollard, and directional arrows."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Road Markings: Explicit asphalt markings reading \"B178\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "German roadway markings, pedestrian crossing refuge bollard, and directional arrows."
+            }
+          ],
+          "groundingLabel": "Road Markings",
+          "ratingsReviewedAt": "2026-09-11T18:06:06.096Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-2f556e03ab",
+          "label": "Blue European Union border entry sign with gold stars",
+          "text": "Blue European Union border entry sign with gold stars",
+          "description": "\"Rzeczpospolita Polska\" (Poland).",
+          "groundingPhrase": "Blue European Union border entry sign with gold stars",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.9770387965162312,
+            "y": 0.42994805390348567,
+            "w": 0.022961203483768844,
+            "h": 0.04657582373459812
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Blue European Union border entry sign with gold stars: \"Rzeczpospolita Polska\" (Poland)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Blue European Union border entry sign with gold stars: \"Rzeczpospolita Polska\" (Poland)."
+            }
+          ],
+          "groundingLabel": "Blue European Union border entry sign",
+          "ratingsReviewedAt": "2026-09-11T18:06:10.425Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-d73a3911c7",
+          "label": "German Federal Police (Bundespolizei) vehicle and temporary checkpoint tent on the borde",
+          "text": "German Federal Police (Bundespolizei) vehicle and temporary checkpoint tent on the borde",
+          "description": "German Federal Police (Bundespolizei) vehicle and temporary checkpoint tent on the border bridge.",
+          "groundingPhrase": "German Federal Police vehicle and temporary checkpoint tent on the borde",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "German Federal Police (Bundespolizei) vehicle and temporary checkpoint tent on the border bridge."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "German Federal Police (Bundespolizei) vehicle and temporary checkpoint tent on the border bridge."
+            }
+          ],
+          "groundingLabel": "German Federal Police vehicle",
+          "ratingsReviewedAt": "2026-09-11T18:06:32.751Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-857f24ccbc",
+          "label": "Lusatian Neisse river valley and Zittauer Gebirge (Lusatian Mountains) in the horizon",
+          "text": "Lusatian Neisse river valley and Zittauer Gebirge (Lusatian Mountains) in the horizon",
+          "description": "Lusatian Neisse river valley and Zittauer Gebirge (Lusatian Mountains) in the horizon.",
+          "groundingPhrase": "Lusatian Neisse river valley and Zittauer Gebirge in the horizon",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Lusatian Neisse river valley and Zittauer Gebirge (Lusatian Mountains) in the horizon."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Lusatian Neisse river valley and Zittauer Gebirge (Lusatian Mountains) in the horizon."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:06:52.281Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-07e0449c39",
+          "label": "National Border Warning Sign",
+          "text": "National Border Warning Sign",
+          "description": "Yellow triangular Polish border crossing sign on right: \"Granica Państwa\".",
+          "groundingPhrase": "National Border Warning Sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.8978622327790974,
+            "y": 0.4170995508042862,
+            "w": 0.063341250989707,
+            "h": 0.10278802479359583
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "National Border Warning Sign: Yellow triangular Polish border crossing sign on right: \"Granica Państwa\"."
+            }
+          ],
+          "groundingLabel": "National Border",
+          "ratingsReviewedAt": "2026-09-11T18:06:59.280Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-ca92ff8cd1",
+          "label": "Tri-Border Junction Geometry",
+          "text": "Tri-Border Junction Geometry",
+          "description": "The B178 / Route 332 roundabout connecting Germany, Poland, and Czechia near Zittau.",
+          "groundingPhrase": "Tri-Border Junction Geometry",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Tri-Border Junction Geometry: The B178 / Route 332 roundabout connecting Germany, Poland, and Czechia near Zittau."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:07:09.773Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-91c1535e90",
+          "label": "Landscape & Church",
+          "text": "Landscape & Church",
+          "description": "Central European rolling terrain with village Baroque church spire.",
+          "groundingPhrase": "Landscape & Church",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.2277779097387173,
+            "y": 0.3260762001555873,
+            "w": 0.10001306413301658,
+            "h": 0.1904988707370323
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Landscape & Church: Central European rolling terrain with village Baroque church spire."
+            }
+          ],
+          "groundingLabel": "Landscape",
+          "ratingsReviewedAt": "2026-09-11T18:07:16.998Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-high-aided",
+      "benchmarkId": "gemini-3-8-flash-high-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-99fc780a32",
+          "label": "Polish yellow national border sign",
+          "text": "Polish yellow national border sign",
+          "description": "Polish state boundary marker sign reading \"Granica Państwa\".",
+          "groundingPhrase": "Polish yellow national border sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.9065,
+            "y": 0.4245,
+            "w": 0.047,
+            "h": 0.085
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Polish state boundary marker sign reading \"Granica Państwa\"."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Polish yellow national border sign: 'Granica Państwa'."
+            }
+          ],
+          "groundingLabel": "Polish yellow national border sign",
+          "ratingsReviewedAt": "2026-09-11T18:07:22.491Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-e8a7dcd8a8",
+          "label": "Rural border corridor landscape",
+          "text": "Rural border corridor landscape",
+          "description": "Rural border corridor landscape with church tower of Sieniawka/Porajów visible to the east.",
+          "groundingPhrase": "Rural border corridor landscape",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.23015320665083136,
+            "y": 0.3353186403673869,
+            "w": 0.09288717339667452,
+            "h": 0.17643824186303292
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "View of church tower in village across the Lusatian Neisse river in Germany/border area."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Rural border corridor landscape with church tower of Sieniawka/Porajów visible to the east."
+            }
+          ],
+          "groundingLabel": "Rural border corridor landscape",
+          "ratingsReviewedAt": "2026-09-11T18:07:33.475Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-0f5411d4f9",
+          "label": "Green directional gantry sign",
+          "text": "Green directional gantry sign",
+          "description": "Green directional gantry sign indicating '178 Zittau PL D'.",
+          "groundingPhrase": "Green directional gantry sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3815,
+            "w": 0.186,
+            "h": 0.062
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Directional highway sign reading \"178 | Zittau | PL D\"."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Green directional gantry sign indicating '178 Zittau PL D'."
+            }
+          ],
+          "groundingLabel": "Green directional gantry sign",
+          "ratingsReviewedAt": "2026-09-11T18:07:36.158Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-2c21273354",
+          "label": "Central European transit infrastructure connecting Saxony and Lower Silesia",
+          "text": "Central European transit infrastructure connecting Saxony and Lower Silesia",
+          "description": "Central European transit infrastructure connecting Saxony and Lower Silesia.",
+          "groundingPhrase": "Central European transit infrastructure connecting Saxony and Lower Silesia",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Central European transit infrastructure connecting Saxony and Lower Silesia."
+            }
+          ],
+          "groundingLabel": "Central European transit infrastructure",
+          "ratingsReviewedAt": "2026-09-11T18:07:41.383Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-c2608a606c",
+          "label": "Blue border crossing information and pedestrian/bicycle path crossing signs",
+          "text": "Blue border crossing information and pedestrian/bicycle path crossing signs",
+          "description": "Blue border crossing information and pedestrian/bicycle path crossing signs.",
+          "groundingPhrase": "Blue border crossing information and pedestrian/bicycle path crossing signs",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7832529691211401,
+            "y": 0.42377237822781,
+            "w": 0.0377703879651623,
+            "h": 0.07412095661120732
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Blue border crossing information and pedestrian/bicycle path crossing signs."
+            }
+          ],
+          "groundingLabel": "Blue border crossing information",
+          "ratingsReviewedAt": "2026-09-11T18:07:46.372Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-be8627dea4",
+          "label": "Road surface asphalt stencil reading \"B178\"",
+          "text": "Road surface asphalt stencil reading \"B178\"",
+          "description": "Road surface asphalt stencil reading \"B178\".",
+          "groundingPhrase": "Road surface asphalt stencil reading \"B178\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7142593032462391,
+            "y": 0.6783178875254083,
+            "w": 0.10521813143309576,
+            "h": 0.18309101859519686
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Road surface asphalt stencil reading \"B178\"."
+            }
+          ],
+          "groundingLabel": "Road surface asphalt stencil reading",
+          "ratingsReviewedAt": "2026-09-11T18:07:50.877Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-1f07ac6522",
+          "label": "Route 332 / B178 border corridor",
+          "text": "Route 332 / B178 border corridor",
+          "description": "Route 332 / B178 border corridor.",
+          "groundingPhrase": "Route 332 / B178 border corridor",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Route 332 / B178 border corridor"
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-730f1ed993",
+          "label": "Road surface asphalt",
+          "text": "Road surface asphalt",
+          "description": "Road surface asphalt painted stencil 'B178'.",
+          "groundingPhrase": "Road surface asphalt",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Road surface asphalt painted stencil 'B178'."
+            }
+          ],
+          "groundingLabel": "Road surface asphalt"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-b4341a4e9c",
+          "label": "Porajów",
+          "text": "Porajów",
+          "description": "Porajów.",
+          "groundingPhrase": "Porajów",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Porajów"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-medium-aided",
+      "benchmarkId": "gemini-3-8-flash-medium-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-de739d1a5e",
+          "label": "Polish utility poles and Central European transit infrastructure",
+          "text": "Polish utility poles and Central European transit infrastructure",
+          "description": "Central European transit infrastructure connecting Saxony and Lower Silesia.",
+          "groundingPhrase": "Polish utility poles and Central European transit infrastructure",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Central European transit infrastructure connecting Saxony and Lower Silesia."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Polish utility poles and Central European transit infrastructure."
+            }
+          ],
+          "groundingLabel": "Polish utility poles",
+          "ratingsReviewedAt": "2026-09-11T18:08:02.175Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-056e954143",
+          "label": "Polish state boundary marker sign reading \"Granica Państwa\"",
+          "text": "Polish state boundary marker sign reading \"Granica Państwa\"",
+          "description": "Polish state boundary marker sign reading \"Granica Państwa\".",
+          "groundingPhrase": "Polish state boundary marker sign reading \"Granica Państwa\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.9055,
+            "y": 0.4235,
+            "w": 0.048,
+            "h": 0.171
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Polish state boundary marker sign reading \"Granica Państwa\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Polish state boundary marker sign reading \"Granica Państwa\"."
+            }
+          ],
+          "groundingLabel": "Polish state boundary marker sign",
+          "ratingsReviewedAt": "2026-09-11T18:08:06.828Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-5d795238f4",
+          "label": "Road surface asphalt stencil reading \"B178\" and \"332\"",
+          "text": "Road surface asphalt stencil reading \"B178\" and \"332\"",
+          "description": "Road surface asphalt stencil reading \"B178\" and \"332\".",
+          "groundingPhrase": "Road surface asphalt stencil reading \"B178\" and \"332\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7228820269200317,
+            "y": 0.6612211096890762,
+            "w": 0.10055423594615998,
+            "h": 0.21039423824939152
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Road surface asphalt stencil reading \"B178\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Road surface asphalt stencil reading \"B178\" and \"332\"."
+            }
+          ],
+          "groundingLabel": "Road surface asphalt stencil reading",
+          "ratingsReviewedAt": "2026-09-11T18:08:18.620Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-1f07ac6522",
+          "label": "Route 332 / B178 border corridor",
+          "text": "Route 332 / B178 border corridor",
+          "description": "Route 332 / B178 border corridor.",
+          "groundingPhrase": "Route 332 / B178 border corridor",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Route 332 / B178 border corridor"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Route 332 / B178 border corridor"
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-ffb0a04ffc",
+          "label": "Rolling Lusatian Neisse tripoint countryside between Germany, Poland, and Czechia",
+          "text": "Rolling Lusatian Neisse tripoint countryside between Germany, Poland, and Czechia",
+          "description": "View of church tower in village across the Lusatian Neisse river in Germany/border area.",
+          "groundingPhrase": "Rolling Lusatian Neisse tripoint countryside between Germany, Poland, and Czechia",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "View of church tower in village across the Lusatian Neisse river in Germany/border area."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Rolling Lusatian Neisse tripoint countryside between Germany, Poland, and Czechia."
+            }
+          ],
+          "groundingLabel": "Lusatian Neisse tripoint countryside",
+          "ratingsReviewedAt": "2026-09-11T18:08:26.089Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-c17ec84337",
+          "label": "Large green directional highway sign reading \"178 | Zittau | PL D\"",
+          "text": "Large green directional highway sign reading \"178 | Zittau | PL D\"",
+          "description": "Large green directional highway sign reading \"178 | Zittau | PL D\".",
+          "groundingPhrase": "Large green directional highway sign reading \"178 | Zittau | PL D\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3825,
+            "w": 0.186,
+            "h": 0.06
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Directional highway sign reading \"178 | Zittau | PL D\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Large green directional highway sign reading \"178 | Zittau | PL D\"."
+            }
+          ],
+          "groundingLabel": "Large green directional highway sign",
+          "ratingsReviewedAt": "2026-09-11T18:08:29.389Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-b4341a4e9c",
+          "label": "Porajów",
+          "text": "Porajów",
+          "description": "Porajów.",
+          "groundingPhrase": "Porajów",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Porajów"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Porajów"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh",
+      "benchmarkId": "gpt-5-6-sol-xhigh",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-xhigh-8acc74d053",
+          "label": "visible settlement/boundary cues pointed to the Sieniawka–Zittau tri-border area",
+          "text": "visible settlement/boundary cues pointed to the Sieniawka–Zittau tri-border area",
+          "description": "Visible settlement/boundary cues pointed to the Sieniawka–Zittau tri-border area.",
+          "groundingPhrase": "visible settlement/boundary cues pointed to the Sieniawka–Zittau tri-border area",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "visible settlement/boundary cues pointed to the Sieniawka–Zittau tri-border area."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:08:35.266Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-xhigh-9c0a6a9ec4",
+          "label": "Border-area road form",
+          "text": "Border-area road form",
+          "description": "Border-area road form.",
+          "groundingPhrase": "Border-area road form",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Border-area road form"
+            }
+          ],
+          "groundingLabel": "border-area road form",
+          "ratingsReviewedAt": "2026-09-11T18:08:57.938Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-xhigh-d72f88b177",
+          "label": "Central-European signage/context",
+          "text": "Central-European signage/context",
+          "description": "Central-European signage/context.",
+          "groundingPhrase": "Central-European signage/context",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Central-European signage/context"
+            }
+          ],
+          "groundingLabel": "European signage/context",
+          "ratingsReviewedAt": "2026-09-11T18:09:05.574Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max",
+      "benchmarkId": "gpt-5-6-sol-max",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-max-2cded32b68",
+          "label": "the close Czech-German-Polish road network",
+          "text": "the close Czech-German-Polish road network",
+          "description": "The close Czech-German-Polish road network.",
+          "groundingPhrase": "the close Czech-German-Polish road network",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "the close Czech-German-Polish road network."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:09:14.031Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-max-603fa360ed",
+          "label": "nearby multilingual place-name context",
+          "text": "nearby multilingual place-name context",
+          "description": "Nearby multilingual place-name context.",
+          "groundingPhrase": "nearby multilingual place-name context",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "nearby multilingual place-name context"
+            }
+          ],
+          "groundingLabel": "nearby multilingual place-name context",
+          "ratingsReviewedAt": "2026-09-11T18:09:20.561Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-max-54a3dd3d51",
+          "label": "Central-European border-road geometry",
+          "text": "Central-European border-road geometry",
+          "description": "Central-European border-road geometry.",
+          "groundingPhrase": "Central-European border-road geometry",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Central-European border-road geometry"
+            }
+          ],
+          "groundingLabel": "European border-road geometry",
+          "ratingsReviewedAt": "2026-09-11T18:09:23.980Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-max-8385675d7b",
+          "label": "rolling terrain",
+          "text": "rolling terrain",
+          "description": "Rolling terrain.",
+          "groundingPhrase": "rolling terrain",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "rolling terrain"
+            }
+          ],
+          "groundingLabel": "terrain",
+          "ratingsReviewedAt": "2026-09-11T18:09:39.290Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low",
+      "benchmarkId": "gpt-6-astra-low",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gpt-6-astra-low-d50d5a6704",
+          "label": "low green river plain and European roundabout. Initial belief",
+          "text": "low green river plain and European roundabout. Initial belief",
+          "description": "Polish/German border east of Zittau on 178 connection.",
+          "groundingPhrase": "low green river plain and European roundabout. Initial belief",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "low green river plain and European roundabout. Initial belief: Polish/German border east of Zittau on 178 connection"
+            }
+          ],
+          "groundingLabel": "low green river plain",
+          "ratingsReviewedAt": "2026-09-11T18:09:49.985Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-6-astra-low-6e6467ce82",
+          "label": "Polish Granica Panstwa warning",
+          "text": "Polish Granica Panstwa warning",
+          "description": "Polish Granica Panstwa warning.",
+          "groundingPhrase": "Polish Granica Panstwa warning",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.8979976525821596,
+            "y": 0.4188932344625762,
+            "w": 0.060531298904538386,
+            "h": 0.10362660582312386
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Polish Granica Panstwa warning"
+            }
+          ],
+          "groundingLabel": "Polish Granica Panstwa warning",
+          "ratingsReviewedAt": "2026-09-11T18:09:55.044Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-6-astra-low-02512e8df0",
+          "label": "bridge immediately right",
+          "text": "bridge immediately right",
+          "description": "Bridge immediately right.",
+          "groundingPhrase": "bridge immediately right",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.7113215962441315,
+            "y": 0.4322788800158722,
+            "w": 0.2886784037558685,
+            "h": 0.13129725708050197
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "bridge immediately right"
+            }
+          ],
+          "groundingLabel": "bridge",
+          "ratingsReviewedAt": "2026-09-11T18:10:02.897Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-6-astra-low-be4ac1d961",
+          "label": "B178 road overlay",
+          "text": "B178 road overlay",
+          "description": "B178 road overlay.",
+          "groundingPhrase": "B178 road overlay",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7079084507042254,
+            "y": 0.6876843658548683,
+            "w": 0.11760015649452268,
+            "h": 0.17048891424036505
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "B178 road overlay"
+            }
+          ],
+          "groundingLabel": "B178 road overlay",
+          "ratingsReviewedAt": "2026-09-11T18:10:09.616Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-6-astra-low-afba3525c2",
+          "label": "Zittau sign",
+          "text": "Zittau sign",
+          "description": "Zittau sign with PL/D country ovals.",
+          "groundingPhrase": "Zittau sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.0025,
+            "y": 0.3805,
+            "w": 0.185,
+            "h": 0.064
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Zittau sign with PL/D country ovals"
+            }
+          ],
+          "groundingLabel": "Zittau sign",
+          "ratingsReviewedAt": "2026-09-11T18:10:12.740Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "benchmarkId": "grok-4-6-xhigh",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-grok-4-6-xhigh-bf291310bd",
+          "label": "Granica Panstwa cues were read correctly. The Germany-region pin resolved near Passau",
+          "text": "Granica Panstwa cues were read correctly. The Germany-region pin resolved near Passau",
+          "description": "Granica Panstwa cues were read correctly. The Germany-region pin resolved near Passau.",
+          "groundingPhrase": "Granica Panstwa cues were read correctly. The Germany-region pin resolved near Passau",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Granica Panstwa cues were read correctly. The Germany-region pin resolved near Passau."
+            }
+          ],
+          "groundingLabel": "Granica Panstwa cues",
+          "ratingsReviewedAt": "2026-09-11T18:10:32.133Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-grok-4-6-xhigh-77d70550c0",
+          "label": "Zittau",
+          "text": "Zittau",
+          "description": "Zittau.",
+          "groundingPhrase": "Zittau",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.003912363067292645,
+            "y": 0.3836367243688309,
+            "w": 0.1838810641627543,
+            "h": 0.06348891424036507
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Zittau"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:10:40.085Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-grok-4-6-xhigh-729a6b7768",
+          "label": "B178",
+          "text": "B178",
+          "description": "B178.",
+          "groundingPhrase": "B178",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7245696400625978,
+            "y": 0.6756857298745103,
+            "w": 0.09937402190923317,
+            "h": 0.18729229700907693
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "B178"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:10:58.850Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max",
+      "benchmarkId": "glm-5-3-flash-max",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-1/conversation.json"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-3/conversation.json"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-glm-5-3-flash-max-93a9d3f502",
+          "label": "flat Neisse-valley landscape with bridge ahead. Belief",
+          "text": "flat Neisse-valley landscape with bridge ahead. Belief",
+          "description": "Zittau/Porajów border crossing on the B178. Placing pin at 50.8938, 14.8100.",
+          "groundingPhrase": "flat Neisse-valley landscape with bridge ahead. Belief",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "flat Neisse-valley landscape with bridge ahead. Belief: Zittau/Porajów border crossing on the B178. Placing pin at 50.8938, 14.8100."
+            }
+          ],
+          "groundingLabel": "flat Neisse-valley landscape",
+          "ratingsReviewedAt": "2026-09-11T18:11:07.994Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-glm-5-3-flash-max-ff900f5c1c",
+          "label": "green sign \"178 Zittau PL D\",",
+          "text": "green sign \"178 Zittau PL D\",",
+          "description": "Green sign \"178 Zittau PL D\",.",
+          "groundingPhrase": "green sign \"178 Zittau PL D\",",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0,
+            "y": 0.3777383314319726,
+            "w": 0.18495931142410016,
+            "h": 0.06609830861564406
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "green sign \"178 Zittau PL D\","
+            }
+          ],
+          "groundingLabel": "green sign; sign",
+          "ratingsReviewedAt": "2026-09-11T18:11:11.651Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-glm-5-3-flash-max-005d8b0341",
+          "label": "yellow Polish \"Granica Państwa\" sign,",
+          "text": "yellow Polish \"Granica Państwa\" sign,",
+          "description": "Yellow Polish \"Granica Państwa\" sign,.",
+          "groundingPhrase": "yellow Polish \"Granica Państwa\" sign,",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.9055,
+            "y": 0.4235,
+            "w": 0.049,
+            "h": 0.087
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "yellow Polish \"Granica Państwa\" sign,"
+            }
+          ],
+          "groundingLabel": "yellow Polish; Granica Pastwa",
+          "ratingsReviewedAt": "2026-09-11T18:11:16.779Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-glm-5-3-flash-max-733398a9c7",
+          "label": "road marking \"B178\",",
+          "text": "road marking \"B178\",",
+          "description": "Road marking \"B178\",.",
+          "groundingPhrase": "road marking \"B178\",",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7081377151799687,
+            "y": 0.6677496155944646,
+            "w": 0.107981220657277,
+            "h": 0.1904667427210952
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "road marking \"B178\","
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:11:19.356Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-glm-5-3-flash-max-3fb4a31d4d",
+          "label": "roundabout",
+          "text": "roundabout",
+          "description": "Roundabout with red van,.",
+          "groundingPhrase": "roundabout",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "roundabout with red van,"
+            }
+          ],
+          "groundingLabel": "roundabout",
+          "ratingsReviewedAt": "2026-09-11T18:11:24.246Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-unaided",
+      "benchmarkId": "gemini-3-7-flash-high-unaided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, unaided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-unaided-df2bd5029a",
+          "label": "\"178 Zittau PL D\" sign",
+          "text": "\"178 Zittau PL D\" sign",
+          "description": "\"178 Zittau PL D\" sign.",
+          "groundingPhrase": "\"178 Zittau PL D\" sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3835,
+            "w": 0.186,
+            "h": 0.058
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "\"178 Zittau PL D\" sign"
+            }
+          ],
+          "groundingLabel": "178 Zittau PL D; sign",
+          "ratingsReviewedAt": "2026-09-11T18:11:29.059Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-unaided-1bb9725513",
+          "label": "\"Granica Państwa\" border warning",
+          "text": "\"Granica Państwa\" border warning",
+          "description": "\"Granica Państwa\" border warning.",
+          "groundingPhrase": "\"Granica Państwa\" border warning",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.9003450704225352,
+            "y": 0.4218932344625762,
+            "w": 0.05740140845070424,
+            "h": 0.10021382867913298
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "\"Granica Państwa\" border warning"
+            }
+          ],
+          "groundingLabel": "Granica Pastwa; border warning",
+          "ratingsReviewedAt": "2026-09-11T18:11:41.962Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-unaided-d059766359",
+          "label": "B178 stencil",
+          "text": "B178 stencil",
+          "description": "B178 stencil.",
+          "groundingPhrase": "B178 stencil",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7097026604068858,
+            "y": 0.6582262784584098,
+            "w": 0.11189358372456959,
+            "h": 0.1920539655771044
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "B178 stencil"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:11:46.518Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max-static-covered",
+      "benchmarkId": "glm-5-3-flash-max-static-covered",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-glm-5-3-flash-max-static-covered-b3b918030b",
+          "label": "Yellow warning sign with exclamation and text \"Granica Państwa\"",
+          "text": "Yellow warning sign with exclamation and text \"Granica Państwa\"",
+          "description": "Polish for \"State Border\".",
+          "groundingPhrase": "Yellow warning sign with exclamation and text \"Granica Państwa\"",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9065,
+            "y": 0.4245,
+            "w": 0.047,
+            "h": 0.086
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Yellow warning sign with exclamation and text \"Granica Państwa\" — Polish for \"State Border\""
+            }
+          ],
+          "groundingLabel": "Yellow warning sign",
+          "ratingsReviewedAt": "2026-09-12T00:32:29.305Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-glm-5-3-flash-max-static-covered-4dff33746c",
+          "label": "Direction sign to \"Zittau\" with EU country plates \"PL\" and \"D\"",
+          "text": "Direction sign to \"Zittau\" with EU country plates \"PL\" and \"D\"",
+          "description": "A cross-border road toward Germany.",
+          "groundingPhrase": "Direction sign to \"Zittau\" with EU country plates \"PL\" and \"D\"",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3825,
+            "w": 0.186,
+            "h": 0.061
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Direction sign to \"Zittau\" with EU country plates \"PL\" and \"D\" — a cross-border road toward Germany"
+            }
+          ],
+          "groundingLabel": "Direction sign",
+          "ratingsReviewedAt": "2026-09-12T00:32:36.362Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-glm-5-3-flash-max-static-covered-8ab44efe47",
+          "label": "Yellow route-number plate \"178\"",
+          "text": "Yellow route-number plate \"178\"",
+          "description": "German Bundesstraße B178 terminates at the Zittau border crossings.",
+          "groundingPhrase": "Yellow route-number plate \"178\"",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": {
+            "x": 0,
+            "y": 0.3780772415869909,
+            "w": 0.051464766429137,
+            "h": 0.05781826394639766
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Yellow route-number plate \"178\" — German Bundesstraße B178 terminates at the Zittau border crossings"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T00:32:49.660Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-glm-5-3-flash-max-static-covered-c8e099347b",
+          "label": "Red-paved verges/bike-path margins and ribbon-village layout typical of the Polish–Germa",
+          "text": "Red-paved verges/bike-path margins and ribbon-village layout typical of the Polish–Germa",
+          "description": "Red-paved verges/bike-path margins and ribbon-village layout typical of the Polish–German borderland (Lower Silesia).",
+          "groundingPhrase": "Red-paved verges/bike-path margins and ribbon-village layout typical of the Polish–Germa",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.776690023752969,
+            "y": 0.5883183392305955,
+            "w": 0.22201900237529693,
+            "h": 0.1959092825415945
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Red-paved verges/bike-path margins and ribbon-village layout typical of the Polish–German borderland (Lower Silesia)"
+            }
+          ],
+          "groundingLabel": "Red-paved verges/bike-path margins",
+          "ratingsReviewedAt": "2026-09-12T00:33:00.618Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-glm-5-3-flash-max-static-covered-2c42cbee09",
+          "label": "Bridge parapet over a river visible at right (Lusatian Neisse), church",
+          "text": "Bridge parapet over a river visible at right (Lusatian Neisse), church",
+          "description": "Bridge parapet over a river visible at right (Lusatian Neisse), church with red roofs on the far bank.",
+          "groundingPhrase": "Bridge parapet over a river visible at right , church",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.23686262866191607,
+            "y": 0.34034842781500163,
+            "w": 0.08069517022961203,
+            "h": 0.13784842781500162
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Bridge parapet over a river visible at right (Lusatian Neisse), church with red roofs on the far bank"
+            }
+          ],
+          "groundingLabel": "Bridge parapet",
+          "ratingsReviewedAt": "2026-09-12T00:33:32.111Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low-static-covered",
+      "benchmarkId": "gpt-6-astra-low-static-covered",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gpt-6-astra-low-static-covered-acb106b1d5",
+          "label": "Granica Państwa is Polish for national border",
+          "text": "Granica Państwa is Polish for national border",
+          "description": "Granica Państwa is Polish for national border.",
+          "groundingPhrase": "Granica Państwa is Polish for national border",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.8986539984164688,
+            "y": 0.4182288137719892,
+            "w": 0.06017418844022171,
+            "h": 0.10278802479359583
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Granica Państwa is Polish for national border"
+            }
+          ],
+          "groundingLabel": "Granica Pastwa",
+          "ratingsReviewedAt": "2026-09-12T00:34:23.021Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-6-astra-low-static-covered-5cba354e7b",
+          "label": "Direction sign names Zittau, locating the German border nearby",
+          "text": "Direction sign names Zittau, locating the German border nearby",
+          "description": "Direction sign names Zittau, locating the German border nearby.",
+          "groundingPhrase": "Direction sign names Zittau, locating the German border nearby",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3835,
+            "w": 0.185,
+            "h": 0.059
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Direction sign names Zittau, locating the German border nearby"
+            }
+          ],
+          "groundingLabel": "Direction sign names Zittau",
+          "ratingsReviewedAt": "2026-09-12T00:34:14.442Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-6-astra-low-static-covered-e5bf03c1c8",
+          "label": "Route 178 references the German road connection",
+          "text": "Route 178 references the German road connection",
+          "description": "Route 178 references the German road connection.",
+          "groundingPhrase": "Route 178 references the German road connection",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0,
+            "y": 0.38771361891139056,
+            "w": 0.0498812351543943,
+            "h": 0.04978794950939791
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Route 178 references the German road connection"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T00:34:31.489Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-6-astra-low-static-covered-3ecec0a870",
+          "label": "Bridge and EU border sign indicate a crossing",
+          "text": "Bridge and EU border sign indicate a crossing",
+          "description": "Bridge and EU border sign indicate a crossing.",
+          "groundingPhrase": "Bridge and EU border sign indicate a crossing",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9730799683293745,
+            "y": 0.4182288137719893,
+            "w": 0.02692003167062551,
+            "h": 0.06263645260859746
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Bridge and EU border sign indicate a crossing"
+            }
+          ],
+          "groundingLabel": "Bridge",
+          "ratingsReviewedAt": "2026-09-12T00:34:07.001Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-6-astra-low-static-covered-de17e5f40e",
+          "label": "Low hills and Central European church",
+          "text": "Low hills and Central European church",
+          "description": "Low hills and Central European church fit the Lusatian border region.",
+          "groundingPhrase": "Low hills and Central European church",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.22856967537608866,
+            "y": 0.33371257747998695,
+            "w": 0.09609659540775925,
+            "h": 0.15751399031343313
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Low hills and Central European church fit the Lusatian border region"
+            }
+          ],
+          "groundingLabel": "Low hills",
+          "ratingsReviewedAt": "2026-09-12T00:33:57.207Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh-static-covered",
+      "benchmarkId": "gpt-5-6-sol-xhigh-static-covered",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-xhigh-static-covered-7a796bd658",
+          "label": "The orange sign says Granica Państwa",
+          "text": "The orange sign says Granica Państwa",
+          "description": "Polish for state border.",
+          "groundingPhrase": "The orange sign says Granica Państwa",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9065,
+            "y": 0.4245,
+            "w": 0.047,
+            "h": 0.086
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The orange sign says Granica Państwa — Polish for state border"
+            }
+          ],
+          "groundingLabel": "The orange sign",
+          "ratingsReviewedAt": "2026-09-12T00:34:43.933Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-xhigh-static-covered-f91cbc0ee0",
+          "label": "A green direction sign names Zittau and carries a yellow 178 route panel",
+          "text": "A green direction sign names Zittau and carries a yellow 178 route panel",
+          "description": "Points toward Germany's B178.",
+          "groundingPhrase": "A green direction sign names Zittau and carries a yellow 178 route panel",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3835,
+            "w": 0.186,
+            "h": 0.06
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "A green direction sign names Zittau and carries a yellow 178 route panel — points toward Germany's B178"
+            }
+          ],
+          "groundingLabel": "A green direction sign names Zittau",
+          "ratingsReviewedAt": "2026-09-12T00:34:48.665Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-xhigh-static-covered-64d5c9f382",
+          "label": "The small country ovals include PL and D",
+          "text": "The small country ovals include PL and D",
+          "description": "Confirms a Poland-Germany crossing.",
+          "groundingPhrase": "The small country ovals include PL and D",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.11587371338083932,
+            "y": 0.38622679364601376,
+            "w": 0.06141409342834521,
+            "h": 0.05184842781500163
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The small country ovals include PL and D — confirms a Poland-Germany crossing"
+            }
+          ],
+          "groundingLabel": "The small country ovals",
+          "ratingsReviewedAt": "2026-09-12T00:35:10.026Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-xhigh-static-covered-4eb27c7809",
+          "label": "Yellow-painted railings and Polish-style pedestrian-crossing signs place the camera on t",
+          "text": "Yellow-painted railings and Polish-style pedestrian-crossing signs place the camera on t",
+          "description": "Yellow-painted railings and Polish-style pedestrian-crossing signs place the camera on the Polish side.",
+          "groundingPhrase": "Yellow-painted railings and Polish-style pedestrian-crossing signs place the camera on t",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.7822644497228821,
+            "y": 0.4262591282089889,
+            "w": 0.04275534441805218,
+            "h": 0.06424251549599741
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Yellow-painted railings and Polish-style pedestrian-crossing signs place the camera on the Polish side"
+            }
+          ],
+          "groundingLabel": "Yellow-painted railings",
+          "ratingsReviewedAt": "2026-09-12T00:35:31.731Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-xhigh-static-covered-594f008f9d",
+          "label": "A village church and low settlement beside a new bridge",
+          "text": "A village church and low settlement beside a new bridge",
+          "description": "A village church and low settlement beside a new bridge fit the Sieniawka border approach east of Zittau.",
+          "groundingPhrase": "A village church and low settlement beside a new bridge",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.22644497228820268,
+            "y": 0.3282892920775929,
+            "w": 0.08946951702296121,
+            "h": 0.17666691761399284
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "A village church and low settlement beside a new bridge fit the Sieniawka border approach east of Zittau"
+            }
+          ],
+          "groundingLabel": "A village church",
+          "ratingsReviewedAt": "2026-09-12T00:35:43.018Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max-static-covered",
+      "benchmarkId": "gpt-5-6-sol-max-static-covered",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-max-static-covered-109e3df525",
+          "label": "The warning plaque",
+          "text": "The warning plaque",
+          "description": "The warning plaque reads “Granica Państwa”, explicitly indicating Poland's state border.",
+          "groundingPhrase": "The warning plaque",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9002375296912114,
+            "y": 0.4182288137719893,
+            "w": 0.05384006334125102,
+            "h": 0.10118196190619588
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The warning plaque reads “Granica Państwa”, explicitly indicating Poland's state border"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T00:36:00.344Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-max-static-covered-1d4458e03d",
+          "label": "The direction sign names Zittau and shows PL / D, placing the junction beside Germany",
+          "text": "The direction sign names Zittau and shows PL / D, placing the junction beside Germany",
+          "description": "The direction sign names Zittau and shows PL / D, placing the junction beside Germany.",
+          "groundingPhrase": "The direction sign names Zittau and shows PL / D, placing the junction beside Germany",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3835,
+            "w": 0.186,
+            "h": 0.06
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The direction sign names Zittau and shows PL / D, placing the junction beside Germany"
+            }
+          ],
+          "groundingLabel": "The direction sign names Zittau",
+          "ratingsReviewedAt": "2026-09-12T00:36:04.283Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-max-static-covered-e30be20828",
+          "label": "The yellow 178 route panel points toward the German B178 corridor",
+          "text": "The yellow 178 route panel points toward the German B178 corridor",
+          "description": "The yellow 178 route panel points toward the German B178 corridor.",
+          "groundingPhrase": "The yellow 178 route panel points toward the German B178 corridor",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0,
+            "y": 0.38174236492760166,
+            "w": 0.040874109263657955,
+            "h": 0.05648480513940123
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The yellow 178 route panel points toward the German B178 corridor"
+            }
+          ],
+          "groundingLabel": "The yellow 178 route panel points",
+          "ratingsReviewedAt": "2026-09-12T00:36:16.508Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-max-static-covered-5523565a6c",
+          "label": "The blue pedestrian-crossing sign, yellow railings, and road furniture are Polish in sty",
+          "text": "The blue pedestrian-crossing sign, yellow railings, and road furniture are Polish in sty",
+          "description": "The blue pedestrian-crossing sign, yellow railings, and road furniture are Polish in style.",
+          "groundingPhrase": "The blue pedestrian-crossing sign, yellow railings, and road furniture are Polish in sty",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.783764449722882,
+            "y": 0.43731826394639767,
+            "w": 0.0373562945368171,
+            "h": 0.04990890612060528
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The blue pedestrian-crossing sign, yellow railings, and road furniture are Polish in style"
+            }
+          ],
+          "groundingLabel": "The blue pedestrian-crossing sign",
+          "ratingsReviewedAt": "2026-09-12T00:36:27.216Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gpt-5-6-sol-max-static-covered-e71dfaf9a0",
+          "label": "A small church, floodplain greenery, and a bridge immediately ahead",
+          "text": "A small church, floodplain greenery, and a bridge immediately ahead",
+          "description": "A small church, floodplain greenery, and a bridge immediately ahead fit the border village east of Zittau.",
+          "groundingPhrase": "A small church, floodplain greenery, and a bridge immediately ahead",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.2304038004750594,
+            "y": 0.3363196065145926,
+            "w": 0.10055423594615992,
+            "h": 0.1573941629651936
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "A small church, floodplain greenery, and a bridge immediately ahead fit the border village east of Zittau"
+            }
+          ],
+          "groundingLabel": "A small church",
+          "ratingsReviewedAt": "2026-09-12T00:36:34.126Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-static-covered",
+      "benchmarkId": "grok-4-6-xhigh-static-covered",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-grok-4-6-xhigh-static-covered-336688b5ed",
+          "label": "Green destination sign 178 Zittau PL D",
+          "text": "Green destination sign 178 Zittau PL D",
+          "description": "German town of Zittau, with Poland/Germany country codes.",
+          "groundingPhrase": "Green destination sign 178 Zittau PL D",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3835,
+            "w": 0.186,
+            "h": 0.059
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Green destination sign 178 Zittau PL D — German town of Zittau, with Poland/Germany country codes"
+            }
+          ],
+          "groundingLabel": "Green destination sign 178 Zittau PL D",
+          "ratingsReviewedAt": "2026-09-12T00:36:47.482Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-grok-4-6-xhigh-static-covered-d9389f3d43",
+          "label": "Yellow diamond Granica Panstwa (Polish Granica Państwa, “state border”)",
+          "text": "Yellow diamond Granica Panstwa (Polish Granica Państwa, “state border”)",
+          "description": "Yellow diamond Granica Panstwa (Polish Granica Państwa, “state border”).",
+          "groundingPhrase": "Yellow diamond Granica Panstwa",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.9065,
+            "y": 0.4245,
+            "w": 0.047,
+            "h": 0.085
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Yellow diamond Granica Panstwa (Polish Granica Państwa, “state border”)"
+            }
+          ],
+          "groundingLabel": "Yellow diamond Granica Panstwa",
+          "ratingsReviewedAt": "2026-09-12T00:36:56.467Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-grok-4-6-xhigh-static-covered-2fdd336a96",
+          "label": "Polish-style pedestrian-crossing warning (blue triangle, red border) and cobbled inner radius",
+          "text": "Polish-style pedestrian-crossing warning (blue triangle, red border) and cobbled inner radius",
+          "description": "Polish road kit.",
+          "groundingPhrase": "Polish-style pedestrian-crossing warning and cobbled inner radius",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.784639746634996,
+            "y": 0.423047002434189,
+            "w": 0.0380047505938243,
+            "h": 0.07387889282039699
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Polish-style pedestrian-crossing warning (blue triangle, red border) and cobbled inner radius — Polish road kit"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T00:37:07.357Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-grok-4-6-xhigh-static-covered-0645583771",
+          "label": "Baroque church tower",
+          "text": "Baroque church tower",
+          "description": "Baroque church tower with dark cupola and red nave roof in the middle distance, typical of Lusatia villages.",
+          "groundingPhrase": "Baroque church tower",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.23119556611243075,
+            "y": 0.3491681096137921,
+            "w": 0.08867775138558986,
+            "h": 0.13009109387939471
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Baroque church tower with dark cupola and red nave roof in the middle distance, typical of Lusatia villages"
+            }
+          ],
+          "groundingLabel": "Baroque church tower",
+          "ratingsReviewedAt": "2026-09-12T00:37:20.947Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-grok-4-6-xhigh-static-covered-2ba200c518",
+          "label": "New-looking roundabout, yellow bridge rails, and open river-plain trees",
+          "text": "New-looking roundabout, yellow bridge rails, and open river-plain trees",
+          "description": "Rebuilt PL–DE crossing landscape near Zittau.",
+          "groundingPhrase": "New-looking roundabout, yellow bridge rails, and open river-plain trees",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "New-looking roundabout, yellow bridge rails, and open river-plain trees — rebuilt PL–DE crossing landscape near Zittau"
+            }
+          ],
+          "groundingLabel": "New - looking roundabout",
+          "ratingsReviewedAt": "2026-09-12T00:37:26.114Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-aided-static-covered",
+      "benchmarkId": "gemini-3-7-flash-high-aided-static-covered",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-aided-static-covered-d741a9356f",
+          "label": "Directional Road Sign",
+          "text": "Directional Road Sign",
+          "description": "Green directional arrow sign with orange route box \"178\" pointing towards \"Zittau PL D\", indicating German Bundesstraße 178 leading into Zittau across the Polish/German border.",
+          "groundingPhrase": "Directional Road Sign",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0,
+            "y": 0.38128936736179075,
+            "w": 0.19398258115597783,
+            "h": 0.06745464127079726
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Directional Road Sign: Green directional arrow sign with orange route box \"178\" pointing towards \"Zittau PL D\", indicating German Bundesstraße 178 leading into Zittau across the Polish/German border"
+            }
+          ],
+          "groundingLabel": "Directional Road Sign",
+          "ratingsReviewedAt": "2026-09-12T00:38:16.065Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-aided-static-covered-7c4983248c",
+          "label": "Border Warning Sign",
+          "text": "Border Warning Sign",
+          "description": "Yellow/orange Polish warning sign on the right reading \"Granica Państwa\" (Polish for \"State Border\").",
+          "groundingPhrase": "Border Warning Sign",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9065716547901821,
+            "y": 0.4150166879971894,
+            "w": 0.046714172604908955,
+            "h": 0.09796983613139609
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Border Warning Sign: Yellow/orange Polish warning sign on the right reading \"Granica Państwa\" (Polish for \"State Border\")"
+            }
+          ],
+          "groundingLabel": "Border; Sign",
+          "ratingsReviewedAt": "2026-09-12T00:38:06.556Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-aided-static-covered-49e119d425",
+          "label": "Polish Pedestrian Crossing Sign",
+          "text": "Polish Pedestrian Crossing Sign",
+          "description": "Characteristic blue square sign with white triangle displaying the Polish pedestrian silhouette.",
+          "groundingPhrase": "Polish Pedestrian Crossing Sign",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.7830562153602534,
+            "y": 0.4230470024341891,
+            "w": 0.03879651623119551,
+            "h": 0.0690607041581972
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Polish Pedestrian Crossing Sign: Characteristic blue square sign with white triangle displaying the Polish pedestrian silhouette"
+            }
+          ],
+          "groundingLabel": "Polish Pedestrian Crossing Sign",
+          "ratingsReviewedAt": "2026-09-12T00:38:00.038Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-high-aided-static-covered-6862b7f2ce",
+          "label": "Central European Landscape & Church",
+          "text": "Central European Landscape & Church",
+          "description": "Baroque domed church spire in the background set in the Lusatian Neisse tri-border region (Poland/Germany/Czechia).",
+          "groundingPhrase": "Central European Landscape & Church",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Central European Landscape & Church: Baroque domed church spire in the background set in the Lusatian Neisse tri-border region (Poland/Germany/Czechia)"
+            }
+          ],
+          "groundingLabel": "Central European Landscape",
+          "ratingsReviewedAt": "2026-09-12T00:37:52.133Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-medium-aided-static-covered",
+      "benchmarkId": "gemini-3-7-flash-medium-aided-static-covered",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-static-covered-cc88e6ecf3",
+          "label": "Directional Road Sign",
+          "text": "Directional Road Sign",
+          "description": "Large green sign with arrow pointing left to 178 Zittau PL D, indicating the cross-border route to Zittau, Germany.",
+          "groundingPhrase": "Directional Road Sign",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3815,
+            "w": 0.186,
+            "h": 0.061
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Directional Road Sign: Large green sign with arrow pointing left to 178 Zittau PL D, indicating the cross-border route to Zittau, Germany"
+            }
+          ],
+          "groundingLabel": "Directional Road Sign",
+          "ratingsReviewedAt": "2026-09-12T00:38:31.909Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-static-covered-78655df438",
+          "label": "Border Signage",
+          "text": "Border Signage",
+          "description": "Yellow rectangular road sign reading Granica Państwa (\"State Border\" in Polish).",
+          "groundingPhrase": "Border Signage",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9057798891528107,
+            "y": 0.4182288137719893,
+            "w": 0.050673000791765704,
+            "h": 0.10760621345579559
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Border Signage: Yellow rectangular road sign reading Granica Państwa (\"State Border\" in Polish)"
+            }
+          ],
+          "groundingLabel": "Border Signage",
+          "ratingsReviewedAt": "2026-09-12T00:39:03.279Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-static-covered-f8a749b7e1",
+          "label": "Traffic Infrastructure",
+          "text": "Traffic Infrastructure",
+          "description": "Standard Polish blue pedestrian crossing sign (D-6) with triangular white inner border, cobblestone road apron, and Polish-style guardrails.",
+          "groundingPhrase": "Traffic Infrastructure",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.7814726840855107,
+            "y": 0.4262591282089889,
+            "w": 0.04196357878068091,
+            "h": 0.06424251549599741
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Traffic Infrastructure: Standard Polish blue pedestrian crossing sign (D-6) with triangular white inner border, cobblestone road apron, and Polish-style guardrails"
+            }
+          ],
+          "groundingLabel": "Traffic Infrastructure",
+          "ratingsReviewedAt": "2026-09-12T00:39:11.365Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-7-flash-medium-aided-static-covered-70dc397d7a",
+          "label": "Landscape & Church",
+          "text": "Landscape & Church",
+          "description": "Central European border village church tower visible in the background against a rolling low-elevation landscape.",
+          "groundingPhrase": "Landscape & Church",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.23357086302454474,
+            "y": 0.3443499209515923,
+            "w": 0.08076009501187645,
+            "h": 0.1397274712037943
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Landscape & Church: Central European border village church tower visible in the background against a rolling low-elevation landscape"
+            }
+          ],
+          "groundingLabel": "Landscape",
+          "ratingsReviewedAt": "2026-09-12T00:39:26.357Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash-high-aided-static-covered",
+      "benchmarkId": "gemini-3-8-flash-high-aided-static-covered",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-static-covered-d68663efa7",
+          "label": "Border Warning Sign",
+          "text": "Border Warning Sign",
+          "description": "Prominent yellow warning sign on the right displaying an exclamation mark and text reading Granica Państwa (\"State Border\" in Polish).",
+          "groundingPhrase": "Border Warning Sign",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9034045922406968,
+            "y": 0.40698637356018974,
+            "w": 0.05384006334125091,
+            "h": 0.11724259078019517
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Border Warning Sign: Prominent yellow warning sign on the right displaying an exclamation mark and text reading Granica Państwa (\"State Border\" in Polish)"
+            }
+          ],
+          "groundingLabel": "Border; Sign",
+          "ratingsReviewedAt": "2026-09-12T00:39:40.405Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-static-covered-47c4924604",
+          "label": "Directional Signpost",
+          "text": "Directional Signpost",
+          "description": "Green directional pointer on the left indicating Route 178 towards Zittau with country code ovals PL and D.",
+          "groundingPhrase": "Directional Signpost",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3835,
+            "w": 0.1950886777513855,
+            "h": 0.06666661647720143
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Directional Signpost: Green directional pointer on the left indicating Route 178 towards Zittau with country code ovals PL and D"
+            }
+          ],
+          "groundingLabel": "Directional Signpost",
+          "ratingsReviewedAt": "2026-09-12T00:39:46.690Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-static-covered-4f87ca20b6",
+          "label": "Road Signage & Infrastructure",
+          "text": "Road Signage & Infrastructure",
+          "description": "Polish sign D-6b (blue square indicating a combined pedestrian and bicycle crossing) and a modern bridge crossing the Lusatian Neisse river into the neighboring territory.",
+          "groundingPhrase": "Road Signage & Infrastructure",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.784639746634996,
+            "y": 0.426259128208989,
+            "w": 0.03800475059382418,
+            "h": 0.06424251549599738
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Road Signage & Infrastructure: Polish sign D-6b (blue square indicating a combined pedestrian and bicycle crossing) and a modern bridge crossing the Lusatian Neisse river into the neighboring territory"
+            }
+          ],
+          "groundingLabel": "Road Signage",
+          "ratingsReviewedAt": "2026-09-12T00:40:03.287Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-high-aided-static-covered-3787a69107",
+          "label": "Regional Church Architecture",
+          "text": "Regional Church Architecture",
+          "description": "Visible in the left background is a traditional Lusatian/Lower Silesian baroque village church tower with a white belfry and dark bulbous onion dome.",
+          "groundingPhrase": "Regional Church Architecture",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.22802850356294538,
+            "y": 0.3282892920775929,
+            "w": 0.08867775138558984,
+            "h": 0.15739416296519365
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Regional Church Architecture: Visible in the left background is a traditional Lusatian/Lower Silesian baroque village church tower with a white belfry and dark bulbous onion dome"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T00:40:08.613Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash-medium-aided-static-covered",
+      "benchmarkId": "gemini-3-8-flash-medium-aided-static-covered",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-static-covered-8dbdf78720",
+          "label": "Border Warning Sign",
+          "text": "Border Warning Sign",
+          "description": "A yellow rectangular warning sign on the right reads \"Granica Państwa\" (Polish for \"State Border\") right before the bridge over the Lusatian Neisse (Nysa Łużycka).",
+          "groundingPhrase": "Border Warning Sign",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9049881235154393,
+            "y": 0.424653065321589,
+            "w": 0.05225653206650836,
+            "h": 0.09154558458179628
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Border Warning Sign: A yellow rectangular warning sign on the right reads \"Granica Państwa\" (Polish for \"State Border\") right before the bridge over the Lusatian Neisse (Nysa Łużycka)"
+            }
+          ],
+          "groundingLabel": "Border; Sign",
+          "ratingsReviewedAt": "2026-09-12T00:40:22.677Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-static-covered-8b98e58b92",
+          "label": "Route Directional Sign",
+          "text": "Route Directional Sign",
+          "description": "Green directional pointer on the left displays route number 178 pointing left towards \"Zittau PL D\" (referencing German Bundesstraße 178 towards Zittau).",
+          "groundingPhrase": "Route Directional Sign",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.0015,
+            "y": 0.3835,
+            "w": 0.19429691211401423,
+            "h": 0.061848427815001626
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Route Directional Sign: Green directional pointer on the left displays route number 178 pointing left towards \"Zittau PL D\" (referencing German Bundesstraße 178 towards Zittau)"
+            }
+          ],
+          "groundingLabel": "Route Directional Sign",
+          "ratingsReviewedAt": "2026-09-12T00:40:28.924Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-static-covered-c1a776f145",
+          "label": "Polish Infrastructure",
+          "text": "Polish Infrastructure",
+          "description": "Standard Polish pedestrian crossing sign (D-6 square blue sign with white triangle) and cobblestone curb paving.",
+          "groundingPhrase": "Polish Infrastructure",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.7838479809976246,
+            "y": 0.4262591282089889,
+            "w": 0.04196357878068102,
+            "h": 0.06745464127079726
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Polish Infrastructure: Standard Polish pedestrian crossing sign (D-6 square blue sign with white triangle) and cobblestone curb paving"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T00:40:36.696Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-006-gemini-3-8-flash-medium-aided-static-covered-0341c8f9ff",
+          "label": "Church Tower",
+          "text": "Church Tower",
+          "description": "Distinctive Central European baroque church spire with a copper cupola visible across the river valley in the background.",
+          "groundingPhrase": "Church Tower",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.2735,
+            "y": 0.3455,
+            "w": 0.038,
+            "h": 0.14
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Church Tower: Distinctive Central European baroque church spire with a copper cupola visible across the river valley in the background"
+            }
+          ],
+          "groundingLabel": "Church Tower",
+          "ratingsReviewedAt": "2026-09-12T00:40:40.428Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-006-grok-4-6-xhigh-mcp-13da35c7bb",
+          "label": "B178 road designation",
+          "text": "B178 road designation",
+          "description": "The B178 designation is visible at a German–Polish border crossing near Zittau.",
+          "groundingPhrase": "B178 road designation",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7210067300079176,
+            "y": 0.6824403498205727,
+            "w": 0.10718012668250204,
+            "h": 0.18425643052523275
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 6 is a German–Polish border on B178 near Zittau."
+            }
+          ],
+          "groundingLabel": "B178 road designation",
+          "ratingsReviewedAt": "2026-09-12T17:02:59.531Z"
+        }
+      ]
+    }
+  ]
+}

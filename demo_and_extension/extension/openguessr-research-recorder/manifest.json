@@ -1,0 +1,77 @@
+{
+  "manifest_version": 3,
+  "name": "OpenGuessr Research Round Recorder",
+  "description": "Explicitly armed OpenGuessr research recorder with canonical NMPZ images, per-round interactive tab video, camera/event trajectories, and prediction capture.",
+  "version": "0.7.9",
+  "minimum_chrome_version": "127",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "downloads",
+    "tabs",
+    "unlimitedStorage",
+    "tabCapture",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "https://openguessr.com/*",
+    "https://www.openguessr.com/*",
+    "https://*.google.com/maps/*",
+    "http://127.0.0.1/*",
+    "http://localhost/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Authorize interactive video / recorder status"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://openguessr.com/*",
+        "https://www.openguessr.com/*"
+      ],
+      "js": [
+        "page/openguessr-hook.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://openguessr.com/*",
+        "https://www.openguessr.com/*"
+      ],
+      "js": [
+        "content/openguessr-relay.js"
+      ],
+      "run_at": "document_start",
+      "world": "ISOLATED"
+    },
+    {
+      "matches": [
+        "https://*.google.com/maps/*"
+      ],
+      "js": [
+        "page/google-streetview-hook.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://*.google.com/maps/*"
+      ],
+      "js": [
+        "content/google-relay.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "ISOLATED"
+    }
+  ]
+}

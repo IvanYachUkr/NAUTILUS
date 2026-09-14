@@ -1,0 +1,76 @@
+{
+  "dataset": "europe-easy",
+  "model": "SALAD + OSV-5M",
+  "index": "sq8",
+  "n_images": 3,
+  "generated_at_utc": "2026-08-10T23:22:22.808826+00:00",
+  "distance_unit": "km",
+  "top1_error": {
+    "mean_km": 1616.812,
+    "median_km": 1484.163,
+    "std_km": 622.707,
+    "rmse_km": 1732.583,
+    "min_km": 929.182,
+    "max_km": 2437.092,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 0.0,
+      "within_200_km_percent": 0.0,
+      "within_750_km_percent": 0.0,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "topk_mean_error": {
+    "mean_km": 901.319,
+    "median_km": 827.849,
+    "std_km": 266.022,
+    "rmse_km": 939.757,
+    "min_km": 618.519,
+    "max_km": 1257.589,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 0.0,
+      "within_200_km_percent": 0.0,
+      "within_750_km_percent": 33.333,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "topk_weighted_error": {
+    "mean_km": 900.392,
+    "median_km": 828.877,
+    "std_km": 268.266,
+    "rmse_km": 939.507,
+    "min_km": 613.483,
+    "max_km": 1258.817,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 0.0,
+      "within_200_km_percent": 0.0,
+      "within_750_km_percent": 33.333,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "topk_oracle_error": {
+    "mean_km": 268.983,
+    "median_km": 264.469,
+    "std_km": 108.994,
+    "rmse_km": 290.227,
+    "min_km": 137.808,
+    "max_km": 404.673,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 0.0,
+      "within_200_km_percent": 33.333,
+      "within_750_km_percent": 100.0,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "timing": {
+    "model_load_seconds": 28.18,
+    "index_load_seconds": 0.013,
+    "mean_descriptor_seconds": 1.859,
+    "mean_search_seconds": 142.826,
+    "mean_total_seconds": 144.685,
+    "total_seconds": 434.054
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "dataset": "europe-easy",
+  "model": "Chipoint v2 local public street-view fused retrieval",
+  "model_repo": "chiikabu-labs/chipoint-2",
+  "pipeline": "3-tower street retrieval; top-200/tower; z-score fusion; top-64 pool; cluster-consensus prediction",
+  "reranker": "not used",
+  "device": "NVIDIA GeForce GTX 1070",
+  "retrieval_dtype": "torch.float32",
+  "gallery_chunk_rows": 500000,
+  "top_k_prediction": 10,
+  "n_images": 8,
+  "generated_at_utc": "2026-09-13T13:48:31.799429+00:00",
+  "distance_unit": "km",
+  "prediction_error": {
+    "mean_km": 1254.233,
+    "median_km": 99.768,
+    "std_km": 3059.888,
+    "rmse_km": 3306.965,
+    "min_km": 4.324,
+    "max_km": 9346.186
+  },
+  "prediction_threshold_accuracy": {
+    "within_1_km_percent": 0.0,
+    "within_25_km_percent": 37.5,
+    "within_200_km_percent": 75.0,
+    "within_750_km_percent": 87.5,
+    "within_2500_km_percent": 87.5
+  },
+  "best_prediction_case": {
+    "location_id": "loc_001",
+    "city_or_region": "Paris",
+    "error_km": 4.324
+  },
+  "worst_prediction_case": {
+    "location_id": "loc_005",
+    "city_or_region": "Pula",
+    "error_km": 9346.186
+  },
+  "timing": {
+    "mode": "per-image-independent",
+    "query_encoding_seconds_by_tower": {
+      "so400m256": 0.711,
+      "gopt": 1.656,
+      "dinov3": 0.576
+    },
+    "retrieval_seconds_by_tower": {
+      "so400m256": 6.672,
+      "gopt": 6.311,
+      "dinov3": 6.295
+    },
+    "total_query_encoding_seconds": 2.943,
+    "total_gallery_retrieval_seconds": 19.278,
+    "inference_definition": "Per-image inference latency: three tower encodes + three independent full-gallery scans + fusion/cluster consensus. Predictions still use the original batched retrieval path; the independent scans are a separate warmed timing pass. Excludes model/download initialization and image disk decoding.",
+    "per_image_inference_seconds": {
+      "loc_001": 4.777,
+      "loc_002": 3.236,
+      "loc_003": 3.203,
+      "loc_004": 2.907,
+      "loc_005": 3.155,
+      "loc_006": 2.981,
+      "loc_007": 2.871,
+      "loc_008": 2.865
+    },
+    "inference_seconds_summary": {
+      "mean": 3.249,
+      "median": 3.068,
+      "std_population": 0.594,
+      "min": 2.865,
+      "max": 4.777
+    }
+  }
+}

@@ -1,0 +1,306 @@
+[
+  {
+    "location_id": "loc_001",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_001.png",
+    "ground_truth": {
+      "lat": 48.8521298,
+      "lon": 2.3696389,
+      "country": "France",
+      "city_or_region": "Paris",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark"
+    },
+    "prediction": {
+      "lat": 48.87919470521535,
+      "lon": 2.3273285044206666,
+      "raw_fused_top1_lat": 48.90373229980469,
+      "raw_fused_top1_lon": 2.344113349914551,
+      "raw_fused_top1_score": 5.717630386352539,
+      "cluster_size": 8,
+      "error_km": 4.323805739940767
+    },
+    "inference_seconds": 4.777335300001141,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.119636,
+        "gopt": 0.241813,
+        "dinov3": 0.07563
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 1.37315,
+        "gopt": 0.984172,
+        "dinov3": 0.959195
+      },
+      "total_query_encoding_seconds": 0.437079,
+      "total_gallery_retrieval_seconds": 3.316517,
+      "fusion_and_consensus_seconds": 1.02374,
+      "inference_seconds": 4.777335
+    }
+  },
+  {
+    "location_id": "loc_002",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_002.png",
+    "ground_truth": {
+      "lat": 52.5206008,
+      "lon": 13.4151229,
+      "country": "Germany",
+      "city_or_region": "Berlin",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark"
+    },
+    "prediction": {
+      "lat": 52.36336820989241,
+      "lon": 13.258594646829687,
+      "raw_fused_top1_lat": 52.49110412597656,
+      "raw_fused_top1_lon": 13.360660552978516,
+      "raw_fused_top1_score": 5.0499348640441895,
+      "cluster_size": 8,
+      "error_km": 20.479434763669126
+    },
+    "inference_seconds": 3.2364393999996537,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.084999,
+        "gopt": 0.201115,
+        "dinov3": 0.076048
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.755699,
+        "gopt": 0.757044,
+        "dinov3": 0.761264
+      },
+      "total_query_encoding_seconds": 0.362162,
+      "total_gallery_retrieval_seconds": 2.274007,
+      "fusion_and_consensus_seconds": 0.60027,
+      "inference_seconds": 3.236439
+    }
+  },
+  {
+    "location_id": "loc_003",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_003.png",
+    "ground_truth": {
+      "lat": 47.8005438,
+      "lon": 13.0529765,
+      "country": "Austria",
+      "city_or_region": "Salzburg",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark"
+    },
+    "prediction": {
+      "lat": 47.30637627256801,
+      "lon": 11.534949319623491,
+      "raw_fused_top1_lat": 47.27669906616211,
+      "raw_fused_top1_lon": 11.397244453430176,
+      "raw_fused_top1_score": 6.833073616027832,
+      "cluster_size": 7,
+      "error_km": 126.77789418151421
+    },
+    "inference_seconds": 3.203043700003036,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.084415,
+        "gopt": 0.202707,
+        "dinov3": 0.074489
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.742746,
+        "gopt": 0.770425,
+        "dinov3": 0.754596
+      },
+      "total_query_encoding_seconds": 0.36161,
+      "total_gallery_retrieval_seconds": 2.267767,
+      "fusion_and_consensus_seconds": 0.573666,
+      "inference_seconds": 3.203044
+    }
+  },
+  {
+    "location_id": "loc_004",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_004.png",
+    "ground_truth": {
+      "lat": 48.8126024,
+      "lon": 14.3129755,
+      "country": "Czechia",
+      "city_or_region": "Český Krumlov",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark"
+    },
+    "prediction": {
+      "lat": 49.966185282688485,
+      "lon": 13.734804457580163,
+      "raw_fused_top1_lat": 50.08639144897461,
+      "raw_fused_top1_lon": 14.413344383239746,
+      "raw_fused_top1_score": 8.465628623962402,
+      "cluster_size": 8,
+      "error_km": 134.9890943995424
+    },
+    "inference_seconds": 2.907277400001476,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.081505,
+        "gopt": 0.199371,
+        "dinov3": 0.071723
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.762749,
+        "gopt": 0.74739,
+        "dinov3": 0.758797
+      },
+      "total_query_encoding_seconds": 0.352599,
+      "total_gallery_retrieval_seconds": 2.268936,
+      "fusion_and_consensus_seconds": 0.285743,
+      "inference_seconds": 2.907277
+    }
+  },
+  {
+    "location_id": "loc_005",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_005.png",
+    "ground_truth": {
+      "lat": 44.8747121,
+      "lon": 13.849302,
+      "country": "Croatia",
+      "city_or_region": "Pula",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark"
+    },
+    "prediction": {
+      "lat": 33.944183349609375,
+      "lon": 133.069091796875,
+      "raw_fused_top1_lat": 33.944183349609375,
+      "raw_fused_top1_lon": 133.069091796875,
+      "raw_fused_top1_score": 4.012615203857422,
+      "cluster_size": 1,
+      "error_km": 9346.185929506268
+    },
+    "inference_seconds": 3.154642600002262,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.085797,
+        "gopt": 0.201311,
+        "dinov3": 0.070407
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.761875,
+        "gopt": 0.758884,
+        "dinov3": 0.759277
+      },
+      "total_query_encoding_seconds": 0.357515,
+      "total_gallery_retrieval_seconds": 2.280036,
+      "fusion_and_consensus_seconds": 0.517092,
+      "inference_seconds": 3.154643
+    }
+  },
+  {
+    "location_id": "loc_006",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_006.png",
+    "ground_truth": {
+      "lat": 50.9008842,
+      "lon": 14.8455043,
+      "country": "Poland",
+      "city_or_region": "Sieniawka, Gmina Bogatynia",
+      "difficulty": "easy",
+      "primary_clue_type": "text"
+    },
+    "prediction": {
+      "lat": 50.296163328412916,
+      "lon": 19.132134503571027,
+      "raw_fused_top1_lat": 49.84559631347656,
+      "raw_fused_top1_lon": 18.9935359954834,
+      "raw_fused_top1_score": 8.064430236816406,
+      "cluster_size": 7,
+      "error_km": 310.81769925906343
+    },
+    "inference_seconds": 2.9811310000004596,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.08703,
+        "gopt": 0.211089,
+        "dinov3": 0.07058
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.755964,
+        "gopt": 0.767251,
+        "dinov3": 0.763818
+      },
+      "total_query_encoding_seconds": 0.368699,
+      "total_gallery_retrieval_seconds": 2.287033,
+      "fusion_and_consensus_seconds": 0.325399,
+      "inference_seconds": 2.981131
+    }
+  },
+  {
+    "location_id": "loc_007",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_007.png",
+    "ground_truth": {
+      "lat": 45.9577599,
+      "lon": 14.7424922,
+      "country": "Slovenia",
+      "city_or_region": "Višnja Gora, Ivančna Gorica Municipality",
+      "difficulty": "easy",
+      "primary_clue_type": "text"
+    },
+    "prediction": {
+      "lat": 45.59317359906762,
+      "lon": 15.519476145970028,
+      "raw_fused_top1_lat": 45.50798034667969,
+      "raw_fused_top1_lon": 15.518982887268066,
+      "raw_fused_top1_score": 7.166443347930908,
+      "cluster_size": 7,
+      "error_km": 72.75903971454085
+    },
+    "inference_seconds": 2.870844199998828,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.086128,
+        "gopt": 0.200472,
+        "dinov3": 0.069606
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.7542,
+        "gopt": 0.76222,
+        "dinov3": 0.769762
+      },
+      "total_query_encoding_seconds": 0.356206,
+      "total_gallery_retrieval_seconds": 2.286182,
+      "fusion_and_consensus_seconds": 0.228456,
+      "inference_seconds": 2.870844
+    }
+  },
+  {
+    "location_id": "loc_008",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_008.png",
+    "ground_truth": {
+      "lat": 60.8634735,
+      "lon": 7.1179637,
+      "country": "Norway",
+      "city_or_region": "Flåm, Aurland Municipality",
+      "difficulty": "easy",
+      "primary_clue_type": "mixed"
+    },
+    "prediction": {
+      "lat": 60.81811752979778,
+      "lon": 6.809262045124515,
+      "raw_fused_top1_lat": 60.88105392456055,
+      "raw_fused_top1_lon": 6.842484474182129,
+      "raw_fused_top1_score": 9.536670684814453,
+      "cluster_size": 10,
+      "error_km": 17.530849713887815
+    },
+    "inference_seconds": 2.8647696999905747,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.081732,
+        "gopt": 0.198328,
+        "dinov3": 0.067191
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.765617,
+        "gopt": 0.763459,
+        "dinov3": 0.768604
+      },
+      "total_query_encoding_seconds": 0.347251,
+      "total_gallery_retrieval_seconds": 2.297679,
+      "fusion_and_consensus_seconds": 0.21984,
+      "inference_seconds": 2.86477
+    }
+  }
+]

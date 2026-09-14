@@ -1,0 +1,52 @@
+{
+  "dataset": "europe-easy",
+  "model": "GeoCLIP",
+  "device": "cpu",
+  "n_images": 8,
+  "generated_at_utc": "2026-09-13T12:25:49.488615+00:00",
+  "distance_unit": "km",
+  "top1_error": {
+    "mean_km": 1141.907,
+    "median_km": 115.054,
+    "std_km": 2102.191,
+    "rmse_km": 2392.312,
+    "min_km": 0.112,
+    "max_km": 6438.296
+  },
+  "top1_threshold_accuracy": {
+    "within_1_km_percent": 37.5,
+    "within_25_km_percent": 50.0,
+    "within_200_km_percent": 50.0,
+    "within_750_km_percent": 75.0,
+    "within_2500_km_percent": 87.5
+  },
+  "topk_oracle": {
+    "mean_best_candidate_error_km": 292.259,
+    "median_best_candidate_error_km": 3.267,
+    "threshold_accuracy": {
+      "within_1_km_percent": 50.0,
+      "within_25_km_percent": 62.5,
+      "within_200_km_percent": 75.0,
+      "within_750_km_percent": 87.5,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "best_top1_case": {
+    "location_id": "loc_002",
+    "city_or_region": "Berlin",
+    "error_km": 0.112
+  },
+  "worst_top1_case": {
+    "location_id": "loc_008",
+    "city_or_region": "Flåm, Aurland Municipality",
+    "error_km": 6438.296
+  },
+  "timing": {
+    "definition": "Warm per-image inference after one-time model loading; includes preprocessing, model forward pass, gallery scoring and top-k prediction; excludes image disk decoding and evaluation metrics.",
+    "model_load_seconds": 15.765,
+    "mean_inference_seconds": 15.169,
+    "median_inference_seconds": 15.193,
+    "std_inference_seconds": 0.081,
+    "total_inference_seconds": 121.349
+  }
+}

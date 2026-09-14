@@ -1,0 +1,72 @@
+{
+  "dataset": "europe-hard",
+  "model": "Chipoint v2 local public street-view fused retrieval",
+  "model_repo": "chiikabu-labs/chipoint-2",
+  "pipeline": "3-tower street retrieval; top-200/tower; z-score fusion; top-64 pool; cluster-consensus prediction",
+  "reranker": "not used",
+  "device": "NVIDIA GeForce GTX 1070",
+  "retrieval_dtype": "torch.float32",
+  "gallery_chunk_rows": 500000,
+  "top_k_prediction": 10,
+  "n_images": 8,
+  "generated_at_utc": "2026-09-13T13:32:14.059548+00:00",
+  "distance_unit": "km",
+  "prediction_error": {
+    "mean_km": 957.441,
+    "median_km": 1161.044,
+    "std_km": 416.921,
+    "rmse_km": 1044.278,
+    "min_km": 223.61,
+    "max_km": 1495.445
+  },
+  "prediction_threshold_accuracy": {
+    "within_1_km_percent": 0.0,
+    "within_25_km_percent": 0.0,
+    "within_200_km_percent": 0.0,
+    "within_750_km_percent": 37.5,
+    "within_2500_km_percent": 100.0
+  },
+  "best_prediction_case": {
+    "location_id": "loc_023",
+    "city_or_region": "Pašakiai, Radviliškis District Municipality, Šiauliai County",
+    "error_km": 223.61
+  },
+  "worst_prediction_case": {
+    "location_id": "loc_025",
+    "city_or_region": "Utajärvi Municipality, North Ostrobothnia",
+    "error_km": 1495.445
+  },
+  "timing": {
+    "mode": "per-image-independent",
+    "query_encoding_seconds_by_tower": {
+      "so400m256": 0.855,
+      "gopt": 1.457,
+      "dinov3": 0.545
+    },
+    "retrieval_seconds_by_tower": {
+      "so400m256": 6.659,
+      "gopt": 6.141,
+      "dinov3": 6.269
+    },
+    "total_query_encoding_seconds": 2.857,
+    "total_gallery_retrieval_seconds": 19.07,
+    "inference_definition": "Per-image inference latency: three tower encodes + three independent full-gallery scans + fusion/cluster consensus. Predictions still use the original batched retrieval path; the independent scans are a separate warmed timing pass. Excludes model/download initialization and image disk decoding.",
+    "per_image_inference_seconds": {
+      "loc_018": 5.197,
+      "loc_019": 3.198,
+      "loc_020": 3.163,
+      "loc_021": 3.072,
+      "loc_022": 3.252,
+      "loc_023": 3.194,
+      "loc_024": 2.952,
+      "loc_025": 3.174
+    },
+    "inference_seconds_summary": {
+      "mean": 3.4,
+      "median": 3.184,
+      "std_population": 0.685,
+      "min": 2.952,
+      "max": 5.197
+    }
+  }
+}

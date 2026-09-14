@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ca3633efa0c47368975d1849c1899197 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="
+        position: fixed;
+        top: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+        background: rgba(255,255,255,0.94);
+        border: 1px solid rgba(0,0,0,0.15);
+        border-radius: 8px;
+        padding: 9px 16px;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #222;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.12);
+        white-space: nowrap;
+    ">
+        NAUTILUS Benchmark Locations
+    </div>
+    
+    
+    <div style="
+        position: fixed;
+        bottom: 26px;
+        left: 26px;
+        z-index: 9999;
+        background: rgba(255,255,255,0.94);
+        border: 1px solid rgba(0,0,0,0.15);
+        border-radius: 8px;
+        padding: 11px 14px;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        color: #222;
+        box-shadow: 0 1px 5px rgba(0,0,0,0.12);
+    ">
+        <div style="font-weight:700;margin-bottom:6px;">Difficulty</div>
+        
+            <div style="display:flex;align-items:center;gap:8px;margin:5px 0;">
+                <span style="
+                    width:13px;
+                    height:13px;
+                    border-radius:50%;
+                    background:#2ECC71;
+                    border:2px solid white;
+                    box-shadow:0 0 0 1px rgba(0,0,0,0.25);
+                    display:inline-block;
+                    flex:0 0 auto;
+                "></span>
+                <span>Easy (8)</span>
+            </div>
+            
+            <div style="display:flex;align-items:center;gap:8px;margin:5px 0;">
+                <span style="
+                    width:13px;
+                    height:13px;
+                    border-radius:50%;
+                    background:#F39C12;
+                    border:2px solid white;
+                    box-shadow:0 0 0 1px rgba(0,0,0,0.25);
+                    display:inline-block;
+                    flex:0 0 auto;
+                "></span>
+                <span>Medium (9)</span>
+            </div>
+            
+            <div style="display:flex;align-items:center;gap:8px;margin:5px 0;">
+                <span style="
+                    width:13px;
+                    height:13px;
+                    border-radius:50%;
+                    background:#E74C3C;
+                    border:2px solid white;
+                    box-shadow:0 0 0 1px rgba(0,0,0,0.25);
+                    display:inline-block;
+                    flex:0 0 auto;
+                "></span>
+                <span>Hard (8)</span>
+            </div>
+            
+    </div>
+    
+    
+            <div class="folium-map" id="map_ca3633efa0c47368975d1849c1899197" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ca3633efa0c47368975d1849c1899197 = L.map(
+                "map_ca3633efa0c47368975d1849c1899197",
+                {
+                    center: [50.157245916, 13.457552871999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_ca3633efa0c47368975d1849c1899197);
+
+            
+
+        
+    
+            var tile_layer_b91f5c57929d6038bff26db691360288 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), swisstopo, and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b91f5c57929d6038bff26db691360288.addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+            var circle_marker_0a5d8ec587007e8c9fd49b90a2f4e49e = L.circleMarker(
+                [48.8521298, 2.3696389],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_03817c30a39df4d46ecdf7e2772ab3e2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8847f0b7f0e52cd08e23d81b21c12162 = $(`<div id="html_8847f0b7f0e52cd08e23d81b21c12162" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Paris             </div>             <div><b>Country:</b> France</div>             <div><b>Difficulty:</b> Easy</div>             <div><b>Scene:</b> urban</div>             <div><b>Primary clue:</b> landmark</div>             <div><b>ID:</b> loc_001</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 48.852130, 2.369639             </div>         </div>         </div>`)[0];
+                popup_03817c30a39df4d46ecdf7e2772ab3e2.setContent(html_8847f0b7f0e52cd08e23d81b21c12162);
+            
+        
+
+        circle_marker_0a5d8ec587007e8c9fd49b90a2f4e49e.bindPopup(popup_03817c30a39df4d46ecdf7e2772ab3e2)
+        ;
+
+        
+    
+    
+            circle_marker_0a5d8ec587007e8c9fd49b90a2f4e49e.bindTooltip(
+                `<div>
+                     Paris, France - Easy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8510b67dc60fd342db2134872ba646e6 = L.circleMarker(
+                [52.5206008, 13.4151229],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_3ece3390fa7be87654e83101aaed0507 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d20a98a2f5b009c5b6c9b6452c461417 = $(`<div id="html_d20a98a2f5b009c5b6c9b6452c461417" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Berlin             </div>             <div><b>Country:</b> Germany</div>             <div><b>Difficulty:</b> Easy</div>             <div><b>Scene:</b> urban</div>             <div><b>Primary clue:</b> landmark</div>             <div><b>ID:</b> loc_002</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 52.520601, 13.415123             </div>         </div>         </div>`)[0];
+                popup_3ece3390fa7be87654e83101aaed0507.setContent(html_d20a98a2f5b009c5b6c9b6452c461417);
+            
+        
+
+        circle_marker_8510b67dc60fd342db2134872ba646e6.bindPopup(popup_3ece3390fa7be87654e83101aaed0507)
+        ;
+
+        
+    
+    
+            circle_marker_8510b67dc60fd342db2134872ba646e6.bindTooltip(
+                `<div>
+                     Berlin, Germany - Easy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dcf180f71f6cf6c5f301fa7a684b8831 = L.circleMarker(
+                [47.8005438, 13.0529765],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_532943583b335710b7b26c676afe6880 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_004fc1ecfb6e8dc28fb07c618f888454 = $(`<div id="html_004fc1ecfb6e8dc28fb07c618f888454" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Salzburg             </div>             <div><b>Country:</b> Austria</div>             <div><b>Difficulty:</b> Easy</div>             <div><b>Scene:</b> urban</div>             <div><b>Primary clue:</b> landmark</div>             <div><b>ID:</b> loc_003</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 47.800544, 13.052976             </div>         </div>         </div>`)[0];
+                popup_532943583b335710b7b26c676afe6880.setContent(html_004fc1ecfb6e8dc28fb07c618f888454);
+            
+        
+
+        circle_marker_dcf180f71f6cf6c5f301fa7a684b8831.bindPopup(popup_532943583b335710b7b26c676afe6880)
+        ;
+
+        
+    
+    
+            circle_marker_dcf180f71f6cf6c5f301fa7a684b8831.bindTooltip(
+                `<div>
+                     Salzburg, Austria - Easy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5fc38bd7ae0c65d8613d74b7b1691b6 = L.circleMarker(
+                [48.8126024, 14.3129755],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_24053c209da1b2fe0507264c7f8b7e26 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b807344d86d6ac8f46a24cfc3895f378 = $(`<div id="html_b807344d86d6ac8f46a24cfc3895f378" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Český Krumlov             </div>             <div><b>Country:</b> Czechia</div>             <div><b>Difficulty:</b> Easy</div>             <div><b>Scene:</b> small_town</div>             <div><b>Primary clue:</b> landmark</div>             <div><b>ID:</b> loc_004</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 48.812602, 14.312976             </div>         </div>         </div>`)[0];
+                popup_24053c209da1b2fe0507264c7f8b7e26.setContent(html_b807344d86d6ac8f46a24cfc3895f378);
+            
+        
+
+        circle_marker_a5fc38bd7ae0c65d8613d74b7b1691b6.bindPopup(popup_24053c209da1b2fe0507264c7f8b7e26)
+        ;
+
+        
+    
+    
+            circle_marker_a5fc38bd7ae0c65d8613d74b7b1691b6.bindTooltip(
+                `<div>
+                     Český Krumlov, Czechia - Easy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab69e8231caf2816e25763d6dfdbe188 = L.circleMarker(
+                [44.8747121, 13.849302],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_0a7f8931bcceab4766b0c42acf66642d = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2c534c2ef53c873aa7bb0a7eb447dde7 = $(`<div id="html_2c534c2ef53c873aa7bb0a7eb447dde7" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Pula             </div>             <div><b>Country:</b> Croatia</div>             <div><b>Difficulty:</b> Easy</div>             <div><b>Scene:</b> urban</div>             <div><b>Primary clue:</b> landmark</div>             <div><b>ID:</b> loc_005</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 44.874712, 13.849302             </div>         </div>         </div>`)[0];
+                popup_0a7f8931bcceab4766b0c42acf66642d.setContent(html_2c534c2ef53c873aa7bb0a7eb447dde7);
+            
+        
+
+        circle_marker_ab69e8231caf2816e25763d6dfdbe188.bindPopup(popup_0a7f8931bcceab4766b0c42acf66642d)
+        ;
+
+        
+    
+    
+            circle_marker_ab69e8231caf2816e25763d6dfdbe188.bindTooltip(
+                `<div>
+                     Pula, Croatia - Easy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e25d179fd228221f0a2ace92cad47c5f = L.circleMarker(
+                [50.9008842, 14.8455043],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_acea213c5ec79dfa343fc8f998a68aea = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_beb7e7d36c2c022cea41478a6776a057 = $(`<div id="html_beb7e7d36c2c022cea41478a6776a057" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Sieniawka, Gmina Bogatynia             </div>             <div><b>Country:</b> Poland</div>             <div><b>Difficulty:</b> Easy</div>             <div><b>Scene:</b> small_town</div>             <div><b>Primary clue:</b> text</div>             <div><b>ID:</b> loc_006</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 50.900884, 14.845504             </div>         </div>         </div>`)[0];
+                popup_acea213c5ec79dfa343fc8f998a68aea.setContent(html_beb7e7d36c2c022cea41478a6776a057);
+            
+        
+
+        circle_marker_e25d179fd228221f0a2ace92cad47c5f.bindPopup(popup_acea213c5ec79dfa343fc8f998a68aea)
+        ;
+
+        
+    
+    
+            circle_marker_e25d179fd228221f0a2ace92cad47c5f.bindTooltip(
+                `<div>
+                     Sieniawka, Gmina Bogatynia, Poland - Easy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4c65b8ef75746d45fae560036706254 = L.circleMarker(
+                [45.9577599, 14.7424922],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_1733547cf49d4b29658aa5253d02962e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_99dd94f765be885f31fd0a2a96f5fadb = $(`<div id="html_99dd94f765be885f31fd0a2a96f5fadb" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Višnja Gora, Ivančna Gorica Municipality             </div>             <div><b>Country:</b> Slovenia</div>             <div><b>Difficulty:</b> Easy</div>             <div><b>Scene:</b> small_town</div>             <div><b>Primary clue:</b> text</div>             <div><b>ID:</b> loc_007</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 45.957760, 14.742492             </div>         </div>         </div>`)[0];
+                popup_1733547cf49d4b29658aa5253d02962e.setContent(html_99dd94f765be885f31fd0a2a96f5fadb);
+            
+        
+
+        circle_marker_c4c65b8ef75746d45fae560036706254.bindPopup(popup_1733547cf49d4b29658aa5253d02962e)
+        ;
+
+        
+    
+    
+            circle_marker_c4c65b8ef75746d45fae560036706254.bindTooltip(
+                `<div>
+                     Višnja Gora, Ivančna Gorica Municipality, Slovenia - Easy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef5ad32f8f186b29b2e9552c3f0a4afc = L.circleMarker(
+                [60.8634735, 7.1179637],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_2ad56dcb7ba0dd077946c2ded7fed950 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c643188ef25ae2d43de667c0f5289620 = $(`<div id="html_c643188ef25ae2d43de667c0f5289620" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Flåm, Aurland Municipality             </div>             <div><b>Country:</b> Norway</div>             <div><b>Difficulty:</b> Easy</div>             <div><b>Scene:</b> rural</div>             <div><b>Primary clue:</b> mixed</div>             <div><b>ID:</b> loc_008</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 60.863473, 7.117964             </div>         </div>         </div>`)[0];
+                popup_2ad56dcb7ba0dd077946c2ded7fed950.setContent(html_c643188ef25ae2d43de667c0f5289620);
+            
+        
+
+        circle_marker_ef5ad32f8f186b29b2e9552c3f0a4afc.bindPopup(popup_2ad56dcb7ba0dd077946c2ded7fed950)
+        ;
+
+        
+    
+    
+            circle_marker_ef5ad32f8f186b29b2e9552c3f0a4afc.bindTooltip(
+                `<div>
+                     Flåm, Aurland Municipality, Norway - Easy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b5f375863e089d5b1c9ead4076f3fab9 = L.circleMarker(
+                [39.4667928, -0.3661343],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_71892d1f091a5cecbc39736fdd7f85b9 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9bc3f9a484cc48535bf86721fff6712f = $(`<div id="html_9bc3f9a484cc48535bf86721fff6712f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Valencia             </div>             <div><b>Country:</b> Spain</div>             <div><b>Difficulty:</b> Medium</div>             <div><b>Scene:</b> urban</div>             <div><b>Primary clue:</b> architecture</div>             <div><b>ID:</b> loc_009</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 39.466793, -0.366134             </div>         </div>         </div>`)[0];
+                popup_71892d1f091a5cecbc39736fdd7f85b9.setContent(html_9bc3f9a484cc48535bf86721fff6712f);
+            
+        
+
+        circle_marker_b5f375863e089d5b1c9ead4076f3fab9.bindPopup(popup_71892d1f091a5cecbc39736fdd7f85b9)
+        ;
+
+        
+    
+    
+            circle_marker_b5f375863e089d5b1c9ead4076f3fab9.bindTooltip(
+                `<div>
+                     Valencia, Spain - Medium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0639420f9b5f3349526772413414f0ef = L.circleMarker(
+                [44.4930672, 11.3250143],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_25a39882d681792a78c31c9f1e715d3b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_47f6c9ac3912acfe7a388859159fe0a4 = $(`<div id="html_47f6c9ac3912acfe7a388859159fe0a4" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Bologna             </div>             <div><b>Country:</b> Italy</div>             <div><b>Difficulty:</b> Medium</div>             <div><b>Scene:</b> urban</div>             <div><b>Primary clue:</b> architecture</div>             <div><b>ID:</b> loc_010</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 44.493067, 11.325014             </div>         </div>         </div>`)[0];
+                popup_25a39882d681792a78c31c9f1e715d3b.setContent(html_47f6c9ac3912acfe7a388859159fe0a4);
+            
+        
+
+        circle_marker_0639420f9b5f3349526772413414f0ef.bindPopup(popup_25a39882d681792a78c31c9f1e715d3b)
+        ;
+
+        
+    
+    
+            circle_marker_0639420f9b5f3349526772413414f0ef.bindTooltip(
+                `<div>
+                     Bologna, Italy - Medium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c8e7be67aa37bff9a2f23d9d921ddfb2 = L.circleMarker(
+                [52.1124003, 5.0797161],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_f729e6de615a0c1e084472c45ebad926 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a15e0c146e46e2a922acbaa46e181363 = $(`<div id="html_a15e0c146e46e2a922acbaa46e181363" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Utrecht             </div>             <div><b>Country:</b> Netherlands</div>             <div><b>Difficulty:</b> Medium</div>             <div><b>Scene:</b> urban</div>             <div><b>Primary clue:</b> infrastructure</div>             <div><b>ID:</b> loc_011</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 52.112400, 5.079716             </div>         </div>         </div>`)[0];
+                popup_f729e6de615a0c1e084472c45ebad926.setContent(html_a15e0c146e46e2a922acbaa46e181363);
+            
+        
+
+        circle_marker_c8e7be67aa37bff9a2f23d9d921ddfb2.bindPopup(popup_f729e6de615a0c1e084472c45ebad926)
+        ;
+
+        
+    
+    
+            circle_marker_c8e7be67aa37bff9a2f23d9d921ddfb2.bindTooltip(
+                `<div>
+                     Utrecht, Netherlands - Medium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db8601fdb0c7c2330f18b3401fd3f36f = L.circleMarker(
+                [50.9874591, 3.7463905],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_24efd2eb6ebe83fd290bdc42167292fb = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8afefb3b7081f903ac961d41df3e501a = $(`<div id="html_8afefb3b7081f903ac961d41df3e501a" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Merelbeke, Merelbeke-Melle             </div>             <div><b>Country:</b> Belgium</div>             <div><b>Difficulty:</b> Medium</div>             <div><b>Scene:</b> urban</div>             <div><b>Primary clue:</b> mixed</div>             <div><b>ID:</b> loc_012</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 50.987459, 3.746390             </div>         </div>         </div>`)[0];
+                popup_24efd2eb6ebe83fd290bdc42167292fb.setContent(html_8afefb3b7081f903ac961d41df3e501a);
+            
+        
+
+        circle_marker_db8601fdb0c7c2330f18b3401fd3f36f.bindPopup(popup_24efd2eb6ebe83fd290bdc42167292fb)
+        ;
+
+        
+    
+    
+            circle_marker_db8601fdb0c7c2330f18b3401fd3f36f.bindTooltip(
+                `<div>
+                     Merelbeke, Merelbeke-Melle, Belgium - Medium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df6f57200e1549a34c47e988df112a38 = L.circleMarker(
+                [40.2155817, -8.4337562],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_846cb110bd6cb211c4c2a3717409642f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2a7b1d4d09c7129fe85aaf1ec93cdb01 = $(`<div id="html_2a7b1d4d09c7129fe85aaf1ec93cdb01" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Coimbra             </div>             <div><b>Country:</b> Portugal</div>             <div><b>Difficulty:</b> Medium</div>             <div><b>Scene:</b> urban</div>             <div><b>Primary clue:</b> infrastructure</div>             <div><b>ID:</b> loc_013</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 40.215582, -8.433756             </div>         </div>         </div>`)[0];
+                popup_846cb110bd6cb211c4c2a3717409642f.setContent(html_2a7b1d4d09c7129fe85aaf1ec93cdb01);
+            
+        
+
+        circle_marker_df6f57200e1549a34c47e988df112a38.bindPopup(popup_846cb110bd6cb211c4c2a3717409642f)
+        ;
+
+        
+    
+    
+            circle_marker_df6f57200e1549a34c47e988df112a38.bindTooltip(
+                `<div>
+                     Coimbra, Portugal - Medium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a54f4888163dc610992e74e04c50fd2 = L.circleMarker(
+                [59.8481151, 17.6140674],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_f5cc87cd2f86e18c9344ca406d52b0d6 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_fe4fa6506839d0ed2446dc552cabdbcb = $(`<div id="html_fe4fa6506839d0ed2446dc552cabdbcb" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Uppsala             </div>             <div><b>Country:</b> Sweden</div>             <div><b>Difficulty:</b> Medium</div>             <div><b>Scene:</b> urban</div>             <div><b>Primary clue:</b> architecture</div>             <div><b>ID:</b> loc_014</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 59.848115, 17.614067             </div>         </div>         </div>`)[0];
+                popup_f5cc87cd2f86e18c9344ca406d52b0d6.setContent(html_fe4fa6506839d0ed2446dc552cabdbcb);
+            
+        
+
+        circle_marker_7a54f4888163dc610992e74e04c50fd2.bindPopup(popup_f5cc87cd2f86e18c9344ca406d52b0d6)
+        ;
+
+        
+    
+    
+            circle_marker_7a54f4888163dc610992e74e04c50fd2.bindTooltip(
+                `<div>
+                     Uppsala, Sweden - Medium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83b472d301a68a2fc99905548022e0dc = L.circleMarker(
+                [58.3478594, 26.7197804],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_d020fb1a5f730b854291454fd9988700 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_00ad3f24847fb85f345e08dbf5935e27 = $(`<div id="html_00ad3f24847fb85f345e08dbf5935e27" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Tartu             </div>             <div><b>Country:</b> Estonia</div>             <div><b>Difficulty:</b> Medium</div>             <div><b>Scene:</b> small_town</div>             <div><b>Primary clue:</b> mixed</div>             <div><b>ID:</b> loc_015</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 58.347859, 26.719780             </div>         </div>         </div>`)[0];
+                popup_d020fb1a5f730b854291454fd9988700.setContent(html_00ad3f24847fb85f345e08dbf5935e27);
+            
+        
+
+        circle_marker_83b472d301a68a2fc99905548022e0dc.bindPopup(popup_d020fb1a5f730b854291454fd9988700)
+        ;
+
+        
+    
+    
+            circle_marker_83b472d301a68a2fc99905548022e0dc.bindTooltip(
+                `<div>
+                     Tartu, Estonia - Medium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54a146acfb3f4348fb05a18af8ef9b65 = L.circleMarker(
+                [48.7583857, 19.1412898],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_79943d3ebd2058714a9aae3ce59a19fe = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7b1667a083503bba841898705a519419 = $(`<div id="html_7b1667a083503bba841898705a519419" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Banská Bystrica             </div>             <div><b>Country:</b> Slovakia</div>             <div><b>Difficulty:</b> Medium</div>             <div><b>Scene:</b> small_town</div>             <div><b>Primary clue:</b> mixed</div>             <div><b>ID:</b> loc_016</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 48.758386, 19.141290             </div>         </div>         </div>`)[0];
+                popup_79943d3ebd2058714a9aae3ce59a19fe.setContent(html_7b1667a083503bba841898705a519419);
+            
+        
+
+        circle_marker_54a146acfb3f4348fb05a18af8ef9b65.bindPopup(popup_79943d3ebd2058714a9aae3ce59a19fe)
+        ;
+
+        
+    
+    
+            circle_marker_54a146acfb3f4348fb05a18af8ef9b65.bindTooltip(
+                `<div>
+                     Banská Bystrica, Slovakia - Medium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9de4fda8c84a9a721aaf2a14466e594f = L.circleMarker(
+                [53.2819335, -9.1382768],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_12cc6e68d22eef1014d9f91d3a14b8e7 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c21f532b8b4b44a901c6a5bc71f8a114 = $(`<div id="html_c21f532b8b4b44a901c6a5bc71f8a114" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Boleybeg East, County Galway             </div>             <div><b>Country:</b> Ireland</div>             <div><b>Difficulty:</b> Medium</div>             <div><b>Scene:</b> rural</div>             <div><b>Primary clue:</b> infrastructure</div>             <div><b>ID:</b> loc_017</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 53.281934, -9.138277             </div>         </div>         </div>`)[0];
+                popup_12cc6e68d22eef1014d9f91d3a14b8e7.setContent(html_c21f532b8b4b44a901c6a5bc71f8a114);
+            
+        
+
+        circle_marker_9de4fda8c84a9a721aaf2a14466e594f.bindPopup(popup_12cc6e68d22eef1014d9f91d3a14b8e7)
+        ;
+
+        
+    
+    
+            circle_marker_9de4fda8c84a9a721aaf2a14466e594f.bindTooltip(
+                `<div>
+                     Boleybeg East, County Galway, Ireland - Medium
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0561a8215c611470f209ade85b5a287b = L.circleMarker(
+                [37.3439407, 22.5909077],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_835b565c3309a15628f698e4bb3f8995 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d699e136c98f63fe8623c8b0721d414d = $(`<div id="html_d699e136c98f63fe8623c8b0721d414d" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Arcadia Regional Unit, Peloponnese             </div>             <div><b>Country:</b> Greece</div>             <div><b>Difficulty:</b> Hard</div>             <div><b>Scene:</b> rural</div>             <div><b>Primary clue:</b> landscape</div>             <div><b>ID:</b> loc_018</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 37.343941, 22.590908             </div>         </div>         </div>`)[0];
+                popup_835b565c3309a15628f698e4bb3f8995.setContent(html_d699e136c98f63fe8623c8b0721d414d);
+            
+        
+
+        circle_marker_0561a8215c611470f209ade85b5a287b.bindPopup(popup_835b565c3309a15628f698e4bb3f8995)
+        ;
+
+        
+    
+    
+            circle_marker_0561a8215c611470f209ade85b5a287b.bindTooltip(
+                `<div>
+                     Arcadia Regional Unit, Peloponnese, Greece - Hard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b87421ea268d4af550a87de091c311b = L.circleMarker(
+                [45.8911426, 24.3372001],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_3a66eec3cd60f2756f7dfc88893334fa = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_95f9b7fe0acf9e7bfd4a77000c5b020f = $(`<div id="html_95f9b7fe0acf9e7bfd4a77000c5b020f" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Vurpăr, Sibiu County             </div>             <div><b>Country:</b> Romania</div>             <div><b>Difficulty:</b> Hard</div>             <div><b>Scene:</b> rural</div>             <div><b>Primary clue:</b> architecture</div>             <div><b>ID:</b> loc_019</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 45.891143, 24.337200             </div>         </div>         </div>`)[0];
+                popup_3a66eec3cd60f2756f7dfc88893334fa.setContent(html_95f9b7fe0acf9e7bfd4a77000c5b020f);
+            
+        
+
+        circle_marker_2b87421ea268d4af550a87de091c311b.bindPopup(popup_3a66eec3cd60f2756f7dfc88893334fa)
+        ;
+
+        
+    
+    
+            circle_marker_2b87421ea268d4af550a87de091c311b.bindTooltip(
+                `<div>
+                     Vurpăr, Sibiu County, Romania - Hard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5db9a3cfae22bcd5e5be993f95ffca8 = L.circleMarker(
+                [41.5643939, 24.9701484],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_23c447911c9409a7a47c3582105fa748 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1f8feb890ca1f9b37d57740d95b38e91 = $(`<div id="html_1f8feb890ca1f9b37d57740d95b38e91" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Vărbina, Madan Municipality, Smolyan Province             </div>             <div><b>Country:</b> Bulgaria</div>             <div><b>Difficulty:</b> Hard</div>             <div><b>Scene:</b> rural</div>             <div><b>Primary clue:</b> architecture</div>             <div><b>ID:</b> loc_020</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 41.564394, 24.970148             </div>         </div>         </div>`)[0];
+                popup_23c447911c9409a7a47c3582105fa748.setContent(html_1f8feb890ca1f9b37d57740d95b38e91);
+            
+        
+
+        circle_marker_e5db9a3cfae22bcd5e5be993f95ffca8.bindPopup(popup_23c447911c9409a7a47c3582105fa748)
+        ;
+
+        
+    
+    
+            circle_marker_e5db9a3cfae22bcd5e5be993f95ffca8.bindTooltip(
+                `<div>
+                     Vărbina, Madan Municipality, Smolyan Province, Bulgaria - Hard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c084365d8de69cb6642093767bb5aa9b = L.circleMarker(
+                [46.706018, 20.0496719],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_9ace07222b0f7e1d1bad3f47499d3fca = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_eb6cdb9edfc3602ec49406b4b115db92 = $(`<div id="html_eb6cdb9edfc3602ec49406b4b115db92" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Csongrád District, Csongrád-Csanád County             </div>             <div><b>Country:</b> Hungary</div>             <div><b>Difficulty:</b> Hard</div>             <div><b>Scene:</b> rural</div>             <div><b>Primary clue:</b> landscape</div>             <div><b>ID:</b> loc_021</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 46.706018, 20.049672             </div>         </div>         </div>`)[0];
+                popup_9ace07222b0f7e1d1bad3f47499d3fca.setContent(html_eb6cdb9edfc3602ec49406b4b115db92);
+            
+        
+
+        circle_marker_c084365d8de69cb6642093767bb5aa9b.bindPopup(popup_9ace07222b0f7e1d1bad3f47499d3fca)
+        ;
+
+        
+    
+    
+            circle_marker_c084365d8de69cb6642093767bb5aa9b.bindTooltip(
+                `<div>
+                     Csongrád District, Csongrád-Csanád County, Hungary - Hard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e56a38016e04cd944e7f2d14e38f871 = L.circleMarker(
+                [57.1907677, 26.1476727],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_c425496e3e9bb22f7a72740f060622dd = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0850e6342188dc9406e59646db68d757 = $(`<div id="html_0850e6342188dc9406e59646db68d757" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Ranka Parish, Gulbene Municipality             </div>             <div><b>Country:</b> Latvia</div>             <div><b>Difficulty:</b> Hard</div>             <div><b>Scene:</b> rural</div>             <div><b>Primary clue:</b> infrastructure</div>             <div><b>ID:</b> loc_022</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 57.190768, 26.147673             </div>         </div>         </div>`)[0];
+                popup_c425496e3e9bb22f7a72740f060622dd.setContent(html_0850e6342188dc9406e59646db68d757);
+            
+        
+
+        circle_marker_1e56a38016e04cd944e7f2d14e38f871.bindPopup(popup_c425496e3e9bb22f7a72740f060622dd)
+        ;
+
+        
+    
+    
+            circle_marker_1e56a38016e04cd944e7f2d14e38f871.bindTooltip(
+                `<div>
+                     Ranka Parish, Gulbene Municipality, Latvia - Hard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae16a1a82c35dd9327b2a325283268f0 = L.circleMarker(
+                [55.5966197, 23.8297989],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_7b3415b2f303008f00d9318bc8620be1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4019f8bae3a5ad3bc68eee2f767b6465 = $(`<div id="html_4019f8bae3a5ad3bc68eee2f767b6465" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Pašakiai, Radviliškis District Municipality, Šiauliai County             </div>             <div><b>Country:</b> Lithuania</div>             <div><b>Difficulty:</b> Hard</div>             <div><b>Scene:</b> rural</div>             <div><b>Primary clue:</b> infrastructure</div>             <div><b>ID:</b> loc_023</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 55.596620, 23.829799             </div>         </div>         </div>`)[0];
+                popup_7b3415b2f303008f00d9318bc8620be1.setContent(html_4019f8bae3a5ad3bc68eee2f767b6465);
+            
+        
+
+        circle_marker_ae16a1a82c35dd9327b2a325283268f0.bindPopup(popup_7b3415b2f303008f00d9318bc8620be1)
+        ;
+
+        
+    
+    
+            circle_marker_ae16a1a82c35dd9327b2a325283268f0.bindTooltip(
+                `<div>
+                     Pašakiai, Radviliškis District Municipality, Šiauliai County, Lithuania - Hard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ec20a38265b75255734f64398a11554 = L.circleMarker(
+                [56.601125, 8.163942],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_ab737482bbbaf489bce4cc55041ca99e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1f951c1ed405bd82cc9288ac1fcce521 = $(`<div id="html_1f951c1ed405bd82cc9288ac1fcce521" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Lemvig Municipality, Central Denmark Region             </div>             <div><b>Country:</b> Denmark</div>             <div><b>Difficulty:</b> Hard</div>             <div><b>Scene:</b> rural</div>             <div><b>Primary clue:</b> landscape</div>             <div><b>ID:</b> loc_024</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 56.601125, 8.163942             </div>         </div>         </div>`)[0];
+                popup_ab737482bbbaf489bce4cc55041ca99e.setContent(html_1f951c1ed405bd82cc9288ac1fcce521);
+            
+        
+
+        circle_marker_2ec20a38265b75255734f64398a11554.bindPopup(popup_ab737482bbbaf489bce4cc55041ca99e)
+        ;
+
+        
+    
+    
+            circle_marker_2ec20a38265b75255734f64398a11554.bindTooltip(
+                `<div>
+                     Lemvig Municipality, Central Denmark Region, Denmark - Hard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_beed38de29dd6f4d4717fd2d0bc8f41c = L.circleMarker(
+                [64.942839, 26.9554129],
+                {"bubblingMouseEvents": true, "color": "#FFFFFF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E74C3C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_ca3633efa0c47368975d1849c1899197);
+        
+    
+        var popup_14a14c8254ce3b60a8383a26b5a1c02e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_de7f23e84a935d6a122220f07d88bca2 = $(`<div id="html_de7f23e84a935d6a122220f07d88bca2" style="width: 100.0%; height: 100.0%;">         <div style="font-family:Arial,sans-serif;min-width:210px;">             <div style="font-weight:700;font-size:15px;margin-bottom:5px;">                 Utajärvi Municipality, North Ostrobothnia             </div>             <div><b>Country:</b> Finland</div>             <div><b>Difficulty:</b> Hard</div>             <div><b>Scene:</b> rural</div>             <div><b>Primary clue:</b> landscape</div>             <div><b>ID:</b> loc_025</div>             <div style="margin-top:5px;color:#666;font-size:11px;">                 64.942839, 26.955413             </div>         </div>         </div>`)[0];
+                popup_14a14c8254ce3b60a8383a26b5a1c02e.setContent(html_de7f23e84a935d6a122220f07d88bca2);
+            
+        
+
+        circle_marker_beed38de29dd6f4d4717fd2d0bc8f41c.bindPopup(popup_14a14c8254ce3b60a8383a26b5a1c02e)
+        ;
+
+        
+    
+    
+            circle_marker_beed38de29dd6f4d4717fd2d0bc8f41c.bindTooltip(
+                `<div>
+                     Utajärvi Municipality, North Ostrobothnia, Finland - Hard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            map_ca3633efa0c47368975d1849c1899197.fitBounds(
+                [[48.8521298, 2.3696389], [52.5206008, 13.4151229], [47.8005438, 13.0529765], [48.8126024, 14.3129755], [44.8747121, 13.849302], [50.9008842, 14.8455043], [45.9577599, 14.7424922], [60.8634735, 7.1179637], [39.4667928, -0.3661343], [44.4930672, 11.3250143], [52.1124003, 5.0797161], [50.9874591, 3.7463905], [40.2155817, -8.4337562], [59.8481151, 17.6140674], [58.3478594, 26.7197804], [48.7583857, 19.1412898], [53.2819335, -9.1382768], [37.3439407, 22.5909077], [45.8911426, 24.3372001], [41.5643939, 24.9701484], [46.706018, 20.0496719], [57.1907677, 26.1476727], [55.5966197, 23.8297989], [56.601125, 8.163942], [64.942839, 26.9554129]],
+                {"padding": [35, 35]}
+            );
+        
+</script>
+</html>

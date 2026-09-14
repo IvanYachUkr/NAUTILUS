@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/geo-evidence-atlas/location.schema.json",
+  "title": "Geo Evidence Atlas source location",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "city",
+    "country",
+    "difficulty",
+    "sceneType",
+    "summary",
+    "googleMapsUrl"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "landmark": { "type": "string" },
+    "city": { "type": "string", "minLength": 1 },
+    "region": { "type": "string" },
+    "country": { "type": "string", "minLength": 1 },
+    "countryCode": { "type": "string" },
+    "difficulty": { "enum": ["easy", "medium", "hard"] },
+    "sceneType": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "googleMapsUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "Full Google Maps Street View URL. Ground-truth coordinates and camera state are derived from this field."
+    },
+    "groundTruthLabel": { "type": "string" },
+    "startingViewLabel": { "type": "string" }
+  },
+  "not": {
+    "anyOf": [
+      { "required": ["groundTruth"] },
+      { "properties": { "startingView": { "required": ["viewpoint"] } }, "required": ["startingView"] }
+    ]
+  }
+}

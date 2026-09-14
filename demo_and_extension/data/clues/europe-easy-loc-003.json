@@ -1,0 +1,2155 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-easy--loc-003",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "benchmarkId": "gemini-3-7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-high-aided-f44078f2c3",
+          "label": "Salzach River & Bridges",
+          "text": "Salzach River & Bridges",
+          "description": "River bisecting the city with arched footbridges and classical riverside facades.",
+          "groundingPhrase": "Salzach River & Bridges",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.29812206572769956,
+            "y": 0.5407717871137344,
+            "w": 0.7018779342723005,
+            "h": 0.2047517484251773
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Salzach River & Bridges: River bisecting the city with arched footbridges and classical riverside facades."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Salzach River view from Kapuzinerberg wall."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:29:31.895Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-high-aided-9302e098d4",
+          "label": "Festung Hohensalzburg",
+          "text": "Festung Hohensalzburg",
+          "description": "Medieval hilltop castle dominating the skyline over the old town.",
+          "groundingPhrase": "Festung Hohensalzburg",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.567,
+            "y": 0.345,
+            "w": 0.109,
+            "h": 0.097
+          },
+          "regionSource": "manual-correction+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Festung Hohensalzburg: Medieval hilltop castle dominating the skyline over the old town."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Hohensalzburg Fortress (Festung Hohensalzburg)"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:29:35.427Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-high-aided-555d989abc",
+          "label": "Salzburg Cathedral spires",
+          "text": "Salzburg Cathedral spires",
+          "description": "Salzburg Cathedral spires.",
+          "groundingPhrase": "Salzburg Cathedral spires",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.7440665101721439,
+            "y": 0.3819912454739348,
+            "w": 0.15800625978090768,
+            "h": 0.13970537175735326
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Salzburg Cathedral spires"
+            }
+          ],
+          "groundingLabel": "Salzburg Cathedral spires",
+          "ratingsReviewedAt": "2026-09-11T17:29:39.057Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-high-aided-9cf9216a2a",
+          "label": "Altstadt Architecture",
+          "text": "Altstadt Architecture",
+          "description": "Green baroque domes of Dom zu Salzburg (Salzburg Cathedral) and Franciscan Church.",
+          "groundingPhrase": "Altstadt Architecture",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Altstadt Architecture: Green baroque domes of Dom zu Salzburg (Salzburg Cathedral) and Franciscan Church."
+            }
+          ],
+          "groundingLabel": "Altstadt Architecture",
+          "ratingsReviewedAt": "2026-09-11T17:29:45.943Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-high-aided-e32aa3fce7",
+          "label": "Alpine Backdrop",
+          "text": "Alpine Backdrop",
+          "description": "Snow-dusted Alps (Untersberg range) rising in the background.",
+          "groundingPhrase": "Alpine Backdrop",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1674491392801252,
+            "y": 0.3312583701205298,
+            "w": 0.3881064162754303,
+            "h": 0.1555478398888944
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Alpine Backdrop: Snow-dusted Alps (Untersberg range) rising in the background."
+            }
+          ],
+          "groundingLabel": "Alpine Backdrop",
+          "ratingsReviewedAt": "2026-09-11T17:29:50.022Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-high-aided-8161e5f7d6",
+          "label": "Viewpoint Location",
+          "text": "Viewpoint Location",
+          "description": "Old stone wall parapet on the eastern cliff (Kapuzinerberg).",
+          "groundingPhrase": "Viewpoint Location",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0,
+            "y": 0.5345218739149843,
+            "w": 0.7034201877934273,
+            "h": 0.4654781260850157
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Viewpoint Location: Old stone wall parapet on the eastern cliff (Kapuzinerberg)."
+            }
+          ],
+          "groundingLabel": "Viewpoint Location",
+          "ratingsReviewedAt": "2026-09-11T17:29:53.802Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash-medium-aided",
+      "benchmarkId": "gemini-3-7-flash-medium-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-medium-aided-8dc88b2fc3",
+          "label": "Festung Hohensalzburg (Hohensalzburg Fortress)",
+          "text": "Festung Hohensalzburg (Hohensalzburg Fortress)",
+          "description": "Festung Hohensalzburg (Salzburg Fortress) perched prominently on the Festungsberg overlooking the city.",
+          "groundingPhrase": "Festung Hohensalzburg",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.555027711797308,
+            "y": 0.3207357775602901,
+            "w": 0.1116389548693586,
+            "h": 0.11884865366759517
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Festung Hohensalzburg (Salzburg Fortress) perched prominently on the Festungsberg overlooking the city."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Festung Hohensalzburg (Hohensalzburg Fortress): Massive hilltop medieval/renaissance fortress overlooking the city."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Festung Hohensalzburg (Salzburg Fortress) perched prominently on the Festungsberg overlooking the city."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:29:59.652Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-medium-aided-99acd8b36b",
+          "label": "Salzach River & Altstadt",
+          "text": "Salzach River & Altstadt",
+          "description": "Panoramic view of historic Salzburg old town with turquoise copper church domes (Salzburger Dom, St. Peter's).",
+          "groundingPhrase": "Salzach River & Altstadt",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.25415676959619954,
+            "y": 0.5054330096112826,
+            "w": 0.7173396674584323,
+            "h": 0.19915179803759198
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Salzach River curving through the historic valley with pedestrian and road bridges."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Salzach River & Altstadt: Panoramic view of historic Salzburg old town with turquoise copper church domes (Salzburger Dom, St. Peter's)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Salzach River curving through the historic valley with pedestrian and road bridges."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:30:02.683Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-medium-aided-3461853093",
+          "label": "Alpine Mountain Panorama",
+          "text": "Alpine Mountain Panorama",
+          "description": "Snow-capped Northern Limestone Alps (Berchtesgaden Alps / Untersberg) forming the mountain backdrop.",
+          "groundingPhrase": "Alpine Mountain Panorama",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.16864608076009502,
+            "y": 0.36570553840748826,
+            "w": 0.3745051464766429,
+            "h": 0.10921227634319558
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Snow-capped Northern Limestone Alps (Berchtesgaden Alps / Untersberg) forming the mountain backdrop."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Alpine Mountain Panorama: Snow-capped Northern Limestone Alps (Untersberg massif) in the background."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Snow-capped Northern Limestone Alps (Berchtesgaden Alps / Untersberg) forming the mountain backdrop."
+            }
+          ],
+          "groundingLabel": "Alpine Mountain Panorama",
+          "ratingsReviewedAt": "2026-09-11T17:30:06.688Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-medium-aided-4ebf4733ba",
+          "label": "Historic stone fortification wall and tiled corner watchtower of the Kapuzinerberg basti",
+          "text": "Historic stone fortification wall and tiled corner watchtower of the Kapuzinerberg basti",
+          "description": "Historic stone fortification wall and tiled corner watchtower of the Kapuzinerberg bastions (Basteiweg) in the immediate foreground.",
+          "groundingPhrase": "Historic stone fortification wall and tiled corner watchtower of the Kapuzinerberg basti",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.02683650039588282,
+            "y": 0.5496825641797788,
+            "w": 0.542,
+            "h": 0.4406810584958216
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Historic stone fortification wall and tiled corner watchtower of the Kapuzinerberg bastions (Basteiweg) in the immediate foreground."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Historic stone fortification wall and tiled corner watchtower of the Kapuzinerberg bastions (Basteiweg) in the immediate foreground."
+            }
+          ],
+          "groundingLabel": "Historic stone fortification wall",
+          "ratingsReviewedAt": "2026-09-11T17:44:21.892Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-medium-aided-040bdfbcb3",
+          "label": "Baroque spires and turquoise domes of the Salzburg Cathedral (Salzburger Dom) and Franci",
+          "text": "Baroque spires and turquoise domes of the Salzburg Cathedral (Salzburger Dom) and Franci",
+          "description": "Baroque spires and turquoise domes of the Salzburg Cathedral (Salzburger Dom) and Franciscan church.",
+          "groundingPhrase": "Baroque spires and turquoise domes of the Salzburg Cathedral and Franci",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.7829726840855107,
+            "y": 0.3971065898767849,
+            "w": 0.12569992082343628,
+            "h": 0.1115148184396095
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Baroque spires and turquoise domes of the Salzburg Cathedral (Salzburger Dom) and Franciscan church."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Baroque spires and turquoise domes of the Salzburg Cathedral (Salzburger Dom) and Franciscan church."
+            }
+          ],
+          "groundingLabel": "Baroque spires",
+          "ratingsReviewedAt": "2026-09-11T17:44:26.360Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-medium-aided-a3446e338a",
+          "label": "Viewpoint Geometry",
+          "text": "Viewpoint Geometry",
+          "description": "Stationed along historic defensive stone wall / turret on Kapuzinerberg facing south-west across the Salzach.",
+          "groundingPhrase": "Viewpoint Geometry",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Viewpoint Geometry: Stationed along historic defensive stone wall / turret on Kapuzinerberg facing south-west across the Salzach."
+            }
+          ],
+          "groundingLabel": "Viewpoint Geometry",
+          "ratingsReviewedAt": "2026-09-11T17:44:34.482Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-medium-aided-0ac6719ea0",
+          "label": "Austrian Architecture",
+          "text": "Austrian Architecture",
+          "description": "Characteristic Salzburg Baroque townhouses along the Giselakai.",
+          "groundingPhrase": "Austrian Architecture",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Austrian Architecture: Characteristic Salzburg Baroque townhouses along the Giselakai."
+            }
+          ],
+          "groundingLabel": "Austrian Architecture",
+          "ratingsReviewedAt": "2026-09-11T17:44:41.657Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-high-aided",
+      "benchmarkId": "gemini-3-8-flash-high-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-high-aided-dff85793de",
+          "label": "Majestic snow-capped Bavarian/Austrian Alps in the background (Untersberg massif)",
+          "text": "Majestic snow-capped Bavarian/Austrian Alps in the background (Untersberg massif)",
+          "description": "Majestic snow-capped Bavarian/Austrian Alps in the background (Untersberg massif).",
+          "groundingPhrase": "Majestic snow-capped Bavarian/Austrian Alps in the background",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1726049089469517,
+            "y": 0.38819041883108735,
+            "w": 0.36975455265241486,
+            "h": 0.09636377324399609
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Distinctive Alpine backdrop of the Berchtesgaden / Untersberg Alps."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Majestic snow-capped Bavarian/Austrian Alps in the background (Untersberg massif)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:44:54.038Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-high-aided-42d4d65ce0",
+          "label": "Salzach river curving through the historic city center below",
+          "text": "Salzach river curving through the historic city center below",
+          "description": "The Salzach River flowing through the center of the historic city.",
+          "groundingPhrase": "Salzach river curving through the historic city center below",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.20110847189231987,
+            "y": 0.5279178900348817,
+            "w": 0.78701504354711,
+            "h": 0.18469723205099253
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "The Salzach River flowing through the center of the historic city."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Salzach river curving through the historic city center below."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:44:59.391Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-high-aided-8ed9e95665",
+          "label": "Festung Hohensalzburg fortress perched dominantly atop Festungsberg across the river",
+          "text": "Festung Hohensalzburg fortress perched dominantly atop Festungsberg across the river",
+          "description": "Hohensalzburg Fortress (Festung Hohensalzburg) prominently situated atop the Festungsberg ridge across the river.",
+          "groundingPhrase": "Festung Hohensalzburg fortress perched dominantly atop Festungsberg across the river",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.5620700712589073,
+            "y": 0.34743982283118774,
+            "w": 0.10907284243863817,
+            "h": 0.08442349870762123
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Hohensalzburg Fortress (Festung Hohensalzburg) prominently situated atop the Festungsberg ridge across the river."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Festung Hohensalzburg fortress perched dominantly atop Festungsberg across the river."
+            }
+          ],
+          "groundingLabel": "Festung Hohensalzburg fortress",
+          "ratingsReviewedAt": "2026-09-11T17:45:07.392Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-high-aided-eb43c48150",
+          "label": "Historic stone parapet wall and fortified turret of the Kapuzinerberg bastion (Basteiweg",
+          "text": "Historic stone parapet wall and fortified turret of the Kapuzinerberg bastion (Basteiweg",
+          "description": "Stone bastion fortification wall (Bastei) of Kapuzinerberg where the camera viewpoint is situated.",
+          "groundingPhrase": "Historic stone parapet wall and fortified turret of the Kapuzinerberg bastion (Basteiweg",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.01991884402216948,
+            "y": 0.5289249291073803,
+            "w": 0.725924386381631,
+            "h": 0.4710750708926197
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Stone bastion fortification wall (Bastei) of Kapuzinerberg where the camera viewpoint is situated."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Historic stone parapet wall and fortified turret of the Kapuzinerberg bastion (Basteiweg)."
+            }
+          ],
+          "groundingLabel": "Historic stone parapet wall",
+          "ratingsReviewedAt": "2026-09-11T17:45:14.069Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-high-aided-ac28131e42",
+          "label": "Green dome towers of the Salzburger Dom and historic Altstadt church spires",
+          "text": "Green dome towers of the Salzburger Dom and historic Altstadt church spires",
+          "description": "Green dome towers of the Salzburger Dom and historic Altstadt church spires.",
+          "groundingPhrase": "Green dome towers of the Salzburger Dom and historic Altstadt church spires",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.7750550277117972,
+            "y": 0.3924095836783859,
+            "w": 0.12986698337292163,
+            "h": 0.11131698411503432
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Historic old town spires including the Salzburg Cathedral (Salzburger Dom)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Green dome towers of the Salzburger Dom and historic Altstadt church spires."
+            }
+          ],
+          "groundingLabel": "Green dome towers",
+          "ratingsReviewedAt": "2026-09-11T17:45:18.413Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-high-aided-65a4ddc05b",
+          "label": "Kapuzinerberg / Basteiweg",
+          "text": "Kapuzinerberg / Basteiweg",
+          "description": "Kapuzinerberg / Basteiweg.",
+          "groundingPhrase": "Kapuzinerberg / Basteiweg",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Kapuzinerberg / Basteiweg"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:45:25.525Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-medium-aided",
+      "benchmarkId": "gemini-3-8-flash-medium-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-medium-aided-6fc504cb63",
+          "label": "Hohensalzburg Fortress (Festung Hohensalzburg) prominently situated atop the Festungsber",
+          "text": "Hohensalzburg Fortress (Festung Hohensalzburg) prominently situated atop the Festungsber",
+          "description": "Hohensalzburg Fortress (Festung Hohensalzburg) prominently situated atop the Festungsberg ridge across the river.",
+          "groundingPhrase": "Hohensalzburg Fortress prominently situated atop the Festungsber",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.5399841646872525,
+            "y": 0.3448267208712891,
+            "w": 0.1266825019794141,
+            "h": 0.09957589901879593
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Hohensalzburg Fortress (Festung Hohensalzburg) prominently situated atop the Festungsberg ridge across the river."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Hohensalzburg Fortress (Festung Hohensalzburg) prominently situated atop the Festungsberg ridge across the river."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:45:30.731Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-medium-aided-0008c3b609",
+          "label": "Distinctive Alpine backdrop of the Berchtesgaden / Untersberg Alps",
+          "text": "Distinctive Alpine backdrop of the Berchtesgaden / Untersberg Alps",
+          "description": "Distinctive Alpine backdrop of the Berchtesgaden / Untersberg Alps.",
+          "groundingPhrase": "Distinctive Alpine backdrop of the Berchtesgaden / Untersberg Alps",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.17339667458432304,
+            "y": 0.37855404150668776,
+            "w": 0.3562945368171021,
+            "h": 0.10921227634319558
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Distinctive Alpine backdrop of the Berchtesgaden / Untersberg Alps."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Distinctive Alpine backdrop of the Berchtesgaden / Untersberg Alps."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:47:26.830Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-medium-aided-677c968445",
+          "label": "Historic old town spires including the turquoise-domed Salzburg Cathedral (Salzburger Do",
+          "text": "Historic old town spires including the turquoise-domed Salzburg Cathedral (Salzburger Do",
+          "description": "Historic old town spires including the turquoise-domed Salzburg Cathedral (Salzburger Dom).",
+          "groundingPhrase": "Historic old town spires including the turquoise-domed Salzburg Cathedral (Salzburger Do",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.7751385589865399,
+            "y": 0.39622073326808704,
+            "w": 0.1266825019794141,
+            "h": 0.11403046500539538
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Historic old town spires including the Salzburg Cathedral (Salzburger Dom)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Historic old town spires including the turquoise-domed Salzburg Cathedral (Salzburger Dom)."
+            }
+          ],
+          "groundingLabel": "Historic old town spires",
+          "ratingsReviewedAt": "2026-09-11T17:47:45.245Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-medium-aided-94d9d552b4",
+          "label": "Stone bastion fortification wall (Bastei) of Kapuzinerberg where the camera viewpoint is",
+          "text": "Stone bastion fortification wall (Bastei) of Kapuzinerberg where the camera viewpoint is",
+          "description": "Stone bastion fortification wall (Bastei) of Kapuzinerberg where the camera viewpoint is situated.",
+          "groundingPhrase": "Stone bastion fortification wall of Kapuzinerberg where the camera viewpoint is",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.0295,
+            "y": 0.5355,
+            "w": 0.517,
+            "h": 0.457
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Stone bastion fortification wall (Bastei) of Kapuzinerberg where the camera viewpoint is situated."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Stone bastion fortification wall (Bastei) of Kapuzinerberg where the camera viewpoint is situated."
+            }
+          ],
+          "groundingLabel": "Stone bastion fortification wall",
+          "ratingsReviewedAt": "2026-09-11T17:47:53.344Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-medium-aided-86efcdca5b",
+          "label": "The Salzach River",
+          "text": "The Salzach River",
+          "description": "The Salzach River flowing through the center of the historic city.",
+          "groundingPhrase": "The Salzach River",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.2965,
+            "y": 0.5575,
+            "w": 0.694,
+            "h": 0.149
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "The Salzach River flowing through the center of the historic city."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "The Salzach River flowing through the center of the historic city."
+            }
+          ],
+          "groundingLabel": "The Salzach River"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-8-flash-medium-aided-65a4ddc05b",
+          "label": "Kapuzinerberg / Basteiweg",
+          "text": "Kapuzinerberg / Basteiweg",
+          "description": "Kapuzinerberg / Basteiweg.",
+          "groundingPhrase": "Kapuzinerberg / Basteiweg",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Kapuzinerberg / Basteiweg"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Kapuzinerberg / Basteiweg"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:49:04.946Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh",
+      "benchmarkId": "gpt-5-6-sol-xhigh",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-gpt-5-6-sol-xhigh-233472e3b2",
+          "label": "the Salzburg urban form supported Salzburg",
+          "text": "the Salzburg urban form supported Salzburg",
+          "description": "The Salzburg urban form supported Salzburg.",
+          "groundingPhrase": "the Salzburg urban form supported Salzburg",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "the Salzburg urban form supported Salzburg"
+            }
+          ],
+          "groundingLabel": "the Salzburg urban form",
+          "ratingsReviewedAt": "2026-09-11T17:49:38.746Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-5-6-sol-xhigh-502519cc68",
+          "label": "Austrian historic-city architecture",
+          "text": "Austrian historic-city architecture",
+          "description": "Austrian historic-city architecture.",
+          "groundingPhrase": "Austrian historic-city architecture",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5743348982785602,
+            "y": 0.4296661871930956,
+            "w": 0.4256651017214398,
+            "h": 0.17618173701701306
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Austrian historic-city architecture"
+            }
+          ],
+          "groundingLabel": "Austrian historic-city architecture",
+          "ratingsReviewedAt": "2026-09-11T17:49:45.752Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-5-6-sol-xhigh-ff30168a6a",
+          "label": "Alpine backdrop",
+          "text": "Alpine backdrop",
+          "description": "Alpine backdrop.",
+          "groundingPhrase": "Alpine backdrop",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.15942957746478875,
+            "y": 0.38308459401815387,
+            "w": 0.40082081377151796,
+            "h": 0.08282818312583706
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Alpine backdrop"
+            }
+          ],
+          "groundingLabel": "Alpine backdrop",
+          "ratingsReviewedAt": "2026-09-11T17:49:52.449Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max",
+      "benchmarkId": "gpt-5-6-sol-max",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-gpt-5-6-sol-max-3a26508a6c",
+          "label": "steep wooded city hills",
+          "text": "steep wooded city hills",
+          "description": "Steep wooded city hills.",
+          "groundingPhrase": "steep wooded city hills",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "steep wooded city hills"
+            }
+          ],
+          "groundingLabel": "city hills",
+          "ratingsReviewedAt": "2026-09-11T17:50:00.050Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-5-6-sol-max-07a5a44067",
+          "label": "Salzburg's baroque skyline",
+          "text": "Salzburg's baroque skyline",
+          "description": "Salzburg's baroque skyline.",
+          "groundingPhrase": "Salzburg's baroque skyline",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Salzburg's baroque skyline"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:50:05.802Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-5-6-sol-max-640022e146",
+          "label": "the Salzach corridor",
+          "text": "the Salzach corridor",
+          "description": "The Salzach corridor.",
+          "groundingPhrase": "the Salzach corridor",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1539131455399061,
+            "y": 0.5102788800158722,
+            "w": 0.8460868544600939,
+            "h": 0.18399766876643026
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "the Salzach corridor"
+            }
+          ],
+          "groundingLabel": "the Salzach corridor",
+          "ratingsReviewedAt": "2026-09-11T17:50:12.268Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-5-6-sol-max-52a16237d0",
+          "label": "Hohensalzburg Fortress",
+          "text": "Hohensalzburg Fortress",
+          "description": "Hohensalzburg Fortress.",
+          "groundingPhrase": "Hohensalzburg Fortress",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.5570555555555556,
+            "y": 0.3493401368979714,
+            "w": 0.10726369327073546,
+            "h": 0.09040811467685134
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Hohensalzburg Fortress"
+            }
+          ],
+          "groundingLabel": "Salzburg; Hohensalzburg Fortress",
+          "ratingsReviewedAt": "2026-09-11T17:50:18.755Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-5-6-sol-max-4a19689ed5",
+          "label": "Alpine backdrop",
+          "text": "Alpine backdrop",
+          "description": "Alpine backdrop.",
+          "groundingPhrase": "Alpine backdrop",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.16979655712050076,
+            "y": 0.37411338723277615,
+            "w": 0.37480438184663534,
+            "h": 0.1015822627845841
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Alpine backdrop."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:50:26.097Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low",
+      "benchmarkId": "gpt-6-astra-low",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-gpt-6-astra-low-d8b9000b04",
+          "label": "stone lookout wall and shingle turret",
+          "text": "stone lookout wall and shingle turret",
+          "description": "Stone lookout wall and shingle turret.",
+          "groundingPhrase": "stone lookout wall and shingle turret",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "stone lookout wall and shingle turret"
+            }
+          ],
+          "groundingLabel": "stone lookout wall",
+          "ratingsReviewedAt": "2026-09-11T17:50:35.743Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-6-astra-low-e87643cd50",
+          "label": "dense pastel central-European roofs. Initial belief",
+          "text": "dense pastel central-European roofs. Initial belief",
+          "description": "Salzburg.",
+          "groundingPhrase": "dense pastel central-European roofs. Initial belief",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.19398826291079813,
+            "y": 0.4407357025941174,
+            "w": 0.7966220657276996,
+            "h": 0.113254674867318
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "dense pastel central-European roofs. Initial belief: Salzburg"
+            }
+          ],
+          "groundingLabel": "dense pastel central-European roofs; Initial belief",
+          "ratingsReviewedAt": "2026-09-11T17:50:42.182Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-6-astra-low-17a0c32c65",
+          "label": "Hohensalzburg-like fortress on hill",
+          "text": "Hohensalzburg-like fortress on hill",
+          "description": "Hohensalzburg-like fortress on hill.",
+          "groundingPhrase": "Hohensalzburg-like fortress on hill",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.5617503912363067,
+            "y": 0.3405490055056793,
+            "w": 0.10458059467918623,
+            "h": 0.11372258320519812
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Hohensalzburg-like fortress on hill"
+            }
+          ],
+          "groundingLabel": "Hohensalzburg-like fortress",
+          "ratingsReviewedAt": "2026-09-11T17:50:48.396Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-6-astra-low-41fc862cd2",
+          "label": "river through baroque city",
+          "text": "river through baroque city",
+          "description": "River through baroque city.",
+          "groundingPhrase": "river through baroque city",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.2948474178403756,
+            "y": 0.5463255542879817,
+            "w": 0.695,
+            "h": 0.168
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "river through baroque city"
+            }
+          ],
+          "groundingLabel": "river",
+          "ratingsReviewedAt": "2026-09-11T17:50:54.646Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-6-astra-low-22934aa826",
+          "label": "alpine mountains behind",
+          "text": "alpine mountains behind",
+          "description": "Alpine mountains behind.",
+          "groundingPhrase": "alpine mountains behind",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1705,
+            "y": 0.3535,
+            "w": 0.3934225352112676,
+            "h": 0.11084276573582658
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "alpine mountains behind"
+            }
+          ],
+          "groundingLabel": "alpine mountains",
+          "ratingsReviewedAt": "2026-09-11T17:51:01.898Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gpt-6-astra-low-5968c6ee5e",
+          "label": "Kapuzinerberg overlook",
+          "text": "Kapuzinerberg overlook",
+          "description": "Kapuzinerberg overlook.",
+          "groundingPhrase": "Kapuzinerberg overlook",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Kapuzinerberg overlook"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:51:05.402Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "benchmarkId": "grok-4-6-xhigh",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-grok-4-6-xhigh-b279b17821",
+          "label": "old town",
+          "text": "old town",
+          "description": "Old town.",
+          "groundingPhrase": "old town",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "old town"
+            }
+          ],
+          "groundingLabel": "old town",
+          "ratingsReviewedAt": "2026-09-11T17:51:19.693Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-grok-4-6-xhigh-0bd660a707",
+          "label": "Fortress",
+          "text": "Fortress",
+          "description": "Fortress.",
+          "groundingPhrase": "Fortress",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.5554906103286384,
+            "y": 0.3468978969297158,
+            "w": 0.12023004694835682,
+            "h": 0.13376925747730767
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Fortress"
+            }
+          ],
+          "groundingLabel": "Fortress",
+          "ratingsReviewedAt": "2026-09-11T17:51:25.453Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-grok-4-6-xhigh-394908c9fd",
+          "label": "river",
+          "text": "river",
+          "description": "River.",
+          "groundingPhrase": "river",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.2965,
+            "y": 0.5615,
+            "w": 0.693,
+            "h": 0.155
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "river"
+            }
+          ],
+          "groundingLabel": "river",
+          "ratingsReviewedAt": "2026-09-11T17:51:31.213Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-grok-4-6-xhigh-2825263f4e",
+          "label": "Alps were correctly identified. Street View arrows were swallowed and a panorama drag wa",
+          "text": "Alps were correctly identified. Street View arrows were swallowed and a panorama drag wa",
+          "description": "Alps were correctly identified. Street View arrows were swallowed and a panorama drag was needed to trigger REC. The attempted Austria correction resolved offshore in the Adriatic.",
+          "groundingPhrase": "Alps were correctly identified. Street View arrows were swallowed and a panorama drag wa",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.16921048513302028,
+            "y": 0.37897433163037547,
+            "w": 0.38028012519561816,
+            "h": 0.11531213729477705
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Alps were correctly identified. Street View arrows were swallowed and a panorama drag was needed to trigger REC. The attempted Austria correction resolved offshore in the Adriatic."
+            }
+          ],
+          "groundingLabel": "Street View arrows",
+          "ratingsReviewedAt": "2026-09-11T17:51:38.218Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max",
+      "benchmarkId": "glm-5-3-flash-max",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-1/conversation.json"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-3/conversation.json"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-glm-5-3-flash-max-577a4f6bcc",
+          "label": "stone battlement + turret viewpoint. Belief",
+          "text": "stone battlement + turret viewpoint. Belief",
+          "description": "Salzburg, viewed from Kapuzinerberg. Placing pin at 47.7990, 13.0520.",
+          "groundingPhrase": "stone battlement + turret viewpoint. Belief",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.0015,
+            "y": 0.0455,
+            "w": 0.194,
+            "h": 0.608
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "stone battlement + turret viewpoint. Belief: Salzburg, viewed from Kapuzinerberg. Placing pin at 47.7990, 13.0520."
+            }
+          ],
+          "groundingLabel": "stone battlement; turret viewpoint",
+          "ratingsReviewedAt": "2026-09-11T17:51:45.397Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-glm-5-3-flash-max-a9f2ca502d",
+          "label": "Hohensalzburg Fortress on hill,",
+          "text": "Hohensalzburg Fortress on hill,",
+          "description": "Hohensalzburg Fortress on hill,.",
+          "groundingPhrase": "Hohensalzburg Fortress on hill,",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.5640978090766823,
+            "y": 0.3428978969297158,
+            "w": 0.10636306729264476,
+            "h": 0.10743757750111604
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "Hohensalzburg Fortress on hill,"
+            }
+          ],
+          "groundingLabel": "Hohensalzburg Fortress",
+          "ratingsReviewedAt": "2026-09-11T17:51:54.908Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-glm-5-3-flash-max-7f8fdb23a6",
+          "label": "Salzach River through town,",
+          "text": "Salzach River through town,",
+          "description": "Salzach River through town,.",
+          "groundingPhrase": "Salzach River through town,",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.2925,
+            "y": 0.5575,
+            "w": 0.698,
+            "h": 0.159
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "Salzach River through town,"
+            }
+          ],
+          "groundingLabel": "Salzach River",
+          "ratingsReviewedAt": "2026-09-11T17:51:59.035Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-glm-5-3-flash-max-d94c40b851",
+          "label": "Alpine ridge on horizon,",
+          "text": "Alpine ridge on horizon,",
+          "description": "Alpine ridge on horizon,.",
+          "groundingPhrase": "Alpine ridge on horizon,",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1729264475743349,
+            "y": 0.3709389415207579,
+            "w": 0.3794992175273865,
+            "h": 0.11586726848866624
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "Alpine ridge on horizon,"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:52:02.749Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-glm-5-3-flash-max-23c01fe9f6",
+          "label": "baroque old-town domes/spires,",
+          "text": "baroque old-town domes/spires,",
+          "description": "Baroque old-town domes/spires,.",
+          "groundingPhrase": "baroque old-town domes/spires,",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7668231611893583,
+            "y": 0.3883983929368583,
+            "w": 0.13849765258215962,
+            "h": 0.12697782848073008
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "baroque old-town domes/spires,"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:52:11.109Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-unaided",
+      "benchmarkId": "gemini-3-7-flash-high-unaided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, unaided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-high-unaided-ad28aa080c",
+          "label": "Kapuzinerberg ramparts / Basteiweg",
+          "text": "Kapuzinerberg ramparts / Basteiweg",
+          "description": "Kapuzinerberg ramparts / Basteiweg.",
+          "groundingPhrase": "Kapuzinerberg ramparts / Basteiweg",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Kapuzinerberg ramparts / Basteiweg"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:52:19.578Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-high-unaided-66f3a57f94",
+          "label": "Festung Hohensalzburg",
+          "text": "Festung Hohensalzburg",
+          "description": "Festung Hohensalzburg.",
+          "groundingPhrase": "Festung Hohensalzburg",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5591870109546165,
+            "y": 0.34035764595010165,
+            "w": 0.11232081377151798,
+            "h": 0.10338827439115122
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Festung Hohensalzburg"
+            }
+          ],
+          "groundingLabel": "Festung Hohensalzburg",
+          "ratingsReviewedAt": "2026-09-11T17:52:25.758Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-gemini-3-7-flash-high-unaided-e7abc70d1f",
+          "label": "Salzach river",
+          "text": "Salzach river",
+          "description": "Salzach river.",
+          "groundingPhrase": "Salzach river",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1745,
+            "y": 0.5425,
+            "w": 0.818,
+            "h": 0.173
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Salzach river"
+            }
+          ],
+          "groundingLabel": "Salzach river",
+          "ratingsReviewedAt": "2026-09-11T17:52:30.384Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-003-grok-4-6-xhigh-mcp-b50a58e3da",
+          "label": "Salzach River",
+          "text": "Salzach River",
+          "description": "The Salzach River runs between the viewpoint and the fortress.",
+          "groundingPhrase": "Salzach River",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.18241765637371335,
+            "y": 0.4931059876032021,
+            "w": 0.8175823436262867,
+            "h": 0.307
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 3 is Salzburg from Kapuzinerberg: Hohensalzburg Fortress across the Salzach."
+            }
+          ],
+          "groundingLabel": "Salzach River",
+          "ratingsReviewedAt": "2026-09-12T17:16:37.558Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-003-grok-4-6-xhigh-mcp-67d040902f",
+          "label": "Hohensalzburg Fortress",
+          "text": "Hohensalzburg Fortress",
+          "description": "Hohensalzburg Fortress is visible across the city.",
+          "groundingPhrase": "Hohensalzburg Fortress",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.5494018210609659,
+            "y": 0.35325801149338754,
+            "w": 0.12511638954869359,
+            "h": 0.12839325955481945
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 3 is Salzburg from Kapuzinerberg: Hohensalzburg Fortress across the Salzach."
+            }
+          ],
+          "groundingLabel": "Hohensalzburg Fortress",
+          "ratingsReviewedAt": "2026-09-12T17:16:31.281Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2284 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-easy--loc-002",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "benchmarkId": "gemini-3-7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-high-aided-5e6ad3fd87",
+          "label": "Berliner Fernsehturm (TV Tower)",
+          "text": "Berliner Fernsehturm (TV Tower)",
+          "description": "Towering sphere and spire rising directly behind the commercial center.",
+          "groundingPhrase": "Berliner Fernsehturm",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.42801251956181535,
+            "y": 0.006348891424036506,
+            "w": 0.04773082942097026,
+            "h": 0.2333217598333416
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Berliner Fernsehturm (TV Tower): Towering sphere and spire rising directly behind the commercial center."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Berlin TV Tower (Fernsehturm)"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:22:53.894Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-high-aided-1610c9f422",
+          "label": "Commercial Signage",
+          "text": "Commercial Signage",
+          "description": "White delivery truck with Berlin area phone code 030 - 43 59 690 (Spedition & Logistik).",
+          "groundingPhrase": "Commercial Signage",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.5422535211267606,
+            "y": 0.4296661871930956,
+            "w": 0.10485133020344278,
+            "h": 0.08253558851247458
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Commercial Signage: White delivery truck with Berlin area phone code 030 - 43 59 690 (Spedition & Logistik)."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "local 030 Berlin phone prefixes."
+            }
+          ],
+          "groundingLabel": "Commercial Signage",
+          "ratingsReviewedAt": "2026-09-11T17:23:00.255Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-high-aided-ab05f460b4",
+          "label": "U-Bahn Entrance",
+          "text": "U-Bahn Entrance",
+          "description": "Blue square sign labeled \"U Alexanderplatz\".",
+          "groundingPhrase": "U-Bahn Entrance",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6803450704225352,
+            "y": 0.41045332572789045,
+            "w": 0.056704225352112676,
+            "h": 0.09893611428004563
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "U-Bahn Entrance: Blue square sign labeled \"U Alexanderplatz\"."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "U-Bahn entrance \"U Alexanderplatz\""
+            }
+          ],
+          "groundingLabel": "U-Bahn Entrance",
+          "ratingsReviewedAt": "2026-09-11T17:23:07.710Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-high-aided-d7d1065052",
+          "label": "Transit & Bikes",
+          "text": "Transit & Bikes",
+          "description": "Bright yellow BVG city buses and Nextbike sharing station.",
+          "groundingPhrase": "Transit & Bikes",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.07975978090766822,
+            "y": 0.4413427657358266,
+            "w": 0.33863067292644755,
+            "h": 0.23217444571201826
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Transit & Bikes: Bright yellow BVG city buses and Nextbike sharing station."
+            }
+          ],
+          "groundingLabel": "Transit; Bikes",
+          "ratingsReviewedAt": "2026-09-11T17:23:13.432Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-high-aided-a6b0424150",
+          "label": "Urban Architecture",
+          "text": "Urban Architecture",
+          "description": "Alexanderhaus/Berolinahaus grid facades, GALERIA department store, Park Inn hotel tower.",
+          "groundingPhrase": "Urban Architecture",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Urban Architecture: Alexanderhaus/Berolinahaus grid facades, GALERIA department store, Park Inn hotel tower."
+            }
+          ],
+          "groundingLabel": "Urban Architecture",
+          "ratingsReviewedAt": "2026-09-11T17:23:16.762Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-high-aided-60c6fd3113",
+          "label": "Alexanderhaus",
+          "text": "Alexanderhaus",
+          "description": "Alexanderhaus.",
+          "groundingPhrase": "Alexanderhaus",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4921752738654147,
+            "y": 0.0011160160706314166,
+            "w": 0.19405320813771515,
+            "h": 0.4237885025544368
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Alexanderhaus"
+            }
+          ],
+          "groundingLabel": "Alexanderhaus",
+          "ratingsReviewedAt": "2026-09-11T17:23:19.942Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash-medium-aided",
+      "benchmarkId": "gemini-3-7-flash-medium-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-medium-aided-6a235b938f",
+          "label": "Berliner Fernsehturm (TV Tower)",
+          "text": "Berliner Fernsehturm (TV Tower)",
+          "description": "Berliner Fernsehturm (Berlin Television Tower) with its signature sphere and antenna spire dominating the skyline.",
+          "groundingPhrase": "Berliner Fernsehturm",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4326361502347418,
+            "y": 0.0030679777788800155,
+            "w": 0.03856494522691706,
+            "h": 0.2287394970487575
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Berliner Fernsehturm (Berlin Television Tower) with its signature sphere and antenna spire dominating the skyline."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Berliner Fernsehturm (TV Tower): Iconic 368-meter tower rising prominently in the background."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Berliner Fernsehturm (Berlin Television Tower) with its signature sphere and antenna spire dominating the skyline."
+            }
+          ],
+          "groundingLabel": "Berliner Fernsehturm",
+          "ratingsReviewedAt": "2026-09-11T17:23:27.584Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-medium-aided-0b7bbf458b",
+          "label": "Commercial Vehicles",
+          "text": "Commercial Vehicles",
+          "description": "Retail signage including \"GALERIA Kaufhof\" and a delivery truck with German phone number (\"030\" Berlin prefix).",
+          "groundingPhrase": "Commercial Vehicles",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.5406361502347418,
+            "y": 0.42931330291156194,
+            "w": 0.1055148669796557,
+            "h": 0.10327275432766232
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Retail signage including \"GALERIA Kaufhof\" and a delivery truck with German phone number (\"030\" Berlin prefix)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Commercial Vehicles: German delivery van with Berlin telephone prefix \"030\" (\"Spedition & Logistik, 030 - 43 59 690\")."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Retail signage including \"GALERIA Kaufhof\" and a delivery truck with German phone number (\"030\" Berlin prefix)."
+            }
+          ],
+          "groundingLabel": "Commercial Vehicles",
+          "ratingsReviewedAt": "2026-09-11T17:23:41.595Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-medium-aided-0b9f7e4d72",
+          "label": "Station Signage",
+          "text": "Station Signage",
+          "description": "Blue U-Bahn station entrance sign marked \"U Alexanderplatz\".",
+          "groundingPhrase": "Station Signage",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6739929577464788,
+            "y": 0.40302100590248496,
+            "w": 0.06289514866979654,
+            "h": 0.11932438867119688
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Blue U-Bahn station entrance sign marked \"U Alexanderplatz\"."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Station Signage: Clear blue entrance sign reading \"U Alexanderplatz\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Blue U-Bahn station entrance sign marked \"U Alexanderplatz\"."
+            }
+          ],
+          "groundingLabel": "Station Signage",
+          "ratingsReviewedAt": "2026-09-11T17:23:54.548Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-medium-aided-58114b6fb7",
+          "label": "Signature East Berlin modernist architecture (Berolinahaus / Alexanderhaus) and Alexande",
+          "text": "Signature East Berlin modernist architecture (Berolinahaus / Alexanderhaus) and Alexande",
+          "description": "Signature East Berlin modernist architecture (Berolinahaus / Alexanderhaus) and Alexanderplatz pedestrian plaza paving.",
+          "groundingPhrase": "Signature East Berlin modernist architecture and Alexande",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Signature East Berlin modernist architecture (Berolinahaus / Alexanderhaus) and Alexanderplatz pedestrian plaza paving."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Signature East Berlin modernist architecture (Berolinahaus / Alexanderhaus) and Alexanderplatz pedestrian plaza paving."
+            }
+          ],
+          "groundingLabel": "modernist architecture",
+          "ratingsReviewedAt": "2026-09-11T17:23:59.341Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-medium-aided-b7aa1d4778",
+          "label": "Berlin public transport infrastructure",
+          "text": "Berlin public transport infrastructure",
+          "description": "Elevated S-Bahn railway viaduct and yellow BVG city bus.",
+          "groundingPhrase": "Berlin public transport infrastructure",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0,
+            "y": 0.391369599722236,
+            "w": 0.34519561815336464,
+            "h": 0.10036873170973659
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Berlin public transport infrastructure: elevated S-Bahn railway viaduct and yellow BVG city bus."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Berlin public transport infrastructure: elevated S-Bahn railway viaduct and yellow BVG city bus."
+            }
+          ],
+          "groundingLabel": "signature",
+          "ratingsReviewedAt": "2026-09-11T17:24:05.610Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-medium-aided-45de9c5b37",
+          "label": "Alexanderplatz Context",
+          "text": "Alexanderplatz Context",
+          "description": "Pedestrian square with Nextbike bicycle station, Galeria Kaufhof, Park Inn hotel tower, and S-Bahn elevated railway arches.",
+          "groundingPhrase": "Alexanderplatz Context",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.07433489827856025,
+            "y": 0.5010912157135062,
+            "w": 0.352112676056338,
+            "h": 0.1841178512970587
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Alexanderplatz Context: Pedestrian square with Nextbike bicycle station, Galeria Kaufhof, Park Inn hotel tower, and S-Bahn elevated railway arches."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:24:12.083Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-medium-aided-98c88a0773",
+          "label": "German Transit",
+          "text": "German Transit",
+          "description": "Yellow BVG buses and standard German city infrastructure.",
+          "groundingPhrase": "German Transit",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.26876447574334894,
+            "y": 0.4416105599920639,
+            "w": 0.0697887323943662,
+            "h": 0.0725405485838996
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "German Transit: Yellow BVG buses and standard German city infrastructure."
+            }
+          ],
+          "groundingLabel": "German Transit",
+          "ratingsReviewedAt": "2026-09-11T17:24:16.350Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-high-aided",
+      "benchmarkId": "gemini-3-8-flash-high-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-high-aided-2f0c3ca2c1",
+          "label": "Large blue public transit entrance sign reading 'U Alexanderplatz'",
+          "text": "Large blue public transit entrance sign reading 'U Alexanderplatz'",
+          "description": "Large blue public transit entrance cube sign clearly reading \"U Alexanderplatz\".",
+          "groundingPhrase": "Large blue public transit entrance sign reading 'U Alexanderplatz'",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6775,
+            "y": 0.4055,
+            "w": 0.06117973079968328,
+            "h": 0.13515096991141562
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Large blue public transit entrance cube sign clearly reading \"U Alexanderplatz\"."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Large blue public transit entrance sign reading 'U Alexanderplatz'."
+            }
+          ],
+          "groundingLabel": "Large blue public transit entrance sign reading; Public transit entrance",
+          "ratingsReviewedAt": "2026-09-11T17:24:20.572Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-high-aided-b5d45874e8",
+          "label": "Commercial logistics van displaying Berlin landline telephone code",
+          "text": "Commercial logistics van displaying Berlin landline telephone code",
+          "description": "\"Spedition & Logistik, 030 - 43 59 690\".",
+          "groundingPhrase": "Commercial logistics van displaying Berlin landline telephone code",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5405,
+            "y": 0.4315,
+            "w": 0.104,
+            "h": 0.088
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Commercial logistics van displaying Berlin landline telephone code: \"Spedition & Logistik, 030 - 43 59 690\"."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Commercial logistics van displaying Berlin landline telephone code: 'Spedition & Logistik, 030 - 43 59 690'."
+            }
+          ],
+          "groundingLabel": "Commercial logistics van",
+          "ratingsReviewedAt": "2026-09-11T17:24:25.365Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-high-aided-f18e3ec0ae",
+          "label": "Berliner Fernsehturm (Berlin Television Tower) towering directly overhead in the backgro",
+          "text": "Berliner Fernsehturm (Berlin Television Tower) towering directly overhead in the backgro",
+          "description": "Berliner Fernsehturm (Berlin TV Tower) towering directly overhead behind the commercial plaza.",
+          "groundingPhrase": "Berliner Fernsehturm towering directly overhead in the backgro",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4385,
+            "y": 0.0025,
+            "w": 0.034,
+            "h": 0.236
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Berliner Fernsehturm (Berlin TV Tower) towering directly overhead behind the commercial plaza."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Berliner Fernsehturm (Berlin Television Tower) towering directly overhead in the background."
+            }
+          ],
+          "groundingLabel": "Berliner Fernsehturm",
+          "ratingsReviewedAt": "2026-09-11T17:24:29.919Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-high-aided-ce862a7839",
+          "label": "Galeria Kaufhof, Park Inn hotel tower, and wide pedestrian plaza paved",
+          "text": "Galeria Kaufhof, Park Inn hotel tower, and wide pedestrian plaza paved",
+          "description": "Galeria Kaufhof, Park Inn hotel tower, and wide pedestrian plaza paved with Berlin concrete slabs.",
+          "groundingPhrase": "Galeria Kaufhof, Park Inn hotel tower, and wide pedestrian plaza paved",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.684085510688836,
+            "y": 0.3512509724208889,
+            "w": 0.06254948535233573,
+            "h": 0.06103038972119751
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Galeria Kaufhof department store and distinctive Alexanderplatz architectural ensemble."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Galeria Kaufhof, Park Inn hotel tower, and wide pedestrian plaza paved with Berlin concrete slabs."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:24:36.579Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-high-aided-490627801a",
+          "label": "Yellow BVG articulated city bus and elevated Stadtbahn red-brick viaduct to the left",
+          "text": "Yellow BVG articulated city bus and elevated Stadtbahn red-brick viaduct to the left",
+          "description": "Yellow BVG articulated city bus and elevated Stadtbahn red-brick viaduct to the left.",
+          "groundingPhrase": "Yellow BVG articulated city bus and elevated Stadtbahn red-brick viaduct to the left",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.2657573238321457,
+            "y": 0.44274244021179954,
+            "w": 0.07432937450514648,
+            "h": 0.0703333082386007
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Yellow BVG articulated city bus and Stadtbahn red-brick viaduct to the left."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Yellow BVG articulated city bus and elevated Stadtbahn red-brick viaduct to the left."
+            }
+          ],
+          "groundingLabel": "yellow BVG articulated city bus",
+          "ratingsReviewedAt": "2026-09-11T17:24:41.873Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-high-aided-efbd4f6d9c",
+          "label": "Alexanderplatz",
+          "text": "Alexanderplatz",
+          "description": "Alexanderplatz.",
+          "groundingPhrase": "Alexanderplatz",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Alexanderplatz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-medium-aided",
+      "benchmarkId": "gemini-3-8-flash-medium-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-medium-aided-3b538f4477",
+          "label": "Galeria Kaufhof department store and distinctive Alexanderplatz architectural ensemble",
+          "text": "Galeria Kaufhof department store and distinctive Alexanderplatz architectural ensemble",
+          "description": "Galeria Kaufhof department store and distinctive Alexanderplatz architectural ensemble.",
+          "groundingPhrase": "Galeria Kaufhof department store and distinctive Alexanderplatz architectural ensemble",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6856690419635788,
+            "y": 0.348038846646089,
+            "w": 0.05304829770387964,
+            "h": 0.0690607041581972
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Galeria Kaufhof department store and distinctive Alexanderplatz architectural ensemble."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Galeria Kaufhof department store and distinctive Alexanderplatz architectural ensemble."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:24:49.020Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-medium-aided-b5d45874e8",
+          "label": "Commercial logistics van displaying Berlin landline telephone code",
+          "text": "Commercial logistics van displaying Berlin landline telephone code",
+          "description": "\"Spedition & Logistik, 030 - 43 59 690\".",
+          "groundingPhrase": "Commercial logistics van displaying Berlin landline telephone code",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5405,
+            "y": 0.4325,
+            "w": 0.103,
+            "h": 0.087
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Commercial logistics van displaying Berlin landline telephone code: \"Spedition & Logistik, 030 - 43 59 690\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Commercial logistics van displaying Berlin landline telephone code: \"Spedition & Logistik, 030 - 43 59 690\"."
+            }
+          ],
+          "groundingLabel": "Commercial logistics van",
+          "ratingsReviewedAt": "2026-09-11T17:24:52.785Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-medium-aided-d893af5b0d",
+          "label": "Berliner Fernsehturm (Berlin TV Tower) towering directly overhead behind the commercial",
+          "text": "Berliner Fernsehturm (Berlin TV Tower) towering directly overhead behind the commercial",
+          "description": "Berliner Fernsehturm (Berlin TV Tower) towering directly overhead behind the commercial plaza.",
+          "groundingPhrase": "Berliner Fernsehturm towering directly overhead behind the commercial",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4251781472684085,
+            "y": 0,
+            "w": 0.0530482977038797,
+            "h": 0.24043263319029337
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Berliner Fernsehturm (Berlin TV Tower) towering directly overhead behind the commercial plaza."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Berliner Fernsehturm (Berlin TV Tower) towering directly overhead behind the commercial plaza."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:24:57.331Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-medium-aided-83034a3f65",
+          "label": "Large blue public transit entrance cube sign clearly reading \"U Alexanderplatz\"",
+          "text": "Large blue public transit entrance cube sign clearly reading \"U Alexanderplatz\"",
+          "description": "Large blue public transit entrance cube sign clearly reading \"U Alexanderplatz\".",
+          "groundingPhrase": "Large blue public transit entrance cube sign clearly reading \"U Alexanderplatz\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6777513855898654,
+            "y": 0.4074631734798865,
+            "w": 0.059382422802850346,
+            "h": 0.11242440211799543
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Large blue public transit entrance cube sign clearly reading \"U Alexanderplatz\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Large blue public transit entrance cube sign clearly reading \"U Alexanderplatz\"."
+            }
+          ],
+          "groundingLabel": "Large blue public transit entrance cube sign",
+          "ratingsReviewedAt": "2026-09-11T17:25:04.801Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-medium-aided-3e64589d1c",
+          "label": "Yellow BVG articulated city bus and Stadtbahn red-brick viaduct to the left",
+          "text": "Yellow BVG articulated city bus and Stadtbahn red-brick viaduct to the left",
+          "description": "Yellow BVG articulated city bus and Stadtbahn red-brick viaduct to the left.",
+          "groundingPhrase": "Yellow BVG articulated city bus and Stadtbahn red-brick viaduct to the left",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.2673408551068883,
+            "y": 0.4254696855630003,
+            "w": 0.07153760886777513,
+            "h": 0.08118181133780018
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Yellow BVG articulated city bus and Stadtbahn red-brick viaduct to the left."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Yellow BVG articulated city bus and Stadtbahn red-brick viaduct to the left."
+            }
+          ],
+          "groundingLabel": "yellow BVG articulated city bus",
+          "ratingsReviewedAt": "2026-09-11T17:25:14.379Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-8-flash-medium-aided-efbd4f6d9c",
+          "label": "Alexanderplatz",
+          "text": "Alexanderplatz",
+          "description": "Alexanderplatz.",
+          "groundingPhrase": "Alexanderplatz",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Alexanderplatz"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Alexanderplatz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh",
+      "benchmarkId": "gpt-5-6-sol-xhigh",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-gpt-5-6-sol-xhigh-cfdde88b07",
+          "label": "German city architecture identified Alexanderplatz",
+          "text": "German city architecture identified Alexanderplatz",
+          "description": "German city architecture identified Alexanderplatz.",
+          "groundingPhrase": "German city architecture identified Alexanderplatz",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "German city architecture identified Alexanderplatz"
+            }
+          ],
+          "groundingLabel": "German city architecture",
+          "ratingsReviewedAt": "2026-09-11T17:25:21.924Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gpt-5-6-sol-xhigh-9239f94cda",
+          "label": "tram/urban plaza form",
+          "text": "tram/urban plaza form",
+          "description": "Tram/urban plaza form.",
+          "groundingPhrase": "tram/urban plaza form",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6749929577464788,
+            "y": 0.4028465601904667,
+            "w": 0.06950234741784037,
+            "h": 0.116911611527206
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "tram/urban plaza form"
+            }
+          ],
+          "groundingLabel": "tram/urban plaza form",
+          "ratingsReviewedAt": "2026-09-11T17:26:33.542Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gpt-5-6-sol-xhigh-2b62f83557",
+          "label": "Fernsehturm-dominated skyline",
+          "text": "Fernsehturm-dominated skyline",
+          "description": "Fernsehturm-dominated skyline.",
+          "groundingPhrase": "Fernsehturm-dominated skyline",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.43114241001564946,
+            "y": 0.003174445712018248,
+            "w": 0.04773082942097029,
+            "h": 0.2500738058628045
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Fernsehturm-dominated skyline"
+            }
+          ],
+          "groundingLabel": "Fernsehturm-dominated skyline",
+          "ratingsReviewedAt": "2026-09-11T17:26:05.941Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max",
+      "benchmarkId": "gpt-5-6-sol-max",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-gpt-5-6-sol-max-822482c3d1",
+          "label": "the plaza's modernist blocks",
+          "text": "the plaza's modernist blocks",
+          "description": "The plaza's modernist blocks.",
+          "groundingPhrase": "the plaza's modernist blocks",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.48515571205007824,
+            "y": 0,
+            "w": 0.19872535211267606,
+            "h": 0.43458256038886955
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "the plaza's modernist blocks."
+            }
+          ],
+          "groundingLabel": "the plaza",
+          "ratingsReviewedAt": "2026-09-11T17:26:15.850Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gpt-5-6-sol-max-083906ecab",
+          "label": "dense bicycle parking",
+          "text": "dense bicycle parking",
+          "description": "Dense bicycle parking.",
+          "groundingPhrase": "dense bicycle parking",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.0725,
+            "y": 0.4725,
+            "w": 0.716,
+            "h": 0.227
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "dense bicycle parking"
+            }
+          ],
+          "groundingLabel": "dense bicycle parking",
+          "ratingsReviewedAt": "2026-09-11T17:26:24.431Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gpt-5-6-sol-max-6fdc0ff2a0",
+          "label": "U Alexanderplatz",
+          "text": "U Alexanderplatz",
+          "description": "U Alexanderplatz.",
+          "groundingPhrase": "U Alexanderplatz",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6768388106416275,
+            "y": 0.38522394722484005,
+            "w": 0.06338028169014087,
+            "h": 0.13332671990476658
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "U Alexanderplatz"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:26:40.826Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gpt-5-6-sol-max-cc5145b0c5",
+          "label": "German text",
+          "text": "German text",
+          "description": "German text.",
+          "groundingPhrase": "German text",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "German text"
+            }
+          ],
+          "groundingLabel": "German text",
+          "ratingsReviewedAt": "2026-09-11T17:26:46.968Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gpt-5-6-sol-max-65e8c89846",
+          "label": "Fernsehturm",
+          "text": "Fernsehturm",
+          "description": "Fernsehturm.",
+          "groundingPhrase": "Fernsehturm",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.43114241001564946,
+            "y": 0,
+            "w": 0.04851330203442883,
+            "h": 0.2534844501760825
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Fernsehturm"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:26:51.767Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low",
+      "benchmarkId": "gpt-6-astra-low",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-gpt-6-astra-low-2099fc7c2c",
+          "label": "Galeria and tall modernist blocks. Initial belief",
+          "text": "Galeria and tall modernist blocks. Initial belief",
+          "description": "Alexanderplatz Berlin.",
+          "groundingPhrase": "Galeria and tall modernist blocks. Initial belief",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6870109546165885,
+            "y": 0.3376072615445662,
+            "w": 0.05712050078247255,
+            "h": 0.08888447993651111
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Galeria and tall modernist blocks. Initial belief: Alexanderplatz Berlin"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:26:58.526Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gpt-6-astra-low-6ff2cc70cb",
+          "label": "yellow transit vehicles",
+          "text": "yellow transit vehicles",
+          "description": "Yellow transit vehicles.",
+          "groundingPhrase": "yellow transit vehicles",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.2210399061032864,
+            "y": 0.4372494171916075,
+            "w": 0.11938184663536777,
+            "h": 0.07470274291949805
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "yellow transit vehicles"
+            }
+          ],
+          "groundingLabel": "yellow transit vehicles",
+          "ratingsReviewedAt": "2026-09-11T17:27:03.092Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gpt-6-astra-low-3a7a501569",
+          "label": "Alexanderplatz U sign",
+          "text": "Alexanderplatz U sign",
+          "description": "Alexanderplatz U sign.",
+          "groundingPhrase": "Alexanderplatz U sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6778615023474178,
+            "y": 0.40271849114627245,
+            "w": 0.058445226917057946,
+            "h": 0.11635298348296219
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Alexanderplatz U sign"
+            }
+          ],
+          "groundingLabel": "Galeria",
+          "ratingsReviewedAt": "2026-09-11T17:27:06.521Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gpt-6-astra-low-decc6fdd83",
+          "label": "German Spedition text",
+          "text": "German Spedition text",
+          "description": "German Spedition text.",
+          "groundingPhrase": "German Spedition text",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.5406768388106417,
+            "y": 0.41985648033331674,
+            "w": 0.10956964006259784,
+            "h": 0.09547666286394524
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "German Spedition text"
+            }
+          ],
+          "groundingLabel": "German Spedition text",
+          "ratingsReviewedAt": "2026-09-11T17:27:10.157Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gpt-6-astra-low-c1c148aed7",
+          "label": "Berlin TV tower",
+          "text": "Berlin TV tower",
+          "description": "Berlin TV tower.",
+          "groundingPhrase": "Berlin TV tower",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4395,
+            "y": 0.0025,
+            "w": 0.032,
+            "h": 0.235
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Berlin TV tower"
+            }
+          ],
+          "groundingLabel": "Berlin TV tower",
+          "ratingsReviewedAt": "2026-09-11T17:27:20.043Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "benchmarkId": "grok-4-6-xhigh",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-grok-4-6-xhigh-0bc6376aec",
+          "label": "the final pin resolved in northwest Poland",
+          "text": "the final pin resolved in northwest Poland",
+          "description": "The final pin resolved in northwest Poland.",
+          "groundingPhrase": "the final pin resolved in northwest Poland",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "the final pin resolved in northwest Poland."
+            }
+          ],
+          "groundingLabel": "the final pin resolved",
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T17:27:33.288Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-grok-4-6-xhigh-01623ebada",
+          "label": "Central-European tiles went blank",
+          "text": "Central-European tiles went blank",
+          "description": "Central-European tiles went blank.",
+          "groundingPhrase": "Central-European tiles went blank",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Central-European tiles went blank"
+            }
+          ],
+          "groundingLabel": "Central-European tiles",
+          "ratingsReviewedAt": "2026-09-11T17:28:06.919Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-grok-4-6-xhigh-8b556a9769",
+          "label": "Galeria made the city certain. Map zooming jumped to North Africa",
+          "text": "Galeria made the city certain. Map zooming jumped to North Africa",
+          "description": "Galeria made the city certain. Map zooming jumped to North Africa.",
+          "groundingPhrase": "Galeria made the city certain. Map zooming jumped to North Africa",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6885758998435054,
+            "y": 0.3360200386885571,
+            "w": 0.0539906103286385,
+            "h": 0.07777391994444721
+          },
+          "regionSource": "manual+manual-review+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Galeria made the city certain. Map zooming jumped to North Africa"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:28:20.913Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-grok-4-6-xhigh-8622baddc5",
+          "label": "U Alexanderplatz",
+          "text": "U Alexanderplatz",
+          "description": "U Alexanderplatz.",
+          "groundingPhrase": "U Alexanderplatz",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6776212832550861,
+            "y": 0.4058578443529587,
+            "w": 0.057902973395931145,
+            "h": 0.12380338276871189
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "U Alexanderplatz"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:28:25.834Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-grok-4-6-xhigh-cc5145b0c5",
+          "label": "German text",
+          "text": "German text",
+          "description": "German text.",
+          "groundingPhrase": "German text",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "German text"
+            }
+          ],
+          "groundingLabel": "Galeria; Map; German text",
+          "ratingsReviewedAt": "2026-09-11T17:28:31.173Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-grok-4-6-xhigh-80582db94c",
+          "label": "Fernsehturm",
+          "text": "Fernsehturm",
+          "description": "Fernsehturm.",
+          "groundingPhrase": "Fernsehturm",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4381846635367762,
+            "y": 0,
+            "w": 0.03599374021909235,
+            "h": 0.2391994444720004
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Fernsehturm"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:28:35.501Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max",
+      "benchmarkId": "glm-5-3-flash-max",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-1/conversation.json"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-3/conversation.json"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-glm-5-3-flash-max-8f7708329c",
+          "label": "twin church spires left. Belief",
+          "text": "twin church spires left. Belief",
+          "description": "Berlin, Alexanderplatz. Placing pin at 52.5210, 13.4135.",
+          "groundingPhrase": "twin church spires left. Belief",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.10103677621283252,
+            "y": 0.34375291404196223,
+            "w": 0.03834741784037558,
+            "h": 0.08699766876643023
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "twin church spires left. Belief: Berlin, Alexanderplatz. Placing pin at 52.5210, 13.4135."
+            }
+          ],
+          "groundingLabel": "twin church spires",
+          "ratingsReviewedAt": "2026-09-11T17:28:39.792Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-glm-5-3-flash-max-d834a3cc60",
+          "label": "blue U-Bahn sign on right,",
+          "text": "blue U-Bahn sign on right,",
+          "description": "Blue U-Bahn sign on right,.",
+          "groundingPhrase": "blue U-Bahn sign on right,",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6775,
+            "y": 0.4045,
+            "w": 0.056,
+            "h": 0.051
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "blue U-Bahn sign on right,"
+            }
+          ],
+          "groundingLabel": "blue U-Bahn sign",
+          "ratingsReviewedAt": "2026-09-11T17:28:43.662Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-glm-5-3-flash-max-1630c436f1",
+          "label": "big bicycle parking racks,",
+          "text": "big bicycle parking racks,",
+          "description": "Big bicycle parking racks,.",
+          "groundingPhrase": "big bicycle parking racks,",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.0725,
+            "y": 0.5075,
+            "w": 0.317,
+            "h": 0.162
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "big bicycle parking racks,"
+            }
+          ],
+          "groundingLabel": "big bicycle parking racks",
+          "ratingsReviewedAt": "2026-09-11T17:28:47.089Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-glm-5-3-flash-max-814ebad906",
+          "label": "Bauhaus-style commercial buildings,",
+          "text": "Bauhaus-style commercial buildings,",
+          "description": "Bauhaus-style commercial buildings,.",
+          "groundingPhrase": "Bauhaus-style commercial buildings,",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4795,
+            "y": 0.0035,
+            "w": 0.218,
+            "h": 0.494
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "Bauhaus-style commercial buildings,"
+            }
+          ],
+          "groundingLabel": "Bauhaus-style commercial buildings",
+          "ratingsReviewedAt": "2026-09-11T17:29:01.070Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-glm-5-3-flash-max-2cba5865cc",
+          "label": "Berlin Fernsehturm",
+          "text": "Berlin Fernsehturm",
+          "description": "Berlin Fernsehturm with sphere ahead,.",
+          "groundingPhrase": "Berlin Fernsehturm",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.431924882629108,
+            "y": 0.0015872228560091265,
+            "w": 0.04381846635367764,
+            "h": 0.23761222161599127
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "Berlin Fernsehturm with sphere ahead,"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:29:10.249Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-unaided",
+      "benchmarkId": "gemini-3-7-flash-high-unaided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, unaided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-high-unaided-d375569811",
+          "label": "Spedition & Logistik (030 dial code)",
+          "text": "Spedition & Logistik (030 dial code)",
+          "description": "Spedition & Logistik (030 dial code).",
+          "groundingPhrase": "Spedition & Logistik",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5599694835680751,
+            "y": 0.431416571598631,
+            "w": 0.08828169014084507,
+            "h": 0.07940548583899609
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Spedition & Logistik (030 dial code)"
+            }
+          ],
+          "groundingLabel": "Spedition",
+          "ratingsReviewedAt": "2026-09-11T17:29:19.265Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-high-unaided-9ad0d501ad",
+          "label": "U Alexanderplatz sign",
+          "text": "U Alexanderplatz sign",
+          "description": "U Alexanderplatz sign.",
+          "groundingPhrase": "U Alexanderplatz sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.67968779342723,
+            "y": 0.4076082287584941,
+            "w": 0.05207042253521127,
+            "h": 0.045073805862804434
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "U Alexanderplatz sign"
+            }
+          ],
+          "groundingLabel": "U Alexanderplatz sign",
+          "ratingsReviewedAt": "2026-09-11T17:29:22.213Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-gemini-3-7-flash-high-unaided-7a935e3a35",
+          "label": "Berliner Fernsehturm",
+          "text": "Berliner Fernsehturm",
+          "description": "Berliner Fernsehturm.",
+          "groundingPhrase": "Berliner Fernsehturm",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4363388106416275,
+            "y": 0.003174445712018253,
+            "w": 0.04346322378716744,
+            "h": 0.23930221715192698
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Berliner Fernsehturm"
+            }
+          ],
+          "groundingLabel": "Berliner Fernsehturm",
+          "ratingsReviewedAt": "2026-09-11T17:29:25.100Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-002-grok-4-6-xhigh-mcp-aed82c67a6",
+          "label": "Berlin 030 phone number",
+          "text": "Berlin 030 phone number",
+          "description": "A displayed telephone number uses Berlin's 030 area code.",
+          "groundingPhrase": "Berlin 030 phone number",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.56215360253365,
+            "y": 0.44071369419558837,
+            "w": 0.08076009501187653,
+            "h": 0.0626364526085974
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 2 is Alexanderplatz, Berlin: Fernsehturm, U-Bahn sign, Galeria, Berlin 030 number."
+            }
+          ],
+          "groundingLabel": "Berlin 030 phone number",
+          "ratingsReviewedAt": "2026-09-12T17:01:42.662Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-grok-4-6-xhigh-mcp-18343486e5",
+          "label": "U-Bahn sign",
+          "text": "U-Bahn sign",
+          "description": "A blue U-Bahn station sign is visible at Alexanderplatz.",
+          "groundingPhrase": "U-Bahn sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6793349168646081,
+            "y": 0.39895605912319004,
+            "w": 0.05463182897862229,
+            "h": 0.09154558458179629
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 2 is Alexanderplatz, Berlin: Fernsehturm, U-Bahn sign, Galeria, Berlin 030 number."
+            }
+          ],
+          "groundingLabel": "U-Bahn sign",
+          "ratingsReviewedAt": "2026-09-12T17:01:36.587Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-grok-4-6-xhigh-mcp-acbe04694d",
+          "label": "Galeria",
+          "text": "Galeria",
+          "description": "Galeria branding is visible on a building at Alexanderplatz.",
+          "groundingPhrase": "Galeria",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6893772763262074,
+            "y": 0.35019745790358603,
+            "w": 0.05409065716547906,
+            "h": 0.08286234284423699
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 2 is Alexanderplatz, Berlin: Fernsehturm, U-Bahn sign, Galeria, Berlin 030 number."
+            }
+          ],
+          "groundingLabel": "Galeria",
+          "ratingsReviewedAt": "2026-09-12T17:01:30.340Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-002-grok-4-6-xhigh-mcp-cf927b5ebf",
+          "label": "Fernsehturm",
+          "text": "Fernsehturm",
+          "description": "Berlin's television tower is visible above Alexanderplatz.",
+          "groundingPhrase": "Fernsehturm",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.43784639746634996,
+            "y": 0.0038645888228060928,
+            "w": 0.034837688044338844,
+            "h": 0.24733368465958996
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 2 is Alexanderplatz, Berlin: Fernsehturm, U-Bahn sign, Galeria, Berlin 030 number."
+            }
+          ],
+          "groundingLabel": "Fernsehturm",
+          "ratingsReviewedAt": "2026-09-12T17:01:48.940Z"
+        }
+      ]
+    }
+  ]
+}

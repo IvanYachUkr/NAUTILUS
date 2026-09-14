@@ -1,0 +1,52 @@
+{
+  "dataset": "europe-medium",
+  "model": "GeoCLIP",
+  "device": "cpu",
+  "n_images": 9,
+  "generated_at_utc": "2026-09-13T12:28:48.199190+00:00",
+  "distance_unit": "km",
+  "top1_error": {
+    "mean_km": 212.464,
+    "median_km": 170.033,
+    "std_km": 164.313,
+    "rmse_km": 268.589,
+    "min_km": 25.926,
+    "max_km": 551.585
+  },
+  "top1_threshold_accuracy": {
+    "within_1_km_percent": 0.0,
+    "within_25_km_percent": 0.0,
+    "within_200_km_percent": 66.667,
+    "within_750_km_percent": 100.0,
+    "within_2500_km_percent": 100.0
+  },
+  "topk_oracle": {
+    "mean_best_candidate_error_km": 131.089,
+    "median_best_candidate_error_km": 80.154,
+    "threshold_accuracy": {
+      "within_1_km_percent": 0.0,
+      "within_25_km_percent": 11.111,
+      "within_200_km_percent": 77.778,
+      "within_750_km_percent": 100.0,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "best_top1_case": {
+    "location_id": "loc_011",
+    "city_or_region": "Utrecht",
+    "error_km": 25.926
+  },
+  "worst_top1_case": {
+    "location_id": "loc_016",
+    "city_or_region": "Banská Bystrica",
+    "error_km": 551.585
+  },
+  "timing": {
+    "definition": "Warm per-image inference after one-time model loading; includes preprocessing, model forward pass, gallery scoring and top-k prediction; excludes image disk decoding and evaluation metrics.",
+    "model_load_seconds": 3.406,
+    "mean_inference_seconds": 16.121,
+    "median_inference_seconds": 15.682,
+    "std_inference_seconds": 1.261,
+    "total_inference_seconds": 145.093
+  }
+}

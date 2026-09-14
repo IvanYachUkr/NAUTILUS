@@ -1,0 +1,46 @@
+{
+  "dataset": "europe-medium",
+  "model": "PLONK OSV-5M",
+  "checkpoint": "nicolas-dufour/PLONK_OSV_5M",
+  "device": "cpu",
+  "n_images": 9,
+  "generated_at_utc": "2026-09-13T13:03:27.590205+00:00",
+  "distance_unit": "km",
+  "reproducibility": {
+    "base_seed": 42,
+    "samples_per_image": 1
+  },
+  "prediction_error": {
+    "mean_km": 263.397,
+    "median_km": 207.412,
+    "std_km": 221.498,
+    "rmse_km": 344.15,
+    "min_km": 11.166,
+    "max_km": 663.289
+  },
+  "prediction_threshold_accuracy": {
+    "within_1_km_percent": 0.0,
+    "within_25_km_percent": 11.111,
+    "within_200_km_percent": 44.444,
+    "within_750_km_percent": 100.0,
+    "within_2500_km_percent": 100.0
+  },
+  "best_prediction_case": {
+    "location_id": "loc_017",
+    "city_or_region": "Boleybeg East, County Galway",
+    "error_km": 11.166
+  },
+  "worst_prediction_case": {
+    "location_id": "loc_015",
+    "city_or_region": "Tartu",
+    "error_km": 663.289
+  },
+  "timing": {
+    "definition": "Warm per-image inference after one-time model loading; includes pipeline preprocessing, generation and coordinate output; excludes image disk decoding and evaluation metrics.",
+    "model_load_seconds": 4.027,
+    "mean_inference_seconds": 3.889,
+    "median_inference_seconds": 3.887,
+    "std_inference_seconds": 0.032,
+    "total_inference_seconds": 35.001
+  }
+}

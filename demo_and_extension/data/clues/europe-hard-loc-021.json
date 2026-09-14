@@ -1,0 +1,2198 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-hard--loc-021",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "benchmarkId": "gemini-3-7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-high-aided-5ab60e6c06",
+          "label": "Pannonian Crop Strips",
+          "text": "Pannonian Crop Strips",
+          "description": "Alternating adjacent parallel strips of blooming sunflowers, ripe golden wheat, and tall green corn/maize.",
+          "groundingPhrase": "Pannonian Crop Strips",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0,
+            "y": 0.41913156589454886,
+            "w": 1,
+            "h": 0.2489655771043103
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Pannonian Crop Strips: Alternating adjacent parallel strips of blooming sunflowers, ripe golden wheat, and tall green corn/maize."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "golden wheat"
+            }
+          ],
+          "groundingLabel": "Pannonian Crop Strips",
+          "ratingsReviewedAt": "2026-09-11T19:26:16.672Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-high-aided-d34c742cdd",
+          "label": "Topography",
+          "text": "Topography",
+          "description": "Perfectly flat lowland plain stretching to the distant horizon.",
+          "groundingPhrase": "Topography",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Topography: Perfectly flat lowland plain stretching to the distant horizon."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "perfectly flat horizon"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:26:22.976Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-high-aided-f047747acc",
+          "label": "Large blooming sunflower fields (napraforgó)",
+          "text": "Large blooming sunflower fields (napraforgó)",
+          "description": "Large blooming sunflower fields (napraforgó).",
+          "groundingPhrase": "Large blooming sunflower fields",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.0035,
+            "y": 0.4555,
+            "w": 0.4052691705790297,
+            "h": 0.2040810971677992
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Large blooming sunflower fields (napraforgó)"
+            }
+          ],
+          "groundingLabel": "large blooming sunflower fields",
+          "ratingsReviewedAt": "2026-09-11T19:26:28.075Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-high-aided-f3c958a136",
+          "label": "single-lane paved road without markings",
+          "text": "single-lane paved road without markings",
+          "description": "Single-lane paved road without markings.",
+          "groundingPhrase": "single-lane paved road without markings",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.0045,
+            "y": 0.6925,
+            "w": 0.992,
+            "h": 0.299
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "single-lane paved road without markings."
+            }
+          ],
+          "groundingLabel": "single-lane; lane paved road",
+          "ratingsReviewedAt": "2026-09-11T19:26:39.242Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-high-aided-749792354b",
+          "label": "Geographic Match",
+          "text": "Geographic Match",
+          "description": "Classic Pannonian Basin agricultural landscape (Southern Great Plain / Alföld, Hungary or Vojvodina, Serbia).",
+          "groundingPhrase": "Geographic Match",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Geographic Match: Classic Pannonian Basin agricultural landscape (Southern Great Plain / Alföld, Hungary or Vojvodina, Serbia)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:26:51.716Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-high-aided-451e8a417b",
+          "label": "Agricultural Utilities",
+          "text": "Agricultural Utilities",
+          "description": "Slender single wooden telephone pole standing in the field strip boundary.",
+          "groundingPhrase": "Agricultural Utilities",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.4624640062597808,
+            "y": 0.3661018054659988,
+            "w": 0.019539123630673005,
+            "h": 0.1370974406031446
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Agricultural Utilities: Slender single wooden telephone pole standing in the field strip boundary."
+            }
+          ],
+          "groundingLabel": "Agricultural Utilities",
+          "ratingsReviewedAt": "2026-09-11T19:26:57.291Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-high-aided-1c695e1b20",
+          "label": "Road Infrastructure",
+          "text": "Road Infrastructure",
+          "description": "Narrow rural asphalt lane with grassy unpaved verge.",
+          "groundingPhrase": "Road Infrastructure",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Road Infrastructure: Narrow rural asphalt lane with grassy unpaved verge."
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-high-aided-b8851549d8",
+          "label": "green corn",
+          "text": "green corn",
+          "description": "Green corn.",
+          "groundingPhrase": "green corn",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.5527957746478873,
+            "y": 0.4285172114478449,
+            "w": 0.4440743348982786,
+            "h": 0.125307177223352
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "green corn"
+            }
+          ],
+          "groundingLabel": "green corn",
+          "ratingsReviewedAt": "2026-09-11T19:27:01.522Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash-medium-aided",
+      "benchmarkId": "gemini-3-7-flash-medium-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-medium-aided-9a6e30272c",
+          "label": "Agricultural Strip Fields",
+          "text": "Agricultural Strip Fields",
+          "description": "Distinct contiguous parcel division of sunflowers (napraforgó), golden wheat (búza), and maize (kukorica).",
+          "groundingPhrase": "Agricultural Strip Fields",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0,
+            "y": 0.43262777143990877,
+            "w": 1,
+            "h": 0.20744486880611085
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Distinct contiguous parcel division of sunflowers (napraforgó), golden wheat (búza), and maize (kukorica)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Agricultural Strip Fields: Flat agricultural plains with extensive sunflowers (Helianthus annuus), golden wheat, and green maize."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Distinct contiguous parcel division of sunflowers (napraforgó), golden wheat (búza), and maize (kukorica)."
+            }
+          ],
+          "groundingLabel": "Agricultural Strip Fields",
+          "ratingsReviewedAt": "2026-09-11T19:27:05.362Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-medium-aided-5eee3774c3",
+          "label": "Climate / Atmosphere",
+          "text": "Climate / Atmosphere",
+          "description": "Bright continental high-summer weather with high cirrus clouds.",
+          "groundingPhrase": "Climate / Atmosphere",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Bright continental high-summer weather with high cirrus clouds."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Climate / Atmosphere: Warm continental summer atmosphere with high cirrus clouds."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Bright continental high-summer weather with high cirrus clouds."
+            }
+          ],
+          "groundingLabel": "Climate / Atmosphere",
+          "ratingsReviewedAt": "2026-09-11T19:27:14.475Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-medium-aided-489c7e581b",
+          "label": "Topography",
+          "text": "Topography",
+          "description": "Vast, completely flat agricultural plain of the Great Hungarian Plain (Alföld / Pannonian Basin).",
+          "groundingPhrase": "Topography",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Vast, completely flat agricultural plain of the Great Hungarian Plain (Alföld / Pannonian Basin)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Topography: Lowlands of the Great Hungarian Plain (Alföld / Pannonian Basin)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Vast, completely flat agricultural plain of the Great Hungarian Plain (Alföld / Pannonian Basin)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:27:40.327Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-medium-aided-266f8ef91b",
+          "label": "Distant windbreak tree belts and isolated farmhouses across the flat horizon",
+          "text": "Distant windbreak tree belts and isolated farmhouses across the flat horizon",
+          "description": "Distant windbreak tree belts and isolated farmhouses across the flat horizon.",
+          "groundingPhrase": "Distant windbreak tree belts and isolated farmhouses across the flat horizon",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.4575,
+            "y": 0.3655,
+            "w": 0.539,
+            "h": 0.11
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Distant windbreak tree belts and isolated farmhouses across the flat horizon."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Distant windbreak tree belts and isolated farmhouses across the flat horizon."
+            }
+          ],
+          "groundingLabel": "Distant windbreak tree belts",
+          "ratingsReviewedAt": "2026-09-11T19:28:08.909Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-medium-aided-c127a073a5",
+          "label": "Rural road without markings and single concrete electricity transmission pole in crop fi",
+          "text": "Rural road without markings and single concrete electricity transmission pole in crop fi",
+          "description": "Rural road without markings and single concrete electricity transmission pole in crop field boundary.",
+          "groundingPhrase": "Rural road without markings and single concrete electricity transmission pole in crop fi",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.009389671361502348,
+            "y": 0.7550468726749665,
+            "w": 0.9906103286384976,
+            "h": 0.2449531273250335
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Rural road without markings and single concrete electricity transmission pole in crop field boundary."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Rural road without markings and single concrete electricity transmission pole in crop field boundary."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:28:16.173Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-medium-aided-ae2e42b512",
+          "label": "Regional Profile",
+          "text": "Regional Profile",
+          "description": "Csongrád-Csanád / Békés / Southern Great Plain of Hungary.",
+          "groundingPhrase": "Regional Profile",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Regional Profile: Csongrád-Csanád / Békés / Southern Great Plain of Hungary."
+            }
+          ],
+          "groundingLabel": "Rural road",
+          "ratingsReviewedAt": "2026-09-11T19:28:24.663Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-medium-aided-378d60d25f",
+          "label": "Infrastructure",
+          "text": "Infrastructure",
+          "description": "Single concrete field boundary pole and asphalt rural road with grass shoulder.",
+          "groundingPhrase": "Infrastructure",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Infrastructure: Single concrete field boundary pole and asphalt rural road with grass shoulder."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:28:39.661Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-high-aided",
+      "benchmarkId": "gemini-3-8-flash-high-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-high-aided-2a5b725eb5",
+          "label": "Commercial service van ahead with full Hungarian commercial livery",
+          "text": "Commercial service van ahead with full Hungarian commercial livery",
+          "description": "\"SM TARGO SZERVIZ • MÁRKAFÜGGETLEN TARGONCA JAVÍTÁS\", phone +36 20 9337-104, and domain www.smtargo.hu.",
+          "groundingPhrase": "Commercial service van ahead with full Hungarian commercial livery",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Commercial utility van displaying explicit Hungarian signage: \"SM TARGO SZERVIZ • MÁRKAFÜGGETLEN TARGONCA JAVÍTÁS\", phone +36 20 9337-104, and domain www.smtargo.hu."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Commercial service van ahead with full Hungarian commercial livery: 'SM TARGO SZERVIZ - MÁRKAFÜGGETLEN TARGONCAJAVÍTÁS' (targonca = forklift)."
+            }
+          ],
+          "groundingLabel": "Commercial service van",
+          "ratingsReviewedAt": "2026-09-11T19:29:06.567Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-high-aided-30cc4eca4d",
+          "label": "Vast, completely flat Pannonian agricultural landscape",
+          "text": "Vast, completely flat Pannonian agricultural landscape",
+          "description": "Completely flat agricultural plain cultivated with extensive sunflower (napraforgó) and corn fields.",
+          "groundingPhrase": "Vast, completely flat Pannonian agricultural landscape",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Completely flat agricultural plain cultivated with extensive sunflower (napraforgó) and corn fields."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Vast, completely flat Pannonian agricultural landscape: extensive blooming sunflower fields, golden wheat/barley fields, and tall sweetcorn."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:29:17.755Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-high-aided-6b4d27d283",
+          "label": "Hungarian road surface",
+          "text": "Hungarian road surface",
+          "description": "Asphalt road stencil reading \"451\" (identifying Hungarian Route 451 connecting Kiskunfélegyháza, Csongrád, and Szentes).",
+          "groundingPhrase": "Hungarian road surface",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.003167062549485352,
+            "y": 0.6499786694772767,
+            "w": 0.9968329374505146,
+            "h": 0.35002133052272333
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Asphalt road stencil reading \"451\" (identifying Hungarian Route 451 connecting Kiskunfélegyháza, Csongrád, and Szentes)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Hungarian road surface painted route stencil."
+            }
+          ],
+          "groundingLabel": "Hungarian road surface; Landscape",
+          "ratingsReviewedAt": "2026-09-11T19:29:23.856Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-high-aided-acfef74959",
+          "label": "Hungarian white roadside delineator posts",
+          "text": "Hungarian white roadside delineator posts",
+          "description": "Hungarian white roadside delineator posts with black angled caps and red rectangular reflectors.",
+          "groundingPhrase": "Hungarian white roadside delineator posts",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Hungarian white roadside delineator posts with black angled caps and red rectangular reflectors."
+            }
+          ],
+          "groundingLabel": "Hungarian white roadside delineator posts",
+          "ratingsReviewedAt": "2026-09-11T19:29:41.333Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-high-aided-a8befeee4e",
+          "label": "Hungarian national contact information",
+          "text": "Hungarian national contact information",
+          "description": "Hungarian international dialing code '+36' ('+36 20 9337-104') and domain '.hu' ('www.smtargo.hu').",
+          "groundingPhrase": "Hungarian national contact information",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Hungarian national contact information: Hungarian international dialing code '+36' ('+36 20 9337-104') and domain '.hu' ('www.smtargo.hu')."
+            }
+          ],
+          "groundingLabel": "Hungarian national contact information",
+          "ratingsReviewedAt": "2026-09-11T19:29:53.571Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-high-aided-f4348cbd91",
+          "label": "Csongrád / Vojvodina border",
+          "text": "Csongrád / Vojvodina border",
+          "description": "Csongrád / Vojvodina border.",
+          "groundingPhrase": "Csongrád / Vojvodina border",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Csongrád / Vojvodina border"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:30:08.019Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-high-aided-38783fa733",
+          "label": "Rural two-lane highway",
+          "text": "Rural two-lane highway",
+          "description": "Rural two-lane highway with white dashed centerline and wooden utility poles across open agrarian landscape.",
+          "groundingPhrase": "Rural two-lane highway",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Rural two-lane highway with white dashed centerline and wooden utility poles across open agrarian landscape."
+            }
+          ],
+          "groundingLabel": "Rural two-lane highway",
+          "ratingsReviewedAt": "2026-09-11T19:30:14.170Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-high-aided-977a7a86c5",
+          "label": "Landscape between the Danube and Tisza rivers in the Southern Alföld (Dél-Alföld)",
+          "text": "Landscape between the Danube and Tisza rivers in the Southern Alföld (Dél-Alföld)",
+          "description": "Landscape between the Danube and Tisza rivers in the Southern Alföld (Dél-Alföld).",
+          "groundingPhrase": "Landscape between the Danube and Tisza rivers in the Southern Alföld",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Landscape between the Danube and Tisza rivers in the Southern Alföld (Dél-Alföld)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:30:44.328Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-high-aided-87992dc6f5",
+          "label": "Hungary/Serbia border",
+          "text": "Hungary/Serbia border",
+          "description": "Hungary/Serbia border.",
+          "groundingPhrase": "Hungary/Serbia border",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Hungary/Serbia border"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:30:58.256Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-medium-aided",
+      "benchmarkId": "gemini-3-8-flash-medium-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-medium-aided-166bf287e8",
+          "label": "Commercial utility van displaying explicit Hungarian signage",
+          "text": "Commercial utility van displaying explicit Hungarian signage",
+          "description": "\"SM TARGO SZERVIZ • MÁRKAFÜGGETLEN TARGONCA JAVÍTÁS\", phone +36 20 9337-104, and domain www.smtargo.hu.",
+          "groundingPhrase": "Commercial utility van displaying explicit Hungarian signage",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Commercial utility van displaying explicit Hungarian signage: \"SM TARGO SZERVIZ • MÁRKAFÜGGETLEN TARGONCA JAVÍTÁS\", phone +36 20 9337-104, and domain www.smtargo.hu."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Commercial utility van displaying explicit Hungarian signage: \"SM TARGO SZERVIZ • MÁRKAFÜGGETLEN TARGONCA JAVÍTÁS\", phone +36 20 9337-104, and domain www.smtargo.hu."
+            }
+          ],
+          "groundingLabel": "Commercial utility van",
+          "ratingsReviewedAt": "2026-09-11T19:31:07.953Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-medium-aided-420a2852e0",
+          "label": "Asphalt road stencil reading \"451\" (identifying Hungarian Route 451 connecting Kiskunfél",
+          "text": "Asphalt road stencil reading \"451\" (identifying Hungarian Route 451 connecting Kiskunfél",
+          "description": "Asphalt road stencil reading \"451\" (identifying Hungarian Route 451 connecting Kiskunfélegyháza, Csongrád, and Szentes).",
+          "groundingPhrase": "Asphalt road stencil reading \"451\" (identifying Hungarian Route 451 connecting Kiskunfél",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Asphalt road stencil reading \"451\" (identifying Hungarian Route 451 connecting Kiskunfélegyháza, Csongrád, and Szentes)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Asphalt road stencil reading \"451\" (identifying Hungarian Route 451 connecting Kiskunfélegyháza, Csongrád, and Szentes)."
+            }
+          ],
+          "groundingLabel": "Asphalt road stencil reading",
+          "ratingsReviewedAt": "2026-09-11T19:31:12.205Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-medium-aided-34df527e9b",
+          "label": "Completely flat agricultural plain cultivated",
+          "text": "Completely flat agricultural plain cultivated",
+          "description": "Completely flat agricultural plain cultivated with extensive sunflower (napraforgó) and corn fields.",
+          "groundingPhrase": "Completely flat agricultural plain cultivated",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Completely flat agricultural plain cultivated with extensive sunflower (napraforgó) and corn fields."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Completely flat agricultural plain cultivated with extensive sunflower (napraforgó) and corn fields."
+            }
+          ],
+          "groundingLabel": "Completely flat agricultural plain; flat agricultural plain",
+          "ratingsReviewedAt": "2026-09-11T19:31:16.934Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-medium-aided-acfef74959",
+          "label": "Hungarian white roadside delineator posts",
+          "text": "Hungarian white roadside delineator posts",
+          "description": "Hungarian white roadside delineator posts with black angled caps and red rectangular reflectors.",
+          "groundingPhrase": "Hungarian white roadside delineator posts",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Hungarian white roadside delineator posts with black angled caps and red rectangular reflectors."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Hungarian white roadside delineator posts with black angled caps and red rectangular reflectors."
+            }
+          ],
+          "groundingLabel": "Hungarian white roadside delineator posts; landscape",
+          "ratingsReviewedAt": "2026-09-11T19:31:21.207Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-medium-aided-977a7a86c5",
+          "label": "Landscape between the Danube and Tisza rivers in the Southern Alföld (Dél-Alföld)",
+          "text": "Landscape between the Danube and Tisza rivers in the Southern Alföld (Dél-Alföld)",
+          "description": "Landscape between the Danube and Tisza rivers in the Southern Alföld (Dél-Alföld).",
+          "groundingPhrase": "Landscape between the Danube and Tisza rivers in the Southern Alföld",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Landscape between the Danube and Tisza rivers in the Southern Alföld (Dél-Alföld)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Landscape between the Danube and Tisza rivers in the Southern Alföld (Dél-Alföld)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:31:26.937Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-medium-aided-f4348cbd91",
+          "label": "Csongrád / Vojvodina border",
+          "text": "Csongrád / Vojvodina border",
+          "description": "Csongrád / Vojvodina border.",
+          "groundingPhrase": "Csongrád / Vojvodina border",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Csongrád / Vojvodina border"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:31:32.409Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-medium-aided-0903fc0d97",
+          "label": "Route 4511 / Csanytelek",
+          "text": "Route 4511 / Csanytelek",
+          "description": "Route 4511 / Csanytelek.",
+          "groundingPhrase": "Route 4511 / Csanytelek",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Route 4511 / Csanytelek"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:31:35.766Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-8-flash-medium-aided-87992dc6f5",
+          "label": "Hungary/Serbia border",
+          "text": "Hungary/Serbia border",
+          "description": "Hungary/Serbia border.",
+          "groundingPhrase": "Hungary/Serbia border",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Hungary/Serbia border"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:31:41.138Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh",
+      "benchmarkId": "gpt-5-6-sol-xhigh",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-gpt-5-6-sol-xhigh-be58dab695",
+          "label": "lowland settlement form suggested Hungary or northern Serbia",
+          "text": "lowland settlement form suggested Hungary or northern Serbia",
+          "description": "Lowland settlement form suggested Hungary or northern Serbia.",
+          "groundingPhrase": "lowland settlement form suggested Hungary or northern Serbia",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "lowland settlement form suggested Hungary or northern Serbia."
+            }
+          ],
+          "groundingLabel": "lowland settlement form suggested Hungary",
+          "ratingsReviewedAt": "2026-09-11T19:31:50.245Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-5-6-sol-xhigh-151d4c9480",
+          "label": "Flat Pannonian sunflower/corn fields",
+          "text": "Flat Pannonian sunflower/corn fields",
+          "description": "Flat Pannonian sunflower/corn fields.",
+          "groundingPhrase": "Flat Pannonian sunflower/corn fields",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.0025,
+            "y": 0.4475,
+            "w": 0.9975,
+            "h": 0.24548658300679532
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Flat Pannonian sunflower/corn fields"
+            }
+          ],
+          "groundingLabel": "Flat Pannonian sunflower/corn fields",
+          "ratingsReviewedAt": "2026-09-11T19:31:54.877Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-5-6-sol-xhigh-1237666e7c",
+          "label": "straight rural road",
+          "text": "straight rural road",
+          "description": "Straight rural road.",
+          "groundingPhrase": "straight rural road",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.010542253521126761,
+            "y": 0.7305933485442191,
+            "w": 0.9894577464788732,
+            "h": 0.2694066514557809
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "straight rural road"
+            }
+          ],
+          "groundingLabel": "straight rural road",
+          "ratingsReviewedAt": "2026-09-11T19:32:00.811Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low",
+      "benchmarkId": "gpt-6-astra-low",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-gpt-6-astra-low-321ad22c9f",
+          "label": "adjacent wheat and maize strips",
+          "text": "adjacent wheat and maize strips",
+          "description": "Adjacent wheat and maize strips.",
+          "groundingPhrase": "adjacent wheat and maize strips",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.42838262910798125,
+            "y": 0.4481511085759635,
+            "w": 0.5716173708920187,
+            "h": 0.23682555428798174
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "adjacent wheat and maize strips"
+            }
+          ],
+          "groundingLabel": "adjacent wheat",
+          "ratingsReviewedAt": "2026-09-11T19:32:16.155Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-6-astra-low-47132e5bd5",
+          "label": "perfectly flat agricultural plain",
+          "text": "perfectly flat agricultural plain",
+          "description": "Perfectly flat agricultural plain.",
+          "groundingPhrase": "perfectly flat agricultural plain",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "perfectly flat agricultural plain"
+            }
+          ],
+          "groundingLabel": "flat agricultural plain",
+          "ratingsReviewedAt": "2026-09-11T19:32:20.204Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-6-astra-low-5e68f0bd8e",
+          "label": "slender overhead utility poles",
+          "text": "slender overhead utility poles",
+          "description": "Slender overhead utility poles.",
+          "groundingPhrase": "slender overhead utility poles",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.4565,
+            "y": 0.3635,
+            "w": 0.024350547730829453,
+            "h": 0.13439556569614602
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "slender overhead utility poles"
+            }
+          ],
+          "groundingLabel": "slender overhead utility poles",
+          "ratingsReviewedAt": "2026-09-11T19:32:24.213Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-6-astra-low-f2936a48b1",
+          "label": "narrow paved road",
+          "text": "narrow paved road",
+          "description": "Narrow paved road with grassy shoulders. Initial hypothesis Hungary or northern Serbia.",
+          "groundingPhrase": "narrow paved road",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0045,
+            "y": 0.6925,
+            "w": 0.991,
+            "h": 0.299
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "narrow paved road with grassy shoulders. Initial hypothesis Hungary or northern Serbia"
+            }
+          ],
+          "groundingLabel": "narrow paved road",
+          "ratingsReviewedAt": "2026-09-11T19:32:35.086Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-6-astra-low-8b0b647a43",
+          "label": "low-medium country confidence",
+          "text": "low-medium country confidence",
+          "description": "Low-medium country confidence.",
+          "groundingPhrase": "low-medium country confidence",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "low-medium country confidence"
+            }
+          ],
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T19:32:38.097Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-6-astra-low-ba21a79ced",
+          "label": "low locality confidence",
+          "text": "low locality confidence",
+          "description": "Low locality confidence.",
+          "groundingPhrase": "low locality confidence",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "low locality confidence."
+            }
+          ],
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T19:32:40.866Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-6-astra-low-ece8c52e8b",
+          "label": "sunflower field",
+          "text": "sunflower field",
+          "description": "Sunflower field.",
+          "groundingPhrase": "sunflower field",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.0035,
+            "y": 0.4545,
+            "w": 0.45043505477308293,
+            "h": 0.23423833143197262
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "sunflower field"
+            }
+          ],
+          "groundingLabel": "sunflower field",
+          "ratingsReviewedAt": "2026-09-11T19:32:47.984Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "benchmarkId": "grok-4-6-xhigh",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-grok-4-6-xhigh-b3ec5ddf58",
+          "label": "Flat sunflower/wheat/maize plains produced the correct Hungary belief and pin",
+          "text": "Flat sunflower/wheat/maize plains produced the correct Hungary belief and pin",
+          "description": "Flat sunflower/wheat/maize plains produced the correct Hungary belief and pin.",
+          "groundingPhrase": "Flat sunflower/wheat/maize plains produced the correct Hungary belief and pin",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.0025,
+            "y": 0.4515,
+            "w": 0.9975,
+            "h": 0.2468993601507862
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Flat sunflower/wheat/maize plains produced the correct Hungary belief and pin."
+            }
+          ],
+          "groundingLabel": "Flat sunflower/wheat/maize plains",
+          "ratingsReviewedAt": "2026-09-11T19:33:03.447Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max",
+      "benchmarkId": "gpt-5-6-sol-max",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-gpt-5-6-sol-max-6c8d5457f9",
+          "label": "very flat Pannonian fields",
+          "text": "very flat Pannonian fields",
+          "description": "Very flat Pannonian fields.",
+          "groundingPhrase": "very flat Pannonian fields",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "very flat Pannonian fields"
+            }
+          ],
+          "groundingLabel": "flat Pannonian fields",
+          "ratingsReviewedAt": "2026-09-11T19:33:08.934Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-5-6-sol-max-5894e1e1f1",
+          "label": "Visible road overlay 451",
+          "text": "Visible road overlay 451",
+          "description": "Visible road overlay 451.",
+          "groundingPhrase": "Visible road overlay 451",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Visible road overlay 451"
+            }
+          ],
+          "groundingLabel": "Visible road overlay",
+          "ratingsReviewedAt": "2026-09-11T19:33:11.645Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-5-6-sol-max-a83cba7670",
+          "label": "sparse roadside development",
+          "text": "sparse roadside development",
+          "description": "Sparse roadside development.",
+          "groundingPhrase": "sparse roadside development",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "sparse roadside development."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:33:15.393Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-5-6-sol-max-6068024e24",
+          "label": "Hungarian road design",
+          "text": "Hungarian road design",
+          "description": "Hungarian road design.",
+          "groundingPhrase": "Hungarian road design",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Hungarian road design"
+            }
+          ],
+          "groundingLabel": "Hungarian road design",
+          "ratingsReviewedAt": "2026-09-11T19:33:19.156Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gpt-5-6-sol-max-3a64f8f1e1",
+          "label": "drainage/field geometry",
+          "text": "drainage/field geometry",
+          "description": "Drainage/field geometry.",
+          "groundingPhrase": "drainage/field geometry",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.005477308294209703,
+            "y": 0.43442785576112297,
+            "w": 0.9945226917057903,
+            "h": 0.2190367541292595
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "drainage/field geometry"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:33:24.508Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max",
+      "benchmarkId": "glm-5-3-flash-max",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-1/conversation.json"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-3/conversation.json"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-glm-5-3-flash-max-6a37e3c593",
+          "label": "narrow worn asphalt, no signage. Belief",
+          "text": "narrow worn asphalt, no signage. Belief",
+          "description": "Pannonian plain — Vojvodina. Placing pin at 45.55, 20.30.",
+          "groundingPhrase": "narrow worn asphalt, no signage. Belief",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.0035,
+            "y": 0.6925,
+            "w": 0.993,
+            "h": 0.3
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "narrow worn asphalt, no signage. Belief: Pannonian plain — Vojvodina. Placing pin at 45.55, 20.30."
+            }
+          ],
+          "groundingLabel": "narrow worn asphalt",
+          "ratingsReviewedAt": "2026-09-11T19:34:50.577Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-glm-5-3-flash-max-3448b58fd5",
+          "label": "lone power pole, dead-flat horizon,",
+          "text": "lone power pole, dead-flat horizon,",
+          "description": "Lone power pole, dead-flat horizon,.",
+          "groundingPhrase": "lone power pole, dead-flat horizon,",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4635,
+            "y": 0.3665,
+            "w": 0.015,
+            "h": 0.111
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "lone power pole, dead-flat horizon,"
+            }
+          ],
+          "groundingLabel": "lone power pole",
+          "ratingsReviewedAt": "2026-09-11T19:34:54.508Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-glm-5-3-flash-max-1673f46c8a",
+          "label": "blooming sunflower field left,",
+          "text": "blooming sunflower field left,",
+          "description": "Blooming sunflower field left,.",
+          "groundingPhrase": "blooming sunflower field left,",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.0025,
+            "y": 0.4555,
+            "w": 0.457,
+            "h": 0.242
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "blooming sunflower field left,"
+            }
+          ],
+          "groundingLabel": "sunflower field",
+          "ratingsReviewedAt": "2026-09-11T19:34:57.981Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-glm-5-3-flash-max-de5c118bcd",
+          "label": "wheat stubble strip ahead,",
+          "text": "wheat stubble strip ahead,",
+          "description": "Wheat stubble strip ahead,.",
+          "groundingPhrase": "wheat stubble strip ahead,",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.3585,
+            "y": 0.4575,
+            "w": 0.6330876369327074,
+            "h": 0.1660344228956897
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "wheat stubble strip ahead,"
+            }
+          ],
+          "groundingLabel": "wheat stubble strip",
+          "ratingsReviewedAt": "2026-09-11T19:35:02.909Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-glm-5-3-flash-max-a73ae3b199",
+          "label": "corn rows right,",
+          "text": "corn rows right,",
+          "description": "Corn rows right,.",
+          "groundingPhrase": "corn rows right,",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.6339303599374022,
+            "y": 0.45432555428798177,
+            "w": 0.3660696400625978,
+            "h": 0.11365606864738852
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "corn rows right,"
+            }
+          ],
+          "groundingLabel": "corn rows",
+          "ratingsReviewedAt": "2026-09-11T19:35:05.775Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-unaided",
+      "benchmarkId": "gemini-3-7-flash-high-unaided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, unaided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-high-unaided-a9aa48de32",
+          "label": "Great Hungarian Plain (Alföld) terrain",
+          "text": "Great Hungarian Plain (Alföld) terrain",
+          "description": "Great Hungarian Plain (Alföld) terrain.",
+          "groundingPhrase": "Great Hungarian Plain terrain",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Great Hungarian Plain (Alföld) terrain"
+            }
+          ],
+          "groundingLabel": "Great Hungarian Plain terrain",
+          "ratingsReviewedAt": "2026-09-11T19:35:14.440Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-gemini-3-7-flash-high-unaided-b9eda20f9d",
+          "label": "\"451\" route marker",
+          "text": "\"451\" route marker",
+          "description": "\"451\" route marker.",
+          "groundingPhrase": "\"451\" route marker",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "\"451\" route marker"
+            }
+          ],
+          "groundingLabel": "451; route marker"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-021-grok-4-6-xhigh-mcp-70dadccbbb",
+          "label": "Sunflower, wheat, and corn fields",
+          "text": "Sunflower, wheat, and corn fields",
+          "description": "Sunflower, wheat, and corn crops are visible beside the road.",
+          "groundingPhrase": "Sunflower, wheat, and corn fields",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.0025,
+            "y": 0.4555,
+            "w": 0.9975,
+            "h": 0.2056666164772014
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "hard-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "hard-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+              "text": "Sunflowers, wheat, corn, and a black-and-white roadside post point to the Hungarian Great Plain."
+            }
+          ],
+          "groundingLabel": "Sunflower",
+          "ratingsReviewedAt": "2026-09-12T17:05:46.153Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-grok-4-6-xhigh-mcp-3f5c7feb7a",
+          "label": "Black-and-white roadside post",
+          "text": "Black-and-white roadside post",
+          "description": "A black-and-white roadside delineator stands beside the field road.",
+          "groundingPhrase": "Black-and-white roadside post",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "hard-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "hard-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+              "text": "Sunflowers, wheat, corn, and a black-and-white roadside post point to the Hungarian Great Plain."
+            }
+          ],
+          "groundingLabel": "Black-and-white roadside post",
+          "ratingsReviewedAt": "2026-09-12T17:06:01.205Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-021-grok-4-6-xhigh-mcp-052207dbdd",
+          "label": "Flat agricultural plain",
+          "text": "Flat agricultural plain",
+          "description": "The road crosses an exceptionally flat agricultural plain.",
+          "groundingPhrase": "Flat agricultural plain",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "hard-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "hard-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+              "text": "Round 4 is a dead-flat sunflower/wheat/corn plain."
+            }
+          ],
+          "groundingLabel": "Flat agricultural plain",
+          "ratingsReviewedAt": "2026-09-12T17:06:04.400Z"
+        }
+      ]
+    }
+  ]
+}

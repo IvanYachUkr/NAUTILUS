@@ -1,0 +1,2197 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-easy--loc-004",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "benchmarkId": "gemini-3-7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-high-aided-860447e7f9",
+          "label": "Cloak Bridge (Plášťový most) Baroque Statue",
+          "text": "Cloak Bridge (Plášťový most) Baroque Statue",
+          "description": "Statue of St. John of Nepomuk / saint on bridge balustrade.",
+          "groundingPhrase": "Cloak Bridge Baroque Statue",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.2475,
+            "y": 0.1845,
+            "w": 0.174,
+            "h": 0.71
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Cloak Bridge (Plášťový most) Baroque Statue: Statue of St. John of Nepomuk / saint on bridge balustrade."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "multi-tiered Cloak Bridge (Plášťový most)"
+            }
+          ],
+          "groundingLabel": "Cloak Bridge Baroque Statue",
+          "ratingsReviewedAt": "2026-09-11T17:52:39.562Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-high-aided-b86d5611b5",
+          "label": "St. Vitus Church (Kostel svatého Víta)",
+          "text": "St. Vitus Church (Kostel svatého Víta)",
+          "description": "Gothic tower rising over red-roofed peninsula.",
+          "groundingPhrase": "St. Vitus Church",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.39849374021909234,
+            "y": 0.382802217151927,
+            "w": 0.050352112676056326,
+            "h": 0.11609101731064925
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "St. Vitus Church (Kostel svatého Víta): Gothic tower rising over red-roofed peninsula."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "St. Vitus Church tower in Český Krumlov."
+            }
+          ],
+          "groundingLabel": "Vitus Church",
+          "ratingsReviewedAt": "2026-09-11T17:52:46.498Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-high-aided-93186dcfcb",
+          "label": "Vltava River Horseshoe Bend",
+          "text": "Vltava River Horseshoe Bend",
+          "description": "River loop with wooden footbridge (Lávka pod Zámkem) and weir enclosing the town center.",
+          "groundingPhrase": "Vltava River Horseshoe Bend",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4235,
+            "y": 0.6635,
+            "w": 0.339,
+            "h": 0.231
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Vltava River Horseshoe Bend: River loop with wooden footbridge (Lávka pod Zámkem) and weir enclosing the town center."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Horseshoe bend of Vltava River"
+            }
+          ],
+          "groundingLabel": "Vltava River Horseshoe Bend",
+          "ratingsReviewedAt": "2026-09-11T17:52:49.721Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-high-aided-3d05742b43",
+          "label": "Bohemian Renaissance Architecture",
+          "text": "Bohemian Renaissance Architecture",
+          "description": "Characteristic pastel facades and steep gables in South Bohemia.",
+          "groundingPhrase": "Bohemian Renaissance Architecture",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Bohemian Renaissance Architecture: Characteristic pastel facades and steep gables in South Bohemia."
+            }
+          ],
+          "groundingLabel": "Bohemian Renaissance Architecture",
+          "ratingsReviewedAt": "2026-09-11T17:53:00.896Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-high-aided-ecfec776f0",
+          "label": "Castle Wall",
+          "text": "Castle Wall",
+          "description": "Tall stone wall of the Upper Castle (Horní hrad) on the bridge overlook.",
+          "groundingPhrase": "Castle Wall",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.008415492957746478,
+            "y": 0.0013255542879817466,
+            "w": 0.243,
+            "h": 0.833
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Castle Wall: Tall stone wall of the Upper Castle (Horní hrad) on the bridge overlook."
+            }
+          ],
+          "groundingLabel": "Castle Wall",
+          "ratingsReviewedAt": "2026-09-11T17:53:07.173Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash-medium-aided",
+      "benchmarkId": "gemini-3-7-flash-medium-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-medium-aided-bfcbee1fb4",
+          "label": "Český Krumlov Castle & Cloak Bridge (Plášťový most)",
+          "text": "Český Krumlov Castle & Cloak Bridge (Plášťový most)",
+          "description": "Distinctive multi-tiered arched architecture and vantage point of the castle's Cloak Bridge (Plášťový most).",
+          "groundingPhrase": "Český Krumlov Castle & Cloak Bridge",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Distinctive multi-tiered arched architecture and vantage point of the castle's Cloak Bridge (Plášťový most)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Český Krumlov Castle & Cloak Bridge (Plášťový most): High multi-story arched stone bridge with Baroque saint statues overlooking the town."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Distinctive multi-tiered arched architecture and vantage point of the castle's Cloak Bridge (Plášťový most)."
+            }
+          ],
+          "groundingLabel": "esk Krumlov Castle",
+          "ratingsReviewedAt": "2026-09-11T17:53:15.216Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-medium-aided-7b6f01a03c",
+          "label": "St. Vitus Church (Kostel sv. Víta)",
+          "text": "St. Vitus Church (Kostel sv. Víta)",
+          "description": "Gothic tower of St. Vitus Church (Kostel svatého Víta) rising prominently from the red-roofed town core.",
+          "groundingPhrase": "St. Vitus Church",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4060414710485133,
+            "y": 0.3558634740340261,
+            "w": 0.045913928012519534,
+            "h": 0.13463798918704428
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Gothic tower of St. Vitus Church (Kostel svatého Víta) rising prominently from the red-roofed town core."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "St. Vitus Church (Kostel sv. Víta): Slender Gothic church steeple rising above red-tile pitched roofs."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Gothic tower of St. Vitus Church (Kostel svatého Víta) rising prominently from the red-roofed town core."
+            }
+          ],
+          "groundingLabel": "Vitus Church; the crucifix",
+          "ratingsReviewedAt": "2026-09-11T17:53:18.495Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-medium-aided-e269be276e",
+          "label": "River Weir (Jez Český Krumlov)",
+          "text": "River Weir (Jez Český Krumlov)",
+          "description": "Wooden footbridge (Lazebnický most) and river weir visible in the river gorge below.",
+          "groundingPhrase": "River Weir",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4245,
+            "y": 0.6635,
+            "w": 0.338,
+            "h": 0.231
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Wooden footbridge (Lazebnický most) and river weir visible in the river gorge below."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "River Weir (Jez Český Krumlov): Classic wooden/concrete canoe weir on the Vltava below the castle walls."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Wooden footbridge (Lazebnický most) and river weir visible in the river gorge below."
+            }
+          ],
+          "groundingLabel": "River Weir",
+          "ratingsReviewedAt": "2026-09-11T17:53:23.203Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-medium-aided-e2ae734c9e",
+          "label": "Vltava (Moldau) Horseshoe Loop",
+          "text": "Vltava (Moldau) Horseshoe Loop",
+          "description": "UNESCO World Heritage horseshoe meander of the Vltava River encircling the historic town center of Český Krumlov.",
+          "groundingPhrase": "Vltava Horseshoe Loop",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6259068857589984,
+            "y": 0.5040431774217549,
+            "w": 0.1472018779342723,
+            "h": 0.20310559992063884
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "UNESCO World Heritage horseshoe meander of the Vltava River encircling the historic town center of Český Krumlov."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Vltava (Moldau) Horseshoe Loop: Iconic river meander encircling the UNESCO World Heritage medieval town center."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "UNESCO World Heritage horseshoe meander of the Vltava River encircling the historic town center of Český Krumlov."
+            }
+          ],
+          "groundingLabel": "Vltava Horseshoe Loop",
+          "ratingsReviewedAt": "2026-09-11T17:53:27.021Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-medium-aided-0844b62e80",
+          "label": "Baroque stone statue of Saint John of Nepomuk holding the crucifix on the balustrade pil",
+          "text": "Baroque stone statue of Saint John of Nepomuk holding the crucifix on the balustrade pil",
+          "description": "Baroque stone statue of Saint John of Nepomuk holding the crucifix on the balustrade pillar.",
+          "groundingPhrase": "Baroque stone statue of Saint John of Nepomuk holding the crucifix on the balustrade pil",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.2475,
+            "y": 0.1845,
+            "w": 0.174,
+            "h": 0.71
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Baroque stone statue of Saint John of Nepomuk holding the crucifix on the balustrade pillar."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Baroque stone statue of Saint John of Nepomuk holding the crucifix on the balustrade pillar."
+            }
+          ],
+          "groundingLabel": "Baroque stone statue",
+          "ratingsReviewedAt": "2026-09-11T17:53:30.853Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-medium-aided-0f4b6019b8",
+          "label": "Bohemian Architecture",
+          "text": "Bohemian Architecture",
+          "description": "Sgraffito renaissance castle walls and pastel-painted historic townhouses.",
+          "groundingPhrase": "Bohemian Architecture",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0,
+            "y": 0,
+            "w": 0.23761032863849768,
+            "h": 0.8556338971281185
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Bohemian Architecture: Sgraffito renaissance castle walls and pastel-painted historic townhouses."
+            }
+          ],
+          "groundingLabel": "Bohemian Architecture",
+          "ratingsReviewedAt": "2026-09-11T17:53:35.136Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-high-aided",
+      "benchmarkId": "gemini-3-8-flash-high-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-high-aided-4173639a05",
+          "label": "Multi-story arched masonry bridge structure connecting the castle courtyards (Plášťový m",
+          "text": "Multi-story arched masonry bridge structure connecting the castle courtyards (Plášťový m",
+          "description": "Multi-story arched masonry bridge structure connecting the castle courtyards (Plášťový most).",
+          "groundingPhrase": "Multi-story arched masonry bridge structure connecting the castle courtyards (Plášťový m",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Cloak Bridge"
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Multi-story arched masonry bridge structure connecting the castle courtyards (Plášťový most)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:53:58.907Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-high-aided-144ef57132",
+          "label": "Prominent Gothic tower of the Church of St. Vitus (Kostel svatého Víta)",
+          "text": "Prominent Gothic tower of the Church of St. Vitus (Kostel svatého Víta)",
+          "description": "Prominent Gothic tower of the Church of St. Vitus (Kostel svatého Víta) rising over the red-tiled roofs of the historic town.",
+          "groundingPhrase": "Prominent Gothic tower of the Church of St. Vitus",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4033416468725257,
+            "y": 0.3686823383271851,
+            "w": 0.05201504354711006,
+            "h": 0.12540785214183547
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "High-density terracotta Renaissance and Gothic rooftops and the prominent tower of St. Vitus Church."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Prominent Gothic tower of the Church of St. Vitus (Kostel svatého Víta) rising over the red-tiled roofs of the historic town."
+            }
+          ],
+          "groundingLabel": "Prominent Gothic tower; Gothic tower",
+          "ratingsReviewedAt": "2026-09-11T17:54:04.828Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-high-aided-7fcbe16647",
+          "label": "Panoramic view over the horseshoe meander loop of the Vltava (Moldau) river",
+          "text": "Panoramic view over the horseshoe meander loop of the Vltava (Moldau) river",
+          "description": "Deep incised horseshoe meander of the Vltava River encircling the old town below with weir and footbridge.",
+          "groundingPhrase": "Panoramic view over the horseshoe meander loop of the Vltava river",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6094089469517022,
+            "y": 0.425682413611383,
+            "w": 0.17048020585906576,
+            "h": 0.30128689553062804
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Deep incised horseshoe meander of the Vltava River encircling the old town below with weir and footbridge."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Panoramic view over the horseshoe meander loop of the Vltava (Moldau) river."
+            }
+          ],
+          "groundingLabel": "Panoramic view",
+          "ratingsReviewedAt": "2026-09-11T17:54:09.703Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-high-aided-3c8f0bdde1",
+          "label": "Baroque stone statue of St. John of Nepomuk holding the crucifix atop the bridge balustr",
+          "text": "Baroque stone statue of St. John of Nepomuk holding the crucifix atop the bridge balustr",
+          "description": "Standing atop the monumental multi-tiered arched stone Cloak Bridge connecting the Upper Castle courtyards.",
+          "groundingPhrase": "Baroque stone statue of St. John of Nepomuk holding the crucifix atop the bridge balustr",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.2581155977830562,
+            "y": 0.19064468368089538,
+            "w": 0.13460015835312747,
+            "h": 0.5894250796757761
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Standing atop the monumental multi-tiered arched stone Cloak Bridge connecting the Upper Castle courtyards."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Baroque stone statue of St. John of Nepomuk holding the crucifix atop the bridge balustrade."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:54:12.849Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-high-aided-94e96f8e6d",
+          "label": "Rolling, lush forested hills of South Bohemia",
+          "text": "Rolling, lush forested hills of South Bohemia",
+          "description": "Rolling, lush forested hills of South Bohemia.",
+          "groundingPhrase": "Rolling, lush forested hills of South Bohemia",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.3785,
+            "y": 0.2885,
+            "w": 0.564,
+            "h": 0.346
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Rolling, lush forested hills of South Bohemia."
+            }
+          ],
+          "groundingLabel": "lush forested hills",
+          "ratingsReviewedAt": "2026-09-11T17:54:20.612Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-high-aided-2dfee7c788",
+          "label": "Castle moat footbridge (Lávka pod Zámkem) and river weir (Jez pod Zámkem)",
+          "text": "Castle moat footbridge (Lávka pod Zámkem) and river weir (Jez pod Zámkem)",
+          "description": "Castle moat footbridge (Lávka pod Zámkem) and river weir (Jez pod Zámkem) visible immediately below.",
+          "groundingPhrase": "Castle moat footbridge and river weir",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Castle moat footbridge (Lávka pod Zámkem) and river weir (Jez pod Zámkem) visible immediately below."
+            }
+          ],
+          "groundingLabel": "Castle moat footbridge; river weir"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-high-aided-7d2ead058b",
+          "label": "Český Krumlov",
+          "text": "Český Krumlov",
+          "description": "Český Krumlov.",
+          "groundingPhrase": "Český Krumlov",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Český Krumlov"
+            }
+          ],
+          "groundingLabel": "the crucifix"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-high-aided-84cbf57db1",
+          "label": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet",
+          "text": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet",
+          "description": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet.",
+          "groundingPhrase": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet."
+            }
+          ],
+          "groundingLabel": "Baroque stone statue"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-medium-aided",
+      "benchmarkId": "gemini-3-8-flash-medium-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-medium-aided-94e96f8e6d",
+          "label": "Rolling, lush forested hills of South Bohemia",
+          "text": "Rolling, lush forested hills of South Bohemia",
+          "description": "Rolling, lush forested hills of South Bohemia.",
+          "groundingPhrase": "Rolling, lush forested hills of South Bohemia",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6577850356294537,
+            "y": 0.24031811337800194,
+            "w": 0.2796654790182106,
+            "h": 0.4455758990187959
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Rolling, lush forested hills of South Bohemia."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Rolling, lush forested hills of South Bohemia."
+            }
+          ],
+          "groundingLabel": "lush forested hills",
+          "ratingsReviewedAt": "2026-09-11T17:54:25.124Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-medium-aided-7d2ead058b",
+          "label": "Český Krumlov",
+          "text": "Český Krumlov",
+          "description": "Český Krumlov.",
+          "groundingPhrase": "Český Krumlov",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Český Krumlov"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Český Krumlov"
+            }
+          ],
+          "groundingLabel": "the crucifix",
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T17:54:50.641Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-medium-aided-fc7a19d3c8",
+          "label": "Cloak Bridge",
+          "text": "Cloak Bridge",
+          "description": "Cloak Bridge.",
+          "groundingPhrase": "Cloak Bridge",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.0025,
+            "y": 0.6795,
+            "w": 0.418,
+            "h": 0.315
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Cloak Bridge"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Cloak Bridge"
+            }
+          ],
+          "groundingLabel": "cloak Bridge",
+          "ratingsReviewedAt": "2026-09-11T17:54:54.885Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-medium-aided-2beae6fa62",
+          "label": "Standing atop the monumental multi-tiered arched stone Cloak Bridge connecting the Upper",
+          "text": "Standing atop the monumental multi-tiered arched stone Cloak Bridge connecting the Upper",
+          "description": "Standing atop the monumental multi-tiered arched stone Cloak Bridge connecting the Upper Castle courtyards.",
+          "groundingPhrase": "Standing atop the monumental multi-tiered arched stone Cloak Bridge connecting the Upper",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Standing atop the monumental multi-tiered arched stone Cloak Bridge connecting the Upper Castle courtyards."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Standing atop the monumental multi-tiered arched stone Cloak Bridge connecting the Upper Castle courtyards."
+            }
+          ],
+          "groundingLabel": "the monumental multi-tiered arched stone Cloak Bridge",
+          "ratingsReviewedAt": "2026-09-11T17:55:16.135Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-medium-aided-448534f41f",
+          "label": "Deep incised horseshoe meander of the Vltava River encircling the old town below",
+          "text": "Deep incised horseshoe meander of the Vltava River encircling the old town below",
+          "description": "Deep incised horseshoe meander of the Vltava River encircling the old town below with weir and footbridge.",
+          "groundingPhrase": "Deep incised horseshoe meander of the Vltava River encircling the old town below",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5672260490894695,
+            "y": 0.514136151471806,
+            "w": 0.2119010292953286,
+            "h": 0.26954550929759846
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Deep incised horseshoe meander of the Vltava River encircling the old town below with weir and footbridge."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Deep incised horseshoe meander of the Vltava River encircling the old town below."
+            }
+          ],
+          "groundingLabel": "Deep incised horseshoe meander",
+          "ratingsReviewedAt": "2026-09-11T17:55:21.440Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-medium-aided-f9f261c0f1",
+          "label": "High-density terracotta Renaissance and Gothic rooftops and the prominent tower of St. V",
+          "text": "High-density terracotta Renaissance and Gothic rooftops and the prominent tower of St. V",
+          "description": "High-density terracotta Renaissance and Gothic rooftops and the prominent tower of St. Vitus Church.",
+          "groundingPhrase": "High-density terracotta Renaissance and Gothic rooftops and the prominent tower of St. V",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.39866943784639747,
+            "y": 0.38868196190619586,
+            "w": 0.056102929532858226,
+            "h": 0.10609056689000976
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "High-density terracotta Renaissance and Gothic rooftops and the prominent tower of St. Vitus Church."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "High-density terracotta Renaissance and Gothic rooftops and the prominent tower of St. Vitus Church."
+            }
+          ],
+          "groundingLabel": "High -density terracotta Renaissance; High - density terracota Renaissance",
+          "ratingsReviewedAt": "2026-09-11T17:55:37.064Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-8-flash-medium-aided-84cbf57db1",
+          "label": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet",
+          "text": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet",
+          "description": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet.",
+          "groundingPhrase": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.2045,
+            "y": 0.1845,
+            "w": 0.217,
+            "h": 0.801
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Baroque stone statue of St. John of Nepomuk holding the crucifix on the parapet."
+            }
+          ],
+          "groundingLabel": "Baroque stone statue",
+          "ratingsReviewedAt": "2026-09-11T17:55:41.836Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh",
+      "benchmarkId": "gpt-5-6-sol-xhigh",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-gpt-5-6-sol-xhigh-7d4e47ee76",
+          "label": "the distinctive river/castle-town form identified Cesky Krumlov",
+          "text": "the distinctive river/castle-town form identified Cesky Krumlov",
+          "description": "The distinctive river/castle-town form identified Cesky Krumlov.",
+          "groundingPhrase": "the distinctive river/castle-town form identified Cesky Krumlov",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "the distinctive river/castle-town form identified Cesky Krumlov."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:55:51.631Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-5-6-sol-xhigh-902b6f01c1",
+          "label": "Compact medieval streets",
+          "text": "Compact medieval streets",
+          "description": "Compact medieval streets.",
+          "groundingPhrase": "Compact medieval streets",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.3679444444444444,
+            "y": 0.4589226972868409,
+            "w": 0.339,
+            "h": 0.233
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Compact medieval streets"
+            }
+          ],
+          "groundingLabel": "compact medieval streets",
+          "ratingsReviewedAt": "2026-09-11T17:55:58.667Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-5-6-sol-xhigh-0e8b60f6c5",
+          "label": "Czech visual context",
+          "text": "Czech visual context",
+          "description": "Czech visual context.",
+          "groundingPhrase": "Czech visual context",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Czech visual context"
+            }
+          ],
+          "groundingLabel": "Czech visual context",
+          "ratingsReviewedAt": "2026-09-11T17:56:32.793Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-5-6-sol-xhigh-de91a73fbd",
+          "label": "red roofs",
+          "text": "red roofs",
+          "description": "Red roofs.",
+          "groundingPhrase": "red roofs",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "red roofs"
+            }
+          ],
+          "groundingLabel": "red roofs",
+          "ratingsReviewedAt": "2026-09-11T17:56:49.533Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max",
+      "benchmarkId": "gpt-5-6-sol-max",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-gpt-5-6-sol-max-21f7c696b2",
+          "label": "red-roofed old town",
+          "text": "red-roofed old town",
+          "description": "Red-roofed old town.",
+          "groundingPhrase": "red-roofed old town",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "red-roofed old town"
+            }
+          ],
+          "groundingLabel": "red-roofed old town; old town",
+          "ratingsReviewedAt": "2026-09-11T17:57:00.134Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-5-6-sol-max-01f424725c",
+          "label": "Tight Vltava bend",
+          "text": "Tight Vltava bend",
+          "description": "Tight Vltava bend.",
+          "groundingPhrase": "Tight Vltava bend",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6322378716744914,
+            "y": 0.5137889985615793,
+            "w": 0.14162754303599367,
+            "h": 0.23332175983334158
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Tight Vltava bend"
+            }
+          ],
+          "groundingLabel": "Tight Vltava bend",
+          "ratingsReviewedAt": "2026-09-11T17:57:03.820Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-5-6-sol-max-ffb8b389ff",
+          "label": "St Vitus church",
+          "text": "St Vitus church",
+          "description": "St Vitus church.",
+          "groundingPhrase": "St Vitus church",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.40234663536776216,
+            "y": 0.380671816874163,
+            "w": 0.05059937402190923,
+            "h": 0.1145913149149348
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "St Vitus church"
+            }
+          ],
+          "groundingLabel": "St Vitus church",
+          "ratingsReviewedAt": "2026-09-11T17:57:06.201Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-5-6-sol-max-e47278e53a",
+          "label": "elevated bridge/viewpoint",
+          "text": "elevated bridge/viewpoint",
+          "description": "Elevated bridge/viewpoint.",
+          "groundingPhrase": "elevated bridge/viewpoint",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "elevated bridge/viewpoint."
+            }
+          ],
+          "groundingLabel": "elevated bridge/viewpoint; bridge/view point",
+          "ratingsReviewedAt": "2026-09-11T17:57:15.878Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-5-6-sol-max-18b2661d34",
+          "label": "castle geometry",
+          "text": "castle geometry",
+          "description": "Castle geometry.",
+          "groundingPhrase": "castle geometry",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.014240219092331769,
+            "y": 0,
+            "w": 0.248,
+            "h": 0.835
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "castle geometry"
+            }
+          ],
+          "groundingLabel": "castle geometry",
+          "ratingsReviewedAt": "2026-09-11T17:57:30.044Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low",
+      "benchmarkId": "gpt-6-astra-low",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-gpt-6-astra-low-00355f6465",
+          "label": "pointed Gothic church and wooded hills. Initial belief",
+          "text": "pointed Gothic church and wooded hills. Initial belief",
+          "description": "Cesky Krumlov castle Cloak Bridge.",
+          "groundingPhrase": "pointed Gothic church and wooded hills. Initial belief",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "pointed Gothic church and wooded hills. Initial belief: Cesky Krumlov castle Cloak Bridge"
+            }
+          ],
+          "groundingLabel": "pointed Gothic church",
+          "ratingsReviewedAt": "2026-09-11T17:57:36.201Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-6-astra-low-530e0cc950",
+          "label": "red-roof town in river bend",
+          "text": "red-roof town in river bend",
+          "description": "Red-roof town in river bend.",
+          "groundingPhrase": "red-roof town in river bend",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "red-roof town in river bend"
+            }
+          ],
+          "groundingLabel": "red-roof town",
+          "ratingsReviewedAt": "2026-09-11T17:57:40.230Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-6-astra-low-6310da92f4",
+          "label": "saint statue holding cross",
+          "text": "saint statue holding cross",
+          "description": "Saint statue holding cross.",
+          "groundingPhrase": "saint statue holding cross",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.2485,
+            "y": 0.1845,
+            "w": 0.137,
+            "h": 0.555
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "saint statue holding cross"
+            }
+          ],
+          "groundingLabel": "saint statue; cross",
+          "ratingsReviewedAt": "2026-09-11T17:57:44.321Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-6-astra-low-621a71d649",
+          "label": "elevated castle passage",
+          "text": "elevated castle passage",
+          "description": "Elevated castle passage.",
+          "groundingPhrase": "elevated castle passage",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "elevated castle passage"
+            }
+          ],
+          "groundingLabel": "elevated castle passage",
+          "ratingsReviewedAt": "2026-09-11T17:57:48.917Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gpt-6-astra-low-9a84bca1d8",
+          "label": "weir below",
+          "text": "weir below",
+          "description": "Weir below.",
+          "groundingPhrase": "weir below",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "weir below"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:57:58.326Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "benchmarkId": "grok-4-6-xhigh",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-grok-4-6-xhigh-527a27caba",
+          "label": "Gothic spire. The apparently Central-European world-map click resolved in Montenegro",
+          "text": "Gothic spire. The apparently Central-European world-map click resolved in Montenegro",
+          "description": "Gothic spire. The apparently Central-European world-map click resolved in Montenegro.",
+          "groundingPhrase": "Gothic spire. The apparently Central-European world-map click resolved in Montenegro",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Gothic spire. The apparently Central-European world-map click resolved in Montenegro."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:58:23.694Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-grok-4-6-xhigh-40ffd44e0e",
+          "label": "Grok correctly recognized the castle",
+          "text": "Grok correctly recognized the castle",
+          "description": "Grok correctly recognized the castle.",
+          "groundingPhrase": "Grok correctly recognized the castle",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.0030680751173708908,
+            "y": 0,
+            "w": 0.2517261345852895,
+            "h": 0.8016683200238083
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Grok correctly recognized the castle"
+            }
+          ],
+          "groundingLabel": "Gothic spire; the castle",
+          "ratingsReviewedAt": "2026-09-11T17:58:40.039Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-grok-4-6-xhigh-4f5245fc89",
+          "label": "Vltava bend",
+          "text": "Vltava bend",
+          "description": "Vltava bend.",
+          "groundingPhrase": "Vltava bend",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6118935837245696,
+            "y": 0.49315510143346064,
+            "w": 0.17918622848200316,
+            "h": 0.2158623084172412
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Vltava bend"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:58:46.574Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-grok-4-6-xhigh-e5ada3047a",
+          "label": "red roofs",
+          "text": "red roofs",
+          "description": "Red roofs.",
+          "groundingPhrase": "red roofs",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "red roofs"
+            }
+          ],
+          "groundingLabel": "Grock; red roofs",
+          "ratingsReviewedAt": "2026-09-11T17:58:54.140Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max",
+      "benchmarkId": "glm-5-3-flash-max",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-1/conversation.json"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-3/conversation.json"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-glm-5-3-flash-max-1b0b48a4a6",
+          "label": "stone saint statue on castle terrace,",
+          "text": "stone saint statue on castle terrace,",
+          "description": "Stone saint statue on castle terrace,.",
+          "groundingPhrase": "stone saint statue on castle terrace,",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.2465,
+            "y": 0.1865,
+            "w": 0.175,
+            "h": 0.711
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "stone saint statue on castle terrace,"
+            }
+          ],
+          "groundingLabel": "stone saint statue",
+          "ratingsReviewedAt": "2026-09-11T17:59:00.193Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-glm-5-3-flash-max-b83e3653a9",
+          "label": "horseshoe river bend around old town,",
+          "text": "horseshoe river bend around old town,",
+          "description": "Horseshoe river bend around old town,.",
+          "groundingPhrase": "horseshoe river bend around old town,",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5936580594679186,
+            "y": 0.4411338971281186,
+            "w": 0.19976917057902974,
+            "h": 0.3166904915430782
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "horseshoe river bend around old town,"
+            }
+          ],
+          "groundingLabel": "horseshoe river bend; old town",
+          "ratingsReviewedAt": "2026-09-11T17:59:02.932Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-glm-5-3-flash-max-26642172f2",
+          "label": "sea of red-tiled medieval roofs,",
+          "text": "sea of red-tiled medieval roofs,",
+          "description": "Sea of red-tiled medieval roofs,.",
+          "groundingPhrase": "sea of red-tiled medieval roofs,",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "sea of red-tiled medieval roofs,"
+            }
+          ],
+          "groundingLabel": "red-tiled medieval roofs",
+          "ratingsReviewedAt": "2026-09-11T17:59:14.414Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-glm-5-3-flash-max-eaa1b8d39c",
+          "label": "single Gothic church spire,",
+          "text": "single Gothic church spire,",
+          "description": "Single Gothic church spire,.",
+          "groundingPhrase": "single Gothic church spire,",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4295,
+            "y": 0.3765,
+            "w": 0.018,
+            "h": 0.097
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "single Gothic church spire,"
+            }
+          ],
+          "groundingLabel": "single Gothic church spire",
+          "ratingsReviewedAt": "2026-09-11T17:59:18.434Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-glm-5-3-flash-max-d82b0fa038",
+          "label": "forested hills. Belief",
+          "text": "forested hills. Belief",
+          "description": "Český Krumlov, from the castle viewpoint. Placing pin at 48.8105, 14.3148.",
+          "groundingPhrase": "forested hills. Belief",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.6604068857589984,
+            "y": 0.2995139130003472,
+            "w": 0.28560250391236314,
+            "h": 0.3793462625861813
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "forested hills. Belief: Český Krumlov, from the castle viewpoint. Placing pin at 48.8105, 14.3148."
+            }
+          ],
+          "groundingLabel": "hills",
+          "ratingsReviewedAt": "2026-09-11T17:59:25.361Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-unaided",
+      "benchmarkId": "gemini-3-7-flash-high-unaided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, unaided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-high-unaided-515c15d73b",
+          "label": "Cloak Bridge (Plášťový most)",
+          "text": "Cloak Bridge (Plášťový most)",
+          "description": "Cloak Bridge (Plášťový most).",
+          "groundingPhrase": "Cloak Bridge",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Cloak Bridge (Plášťový most)"
+            }
+          ],
+          "groundingLabel": "Cloak Bridge",
+          "ratingsReviewedAt": "2026-09-11T17:59:34.460Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-high-unaided-cd1c55ce69",
+          "label": "Vltava river loop",
+          "text": "Vltava river loop",
+          "description": "Vltava river loop.",
+          "groundingPhrase": "Vltava river loop",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5686924882629107,
+            "y": 0.44805046872674964,
+            "w": 0.254057902973396,
+            "h": 0.31312281136848374
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Vltava river loop"
+            }
+          ],
+          "groundingLabel": "Vltava river loop",
+          "ratingsReviewedAt": "2026-09-11T17:59:38.229Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-gemini-3-7-flash-high-unaided-a32e5e26d3",
+          "label": "St. Vitus Church",
+          "text": "St. Vitus Church",
+          "description": "St. Vitus Church.",
+          "groundingPhrase": "St. Vitus Church",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.3951486697965571,
+            "y": 0.3666484797381082,
+            "w": 0.055862284820031305,
+            "h": 0.11750409205892565
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "St. Vitus Church"
+            }
+          ],
+          "groundingLabel": "Vitus Church",
+          "ratingsReviewedAt": "2026-09-11T17:59:42.130Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-004-grok-4-6-xhigh-mcp-8333b26b10",
+          "label": "Castle-terrace saint statue",
+          "text": "Castle-terrace saint statue",
+          "description": "A saint statue stands on the castle terrace.",
+          "groundingPhrase": "Castle-terrace saint statue",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.2485,
+            "y": 0.1865,
+            "w": 0.136,
+            "h": 0.553
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 4 looks like Český Krumlov Castle: red roofs, Vltava weir, and a castle-terrace saint statue."
+            }
+          ],
+          "groundingLabel": "Castle-terrace saint statue",
+          "ratingsReviewedAt": "2026-09-12T17:16:44.406Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-grok-4-6-xhigh-mcp-6fb2de8188",
+          "label": "Red roofs",
+          "text": "Red roofs",
+          "description": "Dense red-tiled roofs are visible below the castle viewpoint.",
+          "groundingPhrase": "Red roofs",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 4 looks like Český Krumlov Castle: red roofs, Vltava weir, and a castle-terrace saint statue."
+            }
+          ],
+          "groundingLabel": "Red roofs",
+          "ratingsReviewedAt": "2026-09-12T17:16:46.993Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-004-grok-4-6-xhigh-mcp-2ba66f2d3d",
+          "label": "Vltava weir",
+          "text": "Vltava weir",
+          "description": "A weir is visible across the Vltava River below.",
+          "groundingPhrase": "Vltava weir",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5726433095803641,
+            "y": 0.5307725287962057,
+            "w": 0.206,
+            "h": 0.2716666917613993
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 4 looks like Český Krumlov Castle: red roofs, Vltava weir, and a castle-terrace saint statue."
+            }
+          ],
+          "groundingLabel": "Vltava weir",
+          "ratingsReviewedAt": "2026-09-12T17:16:53.683Z"
+        }
+      ]
+    }
+  ]
+}

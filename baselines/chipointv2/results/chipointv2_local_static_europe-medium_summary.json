@@ -1,0 +1,73 @@
+{
+  "dataset": "europe-medium",
+  "model": "Chipoint v2 local public street-view fused retrieval",
+  "model_repo": "chiikabu-labs/chipoint-2",
+  "pipeline": "3-tower street retrieval; top-200/tower; z-score fusion; top-64 pool; cluster-consensus prediction",
+  "reranker": "not used",
+  "device": "NVIDIA GeForce GTX 1070",
+  "retrieval_dtype": "torch.float32",
+  "gallery_chunk_rows": 500000,
+  "top_k_prediction": 10,
+  "n_images": 9,
+  "generated_at_utc": "2026-09-13T13:17:07.307008+00:00",
+  "distance_unit": "km",
+  "prediction_error": {
+    "mean_km": 254.803,
+    "median_km": 270.288,
+    "std_km": 161.722,
+    "rmse_km": 301.792,
+    "min_km": 20.496,
+    "max_km": 509.68
+  },
+  "prediction_threshold_accuracy": {
+    "within_1_km_percent": 0.0,
+    "within_25_km_percent": 22.222,
+    "within_200_km_percent": 33.333,
+    "within_750_km_percent": 100.0,
+    "within_2500_km_percent": 100.0
+  },
+  "best_prediction_case": {
+    "location_id": "loc_012",
+    "city_or_region": "Merelbeke, Merelbeke-Melle",
+    "error_km": 20.496
+  },
+  "worst_prediction_case": {
+    "location_id": "loc_014",
+    "city_or_region": "Uppsala",
+    "error_km": 509.68
+  },
+  "timing": {
+    "mode": "per-image-independent",
+    "query_encoding_seconds_by_tower": {
+      "so400m256": 0.743,
+      "gopt": 1.471,
+      "dinov3": 0.607
+    },
+    "retrieval_seconds_by_tower": {
+      "so400m256": 6.933,
+      "gopt": 6.818,
+      "dinov3": 6.887
+    },
+    "total_query_encoding_seconds": 2.82,
+    "total_gallery_retrieval_seconds": 20.638,
+    "inference_definition": "Per-image inference latency: three tower encodes + three independent full-gallery scans + fusion/cluster consensus. Predictions still use the original batched retrieval path; the independent scans are a separate warmed timing pass. Excludes model/download initialization and image disk decoding.",
+    "per_image_inference_seconds": {
+      "loc_009": 3.837,
+      "loc_010": 2.715,
+      "loc_011": 2.653,
+      "loc_012": 2.556,
+      "loc_013": 2.638,
+      "loc_014": 2.607,
+      "loc_015": 2.668,
+      "loc_016": 2.704,
+      "loc_017": 2.734
+    },
+    "inference_seconds_summary": {
+      "mean": 2.79,
+      "median": 2.668,
+      "std_population": 0.374,
+      "min": 2.556,
+      "max": 3.837
+    }
+  }
+}

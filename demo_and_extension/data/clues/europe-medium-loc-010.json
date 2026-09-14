@@ -1,0 +1,3811 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-medium--loc-010",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "benchmarkId": "gemini-3-7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-f8a87cef71",
+          "label": "Street Text on Asphalt",
+          "text": "Street Text on Asphalt",
+          "description": "\"Via Francesco R...\" painted on Italian street surface.",
+          "groundingPhrase": "Street Text on Asphalt",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.4715,
+            "y": 0.5385,
+            "w": 0.067,
+            "h": 0.28
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Street Text on Asphalt: \"Via Francesco R...\" painted on Italian street surface."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Road stencil \"Via Francesco Roncati\""
+            }
+          ],
+          "groundingLabel": "Street Text",
+          "ratingsReviewedAt": "2026-09-11T21:56:08.323Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-25c2aaca46",
+          "label": "Bolognese Architecture",
+          "text": "Bolognese Architecture",
+          "description": "Exposed red-brick and terracotta villas/palazzine (Bologna la Rossa) with dark green window shutters (persiane).",
+          "groundingPhrase": "Bolognese Architecture",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7308474178403757,
+            "y": 0,
+            "w": 0.269,
+            "h": 0.633
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Bolognese Architecture: Exposed red-brick and terracotta villas/palazzine (Bologna la Rossa) with dark green window shutters (persiane)."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Bologna red terracotta brick palazzine"
+            }
+          ],
+          "groundingLabel": "Bolognese Architecture",
+          "ratingsReviewedAt": "2026-09-11T21:56:12.965Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-7ff0bbab7f",
+          "label": "green shutters (persiane)",
+          "text": "green shutters (persiane)",
+          "description": "Green shutters (persiane).",
+          "groundingPhrase": "green shutters",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1515,
+            "y": 0.4155,
+            "w": 0.034,
+            "h": 0.1
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "green shutters (persiane)"
+            }
+          ],
+          "groundingLabel": "green shutters",
+          "ratingsReviewedAt": "2026-09-11T21:56:20.061Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-27078778b2",
+          "label": "Bologna FC balcony banner",
+          "text": "Bologna FC balcony banner",
+          "description": "Bologna FC balcony banner.",
+          "groundingPhrase": "Bologna FC balcony banner",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7939804381846636,
+            "y": 0.2504731660135906,
+            "w": 0.026050860719874804,
+            "h": 0.08074212588661278
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Bologna FC balcony banner."
+            }
+          ],
+          "groundingLabel": "Bologna FC balcony banner; FC balcony banner",
+          "ratingsReviewedAt": "2026-09-11T21:56:23.832Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-695951bbae",
+          "label": "Flora & Environment",
+          "text": "Flora & Environment",
+          "description": "Dense leafy residential avenue characteristic of Northern Italy (Emilia-Romagna).",
+          "groundingPhrase": "Flora & Environment",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Flora & Environment: Dense leafy residential avenue characteristic of Northern Italy (Emilia-Romagna)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T21:56:29.436Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-75a712c649",
+          "label": "Italian Street Furniture",
+          "text": "Italian Street Furniture",
+          "description": "Hera-style municipal sorting containers and Italian \"P\" parking signs.",
+          "groundingPhrase": "Italian Street Furniture",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.1615,
+            "y": 0.4905,
+            "w": 0.227,
+            "h": 0.256
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Italian Street Furniture: Hera-style municipal sorting containers and Italian \"P\" parking signs."
+            }
+          ],
+          "groundingLabel": "Italian Street Furniture",
+          "ratingsReviewedAt": "2026-09-11T21:56:37.911Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-95c670bad0",
+          "label": "Vehicle Fleet",
+          "text": "Vehicle Fleet",
+          "description": "Italian registration plates on parked VW Golf and scooters.",
+          "groundingPhrase": "Vehicle Fleet",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Vehicle Fleet: Italian registration plates on parked VW Golf and scooters."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T21:57:14.630Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash-medium-aided",
+      "benchmarkId": "gemini-3-7-flash-medium-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-medium-aided-51fcd751ee",
+          "label": "Street Name on Road",
+          "text": "Street Name on Road",
+          "description": "Asphalt text \"Via Francesco R...\" in Italian style.",
+          "groundingPhrase": "Street Name on Road",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.47887323943661975,
+            "y": 0.523312335697634,
+            "w": 0.06729264475743348,
+            "h": 0.2539556569614602
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Street nameplate on building facade: \"Via Francesco Roncati\"."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Street Name on Road: Asphalt text \"Via Francesco R...\" in Italian style."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Street nameplate on building facade: \"Via Francesco Roncati\"."
+            }
+          ],
+          "groundingLabel": "Street Name",
+          "ratingsReviewedAt": "2026-09-11T21:57:18.793Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-medium-aided-c84e9015e9",
+          "label": "Municipal Waste Bins",
+          "text": "Municipal Waste Bins",
+          "description": "Italian standard municipal waste collection containers with color-coded lids (yellow, blue, black) and reflective safety markings.",
+          "groundingPhrase": "Municipal Waste Bins",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.1615,
+            "y": 0.4945,
+            "w": 0.227,
+            "h": 0.251
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Italian standard municipal waste collection containers with color-coded lids (yellow, blue, black) and reflective safety markings."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Municipal Waste Bins: Italian multi-stream bins (yellow organic, blue paper, grey general)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Italian standard municipal waste collection containers with color-coded lids (yellow, blue, black) and reflective safety markings."
+            }
+          ],
+          "groundingLabel": "Municipal Waste Bins",
+          "ratingsReviewedAt": "2026-09-11T21:57:22.732Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-medium-aided-7fc1bf1174",
+          "label": "Traffic Signage",
+          "text": "Traffic Signage",
+          "description": "Blue \"P\" parking sign with scooter exemption symbol and standard Italian pedestrian crossing.",
+          "groundingPhrase": "Traffic Signage",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6248521126760562,
+            "y": 0.41165460542631815,
+            "w": 0.03418466353677622,
+            "h": 0.07593611428004564
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Italian urban street furniture: blue \"P\" parking sign with scooter exemption symbol and standard Italian pedestrian crossing."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Traffic Signage: Blue square Italian \"P\" parking sign with motorcycle pictogram."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Italian urban street furniture: blue \"P\" parking sign with scooter exemption symbol and standard Italian pedestrian crossing."
+            }
+          ],
+          "groundingLabel": "Traffic Signage",
+          "ratingsReviewedAt": "2026-09-11T21:57:28.326Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-medium-aided-4427b86deb",
+          "label": "Quintessential Bolognese exposed red brick architecture (mattone a vista)",
+          "text": "Quintessential Bolognese exposed red brick architecture (mattone a vista)",
+          "description": "Quintessential Bolognese exposed red brick architecture (mattone a vista) with decorative ochre window surrounds and green persiane shutters.",
+          "groundingPhrase": "Quintessential Bolognese exposed red brick architecture",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7325,
+            "y": 0.0055,
+            "w": 0.265,
+            "h": 0.6
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Quintessential Bolognese exposed red brick architecture (mattone a vista) with decorative ochre window surrounds and green persiane shutters."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Quintessential Bolognese exposed red brick architecture (mattone a vista) with decorative ochre window surrounds and green persiane shutters."
+            }
+          ],
+          "groundingLabel": "Quintessential Bolognese",
+          "ratingsReviewedAt": "2026-09-11T21:57:36.598Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-medium-aided-2135530fd3",
+          "label": "Local Italian residential ambiance",
+          "text": "Local Italian residential ambiance",
+          "description": "Lush leafy street trees, enclosed wrought-iron garden fences, and Italian registered vehicles.",
+          "groundingPhrase": "Local Italian residential ambiance",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Local Italian residential ambiance: lush leafy street trees, enclosed wrought-iron garden fences, and Italian registered vehicles."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Local Italian residential ambiance: lush leafy street trees, enclosed wrought-iron garden fences, and Italian registered vehicles."
+            }
+          ],
+          "groundingLabel": "Local Italian residential ambiance",
+          "ratingsReviewedAt": "2026-09-11T21:57:40.619Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-medium-aided-33c50524c5",
+          "label": "Architecture",
+          "text": "Architecture",
+          "description": "Northern Italian residential villas with terracotta plaster, brickwork, green window shutters (persiane), and wrought-iron fencing.",
+          "groundingPhrase": "Architecture",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Architecture: Northern Italian residential villas with terracotta plaster, brickwork, green window shutters (persiane), and wrought-iron fencing."
+            }
+          ],
+          "groundingLabel": "red brick architecture; Architecture",
+          "ratingsReviewedAt": "2026-09-11T21:57:47.895Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-high-aided",
+      "benchmarkId": "gemini-3-8-flash-high-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-96c7932ab7",
+          "label": "Characteristic Italian waste management containers (Hera Bologna pedals and color-coded",
+          "text": "Characteristic Italian waste management containers (Hera Bologna pedals and color-coded",
+          "description": "Characteristic Italian waste management containers (Hera Bologna pedals and color-coded recycling lids).",
+          "groundingPhrase": "Characteristic Italian waste management containers (Hera Bologna pedals and color-coded",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1625,
+            "y": 0.4975,
+            "w": 0.224,
+            "h": 0.248
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Italian municipal waste dumpster battery and blue paid parking lines (strisce blu)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Characteristic Italian waste management containers (Hera Bologna pedals and color-coded recycling lids)."
+            }
+          ],
+          "groundingLabel": "Characteristic Italian waste management containers",
+          "ratingsReviewedAt": "2026-09-11T21:57:57.711Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-d69f8e495f",
+          "label": "Street signpost reading 'via Alessandro Guidotti' and 'via Francesco Roncati'",
+          "text": "Street signpost reading 'via Alessandro Guidotti' and 'via Francesco Roncati'",
+          "description": "Street signpost reading 'via Alessandro Guidotti' and 'via Francesco Roncati'.",
+          "groundingPhrase": "Street signpost reading 'via Alessandro Guidotti' and 'via Francesco Roncati'",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.4831904196357878,
+            "y": 0.5409850309919948,
+            "w": 0.054711797307996836,
+            "h": 0.21384857838339733
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Road surface stencil reading \"Via Francesco R...\"."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Street signpost reading 'via Alessandro Guidotti' and 'via Francesco Roncati'."
+            }
+          ],
+          "groundingLabel": "Street signpost reading",
+          "ratingsReviewedAt": "2026-09-11T21:58:05.841Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-dfe317ca5b",
+          "label": "Road asphalt marking stencil",
+          "text": "Road asphalt marking stencil",
+          "description": "Via Francesco Roncati / Guidotti.",
+          "groundingPhrase": "Road asphalt marking stencil",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Via Francesco Roncati / Guidotti"
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Road asphalt marking stencil: 'Via Francesco Roncati'."
+            }
+          ],
+          "groundingLabel": "Road asphalt"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-b77198c80e",
+          "label": "Classic northern Italian warm terracotta/brick facades, green exterior wooden window shu",
+          "text": "Classic northern Italian warm terracotta/brick facades, green exterior wooden window shu",
+          "description": "Classic northern Italian warm terracotta/brick facades, green exterior wooden window shutters, and lush residential sycamore trees.",
+          "groundingPhrase": "Classic northern Italian warm terracotta/brick facades, green exterior wooden window shu",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7285,
+            "y": 0.0045,
+            "w": 0.269,
+            "h": 0.679
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Classic North Italian terracotta brick facades, ochre plaster, deep green window shutters (persiane)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Classic northern Italian warm terracotta/brick facades, green exterior wooden window shutters, and lush residential sycamore trees."
+            }
+          ],
+          "groundingLabel": "Classic northern Italian warm terracotta/brick facades",
+          "ratingsReviewedAt": "2026-09-11T21:58:15.322Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-9572bd7a22",
+          "label": "Residential neighborhood layout characteristic of southwestern Bologna near the engineer",
+          "text": "Residential neighborhood layout characteristic of southwestern Bologna near the engineer",
+          "description": "Residential neighborhood layout characteristic of southwestern Bologna near the engineering faculty.",
+          "groundingPhrase": "Residential neighborhood layout characteristic of southwestern Bologna near the engineer",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Residential neighborhood layout characteristic of southwestern Bologna near the engineering faculty."
+            }
+          ],
+          "groundingLabel": "Residential neighborhood layout characteristic",
+          "ratingsReviewedAt": "2026-09-11T21:58:24.321Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-a2cd7b728d",
+          "label": "Italian automobile registrations",
+          "text": "Italian automobile registrations",
+          "description": "Italian automobile registrations with blue Euro-bands on both sides.",
+          "groundingPhrase": "Italian automobile registrations",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Italian automobile registrations with blue Euro-bands on both sides."
+            }
+          ],
+          "groundingLabel": "Italian automobile registrations",
+          "ratingsReviewedAt": "2026-09-11T21:58:30.278Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-057528c069",
+          "label": "Blue Italian motorcycle parking sign 'P' and zone 30 speed limit sign",
+          "text": "Blue Italian motorcycle parking sign 'P' and zone 30 speed limit sign",
+          "description": "Blue Italian motorcycle parking sign 'P' and zone 30 speed limit sign.",
+          "groundingPhrase": "Blue Italian motorcycle parking sign 'P' and zone 30 speed limit sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6262866191607285,
+            "y": 0.4138874250294863,
+            "w": 0.028503562945368193,
+            "h": 0.07227282993299705
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Blue Italian motorcycle parking sign 'P' and zone 30 speed limit sign."
+            }
+          ],
+          "groundingLabel": "Blue Italian motorcycle parking sign 'P",
+          "ratingsReviewedAt": "2026-09-11T21:58:42.419Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-medium-aided",
+      "benchmarkId": "gemini-3-8-flash-medium-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-f099333266",
+          "label": "Road surface stencil reading \"Via Francesco R...\"",
+          "text": "Road surface stencil reading \"Via Francesco R...\"",
+          "description": "Road surface stencil reading \"Via Francesco R...\".",
+          "groundingPhrase": "Road surface stencil reading \"Via Francesco R...\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.47752137767220904,
+            "y": 0.5438025420964139,
+            "w": 0.06475138558986543,
+            "h": 0.20518196190619586
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Road surface stencil reading \"Via Francesco R...\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Road surface stencil reading \"Via Francesco R...\"."
+            }
+          ],
+          "groundingLabel": "Road surface stencil reading",
+          "ratingsReviewedAt": "2026-09-11T21:58:47.235Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-b358e7ac0d",
+          "label": "Via Francesco Roncati / Guidotti",
+          "text": "Via Francesco Roncati / Guidotti",
+          "description": "Via Francesco Roncati / Guidotti.",
+          "groundingPhrase": "Via Francesco Roncati / Guidotti",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Via Francesco Roncati / Guidotti"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Via Francesco Roncati / Guidotti"
+            }
+          ],
+          "groundingLabel": "Francesco Roncati / Guidotti",
+          "ratingsReviewedAt": "2026-09-11T21:58:53.280Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-18f57f2ea1",
+          "label": "Italian automobile plates",
+          "text": "Italian automobile plates",
+          "description": "Italian automobile registrations with blue Euro-bands on both sides.",
+          "groundingPhrase": "Italian automobile plates",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Italian automobile registrations with blue Euro-bands on both sides."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Italian automobile plates with blue bands on both ends."
+            }
+          ],
+          "groundingLabel": "Italian automobile plates; Italian blue",
+          "ratingsReviewedAt": "2026-09-11T21:58:59.498Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-8bbdc36cc6",
+          "label": "Italian blue paid parking street striping (strisce blu) and Italian municipal waste dump",
+          "text": "Italian blue paid parking street striping (strisce blu) and Italian municipal waste dump",
+          "description": "Italian blue paid parking street striping (strisce blu) and Italian municipal waste dumpster batteries.",
+          "groundingPhrase": "Italian blue paid parking street striping and Italian municipal waste dump",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6239101346001583,
+            "y": 0.4064696102788025,
+            "w": 0.037214172604909,
+            "h": 0.08172664307761801
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Italian municipal waste dumpster battery and blue paid parking lines (strisce blu)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Italian blue paid parking street striping (strisce blu) and Italian municipal waste dumpster batteries."
+            }
+          ],
+          "groundingLabel": "parking street striping",
+          "ratingsReviewedAt": "2026-09-11T21:59:03.329Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-f4410221f7",
+          "label": "Classic North Italian terracotta brick facades, ochre plaster, deep green window shutter",
+          "text": "Classic North Italian terracotta brick facades, ochre plaster, deep green window shutter",
+          "description": "Classic North Italian terracotta brick facades, ochre plaster, deep green window shutters (persiane).",
+          "groundingPhrase": "Classic North Italian terracotta brick facades, ochre plaster, deep green window shutter",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7305,
+            "y": 0.0045,
+            "w": 0.267,
+            "h": 0.675
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Classic North Italian terracotta brick facades, ochre plaster, deep green window shutters (persiane)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Classic North Italian terracotta brick facades, ochre plaster, deep green window shutters (persiane)."
+            }
+          ],
+          "groundingLabel": "Classic North Italian terracotta brick facades",
+          "ratingsReviewedAt": "2026-09-11T21:59:06.953Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-bf26491e8e",
+          "label": "Bologna foothill urban morphology leading south toward the Apennines",
+          "text": "Bologna foothill urban morphology leading south toward the Apennines",
+          "description": "Bologna foothill urban morphology leading south toward the Apennines.",
+          "groundingPhrase": "Bologna foothill urban morphology leading south toward the Apennines",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Bologna foothill urban morphology leading south toward the Apennines."
+            }
+          ],
+          "groundingLabel": "Bologna foothill urban morphology; the Apennines",
+          "ratingsReviewedAt": "2026-09-11T21:59:34.432Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-9572bd7a22",
+          "label": "Residential neighborhood layout characteristic of southwestern Bologna near the engineer",
+          "text": "Residential neighborhood layout characteristic of southwestern Bologna near the engineer",
+          "description": "Residential neighborhood layout characteristic of southwestern Bologna near the engineering faculty.",
+          "groundingPhrase": "Residential neighborhood layout characteristic of southwestern Bologna near the engineer",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Residential neighborhood layout characteristic of southwestern Bologna near the engineering faculty."
+            }
+          ],
+          "groundingLabel": "Residential neighborhood layout characteristic",
+          "ratingsReviewedAt": "2026-09-11T21:59:39.307Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh",
+      "benchmarkId": "gpt-5-6-sol-xhigh",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-xhigh-798f5ae176",
+          "label": "Bologna-specific central streets identified Bologna",
+          "text": "Bologna-specific central streets identified Bologna",
+          "description": "Bologna-specific central streets identified Bologna.",
+          "groundingPhrase": "Bologna-specific central streets identified Bologna",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Bologna-specific central streets identified Bologna."
+            }
+          ],
+          "groundingLabel": "Bologna-specific central streets",
+          "ratingsReviewedAt": "2026-09-11T21:59:46.110Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-xhigh-c4eb478a71",
+          "label": "red-brick Italian fabric",
+          "text": "red-brick Italian fabric",
+          "description": "Red-brick Italian fabric.",
+          "groundingPhrase": "red-brick Italian fabric",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7456964006259781,
+            "y": 0,
+            "w": 0.2543035993740219,
+            "h": 0.6015574624274589
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "red-brick Italian fabric"
+            }
+          ],
+          "groundingLabel": "red-brick Italian fabric",
+          "ratingsReviewedAt": "2026-09-11T21:59:49.839Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-xhigh-cd8a0c4488",
+          "label": "Long arcades",
+          "text": "Long arcades",
+          "description": "Long arcades.",
+          "groundingPhrase": "Long arcades",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Long arcades"
+            }
+          ],
+          "groundingLabel": "Long arcades; arcades",
+          "ratingsReviewedAt": "2026-09-11T22:00:07.599Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low",
+      "benchmarkId": "gpt-6-astra-low",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-66e228389f",
+          "label": "Italian tricolor-edged plates and parking sign",
+          "text": "Italian tricolor-edged plates and parking sign",
+          "description": "Leafy flat street with Italian-style parking sign. Initial belief northern Italy.",
+          "groundingPhrase": "Italian tricolor-edged plates and parking sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.626783452098179,
+            "y": 0.4095299380160104,
+            "w": 0.027673792557402987,
+            "h": 0.07827237822781
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Italian tricolor-edged plates and parking sign"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "leafy flat street with Italian-style parking sign. Initial belief northern Italy"
+            }
+          ],
+          "groundingLabel": "Italian tricolor-edged plates",
+          "ratingsReviewedAt": "2026-09-11T22:00:11.730Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-d7fc7df279",
+          "label": "Via Francesco road overlay",
+          "text": "Via Francesco road overlay",
+          "description": "Via Francesco road overlay.",
+          "groundingPhrase": "Via Francesco road overlay",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4781777513855899,
+            "y": 0.5555910185951969,
+            "w": 0.0590585906571655,
+            "h": 0.21724213907500817
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Via Francesco road overlay"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "Via Francesco road label"
+            }
+          ],
+          "groundingLabel": "Francesco road overlay",
+          "ratingsReviewedAt": "2026-09-11T22:00:15.053Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-f77addb9ab",
+          "label": "red-brick villas",
+          "text": "red-brick villas",
+          "description": "Red-brick villas with green shutters.",
+          "groundingPhrase": "red-brick villas",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7309877276326208,
+            "y": 0,
+            "w": 0.26901227236737923,
+            "h": 0.5950604030214058
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "red-brick villas with green shutters"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "red brick residential buildings"
+            }
+          ],
+          "groundingLabel": "red-brick villas; bins",
+          "ratingsReviewedAt": "2026-09-11T22:00:17.979Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-b584d06b56",
+          "label": "Italian metal recycling bins. Initial belief",
+          "text": "Italian metal recycling bins. Initial belief",
+          "description": "Northern Italy.",
+          "groundingPhrase": "Italian metal recycling bins. Initial belief",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1615,
+            "y": 0.4925,
+            "w": 0.227,
+            "h": 0.254
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Italian metal recycling bins. Initial belief: northern Italy"
+            }
+          ],
+          "groundingLabel": "Italian metal",
+          "ratingsReviewedAt": "2026-09-11T22:00:22.373Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-4a94803531",
+          "label": "large plane/linden street trees",
+          "text": "large plane/linden street trees",
+          "description": "Large plane/linden street trees.",
+          "groundingPhrase": "large plane/linden street trees",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4855,
+            "y": 0.0035,
+            "w": 0.349,
+            "h": 0.582
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "large plane/linden street trees"
+            }
+          ],
+          "groundingLabel": "large plane/linden street trees",
+          "ratingsReviewedAt": "2026-09-11T22:00:32.086Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-3fab59f99c",
+          "label": "Bologna residential district",
+          "text": "Bologna residential district",
+          "description": "Bologna residential district.",
+          "groundingPhrase": "Bologna residential district",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Bologna residential district"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:00:40.118Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-d9ff2d6bc3",
+          "label": "large recycling containers",
+          "text": "large recycling containers",
+          "description": "Large recycling containers.",
+          "groundingPhrase": "large recycling containers",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "large recycling containers"
+            }
+          ],
+          "groundingLabel": "large recycling containers"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-012e8c3ee7",
+          "label": "medium country confidence",
+          "text": "medium country confidence",
+          "description": "Medium country confidence.",
+          "groundingPhrase": "medium country confidence",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "medium country confidence"
+            }
+          ],
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T22:00:42.159Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-e7ed5f2f99",
+          "label": "low city confidence",
+          "text": "low city confidence",
+          "description": "Low city confidence.",
+          "groundingPhrase": "low city confidence",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "low city confidence."
+            }
+          ],
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T22:00:43.801Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-9dc93b815f",
+          "label": "Bologna plausible",
+          "text": "Bologna plausible",
+          "description": "Bologna plausible.",
+          "groundingPhrase": "Bologna plausible",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "Bologna plausible"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:00:48.273Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-8d69a0318d",
+          "label": "green shutters",
+          "text": "green shutters",
+          "description": "Green shutters.",
+          "groundingPhrase": "green shutters",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1505,
+            "y": 0.4135,
+            "w": 0.036,
+            "h": 0.103
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "green shutters"
+            }
+          ],
+          "groundingLabel": "green shutters",
+          "ratingsReviewedAt": "2026-09-11T22:00:51.632Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "benchmarkId": "grok-4-6-xhigh",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-grok-4-6-xhigh-7d6508615a",
+          "label": "street furniture produced a correct Italy belief",
+          "text": "street furniture produced a correct Italy belief",
+          "description": "Street furniture produced a correct Italy belief with Bologna among the alternatives.",
+          "groundingPhrase": "street furniture produced a correct Italy belief",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "street furniture produced a correct Italy belief with Bologna among the alternatives."
+            }
+          ],
+          "groundingLabel": "street furniture",
+          "ratingsReviewedAt": "2026-09-11T22:00:58.644Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-grok-4-6-xhigh-4bd3b1da50",
+          "label": "ochre buildings",
+          "text": "ochre buildings",
+          "description": "Ochre buildings.",
+          "groundingPhrase": "ochre buildings",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7275,
+            "y": 0.0045,
+            "w": 0.27,
+            "h": 0.641
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "ochre buildings"
+            }
+          ],
+          "groundingLabel": "ochre buildings",
+          "ratingsReviewedAt": "2026-09-11T22:01:12.414Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-grok-4-6-xhigh-7c92df4001",
+          "label": "Via Francesco",
+          "text": "Via Francesco",
+          "description": "Via Francesco.",
+          "groundingPhrase": "Via Francesco",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4749608763693271,
+            "y": 0.523312335697634,
+            "w": 0.06338028169014082,
+            "h": 0.2237984226972869
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Via Francesco..."
+            }
+          ],
+          "groundingLabel": "Francesco",
+          "ratingsReviewedAt": "2026-09-11T22:01:18.661Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max",
+      "benchmarkId": "gpt-5-6-sol-max",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-max-20440c8831",
+          "label": "dense Emilia-Romagna city geometry",
+          "text": "dense Emilia-Romagna city geometry",
+          "description": "Dense Emilia-Romagna city geometry.",
+          "groundingPhrase": "dense Emilia-Romagna city geometry",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "dense Emilia-Romagna city geometry."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:01:28.156Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-max-2f437c7a34",
+          "label": "brick/arcaded urban fabric",
+          "text": "brick/arcaded urban fabric",
+          "description": "Brick/arcaded urban fabric.",
+          "groundingPhrase": "brick/arcaded urban fabric",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7402190923317684,
+            "y": 0.0027032389266405435,
+            "w": 0.2597809076682316,
+            "h": 0.6285402509796141
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "brick/arcaded urban fabric"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:01:32.860Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-max-7de60fd46d",
+          "label": "local road text",
+          "text": "local road text",
+          "description": "Local road text.",
+          "groundingPhrase": "local road text",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.4715,
+            "y": 0.5385,
+            "w": 0.067,
+            "h": 0.28
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "local road text"
+            }
+          ],
+          "groundingLabel": "local road text",
+          "ratingsReviewedAt": "2026-09-11T22:01:36.534Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-max-bff928e87b",
+          "label": "Italian streetscape",
+          "text": "Italian streetscape",
+          "description": "Italian streetscape.",
+          "groundingPhrase": "Italian streetscape",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Italian streetscape"
+            }
+          ],
+          "groundingLabel": "Italian streetscape",
+          "ratingsReviewedAt": "2026-09-11T22:01:40.314Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-max-13544d62f5",
+          "label": "scooters",
+          "text": "scooters",
+          "description": "Scooters.",
+          "groundingPhrase": "scooters",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5579029733959312,
+            "y": 0.4915678785774515,
+            "w": 0.04616588419405321,
+            "h": 0.08412281136848371
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "scooters"
+            }
+          ],
+          "groundingLabel": "scooters",
+          "ratingsReviewedAt": "2026-09-11T22:01:44.988Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max",
+      "benchmarkId": "glm-5-3-flash-max",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-1/conversation.json"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-3/conversation.json"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-glm-5-3-flash-max-e1e3ebb7e3",
+          "label": "Italian-style bins with stickers. Belief",
+          "text": "Italian-style bins with stickers. Belief",
+          "description": "Bologna, Via Francesco Crispi by Giardini Margherita. Placing pin at 44.4910, 11.3530.",
+          "groundingPhrase": "Italian-style bins with stickers. Belief",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1625,
+            "y": 0.4945,
+            "w": 0.225,
+            "h": 0.251
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "Italian-style bins with stickers. Belief: Bologna, Via Francesco Crispi by Giardini Margherita. Placing pin at 44.4910, 11.3530."
+            }
+          ],
+          "groundingLabel": "Italian-style bins",
+          "ratingsReviewedAt": "2026-09-11T22:01:50.582Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-glm-5-3-flash-max-b3b2662509",
+          "label": "road paint \"Via Francesco Crispi\",",
+          "text": "road paint \"Via Francesco Crispi\",",
+          "description": "Road paint \"Via Francesco Crispi\",.",
+          "groundingPhrase": "road paint \"Via Francesco Crispi\",",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.47809076682316115,
+            "y": 0.5312484499776797,
+            "w": 0.05790297339593121,
+            "h": 0.24443231982540548
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "road paint \"Via Francesco Crispi\","
+            }
+          ],
+          "groundingLabel": "road paint",
+          "ratingsReviewedAt": "2026-09-11T22:01:55.705Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-glm-5-3-flash-max-b9fac49f3e",
+          "label": "blue \"P\" sign + scooters,",
+          "text": "blue \"P\" sign + scooters,",
+          "description": "Blue \"P\" sign + scooters,.",
+          "groundingPhrase": "blue \"P\" sign + scooters,",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.5657276995305164,
+            "y": 0.4058578443529587,
+            "w": 0.08920187793427237,
+            "h": 0.15078617132086702
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "blue \"P\" sign + scooters,"
+            }
+          ],
+          "groundingLabel": "blue; P; sign",
+          "ratingsReviewedAt": "2026-09-11T22:01:59.514Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-glm-5-3-flash-max-316d974991",
+          "label": "red-brick villas",
+          "text": "red-brick villas",
+          "description": "Red-brick villas with gardens,.",
+          "groundingPhrase": "red-brick villas",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7305,
+            "y": 0.0055,
+            "w": 0.267,
+            "h": 0.645
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "red-brick villas with gardens,"
+            }
+          ],
+          "groundingLabel": "red-brick villas",
+          "ratingsReviewedAt": "2026-09-11T22:02:02.823Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-glm-5-3-flash-max-00f1d0f763",
+          "label": "plane-tree avenue,",
+          "text": "plane-tree avenue,",
+          "description": "Plane-tree avenue,.",
+          "groundingPhrase": "plane-tree avenue,",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "plane-tree avenue,"
+            }
+          ],
+          "groundingLabel": "plane-tree avenue",
+          "ratingsReviewedAt": "2026-09-11T22:02:07.037Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-unaided",
+      "benchmarkId": "gemini-3-7-flash-high-unaided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, unaided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-unaided-fb495ce6f8",
+          "label": "\"Via Francesco Roncati\" stencil",
+          "text": "\"Via Francesco Roncati\" stencil",
+          "description": "\"Via Francesco Roncati\" stencil.",
+          "groundingPhrase": "\"Via Francesco Roncati\" stencil",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.48043818466353677,
+            "y": 0.5328356728336888,
+            "w": 0.057120500782472605,
+            "h": 0.225385645553296
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "\"Via Francesco Roncati\" stencil"
+            }
+          ],
+          "groundingLabel": "Via Francesco Roncati",
+          "ratingsReviewedAt": "2026-09-11T22:02:13.481Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-unaided-9e759cfee6",
+          "label": "Italian Hera dumpsters",
+          "text": "Italian Hera dumpsters",
+          "description": "Italian Hera dumpsters.",
+          "groundingPhrase": "Italian Hera dumpsters",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1625,
+            "y": 0.4965,
+            "w": 0.224,
+            "h": 0.249
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Italian Hera dumpsters"
+            }
+          ],
+          "groundingLabel": "Italian Hera dumpsters",
+          "ratingsReviewedAt": "2026-09-11T22:02:17.013Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-unaided-834c59c567",
+          "label": "red brick palazzine",
+          "text": "red brick palazzine",
+          "description": "Red brick palazzine.",
+          "groundingPhrase": "red brick palazzine",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7345,
+            "y": 0.0045,
+            "w": 0.263,
+            "h": 0.601
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "red brick palazzine"
+            }
+          ],
+          "groundingLabel": "red brick palazzine",
+          "ratingsReviewedAt": "2026-09-11T22:02:20.126Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max-static-covered",
+      "benchmarkId": "glm-5-3-flash-max-static-covered",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-glm-5-3-flash-max-static-covered-6bfa475101",
+          "label": "Red-brick \"villini\" (small early-1900s apartment houses) with wrought-iron balconies and shutters",
+          "text": "Red-brick \"villini\" (small early-1900s apartment houses) with wrought-iron balconies and shutters",
+          "description": "Bologna's Cirenaica-like district.",
+          "groundingPhrase": "Red-brick \"villini\" with wrought-iron balconies and shutters",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Red-brick \"villini\" (small early-1900s apartment houses) with wrought-iron balconies and shutters — Bologna's Cirenaica-like district"
+            }
+          ],
+          "groundingLabel": "Red-brick \"villini",
+          "ratingsReviewedAt": "2026-09-12T01:21:05.384Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-glm-5-3-flash-max-static-covered-0ed37e68e3",
+          "label": "Italian blue \"P\" parking sign; scooter parked on the sidewalk",
+          "text": "Italian blue \"P\" parking sign; scooter parked on the sidewalk",
+          "description": "Italian blue \"P\" parking sign; scooter parked on the sidewalk.",
+          "groundingPhrase": "Italian blue \"P\" parking sign; scooter parked on the sidewalk",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.6265,
+            "y": 0.4125,
+            "w": 0.027,
+            "h": 0.07251504429220305
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Italian blue \"P\" parking sign; scooter parked on the sidewalk"
+            }
+          ],
+          "groundingLabel": "Italian blue \"P \" parking sign",
+          "ratingsReviewedAt": "2026-09-12T01:21:13.070Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-glm-5-3-flash-max-static-covered-8063d537ca",
+          "label": "Grey/blue municipal waste containers",
+          "text": "Grey/blue municipal waste containers",
+          "description": "Grey/blue municipal waste containers with orange lids and civic stickers (Italian style).",
+          "groundingPhrase": "Grey/blue municipal waste containers",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.1625,
+            "y": 0.4965,
+            "w": 0.224,
+            "h": 0.249
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Grey/blue municipal waste containers with orange lids and civic stickers (Italian style)"
+            }
+          ],
+          "groundingLabel": "Grey; Grey/blue municipal waste containers",
+          "ratingsReviewedAt": "2026-09-12T01:21:17.405Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-glm-5-3-flash-max-static-covered-7ed970c6c9",
+          "label": "Narrow residential street",
+          "text": "Narrow residential street",
+          "description": "Narrow residential street with zebra crossing and mature linden/plane trees.",
+          "groundingPhrase": "Narrow residential street",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Narrow residential street with zebra crossing and mature linden/plane trees"
+            }
+          ],
+          "groundingLabel": "Narrow residential street",
+          "ratingsReviewedAt": "2026-09-12T01:21:20.309Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-glm-5-3-flash-max-static-covered-33397ec880",
+          "label": "Blue VW Golf",
+          "text": "Blue VW Golf",
+          "description": "Blue VW Golf with EU-strip plates; warm terracotta-and-ochre palette typical of Emilia-Romagna.",
+          "groundingPhrase": "Blue VW Golf",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.5975,
+            "y": 0.5475,
+            "w": 0.14,
+            "h": 0.189
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Blue VW Golf with EU-strip plates; warm terracotta-and-ochre palette typical of Emilia-Romagna"
+            }
+          ],
+          "groundingLabel": "Blue VW Golf",
+          "ratingsReviewedAt": "2026-09-12T02:16:09.269Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low-static-covered",
+      "benchmarkId": "gpt-6-astra-low-static-covered",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-static-covered-1a5546df90",
+          "label": "Shuttered red-brick villas suggest northern or central Italy",
+          "text": "Shuttered red-brick villas suggest northern or central Italy",
+          "description": "Shuttered red-brick villas suggest northern or central Italy.",
+          "groundingPhrase": "Shuttered red-brick villas suggest northern or central Italy",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Shuttered red-brick villas suggest northern or central Italy"
+            }
+          ],
+          "groundingLabel": "red-brick villas",
+          "ratingsReviewedAt": "2026-09-12T01:21:52.402Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-static-covered-f7c51b43ea",
+          "label": "Metal communal bins",
+          "text": "Metal communal bins",
+          "description": "Metal communal bins with red-white reflectors are typical Italian streetscape.",
+          "groundingPhrase": "Metal communal bins",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.1625,
+            "y": 0.4945,
+            "w": 0.225,
+            "h": 0.251
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Metal communal bins with red-white reflectors are typical Italian streetscape"
+            }
+          ],
+          "groundingLabel": "Metal communal bins",
+          "ratingsReviewedAt": "2026-09-12T01:21:57.261Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-static-covered-fedccde353",
+          "label": "Blue curb parking markings support Italy",
+          "text": "Blue curb parking markings support Italy",
+          "description": "Blue curb parking markings support Italy.",
+          "groundingPhrase": "Blue curb parking markings support Italy",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.6286619160728424,
+            "y": 0.41180456222238954,
+            "w": 0.025336500395882866,
+            "h": 0.06263645260859746
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Blue curb parking markings support Italy"
+            }
+          ],
+          "groundingLabel": "Blue curb parking markings support Italy",
+          "ratingsReviewedAt": "2026-09-12T01:22:05.332Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-static-covered-915ccc555c",
+          "label": "Numerous scooters reinforce an Italian urban setting",
+          "text": "Numerous scooters reinforce an Italian urban setting",
+          "description": "Numerous scooters reinforce an Italian urban setting.",
+          "groundingPhrase": "Numerous scooters reinforce an Italian urban setting",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.5597783056215361,
+            "y": 0.48568345504278654,
+            "w": 0.04433887569279493,
+            "h": 0.10118196190619594
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Numerous scooters reinforce an Italian urban setting"
+            }
+          ],
+          "groundingLabel": "Numerous scooters",
+          "ratingsReviewedAt": "2026-09-12T01:22:16.710Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-6-astra-low-static-covered-231404a480",
+          "label": "Flat leafy avenue and warm brick architecture favor Bologna",
+          "text": "Flat leafy avenue and warm brick architecture favor Bologna",
+          "description": "Flat leafy avenue and warm brick architecture favor Bologna.",
+          "groundingPhrase": "Flat leafy avenue and warm brick architecture favor Bologna",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Flat leafy avenue and warm brick architecture favor Bologna"
+            }
+          ],
+          "groundingLabel": "Flat leafy avenue",
+          "ratingsReviewedAt": "2026-09-12T01:22:26.010Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh-static-covered",
+      "benchmarkId": "gpt-5-6-sol-xhigh-static-covered",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-xhigh-static-covered-f19994a79a",
+          "label": "Blue curbside parking lines, sign design, and plates establish Italy",
+          "text": "Blue curbside parking lines, sign design, and plates establish Italy",
+          "description": "Blue curbside parking lines, sign design, and plates establish Italy.",
+          "groundingPhrase": "Blue curbside parking lines, sign design, and plates establish Italy",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.6286619160728424,
+            "y": 0.4101984993349896,
+            "w": 0.02454473475851149,
+            "h": 0.0658485783833973
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Blue curbside parking lines, sign design, and plates establish Italy"
+            }
+          ],
+          "groundingLabel": "Blue curbside parking lines",
+          "ratingsReviewedAt": "2026-09-12T01:22:39.877Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-xhigh-static-covered-a336420f20",
+          "label": "The red-and-blue banner resembles Bologna FC colours",
+          "text": "The red-and-blue banner resembles Bologna FC colours",
+          "description": "A useful city-level clue.",
+          "groundingPhrase": "The red-and-blue banner resembles Bologna FC colours",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.7885985748218528,
+            "y": 0.2624407136941956,
+            "w": 0.029295328582739533,
+            "h": 0.059424326833797586
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The red-and-blue banner resembles Bologna FC colours — a useful city-level clue"
+            }
+          ],
+          "groundingLabel": "The red-and-blue banner",
+          "ratingsReviewedAt": "2026-09-12T01:22:53.100Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-xhigh-static-covered-4f42c5781d",
+          "label": "Red-brick villas",
+          "text": "Red-brick villas",
+          "description": "Red-brick villas with stucco ornament and dark shutters fit Bologna's inner residential belt.",
+          "groundingPhrase": "Red-brick villas",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Red-brick villas with stucco ornament and dark shutters fit Bologna's inner residential belt"
+            }
+          ],
+          "groundingLabel": "Red-brick villas",
+          "ratingsReviewedAt": "2026-09-12T01:22:56.737Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-xhigh-static-covered-86951d2133",
+          "label": "Large communal dumpsters and zebra-crossing form are consistent",
+          "text": "Large communal dumpsters and zebra-crossing form are consistent",
+          "description": "Large communal dumpsters and zebra-crossing form are consistent with Italian city streets.",
+          "groundingPhrase": "Large communal dumpsters and zebra-crossing form are consistent",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.1625,
+            "y": 0.4945,
+            "w": 0.225,
+            "h": 0.251
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Large communal dumpsters and zebra-crossing form are consistent with Italian city streets"
+            }
+          ],
+          "groundingLabel": "Large communal dumpsters",
+          "ratingsReviewedAt": "2026-09-12T01:22:59.536Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-xhigh-static-covered-020062732e",
+          "label": "Flat terrain and deep deciduous canopy",
+          "text": "Flat terrain and deep deciduous canopy",
+          "description": "Flat terrain and deep deciduous canopy match Bologna's Murri/Saragozza neighbourhoods.",
+          "groundingPhrase": "Flat terrain and deep deciduous canopy",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Flat terrain and deep deciduous canopy match Bologna's Murri/Saragozza neighbourhoods"
+            }
+          ],
+          "groundingLabel": "Flat terrain",
+          "ratingsReviewedAt": "2026-09-12T01:23:03.511Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max-static-covered",
+      "benchmarkId": "gpt-5-6-sol-max-static-covered",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-max-static-covered-d835f3d3d3",
+          "label": "Blue curb parking, compact front plates, and parked scooters point to an Italian city",
+          "text": "Blue curb parking, compact front plates, and parked scooters point to an Italian city",
+          "description": "Blue curb parking, compact front plates, and parked scooters point to an Italian city.",
+          "groundingPhrase": "Blue curb parking, compact front plates, and parked scooters point to an Italian city",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.6247030878859857,
+            "y": 0.41341062510978943,
+            "w": 0.03008709422011089,
+            "h": 0.06103038972119755
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Blue curb parking, compact front plates, and parked scooters point to an Italian city"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T01:23:25.126Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-max-static-covered-fcd6da65b3",
+          "label": "Warm stucco, red brick, shutters, and tile roofs strongly",
+          "text": "Warm stucco, red brick, shutters, and tile roofs strongly",
+          "description": "Warm stucco, red brick, shutters, and tile roofs strongly fit Emilia-Romagna.",
+          "groundingPhrase": "Warm stucco, red brick, shutters, and tile roofs strongly",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Warm stucco, red brick, shutters, and tile roofs strongly fit Emilia-Romagna"
+            }
+          ],
+          "groundingLabel": "Warm stucco",
+          "ratingsReviewedAt": "2026-09-12T01:23:28.855Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-max-static-covered-f9f9f6c532",
+          "label": "Large communal bins",
+          "text": "Large communal bins",
+          "description": "Large communal bins with several color-coded lids resemble the waste system used around Bologna.",
+          "groundingPhrase": "Large communal bins",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.16943784639746634,
+            "y": 0.49531983236718613,
+            "w": 0.21456848772763262,
+            "h": 0.268212502195789
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Large communal bins with several color-coded lids resemble the waste system used around Bologna"
+            }
+          ],
+          "groundingLabel": "Large communal bins; The terrain",
+          "ratingsReviewedAt": "2026-09-12T01:23:39.879Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-max-static-covered-ba0eda24d6",
+          "label": "Mature linden-like trees and fenced early twentieth-century villas",
+          "text": "Mature linden-like trees and fenced early twentieth-century villas",
+          "description": "Mature linden-like trees and fenced early twentieth-century villas fit Bologna's residential ring.",
+          "groundingPhrase": "Mature linden-like trees and fenced early twentieth-century villas",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Mature linden-like trees and fenced early twentieth-century villas fit Bologna's residential ring"
+            }
+          ],
+          "groundingLabel": "Mature linden-like trees",
+          "ratingsReviewedAt": "2026-09-12T01:23:43.974Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gpt-5-6-sol-max-static-covered-0660c78eab",
+          "label": "The terrain is flat and densely urban but not monumental, consistent",
+          "text": "The terrain is flat and densely urban but not monumental, consistent",
+          "description": "The terrain is flat and densely urban but not monumental, consistent with neighborhoods south/east of Bologna's core.",
+          "groundingPhrase": "The terrain is flat and densely urban but not monumental, consistent",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The terrain is flat and densely urban but not monumental, consistent with neighborhoods south/east of Bologna's core"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T01:23:48.024Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-static-covered",
+      "benchmarkId": "grok-4-6-xhigh-static-covered",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-grok-4-6-xhigh-static-covered-8cf3b8366d",
+          "label": "Orange-red brick apartment with dark shutters and a small iron balcony",
+          "text": "Orange-red brick apartment with dark shutters and a small iron balcony",
+          "description": "Strongly Emilian / Bolognese “città rossa” masonry.",
+          "groundingPhrase": "Orange-red brick apartment with dark shutters and a small iron balcony",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Orange-red brick apartment with dark shutters and a small iron balcony — strongly Emilian / Bolognese “città rossa” masonry"
+            }
+          ],
+          "groundingLabel": "Orange-red brick apartment",
+          "ratingsReviewedAt": "2026-09-12T01:23:58.704Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-grok-4-6-xhigh-static-covered-0c276382b6",
+          "label": "Italian cassonetti",
+          "text": "Italian cassonetti",
+          "description": "Large metal dumpsters with yellow, blue, and dark lids along the left kerb.",
+          "groundingPhrase": "Italian cassonetti",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.17892755344418043,
+            "y": 0.4916209566112073,
+            "w": 0.209,
+            "h": 0.252
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Italian cassonetti: large metal dumpsters with yellow, blue, and dark lids along the left kerb"
+            }
+          ],
+          "groundingLabel": "Italian cassonetti",
+          "ratingsReviewedAt": "2026-09-12T01:24:09.931Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-grok-4-6-xhigh-static-covered-bcfa04cbc7",
+          "label": "European blue P parking sign, house number 21, scooters on the right",
+          "text": "European blue P parking sign, house number 21, scooters on the right",
+          "description": "Italian residential kit.",
+          "groundingPhrase": "European blue P parking sign, house number 21, scooters on the right",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.6265,
+            "y": 0.4125,
+            "w": 0.02779176563737134,
+            "h": 0.07251504429220305
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "European blue P parking sign, house number 21, scooters on the right — Italian residential kit"
+            }
+          ],
+          "groundingLabel": "European blue P parking sign",
+          "ratingsReviewedAt": "2026-09-12T01:24:15.241Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-grok-4-6-xhigh-static-covered-147be97b8b",
+          "label": "Lush plane-tree corridor, iron fences on brick plinths, ochre building opposite",
+          "text": "Lush plane-tree corridor, iron fences on brick plinths, ochre building opposite",
+          "description": "Northern Italian inner suburb.",
+          "groundingPhrase": "Lush plane-tree corridor, iron fences on brick plinths, ochre building opposite",
+          "source": "starting-image",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Lush plane-tree corridor, iron fences on brick plinths, ochre building opposite — northern Italian inner suburb"
+            }
+          ],
+          "groundingLabel": "Lush plane-tree corridor",
+          "ratingsReviewedAt": "2026-09-12T01:24:18.070Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-grok-4-6-xhigh-static-covered-5c96d19e36",
+          "label": "Small balcony flag",
+          "text": "Small balcony flag",
+          "description": "Small balcony flag with red/blue tones, consistent with local (including Bologna FC) colours.",
+          "groundingPhrase": "Small balcony flag",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": {
+            "x": 0.7925,
+            "y": 0.2555,
+            "w": 0.024,
+            "h": 0.058
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Small balcony flag with red/blue tones, consistent with local (including Bologna FC) colours"
+            }
+          ],
+          "groundingLabel": "small balcony flag",
+          "ratingsReviewedAt": "2026-09-12T01:24:24.938Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-aided-static-covered",
+      "benchmarkId": "gemini-3-7-flash-high-aided-static-covered",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-static-covered-5b054b06ed",
+          "label": "Italian Municipal Dumpsters (Cassonetti)",
+          "text": "Italian Municipal Dumpsters (Cassonetti)",
+          "description": "Metal street waste bins with color-coded lids (yellow for plastics, blue for paper) and reflective red-and-white chevron safety stickers.",
+          "groundingPhrase": "Italian Municipal Dumpsters",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.1625,
+            "y": 0.4925,
+            "w": 0.22641171813143313,
+            "h": 0.24978787422520013
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Italian Municipal Dumpsters (Cassonetti): Metal street waste bins with color-coded lids (yellow for plastics, blue for paper) and reflective red-and-white chevron safety stickers"
+            }
+          ],
+          "groundingLabel": "Italian Municipal Dumpsters",
+          "ratingsReviewedAt": "2026-09-12T01:24:37.060Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-static-covered-1af134ea40",
+          "label": "Strisce Blu & Parking Sign",
+          "text": "Strisce Blu & Parking Sign",
+          "description": "Blue painted on-street paid parking bay markings (\"strisce blu\") alongside an Italian blue \"P\" sign with an auxiliary scooter/moped plate below.",
+          "groundingPhrase": "Strisce Blu & Parking Sign",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.627870150435471,
+            "y": 0.4101984993349896,
+            "w": 0.025336500395882866,
+            "h": 0.0658485783833973
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Strisce Blu & Parking Sign: Blue painted on-street paid parking bay markings (\"strisce blu\") alongside an Italian blue \"P\" sign with an auxiliary scooter/moped plate below"
+            }
+          ],
+          "groundingLabel": "Strisce Blu",
+          "ratingsReviewedAt": "2026-09-12T01:24:43.404Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-static-covered-94cd8c9dc4",
+          "label": "Italian License Plates",
+          "text": "Italian License Plates",
+          "description": "Parked vehicles show standard Italian plates with blue bands on both left and right edges and compact front license plates.",
+          "groundingPhrase": "Italian License Plates",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.6698222486144101,
+            "y": 0.6801363773243996,
+            "w": 0.050438638163103705,
+            "h": 0.06569670506160757
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Italian License Plates: Parked vehicles show standard Italian plates with blue bands on both left and right edges and compact front license plates"
+            }
+          ],
+          "groundingLabel": "Italian License Plates",
+          "ratingsReviewedAt": "2026-09-12T01:24:58.276Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-high-aided-static-covered-5be853d88f",
+          "label": "Architectural Typology",
+          "text": "Architectural Typology",
+          "description": "Exposed red brick villino facades, dark green louvered window shutters (persiane), decorative railings, and lush urban linden trees typical of Northern/Central Italian residential neighborhoods.",
+          "groundingPhrase": "Architectural Typology",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Architectural Typology: Exposed red brick villino facades, dark green louvered window shutters (persiane), decorative railings, and lush urban linden trees typical of Northern/Central Italian residential neighborhoods"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T01:25:03.016Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-medium-aided-static-covered",
+      "benchmarkId": "gemini-3-7-flash-medium-aided-static-covered",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-medium-aided-static-covered-aca7bf48e6",
+          "label": "Municipal Waste Bins",
+          "text": "Municipal Waste Bins",
+          "description": "Standard Italian street dumpster row including yellow-top (plastic/cans), blue-top (CARTA), and dark grey bins with municipal sorting symbols.",
+          "groundingPhrase": "Municipal Waste Bins",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.1625,
+            "y": 0.4945,
+            "w": 0.225,
+            "h": 0.251
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Municipal Waste Bins: Standard Italian street dumpster row including yellow-top (plastic/cans), blue-top (CARTA), and dark grey bins with municipal sorting symbols"
+            }
+          ],
+          "groundingLabel": "Municipal Waste Bins",
+          "ratingsReviewedAt": "2026-09-12T01:25:11.529Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-medium-aided-static-covered-1c3295248a",
+          "label": "Residential Architecture",
+          "text": "Residential Architecture",
+          "description": "Terracotta-toned and red-brick Italian residential villas with dark green external louvers/shutters (persiane) and decorative wrought-iron railings.",
+          "groundingPhrase": "Residential Architecture",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Residential Architecture: Terracotta-toned and red-brick Italian residential villas with dark green external louvers/shutters (persiane) and decorative wrought-iron railings"
+            }
+          ],
+          "groundingLabel": "Residential Architecture",
+          "ratingsReviewedAt": "2026-09-12T01:25:20.718Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-medium-aided-static-covered-aafe6ef92b",
+          "label": "Parking Signage & Markings",
+          "text": "Parking Signage & Markings",
+          "description": "Blue square P parking sign with motorcycle pictogram underneath and blue-painted street parking spaces (strisce blu).",
+          "groundingPhrase": "Parking Signage & Markings",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.6262866191607284,
+            "y": 0.41180456222238954,
+            "w": 0.0277117973079968,
+            "h": 0.07869708148259681
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Parking Signage & Markings: Blue square P parking sign with motorcycle pictogram underneath and blue-painted street parking spaces (strisce blu)"
+            }
+          ],
+          "groundingLabel": "Parking Signage; Signage",
+          "ratingsReviewedAt": "2026-09-12T01:25:42.610Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-7-flash-medium-aided-static-covered-f38fd7a9b5",
+          "label": "Vegetation & Setting",
+          "text": "Vegetation & Setting",
+          "description": "Mature deciduous urban tree canopy lining a quiet Northern/Central Italian residential avenue.",
+          "groundingPhrase": "Vegetation & Setting",
+          "source": "starting-image",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Vegetation & Setting: Mature deciduous urban tree canopy lining a quiet Northern/Central Italian residential avenue"
+            }
+          ],
+          "groundingLabel": "Vegetation",
+          "ratingsReviewedAt": "2026-09-12T01:25:33.371Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash-high-aided-static-covered",
+      "benchmarkId": "gemini-3-8-flash-high-aided-static-covered",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-static-covered-cad144e43d",
+          "label": "Italian Municipal Dumpsters",
+          "text": "Italian Municipal Dumpsters",
+          "description": "Standard Italian galvanized steel street bins with color-coded lids (yellow lid labeled PLASTICA with Italian recycling instructions, blue lid for paper, dark lid for indifferenziata) and red-and-white chevron hazard stripes.",
+          "groundingPhrase": "Italian Municipal Dumpsters",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.1615,
+            "y": 0.4925,
+            "w": 0.226,
+            "h": 0.253
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Italian Municipal Dumpsters: Standard Italian galvanized steel street bins with color-coded lids (yellow lid labeled PLASTICA with Italian recycling instructions, blue lid for paper, dark lid for indifferenziata) and red-and-white chevron hazard stripes"
+            }
+          ],
+          "groundingLabel": "Italian Municipal Dumpsters",
+          "ratingsReviewedAt": "2026-09-12T01:25:52.967Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-static-covered-a77d711b2a",
+          "label": "Local Sports Flag",
+          "text": "Local Sports Flag",
+          "description": "Balcony on the right displays a vertical red-and-blue striped flag (rossoblù) bearing the crest of the local football club Bologna FC 1909.",
+          "groundingPhrase": "Local Sports Flag",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": {
+            "x": 0.7925,
+            "y": 0.2545,
+            "w": 0.024,
+            "h": 0.058
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Local Sports Flag: Balcony on the right displays a vertical red-and-blue striped flag (rossoblù) bearing the crest of the local football club Bologna FC 1909"
+            }
+          ],
+          "groundingLabel": "Local Sports Flag",
+          "ratingsReviewedAt": "2026-09-12T01:25:56.516Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-static-covered-6d076cdcfe",
+          "label": "Road Markings & Signage",
+          "text": "Road Markings & Signage",
+          "description": "Blue painted roadside parking boxes (strisce blu, denoting paid urban parking zones in Italy) and blue square \"P\" parking signage with scooter/bike designation.",
+          "groundingPhrase": "Road Markings & Signage",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.6278701504354711,
+            "y": 0.41180456222238954,
+            "w": 0.02454473475851149,
+            "h": 0.0706667670455971
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Road Markings & Signage: Blue painted roadside parking boxes (strisce blu, denoting paid urban parking zones in Italy) and blue square \"P\" parking signage with scooter/bike designation"
+            }
+          ],
+          "groundingLabel": "Road Markings",
+          "ratingsReviewedAt": "2026-09-12T01:26:03.349Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-high-aided-static-covered-18dd80a519",
+          "label": "Distinctive Bolognese Architecture",
+          "text": "Distinctive Bolognese Architecture",
+          "description": "Exposed red-brick residential villa architecture (villino) with decorative plaster window friezes, dark green wooden shutters (persiane), and lush mature plane-tree-lined sidewalks.",
+          "groundingPhrase": "Distinctive Bolognese Architecture",
+          "source": "starting-image",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Distinctive Bolognese Architecture: Exposed red-brick residential villa architecture (villino) with decorative plaster window friezes, dark green wooden shutters (persiane), and lush mature plane-tree-lined sidewalks"
+            }
+          ],
+          "groundingLabel": "Distinctive Bolognese Architecture",
+          "ratingsReviewedAt": "2026-09-12T01:26:05.223Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash-medium-aided-static-covered",
+      "benchmarkId": "gemini-3-8-flash-medium-aided-static-covered",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-static-covered-f3ce8b98b3",
+          "label": "Italian Municipal Dumpsters",
+          "text": "Italian Municipal Dumpsters",
+          "description": "Large galvanized steel curbside bins featuring Italian recycling classifications (\"PLASTICA\" on yellow lid, \"CARTA\" on blue lid) with red-and-white reflective corner hazard chevrons.",
+          "groundingPhrase": "Italian Municipal Dumpsters",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.1615,
+            "y": 0.5001363773243995,
+            "w": 0.22049406175771974,
+            "h": 0.24857574845040026
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Italian Municipal Dumpsters: Large galvanized steel curbside bins featuring Italian recycling classifications (\"PLASTICA\" on yellow lid, \"CARTA\" on blue lid) with red-and-white reflective corner hazard chevrons"
+            }
+          ],
+          "groundingLabel": "Italian Municipal Dumpsters",
+          "ratingsReviewedAt": "2026-09-12T01:26:19.023Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-static-covered-a3f406c46e",
+          "label": "Bologna FC Flag",
+          "text": "Bologna FC Flag",
+          "description": "Hanging from the first-floor balcony on the right is a red-and-blue (Rossoblù) supporter flag of Bologna FC 1909.",
+          "groundingPhrase": "Bologna FC Flag",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": {
+            "x": 0.7935,
+            "y": 0.2565,
+            "w": 0.022,
+            "h": 0.054
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Bologna FC Flag: Hanging from the first-floor balcony on the right is a red-and-blue (Rossoblù) supporter flag of Bologna FC 1909"
+            }
+          ],
+          "groundingLabel": "Bologna FC Flag",
+          "ratingsReviewedAt": "2026-09-12T01:26:21.311Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-static-covered-863d797f3f",
+          "label": "Italian Architecture",
+          "text": "Italian Architecture",
+          "description": "Red brick and warm terracotta villas with dark green wooden louvered shutters (persiane), decorative moldings, and stone gateposts.",
+          "groundingPhrase": "Italian Architecture",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Italian Architecture: Red brick and warm terracotta villas with dark green wooden louvered shutters (persiane), decorative moldings, and stone gateposts"
+            }
+          ],
+          "groundingLabel": "Italian Architecture",
+          "ratingsReviewedAt": "2026-09-12T01:26:24.506Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-010-gemini-3-8-flash-medium-aided-static-covered-0e113a59eb",
+          "label": "Parking Zone Signage",
+          "text": "Parking Zone Signage",
+          "description": "Official Italian blue \"P\" sign accompanied by blue painted parking bay lines (strisce blu) on the street.",
+          "groundingPhrase": "Parking Zone Signage",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.6270783847980997,
+            "y": 0.41662275088458933,
+            "w": 0.025336500395882866,
+            "h": 0.05621220105899771
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Parking Zone Signage: Official Italian blue \"P\" sign accompanied by blue painted parking bay lines (strisce blu) on the street"
+            }
+          ],
+          "groundingLabel": "Zone Signage",
+          "ratingsReviewedAt": "2026-09-12T01:26:30.694Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-010-grok-4-6-xhigh-mcp-9ced4e4801",
+          "label": "Via Francesco road label",
+          "text": "Via Francesco road label",
+          "description": "An Italian road label begins with Via Francesco.",
+          "groundingPhrase": "Via Francesco road label",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.4837688044338876,
+            "y": 0.5161986499033853,
+            "w": 0.05700712589073631,
+            "h": 0.2585761248713895
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "medium-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "medium-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+              "text": "Round 2 is Italy (Via Francesco…)."
+            }
+          ],
+          "groundingLabel": "Via Francesco road label",
+          "ratingsReviewedAt": "2026-09-12T17:08:11.497Z"
+        }
+      ]
+    }
+  ]
+}

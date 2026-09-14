@@ -1,0 +1,769 @@
+{
+  "schemaVersion": "2.0",
+  "recordingType": "openguessr-round",
+  "recorder": {
+    "name": "OpenGuessr Research Round Recorder",
+    "version": "0.7.8"
+  },
+  "id": "ogrr-2026-09-09T07-34-43-025Z-0c600308-e83c-4aba-ab4c-017c2ca0e999",
+  "sessionId": "session-2026-09-09T07-27-05-640Z-5abb5c5d-c2d2-4dbd-8c92-0381471a72c8",
+  "sourceApplication": "OpenGuessr",
+  "pageUrl": "https://openguessr.com/",
+  "competitionId": "europe-hard",
+  "competitionOverallIndex": 2,
+  "openGuessrCompetitionHint": null,
+  "model": "gemini-3.8-flash-high aided run2",
+  "condition": "interactive-panorama",
+  "configuredCondition": null,
+  "captureMode": "interactive",
+  "restriction": null,
+  "staticImage": null,
+  "playbackActions": [],
+  "departureFrames": [],
+  "finalView": null,
+  "video": {
+    "status": "stopped",
+    "captureId": "round-video-2026-09-09T07-34-43-025Z-35376027-fc02-4fec-b4da-39f6d1fee0b6",
+    "competitionRound": 2,
+    "path": "data/exploration-videos/europe-hard/loc_019/session-2026-09-09T07-27-05-640Z-5abb5c5d-c2d2-4dbd-8c92-0381471a72c8/round-02.webm",
+    "metadataPath": "data/exploration-videos/europe-hard/loc_019/session-2026-09-09T07-27-05-640Z-5abb5c5d-c2d2-4dbd-8c92-0381471a72c8/round-02.json",
+    "mimeType": "video/webm;codecs=vp9",
+    "width": 1920,
+    "height": 1200,
+    "captureStartedAt": "2026-09-09T07:34:43.476Z",
+    "captureStartedAtMs": 1788939283476,
+    "roundOffsetMs": 0,
+    "crop": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 993
+      },
+      "viewport": {
+        "width": 1920,
+        "height": 993,
+        "devicePixelRatio": 1
+      },
+      "target": {
+        "source": "iframe",
+        "tagName": "iframe",
+        "urlFingerprint": "3f62faa0"
+      }
+    },
+    "locationId": "loc_019",
+    "stoppedAt": "2026-09-09T07:39:43.503Z",
+    "stoppedAtMs": 1788939583503
+  },
+  "partial": false,
+  "startedAt": "2026-09-09T07:34:43.025Z",
+  "stoppedAt": "2026-09-09T07:39:43.491Z",
+  "durationMs": 300466,
+  "stopReason": "prediction_submitted",
+  "prediction": {
+    "lat": 46.49939254527429,
+    "lng": 24.49951171875,
+    "capturedAt": "2026-09-09T07:39:43.491Z",
+    "source": "leaflet-map-click",
+    "requestPath": null,
+    "evidencePath": "leaflet:map.svelte-13da2aa.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom"
+  },
+  "config": {
+    "sampleIntervalMs": 250,
+    "positionThresholdM": 0.5,
+    "angleThresholdDeg": 1,
+    "pitchThresholdDeg": 1,
+    "zoomThreshold": 0.05,
+    "maxSilentIntervalMs": 2000,
+    "maxSamples": 50000
+  },
+  "round": {
+    "index": 1,
+    "id": "round-2",
+    "detectedAt": "2026-09-09T07:34:43.025Z",
+    "detectedAtMs": 1788939283025,
+    "endedAt": "2026-09-09T07:39:43.491Z",
+    "endedAtMs": 1788939583491,
+    "roundSignal": "1f6750ec-7466-4b74-a772-e6ba0d43f84c|45.8911426,24.3372001|none",
+    "spawnRequested": {
+      "lat": 45.8911426,
+      "lng": 24.3372001,
+      "heading": 207.45,
+      "pitch": null,
+      "zoom": null,
+      "fov": 90,
+      "panoId": null
+    },
+    "actualStart": {
+      "lat": 45.89114261680554,
+      "lng": 24.337200125134796,
+      "capturedAt": "2026-09-09T07:34:43.473Z",
+      "panoId": "gixVtPPbDQXrrrkQ3WOf_Q"
+    },
+    "sampleCount": 20,
+    "firstSampleSeq": 0,
+    "lastSampleSeq": 19,
+    "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c",
+    "competitionRound": 2,
+    "pageRoundNumber": null,
+    "pageRoundTotal": null,
+    "captureMode": "interactive",
+    "startSource": "streetview-frame",
+    "provisional": false,
+    "frozenAt": "2026-09-09T07:39:43.491Z",
+    "freezeReason": "result_visible",
+    "staticImage": null,
+    "playbackActionCount": 0,
+    "departureFrameCount": 0,
+    "finalView": null,
+    "video": {
+      "status": "stopped",
+      "captureId": "round-video-2026-09-09T07-34-43-025Z-35376027-fc02-4fec-b4da-39f6d1fee0b6",
+      "competitionRound": 2,
+      "path": "data/exploration-videos/europe-hard/loc_019/session-2026-09-09T07-27-05-640Z-5abb5c5d-c2d2-4dbd-8c92-0381471a72c8/round-02.webm",
+      "metadataPath": "data/exploration-videos/europe-hard/loc_019/session-2026-09-09T07-27-05-640Z-5abb5c5d-c2d2-4dbd-8c92-0381471a72c8/round-02.json",
+      "mimeType": "video/webm;codecs=vp9",
+      "width": 1920,
+      "height": 1200,
+      "captureStartedAt": "2026-09-09T07:34:43.476Z",
+      "captureStartedAtMs": 1788939283476,
+      "roundOffsetMs": 0,
+      "crop": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 993
+        },
+        "viewport": {
+          "width": 1920,
+          "height": 993,
+          "devicePixelRatio": 1
+        },
+        "target": {
+          "source": "iframe",
+          "tagName": "iframe",
+          "urlFingerprint": "3f62faa0"
+        }
+      },
+      "locationId": "loc_019",
+      "stoppedAt": "2026-09-09T07:39:43.503Z",
+      "stoppedAtMs": 1788939583503
+    }
+  },
+  "rounds": [
+    {
+      "index": 1,
+      "id": "round-2",
+      "detectedAt": "2026-09-09T07:34:43.025Z",
+      "detectedAtMs": 1788939283025,
+      "endedAt": "2026-09-09T07:39:43.491Z",
+      "endedAtMs": 1788939583491,
+      "roundSignal": "1f6750ec-7466-4b74-a772-e6ba0d43f84c|45.8911426,24.3372001|none",
+      "spawnRequested": {
+        "lat": 45.8911426,
+        "lng": 24.3372001,
+        "heading": 207.45,
+        "pitch": null,
+        "zoom": null,
+        "fov": 90,
+        "panoId": null
+      },
+      "actualStart": {
+        "lat": 45.89114261680554,
+        "lng": 24.337200125134796,
+        "capturedAt": "2026-09-09T07:34:43.473Z",
+        "panoId": "gixVtPPbDQXrrrkQ3WOf_Q"
+      },
+      "sampleCount": 20,
+      "firstSampleSeq": 0,
+      "lastSampleSeq": 19,
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c",
+      "competitionRound": 2,
+      "pageRoundNumber": null,
+      "pageRoundTotal": null,
+      "captureMode": "interactive",
+      "startSource": "streetview-frame",
+      "provisional": false,
+      "frozenAt": "2026-09-09T07:39:43.491Z",
+      "freezeReason": "result_visible",
+      "staticImage": null,
+      "playbackActionCount": 0,
+      "departureFrameCount": 0,
+      "finalView": null,
+      "video": {
+        "status": "stopped",
+        "captureId": "round-video-2026-09-09T07-34-43-025Z-35376027-fc02-4fec-b4da-39f6d1fee0b6",
+        "competitionRound": 2,
+        "path": "data/exploration-videos/europe-hard/loc_019/session-2026-09-09T07-27-05-640Z-5abb5c5d-c2d2-4dbd-8c92-0381471a72c8/round-02.webm",
+        "metadataPath": "data/exploration-videos/europe-hard/loc_019/session-2026-09-09T07-27-05-640Z-5abb5c5d-c2d2-4dbd-8c92-0381471a72c8/round-02.json",
+        "mimeType": "video/webm;codecs=vp9",
+        "width": 1920,
+        "height": 1200,
+        "captureStartedAt": "2026-09-09T07:34:43.476Z",
+        "captureStartedAtMs": 1788939283476,
+        "roundOffsetMs": 0,
+        "crop": {
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1920,
+            "height": 993
+          },
+          "viewport": {
+            "width": 1920,
+            "height": 993,
+            "devicePixelRatio": 1
+          },
+          "target": {
+            "source": "iframe",
+            "tagName": "iframe",
+            "urlFingerprint": "3f62faa0"
+          }
+        },
+        "locationId": "loc_019",
+        "stoppedAt": "2026-09-09T07:39:43.503Z",
+        "stoppedAtMs": 1788939583503
+      }
+    }
+  ],
+  "captureSources": {
+    "api": 20
+  },
+  "sampleCount": 20,
+  "keyMoments": [],
+  "diagnostics": {
+    "events": [
+      {
+        "name": "round_started",
+        "at": "2026-09-09T07:34:43.042Z",
+        "details": {
+          "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c",
+          "spawnRequested": {
+            "lat": 45.8911426,
+            "lng": 24.3372001,
+            "heading": 207.45,
+            "pitch": null,
+            "zoom": null,
+            "fov": 90,
+            "panoId": null
+          },
+          "competitionRound": 2,
+          "pageRoundNumber": null,
+          "pageRoundTotal": null,
+          "captureMode": "interactive",
+          "startSource": "streetview-frame",
+          "provisional": false
+        }
+      },
+      {
+        "name": "api-constructor-hooked",
+        "at": "2026-09-09T07:34:43.086Z",
+        "details": {
+          "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c",
+          "at": "2026-09-09T07:34:43.081Z"
+        }
+      },
+      {
+        "name": "panorama-attached",
+        "at": "2026-09-09T07:34:43.089Z",
+        "details": {
+          "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c",
+          "reason": "method:setPov",
+          "hasPosition": true,
+          "hasPov": true,
+          "hasZoom": true,
+          "at": "2026-09-09T07:34:43.084Z"
+        }
+      },
+      {
+        "name": "interactive_round_video_started",
+        "at": "2026-09-09T07:34:43.479Z",
+        "details": {
+          "captureId": "round-video-2026-09-09T07-34-43-025Z-35376027-fc02-4fec-b4da-39f6d1fee0b6",
+          "competitionRound": 2
+        }
+      },
+      {
+        "name": "interactive_video_crop_captured",
+        "at": "2026-09-09T07:34:43.542Z",
+        "details": {
+          "width": 1920,
+          "height": 993
+        }
+      },
+      {
+        "name": "dom_probe",
+        "at": "2026-09-09T07:34:43.646Z",
+        "details": {
+          "pageState": "round",
+          "roundNumber": null,
+          "roundTotal": null,
+          "modeHint": "streetview",
+          "streetViewCandidateCount": 1
+        }
+      },
+      {
+        "name": "interactive_departure_without_sharp_frame",
+        "at": "2026-09-09T07:35:52.206Z",
+        "details": {
+          "at": "2026-09-09T07:35:52.204Z",
+          "pointerType": "mouse"
+        }
+      },
+      {
+        "name": "prediction_captured",
+        "at": "2026-09-09T07:39:43.492Z",
+        "details": {
+          "requestPath": null,
+          "transport": "leaflet-map-click"
+        }
+      },
+      {
+        "name": "result_visible",
+        "at": "2026-09-09T07:39:43.492Z",
+        "details": {
+          "detectedFrom": "result-control",
+          "label": "Continue",
+          "at": "2026-09-09T07:39:43.491Z"
+        }
+      },
+      {
+        "name": "round_frozen",
+        "at": "2026-09-09T07:39:43.492Z",
+        "details": {
+          "at": "2026-09-09T07:39:43.491Z",
+          "reason": "result_visible",
+          "sampleCount": 20,
+          "predictionCaptured": true
+        }
+      },
+      {
+        "name": "interactive_round_video_saved",
+        "at": "2026-09-09T07:39:43.586Z",
+        "details": {
+          "path": "data/exploration-videos/europe-hard/loc_019/session-2026-09-09T07-27-05-640Z-5abb5c5d-c2d2-4dbd-8c92-0381471a72c8/round-02.webm",
+          "locationId": "loc_019",
+          "reason": "prediction_submitted"
+        }
+      },
+      {
+        "name": "dom_probe",
+        "at": "2026-09-09T07:39:43.706Z",
+        "details": {
+          "pageState": "result",
+          "roundNumber": null,
+          "roundTotal": null,
+          "modeHint": "streetview",
+          "streetViewCandidateCount": 1
+        }
+      }
+    ],
+    "firstCaptureAt": "2026-09-09T07:34:43.473Z",
+    "lastCaptureAt": "2026-09-09T07:38:47.983Z",
+    "truncated": false,
+    "lastPageProbe": {
+      "trigger": "heartbeat",
+      "at": "2026-09-09T07:39:43.703Z",
+      "atMs": 1788939583703,
+      "pageUrl": "https://openguessr.com/",
+      "pathname": "/",
+      "title": "OpenGuessr - Free GeoGuessr Alternative",
+      "pageState": "result",
+      "roundLikelyActive": false,
+      "competitionStartPromptVisible": false,
+      "competitionStartLabel": null,
+      "competitionStartSignature": null,
+      "guessControlVisible": true,
+      "nextControlVisible": true,
+      "resultVisible": true,
+      "roundNumber": null,
+      "roundTotal": null,
+      "modeHint": "streetview",
+      "primaryView": {
+        "lat": 45.8911426,
+        "lng": 24.3372001,
+        "heading": 207.45,
+        "pitch": null,
+        "zoom": null,
+        "fov": 90,
+        "panoId": null,
+        "url": "https://www.google.com/maps/embed/v1/streetview?location=45.8911426%2C24.3372001&key=%5Bredacted%5D&fov=90&language=en&heading=207.45",
+        "urlFingerprint": "3f62faa0",
+        "source": "iframe"
+      },
+      "controlLabels": [
+        "Menu",
+        "Continue",
+        "Layers",
+        "Return",
+        "Guess",
+        "Pin Only",
+        "Pan Only",
+        "✨ Pan+Pin",
+        "🔍+",
+        "🔍−",
+        "z=8",
+        "z=12"
+      ],
+      "diagnostics": {
+        "iframeCount": 2,
+        "imageCount": 76,
+        "streetViewCandidateCount": 1,
+        "nmpzTextDetected": false
+      }
+    }
+  },
+  "samples": [
+    {
+      "seq": 0,
+      "roundIndex": 1,
+      "tMs": 448,
+      "capturedAt": "2026-09-09T07:34:43.473Z",
+      "receivedAt": "2026-09-09T07:34:43.477Z",
+      "lat": 45.89114261680554,
+      "lng": 24.337200125134796,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.4000000059604645,
+      "fov": 90,
+      "panoId": "gixVtPPbDQXrrrkQ3WOf_Q",
+      "source": "api",
+      "reason": "status_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 1,
+      "roundIndex": 1,
+      "tMs": 99782,
+      "capturedAt": "2026-09-09T07:36:22.807Z",
+      "receivedAt": "2026-09-09T07:36:22.809Z",
+      "lat": 45.89114261680554,
+      "lng": 24.337200125134796,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "gixVtPPbDQXrrrkQ3WOf_Q",
+      "source": "api",
+      "reason": "pov_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 2,
+      "roundIndex": 1,
+      "tMs": 100299,
+      "capturedAt": "2026-09-09T07:36:23.324Z",
+      "receivedAt": "2026-09-09T07:36:23.336Z",
+      "lat": 45.89114261680554,
+      "lng": 24.337200125134796,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "UP_MXiHt1smnHOOHVhQEIA",
+      "source": "api",
+      "reason": "pano_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 3,
+      "roundIndex": 1,
+      "tMs": 100402,
+      "capturedAt": "2026-09-09T07:36:23.427Z",
+      "receivedAt": "2026-09-09T07:36:23.431Z",
+      "lat": 45.89098313156353,
+      "lng": 24.33705745785937,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "UP_MXiHt1smnHOOHVhQEIA",
+      "source": "api",
+      "reason": "position_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 4,
+      "roundIndex": 1,
+      "tMs": 101484,
+      "capturedAt": "2026-09-09T07:36:24.509Z",
+      "receivedAt": "2026-09-09T07:36:24.523Z",
+      "lat": 45.89098313156353,
+      "lng": 24.33705745785937,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "5uy-VaX_661dtL3J4HWoJA",
+      "source": "api",
+      "reason": "pano_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 5,
+      "roundIndex": 1,
+      "tMs": 101560,
+      "capturedAt": "2026-09-09T07:36:24.585Z",
+      "receivedAt": "2026-09-09T07:36:24.587Z",
+      "lat": 45.89081948638012,
+      "lng": 24.33691210164991,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "5uy-VaX_661dtL3J4HWoJA",
+      "source": "api",
+      "reason": "position_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 6,
+      "roundIndex": 1,
+      "tMs": 163706,
+      "capturedAt": "2026-09-09T07:37:26.731Z",
+      "receivedAt": "2026-09-09T07:37:26.732Z",
+      "lat": 45.89081948638012,
+      "lng": 24.33691210164991,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "5uy-VaX_661dtL3J4HWoJA",
+      "source": "api",
+      "reason": "pov_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 7,
+      "roundIndex": 1,
+      "tMs": 164217,
+      "capturedAt": "2026-09-09T07:37:27.242Z",
+      "receivedAt": "2026-09-09T07:37:27.255Z",
+      "lat": 45.89081948638012,
+      "lng": 24.33691210164991,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "NX6HEiJOFAz_UpGDNKsX_A",
+      "source": "api",
+      "reason": "pano_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 8,
+      "roundIndex": 1,
+      "tMs": 164323,
+      "capturedAt": "2026-09-09T07:37:27.348Z",
+      "receivedAt": "2026-09-09T07:37:27.352Z",
+      "lat": 45.89065198149728,
+      "lng": 24.336764089412803,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "NX6HEiJOFAz_UpGDNKsX_A",
+      "source": "api",
+      "reason": "position_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 9,
+      "roundIndex": 1,
+      "tMs": 165214,
+      "capturedAt": "2026-09-09T07:37:28.239Z",
+      "receivedAt": "2026-09-09T07:37:28.244Z",
+      "lat": 45.89065198149728,
+      "lng": 24.336764089412803,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "MyL9oMvJP-yvA2Ndv4CDzQ",
+      "source": "api",
+      "reason": "pano_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 10,
+      "roundIndex": 1,
+      "tMs": 165331,
+      "capturedAt": "2026-09-09T07:37:28.356Z",
+      "receivedAt": "2026-09-09T07:37:28.358Z",
+      "lat": 45.89048701858007,
+      "lng": 24.33661742323836,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "MyL9oMvJP-yvA2Ndv4CDzQ",
+      "source": "api",
+      "reason": "position_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 11,
+      "roundIndex": 1,
+      "tMs": 166180,
+      "capturedAt": "2026-09-09T07:37:29.205Z",
+      "receivedAt": "2026-09-09T07:37:29.210Z",
+      "lat": 45.89048701858007,
+      "lng": 24.33661742323836,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "BXrbHxepCbOsV8omhlqZoA",
+      "source": "api",
+      "reason": "pano_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 12,
+      "roundIndex": 1,
+      "tMs": 166237,
+      "capturedAt": "2026-09-09T07:37:29.262Z",
+      "receivedAt": "2026-09-09T07:37:29.263Z",
+      "lat": 45.890327097799876,
+      "lng": 24.336473290846417,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "BXrbHxepCbOsV8omhlqZoA",
+      "source": "api",
+      "reason": "position_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 13,
+      "roundIndex": 1,
+      "tMs": 242298,
+      "capturedAt": "2026-09-09T07:38:45.323Z",
+      "receivedAt": "2026-09-09T07:38:45.324Z",
+      "lat": 45.890327097799876,
+      "lng": 24.336473290846417,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "BXrbHxepCbOsV8omhlqZoA",
+      "source": "api",
+      "reason": "pov_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 14,
+      "roundIndex": 1,
+      "tMs": 242805,
+      "capturedAt": "2026-09-09T07:38:45.830Z",
+      "receivedAt": "2026-09-09T07:38:45.849Z",
+      "lat": 45.890327097799876,
+      "lng": 24.336473290846417,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "Dr-1NTzlRfNSVJMguRzVoA",
+      "source": "api",
+      "reason": "pano_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 15,
+      "roundIndex": 1,
+      "tMs": 242959,
+      "capturedAt": "2026-09-09T07:38:45.984Z",
+      "receivedAt": "2026-09-09T07:38:45.987Z",
+      "lat": 45.89016899759638,
+      "lng": 24.33632961271842,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "Dr-1NTzlRfNSVJMguRzVoA",
+      "source": "api",
+      "reason": "position_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 16,
+      "roundIndex": 1,
+      "tMs": 243818,
+      "capturedAt": "2026-09-09T07:38:46.843Z",
+      "receivedAt": "2026-09-09T07:38:46.852Z",
+      "lat": 45.89016899759638,
+      "lng": 24.33632961271842,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "i9hQomtiE8Hejzun1yrgkg",
+      "source": "api",
+      "reason": "pano_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 17,
+      "roundIndex": 1,
+      "tMs": 243894,
+      "capturedAt": "2026-09-09T07:38:46.919Z",
+      "receivedAt": "2026-09-09T07:38:46.922Z",
+      "lat": 45.890012600422075,
+      "lng": 24.336185207560323,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "i9hQomtiE8Hejzun1yrgkg",
+      "source": "api",
+      "reason": "position_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 18,
+      "roundIndex": 1,
+      "tMs": 244854,
+      "capturedAt": "2026-09-09T07:38:47.879Z",
+      "receivedAt": "2026-09-09T07:38:47.891Z",
+      "lat": 45.890012600422075,
+      "lng": 24.336185207560323,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "c7ymPNljPCznqQ7dmGsYmg",
+      "source": "api",
+      "reason": "pano_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    },
+    {
+      "seq": 19,
+      "roundIndex": 1,
+      "tMs": 244958,
+      "capturedAt": "2026-09-09T07:38:47.983Z",
+      "receivedAt": "2026-09-09T07:38:47.985Z",
+      "lat": 45.889855453495905,
+      "lng": 24.33603391436308,
+      "heading": 207.4499969482422,
+      "pitch": 0,
+      "zoom": 0.40000000596046437,
+      "fov": 90,
+      "panoId": "c7ymPNljPCznqQ7dmGsYmg",
+      "source": "api",
+      "reason": "position_changed",
+      "frameInstanceId": "1f6750ec-7466-4b74-a772-e6ba0d43f84c"
+    }
+  ],
+  "receivedAt": "2026-09-09T07:39:43.941Z",
+  "competitionPartId": "europe-hard",
+  "competitionPart": 1,
+  "competitionRound": 2,
+  "atlasLocationId": "europe-hard--loc-019",
+  "locationId": "loc_019",
+  "locationMatch": {
+    "method": "nearest-start-coordinate",
+    "distanceMeters": 0
+  }
+}

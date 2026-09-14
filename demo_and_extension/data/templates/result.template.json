@@ -1,0 +1,25 @@
+{
+  "$schema": "../../schema/result.schema.json",
+  "schemaVersion": "1.0",
+  "locationId": "city-landmark-slug",
+  "runs": [
+    {
+      "id": "city-landmark-model-interactive-001",
+      "model": "Model name exactly as configured in the extension",
+      "condition": "interactive-panorama",
+      "prediction": {
+        "lat": 0,
+        "lng": 0,
+        "label": "Optional readable prediction label"
+      },
+      "hypothesis": "The model's pre-map location hypothesis.",
+      "accuracy": {
+        "country": null,
+        "region": null
+      },
+      "cues": [],
+      "notes": "Optional run notes.",
+      "isMock": false
+    }
+  ]
+}

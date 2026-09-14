@@ -1,0 +1,52 @@
+{
+  "dataset": "europe-easy",
+  "model": "GeoCLIP",
+  "device": "cpu",
+  "n_images": 8,
+  "generated_at_utc": "2026-09-13T12:34:10.619837+00:00",
+  "distance_unit": "km",
+  "top1_error": {
+    "mean_km": 108.725,
+    "median_km": 0.605,
+    "std_km": 212.894,
+    "rmse_km": 239.051,
+    "min_km": 0.112,
+    "max_km": 637.86
+  },
+  "top1_threshold_accuracy": {
+    "within_1_km_percent": 62.5,
+    "within_25_km_percent": 75.0,
+    "within_200_km_percent": 75.0,
+    "within_750_km_percent": 100.0,
+    "within_2500_km_percent": 100.0
+  },
+  "topk_oracle": {
+    "mean_best_candidate_error_km": 88.61,
+    "median_best_candidate_error_km": 0.577,
+    "threshold_accuracy": {
+      "within_1_km_percent": 62.5,
+      "within_25_km_percent": 75.0,
+      "within_200_km_percent": 87.5,
+      "within_750_km_percent": 100.0,
+      "within_2500_km_percent": 100.0
+    }
+  },
+  "best_top1_case": {
+    "location_id": "loc_002",
+    "city_or_region": "Berlin",
+    "error_km": 0.112
+  },
+  "worst_top1_case": {
+    "location_id": "loc_006",
+    "city_or_region": "Sieniawka, Gmina Bogatynia",
+    "error_km": 637.86
+  },
+  "timing": {
+    "definition": "Warm per-image inference after one-time model loading; includes preprocessing, model forward pass, gallery scoring and top-k prediction; excludes image disk decoding and evaluation metrics.",
+    "model_load_seconds": 3.302,
+    "mean_inference_seconds": 15.117,
+    "median_inference_seconds": 15.039,
+    "std_inference_seconds": 0.196,
+    "total_inference_seconds": 120.932
+  }
+}

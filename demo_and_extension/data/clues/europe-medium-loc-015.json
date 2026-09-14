@@ -1,0 +1,3737 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-medium--loc-015",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "benchmarkId": "gemini-3-7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-0da6f4abab",
+          "label": "Baltic Gable Architecture",
+          "text": "Baltic Gable Architecture",
+          "description": "Steep-pitched gable roofs on detached suburban homes with timber/stucco siding.",
+          "groundingPhrase": "Baltic Gable Architecture",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0,
+            "y": 0,
+            "w": 0.24295931142410016,
+            "h": 0.4167421258866128
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Baltic Gable Architecture: Steep-pitched gable roofs on detached suburban homes with timber/stucco siding."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Baltic wooden residential houses with horizontal timber siding"
+            }
+          ],
+          "groundingLabel": "Baltic Gable Architecture",
+          "ratingsReviewedAt": "2026-09-11T22:33:55.897Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-3da9d894b7",
+          "label": "Garden Fences & Grounds",
+          "text": "Garden Fences & Grounds",
+          "description": "Picket/wire property fencing with neat flowerbeds (marigolds) and driveway entrances.",
+          "groundingPhrase": "Garden Fences & Grounds",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0045,
+            "y": 0.4745,
+            "w": 0.992,
+            "h": 0.517
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Garden Fences & Grounds: Picket/wire property fencing with neat flowerbeds (marigolds) and driveway entrances."
+            }
+          ],
+          "groundingLabel": "Garden Fences",
+          "ratingsReviewedAt": "2026-09-11T22:34:00.449Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-ff3bec8de5",
+          "label": "Street Name on Asphalt",
+          "text": "Street Name on Asphalt",
+          "description": "\"Sepakuru tn\" (Estonian Sepakuru tänav).",
+          "groundingPhrase": "Street Name on Asphalt",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6155,
+            "y": 0.5785,
+            "w": 0.081,
+            "h": 0.193
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Street Name on Asphalt: \"Sepakuru tn\" (Estonian Sepakuru tänav)."
+            }
+          ],
+          "groundingLabel": "Street Name",
+          "ratingsReviewedAt": "2026-09-11T22:34:04.169Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-04c28de588",
+          "label": "Road stencil \"Sepakuru tn\"",
+          "text": "Road stencil \"Sepakuru tn\"",
+          "description": "Road stencil \"Sepakuru tn\".",
+          "groundingPhrase": "Road stencil \"Sepakuru tn\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Road stencil \"Sepakuru tn\""
+            }
+          ],
+          "groundingLabel": "Road stencil"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-f57653b846",
+          "label": "Flora & Environment",
+          "text": "Flora & Environment",
+          "description": "Birch and Scots pine trees typical of Baltic climate.",
+          "groundingPhrase": "Flora & Environment",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.1605,
+            "y": 0.6955,
+            "w": 0.08,
+            "h": 0.104
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Flora & Environment: Birch and Scots pine trees typical of Baltic climate."
+            }
+          ],
+          "groundingLabel": "Flora",
+          "ratingsReviewedAt": "2026-09-11T22:34:07.147Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-81b9969af2",
+          "label": "wooden utility poles",
+          "text": "wooden utility poles",
+          "description": "Wooden utility poles.",
+          "groundingPhrase": "wooden utility poles",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.5915,
+            "y": 0.2625,
+            "w": 0.042,
+            "h": 0.259
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "wooden utility poles."
+            }
+          ],
+          "groundingLabel": "wooden utility poles",
+          "ratingsReviewedAt": "2026-09-11T22:34:11.173Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-3f7e9b9eea",
+          "label": "fenced garden plots",
+          "text": "fenced garden plots",
+          "description": "Fenced garden plots.",
+          "groundingPhrase": "fenced garden plots",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0045,
+            "y": 0.6045,
+            "w": 0.3061032863849765,
+            "h": 0.32827275432766234
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "fenced garden plots"
+            }
+          ],
+          "groundingLabel": "fenced garden plots",
+          "ratingsReviewedAt": "2026-09-11T22:34:14.505Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-03131e1eb9",
+          "label": "Urban District",
+          "text": "Urban District",
+          "description": "Sepakuru tänav located in the Variku residential district of Tartu, Estonia.",
+          "groundingPhrase": "Urban District",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Urban District: Sepakuru tänav located in the Variku residential district of Tartu, Estonia."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:34:17.835Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash-medium-aided",
+      "benchmarkId": "gemini-3-7-flash-medium-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-medium-aided-29c7da4938",
+          "label": "Street Name on Asphalt",
+          "text": "Street Name on Asphalt",
+          "description": "Road surface text \"Sepakuru tee\" (Estonian road suffix -tee).",
+          "groundingPhrase": "Street Name on Asphalt",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6181533646322379,
+            "y": 0.5534695699618075,
+            "w": 0.068075117370892,
+            "h": 0.23173453697733248
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Street name stencil painted in white on asphalt: \"Sepakuru\" (Estonian street name)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Street Name on Asphalt: Road surface text \"Sepakuru tee\" (Estonian road suffix -tee)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Street name stencil painted in white on asphalt: \"Sepakuru\" (Estonian street name)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:34:21.450Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-medium-aided-4f9d0c200f",
+          "label": "Estonian residential summer house / cottage (suvila) architecture",
+          "text": "Estonian residential summer house / cottage (suvila) architecture",
+          "description": "Steep A-frame roof with asbestos/slate shingles, plain rough stucco, and wooden fence.",
+          "groundingPhrase": "Estonian residential summer house / cottage architecture",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0015,
+            "y": 0.0035,
+            "w": 0.51,
+            "h": 0.758
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Estonian residential summer house / cottage (suvila) architecture: steep A-frame roof with asbestos/slate shingles, plain rough stucco, and wooden fence."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Estonian residential summer house / cottage (suvila) architecture: steep A-frame roof with asbestos/slate shingles, plain rough stucco, and wooden fence."
+            }
+          ],
+          "groundingLabel": "Estonian residential summer house / cottage architecture",
+          "ratingsReviewedAt": "2026-09-11T22:34:27.059Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-medium-aided-3ad2604553",
+          "label": "Estonian / Baltic temperate mixed forest flora",
+          "text": "Estonian / Baltic temperate mixed forest flora",
+          "description": "Silver birches, Scots pine, Norway spruce, and domestic fruit trees.",
+          "groundingPhrase": "Estonian / Baltic temperate mixed forest flora",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Estonian / Baltic temperate mixed forest flora: silver birches, Scots pine, Norway spruce, and domestic fruit trees."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Estonian / Baltic temperate mixed forest flora: silver birches, Scots pine, Norway spruce, and domestic fruit trees."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:34:31.740Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-medium-aided-298bddb6a7",
+          "label": "Neighboring modern Nordic wooden weatherboard annexes",
+          "text": "Neighboring modern Nordic wooden weatherboard annexes",
+          "description": "Neighboring modern Nordic wooden weatherboard annexes with round porthole windows (härjasilm).",
+          "groundingPhrase": "Neighboring modern Nordic wooden weatherboard annexes",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Neighboring modern Nordic wooden weatherboard annexes with round porthole windows (härjasilm)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Neighboring modern Nordic wooden weatherboard annexes with round porthole windows (härjasilm)."
+            }
+          ],
+          "groundingLabel": "modern Nordic wooden weatherboard annexes",
+          "ratingsReviewedAt": "2026-09-11T22:34:36.224Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-medium-aided-5290568dce",
+          "label": "Utility infrastructure",
+          "text": "Utility infrastructure",
+          "description": "Roadside wooden power poles with overhead electrical wiring.",
+          "groundingPhrase": "Utility infrastructure",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.5923317683881064,
+            "y": 0.26618223302415556,
+            "w": 0.02895148669796558,
+            "h": 0.25236843410545107
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Utility infrastructure: roadside wooden power poles with overhead electrical wiring."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Utility infrastructure: roadside wooden power poles with overhead electrical wiring."
+            }
+          ],
+          "groundingLabel": "Utility infrastructure",
+          "ratingsReviewedAt": "2026-09-11T22:34:41.999Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-medium-aided-3267f19e24",
+          "label": "Estonian Suburban Neighborhood",
+          "text": "Estonian Suburban Neighborhood",
+          "description": "Plaster cottage with steep roof, timber weatherboard home, manicured gardens, picket/metal fencing.",
+          "groundingPhrase": "Estonian Suburban Neighborhood",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Estonian Suburban Neighborhood: Plaster cottage with steep roof, timber weatherboard home, manicured gardens, picket/metal fencing."
+            }
+          ],
+          "groundingLabel": "Estonia Suburban Neighborhood",
+          "ratingsReviewedAt": "2026-09-11T22:34:49.275Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-high-aided",
+      "benchmarkId": "gemini-3-8-flash-high-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-3628a0242e",
+          "label": "Estonian street naming abbreviation 'tn' (tänav = street)",
+          "text": "Estonian street naming abbreviation 'tn' (tänav = street)",
+          "description": "The suffix \"tn\" uniquely designates Estonian tänav (street).",
+          "groundingPhrase": "Estonian street naming abbreviation 'tn'",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "The suffix \"tn\" uniquely designates Estonian tänav (street)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Estonian street naming abbreviation 'tn' (tänav = street)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:34:54.261Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-5cc701e51a",
+          "label": "Deciduous birch and conifer trees in flat Baltic residential topography",
+          "text": "Deciduous birch and conifer trees in flat Baltic residential topography",
+          "description": "Baltic timber and plaster single-family residential dwellings with steep gables and fenced garden plots.",
+          "groundingPhrase": "Deciduous birch and conifer trees in flat Baltic residential topography",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.729090657165479,
+            "y": 0.28092425154959977,
+            "w": 0.2599271575613618,
+            "h": 0.2511514969008005
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Baltic timber and plaster single-family residential dwellings with steep gables and fenced garden plots."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Deciduous birch and conifer trees in flat Baltic residential topography."
+            }
+          ],
+          "groundingLabel": "Deciduous birch",
+          "ratingsReviewedAt": "2026-09-11T22:35:00.150Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-584fdbdc61",
+          "label": "Estonian residential suburban architecture",
+          "text": "Estonian residential suburban architecture",
+          "description": "Detached private houses with steep gabled roofs, wooden horizontal siding and render, picket fences, backyard greenhouse, and manicured lawns.",
+          "groundingPhrase": "Estonian residential suburban architecture",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Flat Southern Estonian landscape and suburban morphology."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Estonian residential suburban architecture: detached private houses with steep gabled roofs, wooden horizontal siding and render, picket fences, backyard greenhouse, and manicured lawns."
+            }
+          ],
+          "groundingLabel": "Estonian residential suburban architecture; Estoninian residential suburban; Estonians residential suburban; Estonnian residential suburban building",
+          "ratingsReviewedAt": "2026-09-11T22:35:05.310Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-fd705d44cb",
+          "label": "Blue Estonian rectangular street signage at residential intersection",
+          "text": "Blue Estonian rectangular street signage at residential intersection",
+          "description": "Blue Estonian rectangular street signage at residential intersection with yield sign.",
+          "groundingPhrase": "Blue Estonian rectangular street signage at residential intersection",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Blue Estonian rectangular street signage at residential intersection with yield sign."
+            }
+          ],
+          "groundingLabel": "Blue Estonian rectangular street signage",
+          "ratingsReviewedAt": "2026-09-11T22:35:13.064Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-edb8bf03c4",
+          "label": "Estonian vehicle plates and municipal infrastructure",
+          "text": "Estonian vehicle plates and municipal infrastructure",
+          "description": "Estonian vehicle plates and municipal infrastructure.",
+          "groundingPhrase": "Estonian vehicle plates and municipal infrastructure",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Estonian vehicle plates and municipal infrastructure."
+            }
+          ],
+          "groundingLabel": "Estoniani vehicle plates",
+          "ratingsReviewedAt": "2026-09-11T22:35:17.535Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-9eaf327807",
+          "label": "Road surface asphalt painted stencil",
+          "text": "Road surface asphalt painted stencil",
+          "description": "'Sepakuru tn'.",
+          "groundingPhrase": "Road surface asphalt painted stencil",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Road surface asphalt painted stencil: 'Sepakuru tn'."
+            }
+          ],
+          "groundingLabel": "Road surface asphalt; stencil"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-0be500d11d",
+          "label": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\"",
+          "text": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\"",
+          "description": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\".",
+          "groundingPhrase": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6165,
+            "y": 0.5815,
+            "w": 0.079,
+            "h": 0.187
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\"."
+            }
+          ],
+          "groundingLabel": "clear road surface text reading",
+          "ratingsReviewedAt": "2026-09-11T22:35:22.417Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-eab2b63b4b",
+          "label": "Sepakuru tn",
+          "text": "Sepakuru tn",
+          "description": "Sepakuru tn.",
+          "groundingPhrase": "Sepakuru tn",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Sepakuru tn"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:35:39.840Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-medium-aided",
+      "benchmarkId": "gemini-3-8-flash-medium-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-medium-aided-b69e9d3379",
+          "label": "The suffix \"tn\" uniquely designates Estonian tänav (street)",
+          "text": "The suffix \"tn\" uniquely designates Estonian tänav (street)",
+          "description": "The suffix \"tn\" uniquely designates Estonian tänav (street).",
+          "groundingPhrase": "The suffix \"tn\" uniquely designates Estonian tänav",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "The suffix \"tn\" uniquely designates Estonian tänav (street)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "The suffix \"tn\" uniquely designates Estonian tänav (street)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:35:48.301Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-medium-aided-fe651abc19",
+          "label": "Baltic timber and plaster single-family residential dwellings",
+          "text": "Baltic timber and plaster single-family residential dwellings",
+          "description": "Baltic timber and plaster single-family residential dwellings with steep gables and fenced garden plots.",
+          "groundingPhrase": "Baltic timber and plaster single-family residential dwellings",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.0025,
+            "y": 0.0045,
+            "w": 0.281,
+            "h": 0.759
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Baltic timber and plaster single-family residential dwellings with steep gables and fenced garden plots."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Baltic timber and plaster single-family residential dwellings with steep gables and fenced garden plots."
+            }
+          ],
+          "groundingLabel": "Baltic timber",
+          "ratingsReviewedAt": "2026-09-11T22:35:54.061Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-medium-aided-8982aebbd6",
+          "label": "Flat Southern Estonian landscape and suburban morphology",
+          "text": "Flat Southern Estonian landscape and suburban morphology",
+          "description": "Flat Southern Estonian landscape and suburban morphology.",
+          "groundingPhrase": "Flat Southern Estonian landscape and suburban morphology",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Flat Southern Estonian landscape and suburban morphology."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Flat Southern Estonian landscape and suburban morphology."
+            }
+          ],
+          "groundingLabel": "Flat Southern Estonian landscape",
+          "ratingsReviewedAt": "2026-09-11T22:35:59.107Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-medium-aided-edb8bf03c4",
+          "label": "Estonian vehicle plates and municipal infrastructure",
+          "text": "Estonian vehicle plates and municipal infrastructure",
+          "description": "Estonian vehicle plates and municipal infrastructure.",
+          "groundingPhrase": "Estonian vehicle plates and municipal infrastructure",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Estonian vehicle plates and municipal infrastructure."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Estonian vehicle plates and municipal infrastructure."
+            }
+          ],
+          "groundingLabel": "Estonian vehicle plates",
+          "ratingsReviewedAt": "2026-09-11T22:36:02.491Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-medium-aided-0be500d11d",
+          "label": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\"",
+          "text": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\"",
+          "description": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\".",
+          "groundingPhrase": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6165,
+            "y": 0.5815,
+            "w": 0.079,
+            "h": 0.187
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Clear road surface text reading \"Sepakuru tn\" and intersecting \"Alasi tn\"."
+            }
+          ],
+          "groundingLabel": "Clear road surface text reading",
+          "ratingsReviewedAt": "2026-09-11T22:36:07.681Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-medium-aided-c8d7712fd6",
+          "label": "Sepakuru tänav",
+          "text": "Sepakuru tänav",
+          "description": "Sepakuru tänav.",
+          "groundingPhrase": "Sepakuru tänav",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Sepakuru tn"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Sepakuru tänav"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:36:15.751Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh",
+      "benchmarkId": "gpt-5-6-sol-xhigh",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-xhigh-2a18661bed",
+          "label": "Tartu-scale city form supported Tartu",
+          "text": "Tartu-scale city form supported Tartu",
+          "description": "Tartu-scale city form supported Tartu.",
+          "groundingPhrase": "Tartu-scale city form supported Tartu",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Tartu-scale city form supported Tartu."
+            }
+          ],
+          "groundingLabel": "Tartu-scale city form",
+          "ratingsReviewedAt": "2026-09-11T22:36:24.616Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-xhigh-7c491856dd",
+          "label": "Estonian language/urban cues",
+          "text": "Estonian language/urban cues",
+          "description": "Estonian language/urban cues.",
+          "groundingPhrase": "Estonian language/urban cues",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6165,
+            "y": 0.5825,
+            "w": 0.078,
+            "h": 0.185
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Estonian language/urban cues"
+            }
+          ],
+          "groundingLabel": "Estonian language/urban cues",
+          "ratingsReviewedAt": "2026-09-11T22:36:29.070Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-xhigh-5a99cd4779",
+          "label": "Baltic streetscape",
+          "text": "Baltic streetscape",
+          "description": "Baltic streetscape.",
+          "groundingPhrase": "Baltic streetscape",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Baltic streetscape"
+            }
+          ],
+          "groundingLabel": "Baltic streetscape",
+          "ratingsReviewedAt": "2026-09-11T22:36:34.995Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low",
+      "benchmarkId": "gpt-6-astra-low",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-5a34513bcf",
+          "label": "narrow patched asphalt without centerline",
+          "text": "narrow patched asphalt without centerline",
+          "description": "Narrow patched asphalt without centerline.",
+          "groundingPhrase": "narrow patched asphalt without centerline",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.555027711797308,
+            "y": 0.43958443122788526,
+            "w": 0.18448139350752168,
+            "h": 0.5507791914477151
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "narrow patched asphalt without centerline"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "narrow patched unmarked road"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:36:43.629Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-9783d11e69",
+          "label": "Tartu southern residential area",
+          "text": "Tartu southern residential area",
+          "description": "Tartu southern residential area.",
+          "groundingPhrase": "Tartu southern residential area",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Tartu southern residential area"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "steep pitched residential roofs"
+            }
+          ],
+          "groundingLabel": "tartu southern residential area",
+          "ratingsReviewedAt": "2026-09-11T22:36:48.983Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-b443b57f0a",
+          "label": "Sepakuru road overlay",
+          "text": "Sepakuru road overlay",
+          "description": "Sepa...? tn road overlay.",
+          "groundingPhrase": "Sepakuru road overlay",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6163226444972288,
+            "y": 0.5757425907801953,
+            "w": 0.0804311163895487,
+            "h": 0.2106510451956134
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Sepakuru road overlay"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "Sepa...? tn road overlay"
+            }
+          ],
+          "groundingLabel": "Sepakuru road overlay",
+          "ratingsReviewedAt": "2026-09-11T22:36:52.772Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-1525fcd61d",
+          "label": "overhead wires and wooden fences. Initial belief Estonia",
+          "text": "overhead wires and wooden fences. Initial belief Estonia",
+          "description": "Overhead wires and wooden fences. Initial belief Estonia.",
+          "groundingPhrase": "overhead wires and wooden fences. Initial belief Estonia",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5907224861441013,
+            "y": 0.26850037642098923,
+            "w": 0.03556413301662714,
+            "h": 0.2657413862330297
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "overhead wires and wooden fences. Initial belief Estonia"
+            }
+          ],
+          "groundingLabel": "overhead wires; initial belief Estonia",
+          "ratingsReviewedAt": "2026-09-11T22:36:57.136Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-88707d8084",
+          "label": "northern European vegetation and white plates. Initial belief",
+          "text": "northern European vegetation and white plates. Initial belief",
+          "description": "Estonia.",
+          "groundingPhrase": "northern European vegetation and white plates. Initial belief",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "northern European vegetation and white plates. Initial belief: Estonia"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:37:01.741Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-dad40651c3",
+          "label": "Estonian-looking low picket fences",
+          "text": "Estonian-looking low picket fences",
+          "description": "Estonian-looking low picket fences.",
+          "groundingPhrase": "Estonian-looking low picket fences",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7218396674584322,
+            "y": 0.4875606288739993,
+            "w": 0.2781603325415678,
+            "h": 0.2755149690080052
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Estonian-looking low picket fences"
+            }
+          ],
+          "groundingLabel": "looking low picket fences; low picket fence",
+          "ratingsReviewedAt": "2026-09-11T22:37:06.339Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-340a420808",
+          "label": "steep plaster/wood gabled homes",
+          "text": "steep plaster/wood gabled homes",
+          "description": "Steep plaster/wood gabled homes.",
+          "groundingPhrase": "steep plaster/wood gabled homes",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "steep plaster/wood gabled homes"
+            }
+          ],
+          "groundingLabel": "steep plaster/wood; homes",
+          "ratingsReviewedAt": "2026-09-11T22:37:11.251Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-53f2b7bad9",
+          "label": "mixed timber/stucco houses",
+          "text": "mixed timber/stucco houses",
+          "description": "Mixed timber/stucco houses.",
+          "groundingPhrase": "mixed timber/stucco houses",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "mixed timber/stucco houses"
+            }
+          ],
+          "groundingLabel": "mixed timber/stucco houses",
+          "ratingsReviewedAt": "2026-09-11T22:37:14.957Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-ccb6c1ab63",
+          "label": "medium country confidence",
+          "text": "medium country confidence",
+          "description": "Medium country confidence.",
+          "groundingPhrase": "medium country confidence",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "medium country confidence"
+            }
+          ],
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T22:37:18.633Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-8f371f8b44",
+          "label": "playing screenshot-only",
+          "text": "playing screenshot-only",
+          "description": "Playing screenshot-only with result artifacts.",
+          "groundingPhrase": "playing screenshot-only",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "playing screenshot-only with result artifacts."
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-907e0ec911",
+          "label": "Tallinn alternative",
+          "text": "Tallinn alternative",
+          "description": "Tallinn alternative.",
+          "groundingPhrase": "Tallinn alternative",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Tallinn alternative."
+            }
+          ],
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T22:37:20.965Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-30dd51bf83",
+          "label": "parent notified",
+          "text": "parent notified",
+          "description": "Parent notified.",
+          "groundingPhrase": "parent notified",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "parent notified"
+            }
+          ],
+          "groundingLabel": "parent notified"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "benchmarkId": "grok-4-6-xhigh",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-grok-4-6-xhigh-8b34a2a840",
+          "label": "the final pin was near the eastern border",
+          "text": "the final pin was near the eastern border",
+          "description": "The final pin was near the eastern border.",
+          "groundingPhrase": "the final pin was near the eastern border",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "the final pin was near the eastern border."
+            }
+          ],
+          "groundingLabel": "the final pin",
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T22:37:25.704Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-grok-4-6-xhigh-ef3ae36f10",
+          "label": "Baltic residential cues correctly identified Estonia",
+          "text": "Baltic residential cues correctly identified Estonia",
+          "description": "Baltic residential cues correctly identified Estonia.",
+          "groundingPhrase": "Baltic residential cues correctly identified Estonia",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Baltic residential cues correctly identified Estonia"
+            }
+          ],
+          "groundingLabel": "Baltic residential cues",
+          "ratingsReviewedAt": "2026-09-11T22:37:31.900Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-grok-4-6-xhigh-c18e5e0337",
+          "label": "Sepakula",
+          "text": "Sepakula",
+          "description": "Sepakula.",
+          "groundingPhrase": "Sepakula",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Sepakula"
+            }
+          ],
+          "groundingLabel": "Sepakula",
+          "ratingsReviewedAt": "2026-09-11T22:37:43.412Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max",
+      "benchmarkId": "gpt-5-6-sol-max",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-max-aba37a5c1a",
+          "label": "Sepa-area industrial/residential context",
+          "text": "Sepa-area industrial/residential context",
+          "description": "Sepa-area industrial/residential context.",
+          "groundingPhrase": "Sepa-area industrial/residential context",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Sepa-area industrial/residential context"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:37:59.161Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-max-44b5515ab6",
+          "label": "local street geometry",
+          "text": "local street geometry",
+          "description": "Local street geometry.",
+          "groundingPhrase": "local street geometry",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "local street geometry."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:38:03.442Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-max-895d6e32b2",
+          "label": "flat Baltic terrain",
+          "text": "flat Baltic terrain",
+          "description": "Flat Baltic terrain.",
+          "groundingPhrase": "flat Baltic terrain",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "flat Baltic terrain"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:38:07.668Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-max-966b519507",
+          "label": "Estonian streetscape",
+          "text": "Estonian streetscape",
+          "description": "Estonian streetscape.",
+          "groundingPhrase": "Estonian streetscape",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Estonian streetscape"
+            }
+          ],
+          "groundingLabel": "Estonian streetscape",
+          "ratingsReviewedAt": "2026-09-11T22:38:11.628Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-max-9c1f65204e",
+          "label": "low-rise housing",
+          "text": "low-rise housing",
+          "description": "Low-rise housing.",
+          "groundingPhrase": "low-rise housing",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0025,
+            "y": 0.0035,
+            "w": 0.509,
+            "h": 0.659
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "low-rise housing"
+            }
+          ],
+          "groundingLabel": "low-rise housing",
+          "ratingsReviewedAt": "2026-09-11T22:38:15.647Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max",
+      "benchmarkId": "glm-5-3-flash-max",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-1/conversation.json"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-3/conversation.json"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-glm-5-3-flash-max-b7762385ac",
+          "label": "\"Sepapaja tn\" paint — Estonian,",
+          "text": "\"Sepapaja tn\" paint — Estonian,",
+          "description": "\"Sepapaja tn\" paint — Estonian,.",
+          "groundingPhrase": "\"Sepapaja tn\" paint — Estonian,",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6135,
+            "y": 0.5775,
+            "w": 0.084,
+            "h": 0.197
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "\"Sepapaja tn\" paint — Estonian,"
+            }
+          ],
+          "groundingLabel": "Sepapaja tn",
+          "ratingsReviewedAt": "2026-09-11T22:38:21.369Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-glm-5-3-flash-max-6724f5b5bc",
+          "label": "wooden fences + marigold beds,",
+          "text": "wooden fences + marigold beds,",
+          "description": "Wooden fences + marigold beds,.",
+          "groundingPhrase": "wooden fences + marigold beds,",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7186799687010954,
+            "y": 0.48819778284807297,
+            "w": 0.2813200312989046,
+            "h": 0.30159218292743417
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "wooden fences + marigold beds,"
+            }
+          ],
+          "groundingLabel": "wooden fences",
+          "ratingsReviewedAt": "2026-09-11T22:38:25.998Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-glm-5-3-flash-max-dce8f2eba1",
+          "label": "heavily patched asphalt. Belief",
+          "text": "heavily patched asphalt. Belief",
+          "description": "Estonia, mid-size town — initial Pärnu. Placing pin at 58.3800, 24.5100.",
+          "groundingPhrase": "heavily patched asphalt. Belief",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.596244131455399,
+            "y": 0.48204454144139675,
+            "w": 0.15884194053208145,
+            "h": 0.45870740538663757
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "heavily patched asphalt. Belief: Estonia, mid-size town — initial Pärnu. Placing pin at 58.3800, 24.5100."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:38:32.334Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-glm-5-3-flash-max-bae4f4c5ae",
+          "label": "worn Soviet-era private houses",
+          "text": "worn Soviet-era private houses",
+          "description": "Worn Soviet-era private houses with satellite dishes,.",
+          "groundingPhrase": "worn Soviet-era private houses",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0015,
+            "y": 0.0035,
+            "w": 0.512,
+            "h": 0.758
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "worn Soviet-era private houses with satellite dishes,"
+            }
+          ],
+          "groundingLabel": "worn Soviet-era private houses",
+          "ratingsReviewedAt": "2026-09-11T22:38:36.596Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-glm-5-3-flash-max-11e05a5cab",
+          "label": "spruces and birches,",
+          "text": "spruces and birches,",
+          "description": "Spruces and birches,.",
+          "groundingPhrase": "spruces and birches,",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4595,
+            "y": 0.3935,
+            "w": 0.102,
+            "h": 0.143
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "spruces and birches,"
+            }
+          ],
+          "groundingLabel": "spruces",
+          "ratingsReviewedAt": "2026-09-11T22:38:42.617Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-unaided",
+      "benchmarkId": "gemini-3-7-flash-high-unaided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, unaided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-unaided-9135804383",
+          "label": "Estonian wooden residential architecture",
+          "text": "Estonian wooden residential architecture",
+          "description": "Estonian wooden residential architecture.",
+          "groundingPhrase": "Estonian wooden residential architecture",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Estonian wooden residential architecture"
+            }
+          ],
+          "groundingLabel": "Estonian wooden residential architecture",
+          "ratingsReviewedAt": "2026-09-11T22:39:07.233Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-unaided-4d6713bd00",
+          "label": "\"Sepakuru tn\" stencil",
+          "text": "\"Sepakuru tn\" stencil",
+          "description": "\"Sepakuru tn\" stencil.",
+          "groundingPhrase": "\"Sepakuru tn\" stencil",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6212832550860721,
+            "y": 0.5725162442339169,
+            "w": 0.06885758998435046,
+            "h": 0.20475174842517738
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "\"Sepakuru tn\" stencil"
+            }
+          ],
+          "groundingLabel": "Sepakuru tn; stencil",
+          "ratingsReviewedAt": "2026-09-11T22:38:50.613Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-unaided-ac576c8fa5",
+          "label": "Baltic terrain",
+          "text": "Baltic terrain",
+          "description": "Baltic terrain.",
+          "groundingPhrase": "Baltic terrain",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Baltic terrain"
+            }
+          ],
+          "groundingLabel": "Baltic terrain"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max-static-covered",
+      "benchmarkId": "glm-5-3-flash-max-static-covered",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-glm-5-3-flash-max-static-covered-e7ef9d1fb5",
+          "label": "Wooden house with vertical panelling and an oval attic window, rusty decorative iron fence",
+          "text": "Wooden house with vertical panelling and an oval attic window, rusty decorative iron fence",
+          "description": "Baltic vernacular.",
+          "groundingPhrase": "Wooden house with vertical panelling and an oval attic window, rusty decorative iron fence",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Wooden house with vertical panelling and an oval attic window, rusty decorative iron fence — Baltic vernacular"
+            }
+          ],
+          "groundingLabel": "Wooden house; an oval attic window; rusty decorative iron fence",
+          "ratingsReviewedAt": "2026-09-12T01:55:44.352Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-glm-5-3-flash-max-static-covered-10a8711a69",
+          "label": "Spruces and birches; picket and mesh garden fences",
+          "text": "Spruces and birches; picket and mesh garden fences",
+          "description": "Spruces and birches; picket and mesh garden fences.",
+          "groundingPhrase": "Spruces and birches; picket and mesh garden fences",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.0035,
+            "y": 0.6045,
+            "w": 0.309,
+            "h": 0.268
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Spruces and birches; picket and mesh garden fences"
+            }
+          ],
+          "groundingLabel": "Spruces",
+          "ratingsReviewedAt": "2026-09-12T01:55:53.412Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-glm-5-3-flash-max-static-covered-79ae0aaa78",
+          "label": "Modern grey metal-roof house with balcony mixed among old wooden stock",
+          "text": "Modern grey metal-roof house with balcony mixed among old wooden stock",
+          "description": "Post-Soviet-era suburb pattern.",
+          "groundingPhrase": "Modern grey metal-roof house with balcony mixed among old wooden stock",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Modern grey metal-roof house with balcony mixed among old wooden stock — post-Soviet-era suburb pattern"
+            }
+          ],
+          "groundingLabel": "Modern grey metal-roof house",
+          "ratingsReviewedAt": "2026-09-12T01:55:58.385Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-glm-5-3-flash-max-static-covered-87ea28660f",
+          "label": "Narrow patched asphalt lane; overhead wires on poles",
+          "text": "Narrow patched asphalt lane; overhead wires on poles",
+          "description": "Narrow patched asphalt lane; overhead wires on poles.",
+          "groundingPhrase": "Narrow patched asphalt lane; overhead wires on poles",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Narrow patched asphalt lane; overhead wires on poles"
+            }
+          ],
+          "groundingLabel": "Narrow patched asphalt lane; patched asphalt lane",
+          "ratingsReviewedAt": "2026-09-12T01:56:09.672Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-glm-5-3-flash-max-static-covered-d0870501ec",
+          "label": "Cool overcast northern light; lush green lawns",
+          "text": "Cool overcast northern light; lush green lawns",
+          "description": "Cool overcast northern light; lush green lawns.",
+          "groundingPhrase": "Cool overcast northern light; lush green lawns",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Cool overcast northern light; lush green lawns"
+            }
+          ],
+          "groundingLabel": "cool overcast northern light; lush green lawns",
+          "ratingsReviewedAt": "2026-09-12T01:56:16.069Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low-static-covered",
+      "benchmarkId": "gpt-6-astra-low-static-covered",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-static-covered-61cf3bbbda",
+          "label": "Steep roofs and mixed timber/plaster houses suggest the Baltic region",
+          "text": "Steep roofs and mixed timber/plaster houses suggest the Baltic region",
+          "description": "Steep roofs and mixed timber/plaster houses suggest the Baltic region.",
+          "groundingPhrase": "Steep roofs and mixed timber/plaster houses suggest the Baltic region",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Steep roofs and mixed timber/plaster houses suggest the Baltic region"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T01:56:24.882Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-static-covered-6190e65b05",
+          "label": "Narrow patched road without sidewalks",
+          "text": "Narrow patched road without sidewalks",
+          "description": "Narrow patched road without sidewalks fits older Baltic suburbs.",
+          "groundingPhrase": "Narrow patched road without sidewalks",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Narrow patched road without sidewalks fits older Baltic suburbs"
+            }
+          ],
+          "groundingLabel": "Steep roofs; Narrow patched road",
+          "ratingsReviewedAt": "2026-09-12T01:56:29.218Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-static-covered-555bc0c67d",
+          "label": "Decorative metal garden gates suggest post-Soviet residential infrastructure",
+          "text": "Decorative metal garden gates suggest post-Soviet residential infrastructure",
+          "description": "Decorative metal garden gates suggest post-Soviet residential infrastructure.",
+          "groundingPhrase": "Decorative metal garden gates suggest post-Soviet residential infrastructure",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0,
+            "y": 0.6013789681045948,
+            "w": 0.32079097387173394,
+            "h": 0.36887874225200135
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Decorative metal garden gates suggest post-Soviet residential infrastructure"
+            }
+          ],
+          "groundingLabel": "Decorative metal garden gates",
+          "ratingsReviewedAt": "2026-09-12T01:56:39.658Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-static-covered-657df263f8",
+          "label": "Wooden utility poles and overhead wires support a low-density Baltic neighborhood",
+          "text": "Wooden utility poles and overhead wires support a low-density Baltic neighborhood",
+          "description": "Wooden utility poles and overhead wires support a low-density Baltic neighborhood.",
+          "groundingPhrase": "Wooden utility poles and overhead wires support a low-density Baltic neighborhood",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.5925142517814727,
+            "y": 0.27171250219578913,
+            "w": 0.02852573238321457,
+            "h": 0.24557537202941104
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Wooden utility poles and overhead wires support a low-density Baltic neighborhood"
+            }
+          ],
+          "groundingLabel": "Wooden utility poles",
+          "ratingsReviewedAt": "2026-09-12T01:56:50.202Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-6-astra-low-static-covered-5dfc090bb5",
+          "label": "Northern vegetation and tidy small gardens favor Estonia",
+          "text": "Northern vegetation and tidy small gardens favor Estonia",
+          "description": "Northern vegetation and tidy small gardens favor Estonia.",
+          "groundingPhrase": "Northern vegetation and tidy small gardens favor Estonia",
+          "source": "starting-image",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Northern vegetation and tidy small gardens favor Estonia"
+            }
+          ],
+          "groundingLabel": "Northern vegetation",
+          "ratingsReviewedAt": "2026-09-12T01:56:55.369Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh-static-covered",
+      "benchmarkId": "gpt-5-6-sol-xhigh-static-covered",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-xhigh-static-covered-5c5b963d4a",
+          "label": "Uncurbed patched asphalt and narrow grass verges are characteristic of Baltic residentia",
+          "text": "Uncurbed patched asphalt and narrow grass verges are characteristic of Baltic residentia",
+          "description": "Uncurbed patched asphalt and narrow grass verges are characteristic of Baltic residential streets.",
+          "groundingPhrase": "Uncurbed patched asphalt and narrow grass verges are characteristic of Baltic residentia",
+          "source": "starting-image",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Uncurbed patched asphalt and narrow grass verges are characteristic of Baltic residential streets"
+            }
+          ],
+          "groundingLabel": "Uncurbed patched asphalt",
+          "ratingsReviewedAt": "2026-09-12T01:57:06.560Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-xhigh-static-covered-9594069d22",
+          "label": "Steep roofs",
+          "text": "Steep roofs",
+          "description": "Steep roofs with corrugated fibre-cement sheeting strongly fit Lithuania.",
+          "groundingPhrase": "Steep roofs",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.0025,
+            "y": 0.0035,
+            "w": 0.5137735550277118,
+            "h": 0.44215074405882204
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Steep roofs with corrugated fibre-cement sheeting strongly fit Lithuania"
+            }
+          ],
+          "groundingLabel": "Steep roofs; flat terrain",
+          "ratingsReviewedAt": "2026-09-12T01:57:16.033Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-xhigh-static-covered-f064068bc3",
+          "label": "Simple metal-and-wire fences and modest masonry homes reflect Lithuanian suburban fabric",
+          "text": "Simple metal-and-wire fences and modest masonry homes reflect Lithuanian suburban fabric",
+          "description": "Simple metal-and-wire fences and modest masonry homes reflect Lithuanian suburban fabric.",
+          "groundingPhrase": "Simple metal-and-wire fences and modest masonry homes reflect Lithuanian suburban fabric",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0,
+            "y": 0.6120153454289945,
+            "w": 0.30595566112430717,
+            "h": 0.3879846545710055
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Simple metal-and-wire fences and modest masonry homes reflect Lithuanian suburban fabric"
+            }
+          ],
+          "groundingLabel": "Simple metal-and-wire fences",
+          "ratingsReviewedAt": "2026-09-12T01:57:26.413Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-xhigh-static-covered-70bac054db",
+          "label": "Curved-arm lamps mounted on sparse utility poles are common in Lithuanian secondary citi",
+          "text": "Curved-arm lamps mounted on sparse utility poles are common in Lithuanian secondary citi",
+          "description": "Curved-arm lamps mounted on sparse utility poles are common in Lithuanian secondary cities.",
+          "groundingPhrase": "Curved-arm lamps mounted on sparse utility poles are common in Lithuanian secondary citi",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.5915,
+            "y": 0.2625,
+            "w": 0.042,
+            "h": 0.26
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Curved-arm lamps mounted on sparse utility poles are common in Lithuanian secondary cities"
+            }
+          ],
+          "groundingLabel": "Curved -arm lamps",
+          "ratingsReviewedAt": "2026-09-12T02:16:19.626Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-xhigh-static-covered-e58b1ba4c5",
+          "label": "Very flat terrain and low detached development favour Šiauliai over hillier Baltic locat",
+          "text": "Very flat terrain and low detached development favour Šiauliai over hillier Baltic locat",
+          "description": "Very flat terrain and low detached development favour Šiauliai over hillier Baltic locations.",
+          "groundingPhrase": "Very flat terrain and low detached development favour Šiauliai over hillier Baltic locat",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Very flat terrain and low detached development favour Šiauliai over hillier Baltic locations"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T01:57:51.891Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max-static-covered",
+      "benchmarkId": "gpt-5-6-sol-max-static-covered",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-max-static-covered-ead8675c2b",
+          "label": "A mix of timber-clad, rough-stucco, and newer detached homes behind individual fences su",
+          "text": "A mix of timber-clad, rough-stucco, and newer detached homes behind individual fences su",
+          "description": "A mix of timber-clad, rough-stucco, and newer detached homes behind individual fences suggests the Baltics.",
+          "groundingPhrase": "A mix of timber-clad, rough-stucco, and newer detached homes behind individual fences su",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "A mix of timber-clad, rough-stucco, and newer detached homes behind individual fences suggests the Baltics"
+            }
+          ],
+          "groundingLabel": "homes",
+          "ratingsReviewedAt": "2026-09-12T01:58:15.824Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-max-static-covered-402768d986",
+          "label": "Steep red tile and grey cement-sheet roofs are common in older Estonian neighborhoods",
+          "text": "Steep red tile and grey cement-sheet roofs are common in older Estonian neighborhoods",
+          "description": "Steep red tile and grey cement-sheet roofs are common in older Estonian neighborhoods.",
+          "groundingPhrase": "Steep red tile and grey cement-sheet roofs are common in older Estonian neighborhoods",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Steep red tile and grey cement-sheet roofs are common in older Estonian neighborhoods"
+            }
+          ],
+          "groundingLabel": "Steep red tile",
+          "ratingsReviewedAt": "2026-09-12T01:58:22.191Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-max-static-covered-991ac1ec9f",
+          "label": "The patched unmarked road and simple overhead distribution lines",
+          "text": "The patched unmarked road and simple overhead distribution lines",
+          "description": "The patched unmarked road and simple overhead distribution lines fit a small Estonian city street.",
+          "groundingPhrase": "The patched unmarked road and simple overhead distribution lines",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The patched unmarked road and simple overhead distribution lines fit a small Estonian city street"
+            }
+          ],
+          "groundingLabel": "The patched unmarked road",
+          "ratingsReviewedAt": "2026-09-12T01:58:28.948Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-max-static-covered-d357707337",
+          "label": "Closely tended hedges and gardens support Estonia over a more neglected rural fringe",
+          "text": "Closely tended hedges and gardens support Estonia over a more neglected rural fringe",
+          "description": "Closely tended hedges and gardens support Estonia over a more neglected rural fringe.",
+          "groundingPhrase": "Closely tended hedges and gardens support Estonia over a more neglected rural fringe",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0,
+            "y": 0.585439672262792,
+            "w": 0.3112882026920032,
+            "h": 0.38272747120379436
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Closely tended hedges and gardens support Estonia over a more neglected rural fringe"
+            }
+          ],
+          "groundingLabel": "tended hedges",
+          "ratingsReviewedAt": "2026-09-12T01:58:39.929Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gpt-5-6-sol-max-static-covered-8ff9d61c3e",
+          "label": "Extremely flat terrain and maritime cloud patterns are especially consistent",
+          "text": "Extremely flat terrain and maritime cloud patterns are especially consistent",
+          "description": "Extremely flat terrain and maritime cloud patterns are especially consistent with Pärnu.",
+          "groundingPhrase": "Extremely flat terrain and maritime cloud patterns are especially consistent",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Extremely flat terrain and maritime cloud patterns are especially consistent with Pärnu"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T02:16:27.253Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-static-covered",
+      "benchmarkId": "grok-4-6-xhigh-static-covered",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-grok-4-6-xhigh-static-covered-c1ab8a32b1",
+          "label": "Cream wooden house with oval window and brown timber garage doors",
+          "text": "Cream wooden house with oval window and brown timber garage doors",
+          "description": "Finnish-influenced Baltic private house.",
+          "groundingPhrase": "Cream wooden house with oval window and brown timber garage doors",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Cream wooden house with oval window and brown timber garage doors — Finnish-influenced Baltic private house"
+            }
+          ],
+          "groundingLabel": "Cream wooden house",
+          "ratingsReviewedAt": "2026-09-12T01:59:54.668Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-grok-4-6-xhigh-static-covered-831055a2db",
+          "label": "Grey plaster house with a very steep roof and satellite dish",
+          "text": "Grey plaster house with a very steep roof and satellite dish",
+          "description": "20th-century Estonian/Latvian dwelling type.",
+          "groundingPhrase": "Grey plaster house with a very steep roof and satellite dish",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": {
+            "x": 0.33729216152019004,
+            "y": 0.20783457552259782,
+            "w": 0.15043547110055427,
+            "h": 0.3581520238901854
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Grey plaster house with a very steep roof and satellite dish — 20th-century Estonian/Latvian dwelling type"
+            }
+          ],
+          "groundingLabel": "Grey plaster house",
+          "ratingsReviewedAt": "2026-09-12T02:00:09.840Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-grok-4-6-xhigh-static-covered-07d97c6949",
+          "label": "Newer two-storey house behind a metal palisade fence",
+          "text": "Newer two-storey house behind a metal palisade fence",
+          "description": "Post-1990s Baltic infill.",
+          "groundingPhrase": "Newer two-storey house behind a metal palisade fence",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": {
+            "x": 0.0015,
+            "y": 0.0015,
+            "w": 0.25563499604117185,
+            "h": 0.9129699114155939
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Newer two-storey house behind a metal palisade fence — post-1990s Baltic infill"
+            }
+          ],
+          "groundingLabel": "Newer two-storey house",
+          "ratingsReviewedAt": "2026-09-12T02:00:13.950Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-grok-4-6-xhigh-static-covered-add0901a9f",
+          "label": "Rusty ornamental metal gate, patchy asphalt, overhead lines",
+          "text": "Rusty ornamental metal gate, patchy asphalt, overhead lines",
+          "description": "Former-Soviet street maintenance, not Finnish neatness.",
+          "groundingPhrase": "Rusty ornamental metal gate, patchy asphalt, overhead lines",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Rusty ornamental metal gate, patchy asphalt, overhead lines — former-Soviet street maintenance, not Finnish neatness"
+            }
+          ],
+          "groundingLabel": "Rusty ornamental metal gate",
+          "ratingsReviewedAt": "2026-09-12T02:00:21.697Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-grok-4-6-xhigh-static-covered-1b20be8ed4",
+          "label": "Mixed spruce/deciduous yards and modest density",
+          "text": "Mixed spruce/deciduous yards and modest density",
+          "description": "Small Estonian city rather than Tallinn’s leafy Nõmme villas.",
+          "groundingPhrase": "Mixed spruce/deciduous yards and modest density",
+          "source": "starting-image",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Mixed spruce/deciduous yards and modest density: small Estonian city rather than Tallinn’s leafy Nõmme villas"
+            }
+          ],
+          "groundingLabel": "Mixed spruce/deciduous yards",
+          "ratingsReviewedAt": "2026-09-12T02:00:24.834Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-aided-static-covered",
+      "benchmarkId": "gemini-3-7-flash-high-aided-static-covered",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-static-covered-3b9f60047e",
+          "label": "Baltic House Typology",
+          "text": "Baltic House Typology",
+          "description": "Central house featuring a high-pitched roof covered with fiber-cement corrugated sheets (eternit), roughcast stucco walls, and wooden extension.",
+          "groundingPhrase": "Baltic House Typology",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Baltic House Typology: Central house featuring a high-pitched roof covered with fiber-cement corrugated sheets (eternit), roughcast stucco walls, and wooden extension"
+            }
+          ],
+          "groundingLabel": "Baltic House Typology",
+          "ratingsReviewedAt": "2026-09-12T02:00:37.028Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-static-covered-6d57b624dc",
+          "label": "Property Boundaries & Fencing",
+          "text": "Property Boundaries & Fencing",
+          "description": "Low wire-mesh and wooden picket boundary fences with garden gates and neat flowerbeds.",
+          "groundingPhrase": "Property Boundaries & Fencing",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0,
+            "y": 0.6029850309919947,
+            "w": 0.3122897862232779,
+            "h": 0.39701496900800526
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Property Boundaries & Fencing: Low wire-mesh and wooden picket boundary fences with garden gates and neat flowerbeds"
+            }
+          ],
+          "groundingLabel": "Property Boundaries",
+          "ratingsReviewedAt": "2026-09-12T02:00:47.451Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-static-covered-eb962a8a44",
+          "label": "Overhead Power Infrastructure",
+          "text": "Overhead Power Infrastructure",
+          "description": "Wooden utility poles with aerial power/telephone distribution lines along uncurbed asphalt suburban lanes.",
+          "groundingPhrase": "Overhead Power Infrastructure",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Overhead Power Infrastructure: Wooden utility poles with aerial power/telephone distribution lines along uncurbed asphalt suburban lanes"
+            }
+          ],
+          "groundingLabel": "Overhead Power Infrastructure",
+          "ratingsReviewedAt": "2026-09-12T02:00:51.983Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-high-aided-static-covered-83f0f9dd7c",
+          "label": "Baltic Garden & Flora Landscape",
+          "text": "Baltic Garden & Flora Landscape",
+          "description": "Blend of native spruces, birch trees, and domestic fruit trees typical of Estonian garden suburbs.",
+          "groundingPhrase": "Baltic Garden & Flora Landscape",
+          "source": "starting-image",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Baltic Garden & Flora Landscape: Blend of native spruces, birch trees, and domestic fruit trees typical of Estonian garden suburbs"
+            }
+          ],
+          "groundingLabel": "Baltic Garden",
+          "ratingsReviewedAt": "2026-09-12T02:00:57.427Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-medium-aided-static-covered",
+      "benchmarkId": "gemini-3-7-flash-medium-aided-static-covered",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-medium-aided-static-covered-02819cb3fb",
+          "label": "Baltic House Architecture",
+          "text": "Baltic House Architecture",
+          "description": "Steep-pitched sheet metal roof on the left with circular attic window, adjacent to a classic grey stucco house with an asbestos-cement/slate roof.",
+          "groundingPhrase": "Baltic House Architecture",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Baltic House Architecture: Steep-pitched sheet metal roof on the left with circular attic window, adjacent to a classic grey stucco house with an asbestos-cement/slate roof"
+            }
+          ],
+          "groundingLabel": "Baltic House Architecture",
+          "ratingsReviewedAt": "2026-09-12T02:01:10.440Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-medium-aided-static-covered-7a8431e96b",
+          "label": "Fences & Gates",
+          "text": "Fences & Gates",
+          "description": "Low welded metal wire-mesh front gates and vertical wooden picket fencing typical of Baltic residential suburbs.",
+          "groundingPhrase": "Fences & Gates",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.011084718923198733,
+            "y": 0.6055910938793947,
+            "w": 0.2990847189231987,
+            "h": 0.3944089061206053
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Fences & Gates: Low welded metal wire-mesh front gates and vertical wooden picket fencing typical of Baltic residential suburbs"
+            }
+          ],
+          "groundingLabel": "Fences",
+          "ratingsReviewedAt": "2026-09-12T02:17:03.530Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-medium-aided-static-covered-5bb9fce3ba",
+          "label": "Overhead Infrastructure",
+          "text": "Overhead Infrastructure",
+          "description": "Low-voltage overhead electrical wiring mounted on slender roadside wooden poles.",
+          "groundingPhrase": "Overhead Infrastructure",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Overhead Infrastructure: Low-voltage overhead electrical wiring mounted on slender roadside wooden poles"
+            }
+          ],
+          "groundingLabel": "Overhead Infrastructure",
+          "ratingsReviewedAt": "2026-09-12T02:16:53.916Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-7-flash-medium-aided-static-covered-b2078ece01",
+          "label": "Vegetation & Topography",
+          "text": "Vegetation & Topography",
+          "description": "Completely flat terrain with birch trees, pines, and spruce in the background and neat front flower gardens.",
+          "groundingPhrase": "Vegetation & Topography",
+          "source": "starting-image",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Vegetation & Topography: Completely flat terrain with birch trees, pines, and spruce in the background and neat front flower gardens"
+            }
+          ],
+          "groundingLabel": "Vegetation",
+          "ratingsReviewedAt": "2026-09-12T02:01:17.633Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash-high-aided-static-covered",
+      "benchmarkId": "gemini-3-8-flash-high-aided-static-covered",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-static-covered-1d13dd799c",
+          "label": "Distinctive Baltic Housing Mix",
+          "text": "Distinctive Baltic Housing Mix",
+          "description": "Central steep-roofed cottage with corrugated fiber-cement (eterniit) roofing, pebble-dash stucco walls, and timber picket fence (typical Soviet-era Baltic private home / eramu).",
+          "groundingPhrase": "Distinctive Baltic Housing Mix",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Distinctive Baltic Housing Mix: Central steep-roofed cottage with corrugated fiber-cement (eterniit) roofing, pebble-dash stucco walls, and timber picket fence (typical Soviet-era Baltic private home / eramu)"
+            }
+          ],
+          "groundingLabel": "Distinctive Baltic Housing Mix",
+          "ratingsReviewedAt": "2026-09-12T02:01:33.429Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-static-covered-231f62054c",
+          "label": "Modern Baltic Renovations",
+          "text": "Modern Baltic Renovations",
+          "description": "Neighboring home on the left updated with horizontal light timber weatherboarding, dark profile metal roof tiles, and decorative circular accent window.",
+          "groundingPhrase": "Modern Baltic Renovations",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": {
+            "x": 0,
+            "y": 0.04722828678260433,
+            "w": 0.23832145684877276,
+            "h": 0.7307586137669703
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Modern Baltic Renovations: Neighboring home on the left updated with horizontal light timber weatherboarding, dark profile metal roof tiles, and decorative circular accent window"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T02:02:20.881Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-static-covered-7460595703",
+          "label": "Silicate Brick Construction",
+          "text": "Silicate Brick Construction",
+          "description": "Single-story house on the right built with white silicate bricks under a low-pitched roof, a signature building material of mid-century Baltic suburban neighborhoods.",
+          "groundingPhrase": "Silicate Brick Construction",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": {
+            "x": 0.7348832145684877,
+            "y": 0.26950037642098923,
+            "w": 0.2651167854315123,
+            "h": 0.244423649276017
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Silicate Brick Construction: Single-story house on the right built with white silicate bricks under a low-pitched roof, a signature building material of mid-century Baltic suburban neighborhoods"
+            }
+          ],
+          "groundingLabel": "Silicate Brick Construction",
+          "ratingsReviewedAt": "2026-09-12T02:02:13.269Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-high-aided-static-covered-30bdb1443b",
+          "label": "Infrastructure & Environment",
+          "text": "Infrastructure & Environment",
+          "description": "Overhead electrical distribution carried on roadside wooden poles, quiet uncurbed asphalt lane, and domestic gardens with apple trees and mature spruce conifers.",
+          "groundingPhrase": "Infrastructure & Environment",
+          "source": "starting-image",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Infrastructure & Environment: Overhead electrical distribution carried on roadside wooden poles, quiet uncurbed asphalt lane, and domestic gardens with apple trees and mature spruce conifers"
+            }
+          ],
+          "groundingLabel": "Infrastructure",
+          "ratingsReviewedAt": "2026-09-12T02:01:52.996Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash-medium-aided-static-covered",
+      "benchmarkId": "gemini-3-8-flash-medium-aided-static-covered",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-medium-aided-static-covered-bf72b6a628",
+          "label": "Baltic Gable House",
+          "text": "Baltic Gable House",
+          "description": "Center house features steep corrugated sheet/eternit roofing, textured coarse plaster walls, and double-hung white wooden-frame windows.",
+          "groundingPhrase": "Baltic Gable House",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Baltic Gable House: Center house features steep corrugated sheet/eternit roofing, textured coarse plaster walls, and double-hung white wooden-frame windows"
+            }
+          ],
+          "groundingLabel": "Baltic Gable House",
+          "ratingsReviewedAt": "2026-09-12T02:02:31.561Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-medium-aided-static-covered-cc2eba4710",
+          "label": "Suburban Siding & Detail",
+          "text": "Suburban Siding & Detail",
+          "description": "Renovated house on the left features horizontal light-yellow timber/vinyl siding and a decorative round nautical window.",
+          "groundingPhrase": "Suburban Siding & Detail",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": {
+            "x": 0.0025,
+            "y": 0.0045,
+            "w": 0.28,
+            "h": 0.662
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Suburban Siding & Detail: Renovated house on the left features horizontal light-yellow timber/vinyl siding and a decorative round nautical window"
+            }
+          ],
+          "groundingLabel": "Suburban Siding",
+          "ratingsReviewedAt": "2026-09-12T02:02:38.545Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-medium-aided-static-covered-1a18b76f45",
+          "label": "Soviet-Era Residue",
+          "text": "Soviet-Era Residue",
+          "description": "Neighboring home on the right exhibits white silikat brick masonry and low-pitch rooflines typical of Baltic residential quarters.",
+          "groundingPhrase": "Soviet-Era Residue",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Soviet-Era Residue: Neighboring home on the right exhibits white silikat brick masonry and low-pitch rooflines typical of Baltic residential quarters"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T02:02:44.709Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-015-gemini-3-8-flash-medium-aided-static-covered-6b494ce7f7",
+          "label": "Street Environment",
+          "text": "Street Environment",
+          "description": "Narrow asphalt roadway without curbs, wooden utility poles with overhead electricity cables, and wire-mesh fences with lush northern vegetation (birch, spruce, apple trees).",
+          "groundingPhrase": "Street Environment",
+          "source": "starting-image",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Street Environment: Narrow asphalt roadway without curbs, wooden utility poles with overhead electricity cables, and wire-mesh fences with lush northern vegetation (birch, spruce, apple trees)"
+            }
+          ],
+          "groundingLabel": "Street Environment",
+          "ratingsReviewedAt": "2026-09-12T02:02:47.200Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-015-grok-4-6-xhigh-mcp-1b23a13445",
+          "label": "Sepaküla tee road label",
+          "text": "Sepaküla tee road label",
+          "description": "The Estonian street name Sepaküla tee is visible.",
+          "groundingPhrase": "Sepaküla tee road label",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.6214556611243072,
+            "y": 0.5652877236568045,
+            "w": 0.0681722090261283,
+            "h": 0.21099984943160432
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "medium-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "medium-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+              "text": "Sepaküla tee is Estonian."
+            }
+          ],
+          "groundingLabel": "Sepakla tee road label",
+          "ratingsReviewedAt": "2026-09-12T17:18:26.204Z"
+        }
+      ]
+    }
+  ]
+}

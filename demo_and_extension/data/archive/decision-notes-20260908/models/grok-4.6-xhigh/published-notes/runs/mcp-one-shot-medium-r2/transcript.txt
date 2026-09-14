@@ -1,0 +1,49 @@
+grok.exe : [2m2026-09-01T16:02:06.120181Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\tmp\nautilus-openguessr-mcp\demo_and_extension\openguessr-mcp\scripts\Sta
+rt-GrokOpenGuessr.ps1:297 char:5
++     & $grokCommand.Source @grokArgs 2>&1 | Tee-Object -FilePath $tran ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-09-01T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-09-01T16:02:06.120297Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-09-01T16:03:54.144699Z[0m [31mERROR[0m tool_error: 
+tool_output_error 
+[3msession_id[0m[2m=[0m01a05db4-d23b-7202-addb-d02e79644bec 
+[3mtool_name[0m[2m=[0m"use_tool" 
+[3meffective_tool_name[0m[2m=[0m"playwright__openguessr_place_guess" 
+[3mmodel_id[0m[2m=[0m"grok-4.6" 
+[3merror_kind[0m[2m=[0m"tool_output_error"
+[2m2026-09-01T16:06:38.099607Z[0m [31mERROR[0m tool_error: 
+tool_output_error 
+[3msession_id[0m[2m=[0m01a05db4-d23b-7202-addb-d02e79644bec 
+[3mtool_name[0m[2m=[0m"use_tool" 
+[3meffective_tool_name[0m[2m=[0m"playwright__openguessr_place_guess" 
+[3mmodel_id[0m[2m=[0m"grok-4.6" 
+[3merror_kind[0m[2m=[0m"tool_output_error"
+I'll start by loading the OpenGuessr tool schemas, then screenshot the already-open first round and play all nine from the panorama.Taking a full-viewport screenshot of the first round now.Round 1 is on: Catalan `Carrer de` and a green igloo bin point to Barcelona. I'll pan for a street-name confirmation, then pin.The first pan barely moved. I’ll click into the street view and drag again for a clearer street-name read.Corner shop is Spanish; I’ll tilt up for a Barcelona street plaque before placing.There's a red corner plaque. I'll zoom on it, then pin Barcelona if the name confirms.Clues are Barcelona Eixample. I’ll expand the guess map and pin Carrer de Casanova.The mini-map is visible, so I’ll place the Barcelona pin now.The last click moved Street View, so I’ll hover the mini-map itself to expand it.The hover missed the map — I’ll try further into the bottom-right overlay.Viewport looks taller than I treated it — I’ll hover lower-right on the mini-map.Hover didn’t expand it. I’ll click the mini-map next.Assuming a larger viewport, I’ll click the mini-map center at higher coordinates.I’ll hover the mini-map and place immediately so it stays expanded.Placement still needs an open map. I’ll screenshot, then click the zoom control to confirm coordinates.Round 1 timed out on a default Gulf of Guinea pin; the answer was Spain. Continuing to round 2.Round 2 is Italy (`Via Francesco…`). I’ll click Menu to calibrate the viewport, then open the guess map.1220,35 hit Street View, so the window is wider than 1280. I’ll click the top-right Menu to confirm ~1920 CSS pixels.Viewport looks like ~1536×864. I’ll hover the mini-map center and check it expands.Hover may need to enter the map from outside. I’ll move onto it from the left, then place.Pin is on Bologna. I’ll verify state, then submit.Round 2 was Bologna, 1,410 m off. Continuing to round 3.Round 3 is the Netherlands — `Amsterdamsestraatweg` and a red bike lane. I’ll pan once, then pin Utrecht.Street name is enough: Utrecht, Amsterdamsestraatweg. Opening the map the same way as round 2 and placing.Round 3: Utrecht, 2,107 m. Dismissing the Discord prompt if it blocks Continue.N44 plus `FOTO AKTIEF` looks like Flanders. I’ll pan for a town name, then pin.Pinning Knesselare on Belgium’s N44, then submitting.Round 4: East Flanders, 26.4 km (actual Merelbeke/Melle). Continuing.Round 5 is Portugal — granite facades and `R.` (Rua). I’ll move up the street to finish the name.Granite and `R. Figueiredo da Foz` point to Porto. Placing there.Round 5 was Coimbra, 105.1 km from my Porto pin. Continuing.`Bergagatan` is Swedish. I’ll look for a house number or plate, then pin.House number 44 is on the mailbox. I’ll zoom in for a postcode or name.No extra city text. Pinning a southern Stockholm villa suburb, then submitting.Round 6 was Uppsala, 66.7 km. Continuing.Street reads Estonian (`Sepaküla`). I’ll pan for a plate or sign, then pin.`Sepaküla tee` is Estonian. Pinning suburban Tallinn.Round 7 was Tartu, 164.8 km. Continuing.`Jelšová` plus forested hills look Slovak. I’ll pan for a town clue, then pin.Pinning Ružomberok in northern Slovakia.Round 8: Slovakia, 37.8 km (Selce / Banská Bystrica). One round left.Yellow center lines and stone walls look like Ireland. I’ll pan for a road number or town sign.Road paint shows `L1322` and Bohonagh. I’ll read the wall sign, then pin West Cork.The GAA sign is Rahoon/Newcastle in Galway. Pinning that and submitting.Round 9: Galway, 4,277 m. Continuing to the leaderboard.Competition **Grok Medium OneShot 300s R2** finished. Official total **38,125 Pts.** (Ivan Yachnik, #1). Round scores were shown as `+N XP` on the result bar and sum exactly to that total.
+
+| R | Belief | Pin | Distance | Pts | Notes |
+|---|--------|-----|----------|-----|-------|
+| 1 | Barcelona, Carrer de Casanova / Eixample | intended 41.3875, 2.154 — **never placed** | 4,388.7 km | 62 | Timeout on default Gulf of Guinea pin. Answer was Spain. Map hover failed. |
+| 2 | Bologna, Via Francesco | 44.4949, 11.3426 | 1,410 m | 4,993 | Actual: Via Francesco Roncati, Bologna |
+| 3 | Utrecht, Amsterdamsestraatweg | 52.102, 5.1055 | 2,107 m | 4,989 | Same street, further NW (Zuilen) |
+| 4 | Belgium N44, Knesselare | 51.14, 3.457 | 26.4 km | 4,870 | Actual: Merelbeke/Melle (N42, not N44) |
+| 5 | Porto, R. Figueiredo da Foz | 41.152, −8.605 | 105.1 km | 4,501 | Actual: Coimbra |
+| 6 | Sweden, Stockholm suburbs, Bergagatan 44 | 59.29, 18.05 | 66.7 km | 4,677 | Actual: Uppsala |
+| 7 | Estonia, Tallinn, Sepaküla tee | 59.4, 24.7 | 164.8 km | 4,240 | Actual: Tartu |
+| 8 | Slovakia, Ružomberok, Jelšová | 49.081, 19.304 | 37.8 km | 4,814 | Actual: Selce / Banská Bystrica |
+| 9 | Galway, Rahoon/Newcastle | 53.275, −9.075 | 4,277 m | 4,979 | Actual: Boleybeg East, west Galway |
+
+**Official total:** 38,125 Pts.  
+**Completed rounds:** 9/9  
+**Timeouts/defaults:** 1 (round 1)  
+**Semantic misses:** 2 clear city misses (Porto vs Coimbra; Tallinn vs Tartu). Stockholm vs Uppsala is a milder same-region miss. Round 1 geography was right; the pin never landed.  
+**Belief-to-pin mismatches:** 1 (round 1 default). Rounds 2–9 matched the chosen coordinates.
+
+**MCP map control:** After round 1, hovering from the panorama onto the mini-map (~900,500 → 1280,560) then calling `place_guess` immediately opened and verified the pin every time. Submit/continue were reliable. MCP helped map control a lot once that hover path was known; round 1 was lost to not opening the map in time, not to a wrong country read.

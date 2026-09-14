@@ -1,0 +1,43 @@
+{
+  "name": "demo-and-extension",
+  "version": "0.8.22",
+  "private": true,
+  "type": "module",
+  "description": "OpenStreetMap visualization, competition data pipeline, and OpenGuessr research recorder for MLLM geolocation experiments.",
+  "scripts": {
+    "prestart": "npm run data:build && npm run prepare:globe",
+    "start": "node scripts/serve.mjs",
+    "prepare:globe": "node scripts/prepare-globe-assets.mjs",
+    "build:site": "npm run data:build && node scripts/build-site.mjs",
+    "data:baselines": "node scripts/import-static-baselines.mjs",
+    "data:astra-statistics": "node scripts/import-astra-statistics.mjs",
+    "data:build": "node scripts/build-project-data.mjs",
+    "data:check": "node scripts/build-project-data.mjs --check",
+    "links:inspect": "node scripts/inspect-links.mjs",
+    "test": "node --test",
+    "test:mcp": "npm test --prefix openguessr-mcp",
+    "check:extension": "node scripts/check-extension.mjs",
+    "verify": "npm run data:build && node scripts/check-extension.mjs && node --test",
+    "recordings:import": "node scripts/import-session-recording.mjs",
+    "competition:export": "node scripts/export-competition.mjs",
+    "competition:list": "node scripts/export-competition.mjs --list",
+    "recordings:inspect": "node scripts/inspect-recordings.mjs",
+    "clues:extract": "node scripts/extract-clues.mjs",
+    "clues:import-covered": "node scripts/import-covered-static.mjs",
+    "clues:annotate": ".cache/florence-venv/bin/python scripts/annotate-clues-florence2.py",
+    "clues:annotate-covered": "HF_HOME=.cache/huggingface HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .cache/florence-venv/bin/python scripts/annotate-clues-florence2.py --clue-set-suffix static-covered",
+    "clues:review": "node scripts/serve.mjs",
+    "locations:zero-pitch": "node scripts/normalize-zero-pitch.mjs",
+    "videos:repair": "node scripts/repair-video-partials.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@turf/boolean-point-in-polygon": "^7.4.0",
+    "globe.gl": "2.46.2",
+    "three-globe": "2.44.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  }
+}

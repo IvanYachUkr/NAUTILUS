@@ -1,0 +1,3908 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-easy--loc-001",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "benchmarkId": "gemini-3-7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-ca95999e45",
+          "label": "July Column (Colonne de Juillet)",
+          "text": "July Column (Colonne de Juillet)",
+          "description": "Gilded Génie de la Liberté atop the green column along the central road axis.",
+          "groundingPhrase": "July Column",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4615,
+            "y": 0.1865,
+            "w": 0.028,
+            "h": 0.255
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "July Column (Colonne de Juillet): Gilded Génie de la Liberté atop the green column along the central road axis."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Place de la Bastille with the July Column (Colonne de Juillet)"
+            }
+          ],
+          "groundingLabel": "July Column",
+          "ratingsReviewedAt": "2026-09-11T17:14:33.472Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-92a3b525fb",
+          "label": "Public Transit",
+          "text": "Public Transit",
+          "description": "Blue RATP \"Bastille\" bus stop sign outside Opéra Bastille.",
+          "groundingPhrase": "Public Transit",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Public Transit: Blue RATP \"Bastille\" bus stop sign outside Opéra Bastille."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Opéra Bastille curved facade"
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-e081c5698a",
+          "label": "bus station sign \"Bastille\"",
+          "text": "bus station sign \"Bastille\"",
+          "description": "Bus station sign \"Bastille\".",
+          "groundingPhrase": "bus station sign \"Bastille\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.9092331768388107,
+            "y": 0.30268835871236544,
+            "w": 0.07276995305164317,
+            "h": 0.05872724567233774
+          },
+          "regionSource": "manual",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "bus station sign \"Bastille\"."
+            }
+          ],
+          "groundingLabel": "bus station sign; Bastille",
+          "ratingsReviewedAt": "2026-09-11T17:14:46.335Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-b01dc7c5eb",
+          "label": "Architecture & Lighting",
+          "text": "Architecture & Lighting",
+          "description": "Dark green Parisian lamp posts, Haussmannian perimeter buildings, French EU license plates.",
+          "groundingPhrase": "Architecture & Lighting",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Architecture & Lighting: Dark green Parisian lamp posts, Haussmannian perimeter buildings, French EU license plates."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:14:59.371Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-c9a0987dfd",
+          "label": "Road Surface Text",
+          "text": "Road Surface Text",
+          "description": "\"Place de la Bastille\" painted on the road lane.",
+          "groundingPhrase": "Road Surface Text",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.4445,
+            "y": 0.5205,
+            "w": 0.096,
+            "h": 0.296
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Road Surface Text: \"Place de la Bastille\" painted on the road lane."
+            }
+          ],
+          "groundingLabel": "Road Surface Text",
+          "ratingsReviewedAt": "2026-09-11T17:15:06.031Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-7f9aebfcf5",
+          "label": "Shared Mobility",
+          "text": "Shared Mobility",
+          "description": "Green Vélib' bike in the adjacent cycle lane.",
+          "groundingPhrase": "Shared Mobility",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Shared Mobility: Green Vélib' bike in the adjacent cycle lane."
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-82d899cff2",
+          "label": "Opéra Bastille Architecture",
+          "text": "Opéra Bastille Architecture",
+          "description": "Distinct curved modernist glass and light granite facade of the Opéra National de Paris Bastille on the right.",
+          "groundingPhrase": "Opéra Bastille Architecture",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.6565,
+            "y": 0.0045,
+            "w": 0.339,
+            "h": 0.672
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md",
+              "text": "Opéra Bastille Architecture: Distinct curved modernist glass and light granite facade of the Opéra National de Paris Bastille on the right."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Opéra Bastille curved facade"
+            }
+          ],
+          "groundingLabel": "Opra Bastille Architecture",
+          "ratingsReviewedAt": "2026-09-11T17:15:22.298Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash-medium-aided",
+      "benchmarkId": "gemini-3-7-flash-medium-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-86f86a0d09",
+          "label": "Colonne de Juillet (July Column)",
+          "text": "Colonne de Juillet (July Column)",
+          "description": "Colonne de Juillet (tall bronze column with the gilded winged statue Génie de la Liberté) clearly visible straight ahead in the center of Place de la Bastille.",
+          "groundingPhrase": "Colonne de Juillet",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.46116040688575893,
+            "y": 0.18857147462923463,
+            "w": 0.02590140845070421,
+            "h": 0.25558722285600916
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Colonne de Juillet (tall bronze column with the gilded winged statue Génie de la Liberté) clearly visible straight ahead in the center of Place de la Bastille."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Colonne de Juillet (July Column): Monument topped with the golden Génie de la Liberté standing centrally in the roundabout ahead."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Colonne de Juillet (tall bronze column with the gilded winged statue Génie de la Liberté) clearly visible straight ahead in the center of Place de la Bastille."
+            }
+          ],
+          "groundingLabel": "Colonne",
+          "ratingsReviewedAt": "2026-09-11T17:16:11.447Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-ece9ca0c01",
+          "label": "Opéra Bastille",
+          "text": "Opéra Bastille",
+          "description": "Curved modern glass-and-granite facade directly to the right, showing an official station plaque reading \"Bastille\".",
+          "groundingPhrase": "Opéra Bastille",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.6666666666666667,
+            "y": 0,
+            "w": 0.33333333333333326,
+            "h": 0.5793363424433312
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Modern curved glass and white stone architectural facade of Opéra Bastille on the immediate right."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Opéra Bastille: Curved modern glass-and-granite facade directly to the right, showing an official station plaque reading \"Bastille\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Modern curved glass and white stone architectural facade of Opéra Bastille on the immediate right."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:16:24.293Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-c047cd841e",
+          "label": "Street Markings",
+          "text": "Street Markings",
+          "description": "\"Place de la Bastille\" painted directly on the asphalt in the bus lane.",
+          "groundingPhrase": "Street Markings",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.47339593114241,
+            "y": 0.5280740042656614,
+            "w": 0.051643192488262976,
+            "h": 0.2190367541292595
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Road surface text marking: \"Place de la Bastille\" painted directly on the asphalt in the bus lane."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Street Markings: Road surface asphalt lettering displaying \"Place de la Bastille\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Road surface text marking: \"Place de la Bastille\" painted directly on the asphalt in the bus lane."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:16:30.572Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-7e00067223",
+          "label": "Official Parisian bus stop sign",
+          "text": "Official Parisian bus stop sign",
+          "description": "Official Parisian bus stop sign with the circular \"BUS\" emblem and blue \"Bastille\" nameplate.",
+          "groundingPhrase": "Official Parisian bus stop sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.9145845070422535,
+            "y": 0.1957922970090769,
+            "w": 0.07778560250391237,
+            "h": 0.1612333713605476
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Official Parisian bus stop sign with the circular \"BUS\" emblem and blue \"Bastille\" nameplate."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Official Parisian bus stop sign with the circular \"BUS\" emblem and blue \"Bastille\" nameplate."
+            }
+          ],
+          "groundingLabel": "Official Parisian bus stop sign",
+          "ratingsReviewedAt": "2026-09-11T17:16:37.675Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-b6d6f83957",
+          "label": "Parisian urban infrastructure",
+          "text": "Parisian urban infrastructure",
+          "description": "Classic Haussmann buildings in the background, blue street signs, and French license plates.",
+          "groundingPhrase": "Parisian urban infrastructure",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Parisian urban infrastructure: classic Haussmann buildings in the background, blue street signs, and French license plates."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Parisian urban infrastructure: classic Haussmann buildings in the background, blue street signs, and French license plates."
+            }
+          ],
+          "groundingLabel": "Parisian urban infrastructure"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-a26ccd18f3",
+          "label": "Urban Context",
+          "text": "Urban Context",
+          "description": "Classic Haussmannian stone facades with zinc mansard roofs and wrought-iron balconies.",
+          "groundingPhrase": "Urban Context",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Urban Context: Classic Haussmannian stone facades with zinc mansard roofs and wrought-iron balconies."
+            }
+          ],
+          "groundingLabel": "Urban Context"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-40ca8db9f6",
+          "label": "Infrastructure",
+          "text": "Infrastructure",
+          "description": "Paris RATP bus shelters, Parisian public streetlights, French vehicle registrations.",
+          "groundingPhrase": "Infrastructure",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Infrastructure: Paris RATP bus shelters, Parisian public streetlights, French vehicle registrations."
+            }
+          ],
+          "groundingLabel": "Infrastructure",
+          "ratingsReviewedAt": "2026-09-11T17:16:49.074Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-high-aided",
+      "benchmarkId": "gemini-3-8-flash-high-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-high-aided-0ca1b57d5d",
+          "label": "Colonne de Juillet (July Column) topped",
+          "text": "Colonne de Juillet (July Column) topped",
+          "description": "Prominent July Column (Colonne de Juillet) topped with the gilded Génie de la Liberté at the center of the roundabout.",
+          "groundingPhrase": "Colonne de Juillet topped",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4608076009501188,
+            "y": 0.1874325579060955,
+            "w": 0.03325415676959618,
+            "h": 0.24251549599739014
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Prominent July Column (Colonne de Juillet) topped with the gilded Génie de la Liberté at the center of the roundabout."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Colonne de Juillet (July Column) topped with the gilded Génie de la Liberté prominent in the center of the roundabout."
+            }
+          ],
+          "groundingLabel": "Colonne",
+          "ratingsReviewedAt": "2026-09-11T17:17:00.849Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-high-aided-86b3f192a0",
+          "label": "Clear blue RATP bus stop totem reading 'Bastille'",
+          "text": "Clear blue RATP bus stop totem reading 'Bastille'",
+          "description": "Clear blue RATP bus stop totem reading 'Bastille' with circular BUS roundel on the right sidewalk.",
+          "groundingPhrase": "Clear blue RATP bus stop totem reading 'Bastille'",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.9093250197941409,
+            "y": 0.2986210318954051,
+            "w": 0.0724643705463183,
+            "h": 0.06672701949860724
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Clear blue RATP bus stop totem reading \"Bastille\" with the classic Paris transit iconography."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Clear blue RATP bus stop totem reading 'Bastille' with circular BUS roundel on the right sidewalk."
+            }
+          ],
+          "groundingLabel": "Clear blue RATP bus stop totem reading",
+          "ratingsReviewedAt": "2026-09-11T17:17:07.802Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-high-aided-f32e951be5",
+          "label": "Parisian street layout, Haussmann-style stone buildings, and Vélib rental bike station",
+          "text": "Parisian street layout, Haussmann-style stone buildings, and Vélib rental bike station",
+          "description": "Parisian street layout, Haussmann-style stone buildings, and Vélib rental bike station.",
+          "groundingPhrase": "Parisian street layout, Haussmann-style stone buildings, and Vélib rental bike station",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Classic Haussmann-style stone apartment buildings surrounding the perimeter."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Parisian street layout, Haussmann-style stone buildings, and Vélib rental bike station."
+            }
+          ],
+          "groundingLabel": "Parisian street layout",
+          "ratingsReviewedAt": "2026-09-11T17:17:12.183Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-high-aided-b19162985b",
+          "label": "Road asphalt marking on the bus lane reading 'Place de la...'",
+          "text": "Road asphalt marking on the bus lane reading 'Place de la...'",
+          "description": "Street asphalt lane markings reading \"Place de la...\" with Parisian arrows.",
+          "groundingPhrase": "Road asphalt marking on the bus lane reading 'Place de la...'",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.46714172604908943,
+            "y": 0.5311300158096816,
+            "w": 0.0673000791765638,
+            "h": 0.2103942382493915
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Street asphalt lane markings reading \"Place de la...\" with Parisian arrows."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Road asphalt marking on the bus lane reading 'Place de la...'."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:17:27.482Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-high-aided-ebf30ade66",
+          "label": "Distinctive curved modern glass and limestone facade of Opéra Bastille immediately adjac",
+          "text": "Distinctive curved modern glass and limestone facade of Opéra Bastille immediately adjac",
+          "description": "Distinctive curved modern glass and limestone facade of Opéra Bastille immediately adjacent on the right.",
+          "groundingPhrase": "Distinctive curved modern glass and limestone facade of Opéra Bastille immediately adjac",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.6595,
+            "y": 0.0035,
+            "w": 0.338,
+            "h": 0.676
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Opéra Bastille curved modern glass-and-limestone facade directly on the right."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Distinctive curved modern glass and limestone facade of Opéra Bastille immediately adjacent on the right."
+            }
+          ],
+          "groundingLabel": "Distinctive curved modern glass",
+          "ratingsReviewedAt": "2026-09-11T17:17:32.785Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-high-aided-628d19b38c",
+          "label": "Place de la Bastille",
+          "text": "Place de la Bastille",
+          "description": "Place de la Bastille.",
+          "groundingPhrase": "Place de la Bastille",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Place de la Bastille"
+            }
+          ],
+          "groundingLabel": "Road asphalt"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-medium-aided",
+      "benchmarkId": "gemini-3-8-flash-medium-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-medium-aided-9e08241f14",
+          "label": "Prominent July Column (Colonne de Juillet) topped",
+          "text": "Prominent July Column (Colonne de Juillet) topped",
+          "description": "Prominent July Column (Colonne de Juillet) topped with the gilded Génie de la Liberté at the center of the roundabout.",
+          "groundingPhrase": "Prominent July Column topped",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4605,
+            "y": 0.1855,
+            "w": 0.03,
+            "h": 0.276
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Prominent July Column (Colonne de Juillet) topped with the gilded Génie de la Liberté at the center of the roundabout."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Prominent July Column (Colonne de Juillet) topped with the gilded Génie de la Liberté at the center of the roundabout."
+            }
+          ],
+          "groundingLabel": "Prominent July Column",
+          "ratingsReviewedAt": "2026-09-11T17:17:39.926Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-medium-aided-9c4e7dbd23",
+          "label": "Clear blue RATP bus stop totem reading \"Bastille\"",
+          "text": "Clear blue RATP bus stop totem reading \"Bastille\"",
+          "description": "Clear blue RATP bus stop totem reading \"Bastille\" with the classic Paris transit iconography.",
+          "groundingPhrase": "Clear blue RATP bus stop totem reading \"Bastille\"",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.9041848772763261,
+            "y": 0.301105535898015,
+            "w": 0.07522921615201908,
+            "h": 0.06287851639940778
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Clear blue RATP bus stop totem reading \"Bastille\" with the classic Paris transit iconography."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Clear blue RATP bus stop totem reading \"Bastille\" with the classic Paris transit iconography."
+            }
+          ],
+          "groundingLabel": "Clear blue RATP bus stop totem reading",
+          "ratingsReviewedAt": "2026-09-11T17:17:45.467Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-medium-aided-6d24b3d7e3",
+          "label": "Classic Haussmann-style stone apartment buildings surrounding the perimeter",
+          "text": "Classic Haussmann-style stone apartment buildings surrounding the perimeter",
+          "description": "Classic Haussmann-style stone apartment buildings surrounding the perimeter.",
+          "groundingPhrase": "Classic Haussmann-style stone apartment buildings surrounding the perimeter",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": true,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Classic Haussmann-style stone apartment buildings surrounding the perimeter."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Classic Haussmann-style stone apartment buildings surrounding the perimeter."
+            }
+          ],
+          "groundingLabel": "Classic Haussmann-style stone apartment buildings"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-medium-aided-d300bcb744",
+          "label": "Street asphalt lane markings reading \"Place de la...\"",
+          "text": "Street asphalt lane markings reading \"Place de la...\"",
+          "description": "Street asphalt lane markings reading \"Place de la...\" with Parisian arrows.",
+          "groundingPhrase": "Street asphalt lane markings reading \"Place de la...\"",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.4691588419405321,
+            "y": 0.5320527999603194,
+            "w": 0.06370500782472605,
+            "h": 0.20605542879817473
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Street asphalt lane markings reading \"Place de la...\" with Parisian arrows."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Street asphalt lane markings reading \"Place de la...\" with Parisian arrows."
+            }
+          ],
+          "groundingLabel": "Street asphalt lane markings",
+          "ratingsReviewedAt": "2026-09-11T17:17:50.283Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-medium-aided-fda99aeacd",
+          "label": "Opéra Bastille curved modern glass-and-limestone facade directly on the right",
+          "text": "Opéra Bastille curved modern glass-and-limestone facade directly on the right",
+          "description": "Opéra Bastille curved modern glass-and-limestone facade directly on the right.",
+          "groundingPhrase": "Opéra Bastille curved modern glass-and-limestone facade directly on the right",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.6596244131455399,
+            "y": 0.0027032389266405435,
+            "w": 0.33724569640062596,
+            "h": 0.46505629681067406
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Opéra Bastille curved modern glass-and-limestone facade directly on the right."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Opéra Bastille curved modern glass-and-limestone facade directly on the right."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:17:53.102Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-medium-aided-628d19b38c",
+          "label": "Place de la Bastille",
+          "text": "Place de la Bastille",
+          "description": "Place de la Bastille.",
+          "groundingPhrase": "Place de la Bastille",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Place de la Bastille"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Place de la Bastille"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh",
+      "benchmarkId": "gpt-5-6-sol-xhigh",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-xhigh-7c27698920",
+          "label": "French urban context identified Paris/Bastille at high confidence",
+          "text": "French urban context identified Paris/Bastille at high confidence",
+          "description": "French urban context identified Paris/Bastille at high confidence.",
+          "groundingPhrase": "French urban context identified Paris/Bastille at high confidence",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "French urban context identified Paris/Bastille at high confidence."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:18:16.751Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-xhigh-982199a80d",
+          "label": "July Column and the open Place de la Bastille geometry",
+          "text": "July Column and the open Place de la Bastille geometry",
+          "description": "July Column and the open Place de la Bastille geometry.",
+          "groundingPhrase": "July Column and the open Place de la Bastille geometry",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4465,
+            "y": 0.1825,
+            "w": 0.05,
+            "h": 0.302
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "July Column and the open Place de la Bastille geometry"
+            }
+          ],
+          "groundingLabel": "July Column",
+          "ratingsReviewedAt": "2026-09-11T17:18:23.269Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-xhigh-a0e670618c",
+          "label": "dense Haussmannian streets",
+          "text": "dense Haussmannian streets",
+          "description": "Dense Haussmannian streets.",
+          "groundingPhrase": "dense Haussmannian streets",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "dense Haussmannian streets"
+            }
+          ],
+          "groundingLabel": "dense Haussmannian streets",
+          "ratingsReviewedAt": "2026-09-11T17:18:40.690Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max",
+      "benchmarkId": "gpt-5-6-sol-max",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-4b8d8c2e42",
+          "label": "Place de la Bastille road text",
+          "text": "Place de la Bastille road text",
+          "description": "Place de la Bastille road text.",
+          "groundingPhrase": "Place de la Bastille road text",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4695170229612035,
+            "y": 0.5311300158096816,
+            "w": 0.05384006334125093,
+            "h": 0.20396998669979172
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md",
+              "text": "Bastille cues."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Place de la Bastille road text"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:18:48.964Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-5fa3e301ab",
+          "label": "Haussmann streetscape",
+          "text": "Haussmann streetscape",
+          "description": "Dense Paris streetscape.",
+          "groundingPhrase": "Haussmann streetscape",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md",
+              "text": "dense Paris streetscape"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Haussmann streetscape"
+            }
+          ],
+          "groundingLabel": "Haussmann streetscape; a saint statue",
+          "ratingsReviewedAt": "2026-09-11T17:18:54.995Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-7be3f30763",
+          "label": "a saint statue on the elevated castle bridge/terrace",
+          "text": "a saint statue on the elevated castle bridge/terrace",
+          "description": "A saint statue on the elevated castle bridge/terrace.",
+          "groundingPhrase": "a saint statue on the elevated castle bridge/terrace",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": true,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "a saint statue on the elevated castle bridge/terrace."
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-8abf34b39b",
+          "label": "elevated stone fortification/viewpoint in the foreground",
+          "text": "elevated stone fortification/viewpoint in the foreground",
+          "description": "Elevated stone fortification/viewpoint in the foreground.",
+          "groundingPhrase": "elevated stone fortification/viewpoint in the foreground",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "elevated stone fortification/viewpoint in the foreground."
+            }
+          ],
+          "groundingLabel": "elevated stone fortification/viewpoint"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-1b0bd1c696",
+          "label": "Hohensalzburg Fortress on the opposite hill",
+          "text": "Hohensalzburg Fortress on the opposite hill",
+          "description": "Hohensalzburg Fortress on the opposite hill.",
+          "groundingPhrase": "Hohensalzburg Fortress on the opposite hill",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Hohensalzburg Fortress on the opposite hill"
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-c0674d8649",
+          "label": "French road markings and transit furniture",
+          "text": "French road markings and transit furniture",
+          "description": "French road markings and transit furniture.",
+          "groundingPhrase": "French road markings and transit furniture",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "French road markings and transit furniture"
+            }
+          ],
+          "groundingLabel": "French road markings"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-fe1921aa8d",
+          "label": "Salzburg baroque old town and domes",
+          "text": "Salzburg baroque old town and domes",
+          "description": "Salzburg baroque old town and domes.",
+          "groundingPhrase": "Salzburg baroque old town and domes",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Salzburg baroque old town and domes"
+            }
+          ],
+          "groundingLabel": "Salzburg baroque"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-d0358ef0df",
+          "label": "the castle complex at the viewpoint",
+          "text": "the castle complex at the viewpoint",
+          "description": "The castle complex at the viewpoint.",
+          "groundingPhrase": "the castle complex at the viewpoint",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "the castle complex at the viewpoint"
+            }
+          ],
+          "groundingLabel": "the castle complex"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-3543afbf76",
+          "label": "Berlin Fernsehturm dominating the skyline",
+          "text": "Berlin Fernsehturm dominating the skyline",
+          "description": "Berlin Fernsehturm dominating the skyline.",
+          "groundingPhrase": "Berlin Fernsehturm dominating the skyline",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Berlin Fernsehturm dominating the skyline"
+            }
+          ],
+          "groundingLabel": "Berlin Fernsehturm"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-06affa1033",
+          "label": "Cesky Krumlov's tight Vltava bend",
+          "text": "Cesky Krumlov's tight Vltava bend",
+          "description": "Cesky Krumlov's tight Vltava bend.",
+          "groundingPhrase": "Cesky Krumlov's tight Vltava bend",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Cesky Krumlov's tight Vltava bend"
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-380dd323a5",
+          "label": "recognizable Alexanderplatz modernist blocks",
+          "text": "recognizable Alexanderplatz modernist blocks",
+          "description": "Recognizable Alexanderplatz modernist blocks.",
+          "groundingPhrase": "recognizable Alexanderplatz modernist blocks",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "recognizable Alexanderplatz modernist blocks."
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-1a6bbb1d0c",
+          "label": "Place de la Bastille",
+          "text": "Place de la Bastille",
+          "description": "Place de la Bastille painted on the roadway.",
+          "groundingPhrase": "Place de la Bastille",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Place de la Bastille painted on the roadway"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low",
+      "benchmarkId": "gpt-6-astra-low",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gpt-6-astra-low-97c6b2a412",
+          "label": "broad right-driving urban square with bus lanes. Initial belief",
+          "text": "broad right-driving urban square with bus lanes. Initial belief",
+          "description": "Place de la Bastille.",
+          "groundingPhrase": "broad right-driving urban square with bus lanes. Initial belief",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "broad right-driving urban square with bus lanes. Initial belief: Place de la Bastille"
+            }
+          ],
+          "groundingLabel": "broad right-driving urban square",
+          "ratingsReviewedAt": "2026-09-11T17:19:30.117Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-6-astra-low-c04a8be07e",
+          "label": "curved modern opera facade",
+          "text": "curved modern opera facade",
+          "description": "Curved modern opera facade.",
+          "groundingPhrase": "curved modern opera facade",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.6595,
+            "y": 0.0035,
+            "w": 0.337,
+            "h": 0.672
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "curved modern opera facade"
+            }
+          ],
+          "groundingLabel": "curved modern opera facade",
+          "ratingsReviewedAt": "2026-09-11T17:19:41.353Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-6-astra-low-5a350a868a",
+          "label": "Parisian mansard blocks",
+          "text": "Parisian mansard blocks",
+          "description": "Parisian mansard blocks.",
+          "groundingPhrase": "Parisian mansard blocks",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Parisian mansard blocks"
+            }
+          ],
+          "groundingLabel": "urban square; Parisian mansard blocks",
+          "ratingsReviewedAt": "2026-09-11T17:20:21.859Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-6-astra-low-c0cfab9457",
+          "label": "Bastille bus-stop text",
+          "text": "Bastille bus-stop text",
+          "description": "Bastille bus-stop text.",
+          "groundingPhrase": "Bastille bus-stop text",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.9026924882629108,
+            "y": 0.20485648033331677,
+            "w": 0.09574256651017213,
+            "h": 0.14624329150339765
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Bastille bus-stop text"
+            }
+          ],
+          "groundingLabel": "Bastille bus-stop text",
+          "ratingsReviewedAt": "2026-09-11T17:20:27.072Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-6-astra-low-7861db8680",
+          "label": "green column",
+          "text": "green column",
+          "description": "Green column with gold figure.",
+          "groundingPhrase": "green column",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4615,
+            "y": 0.1875,
+            "w": 0.028,
+            "h": 0.253
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "green column with gold figure"
+            }
+          ],
+          "groundingLabel": "green column",
+          "ratingsReviewedAt": "2026-09-11T17:20:38.848Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "benchmarkId": "grok-4-6-xhigh",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-0c92e9754a",
+          "label": "Grok read the Bastille text",
+          "text": "Grok read the Bastille text",
+          "description": "Grok read the Bastille text.",
+          "groundingPhrase": "Grok read the Bastille text",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.906885758998435,
+            "y": 0.2979266901443381,
+            "w": 0.07668231611893583,
+            "h": 0.05714002281632857
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Grok read the Bastille text"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:20:52.198Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-ae4d0d4a44",
+          "label": "Paris architecture correctly",
+          "text": "Paris architecture correctly",
+          "description": "Paris architecture correctly.",
+          "groundingPhrase": "Paris architecture correctly",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Paris architecture correctly."
+            }
+          ],
+          "groundingLabel": "Paris architecture",
+          "ratingsReviewedAt": "2026-09-11T17:20:56.662Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-78b3359037",
+          "label": "street plate",
+          "text": "street plate",
+          "description": "Street plate.",
+          "groundingPhrase": "street plate",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "street plate"
+            }
+          ],
+          "groundingLabel": "Grak; street plate",
+          "ratingsReviewedAt": "2026-09-11T17:21:32.414Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-0668a4d3b1",
+          "label": "July Column",
+          "text": "July Column",
+          "description": "July Column.",
+          "groundingPhrase": "July Column",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4538341158059468,
+            "y": 0.18364664451168097,
+            "w": 0.04225352112676056,
+            "h": 0.2396706512573781
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "July Column"
+            }
+          ],
+          "groundingLabel": "July Column",
+          "ratingsReviewedAt": "2026-09-11T17:21:39.682Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max",
+      "benchmarkId": "glm-5-3-flash-max",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-1/conversation.json"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-3/conversation.json"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-glm-5-3-flash-max-9d68d5674d",
+          "label": "French bus shelter + Velib bike. Belief",
+          "text": "French bus shelter + Velib bike. Belief",
+          "description": "Paris, Place de la Bastille. Placing pin now at 48.8532, 2.3695.",
+          "groundingPhrase": "French bus shelter + Velib bike. Belief",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "French bus shelter + Velib bike. Belief: Paris, Place de la Bastille. Placing pin now at 48.8532, 2.3695."
+            }
+          ],
+          "groundingLabel": "French bus shelter + Velib bike",
+          "ratingsReviewedAt": "2026-09-11T17:21:48.726Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-glm-5-3-flash-max-56f112c48d",
+          "label": "road marking \"Place de la Bastille\",",
+          "text": "road marking \"Place de la Bastille\",",
+          "description": "Road marking \"Place de la Bastille\",.",
+          "groundingPhrase": "road marking \"Place de la Bastille\",",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.4702660406885759,
+            "y": 0.5248995585536432,
+            "w": 0.05399061032863853,
+            "h": 0.2158623084172412
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "road marking \"Place de la Bastille\","
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:21:53.165Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-glm-5-3-flash-max-8409725baf",
+          "label": "blue metro sign \"Bastille\",",
+          "text": "blue metro sign \"Bastille\",",
+          "description": "Blue metro sign \"Bastille\",.",
+          "groundingPhrase": "blue metro sign \"Bastille\",",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.9071697965571205,
+            "y": 0.2996770745498735,
+            "w": 0.06935602503912364,
+            "h": 0.06135881156688658
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "blue metro sign \"Bastille\","
+            }
+          ],
+          "groundingLabel": "blue metro sign",
+          "ratingsReviewedAt": "2026-09-11T17:21:56.969Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-glm-5-3-flash-max-7df1fc0bdd",
+          "label": "Haussmann blocks behind,",
+          "text": "Haussmann blocks behind,",
+          "description": "Haussmann blocks behind,.",
+          "groundingPhrase": "Haussmann blocks behind,",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "Haussmann blocks behind,"
+            }
+          ],
+          "groundingLabel": "Haussmann blocks",
+          "ratingsReviewedAt": "2026-09-11T17:22:02.549Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-glm-5-3-flash-max-9f4a8fe84c",
+          "label": "green column",
+          "text": "green column",
+          "description": "Green column with golden winged statue ahead,.",
+          "groundingPhrase": "green column",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.45698669796557123,
+            "y": 0.1753894400079361,
+            "w": 0.03597104851330202,
+            "h": 0.2599953375328605
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "green column with golden winged statue ahead,"
+            }
+          ],
+          "groundingLabel": "road; column",
+          "ratingsReviewedAt": "2026-09-11T17:22:09.517Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-unaided",
+      "benchmarkId": "gemini-3-7-flash-high-unaided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, unaided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-unaided-c040278479",
+          "label": "Place de la Bastille",
+          "text": "Place de la Bastille",
+          "description": "Place de la Bastille.",
+          "groundingPhrase": "Place de la Bastille",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Place de la Bastille"
+            }
+          ],
+          "groundingLabel": "Place",
+          "ratingsReviewedAt": "2026-09-11T17:22:22.582Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-unaided-d8fc96a0ab",
+          "label": "Colonne de Juillet",
+          "text": "Colonne de Juillet",
+          "description": "Colonne de Juillet.",
+          "groundingPhrase": "Colonne de Juillet",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.46087636932707354,
+            "y": 0.16936163880759883,
+            "w": 0.032081377151799706,
+            "h": 0.2587173255294877
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Colonne de Juillet"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:22:29.608Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-unaided-15d6901662",
+          "label": "Paris bus signage",
+          "text": "Paris bus signage",
+          "description": "Paris bus signage.",
+          "groundingPhrase": "Paris bus signage",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.9420970266040689,
+            "y": 0.18999553593571747,
+            "w": 0.05477308294209704,
+            "h": 0.10793115420862062
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Paris bus signage"
+            }
+          ],
+          "groundingLabel": "Paris bus signage",
+          "ratingsReviewedAt": "2026-09-11T17:22:36.854Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-unaided-956544a8fe",
+          "label": "Opéra Bastille",
+          "text": "Opéra Bastille",
+          "description": "Opéra Bastille.",
+          "groundingPhrase": "Opéra Bastille",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.662754303599374,
+            "y": 0.001116016070631417,
+            "w": 0.33724569640062596,
+            "h": 0.5920341252914042
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Opéra Bastille"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T17:22:43.071Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max-static-covered",
+      "benchmarkId": "glm-5-3-flash-max-static-covered",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-glm-5-3-flash-max-static-covered-f8c66d71eb",
+          "label": "Tall green bronze column topped by a gilded winged figure",
+          "text": "Tall green bronze column topped by a gilded winged figure",
+          "description": "The Colonne de Juillet (July Column), Place de la Bastille.",
+          "groundingPhrase": "Tall green bronze column topped by a gilded winged figure",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.4615,
+            "y": 0.1875,
+            "w": 0.028,
+            "h": 0.289
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Tall green bronze column topped by a gilded winged figure — the Colonne de Juillet (July Column), Place de la Bastille"
+            }
+          ],
+          "groundingLabel": "Tall green bronze column",
+          "ratingsReviewedAt": "2026-09-12T00:16:02.026Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-glm-5-3-flash-max-static-covered-935166c8ab",
+          "label": "Bus-stop flag sign",
+          "text": "Bus-stop flag sign",
+          "description": "Bus-stop flag sign reads \"Bastille\" (RATP-style).",
+          "groundingPhrase": "Bus-stop flag sign",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9067597809076682,
+            "y": 0.20114118843311343,
+            "w": 0.09324021909233182,
+            "h": 0.17275670849660235
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Bus-stop flag sign reads \"Bastille\" (RATP-style)"
+            }
+          ],
+          "groundingLabel": "Bus-stop flag sign",
+          "ratingsReviewedAt": "2026-09-12T00:16:11.241Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-glm-5-3-flash-max-static-covered-b30409d18f",
+          "label": "Large curved modern stone-and-glass building on the right",
+          "text": "Large curved modern stone-and-glass building on the right",
+          "description": "The Opéra Bastille (opened 1989).",
+          "groundingPhrase": "Large curved modern stone-and-glass building on the right",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.6615,
+            "y": 0.0025,
+            "w": 0.336,
+            "h": 0.675
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Large curved modern stone-and-glass building on the right — the Opéra Bastille (opened 1989)"
+            }
+          ],
+          "groundingLabel": "Large curved modern stone-and-glass building",
+          "ratingsReviewedAt": "2026-09-12T00:16:16.881Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-glm-5-3-flash-max-static-covered-6d5c2fbab7",
+          "label": "Parisian street furniture",
+          "text": "Parisian street furniture",
+          "description": "Ornate lantern lampposts, plane trees, news kiosks, Haussmann-era facades in the background.",
+          "groundingPhrase": "Parisian street furniture",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Parisian street furniture: ornate lantern lampposts, plane trees, news kiosks, Haussmann-era facades in the background"
+            }
+          ],
+          "groundingLabel": "Parisian street furniture",
+          "ratingsReviewedAt": "2026-09-12T00:16:22.493Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-glm-5-3-flash-max-static-covered-ae2be41e96",
+          "label": "French police car livery in the bus lane; right-hand traffic",
+          "text": "French police car livery in the bus lane; right-hand traffic",
+          "description": "French police car livery in the bus lane; right-hand traffic with EU-format plates; French arterial-road layout.",
+          "groundingPhrase": "French police car livery in the bus lane; right-hand traffic",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "French police car livery in the bus lane; right-hand traffic with EU-format plates; French arterial-road layout"
+            }
+          ],
+          "groundingLabel": "French police car livery",
+          "ratingsReviewedAt": "2026-09-12T00:16:39.084Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low-static-covered",
+      "benchmarkId": "gpt-6-astra-low-static-covered",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gpt-6-astra-low-static-covered-92f73eb74d",
+          "label": "Bus stop",
+          "text": "Bus stop",
+          "description": "Bus stop reads Bastille, directly naming the square.",
+          "groundingPhrase": "Bus stop",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9007785602503912,
+            "y": 0.2008564803333168,
+            "w": 0.09687402190923325,
+            "h": 0.15934160011904172
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Bus stop reads Bastille, directly naming the square"
+            }
+          ],
+          "groundingLabel": "Bus stop",
+          "ratingsReviewedAt": "2026-09-12T00:17:06.646Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-6-astra-low-static-covered-86ccdb02db",
+          "label": "Green column",
+          "text": "Green column",
+          "description": "Green column with gilded figure matches the July Column.",
+          "groundingPhrase": "Green column",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.4625,
+            "y": 0.1875,
+            "w": 0.026,
+            "h": 0.252
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Green column with gilded figure matches the July Column"
+            }
+          ],
+          "groundingLabel": "Green column",
+          "ratingsReviewedAt": "2026-09-12T00:17:15.661Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-6-astra-low-static-covered-09c4d9b600",
+          "label": "Curved modern opera facade",
+          "text": "Curved modern opera facade",
+          "description": "Curved modern opera facade matches Opéra Bastille.",
+          "groundingPhrase": "Curved modern opera facade",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.6595,
+            "y": 0.0035,
+            "w": 0.337,
+            "h": 0.667
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Curved modern opera facade matches Opéra Bastille"
+            }
+          ],
+          "groundingLabel": "Curved modern opera facade; modern opera facade",
+          "ratingsReviewedAt": "2026-09-12T00:17:20.678Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-6-astra-low-static-covered-366e651a8e",
+          "label": "Mansard roofs and stone apartment blocks",
+          "text": "Mansard roofs and stone apartment blocks",
+          "description": "Mansard roofs and stone apartment blocks fit central Paris.",
+          "groundingPhrase": "Mansard roofs and stone apartment blocks",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Mansard roofs and stone apartment blocks fit central Paris"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T00:17:42.370Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-6-astra-low-static-covered-7fca51a14e",
+          "label": "French bus infrastructure and right-hand traffic support France",
+          "text": "French bus infrastructure and right-hand traffic support France",
+          "description": "French bus infrastructure and right-hand traffic support France.",
+          "groundingPhrase": "French bus infrastructure and right-hand traffic support France",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "French bus infrastructure and right-hand traffic support France"
+            }
+          ],
+          "groundingLabel": "French bus infrastructure",
+          "ratingsReviewedAt": "2026-09-12T00:17:56.500Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh-static-covered",
+      "benchmarkId": "gpt-5-6-sol-xhigh-static-covered",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-xhigh-static-covered-c6863d6622",
+          "label": "The blue stop sign visibly reads Bastille",
+          "text": "The blue stop sign visibly reads Bastille",
+          "description": "Directly identifies Place de la Bastille.",
+          "groundingPhrase": "The blue stop sign visibly reads Bastille",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9005,
+            "y": 0.20849007985714996,
+            "w": 0.09678247261345853,
+            "h": 0.15964614850453845
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The blue stop sign visibly reads Bastille — directly identifies Place de la Bastille"
+            }
+          ],
+          "groundingLabel": "The blue stop sign visibly",
+          "ratingsReviewedAt": "2026-09-12T00:18:14.208Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-xhigh-static-covered-5a68c814e9",
+          "label": "The green column topped by a gilded figure is the July Column",
+          "text": "The green column topped by a gilded figure is the July Column",
+          "description": "A distinctive Paris landmark.",
+          "groundingPhrase": "The green column topped by a gilded figure is the July Column",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.4615,
+            "y": 0.1865,
+            "w": 0.028,
+            "h": 0.275
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The green column topped by a gilded figure is the July Column — a distinctive Paris landmark"
+            }
+          ],
+          "groundingLabel": "The green column",
+          "ratingsReviewedAt": "2026-09-12T00:18:17.507Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-xhigh-static-covered-8837575040",
+          "label": "Haussmann-style cream blocks ring the square",
+          "text": "Haussmann-style cream blocks ring the square",
+          "description": "Consistent with central Paris.",
+          "groundingPhrase": "Haussmann-style cream blocks ring the square",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Haussmann-style cream blocks ring the square — consistent with central Paris"
+            }
+          ],
+          "groundingLabel": "Haussmann-style cream blocks",
+          "ratingsReviewedAt": "2026-09-12T00:18:20.666Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-xhigh-static-covered-8cbfbccc3f",
+          "label": "The round BUS signs and dense curbside shelters",
+          "text": "The round BUS signs and dense curbside shelters",
+          "description": "The round BUS signs and dense curbside shelters match Parisian transit streetscape.",
+          "groundingPhrase": "The round BUS signs and dense curbside shelters",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.9381846635367762,
+            "y": 0.1974604434303854,
+            "w": 0.06181533646322379,
+            "h": 0.12856505133673926
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The round BUS signs and dense curbside shelters match Parisian transit streetscape"
+            }
+          ],
+          "groundingLabel": "The round BUS signs",
+          "ratingsReviewedAt": "2026-09-12T00:18:40.421Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-xhigh-static-covered-f9a9c8524c",
+          "label": "Broad boulevards, intensive cycle infrastructure, and French road markings",
+          "text": "Broad boulevards, intensive cycle infrastructure, and French road markings",
+          "description": "Broad boulevards, intensive cycle infrastructure, and French road markings fit the Bastille junction.",
+          "groundingPhrase": "Broad boulevards, intensive cycle infrastructure, and French road markings",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Broad boulevards, intensive cycle infrastructure, and French road markings fit the Bastille junction"
+            }
+          ],
+          "groundingLabel": "Broad boulevards",
+          "ratingsReviewedAt": "2026-09-12T00:18:43.564Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max-static-covered",
+      "benchmarkId": "gpt-5-6-sol-max-static-covered",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-static-covered-c0906ede65",
+          "label": "The blue transit stop explicitly says Bastille, placing the scene in Paris",
+          "text": "The blue transit stop explicitly says Bastille, placing the scene in Paris",
+          "description": "The blue transit stop explicitly says Bastille, placing the scene in Paris.",
+          "groundingPhrase": "The blue transit stop explicitly says Bastille, placing the scene in Paris",
+          "source": "starting-image",
+          "category": "geography",
+          "region": {
+            "x": 0.8990610328638498,
+            "y": 0.20222211199841278,
+            "w": 0.10093896713615025,
+            "h": 0.15554783988889442
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The blue transit stop explicitly says Bastille, placing the scene in Paris"
+            }
+          ],
+          "groundingLabel": "The blue transit stop explicitly",
+          "ratingsReviewedAt": "2026-09-12T00:19:10.895Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-static-covered-427186cb90",
+          "label": "The green column topped by a gilded winged figure is the July Column at Place de la Bast",
+          "text": "The green column topped by a gilded winged figure is the July Column at Place de la Bast",
+          "description": "The green column topped by a gilded winged figure is the July Column at Place de la Bastille.",
+          "groundingPhrase": "The green column topped by a gilded winged figure is the July Column at Place de la Bast",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.4624413145539906,
+            "y": 0.17682654630226674,
+            "w": 0.02738654147104852,
+            "h": 0.24919398839343287
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The green column topped by a gilded winged figure is the July Column at Place de la Bastille"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T00:19:22.159Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-static-covered-611b9b966b",
+          "label": "The curved modern stone-and-glass building on the right",
+          "text": "The curved modern stone-and-glass building on the right",
+          "description": "The curved modern stone-and-glass building on the right matches the Opéra Bastille frontage.",
+          "groundingPhrase": "The curved modern stone-and-glass building on the right",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.6680727699530516,
+            "y": 0,
+            "w": 0.33192723004694835,
+            "h": 0.676
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "The curved modern stone-and-glass building on the right matches the Opéra Bastille frontage"
+            }
+          ],
+          "groundingLabel": "The green column; The curved modern stone-and-glass building",
+          "ratingsReviewedAt": "2026-09-12T00:19:31.826Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-static-covered-f551568d85",
+          "label": "Cream Haussmann blocks",
+          "text": "Cream Haussmann blocks",
+          "description": "Cream Haussmann blocks with mansard roofs surround the square, supporting central Paris.",
+          "groundingPhrase": "Cream Haussmann blocks",
+          "source": "starting-image",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "Cream Haussmann blocks with mansard roofs surround the square, supporting central Paris"
+            }
+          ],
+          "groundingLabel": "Cream Haussmann blocks",
+          "ratingsReviewedAt": "2026-09-12T00:19:35.786Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gpt-5-6-sol-max-static-covered-34f1cc0067",
+          "label": "A marked bus lane, dense curbside transit, and Paris-style street furniture",
+          "text": "A marked bus lane, dense curbside transit, and Paris-style street furniture",
+          "description": "A marked bus lane, dense curbside transit, and Paris-style street furniture fit a major Paris junction.",
+          "groundingPhrase": "A marked bus lane, dense curbside transit, and Paris-style street furniture",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+              "text": "A marked bus lane, dense curbside transit, and Paris-style street furniture fit a major Paris junction"
+            }
+          ],
+          "groundingLabel": "A marked bus lane",
+          "ratingsReviewedAt": "2026-09-12T00:19:43.348Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-static-covered",
+      "benchmarkId": "grok-4-6-xhigh-static-covered",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-static-covered-0aec84273f",
+          "label": "Monumental green bronze column with a gilded winged figure on top",
+          "text": "Monumental green bronze column with a gilded winged figure on top",
+          "description": "The July Column (Colonne de Juillet) in Place de la Bastille, Paris.",
+          "groundingPhrase": "Monumental green bronze column with a gilded winged figure on top",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.4605,
+            "y": 0.1865,
+            "w": 0.029,
+            "h": 0.29
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Monumental green bronze column with a gilded winged figure on top — the July Column (Colonne de Juillet) in Place de la Bastille, Paris"
+            }
+          ],
+          "groundingLabel": "Monumental green bronze column",
+          "ratingsReviewedAt": "2026-09-12T00:20:01.835Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-static-covered-41214beb69",
+          "label": "Bus-stop blade",
+          "text": "Bus-stop blade",
+          "description": "Bus-stop blade reads Bastille; French BUS cap on the pole.",
+          "groundingPhrase": "Bus-stop blade",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9068857589984352,
+            "y": 0.2038093348544219,
+            "w": 0.09076682316118934,
+            "h": 0.14443727989683053
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Bus-stop blade reads Bastille; French BUS cap on the pole"
+            }
+          ],
+          "groundingLabel": "Bus-stop blade",
+          "ratingsReviewedAt": "2026-09-12T00:20:11.525Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-static-covered-17126bef02",
+          "label": "Large curved glass-and-stone civic building on the right",
+          "text": "Large curved glass-and-stone civic building on the right",
+          "description": "Large curved glass-and-stone civic building on the right matches Opéra Bastille.",
+          "groundingPhrase": "Large curved glass-and-stone civic building on the right",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.6605,
+            "y": 0.0025,
+            "w": 0.337,
+            "h": 0.675
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Large curved glass-and-stone civic building on the right matches Opéra Bastille"
+            }
+          ],
+          "groundingLabel": "Large curved glass-and-stone civic building",
+          "ratingsReviewedAt": "2026-09-12T00:20:15.515Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-static-covered-85ec05a45a",
+          "label": "Haussmannian stone blocks, plane trees, and a very wide multi-lane boulevard",
+          "text": "Haussmannian stone blocks, plane trees, and a very wide multi-lane boulevard",
+          "description": "Central Paris streetscape.",
+          "groundingPhrase": "Haussmannian stone blocks, plane trees, and a very wide multi-lane boulevard",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Haussmannian stone blocks, plane trees, and a very wide multi-lane boulevard — central Paris streetscape"
+            }
+          ],
+          "groundingLabel": "Haussmannian stone blocks",
+          "ratingsReviewedAt": "2026-09-12T00:20:17.623Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-static-covered-fd9091cd3c",
+          "label": "Yellow dashed edge line and dense urban traffic",
+          "text": "Yellow dashed edge line and dense urban traffic",
+          "description": "Yellow dashed edge line and dense urban traffic with European plates.",
+          "groundingPhrase": "Yellow dashed edge line and dense urban traffic",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.5221494522691705,
+            "y": 0.5008316799761916,
+            "w": 0.25562832550860726,
+            "h": 0.4896449828877536
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+              "text": "Yellow dashed edge line and dense urban traffic with European plates"
+            }
+          ],
+          "groundingLabel": "Yellow dashed edge line; dashed edge line",
+          "ratingsReviewedAt": "2026-09-12T00:20:33.103Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-aided-static-covered",
+      "benchmarkId": "gemini-3-7-flash-high-aided-static-covered",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-static-covered-e50d1e416a",
+          "label": "July Column (Colonne de Juillet)",
+          "text": "July Column (Colonne de Juillet)",
+          "description": "In the direct center of the view stands the iconic green bronze column topped with the gilded bronze winged statue Génie de la Liberté, situated at Place de la Bastille in Paris.",
+          "groundingPhrase": "July Column",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.4615,
+            "y": 0.1865,
+            "w": 0.028,
+            "h": 0.255
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "July Column (Colonne de Juillet): In the direct center of the view stands the iconic green bronze column topped with the gilded bronze winged statue Génie de la Liberté, situated at Place de la Bastille in Paris"
+            }
+          ],
+          "groundingLabel": "July Column",
+          "ratingsReviewedAt": "2026-09-12T00:23:34.157Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-static-covered-68b2f01575",
+          "label": "Opéra Bastille",
+          "text": "Opéra Bastille",
+          "description": "On the right-hand side is the distinctive curved glass-and-granite modern facade of the Opéra Bastille.",
+          "groundingPhrase": "Opéra Bastille",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.6541231195566112,
+            "y": 0,
+            "w": 0.3458768804433888,
+            "h": 0.6616671434665864
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Opéra Bastille: On the right-hand side is the distinctive curved glass-and-granite modern facade of the Opéra Bastille"
+            }
+          ],
+          "groundingLabel": "Opra Bastille",
+          "ratingsReviewedAt": "2026-09-12T00:23:46.997Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-static-covered-3c02903cae",
+          "label": "RATP Bus Stop",
+          "text": "RATP Bus Stop",
+          "description": "The bus shelter and pole on the right are explicitly labeled \"Bastille\" and \"BUS\" in standard Paris RATP public transport typography.",
+          "groundingPhrase": "RATP Bus Stop",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.9004073634204275,
+            "y": 0.1980451328766092,
+            "w": 0.09642557403008715,
+            "h": 0.15406047830560365
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "RATP Bus Stop: The bus shelter and pole on the right are explicitly labeled \"Bastille\" and \"BUS\" in standard Paris RATP public transport typography"
+            }
+          ],
+          "groundingLabel": "RATP Bus Stop",
+          "ratingsReviewedAt": "2026-09-12T00:23:59.402Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-high-aided-static-covered-5ec9d6b5a8",
+          "label": "Parisian Urban Fabric & Infrastructure",
+          "text": "Parisian Urban Fabric & Infrastructure",
+          "description": "Haussmann-style perimeter buildings, classic green Parisian street furniture and cycling lane markings, and French vehicle registrations.",
+          "groundingPhrase": "Parisian Urban Fabric & Infrastructure",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Parisian Urban Fabric & Infrastructure: Haussmann-style perimeter buildings, classic green Parisian street furniture and cycling lane markings, and French vehicle registrations"
+            }
+          ],
+          "groundingLabel": "Parisian Urban Fabric",
+          "ratingsReviewedAt": "2026-09-12T00:24:04.990Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-medium-aided-static-covered",
+      "benchmarkId": "gemini-3-7-flash-medium-aided-static-covered",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-static-covered-c71ad90619",
+          "label": "Landmark",
+          "text": "Landmark",
+          "description": "The Colonne de Juillet (July Column) standing tall in the center-background, crowned with the gilded bronze statue Génie de la Liberté.",
+          "groundingPhrase": "Landmark",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.4610043547110055,
+            "y": 0.18486294511781975,
+            "w": 0.028060965954077588,
+            "h": 0.22630299380160104
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Landmark: The Colonne de Juillet (July Column) standing tall in the center-background, crowned with the gilded bronze statue Génie de la Liberté"
+            }
+          ],
+          "groundingLabel": "Landmark",
+          "ratingsReviewedAt": "2026-09-12T00:25:05.297Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-static-covered-f7b7a163a2",
+          "label": "Modern Architecture",
+          "text": "Modern Architecture",
+          "description": "The unmistakable curved glass-and-granite facade of the Opéra Bastille prominently on the right.",
+          "groundingPhrase": "Modern Architecture",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.6595,
+            "y": 0.0045,
+            "w": 0.337,
+            "h": 0.671
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Modern Architecture: The unmistakable curved glass-and-granite facade of the Opéra Bastille prominently on the right"
+            }
+          ],
+          "groundingLabel": "Modern Architecture",
+          "ratingsReviewedAt": "2026-09-12T00:25:11.568Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-static-covered-37f5741369",
+          "label": "Transit Signage",
+          "text": "Transit Signage",
+          "description": "RATP bus shelter and pole with the circular green BUS emblem and station name plaque reading Bastille.",
+          "groundingPhrase": "Transit Signage",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.8965411718131433,
+            "y": 0.2991973826193882,
+            "w": 0.095,
+            "h": 0.067
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Transit Signage: RATP bus shelter and pole with the circular green BUS emblem and station name plaque reading Bastille"
+            }
+          ],
+          "groundingLabel": "Transit Signage",
+          "ratingsReviewedAt": "2026-09-12T00:25:22.878Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-7-flash-medium-aided-static-covered-29dd327247",
+          "label": "Urban Furniture & Markings",
+          "text": "Urban Furniture & Markings",
+          "description": "Classic dark green Parisian street lamps, Haussmann-style residential facades along the square, and French bus lane yellow road zig-zags.",
+          "groundingPhrase": "Urban Furniture & Markings",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Urban Furniture & Markings: Classic dark green Parisian street lamps, Haussmann-style residential facades along the square, and French bus lane yellow road zig-zags"
+            }
+          ],
+          "groundingLabel": "Urban Furniture",
+          "ratingsReviewedAt": "2026-09-12T00:25:39.205Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash-high-aided-static-covered",
+      "benchmarkId": "gemini-3-8-flash-high-aided-static-covered",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-high-aided-static-covered-4582e3703b",
+          "label": "Landmark Monument",
+          "text": "Landmark Monument",
+          "description": "Directly in the center background stands the Colonne de Juillet (July Column) topped with the gilded bronze statue Le Génie de la Bastille (Spirit of Freedom) situated in the middle of Place de la Bastille.",
+          "groundingPhrase": "Landmark Monument",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.4593353127474268,
+            "y": 0.1899545659865994,
+            "w": 0.03466349960411718,
+            "h": 0.2620302391528018
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Landmark Monument: Directly in the center background stands the Colonne de Juillet (July Column) topped with the gilded bronze statue Le Génie de la Bastille (Spirit of Freedom) situated in the middle of Place de la Bastille"
+            }
+          ],
+          "groundingLabel": "Landmark Monument",
+          "ratingsReviewedAt": "2026-09-12T00:25:55.053Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-high-aided-static-covered-0c9b9db7df",
+          "label": "Landmark Architecture",
+          "text": "Landmark Architecture",
+          "description": "The modern curved glass, polished stone, and grid facade on the right is the Opéra Bastille designed by Carlos Ott.",
+          "groundingPhrase": "Landmark Architecture",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.6565,
+            "y": 0.0045,
+            "w": 0.34,
+            "h": 0.671
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Landmark Architecture: The modern curved glass, polished stone, and grid facade on the right is the Opéra Bastille designed by Carlos Ott"
+            }
+          ],
+          "groundingLabel": "Landmark Architecture",
+          "ratingsReviewedAt": "2026-09-12T00:25:59.703Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-high-aided-static-covered-e9a2515c17",
+          "label": "Transit Signage",
+          "text": "Transit Signage",
+          "description": "The bus stop pole and shelter clearly display the blue name sign reading Bastille under the iconic circular green RATP \"BUS\" totem.",
+          "groundingPhrase": "Transit Signage",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9063519398258115,
+            "y": 0.201135699766619,
+            "w": 0.08810570071258911,
+            "h": 0.15260591231900425
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Transit Signage: The bus stop pole and shelter clearly display the blue name sign reading Bastille under the iconic circular green RATP \"BUS\" totem"
+            }
+          ],
+          "groundingLabel": "Transit Signage",
+          "ratingsReviewedAt": "2026-09-12T00:26:18.933Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-high-aided-static-covered-78ed1775a8",
+          "label": "Parisian Street Furniture & Mobility",
+          "text": "Parisian Street Furniture & Mobility",
+          "description": "A Parisian public rental bike (Vélib') with its characteristic cyan front basket is being ridden on the left bike lane, next to Paris standard \"BUS\" road markings and French vehicle license plates.",
+          "groundingPhrase": "Parisian Street Furniture & Mobility",
+          "source": "starting-image",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Parisian Street Furniture & Mobility: A Parisian public rental bike (Vélib') with its characteristic cyan front basket is being ridden on the left bike lane, next to Paris standard \"BUS\" road markings and French vehicle license plates"
+            }
+          ],
+          "groundingLabel": "Parisian Street Furniture",
+          "ratingsReviewedAt": "2026-09-12T00:26:09.994Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash-medium-aided-static-covered",
+      "benchmarkId": "gemini-3-8-flash-medium-aided-static-covered",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "condition": "static-image-covered",
+      "publicationStatus": "published",
+      "imagePath": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+      "mergeStrategy": "single-covered-static-run",
+      "sourceRuns": [
+        {
+          "runId": "covered-static-r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-medium-aided-static-covered-982584dab9",
+          "label": "Colonne de Juillet (July Column)",
+          "text": "Colonne de Juillet (July Column)",
+          "description": "Directly in the line of sight across the intersection stands the famous green bronze column topped by the golden winged statue Génie de la Liberté at Place de la Bastille.",
+          "groundingPhrase": "Colonne de Juillet",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.4610043547110055,
+            "y": 0.18486294511781975,
+            "w": 0.028060965954077588,
+            "h": 0.22369693091420112
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Colonne de Juillet (July Column): Directly in the line of sight across the intersection stands the famous green bronze column topped by the golden winged statue Génie de la Liberté at Place de la Bastille"
+            }
+          ],
+          "groundingLabel": "Colonne",
+          "ratingsReviewedAt": "2026-09-12T00:26:33.650Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-medium-aided-static-covered-98081c2d14",
+          "label": "Opéra Bastille",
+          "text": "Opéra Bastille",
+          "description": "On the right is the distinctive modern curved facade of the Opéra Bastille constructed with glass and light-grey granite grid panels.",
+          "groundingPhrase": "Opéra Bastille",
+          "source": "starting-image",
+          "category": "landmark",
+          "region": {
+            "x": 0.6634996041171813,
+            "y": 0,
+            "w": 0.33650039588281866,
+            "h": 0.6006675198875756
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Opéra Bastille: On the right is the distinctive modern curved facade of the Opéra Bastille constructed with glass and light-grey granite grid panels"
+            }
+          ],
+          "groundingLabel": "Opra Bastille",
+          "ratingsReviewedAt": "2026-09-12T00:26:43.549Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-medium-aided-static-covered-94dde9a02f",
+          "label": "RATP Bus Stop Sign",
+          "text": "RATP Bus Stop Sign",
+          "description": "The bus shelter on the right displays a visible blue-and-white transit roundel and plaque reading \"Bastille\" and \"BUS\".",
+          "groundingPhrase": "RATP Bus Stop Sign",
+          "source": "starting-image",
+          "category": "signage",
+          "region": {
+            "x": 0.9002375296912114,
+            "y": 0.20622851263519787,
+            "w": 0.0997624703087886,
+            "h": 0.14293959697859415
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "RATP Bus Stop Sign: The bus shelter on the right displays a visible blue-and-white transit roundel and plaque reading \"Bastille\" and \"BUS\""
+            }
+          ],
+          "groundingLabel": "RATP Bus Stop Sign",
+          "ratingsReviewedAt": "2026-09-12T00:26:52.256Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-gemini-3-8-flash-medium-aided-static-covered-16defec4cb",
+          "label": "Urban Fabric",
+          "text": "Urban Fabric",
+          "description": "Parisian Haussmann-style stone apartment buildings frame the background, accompanied by a Parisian Vélib-style commuter bicycle on the left.",
+          "groundingPhrase": "Urban Fabric",
+          "source": "starting-image",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "covered-static-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "covered-static-r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+              "text": "Urban Fabric: Parisian Haussmann-style stone apartment buildings frame the background, accompanied by a Parisian Vélib-style commuter bicycle on the left"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-12T00:26:57.634Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-mcp-17d3e4c9a6",
+          "label": "Bastille bus stop",
+          "text": "Bastille bus stop",
+          "description": "A bus-stop sign identifying Bastille is visible.",
+          "groundingPhrase": "Bastille bus stop",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.9091167854315123,
+            "y": 0.202863321538809,
+            "w": 0.08850791765637368,
+            "h": 0.16309079274260332
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 1 is Place de la Bastille in Paris: road marking, Bastille bus stop, and the July Column."
+            }
+          ],
+          "groundingLabel": "Bastille bus stop",
+          "ratingsReviewedAt": "2026-09-12T17:00:45.303Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-mcp-c8df897fc8",
+          "label": "Road marking",
+          "text": "Road marking",
+          "description": "A road marking was used as evidence for Place de la Bastille.",
+          "groundingPhrase": "Road marking",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.46926642913697547,
+            "y": 0.5371364526085974,
+            "w": 0.060424782264449695,
+            "h": 0.19465104519561344
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 1 is Place de la Bastille in Paris: road marking, Bastille bus stop, and the July Column."
+            }
+          ],
+          "groundingLabel": "Road marking",
+          "ratingsReviewedAt": "2026-09-12T17:00:55.540Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-001-grok-4-6-xhigh-mcp-6e361ea051",
+          "label": "July Column",
+          "text": "July Column",
+          "description": "The July Column is visible in the square.",
+          "groundingPhrase": "July Column",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4615,
+            "y": 0.1865,
+            "w": 0.028,
+            "h": 0.257
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 1 is Place de la Bastille in Paris: road marking, Bastille bus stop, and the July Column."
+            }
+          ],
+          "groundingLabel": "July Column",
+          "ratingsReviewedAt": "2026-09-12T17:00:58.434Z"
+        }
+      ]
+    }
+  ]
+}

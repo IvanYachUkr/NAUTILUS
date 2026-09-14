@@ -1,0 +1,344 @@
+[
+  {
+    "location_id": "loc_009",
+    "image": "demo_and_extension/data/starting-images/europe-medium/loc_009.png",
+    "ground_truth": {
+      "lat": 39.4667928,
+      "lon": -0.3661343,
+      "country": "Spain",
+      "city_or_region": "Valencia",
+      "difficulty": "medium",
+      "primary_clue_type": "architecture"
+    },
+    "prediction": {
+      "lat": 40.429332547412244,
+      "lon": -3.6911966225760713,
+      "raw_fused_top1_lat": 40.423465728759766,
+      "raw_fused_top1_lon": -3.6854734420776367,
+      "raw_fused_top1_score": 4.836055278778076,
+      "cluster_size": 5,
+      "error_km": 303.56362337423406
+    },
+    "inference_seconds": 3.8367613999944297,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.110115,
+        "gopt": 0.183533,
+        "dinov3": 0.068573
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 1.083472,
+        "gopt": 0.95198,
+        "dinov3": 0.997645
+      },
+      "total_query_encoding_seconds": 0.36222,
+      "total_gallery_retrieval_seconds": 3.033098,
+      "fusion_and_consensus_seconds": 0.441443,
+      "inference_seconds": 3.836761
+    }
+  },
+  {
+    "location_id": "loc_010",
+    "image": "demo_and_extension/data/starting-images/europe-medium/loc_010.png",
+    "ground_truth": {
+      "lat": 44.4930672,
+      "lon": 11.3250143,
+      "country": "Italy",
+      "city_or_region": "Bologna",
+      "difficulty": "medium",
+      "primary_clue_type": "architecture"
+    },
+    "prediction": {
+      "lat": 45.2538814871473,
+      "lon": 8.33706764991924,
+      "raw_fused_top1_lat": 45.0825080871582,
+      "raw_fused_top1_lon": 7.6928558349609375,
+      "raw_fused_top1_score": 4.755393981933594,
+      "cluster_size": 5,
+      "error_km": 250.77073263905598
+    },
+    "inference_seconds": 2.714803499999107,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.082276,
+        "gopt": 0.159361,
+        "dinov3": 0.067412
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.727524,
+        "gopt": 0.724296,
+        "dinov3": 0.741776
+      },
+      "total_query_encoding_seconds": 0.309048,
+      "total_gallery_retrieval_seconds": 2.193596,
+      "fusion_and_consensus_seconds": 0.212159,
+      "inference_seconds": 2.714803
+    }
+  },
+  {
+    "location_id": "loc_011",
+    "image": "demo_and_extension/data/starting-images/europe-medium/loc_011.png",
+    "ground_truth": {
+      "lat": 52.1124003,
+      "lon": 5.0797161,
+      "country": "Netherlands",
+      "city_or_region": "Utrecht",
+      "difficulty": "medium",
+      "primary_clue_type": "infrastructure"
+    },
+    "prediction": {
+      "lat": 52.021080865683984,
+      "lon": 5.347748263346733,
+      "raw_fused_top1_lat": 52.37605667114258,
+      "raw_fused_top1_lon": 4.889225959777832,
+      "raw_fused_top1_score": 4.231665134429932,
+      "cluster_size": 8,
+      "error_km": 21.002112457513626
+    },
+    "inference_seconds": 2.653299600002356,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.079851,
+        "gopt": 0.164008,
+        "dinov3": 0.067354
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.730656,
+        "gopt": 0.727687,
+        "dinov3": 0.728851
+      },
+      "total_query_encoding_seconds": 0.311214,
+      "total_gallery_retrieval_seconds": 2.187194,
+      "fusion_and_consensus_seconds": 0.154892,
+      "inference_seconds": 2.6533
+    }
+  },
+  {
+    "location_id": "loc_012",
+    "image": "demo_and_extension/data/starting-images/europe-medium/loc_012.png",
+    "ground_truth": {
+      "lat": 50.9874591,
+      "lon": 3.7463905,
+      "country": "Belgium",
+      "city_or_region": "Merelbeke, Merelbeke-Melle",
+      "difficulty": "medium",
+      "primary_clue_type": "mixed"
+    },
+    "prediction": {
+      "lat": 50.864344969914725,
+      "lon": 3.529525915585095,
+      "raw_fused_top1_lat": 50.78505325317383,
+      "raw_fused_top1_lon": 3.5138964653015137,
+      "raw_fused_top1_score": 6.6855669021606445,
+      "cluster_size": 7,
+      "error_km": 20.495644970471837
+    },
+    "inference_seconds": 2.556316099999094,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.074258,
+        "gopt": 0.159883,
+        "dinov3": 0.066718
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.720772,
+        "gopt": 0.719788,
+        "dinov3": 0.734732
+      },
+      "total_query_encoding_seconds": 0.300859,
+      "total_gallery_retrieval_seconds": 2.175293,
+      "fusion_and_consensus_seconds": 0.080164,
+      "inference_seconds": 2.556316
+    }
+  },
+  {
+    "location_id": "loc_013",
+    "image": "demo_and_extension/data/starting-images/europe-medium/loc_013.png",
+    "ground_truth": {
+      "lat": 40.2155817,
+      "lon": -8.4337562,
+      "country": "Portugal",
+      "city_or_region": "Coimbra",
+      "difficulty": "medium",
+      "primary_clue_type": "infrastructure"
+    },
+    "prediction": {
+      "lat": 38.98837786142653,
+      "lon": -8.952834302127314,
+      "raw_fused_top1_lat": 38.660919189453125,
+      "raw_fused_top1_lon": -9.082632064819336,
+      "raw_fused_top1_score": 6.594854354858398,
+      "cluster_size": 6,
+      "error_km": 143.3602625877002
+    },
+    "inference_seconds": 2.6377460999974573,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.074447,
+        "gopt": 0.160208,
+        "dinov3": 0.067362
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.722854,
+        "gopt": 0.724249,
+        "dinov3": 0.730929
+      },
+      "total_query_encoding_seconds": 0.302016,
+      "total_gallery_retrieval_seconds": 2.178032,
+      "fusion_and_consensus_seconds": 0.157698,
+      "inference_seconds": 2.637746
+    }
+  },
+  {
+    "location_id": "loc_014",
+    "image": "demo_and_extension/data/starting-images/europe-medium/loc_014.png",
+    "ground_truth": {
+      "lat": 59.8481151,
+      "lon": 17.6140674,
+      "country": "Sweden",
+      "city_or_region": "Uppsala",
+      "difficulty": "medium",
+      "primary_clue_type": "architecture"
+    },
+    "prediction": {
+      "lat": 56.06372049111612,
+      "lon": 12.765289017757237,
+      "raw_fused_top1_lat": 56.004608154296875,
+      "raw_fused_top1_lon": 12.818293571472168,
+      "raw_fused_top1_score": 6.312564849853516,
+      "cluster_size": 7,
+      "error_km": 509.6795877258089
+    },
+    "inference_seconds": 2.607424900001206,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.099178,
+        "gopt": 0.160224,
+        "dinov3": 0.066961
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.723266,
+        "gopt": 0.739881,
+        "dinov3": 0.72887
+      },
+      "total_query_encoding_seconds": 0.326363,
+      "total_gallery_retrieval_seconds": 2.192017,
+      "fusion_and_consensus_seconds": 0.089045,
+      "inference_seconds": 2.607425
+    }
+  },
+  {
+    "location_id": "loc_015",
+    "image": "demo_and_extension/data/starting-images/europe-medium/loc_015.png",
+    "ground_truth": {
+      "lat": 58.3478594,
+      "lon": 26.7197804,
+      "country": "Estonia",
+      "city_or_region": "Tartu",
+      "difficulty": "medium",
+      "primary_clue_type": "mixed"
+    },
+    "prediction": {
+      "lat": 56.17165142760652,
+      "lon": 24.73573198517839,
+      "raw_fused_top1_lat": 56.189659118652344,
+      "raw_fused_top1_lon": 24.75771141052246,
+      "raw_fused_top1_score": 9.61279010772705,
+      "cluster_size": 3,
+      "error_km": 270.28778089876874
+    },
+    "inference_seconds": 2.667815500004508,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.07432,
+        "gopt": 0.15967,
+        "dinov3": 0.067563
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.744649,
+        "gopt": 0.76348,
+        "dinov3": 0.730786
+      },
+      "total_query_encoding_seconds": 0.301553,
+      "total_gallery_retrieval_seconds": 2.238915,
+      "fusion_and_consensus_seconds": 0.127348,
+      "inference_seconds": 2.667816
+    }
+  },
+  {
+    "location_id": "loc_016",
+    "image": "demo_and_extension/data/starting-images/europe-medium/loc_016.png",
+    "ground_truth": {
+      "lat": 48.7583857,
+      "lon": 19.1412898,
+      "country": "Slovakia",
+      "city_or_region": "Banská Bystrica",
+      "difficulty": "medium",
+      "primary_clue_type": "mixed"
+    },
+    "prediction": {
+      "lat": 46.0837455734954,
+      "lon": 14.476302683243183,
+      "raw_fused_top1_lat": 45.924190521240234,
+      "raw_fused_top1_lon": 14.043880462646484,
+      "raw_fused_top1_score": 5.717700958251953,
+      "cluster_size": 6,
+      "error_km": 460.64284158128606
+    },
+    "inference_seconds": 2.704305799994472,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.074227,
+        "gopt": 0.163113,
+        "dinov3": 0.067908
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.737353,
+        "gopt": 0.727092,
+        "dinov3": 0.743376
+      },
+      "total_query_encoding_seconds": 0.305248,
+      "total_gallery_retrieval_seconds": 2.20782,
+      "fusion_and_consensus_seconds": 0.191237,
+      "inference_seconds": 2.704306
+    }
+  },
+  {
+    "location_id": "loc_017",
+    "image": "demo_and_extension/data/starting-images/europe-medium/loc_017.png",
+    "ground_truth": {
+      "lat": 53.2819335,
+      "lon": -9.1382768,
+      "country": "Ireland",
+      "city_or_region": "Boleybeg East, County Galway",
+      "difficulty": "medium",
+      "primary_clue_type": "infrastructure"
+    },
+    "prediction": {
+      "lat": 51.900230559701605,
+      "lon": -5.106973516461055,
+      "raw_fused_top1_lat": 50.69702911376953,
+      "raw_fused_top1_lon": -3.4979281425476074,
+      "raw_fused_top1_score": 5.000840663909912,
+      "cluster_size": 7,
+      "error_km": 313.4281692558578
+    },
+    "inference_seconds": 2.7335456000073464,
+    "timing": {
+      "query_encoding_seconds_by_tower": {
+        "so400m256": 0.074087,
+        "gopt": 0.160548,
+        "dinov3": 0.067039
+      },
+      "retrieval_seconds_by_tower": {
+        "so400m256": 0.741993,
+        "gopt": 0.739595,
+        "dinov3": 0.75017
+      },
+      "total_query_encoding_seconds": 0.301674,
+      "total_gallery_retrieval_seconds": 2.231758,
+      "fusion_and_consensus_seconds": 0.200114,
+      "inference_seconds": 2.733546
+    }
+  }
+]

@@ -1,0 +1,2120 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-easy--loc-008",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "benchmarkId": "gemini-3-7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-high-aided-865dc0e433",
+          "label": "Ferry Pier Gate Signage",
+          "text": "Ferry Pier Gate Signage",
+          "description": "Waterfront ferry pier building with large lettering \"FLÅM\".",
+          "groundingPhrase": "Ferry Pier Gate Signage",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7444154929577464,
+            "y": 0.41654434303853977,
+            "w": 0.2011752738654147,
+            "h": 0.0571843658548683
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Ferry Pier Gate Signage: Dual harbor entrance overhead arches marked \"FLÅM\"."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Waterfront ferry pier building with large lettering \"FLÅM\""
+            }
+          ],
+          "groundingLabel": "Ferry Pier Gate Signage",
+          "ratingsReviewedAt": "2026-09-11T18:17:16.106Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-high-aided-be2f4fd12e",
+          "label": "Aurlandsfjord Landscape",
+          "text": "Aurlandsfjord Landscape",
+          "description": "Dramatic near-vertical fjord mountain slopes surrounding deep dark water.",
+          "groundingPhrase": "Aurlandsfjord Landscape",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Aurlandsfjord Landscape: Dramatic near-vertical fjord mountain slopes surrounding deep dark water."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Aurlandsfjord mountain backdrop."
+            }
+          ],
+          "groundingLabel": "Aurlandsfjord Landscape",
+          "ratingsReviewedAt": "2026-09-11T18:17:19.735Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-high-aided-7dc55ebf00",
+          "label": "Norwegian Pennant",
+          "text": "Norwegian Pennant",
+          "description": "Red/blue Norwegian national flag pennant on a tall harbor flagpole.",
+          "groundingPhrase": "Norwegian Pennant",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.5388427230046948,
+            "y": 0.20803092604533502,
+            "w": 0.019989045383411563,
+            "h": 0.07164381727096869
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Norwegian Pennant: Red/blue Norwegian national flag pennant on a tall harbor flagpole."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Norwegian flag"
+            }
+          ],
+          "groundingLabel": "Norwegian Pennant",
+          "ratingsReviewedAt": "2026-09-11T18:17:25.312Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-high-aided-72bf18532b",
+          "label": "Flåmsbrygga Waterfront Architecture",
+          "text": "Flåmsbrygga Waterfront Architecture",
+          "description": "Wooden timber restaurants/lodges with picnic tables and wooden barrels.",
+          "groundingPhrase": "Flåmsbrygga Waterfront Architecture",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.0015,
+            "y": 0.2105,
+            "w": 0.28594053208137715,
+            "h": 0.42945945141610037
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Flåmsbrygga Waterfront Architecture: Wooden timber restaurants/lodges with picnic tables and wooden barrels."
+            }
+          ],
+          "groundingLabel": "Flmsbrygga Waterfront Architecture",
+          "ratingsReviewedAt": "2026-09-11T18:17:30.256Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-high-aided-5bd2683d81",
+          "label": "Walkway Orientation",
+          "text": "Walkway Orientation",
+          "description": "Pedestrian pier path heading toward the cruise ship and fjord ferry dock on Aurlandsfjorden.",
+          "groundingPhrase": "Walkway Orientation",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.732764475743349,
+            "y": 0.39648045731858533,
+            "w": 0.2234170579029734,
+            "h": 0.24065606864738848
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Walkway Orientation: Pedestrian pier path heading toward the cruise ship and fjord ferry dock on Aurlandsfjorden."
+            }
+          ],
+          "groundingLabel": "Walkway Orientation",
+          "ratingsReviewedAt": "2026-09-11T18:17:51.338Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash-medium-aided",
+      "benchmarkId": "gemini-3-7-flash-medium-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-medium-aided-a315adab1e",
+          "label": "Harbor Shelter Signage",
+          "text": "Harbor Shelter Signage",
+          "description": "Black ferry terminal shelter with clear white uppercase text: \"FLÅM | FLÅM\".",
+          "groundingPhrase": "Harbor Shelter Signage",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.7428505477308294,
+            "y": 0.41800349685035465,
+            "w": 0.1994413145539906,
+            "h": 0.05821296066663359
+          },
+          "regionSource": "manual",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Norwegian national flag on the harbor promenade flagpole."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Harbor Shelter Signage: Black ferry terminal shelter with clear white uppercase text: \"FLÅM | FLÅM\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Norwegian national flag on the harbor promenade flagpole."
+            }
+          ],
+          "groundingLabel": "Harbor Shelter Signage; Shelter Signage; Large bold white signage",
+          "ratingsReviewedAt": "2026-09-11T18:18:00.823Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-medium-aided-f96e92bf8f",
+          "label": "Pier Infrastructure",
+          "text": "Pier Infrastructure",
+          "description": "Traditional Viking / timber architecture of Ægir Bryggeri / Flåmsbrygga with outdoor dining barrels.",
+          "groundingPhrase": "Pier Infrastructure",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Traditional Viking / timber architecture of Ægir Bryggeri / Flåmsbrygga with outdoor dining barrels."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Pier Infrastructure: Rustic timber pavilion, barrels, and pedestrian boardwalk along Flåm harbor / Ægir Gastropub."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Traditional Viking / timber architecture of Ægir Bryggeri / Flåmsbrygga with outdoor dining barrels."
+            }
+          ],
+          "groundingLabel": "Pier Infrastructure",
+          "ratingsReviewedAt": "2026-09-11T18:18:04.563Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-medium-aided-62da14baa7",
+          "label": "Fjord Topography",
+          "text": "Fjord Topography",
+          "description": "Dramatic steep glacial fjord mountains rising directly from the waters of Aurlandsfjorden.",
+          "groundingPhrase": "Fjord Topography",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0,
+            "y": 0,
+            "w": 0.3865414710485133,
+            "h": 0.46299786716928726
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Dramatic steep glacial fjord mountains rising directly from the waters of Aurlandsfjorden."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Fjord Topography: Steep sheer mountain slopes plunging directly into the blue waters of Aurlandsfjord."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Dramatic steep glacial fjord mountains rising directly from the waters of Aurlandsfjorden."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:18:08.800Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-medium-aided-85095a996a",
+          "label": "Flåm railway (Flåmsbana) passenger promenade and fjord cruise passenger facilities",
+          "text": "Flåm railway (Flåmsbana) passenger promenade and fjord cruise passenger facilities",
+          "description": "Flåm railway (Flåmsbana) passenger promenade and fjord cruise passenger facilities.",
+          "groundingPhrase": "Flåm railway passenger promenade and fjord cruise passenger facilities",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7871674491392802,
+            "y": 0.48839343286543324,
+            "w": 0.10563380281690138,
+            "h": 0.13015227419274844
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Flåm railway (Flåmsbana) passenger promenade and fjord cruise passenger facilities."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Flåm railway (Flåmsbana) passenger promenade and fjord cruise passenger facilities."
+            }
+          ],
+          "groundingLabel": "Flm railway passenger promenade",
+          "ratingsReviewedAt": "2026-09-11T18:18:13.495Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-medium-aided-1b05fa1e2e",
+          "label": "Large bold white signage \"FLÅM\" on both port / cruise terminal security booths",
+          "text": "Large bold white signage \"FLÅM\" on both port / cruise terminal security booths",
+          "description": "Large bold white signage \"FLÅM\" on both port / cruise terminal security booths.",
+          "groundingPhrase": "Large bold white signage \"FLÅM\" on both port / cruise terminal security booths",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Large bold white signage \"FLÅM\" on both port / cruise terminal security booths."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Large bold white signage \"FLÅM\" on both port / cruise terminal security booths."
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-medium-aided-36d9dd6d63",
+          "label": "Geographic Location",
+          "text": "Geographic Location",
+          "description": "Flåm, Aurland Municipality, Vestland County, Western Norway.",
+          "groundingPhrase": "Geographic Location",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Geographic Location: Flåm, Aurland Municipality, Vestland County, Western Norway."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:18:20.437Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-medium-aided-9473ecb193",
+          "label": "National Flag",
+          "text": "National Flag",
+          "description": "Norwegian pennant flying on a central flagpole.",
+          "groundingPhrase": "National Flag",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5395,
+            "y": 0.2125,
+            "w": 0.017,
+            "h": 0.072
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "National Flag: Norwegian pennant flying on a central flagpole."
+            }
+          ],
+          "groundingLabel": "National Flag",
+          "ratingsReviewedAt": "2026-09-11T18:18:25.754Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-high-aided",
+      "benchmarkId": "gemini-3-8-flash-high-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-high-aided-1fc31b0328",
+          "label": "Red-and-white Norwegian national flag waving on the flagpole overlooking the water",
+          "text": "Red-and-white Norwegian national flag waving on the flagpole overlooking the water",
+          "description": "Red-and-white Norwegian national flag waving on the flagpole overlooking the water.",
+          "groundingPhrase": "Red-and-white Norwegian national flag waving on the flagpole overlooking the water",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5395,
+            "y": 0.2125,
+            "w": 0.017,
+            "h": 0.073
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Red-white-and-blue Norwegian national flags on waterfront flagpoles."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Red-and-white Norwegian national flag waving on the flagpole overlooking the water."
+            }
+          ],
+          "groundingLabel": "Red-and-white Norwegian national flag",
+          "ratingsReviewedAt": "2026-09-11T18:18:31.562Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-high-aided-31fbb73c4d",
+          "label": "Steep, dramatic Norwegian fjord cliffside plunging directly into the emerald waters of A",
+          "text": "Steep, dramatic Norwegian fjord cliffside plunging directly into the emerald waters of A",
+          "description": "Dramatic, near-vertical green mountain walls plunging directly into the deep fjord waters of Aurlandsfjorden.",
+          "groundingPhrase": "Steep, dramatic Norwegian fjord cliffside plunging directly into the emerald waters of A",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0,
+            "y": 0,
+            "w": 0.40221694378463974,
+            "h": 0.46528143742628425
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Dramatic, near-vertical green mountain walls plunging directly into the deep fjord waters of Aurlandsfjorden."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Steep, dramatic Norwegian fjord cliffside plunging directly into the emerald waters of Aurlandsfjord."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:18:34.791Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-high-aided-f809841068",
+          "label": "Sightseeing fjord passenger catamarans moored at the harbor piers",
+          "text": "Sightseeing fjord passenger catamarans moored at the harbor piers",
+          "description": "Sightseeing fjord passenger catamarans moored at the harbor piers.",
+          "groundingPhrase": "Sightseeing fjord passenger catamarans moored at the harbor piers",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6155,
+            "y": 0.48589393711260004,
+            "w": 0.08,
+            "h": 0.18
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Sightseeing fjord passenger catamarans moored at the harbor piers."
+            }
+          ],
+          "groundingLabel": "fjord passenger catamarans",
+          "ratingsReviewedAt": "2026-09-11T18:18:50.514Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-high-aided-396f2e0111",
+          "label": "Prominent wooden pedestrian shelter clearly emblazoned",
+          "text": "Prominent wooden pedestrian shelter clearly emblazoned",
+          "description": "Prominent wooden pedestrian shelter clearly emblazoned with 'FLÅM'.",
+          "groundingPhrase": "Prominent wooden pedestrian shelter clearly emblazoned",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0015,
+            "y": 0.2125,
+            "w": 0.299,
+            "h": 0.405
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Prominent wooden pedestrian shelter clearly emblazoned with 'FLÅM'."
+            }
+          ],
+          "groundingLabel": "Prominent wooden pedestrian shelter",
+          "ratingsReviewedAt": "2026-09-11T18:18:56.602Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-high-aided-f9bc1a0dcf",
+          "label": "Large gateway entrance archways clearly branded",
+          "text": "Large gateway entrance archways clearly branded",
+          "description": "Large gateway entrance archways clearly branded with \"FLÅM\".",
+          "groundingPhrase": "Large gateway entrance archways clearly branded",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7445,
+            "y": 0.4175,
+            "w": 0.201,
+            "h": 0.204
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Large gateway entrance archways clearly branded with \"FLÅM\"."
+            }
+          ],
+          "groundingLabel": "Large gateway entrance archways",
+          "ratingsReviewedAt": "2026-09-11T18:19:00.939Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-high-aided-b9339e3022",
+          "label": "Famous cruise dock and terminus of the Flåmsbana railway line",
+          "text": "Famous cruise dock and terminus of the Flåmsbana railway line",
+          "description": "Famous cruise dock and terminus of the Flåmsbana railway line.",
+          "groundingPhrase": "Famous cruise dock and terminus of the Flåmsbana railway line",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Famous cruise dock and terminus of the Flåmsbana railway line."
+            }
+          ],
+          "groundingLabel": "Famous cruise dock",
+          "ratingsReviewedAt": "2026-09-11T18:19:06.094Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-high-aided-1b9b9d083d",
+          "label": "Distinctive timber tourist lodges",
+          "text": "Distinctive timber tourist lodges",
+          "description": "Distinctive timber tourist lodges with slate/turf roofs and Ægir Bryggeri wooden barrels.",
+          "groundingPhrase": "Distinctive timber tourist lodges",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Distinctive timber tourist lodges with slate/turf roofs and Ægir Bryggeri wooden barrels."
+            }
+          ],
+          "groundingLabel": "Distinctive timber tourist lodges"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-high-aided-d7d3f602b2",
+          "label": "Flåm Brygge / Harbour",
+          "text": "Flåm Brygge / Harbour",
+          "description": "Flåm Brygge / Harbour.",
+          "groundingPhrase": "Flåm Brygge / Harbour",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Flåm Brygge / Harbour"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:19:10.907Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-high-aided-feb4e15b52",
+          "label": "Flåm marina/pier gates, outdoor rustic wooden beer barrels and picnic benches outside Æg",
+          "text": "Flåm marina/pier gates, outdoor rustic wooden beer barrels and picnic benches outside Æg",
+          "description": "Flåm marina/pier gates, outdoor rustic wooden beer barrels and picnic benches outside Ægir Brewery/Flåmsbrygga.",
+          "groundingPhrase": "Flåm marina/pier gates, outdoor rustic wooden beer barrels and picnic benches outside Æg",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Flåm marina/pier gates, outdoor rustic wooden beer barrels and picnic benches outside Ægir Brewery/Flåmsbrygga."
+            }
+          ],
+          "groundingLabel": "Flm marina/pier gates; outdoor rustic wooden beer barrels; picnic benches"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-medium-aided",
+      "benchmarkId": "gemini-3-8-flash-medium-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-medium-aided-1d05bc2d1b",
+          "label": "Red-white-and-blue Norwegian national flags on waterfront flagpoles",
+          "text": "Red-white-and-blue Norwegian national flags on waterfront flagpoles",
+          "description": "Red-white-and-blue Norwegian national flags on waterfront flagpoles.",
+          "groundingPhrase": "Red-white-and-blue Norwegian national flags on waterfront flagpoles",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5360253365003959,
+            "y": 0.21152350121709454,
+            "w": 0.02375296912114022,
+            "h": 0.07709101859519688
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Red-white-and-blue Norwegian national flags on waterfront flagpoles."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Red-white-and-blue Norwegian national flags on waterfront flagpoles."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:19:16.727Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-medium-aided-f809841068",
+          "label": "Sightseeing fjord passenger catamarans moored at the harbor piers",
+          "text": "Sightseeing fjord passenger catamarans moored at the harbor piers",
+          "description": "Sightseeing fjord passenger catamarans moored at the harbor piers.",
+          "groundingPhrase": "Sightseeing fjord passenger catamarans moored at the harbor piers",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.6155,
+            "y": 0.4875,
+            "w": 0.08,
+            "h": 0.18
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Sightseeing fjord passenger catamarans moored at the harbor piers."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Sightseeing fjord passenger catamarans moored at the harbor piers."
+            }
+          ],
+          "groundingLabel": "fjord passenger catamarans",
+          "ratingsReviewedAt": "2026-09-11T18:19:24.649Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-medium-aided-f9bc1a0dcf",
+          "label": "Large gateway entrance archways clearly branded",
+          "text": "Large gateway entrance archways clearly branded",
+          "description": "Large gateway entrance archways clearly branded with \"FLÅM\".",
+          "groundingPhrase": "Large gateway entrance archways clearly branded",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7435,
+            "y": 0.4155,
+            "w": 0.202,
+            "h": 0.208
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Large gateway entrance archways clearly branded with \"FLÅM\"."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Large gateway entrance archways clearly branded with \"FLÅM\"."
+            }
+          ],
+          "groundingLabel": "Large gateway entrance archways",
+          "ratingsReviewedAt": "2026-09-11T18:19:32.356Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-medium-aided-1b9b9d083d",
+          "label": "Distinctive timber tourist lodges",
+          "text": "Distinctive timber tourist lodges",
+          "description": "Distinctive timber tourist lodges with slate/turf roofs and Ægir Bryggeri wooden barrels.",
+          "groundingPhrase": "Distinctive timber tourist lodges",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.0015,
+            "y": 0.2105,
+            "w": 0.299,
+            "h": 0.406
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Distinctive timber tourist lodges with slate/turf roofs and Ægir Bryggeri wooden barrels."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Distinctive timber tourist lodges with slate/turf roofs and Ægir Bryggeri wooden barrels."
+            }
+          ],
+          "groundingLabel": "Distinctive timber tourist lodges",
+          "ratingsReviewedAt": "2026-09-11T18:19:39.108Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-medium-aided-d7d3f602b2",
+          "label": "Flåm Brygge / Harbour",
+          "text": "Flåm Brygge / Harbour",
+          "description": "Flåm Brygge / Harbour.",
+          "groundingPhrase": "Flåm Brygge / Harbour",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Flåm Brygge / Harbour"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Flåm Brygge / Harbour"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:19:43.618Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-8-flash-medium-aided-6d16fa5001",
+          "label": "Dramatic, near-vertical green mountain walls plunging directly into the deep fjord water",
+          "text": "Dramatic, near-vertical green mountain walls plunging directly into the deep fjord water",
+          "description": "Dramatic, near-vertical green mountain walls plunging directly into the deep fjord waters of Aurlandsfjorden.",
+          "groundingPhrase": "Dramatic, near-vertical green mountain walls plunging directly into the deep fjord water",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Dramatic, near-vertical green mountain walls plunging directly into the deep fjord waters of Aurlandsfjorden."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Dramatic, near-vertical green mountain walls plunging directly into the deep fjord waters of Aurlandsfjorden."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:19:48.676Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh",
+      "benchmarkId": "gpt-5-6-sol-xhigh",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-gpt-5-6-sol-xhigh-fabf7a961e",
+          "label": "the compact cruise-port settlement identified Flam",
+          "text": "the compact cruise-port settlement identified Flam",
+          "description": "The compact cruise-port settlement identified Flam.",
+          "groundingPhrase": "the compact cruise-port settlement identified Flam",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.745631455399061,
+            "y": 0.4146645255691682,
+            "w": 0.1933356807511738,
+            "h": 0.1875504687267497
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "the compact cruise-port settlement identified Flam."
+            }
+          ],
+          "groundingLabel": "the compact cruise-port settlement identified Flam",
+          "ratingsReviewedAt": "2026-09-11T18:19:53.874Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gpt-5-6-sol-xhigh-371ace4bc3",
+          "label": "Steep Norwegian fjord walls",
+          "text": "Steep Norwegian fjord walls",
+          "description": "Steep Norwegian fjord walls.",
+          "groundingPhrase": "Steep Norwegian fjord walls",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0025,
+            "y": 0.0025,
+            "w": 0.376,
+            "h": 0.455
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Steep Norwegian fjord walls"
+            }
+          ],
+          "groundingLabel": "Steep Norwegian fjord walls",
+          "ratingsReviewedAt": "2026-09-11T18:19:58.482Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gpt-5-6-sol-xhigh-a81879f3fa",
+          "label": "harbor/rail setting",
+          "text": "harbor/rail setting",
+          "description": "Harbor/rail setting.",
+          "groundingPhrase": "harbor/rail setting",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "harbor/rail setting"
+            }
+          ],
+          "groundingLabel": "harbor/rail setting",
+          "ratingsReviewedAt": "2026-09-11T18:20:01.776Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low",
+      "benchmarkId": "gpt-6-astra-low",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-gpt-6-astra-low-27bc6a21bf",
+          "label": "timber visitor picnic shelter and barrels. Initial belief",
+          "text": "timber visitor picnic shelter and barrels. Initial belief",
+          "description": "Flam waterfront.",
+          "groundingPhrase": "timber visitor picnic shelter and barrels. Initial belief",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.0015,
+            "y": 0.2125,
+            "w": 0.2958951486697965,
+            "h": 0.4064127771439908
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "timber visitor picnic shelter and barrels. Initial belief: Flam waterfront"
+            }
+          ],
+          "groundingLabel": "timber visitor picnic shelter",
+          "ratingsReviewedAt": "2026-09-11T18:20:13.791Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gpt-6-astra-low-8d2feb3cbc",
+          "label": "waterfront terminal fence",
+          "text": "waterfront terminal fence",
+          "description": "Waterfront terminal fence.",
+          "groundingPhrase": "waterfront terminal fence",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.744131455399061,
+            "y": 0.41538118148901343,
+            "w": 0.20500782472613466,
+            "h": 0.19840285700114085
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "waterfront terminal fence"
+            }
+          ],
+          "groundingLabel": "waterfront terminal fence",
+          "ratingsReviewedAt": "2026-09-11T18:20:23.941Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gpt-6-astra-low-4a1940bba1",
+          "label": "FLAM gate lettering",
+          "text": "FLAM gate lettering",
+          "description": "FLAM gate lettering.",
+          "groundingPhrase": "FLAM gate lettering",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7488262910798122,
+            "y": 0.4264917414810773,
+            "w": 0.19248826291079812,
+            "h": 0.052378354248301194
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "FLAM gate lettering"
+            }
+          ],
+          "groundingLabel": "FLAM gate lettering",
+          "ratingsReviewedAt": "2026-09-11T18:20:27.731Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gpt-6-astra-low-3389fa5cdf",
+          "label": "steep fjord walls",
+          "text": "steep fjord walls",
+          "description": "Steep fjord walls.",
+          "groundingPhrase": "steep fjord walls",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0025,
+            "y": 0.0035,
+            "w": 0.3680219092331768,
+            "h": 0.4132727543276623
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "steep fjord walls"
+            }
+          ],
+          "groundingLabel": "steep fjord walls",
+          "ratingsReviewedAt": "2026-09-11T18:20:31.268Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gpt-6-astra-low-a46c2663d5",
+          "label": "Norwegian-looking flag",
+          "text": "Norwegian-looking flag",
+          "description": "Norwegian-looking flag.",
+          "groundingPhrase": "Norwegian-looking flag",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5325,
+            "y": 0.2065,
+            "w": 0.028,
+            "h": 0.084
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "Norwegian-looking flag"
+            }
+          ],
+          "groundingLabel": "Norwegian-looking flag; looking flag",
+          "ratingsReviewedAt": "2026-09-11T18:20:35.485Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "benchmarkId": "grok-4-6-xhigh",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-grok-4-6-xhigh-ea83d0a9ea",
+          "label": "The FLAM gate",
+          "text": "The FLAM gate",
+          "description": "The FLAM gate.",
+          "groundingPhrase": "The FLAM gate",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7366768388106416,
+            "y": 0.4145271315906949,
+            "w": 0.1960305164319249,
+            "h": 0.20970274291949803
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "The FLAM gate"
+            }
+          ],
+          "groundingLabel": "The FLAM gate",
+          "ratingsReviewedAt": "2026-09-11T18:20:41.699Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-grok-4-6-xhigh-c5360dba7f",
+          "label": "fjord walls",
+          "text": "fjord walls",
+          "description": "Fjord walls.",
+          "groundingPhrase": "fjord walls",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "fjord walls"
+            }
+          ],
+          "groundingLabel": "fjord walls; Nordic timber",
+          "ratingsReviewedAt": "2026-09-11T18:20:52.852Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-grok-4-6-xhigh-99591d774a",
+          "label": "water",
+          "text": "water",
+          "description": "Water.",
+          "groundingPhrase": "water",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5185,
+            "y": 0.4645,
+            "w": 0.238,
+            "h": 0.049
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "water"
+            }
+          ],
+          "groundingLabel": "water",
+          "ratingsReviewedAt": "2026-09-11T18:21:21.152Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-grok-4-6-xhigh-9573e88ff4",
+          "label": "Nordic timber made the location certain. The apparent Scandinavia pin resolved near Berl",
+          "text": "Nordic timber made the location certain. The apparent Scandinavia pin resolved near Berl",
+          "description": "Nordic timber made the location certain. The apparent Scandinavia pin resolved near Berlin.",
+          "groundingPhrase": "Nordic timber made the location certain. The apparent Scandinavia pin resolved near Berl",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Nordic timber made the location certain. The apparent Scandinavia pin resolved near Berlin."
+            }
+          ],
+          "groundingLabel": "The apparent Scandinavia pin resolved",
+          "ratingsReviewedAt": "2026-09-11T18:21:31.356Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max",
+      "benchmarkId": "gpt-5-6-sol-max",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-gpt-5-6-sol-max-79e149fca8",
+          "label": "the compact tourist waterfront",
+          "text": "the compact tourist waterfront",
+          "description": "The compact tourist waterfront.",
+          "groundingPhrase": "the compact tourist waterfront",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.7494139280125195,
+            "y": 0.40930571400228166,
+            "w": 0.196595461658842,
+            "h": 0.2034119091314915
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "the compact tourist waterfront."
+            }
+          ],
+          "groundingLabel": "the compact tourist waterfront",
+          "ratingsReviewedAt": "2026-09-11T18:21:42.439Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gpt-5-6-sol-max-dbf49ef253",
+          "label": "railway/terminal infrastructure",
+          "text": "railway/terminal infrastructure",
+          "description": "Railway/terminal infrastructure.",
+          "groundingPhrase": "railway/terminal infrastructure",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "railway/terminal infrastructure"
+            }
+          ],
+          "groundingLabel": "railway/terminal infrastructure",
+          "ratingsReviewedAt": "2026-09-11T18:21:48.442Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gpt-5-6-sol-max-22eb86988c",
+          "label": "Flåm harbour",
+          "text": "Flåm harbour",
+          "description": "Flåm harbour.",
+          "groundingPhrase": "Flåm harbour",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Flåm harbour"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:21:51.456Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gpt-5-6-sol-max-29ef97956e",
+          "label": "Fjord walls",
+          "text": "Fjord walls",
+          "description": "Fjord walls.",
+          "groundingPhrase": "Fjord walls",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0035,
+            "y": 0.0035,
+            "w": 0.376,
+            "h": 0.454
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Fjord walls"
+            }
+          ],
+          "groundingLabel": "Fjord walls",
+          "ratingsReviewedAt": "2026-09-11T18:21:58.202Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max",
+      "benchmarkId": "glm-5-3-flash-max",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-1/conversation.json"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-3/conversation.json"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-glm-5-3-flash-max-2c96edfa23",
+          "label": "\"FLÅM\" lettering on the dark quay building,",
+          "text": "\"FLÅM\" lettering on the dark quay building,",
+          "description": "\"FLÅM\" lettering on the dark quay building,.",
+          "groundingPhrase": "\"FLÅM\" lettering on the dark quay building,",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7464788732394366,
+            "y": 0.4169684043450226,
+            "w": 0.19561815336463229,
+            "h": 0.06983780566440156
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "\"FLÅM\" lettering on the dark quay building,"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:22:03.933Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-glm-5-3-flash-max-7cba034572",
+          "label": "cruise-pier gates ahead. Belief",
+          "text": "cruise-pier gates ahead. Belief",
+          "description": "Flåm harbor, Aurlandsfjord. Placing pin at 60.8625, 7.1135.",
+          "groundingPhrase": "cruise-pier gates ahead. Belief",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "cruise-pier gates ahead. Belief: Flåm harbor, Aurlandsfjord. Placing pin at 60.8625, 7.1135."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:22:08.978Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-glm-5-3-flash-max-3389fa5cdf",
+          "label": "steep fjord walls,",
+          "text": "steep fjord walls,",
+          "description": "Steep fjord walls,.",
+          "groundingPhrase": "steep fjord walls,",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0025,
+            "y": 0.0025,
+            "w": 0.3719342723004695,
+            "h": 0.4426683200238083
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "steep fjord walls,"
+            }
+          ],
+          "groundingLabel": "steep fjord walls",
+          "ratingsReviewedAt": "2026-09-11T18:22:11.983Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-glm-5-3-flash-max-ddd4ff2fd6",
+          "label": "tourist quay",
+          "text": "tourist quay",
+          "description": "Tourist quay with barrels and picnic tables,.",
+          "groundingPhrase": "tourist quay",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0,
+            "y": 0.2217399930559,
+            "w": 0.3568075117370892,
+            "h": 0.4301373939784733
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "tourist quay with barrels and picnic tables,"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T18:22:15.612Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-glm-5-3-flash-max-94f5b15bb0",
+          "label": "Norwegian flag,",
+          "text": "Norwegian flag,",
+          "description": "Norwegian flag,.",
+          "groundingPhrase": "Norwegian flag,",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.5399945226917058,
+            "y": 0.19880221715192697,
+            "w": 0.023547730829420965,
+            "h": 0.09336640047616684
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "Norwegian flag,"
+            }
+          ],
+          "groundingLabel": "flM; Norwegian flag",
+          "ratingsReviewedAt": "2026-09-11T18:22:18.029Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-unaided",
+      "benchmarkId": "gemini-3-7-flash-high-unaided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, unaided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-high-unaided-7720b2b61a",
+          "label": "Aurlandsfjord / Sognefjord sheer cliff walls",
+          "text": "Aurlandsfjord / Sognefjord sheer cliff walls",
+          "description": "Aurlandsfjord / Sognefjord sheer cliff walls.",
+          "groundingPhrase": "Aurlandsfjord / Sognefjord sheer cliff walls",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0025,
+            "y": 0.0025,
+            "w": 0.377,
+            "h": 0.459
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Aurlandsfjord / Sognefjord sheer cliff walls"
+            }
+          ],
+          "groundingLabel": "Aurlandsfjord / Sognefjor; sheer cliff walls",
+          "ratingsReviewedAt": "2026-09-11T18:22:34.157Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-gemini-3-7-flash-high-unaided-94d51a11de",
+          "label": "\"FLÅM\" ferry dock sign",
+          "text": "\"FLÅM\" ferry dock sign",
+          "description": "\"FLÅM\" ferry dock sign.",
+          "groundingPhrase": "\"FLÅM\" ferry dock sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7438505477308294,
+            "y": 0.410067382570309,
+            "w": 0.20335367762128326,
+            "h": 0.20741190913149155
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "\"FLÅM\" ferry dock sign"
+            }
+          ],
+          "groundingLabel": "FLM; ferry dock sign",
+          "ratingsReviewedAt": "2026-09-11T18:22:50.052Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-easy-loc-008-grok-4-6-xhigh-mcp-ac05d9d8d9",
+          "label": "FLÅM bus shelters",
+          "text": "FLÅM bus shelters",
+          "description": "Bus shelters display the place name FLÅM.",
+          "groundingPhrase": "FLÅM bus shelters",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.7521773555027712,
+            "y": 0.42144093954678913,
+            "w": 0.18289786223277904,
+            "h": 0.05621220105899771
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 8 is Flåm, Norway: FLÅM bus shelters, a Norwegian flag, and Aurlandsfjord."
+            }
+          ],
+          "groundingLabel": "FLM bus shelters",
+          "ratingsReviewedAt": "2026-09-12T17:03:30.260Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-grok-4-6-xhigh-mcp-c4250cd6e2",
+          "label": "Norwegian flag",
+          "text": "Norwegian flag",
+          "description": "A Norwegian flag is visible near the waterfront.",
+          "groundingPhrase": "Norwegian flag",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.5415,
+            "y": 0.2145,
+            "w": 0.012,
+            "h": 0.068
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 8 is Flåm, Norway: FLÅM bus shelters, a Norwegian flag, and Aurlandsfjord."
+            }
+          ],
+          "groundingLabel": "Norwegian flag",
+          "ratingsReviewedAt": "2026-09-12T17:03:33.214Z"
+        },
+        {
+          "id": "cue-europe-easy-loc-008-grok-4-6-xhigh-mcp-f7ddc50b45",
+          "label": "Aurlandsfjord",
+          "text": "Aurlandsfjord",
+          "description": "The steep-sided Aurlandsfjord landscape is visible beyond the waterfront.",
+          "groundingPhrase": "Aurlandsfjord",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "easy-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "easy-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+              "text": "Round 8 is Flåm, Norway: FLÅM bus shelters, a Norwegian flag, and Aurlandsfjord."
+            }
+          ],
+          "groundingLabel": "Aurlandsfjord",
+          "ratingsReviewedAt": "2026-09-12T17:03:39.236Z"
+        }
+      ]
+    }
+  ]
+}

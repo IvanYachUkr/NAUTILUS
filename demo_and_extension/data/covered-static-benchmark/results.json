@@ -1,0 +1,1932 @@
+{
+  "schemaVersion": "1.0",
+  "condition": "static-image-covered",
+  "label": "Static images covered",
+  "note": "Controlled static-image runs with selected map/interface text or metadata covered. Missing model/location pairs were not evaluated and are not imputed.",
+  "models": [
+    {
+      "id": "glm-5-3-flash-max-static-covered",
+      "benchmarkId": "glm-5-3-flash-max-static-covered",
+      "model": "GLM-5.3-Flash + MCP · Max",
+      "reasoning": "Max",
+      "condition": "static-image-covered",
+      "sourceReport": "data/recorded-agent-benchmark/glm-5.3-flash-max/conditions/static-image-covered/runs/run-1/model_report.md",
+      "predictions": [
+        {
+          "id": "glm-5-3-flash-max-europe-easy--loc-001",
+          "locationId": "europe-easy--loc-001",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 48.852,
+            "lng": 2.371,
+            "label": "Paris (Place de la Bastille), France"
+          },
+          "confidence": 0.99
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-easy--loc-006",
+          "locationId": "europe-easy--loc-006",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 50.895,
+            "lng": 14.812,
+            "label": "Porajów / Zittau border crossing (Dolnośląskie), Poland"
+          },
+          "confidence": 0.65
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-easy--loc-007",
+          "locationId": "europe-easy--loc-007",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 45.95,
+            "lng": 14.72,
+            "label": "Ljubljana–Novo mesto corridor (Grosuplje–Šentvid), Slovenia"
+          },
+          "confidence": 0.45
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-medium--loc-009",
+          "locationId": "europe-medium--loc-009",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 40.428,
+            "lng": -3.7,
+            "label": "Madrid, Spain"
+          },
+          "confidence": 0.6
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-medium--loc-010",
+          "locationId": "europe-medium--loc-010",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 44.483,
+            "lng": 11.352,
+            "label": "Bologna, Italy"
+          },
+          "confidence": 0.55
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-medium--loc-011",
+          "locationId": "europe-medium--loc-011",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 52.05,
+            "lng": 5.1,
+            "label": "Central NL town (Utrecht-region type), Netherlands"
+          },
+          "confidence": 0.4
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-medium--loc-012",
+          "locationId": "europe-medium--loc-012",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 50.95,
+            "lng": 5.3,
+            "label": "Flanders (Limburg/Antwerp village), Belgium"
+          },
+          "confidence": 0.4
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-medium--loc-013",
+          "locationId": "europe-medium--loc-013",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 40.208,
+            "lng": -8.424,
+            "label": "Coimbra, Portugal"
+          },
+          "confidence": 0.5
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-medium--loc-014",
+          "locationId": "europe-medium--loc-014",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 59.29,
+            "lng": 18.03,
+            "label": "Stockholm suburb (Enskede-type), Sweden"
+          },
+          "confidence": 0.5
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-medium--loc-015",
+          "locationId": "europe-medium--loc-015",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 59.31,
+            "lng": 24.66,
+            "label": "Tallinn (Nõmme), Estonia"
+          },
+          "confidence": 0.45
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-medium--loc-016",
+          "locationId": "europe-medium--loc-016",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 48.6,
+            "lng": 19.1,
+            "label": "Central Slovakia (Zvolen/Banská Bystrica), Slovakia"
+          },
+          "confidence": 0.4
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-hard--loc-018",
+          "locationId": "europe-hard--loc-018",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 40.23,
+            "lng": 26.3,
+            "label": "Gallipoli Peninsula, Çanakkale, Turkey"
+          },
+          "confidence": 0.35
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-hard--loc-023",
+          "locationId": "europe-hard--loc-023",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 55.3,
+            "lng": 23.8,
+            "label": "Suvalkija/Aukštaitija flatlands, Lithuania"
+          },
+          "confidence": 0.35
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-hard--loc-024",
+          "locationId": "europe-hard--loc-024",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 55.25,
+            "lng": 8.8,
+            "label": "SW Jutland marshes (Ribe/Tønder), Denmark"
+          },
+          "confidence": 0.35
+        },
+        {
+          "id": "glm-5-3-flash-max-europe-hard--loc-025",
+          "locationId": "europe-hard--loc-025",
+          "inputImage": {
+            "path": "data/starting-images-covered/map_metadata_cover/europe-hard/loc_025.png",
+            "intervention": "map_metadata_cover"
+          },
+          "prediction": {
+            "lat": 60.65,
+            "lng": 12.05,
+            "label": "Innlandet (Solør/Finnskogen), Norway"
+          },
+          "confidence": 0.35
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low-static-covered",
+      "benchmarkId": "gpt-6-astra-low-static-covered",
+      "model": "GPT-6 Astra · low",
+      "reasoning": "low",
+      "condition": "static-image-covered",
+      "sourceReport": "data/recorded-agent-benchmark/gpt-6-astra-low/conditions/static-image-covered/runs/run-1/model_report.md",
+      "predictions": [
+        {
+          "id": "gpt-6-astra-low-europe-easy--loc-001",
+          "locationId": "europe-easy--loc-001",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 48.8519,
+            "lng": 2.3694,
+            "label": "Paris, Place de la Bastille, France"
+          },
+          "confidence": 0.99
+        },
+        {
+          "id": "gpt-6-astra-low-europe-easy--loc-006",
+          "locationId": "europe-easy--loc-006",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 50.8917,
+            "lng": 14.8448,
+            "label": "Sieniawka, Zittau border crossing, Poland"
+          },
+          "confidence": 0.88
+        },
+        {
+          "id": "gpt-6-astra-low-europe-easy--loc-007",
+          "locationId": "europe-easy--loc-007",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 45.9579,
+            "lng": 14.7452,
+            "label": "Višnja Gora railway station, Slovenia"
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "gpt-6-astra-low-europe-medium--loc-009",
+          "locationId": "europe-medium--loc-009",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 39.4638,
+            "lng": -0.3715,
+            "label": "Valencia, Eixample, Spain"
+          },
+          "confidence": 0.65
+        },
+        {
+          "id": "gpt-6-astra-low-europe-medium--loc-010",
+          "locationId": "europe-medium--loc-010",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 44.4868,
+            "lng": 11.3491,
+            "label": "Bologna, residential inner suburbs, Italy"
+          },
+          "confidence": 0.62
+        },
+        {
+          "id": "gpt-6-astra-low-europe-medium--loc-011",
+          "locationId": "europe-medium--loc-011",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 52.0924,
+            "lng": 5.1179,
+            "label": "Utrecht, Netherlands"
+          },
+          "confidence": 0.4
+        },
+        {
+          "id": "gpt-6-astra-low-europe-medium--loc-012",
+          "locationId": "europe-medium--loc-012",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 51.04,
+            "lng": 3.8,
+            "label": "East Flanders, Ghent outskirts, Belgium"
+          },
+          "confidence": 0.38
+        },
+        {
+          "id": "gpt-6-astra-low-europe-medium--loc-013",
+          "locationId": "europe-medium--loc-013",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 40.6575,
+            "lng": -7.9139,
+            "label": "Viseu, Portugal"
+          },
+          "confidence": 0.43
+        },
+        {
+          "id": "gpt-6-astra-low-europe-medium--loc-014",
+          "locationId": "europe-medium--loc-014",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 57.7089,
+            "lng": 11.9746,
+            "label": "Gothenburg residential suburbs, Sweden"
+          },
+          "confidence": 0.37
+        },
+        {
+          "id": "gpt-6-astra-low-europe-medium--loc-015",
+          "locationId": "europe-medium--loc-015",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 58.3776,
+            "lng": 26.729,
+            "label": "Tartu, Estonia"
+          },
+          "confidence": 0.42
+        },
+        {
+          "id": "gpt-6-astra-low-europe-medium--loc-016",
+          "locationId": "europe-medium--loc-016",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 49.21,
+            "lng": 18.83,
+            "label": "Žilina region, Slovakia"
+          },
+          "confidence": 0.41
+        },
+        {
+          "id": "gpt-6-astra-low-europe-hard--loc-018",
+          "locationId": "europe-hard--loc-018",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 43.82,
+            "lng": 16.02,
+            "label": "Dalmatian hinterland near Šibenik, Croatia"
+          },
+          "confidence": 0.3
+        },
+        {
+          "id": "gpt-6-astra-low-europe-hard--loc-023",
+          "locationId": "europe-hard--loc-023",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 55.93,
+            "lng": 23.32,
+            "label": "Šiauliai County, Lithuania"
+          },
+          "confidence": 0.28
+        },
+        {
+          "id": "gpt-6-astra-low-europe-hard--loc-024",
+          "locationId": "europe-hard--loc-024",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 57.05,
+            "lng": 8.65,
+            "label": "North Jutland, coastal farmland, Denmark"
+          },
+          "confidence": 0.3
+        },
+        {
+          "id": "gpt-6-astra-low-europe-hard--loc-025",
+          "locationId": "europe-hard--loc-025",
+          "inputImage": {
+            "path": "data/starting-images-covered/map_metadata_cover/europe-hard/loc_025.png",
+            "intervention": "map_metadata_cover"
+          },
+          "prediction": {
+            "lat": 62.24,
+            "lng": 25.75,
+            "label": "Central Finland near Jyväskylä, Finland"
+          },
+          "confidence": 0.36
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh-static-covered",
+      "benchmarkId": "gpt-5-6-sol-xhigh-static-covered",
+      "model": "GPT-5.6 Sol · xhigh",
+      "reasoning": "xhigh",
+      "condition": "static-image-covered",
+      "sourceReport": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/conditions/static-image-covered/runs/run-1/model_report.md",
+      "predictions": [
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-easy--loc-001",
+          "locationId": "europe-easy--loc-001",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 48.853,
+            "lng": 2.369,
+            "label": "Paris, Place de la Bastille, France"
+          },
+          "confidence": 0.99
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-easy--loc-006",
+          "locationId": "europe-easy--loc-006",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 50.9002,
+            "lng": 14.8419,
+            "label": "Sieniawka, Lower Silesia, Poland"
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-easy--loc-007",
+          "locationId": "europe-easy--loc-007",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 45.9535,
+            "lng": 14.7444,
+            "label": "Višnja Gora, Ivančna Gorica, Slovenia"
+          },
+          "confidence": 0.99
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-medium--loc-009",
+          "locationId": "europe-medium--loc-009",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 39.4682,
+            "lng": -0.3709,
+            "label": "Valencia, Eixample / Gran Via, Spain"
+          },
+          "confidence": 0.73
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-medium--loc-010",
+          "locationId": "europe-medium--loc-010",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 44.4875,
+            "lng": 11.3502,
+            "label": "Bologna, Murri / inner southeast, Italy"
+          },
+          "confidence": 0.87
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-medium--loc-011",
+          "locationId": "europe-medium--loc-011",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 52.2073,
+            "lng": 5.9566,
+            "label": "Apeldoorn, Asselsestraat area, Netherlands"
+          },
+          "confidence": 0.43
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-medium--loc-012",
+          "locationId": "europe-medium--loc-012",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 51.0672,
+            "lng": 5.3823,
+            "label": "Helchteren, Houthalen-Helchteren, Belgium"
+          },
+          "confidence": 0.48
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-medium--loc-013",
+          "locationId": "europe-medium--loc-013",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 40.6585,
+            "lng": -7.9098,
+            "label": "Viseu, central area, Portugal"
+          },
+          "confidence": 0.42
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-medium--loc-014",
+          "locationId": "europe-medium--loc-014",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 59.2707,
+            "lng": 15.2202,
+            "label": "Örebro, inner residential area, Sweden"
+          },
+          "confidence": 0.27
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-medium--loc-015",
+          "locationId": "europe-medium--loc-015",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 55.9282,
+            "lng": 23.3039,
+            "label": "Šiauliai, outer residential district, Lithuania"
+          },
+          "confidence": 0.42
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-medium--loc-016",
+          "locationId": "europe-medium--loc-016",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 48.7352,
+            "lng": 19.1345,
+            "label": "Banská Bystrica, residential outskirts, Slovakia"
+          },
+          "confidence": 0.39
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-hard--loc-018",
+          "locationId": "europe-hard--loc-018",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 40.7031,
+            "lng": 8.5147,
+            "label": "Sassari hinterland, Sardinia, Italy"
+          },
+          "confidence": 0.34
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-hard--loc-023",
+          "locationId": "europe-hard--loc-023",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 56.5742,
+            "lng": 23.7648,
+            "label": "Jelgava Municipality / Zemgale, Latvia"
+          },
+          "confidence": 0.31
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-hard--loc-024",
+          "locationId": "europe-hard--loc-024",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 56.0106,
+            "lng": 8.2147,
+            "label": "Ringkøbing-Skjern, west Jutland, Denmark"
+          },
+          "confidence": 0.38
+        },
+        {
+          "id": "gpt-5-6-sol-xhigh-europe-hard--loc-025",
+          "locationId": "europe-hard--loc-025",
+          "inputImage": {
+            "path": "data/starting-images-covered/map_metadata_cover/europe-hard/loc_025.png",
+            "intervention": "map_metadata_cover"
+          },
+          "prediction": {
+            "lat": 62.2551,
+            "lng": 25.6092,
+            "label": "Jyväskylä region, Central Finland, Finland"
+          },
+          "confidence": 0.46
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max-static-covered",
+      "benchmarkId": "gpt-5-6-sol-max-static-covered",
+      "model": "GPT-5.6 Sol · max",
+      "reasoning": "max",
+      "condition": "static-image-covered",
+      "sourceReport": "data/recorded-agent-benchmark/gpt-5.6-sol-max/conditions/static-image-covered/runs/run-1/model_report.md",
+      "predictions": [
+        {
+          "id": "gpt-5-6-sol-max-europe-easy--loc-001",
+          "locationId": "europe-easy--loc-001",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 48.85214,
+            "lng": 2.37062,
+            "label": "Paris — Place de la Bastille, France"
+          },
+          "confidence": 0.99
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-easy--loc-006",
+          "locationId": "europe-easy--loc-006",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 50.8957,
+            "lng": 14.8426,
+            "label": "Sieniawka, Lower Silesia, Poland"
+          },
+          "confidence": 0.94
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-easy--loc-007",
+          "locationId": "europe-easy--loc-007",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 45.9557,
+            "lng": 14.7445,
+            "label": "Višnja Gora, Slovenia"
+          },
+          "confidence": 0.99
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-medium--loc-009",
+          "locationId": "europe-medium--loc-009",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 39.4662,
+            "lng": -0.3648,
+            "label": "Valencia — Eixample / Gran Via, Spain"
+          },
+          "confidence": 0.66
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-medium--loc-010",
+          "locationId": "europe-medium--loc-010",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 44.4869,
+            "lng": 11.3606,
+            "label": "Bologna, Emilia-Romagna, Italy"
+          },
+          "confidence": 0.68
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-medium--loc-011",
+          "locationId": "europe-medium--loc-011",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 52.111,
+            "lng": 5.0866,
+            "label": "Utrecht — Zuilen, Netherlands"
+          },
+          "confidence": 0.52
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-medium--loc-012",
+          "locationId": "europe-medium--loc-012",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 50.9137,
+            "lng": 5.4135,
+            "label": "Hasselt–Diepenbeek, Limburg, Belgium"
+          },
+          "confidence": 0.39
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-medium--loc-013",
+          "locationId": "europe-medium--loc-013",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 41.5512,
+            "lng": -8.4259,
+            "label": "Braga, Portugal"
+          },
+          "confidence": 0.73
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-medium--loc-014",
+          "locationId": "europe-medium--loc-014",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 57.7204,
+            "lng": 12.9391,
+            "label": "Borås, Västra Götaland, Sweden"
+          },
+          "confidence": 0.41
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-medium--loc-015",
+          "locationId": "europe-medium--loc-015",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 58.3827,
+            "lng": 24.5231,
+            "label": "Pärnu, Estonia"
+          },
+          "confidence": 0.56
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-medium--loc-016",
+          "locationId": "europe-medium--loc-016",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 49.0794,
+            "lng": 19.309,
+            "label": "Ružomberok, Žilina Region, Slovakia"
+          },
+          "confidence": 0.53
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-hard--loc-018",
+          "locationId": "europe-hard--loc-018",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 43.7718,
+            "lng": 15.9976,
+            "label": "Šibenik hinterland, Croatia"
+          },
+          "confidence": 0.39
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-hard--loc-023",
+          "locationId": "europe-hard--loc-023",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 58.7245,
+            "lng": 26.337,
+            "label": "Jõgeva County / Põltsamaa countryside, Estonia"
+          },
+          "confidence": 0.44
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-hard--loc-024",
+          "locationId": "europe-hard--loc-024",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 55.5583,
+            "lng": 8.3849,
+            "label": "Esbjerg–Varde, west Jutland, Denmark"
+          },
+          "confidence": 0.57
+        },
+        {
+          "id": "gpt-5-6-sol-max-europe-hard--loc-025",
+          "locationId": "europe-hard--loc-025",
+          "inputImage": {
+            "path": "data/starting-images-covered/map_metadata_cover/europe-hard/loc_025.png",
+            "intervention": "map_metadata_cover"
+          },
+          "prediction": {
+            "lat": 62.3437,
+            "lng": 25.8118,
+            "label": "Jyväskylä region, Central Finland, Finland"
+          },
+          "confidence": 0.55
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-static-covered",
+      "benchmarkId": "grok-4-6-xhigh-static-covered",
+      "model": "Grok 4.6 · xhigh",
+      "reasoning": "xhigh",
+      "condition": "static-image-covered",
+      "sourceReport": "data/recorded-agent-benchmark/grok-4.6-xhigh/conditions/static-image-covered/runs/run-1/model_report_recovered.md",
+      "predictions": [
+        {
+          "id": "grok-4-6-xhigh-europe-easy--loc-001",
+          "locationId": "europe-easy--loc-001",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 48.8524,
+            "lng": 2.3698,
+            "label": "Paris, Place de la Bastille, France"
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-easy--loc-006",
+          "locationId": "europe-easy--loc-006",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 50.8964,
+            "lng": 14.8232,
+            "label": "Sieniawka (Zittau border), Poland"
+          },
+          "confidence": 0.9
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-easy--loc-007",
+          "locationId": "europe-easy--loc-007",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 45.9578,
+            "lng": 14.7752,
+            "label": "Višnja Gora, Slovenia"
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-medium--loc-009",
+          "locationId": "europe-medium--loc-009",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 40.4238,
+            "lng": -3.6975,
+            "label": "Madrid, Justicia/Chueca, Spain"
+          },
+          "confidence": 0.78
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-medium--loc-010",
+          "locationId": "europe-medium--loc-010",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 44.4978,
+            "lng": 11.3516,
+            "label": "Bologna, residential, Italy"
+          },
+          "confidence": 0.7
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-medium--loc-011",
+          "locationId": "europe-medium--loc-011",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 52.3702,
+            "lng": 5.7478,
+            "label": "Doornspijk / Elburg, Gelderland, Netherlands"
+          },
+          "confidence": 0.72
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-medium--loc-012",
+          "locationId": "europe-medium--loc-012",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 51.165,
+            "lng": 4.832,
+            "label": "Flanders, Antwerp Kempen, Belgium"
+          },
+          "confidence": 0.75
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-medium--loc-013",
+          "locationId": "europe-medium--loc-013",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 38.7282,
+            "lng": -9.1348,
+            "label": "Lisbon, inner neighbourhood, Portugal"
+          },
+          "confidence": 0.8
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-medium--loc-014",
+          "locationId": "europe-medium--loc-014",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 59.3375,
+            "lng": 17.968,
+            "label": "Stockholm villa suburb, Sweden"
+          },
+          "confidence": 0.72
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-medium--loc-015",
+          "locationId": "europe-medium--loc-015",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 58.3685,
+            "lng": 26.7348,
+            "label": "Tartu residential, Estonia"
+          },
+          "confidence": 0.68
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-medium--loc-016",
+          "locationId": "europe-medium--loc-016",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 46.2275,
+            "lng": 14.6088,
+            "label": "Kamnik / Gorenjska, Slovenia"
+          },
+          "confidence": 0.7
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-hard--loc-018",
+          "locationId": "europe-hard--loc-018",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 39.42,
+            "lng": -4.05,
+            "label": "Castilla-La Mancha woodland, Spain"
+          },
+          "confidence": 0.52
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-hard--loc-023",
+          "locationId": "europe-hard--loc-023",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 52.15,
+            "lng": 22.28,
+            "label": "Rural Mazovia / Podlasie, Poland"
+          },
+          "confidence": 0.62
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-hard--loc-024",
+          "locationId": "europe-hard--loc-024",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+            "intervention": "google_road_marking_cover"
+          },
+          "prediction": {
+            "lat": 56.1,
+            "lng": 9.55,
+            "label": "Rural Jutland, Denmark"
+          },
+          "confidence": 0.55
+        },
+        {
+          "id": "grok-4-6-xhigh-europe-hard--loc-025",
+          "locationId": "europe-hard--loc-025",
+          "inputImage": {
+            "path": "data/starting-images-covered/map_metadata_cover/europe-hard/loc_025.png",
+            "intervention": "map_metadata_cover"
+          },
+          "prediction": {
+            "lat": 62.241,
+            "lng": 25.72,
+            "label": "Central Finland forest, Finland"
+          },
+          "confidence": 0.68
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-aided-static-covered",
+      "benchmarkId": "gemini-3-7-flash-high-aided-static-covered",
+      "model": "Gemini 3.7 Flash · high, aided",
+      "reasoning": "high, aided",
+      "condition": "static-image-covered",
+      "sourceReport": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+      "predictions": [
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-easy--loc-001",
+          "locationId": "europe-easy--loc-001",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 48.8519,
+            "lng": 2.3705,
+            "label": "Paris (Place de la Bastille / Rue de Lyon, 12th Arrondissement), France"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-easy--loc-006",
+          "locationId": "europe-easy--loc-006",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 50.895,
+            "lng": 14.838,
+            "label": "Porajów / Sieniawka (Bogatynia Municipality, Lower Silesia), Poland (Border to Zittau, Germany)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-easy--loc-007",
+          "locationId": "europe-easy--loc-007",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 45.9567,
+            "lng": 14.7397,
+            "label": "Višnja Gora (Municipality of Ivančna Gorica, Lower Carniola), Slovenia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-medium--loc-009",
+          "locationId": "europe-medium--loc-009",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 40.4285,
+            "lng": -3.698,
+            "label": "Madrid (Chamberí / Salamanca District), Spain"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-medium--loc-010",
+          "locationId": "europe-medium--loc-010",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 44.488,
+            "lng": 11.342,
+            "label": "Bologna (Emilia-Romagna), Italy"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-medium--loc-011",
+          "locationId": "europe-medium--loc-011",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 52.09,
+            "lng": 5.12,
+            "label": "Utrecht / Randstad, Netherlands"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-medium--loc-012",
+          "locationId": "europe-medium--loc-012",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 51.05,
+            "lng": 4.35,
+            "label": "Flanders (Flemish Region / Antwerp or Flemish Brabant province), Belgium"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-medium--loc-013",
+          "locationId": "europe-medium--loc-013",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 40.205,
+            "lng": -8.42,
+            "label": "Central Portugal (Coimbra / Leiria / Santarém Region), Portugal"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-medium--loc-014",
+          "locationId": "europe-medium--loc-014",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 59.35,
+            "lng": 17.95,
+            "label": "Stockholm Region (Greater Stockholm / Södermanland / Uppland), Sweden"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-medium--loc-015",
+          "locationId": "europe-medium--loc-015",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 59.38,
+            "lng": 24.7,
+            "label": "Harju / Tartu County (Suburban Tallinn/Tartu area), Estonia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-medium--loc-016",
+          "locationId": "europe-medium--loc-016",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 49.08,
+            "lng": 19.12,
+            "label": "Žilina / Banská Bystrica Region (Carpathian Foothills / Fatra-Tatras), Slovakia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-hard--loc-018",
+          "locationId": "europe-hard--loc-018",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 39.55,
+            "lng": 2.85,
+            "label": "Mediterranean Karst Plateau / Inland Andalusia / Balearic Islands, Spain"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-hard--loc-023",
+          "locationId": "europe-hard--loc-023",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 56.52,
+            "lng": 24.15,
+            "label": "Zemgale / Vidzeme Region (Baltic Lowland Plain), Latvia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-high-aided-europe-hard--loc-024",
+          "locationId": "europe-hard--loc-024",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 55.5,
+            "lng": 9.5,
+            "label": "Jutland (Syddanmark / Midtjylland), Denmark"
+          },
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-medium-aided-static-covered",
+      "benchmarkId": "gemini-3-7-flash-medium-aided-static-covered",
+      "model": "Gemini 3.7 Flash · medium, aided",
+      "reasoning": "medium, aided",
+      "condition": "static-image-covered",
+      "sourceReport": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+      "predictions": [
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-easy--loc-001",
+          "locationId": "europe-easy--loc-001",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 48.8526,
+            "lng": 2.3698,
+            "label": "Place de la Bastille / Rue de Lyon, Paris, Île-de-France, France"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-easy--loc-006",
+          "locationId": "europe-easy--loc-006",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 50.8875,
+            "lng": 14.8385,
+            "label": "Sieniawka / Porajów (Border to Zittau, Germany), Lower Silesia, Poland"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-easy--loc-007",
+          "locationId": "europe-easy--loc-007",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 45.956,
+            "lng": 14.7435,
+            "label": "Višnja Gora Train Station, Lower Carniola (Dolenjska), Slovenia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-medium--loc-009",
+          "locationId": "europe-medium--loc-009",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 40.4285,
+            "lng": -3.6965,
+            "label": "Madrid (Chamberí / Salamanca district), Spain"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-medium--loc-010",
+          "locationId": "europe-medium--loc-010",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 44.4942,
+            "lng": 11.3465,
+            "label": "Bologna (or Florence), Emilia-Romagna / Tuscany, Italy"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-medium--loc-011",
+          "locationId": "europe-medium--loc-011",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 52.0907,
+            "lng": 5.1214,
+            "label": "Utrecht / Randstad Region, Netherlands"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-medium--loc-012",
+          "locationId": "europe-medium--loc-012",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 51.05,
+            "lng": 4.85,
+            "label": "Flanders (e.g. Limburg / Antwerp / Flemish Brabant), Belgium"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-medium--loc-013",
+          "locationId": "europe-medium--loc-013",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 41.1579,
+            "lng": -8.6291,
+            "label": "Porto / Central-Northern Region, Portugal"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-medium--loc-014",
+          "locationId": "europe-medium--loc-014",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 59.3293,
+            "lng": 18.0686,
+            "label": "Greater Stockholm / Central Sweden, Sweden"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-medium--loc-015",
+          "locationId": "europe-medium--loc-015",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 58.385,
+            "lng": 24.505,
+            "label": "Pärnu / Tartu / Southern Region, Estonia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-medium--loc-016",
+          "locationId": "europe-medium--loc-016",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 49.0833,
+            "lng": 19.3,
+            "label": "Žilina / Banská Bystrica (Tatra/Carpathian foothills), Slovakia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-hard--loc-018",
+          "locationId": "europe-hard--loc-018",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 43.765,
+            "lng": 16.125,
+            "label": "Dalmatian Karst Plateau / Hinterland, Croatia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-hard--loc-023",
+          "locationId": "europe-hard--loc-023",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 55.7348,
+            "lng": 24.3575,
+            "label": "Panevėžys / Šiauliai Agricultural Lowlands, Lithuania"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-7-flash-medium-aided-europe-hard--loc-024",
+          "locationId": "europe-hard--loc-024",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 55.45,
+            "lng": 9.6,
+            "label": "Jutland Peninsula / Funen, Denmark"
+          },
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash-high-aided-static-covered",
+      "benchmarkId": "gemini-3-8-flash-high-aided-static-covered",
+      "model": "Gemini 3.8 Flash · high, aided",
+      "reasoning": "high, aided",
+      "condition": "static-image-covered",
+      "sourceReport": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/conditions/static-image-covered/runs/run-1/report.md",
+      "predictions": [
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-easy--loc-001",
+          "locationId": "europe-easy--loc-001",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 48.8521,
+            "lng": 2.3695,
+            "label": "Paris, Île-de-France, France (Place de la Bastille / Rue de Lyon, directly in front of Opéra Bastille)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-easy--loc-006",
+          "locationId": "europe-easy--loc-006",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 50.8605,
+            "lng": 14.8452,
+            "label": "Porajów / Hrádek nad Nisou border crossing, Lower Silesia / Lusatia, Poland (Border bridge over the Neisse River near Zittau, tripoint border area PL/D/CZ)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-easy--loc-007",
+          "locationId": "europe-easy--loc-007",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 45.9542,
+            "lng": 14.7431,
+            "label": "Višnja Gora, Municipality of Ivančna Gorica, Lower Carniola, Slovenia (Railway Station / Ulica Antona Tomšiča)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-medium--loc-009",
+          "locationId": "europe-medium--loc-009",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 40.4285,
+            "lng": -3.692,
+            "label": "Madrid, Community of Madrid, Spain (Central Madrid, Chamberí / Salamanca district)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-medium--loc-010",
+          "locationId": "europe-medium--loc-010",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 44.4855,
+            "lng": 11.348,
+            "label": "Bologna, Emilia-Romagna, Italy (Quartiere Santo Stefano / Murri / Costa Saragozza)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-medium--loc-011",
+          "locationId": "europe-medium--loc-011",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 52.091,
+            "lng": 5.122,
+            "label": "Utrecht / Randstad Metropolitan Area, Netherlands"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-medium--loc-012",
+          "locationId": "europe-medium--loc-012",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 51.085,
+            "lng": 4.88,
+            "label": "Flanders, Belgium (Antwerp / Limburg / Flemish Brabant regional corridor)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-medium--loc-013",
+          "locationId": "europe-medium--loc-013",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 41.158,
+            "lng": -8.629,
+            "label": "Northern / Central Portugal (Porto / Braga / Coimbra urban area)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-medium--loc-014",
+          "locationId": "europe-medium--loc-014",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 59.332,
+            "lng": 17.985,
+            "label": "Central / Southern Sweden (Greater Stockholm / Uppsala / Mälardalen suburban area)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-medium--loc-015",
+          "locationId": "europe-medium--loc-015",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 59.385,
+            "lng": 24.68,
+            "label": "Suburban Tallinn / Harju County, Estonia (Nõmme / Kristiine / Pirita district)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-medium--loc-016",
+          "locationId": "europe-medium--loc-016",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 49.125,
+            "lng": 18.895,
+            "label": "Žilina / Trenčín / Central Valley Region, Slovakia (Carpathian foothill village)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-hard--loc-018",
+          "locationId": "europe-hard--loc-018",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 40.35,
+            "lng": -1.95,
+            "label": "Sistema Ibérico / Serranía de Cuenca / Maestrazgo, Spain (High limestone paramera / serranía, Cuenca / Teruel / Guadalajara province)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-hard--loc-023",
+          "locationId": "europe-hard--loc-023",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 56.65,
+            "lng": 24.1,
+            "label": "Zemgale / Vidzeme Plain, Latvia (or Central Baltic Agricultural Lowland)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-high-aided-europe-hard--loc-024",
+          "locationId": "europe-hard--loc-024",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 55.45,
+            "lng": 10.35,
+            "label": "Denmark (Jutland or Zealand Agricultural Lowlands) / Northern Schleswig"
+          },
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-8-flash-medium-aided-static-covered",
+      "benchmarkId": "gemini-3-8-flash-medium-aided-static-covered",
+      "model": "Gemini 3.8 Flash · medium, aided",
+      "reasoning": "medium, aided",
+      "condition": "static-image-covered",
+      "sourceReport": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/conditions/static-image-covered/runs/run-1/report.md",
+      "predictions": [
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-easy--loc-001",
+          "locationId": "europe-easy--loc-001",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_001.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 48.8525,
+            "lng": 2.3698,
+            "label": "Place de la Bastille / Rue de Lyon, Paris, Île-de-France, France"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-easy--loc-006",
+          "locationId": "europe-easy--loc-006",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_006.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 50.8902,
+            "lng": 14.8325,
+            "label": "Sieniawka / Porajów (Bogatynia municipality), Lower Silesian Voivodeship, Poland (near Zittau border)"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-easy--loc-007",
+          "locationId": "europe-easy--loc-007",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-easy/loc_007.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 45.9565,
+            "lng": 14.7431,
+            "label": "Višnja Gora Railway Station, Municipality of Ivančna Gorica, Lower Carniola, Slovenia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-medium--loc-009",
+          "locationId": "europe-medium--loc-009",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_009.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 40.4285,
+            "lng": -3.693,
+            "label": "Madrid (Chamberí / Salamanca district), Community of Madrid, Spain"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-medium--loc-010",
+          "locationId": "europe-medium--loc-010",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_010.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 44.485,
+            "lng": 11.341,
+            "label": "Bologna (Quartiere Santo Stefano / Saragozza), Emilia-Romagna, Italy"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-medium--loc-011",
+          "locationId": "europe-medium--loc-011",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_011.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 52.355,
+            "lng": 4.912,
+            "label": "Amsterdam / Utrecht area, Netherlands"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-medium--loc-012",
+          "locationId": "europe-medium--loc-012",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_012.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 51.05,
+            "lng": 4.45,
+            "label": "Flanders (Flemish Region), Belgium"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-medium--loc-013",
+          "locationId": "europe-medium--loc-013",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_013.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 40.21,
+            "lng": -8.425,
+            "label": "Coimbra / Centro Region, Portugal"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-medium--loc-014",
+          "locationId": "europe-medium--loc-014",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_014.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 59.3325,
+            "lng": 18.065,
+            "label": "Stockholm Metropolitan Area, Sweden"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-medium--loc-015",
+          "locationId": "europe-medium--loc-015",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_015.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 59.395,
+            "lng": 24.705,
+            "label": "Tallinn (Nõmme / Kristiine) or Tartu, Estonia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-medium--loc-016",
+          "locationId": "europe-medium--loc-016",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-medium/loc_016.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 49.12,
+            "lng": 19.05,
+            "label": "Žilina / Banská Bystrica Region, Slovakia"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-hard--loc-018",
+          "locationId": "europe-hard--loc-018",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_018.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 36.95,
+            "lng": 28.35,
+            "label": "Muğla / Antalya Province (Southwestern Aegean/Mediterranean Coast), Turkey"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-hard--loc-023",
+          "locationId": "europe-hard--loc-023",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_023.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 56.35,
+            "lng": 24.15,
+            "label": "Zemgale Region (near Bauska / Jelgava), Latvia / Lithuania Border Plain"
+          },
+          "confidence": null
+        },
+        {
+          "id": "gemini-3-8-flash-medium-aided-europe-hard--loc-024",
+          "locationId": "europe-hard--loc-024",
+          "inputImage": {
+            "path": "data/starting-images-covered/google_road_marking_cover/europe-hard/loc_024.png",
+            "intervention": "google-road-marking-cover"
+          },
+          "prediction": {
+            "lat": 55.85,
+            "lng": 8.65,
+            "label": "Western Jutland (Region Syddanmark / Midtjylland), Denmark"
+          },
+          "confidence": null
+        }
+      ]
+    }
+  ]
+}

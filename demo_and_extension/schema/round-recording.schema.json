@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/geo-evidence-atlas/round-recording.schema.json",
+  "title": "OpenGuessr per-round recorder output",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "recordingType",
+    "id",
+    "model",
+    "condition",
+    "round",
+    "samples"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "2.0" },
+    "recordingType": { "const": "openguessr-round" },
+    "id": { "type": "string", "minLength": 1 },
+    "competitionId": { "type": "string" },
+    "locationId": { "type": ["string", "null"] },
+    "model": { "type": "string", "minLength": 1 },
+    "condition": { "enum": ["static-image", "interactive-panorama"] },
+    "prediction": {
+      "anyOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["lat", "lng"],
+          "properties": {
+            "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+            "lng": { "type": "number", "minimum": -180, "maximum": 180 }
+          }
+        }
+      ]
+    },
+    "round": { "type": "object" },
+    "samples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["lat", "lng", "tMs"],
+        "properties": {
+          "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+          "lng": { "type": "number", "minimum": -180, "maximum": 180 },
+          "tMs": { "type": "number", "minimum": 0 },
+          "heading": { "type": ["number", "null"] },
+          "pitch": { "type": ["number", "null"] },
+          "zoom": { "type": ["number", "null"] },
+          "fov": { "type": ["number", "null"] },
+          "panoId": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

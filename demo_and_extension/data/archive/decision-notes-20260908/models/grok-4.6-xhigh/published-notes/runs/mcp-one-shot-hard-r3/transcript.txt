@@ -1,0 +1,47 @@
+grok.exe : [2m2026-09-01T18:27:00.381371Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\tmp\nautilus-openguessr-mcp\demo_and_extension\openguessr-mcp\scripts\Sta
+rt-GrokOpenGuessr.ps1:297 char:5
++     & $grokCommand.Source @grokArgs 2>&1 | Tee-Object -FilePath $tran ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-09-01T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-09-01T18:27:00.381465Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-09-01T18:29:56.450430Z[0m [31mERROR[0m tool_error: 
+tool_output_error 
+[3msession_id[0m[2m=[0m01a05e39-7c19-7aa0-a689-7ea2516ac9e8 
+[3mtool_name[0m[2m=[0m"use_tool" 
+[3meffective_tool_name[0m[2m=[0m"playwright__openguessr_place_guess" 
+[3mmodel_id[0m[2m=[0m"grok-4.6" 
+[3merror_kind[0m[2m=[0m"tool_output_error"
+I'll start by loading the Playwright/OpenGuessr tool schemas, then screenshot the current viewport to confirm round 1/8 is ready.Schemas are loaded. Next I’ll capture the full viewport to confirm the first round is on screen.Greek road paint reads Επαρχιακή / Παραλίμνι — likely Cyprus. I’ll look around for more clues and confirm the round footer.The first pan didn’t move the view. I’ll drag on the road itself and scan for more signs.Panning with the mouse didn’t take. I’ll try the arrow keys, then lock in a Cyprus/Paralimni guess if nothing new appears.Clues already point to southeast Cyprus. I’ll open the guess map and pin Paralimni / Cape Greco.The first click missed the map — the viewport is likely wider. I’ll hover the mini-map, then place the pin.Hover missed the mini-map. I’ll move onto the visible map widget, then place the guess.Timer is under two minutes. I’ll place the pin at 34.98, 34.05 (Paralimni / Cape Greco, Cyprus).The mini-map sits in the bottom-right of a wide viewport. I’ll click that widget, then retry placement.Timer is at 43 seconds. I’ll use the keyboard and click the mini-map expand control so I can place immediately.Round 1 timed out with no pin. This is a new rural scene; I’ll pan around and get the guess map working.Panning still isn’t registering. I’ll click Menu to calibrate the viewport coordinates.Viewport looks like 1920×1080: the last click was on the road and moved us forward. I’ll hover the bottom-right mini-map next.Hover still missed. I’ll click the mini-map’s expand arrows at the 1920×1080 position.The last click likely hit the map overlay. I’ll place the Romania pin now.Pin landed at 45.8, 25.3. I’ll verify state, then submit.Round 2: Romania near Făgăraș, 75.3 km. Continuing to the next round.Round 3 is a forested mountain road. I’ll pan for signs and architecture, then guess.Round 3 was Bulgaria, not Bosnia — 634.2 km off. Continuing.Round 4 is a sunflower/wheat/corn plain. I’ll look along the road for signs.Chevron clicks aren’t moving the view. I’ll open the map and pin Hungary’s Great Plain.Round 4: Hungary near Csongrád, 40.5 km. Continuing.Round 5 is a straight dirt track through shrubs. I’ll move forward for more clues.Round 5: Latvia near Gulbene, 248.6 km. Continuing.Road number 3426 is painted on the gravel — likely a Hungarian 3xxx route. I’ll move up to the buildings to confirm.Round 6 was Lithuania, not Hungary — 942 km. Continuing.Road paint says Skalvej — that’s Denmark. I’ll move forward and pin Jutland.Round 7: Denmark, Harboøre, 81.8 km. Continuing to the last round.Round 8 is a Nordic pine/birch forest with a visible car hood. I’ll move forward for road signs.Round 8: Finland near Oulu, 335.1 km. Continuing to the leaderboard.## Official total: **26,162 Pts** (8/8 rounds completed)
+
+Leaderboard: **Grok Hard OneShot 300s R3** — Ivan Yachnik **#1, 26,162 Pts.**
+
+Per-round official points were **not shown** on the result cards (only distance + XP). XP summed to 26,119 across the 7 scored rounds, 43 below the leaderboard total.
+
+| Round | Final belief | Chosen pin | Distance | Official pts | Notes |
+|------|----------------|------------|----------|--------------|--------|
+| 1 | Cyprus, Paralimni / Cape Greco | never placed | timeout | **0** (unverified) | Greek road paint `Επαρχιακή` / `Παραλίμνι`. Map never opened in time |
+| 2 | Romania, Transylvania | 45.8, 25.3 | **75.3 km** | not shown (4637 XP) | Actual near Sibiu / Șura Mare. “Incredible guess.” |
+| 3 | Bosnia (central) | 44.1, 18.0 | **634.2 km** | not shown (2651 XP) | Actual: Bulgaria (Rhodopes). Country miss |
+| 4 | Hungary, Great Plain | 46.9, 20.5 | **40.5 km** | not shown (4801 XP) | Actual: Csongrád. “A short drive away!” |
+| 5 | Lithuania | 55.3, 24.0 | **248.6 km** | not shown (3899 XP) | Actual: Latvia, Gulbene. Adjacent-country miss |
+| 6 | Hungary, road 3426 | 47.35, 20.7 | **942 km** | not shown (1948 XP) | Actual: Lithuania. `3426` is a Lithuanian district road, not Hungarian |
+| 7 | Denmark, Skals / Jutland | 56.6, 9.5 | **81.8 km** | not shown (4607 XP) | Road paint `Skalvej`. Actual: Harboøre, west coast |
+| 8 | Finland, Jyväskylä | 62.0, 25.5 | **335.1 km** | not shown (3576 XP) | Actual: NE of Oulu. Right country |
+
+### Counts
+- **Completed rounds:** 8 (7 submitted, 1 timed out)
+- **Timeouts / defaults:** 1 (round 1 — no pin, no submit)
+- **Semantic misses:** 3 country-level (R3 Bosnia≠Bulgaria, R5 Lithuania≠Latvia, R6 Hungary≠Lithuania). R1 would have been Cyprus but never scored
+- **Belief-to-pin mismatches:** 0 on submitted rounds (`place_guess` / `get_state` matched every chosen coordinate)
+- **Unreadable:** per-round official points (XP only); footer never showed a clear `n/8` in the JPEGs, only “Competition” + timer
+
+### MCP map control
+Materially helpful **after** the mini-map was clicked: `place_guess` verified pins, `get_state` confirmed them, `submit_guess` / `continue` were reliable. Round 1 was lost to coordinate calibration (Street View drag rarely panned; hover did not expand the map). Clicking the mini-map, then `place_guess`, was the working sequence.

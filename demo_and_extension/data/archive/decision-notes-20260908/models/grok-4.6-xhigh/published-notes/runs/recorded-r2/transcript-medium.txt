@@ -1,0 +1,100 @@
+grok.exe : [2m2026-08-31T11:02:47.570300Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\Users\vanya\Documents\Computer_Vision_FInal_Project\scripts\Start-GrokNau
+tilusRecorded.ps1:136 char:1
++ & grok @grokArgs 2>&1 | Tee-Object -FilePath $transcriptFullPath
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-08-31T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-08-31T11:02:47.570406Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-08-31T11:02:49.114182Z[0m [31mERROR[0m fail to get common stream: 
+Client error: HTTP status client error (404 Not Found) for url 
+(http://localhost:8931/mcp)
+[2m2026-08-31T11:02:49.114964Z[0m [33m WARN[0m sse client event stream 
+terminated with error: Err(Client(reqwest::Error { kind: Status(404, None), 
+url: "http://localhost:8931/mcp" }))
+I'll start by looking up the Playwright tool schemas, then take the first full-viewport screenshot of the competition modal.Schemas are ready. Next I’ll take the first full-viewport screenshot of the entry modal and wait until the recorder shows ARMED.Recorder is ARMED with the correct dataset and participant label. Clicking Confirm at the calibrated point to start the competition.Round 1 is live: Competition, REC, timer 04:54. Street paint reads “Carrer de Gasc…” with Barcelona-style architecture and a green igloo bin — I’ll open the guess map and pin Spain.Footer confirms Competition 1/9 and Medium 300s. Placing the pin on Spain (Barcelona).The pin landed on the United States, not Spain. Correcting it once onto the Iberian Peninsula.The marker is still in the Atlantic, so it is not a valid land pin. Clicking the visible Spain label next.Pin is on Spain with Guess active. Submitting immediately.Round 1 saved (Valencia, 759 km). Clicking Continue.Round 2 is live (REC, 2/9, 04:54). “Via Francesco…” and Italian street cues point to Italy — opening the map to pin there.Italy is labeled on the map. Pinning northern Italy, slightly above the label so the marker stays on land.Pin is on Italy with Guess active. Submitting.Round 2 saved (Bologna, 657.3 km). Clicking Continue.Round 3 is live. Road text starts with “Amsterdam” plus bikes and brick houses — pinning the Netherlands. Opening the map.Pinning the Low Countries north of France and west of Germany, targeting the Netherlands.The pin is on the United Kingdom, not the Netherlands. Correcting once toward the Low Countries.Pin is on land in the Netherlands/Germany area with Guess active. Submitting.Round 3 saved (Amsterdam, 764.4 km). Clicking Continue.Round 4 is live. “N444” and “FOTO AKTIEF” point to Flanders/Belgium. Opening the map and zooming into northwest Europe before pinning.Default pin is in the Indian Ocean. Moving to Europe and zooming in so Belgium can be pinned on land.Cursor is over Europe. Zooming the map in.Map is on southern Europe. Dragging north so Belgium comes into view.Panned too far north to Svalbard. Zooming out to get Europe back in view.Europe is back. Pinning Belgium immediately — timer is 03:11.Pin is on Sweden, not Belgium. Correcting once onto the France–Germany–UK junction.Correction still landed in Scandinavia. Time is 02:27, so submitting this land pin.Round 4 saved (Antwerp, Belgium, 868.9 km). Clicking Continue.Round 5 is live. “R. Figueira da Foz,” PRIVATIVO, and azulejo tiles point to Portugal. Opening the map.Default pin is in the Indian Ocean. Moving to Iberia and zooming in before pinning Portugal.Portugal and Lisbon are visible. Pinning Lisbon.Pin is in the Atlantic. Correcting once onto Lisbon.Pin is on Portugal/Lisbon with Guess active. Submitting.Round 5 saved (Coimbra, Portugal, 238 km). Clicking Continue.Round 6 is live. “Bergagatan” and wooden houses point to Sweden. Opening the map and zooming into Scandinavia.Sweden is north of this view. Dragging the map north.Stockholm is labeled. Pinning it now.Pin is on Sweden near Stockholm. Submitting.Round 6 saved (Uppsala, Sweden, 64.7 km). Clicking Continue.Round 7 is live. Street paint looks like “Sepaküla” with Baltic suburban houses — pinning Estonia. Opening the map.Panning north so Estonia comes into view.Panned too far north. Dragging south toward the Baltic.Europe is back. Pinning Estonia, south of Finland and north of Poland.Pin is in northern Russia. Correcting once onto Estonia, just south of Finland.Pin is on land in the Finland/Estonia region. Time is 01:13 — submitting.Round 7 saved (Tartu, Estonia, 400.8 km). Clicking Continue.Round 8 is live. “Jelšová” and mountain houses point to Slovakia. Opening the map and zooming into Central Europe.Hungary is at the top of the map. Pinning just north of it for Slovakia.Pin is on Hungary, south of Slovakia. Correcting once farther north.Pin is on Hungary, adjacent to Slovakia. Submitting.Round 8 saved (Slovakia, Low Tatras, 454.3 km). Clicking Continue.Round 9 is live. Yellow center lines and stone walls point to Ireland. Opening the map and zooming onto the British Isles.Ireland is labeled. Pinning the island west of London.Pin is on Ireland with Guess active. Submitting.Round 9 saved (Galway, Ireland, 303.7 km; 9/9 recorded). Clicking Continue for the leaderboard before disarming.Leaderboard shows 28,192 points. Taking a second heartbeat screenshot before disarming.No Round 10. Clicking Done & disarm.The first Done & disarm click was swallowed. Retrying that same control.Retrying Done & disarm at the center of the green bar.Previous clicks were likely too high, on the label instead of the button. Clicking lower on the green bar.All 9 rounds are submitted, the leaderboard is committed at **28,192** points, and the recorder HUD is gone after **Done & disarm**.
+
+## Round 1
+**INITIAL:** Catalan `Carrer de Gasc…` on the asphalt, Barcelona-style balconies, green igloo recycling bin, `Mano Rota` / `GENERALI`. Belief: Barcelona, Spain. Alts: other Catalan/Valencian cities. Confidence: high.  
+**PROVISIONAL PIN:** World-map miss on the United States, then the Atlantic; third click on the Spain label.  
+**FINAL BELIEF + PIN:** Spain (Barcelona). Marker sat on the Spain label; tip proved to be Algeria. Guess active.  
+**RESULT:** Valencia, Spain. **759 km**. Country semantically correct (Valencia, not Barcelona). Pin in Algeria — belief-to-pin miss. `SAVED` 1/9. Extra pin attempts after the first miss.
+
+## Round 2
+**INITIAL:** `Via Francesco…`, Italian dumpsters, brick apartments, scooters. Belief: Italy. Alt: northern vs southern city. Confidence: high.  
+**PROVISIONAL PIN:** Italy on the world map (southern boot).  
+**FINAL BELIEF + PIN:** Italy. Marker on the Italy label. Guess active.  
+**RESULT:** Bologna, Italy. **657.3 km**. Country correct; pin on Italy (south vs Bologna north). `SAVED` 2/9.
+
+## Round 3
+**INITIAL:** Road text `Amsterdam…`, dense bikes, Dutch brick, yellow bollards. Belief: Netherlands / Amsterdam. Alt: another Dutch city with Amsterdamseweg. Confidence: high.  
+**PROVISIONAL PIN:** United Kingdom, then a Low Countries / Germany correction.  
+**FINAL BELIEF + PIN:** Netherlands. Submitted pin landed in Switzerland / northern Italy at world-map scale.  
+**RESULT:** Amsterdam, Netherlands. **764.4 km**. Belief correct; pin inconsistent. `SAVED` 3/9.
+
+## Round 4
+**INITIAL:** `N444`, shop `FOTO AKTIEF`, Flemish brick village. Belief: Belgium (Flanders). Alt: Netherlands. Confidence: medium-high.  
+**PROVISIONAL PIN:** Default Indian Ocean, overshoot pan to Svalbard, then Sweden, then a Poland-area correction. Submitted after 3:00.  
+**FINAL BELIEF + PIN:** Belgium. Marker on Baltic Poland.  
+**RESULT:** Antwerp, Belgium. **868.9 km**. Belief correct; pin inconsistent. Map-pan overshoot. `SAVED` 4/9.
+
+## Round 5
+**INITIAL:** `R. Figueira da Foz`, `PRIVATIVO`, azulejo tiles. Belief: Portugal (Lisbon / Figueira da Foz). Confidence: high.  
+**PROVISIONAL PIN:** Default ocean, then Atlantic west of Iberia, then Lisbon/Portugal.  
+**FINAL BELIEF + PIN:** Portugal / Lisbon. Marker on Portugal.  
+**RESULT:** Coimbra, Portugal. **238 km**. Country correct; pin in Portugal (south of Coimbra). `SAVED` 5/9.
+
+## Round 6
+**INITIAL:** `Bergagatan` (`-gatan`), green wooden house. Belief: Sweden. Alt: other Nordic. Confidence: high.  
+**PROVISIONAL PIN:** Zoomed northern Europe; Stockholm.  
+**FINAL BELIEF + PIN:** Sweden / Stockholm. Marker on Sweden near Stockholm.  
+**RESULT:** Uppsala, Sweden. **64.7 km**. Belief and pin consistent. `SAVED` 6/9.
+
+## Round 7
+**INITIAL:** `Sepaküla`, Baltic suburban houses, steep roofs. Belief: Estonia. Alt: other Baltics / Finland. Confidence: medium-high.  
+**PROVISIONAL PIN:** Pan overshoot to Svalbard; north Russia; correction onto Finland/Estonia. Submitted at ~1:13.  
+**FINAL BELIEF + PIN:** Estonia. Marker on eastern Finland.  
+**RESULT:** Tartu, Estonia. **400.8 km**. Belief correct; pin in Finland. `SAVED` 7/9.
+
+## Round 8
+**INITIAL:** `Jelšová`, mountains, Alpine/Carpathian houses. Belief: Slovakia. Alt: Slovenia / Czechia. Confidence: medium-high.  
+**PROVISIONAL PIN:** North of Hungary, then still Hungary/Romania.  
+**FINAL BELIEF + PIN:** Slovakia. Marker on western Romania near Timișoara.  
+**RESULT:** Slovakia (Low Tatras). **454.3 km**. Belief correct; pin in Romania. `SAVED` 8/9.
+
+## Round 9
+**INITIAL:** Yellow dashed center line, stone walls, Irish houses. Belief: Ireland. Alt: Northern Ireland / Wales. Confidence: high.  
+**PROVISIONAL PIN:** Ireland, west of London.  
+**FINAL BELIEF + PIN:** Ireland. Marker on the Ireland label (result showed Irish Sea just SE of the island).  
+**RESULT:** Galway, Ireland. **303.7 km**. Belief correct. `SAVED` 9/9. Recorder flipped to `Competition recorded` / 9/9.
+
+## FINAL ROUND RESULT
+Galway, Ireland, **303.7 km**, 9/9 saved. No Round 10.
+
+## FINAL CONTINUE CLICKED
+Continue on the round-9 result screen opened the results modal. Not swallowed.
+
+## LEADERBOARD COMMITTED
+**REC Grok R2 Medium 300s** — **#1 Ivan Iachnyk, 28,192 Pts.** Held for two screenshot cycles. No phantom round.
+
+## RECORDER DONE
+`Done & disarm` succeeded after earlier clicks hit the label instead of the green bar. HUD gone. Last visible saved count **9/9**.
+
+| Metric | Value |
+|---|---|
+| Official total | **28,192** |
+| Rounds played | 9/9 |
+| Saved rounds | 9/9 |
+| Valid belief-matched land pins | 4 (R2 Italy, R5 Portugal, R6 Sweden, R9 Ireland at verify) |
+| Timeouts / default ocean submits | 0 |
+| Semantic country hits | 9/9 |
+| Belief-to-pin country hits | 4/9 (R2, R5, R6, R9 near-miss offshore) |
+| Distances (km) | 759, 657.3, 764.4, 868.9, 238, 64.7, 400.8, 454.3, 303.7 |
+| Swallowed actions | First `Done & disarm` clicks too high; later click on the green bar worked |
+| Uncertainty | World-map scale repeatedly dropped pins 1 country south/east of the target; R4/R7 pan overshoots to Svalbard |

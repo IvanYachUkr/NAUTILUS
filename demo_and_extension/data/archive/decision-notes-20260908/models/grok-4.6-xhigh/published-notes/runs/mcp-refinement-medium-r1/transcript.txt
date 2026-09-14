@@ -1,0 +1,107 @@
+grok.exe : [2m2026-09-01T14:47:08.807700Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\tmp\nautilus-openguessr-mcp\demo_and_extension\openguessr-mcp\scripts\Sta
+rt-GrokOpenGuessr.ps1:286 char:5
++     & $grokCommand.Source @grokArgs 2>&1 | Tee-Object -FilePath $tran ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-09-01T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-09-01T14:47:08.807806Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-09-01T14:50:13.184660Z[0m [31mERROR[0m tool_error: 
+tool_output_error 
+[3msession_id[0m[2m=[0m01a05d70-343e-7c72-9e75-0a11cdc8f182 
+[3mtool_name[0m[2m=[0m"use_tool" 
+[3meffective_tool_name[0m[2m=[0m"playwright__openguessr_place_guess" 
+[3mmodel_id[0m[2m=[0m"grok-4.6" 
+[3merror_kind[0m[2m=[0m"tool_output_error"
+I'll start by discovering the OpenGuessr tools and capturing an untouched full-viewport screenshot so we can enter the 9-round competition from a clean state.Taking the untouched full-viewport screenshot now, then I’ll confirm we’re on the 9-round, 300-second competition modal.The round is already live, so I’ll read the footer/state next and confirm this is competition round 1/9 before any geographic action.The first round is already on screen. I’ll open the guess map, drop a Barcelona provisional pin from the Catalan street clues, then inspect the panorama more closely.The last click rotated the panorama instead of opening the map. I’ll hit the mini-map itself and drop a Barcelona Eixample pin while time remains.The viewport is wider than my first clicks, so I’m targeting the lower-right mini-map next and placing the pin as soon as it opens.The mini-map is already visible, so I’m placing a Barcelona Eixample pin now and will confirm it on the map.Hover missed the map. I’m clicking the Africa mini-map directly so I can place the pin before time runs out.The map sits lower in a 1080-tall viewport. I’m clicking it now, placing the Barcelona pin, and submitting before the timer expires.The earlier clicks were too far right for this viewport. I’m hovering the actual mini-map now so I can place and submit immediately.Round 1 timed out on a default Gulf of Guinea pin. I’ll continue to round 2 and open the guess map immediately this time.Round 2 is a tree-lined Italian street, `Via Francesco…`. I’ll open the guess map first, drop a northern-Italy pin, then read the rest of the street name.Hover didn’t expand the map, so I’m clicking the Africa mini-map directly.The map sits higher than I was clicking. I’m targeting the Africa overlay around (1700, 500) and placing the Italy pin as soon as it opens.Hover doesn’t enlarge this map. I’m clicking the Africa overlay itself so I can place the Italy pin.1120 was still on the panorama, so the map starts further right. I’m clicking that overlay next.Clicks on the map body aren’t expanding it. I’ll hit the map’s expand control on the right edge next.The map is open on round 2/9 with 1:49 left. I’m placing a Bologna pin from the Italian street and brick architecture, then I’ll verify it.The pin is verified on northern Italy. I’ll zoom the map to check Bologna and refine if the street name supports a tighter placement.Twenty seconds remain and the pin is on northern Italy, so I’m submitting this Bologna guess now.Round 2 landed in Bologna, 1,351 m from Via Francesco Roncati. Continuing to round 3, and I’ll open the map at (1420, 480) immediately.Round 3 is clearly the Netherlands: `Amsterdamseweg` and `Fiets Holland`. I’ll open the map at the same expand control and pin Amstelveen.Map is open on round 3/9. Placing the Amstelveen pin on Amsterdamseweg now.Pin is verified at 52.3085, 4.863. Zooming the map to confirm it sits on Amstelveen rather than the wider Netherlands.Zoom landed on Iberia, so I’m panning the map north toward the Netherlands to check the Amstelveen pin.The drag left Street View. I’m hitting Return to restore the panorama, then I’ll reopen the map and confirm the Amstelveen pin.The Return click was too high. I’m clicking the actual Return control, then reopening the map.The Amstelveen pin is still verified. I’m reopening the map to confirm it against the Netherlands before submitting.The visible marker is in the Atlantic, not on the Netherlands. I’m replacing it at Amstelveen and will confirm it against the map labels.The pin sits on the Netherlands, west of Germany and north of Belgium. I’ll zoom toward Amsterdam/Amstelveen for a tighter placement.The pin is on Amsterdam. I’ll zoom further to separate Amstelveen from the city center.Round 3 was 26.3 km off: I pinned Amstelveen, and the location was north of Utrecht. Continuing to round 4.Round 4 shows Belgian road N144 and Dutch-language `FOTO AKTIEF`, so Flanders. I’ll open the map and pin the Antwerp/Kempen area.Map is open on 4/9. Placing a Flanders pin on the Antwerp-province N144 corridor.Zoom drifted south again. I’m panning the map north to Belgium so I can check the N144 pin.The pin is on Belgium, just south of the Netherlands. Zooming in to the Antwerp/Kempen area next.The map zoomed onto Britain. I’ll pan east to Belgium and keep the N144 pin.The pin is north of Brussels near Antwerp. I’ll zoom to the N144 towns and scan the street for another cue.The map jumped north into the Netherlands. I’ll pan south to the Antwerp pin and take a last look at the street.Round 4 was Flanders, 71.3 km off: I pinned Heist-op-den-Berg, and the spot was near Wetteren. Continuing to round 5.Round 5 is Portugal: `R. Figueiredo de F…` and `P PRIVATIVO`. I’ll open the map and pin Porto, then read the rest of the street name.The pin is on northern coastal Portugal, consistent with Porto. I’ll zoom in and try to read the rest of the street name.Lisbon is on screen and Porto is north of it. Panning up to confirm the pin.Round 5 was Coimbra, 105 km south of my Porto pin. Continuing to round 6.Round 6 is Sweden: `Bergagatan` and wooden houses. I’ll open the map, pin southern Sweden, then look for a tighter town cue.The pin is in southwestern Sweden, across from Denmark. I’ll zoom toward Helsingborg and scan the street for another clue.The pin is on Helsingborg. I’ll zoom into Berga and try to match Bergagatan before submitting.Round 6 was Sweden, 510 km off: I pinned Helsingborg, and the location was near Uppsala. Continuing to round 7.Round 7 looks Baltic: `Sepaku…` on the road, wooden houses, and a Soviet-era block. I’ll open the map, pin Tallinn, then read the full street name.The pin is on Estonia. I’ll zoom toward Tallinn and check whether the street name is Estonian or Finnish.The pin is on Tallinn. I’m moving it to Nõmme, the wooden-house garden suburb that matches this street.Round 7 was Estonia, 164.6 km off: I pinned Tallinn, and the location was Tartu. Continuing to round 8.Round 8 is `Jelšová` with forested mountains, so Slovakia. I’ll open the map and pin the central mountain region.The pin is on Slovakia. I’ll zoom into the mountain belt and look for a closer town match.The pin is in northern Slovakia, south of Zakopane. I’ll zoom once more toward Liptov, then submit.Round 8 was 35.5 km off: I pinned Ružomberok, and the location was Banská Bystrica. Continuing to the final round.Round 9 looks like Ireland: stone walls, white houses, and left-side road layout. I’ll open the map and pin Cork, then look for a tighter cue.The pin is on Ireland. I’ll zoom toward Cork and check the scene for a more specific town.Round 9 was Ireland, 160.2 km off: I pinned Cork, and the location was Galway. Continuing from this result screen to the leaderboard.Competition complete. Official total: **35,412 / 45,000**.
+
+Leaderboard row: **#1 Ivan Yachnik — 35,412 Pts.** (Grok MCP Medium 300s R1). All 9 rounds finished.
+
+The result-bar “+XP” figures sum exactly to that total, so those are the round scores used below.
+
+---
+
+### Round 1 — Barcelona, Spain (timeout)
+- **INITIAL:** `Carrer de…`, green igloo bins, Eixample chamfer → Spain / Barcelona. Alts: Valencia, Girona.
+- **PROVISIONAL PIN:** None. Map expand control not found in time.
+- **REFINEMENT:** None.
+- **FINAL BELIEF + PIN:** Barcelona Eixample intended; pin never placed.
+- **RESULT:** Default Gulf of Guinea pin. **62 pts**, 4,388.7 km. Actual: Spain. Timeout/default. Controller miss: map never opened.
+
+### Round 2 — Bologna, Italy
+- **INITIAL:** `Via Francesco…`, Italian bins, red brick → Italy / Bologna.
+- **PROVISIONAL PIN:** 44.494, 11.342 (Bologna center). Verified.
+- **REFINEMENT:** Map opened at (1420, 480); pin on northern Italy.
+- **FINAL BELIEF + PIN:** Bologna, 44.494, 11.342. Consistent.
+- **RESULT:** **4,993 pts**, 1,351 m. Actual: Via Francesco Roncati / Porta Saragozza, Bologna. City correct.
+
+### Round 3 — Netherlands (Utrecht)
+- **INITIAL:** `Amsterdamseweg`, Fiets Holland, bike lane → Netherlands / Amstelveen.
+- **PROVISIONAL PIN:** 52.3085, 4.863. Verified.
+- **REFINEMENT:** Pin on Amsterdam/Netherlands; Street View broke after a map drag; pin restored.
+- **FINAL BELIEF + PIN:** Amstelveen, 52.3085, 4.863. Consistent.
+- **RESULT:** **4,870 pts**, 26.3 km. Actual: north of Utrecht. Country correct.
+
+### Round 4 — Belgium (Wetteren)
+- **INITIAL:** N144, `FOTO AKTIEF`, Flemish brick → Flanders / Antwerp province.
+- **PROVISIONAL PIN:** 51.1, 4.75. Verified.
+- **REFINEMENT:** Pin SE of Antwerp, NE of Mechelen.
+- **FINAL BELIEF + PIN:** 51.1, 4.75. Consistent.
+- **RESULT:** **4,656 pts**, 71.3 km. Actual: Wetteren area, East Flanders. Country/Flanders correct.
+
+### Round 5 — Portugal (Coimbra)
+- **INITIAL:** `R. Figueiredo de F…`, `P PRIVATIVO`, azulejos → Portugal / Porto.
+- **PROVISIONAL PIN:** 41.15, −8.61. Verified.
+- **REFINEMENT:** Pin on Porto (Matosinhos/Gaia).
+- **FINAL BELIEF + PIN:** Porto, 41.15, −8.61. Consistent.
+- **RESULT:** **4,502 pts**, 105 km. Actual: Coimbra. Country correct.
+
+### Round 6 — Sweden (Uppsala)
+- **INITIAL:** `Bergagatan`, wooden houses → Sweden / Helsingborg Berga.
+- **PROVISIONAL PIN:** 56.066, 12.715. Verified.
+- **REFINEMENT:** Pin on Helsingborg, opposite Helsingør.
+- **FINAL BELIEF + PIN:** Helsingborg, 56.066, 12.715. Consistent.
+- **RESULT:** **3,002 pts**, 510 km. Actual: Uppsala. Country correct.
+
+### Round 7 — Estonia (Tartu)
+- **INITIAL:** `Sepaku…`, wooden/plaster houses, Baltic feel → Estonia / Tallinn.
+- **PROVISIONAL PIN:** 59.437, 24.754 Tallinn, then **59.389, 24.685** Nõmme.
+- **REFINEMENT:** Pin on Tallinn; moved to Nõmme wooden-house suburb.
+- **FINAL BELIEF + PIN:** Nõmme, Tallinn, 59.389, 24.685. Consistent.
+- **RESULT:** **4,241 pts**, 164.6 km. Actual: Tartu. Country correct.
+
+### Round 8 — Slovakia (Banská Bystrica)
+- **INITIAL:** `Jelšová`, forested mountains → Slovakia / Liptov.
+- **PROVISIONAL PIN:** 49.06, 19.3 Ružomberok. Verified.
+- **REFINEMENT:** Pin between Martin and Liptovský Mikuláš.
+- **FINAL BELIEF + PIN:** Ružomberok / Liptov, 49.06, 19.3. Consistent.
+- **RESULT:** **4,826 pts**, 35.5 km. Actual: Banská Bystrica. Country and region correct.
+
+### Round 9 — Ireland (Galway)
+- **INITIAL:** Stone walls, white houses, left-hand road → Ireland / Cork.
+- **PROVISIONAL PIN:** 51.9, −8.47. Verified.
+- **REFINEMENT:** Pin on Cork (Killarney/Waterford visible).
+- **FINAL BELIEF + PIN:** Cork, 51.9, −8.47. Consistent.
+- **RESULT:** **4,260 pts**, 160.2 km. Actual: Galway. Country correct.
+
+---
+
+### Summary
+
+| Metric | Value |
+|---|---|
+| Official total | **35,412 / 45,000** |
+| Rounds completed | 9/9 |
+| Valid markers | 8 (rounds 2–9) |
+| Timeouts/defaults | 1 (round 1) |
+| Semantic | R2 city-correct; R3–R9 country-correct; R1 belief correct, pin default |
+| Belief-to-pin | R1 failed; R2–R9 matched |
+| Controller issues | R1 map never opened; R3 Street View broke after a drag |
+
+Repeated MCP refinement did help: after the map expand at (1420, 480) was found, pins were placed at city scale, checked against map labels, and replaced when needed (R3 ocean pin → Amstelveen; R7 Tallinn → Nõmme). Round 1 was lost entirely to the map-open problem.

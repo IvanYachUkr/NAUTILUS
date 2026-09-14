@@ -1,0 +1,2391 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-hard--loc-020",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "benchmarkId": "gemini-3-7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-high-aided-defc0e3813",
+          "label": "Bridge & Infrastructure",
+          "text": "Bridge & Infrastructure",
+          "description": "Small stream bridge with galvanized steel vertical picket balustrade, overhead utility lines, and roadside blue fountain/hydrant post.",
+          "groundingPhrase": "Bridge & Infrastructure",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4505,
+            "y": 0.5405,
+            "w": 0.545,
+            "h": 0.45
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Bridge & Infrastructure: Small stream bridge with galvanized steel vertical picket balustrade, overhead utility lines, and roadside blue fountain/hydrant post."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Concrete bridge with grey vertical metal railings over a mountain ravine"
+            }
+          ],
+          "groundingLabel": "Bridge",
+          "ratingsReviewedAt": "2026-09-11T19:15:59.679Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-high-aided-b264d20029",
+          "label": "Balkan Mountain Architecture",
+          "text": "Balkan Mountain Architecture",
+          "description": "Whitewashed multi-story houses with hipped terracotta tile roofs and wide eaves perched on hillside slopes.",
+          "groundingPhrase": "Balkan Mountain Architecture",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1855,
+            "y": 0.3655,
+            "w": 0.099,
+            "h": 0.143
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Balkan Mountain Architecture: Whitewashed multi-story houses with hipped terracotta tile roofs and wide eaves perched on hillside slopes."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "cream-stucco houses with red hipped roofs"
+            }
+          ],
+          "groundingLabel": "Balkan Mountain Architecture",
+          "ratingsReviewedAt": "2026-09-11T19:16:04.221Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-high-aided-aed0b88254",
+          "label": "High Mountain Terrain",
+          "text": "High Mountain Terrain",
+          "description": "Steep mountain ridges covered in dense coniferous and deciduous forests (spruce, pine, beech).",
+          "groundingPhrase": "High Mountain Terrain",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.4155,
+            "y": 0.2815,
+            "w": 0.579,
+            "h": 0.195
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "High Mountain Terrain: Steep mountain ridges covered in dense coniferous and deciduous forests (spruce, pine, beech)."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "dense mixed pine/beech slopes."
+            }
+          ],
+          "groundingLabel": "High Mountain Terrain",
+          "ratingsReviewedAt": "2026-09-11T19:16:17.201Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-high-aided-df90868e9d",
+          "label": "roadside blue water fountain (чешма)",
+          "text": "roadside blue water fountain (чешма)",
+          "description": "Roadside blue water fountain (чешма).",
+          "groundingPhrase": "roadside blue water fountain",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "roadside blue water fountain (чешма)"
+            }
+          ],
+          "groundingLabel": "roadside blue water fountain"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-high-aided-7a2bbf62d1",
+          "label": "Geographic Match",
+          "text": "Geographic Match",
+          "description": "Classic scenery of the Rhodope Mountains (Родопи) in southern Bulgaria (Smolyan / Devin / Chepelare region).",
+          "groundingPhrase": "Geographic Match",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Geographic Match: Classic scenery of the Rhodope Mountains (Родопи) in southern Bulgaria (Smolyan / Devin / Chepelare region)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:17:57.052Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-high-aided-54b1c4c683",
+          "label": "Pedestrian Presence",
+          "text": "Pedestrian Presence",
+          "description": "Local resident walking uphill along the curved asphalt mountain road.",
+          "groundingPhrase": "Pedestrian Presence",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.2668231611893584,
+            "y": 0.4915678785774515,
+            "w": 0.021909233176838794,
+            "h": 0.06507613709637422
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Pedestrian Presence: Local resident walking uphill along the curved asphalt mountain road."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:18:12.547Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.7-flash-medium-aided",
+      "benchmarkId": "gemini-3-7-flash-medium-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-medium-aided-a37b17137c",
+          "label": "Bridge & Stream Guardrails",
+          "text": "Bridge & Stream Guardrails",
+          "description": "Galvanized bridge railing with vertical balusters and blue boundary post.",
+          "groundingPhrase": "Bridge & Stream Guardrails",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4505,
+            "y": 0.5405,
+            "w": 0.545,
+            "h": 0.449
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Mountain road infrastructure: galvanized bridge railing with vertical balusters and blue boundary post."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Bridge & Stream Guardrails: Vertical steel safety railing over mountain culvert."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Mountain road infrastructure: galvanized bridge railing with vertical balusters and blue boundary post."
+            }
+          ],
+          "groundingLabel": "Bridge",
+          "ratingsReviewedAt": "2026-09-11T19:18:19.717Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-medium-aided-19ecab7303",
+          "label": "Mountain Landscape",
+          "text": "Mountain Landscape",
+          "description": "Dramatic Rhodope mountain topography with steep conifer and beech forested peaks enclosing the valley.",
+          "groundingPhrase": "Mountain Landscape",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Dramatic Rhodope mountain topography with steep conifer and beech forested peaks enclosing the valley."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Mountain Landscape: High forested peaks and deep valleys in the Rhodope Mountain range."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Dramatic Rhodope mountain topography with steep conifer and beech forested peaks enclosing the valley."
+            }
+          ],
+          "groundingLabel": "Mountain Landscape",
+          "ratingsReviewedAt": "2026-09-11T19:18:26.311Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-medium-aided-0cb4cadc00",
+          "label": "Village Architecture",
+          "text": "Village Architecture",
+          "description": "White stucco mountain houses with low-pitched red tile roofs nestled into the steep green hillside.",
+          "groundingPhrase": "Village Architecture",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": true,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Rural village characteristics: small hillside farming plots, greenhouse, and overhead utility lines."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Village Architecture: White stucco mountain houses with low-pitched red tile roofs nestled into the steep green hillside."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Rural village characteristics: small hillside farming plots, greenhouse, and overhead utility lines."
+            }
+          ],
+          "groundingLabel": "Village Architecture"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-medium-aided-0253920e90",
+          "label": "Traditional Bulgarian Rhodope mountain vernacular architecture (Родопска къща)",
+          "text": "Traditional Bulgarian Rhodope mountain vernacular architecture (Родопска къща)",
+          "description": "Multi-story whitewashed dwellings with wide hipped terracotta roofs.",
+          "groundingPhrase": "Traditional Bulgarian Rhodope mountain vernacular architecture",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1845,
+            "y": 0.3595,
+            "w": 0.274,
+            "h": 0.162
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Traditional Bulgarian Rhodope mountain vernacular architecture (Родопска къща): multi-story whitewashed dwellings with wide hipped terracotta roofs."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Traditional Bulgarian Rhodope mountain vernacular architecture (Родопска къща): multi-story whitewashed dwellings with wide hipped terracotta roofs."
+            }
+          ],
+          "groundingLabel": "Traditional Bulgarian Rhodope mountain vernacular architecture",
+          "ratingsReviewedAt": "2026-09-11T19:18:37.268Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-medium-aided-d2ae411ede",
+          "label": "Balkan mountainous atmospheric lighting and summer cumulus cloud formations",
+          "text": "Balkan mountainous atmospheric lighting and summer cumulus cloud formations",
+          "description": "Balkan mountainous atmospheric lighting and summer cumulus cloud formations.",
+          "groundingPhrase": "Balkan mountainous atmospheric lighting and summer cumulus cloud formations",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-1/report.md",
+              "text": "Balkan mountainous atmospheric lighting and summer cumulus cloud formations."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-3/report.md",
+              "text": "Balkan mountainous atmospheric lighting and summer cumulus cloud formations."
+            }
+          ],
+          "groundingLabel": "Balkan mountainous atmospheric lighting",
+          "ratingsReviewedAt": "2026-09-11T19:18:41.963Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-medium-aided-c7b0ba36d8",
+          "label": "Regional Profile",
+          "text": "Regional Profile",
+          "description": "Smolyan / Rhodope region of Southern Bulgaria.",
+          "groundingPhrase": "Regional Profile",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Regional Profile: Smolyan / Rhodope region of Southern Bulgaria."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:18:53.599Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-medium-aided-5d9311fc77",
+          "label": "Infrastructure",
+          "text": "Infrastructure",
+          "description": "Single-phase wooden utility lines and characteristic blue water/pipe markers.",
+          "groundingPhrase": "Infrastructure",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-medium-aided/runs/run-2/report.md",
+              "text": "Infrastructure: Single-phase wooden utility lines and characteristic blue water/pipe markers."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:18:58.320Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-high-aided",
+      "benchmarkId": "gemini-3-8-flash-high-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-high-aided-3cc929e386",
+          "label": "Narrow winding mountain pass roadway crossing concrete bridge over gorge",
+          "text": "Narrow winding mountain pass roadway crossing concrete bridge over gorge",
+          "description": "Narrow winding mountain pass roadway crossing concrete bridge over gorge with tubular steel pedestrian guardrails.",
+          "groundingPhrase": "Narrow winding mountain pass roadway crossing concrete bridge over gorge",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Concrete road bridge over a mountain torrent with steel guardrails and Bulgarian infrastructure markings."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Narrow winding mountain pass roadway crossing concrete bridge over gorge with tubular steel pedestrian guardrails."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:19:07.602Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-high-aided-aeec39d022",
+          "label": "Distinctive Bulgarian municipal infrastructure",
+          "text": "Distinctive Bulgarian municipal infrastructure",
+          "description": "Bulgarian galvanized steel cylindrical roll-top municipal dumpsters (bobur).",
+          "groundingPhrase": "Distinctive Bulgarian municipal infrastructure",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Bulgarian galvanized steel cylindrical roll-top municipal dumpsters (bobur)."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Distinctive Bulgarian municipal infrastructure: galvanized steel curved-top 'Бобър' (Bobur) waste dumpster at the roadside."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:19:12.321Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-high-aided-d796612a60",
+          "label": "Mountain vernacular architecture",
+          "text": "Mountain vernacular architecture",
+          "description": "Multi-storey family homes with white render, square balconies, dark wooden roof overhangs, stone basements, and terraced hillside gardens.",
+          "groundingPhrase": "Mountain vernacular architecture",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.1865,
+            "y": 0.3675,
+            "w": 0.098,
+            "h": 0.141
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Steep, majestic Rhodope mountain slopes covered in dense Scots pine and Norway spruce forests."
+            },
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Mountain vernacular architecture: multi-storey family homes with white render, square balconies, dark wooden roof overhangs, stone basements, and terraced hillside gardens."
+            }
+          ],
+          "groundingLabel": "Mountain vernacular architecture",
+          "ratingsReviewedAt": "2026-09-11T19:19:20.609Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-high-aided-8b433be6d5",
+          "label": "Deep, densely forested ridges of the Western Rhodope Mountains",
+          "text": "Deep, densely forested ridges of the Western Rhodope Mountains",
+          "description": "Deep, densely forested ridges of the Western Rhodope Mountains with mixed conifers and deciduous forest.",
+          "groundingPhrase": "Deep, densely forested ridges of the Western Rhodope Mountains",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.5471100554235946,
+            "y": 0.27737207960049187,
+            "w": 0.4528899445764054,
+            "h": 0.18790935782579238
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "Deep, densely forested ridges of the Western Rhodope Mountains with mixed conifers and deciduous forest."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:19:28.219Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-high-aided-0b76670acd",
+          "label": "Highland agricultural terrace plots cultivated",
+          "text": "Highland agricultural terrace plots cultivated",
+          "description": "Highland agricultural terrace plots cultivated with potatoes (kartofi), iconic to Smolyan Province.",
+          "groundingPhrase": "Highland agricultural terrace plots cultivated",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Highland agricultural terrace plots cultivated with potatoes (kartofi), iconic to Smolyan Province."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:19:36.991Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-high-aided-01f9ae48d6",
+          "label": "Cyrillic signage and village architecture",
+          "text": "Cyrillic signage and village architecture",
+          "description": "Multi-story whitewashed stone houses with dark timber balconies and low-slope hip tile roofs.",
+          "groundingPhrase": "Cyrillic signage and village architecture",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.3558665874901028,
+            "y": 0.3725904916058119,
+            "w": 0.09444338875692794,
+            "h": 0.14572701949860725
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Cyrillic signage and village architecture: multi-story whitewashed stone houses with dark timber balconies and low-slope hip tile roofs."
+            }
+          ],
+          "groundingLabel": "Cyrillic signage",
+          "ratingsReviewedAt": "2026-09-11T19:19:44.515Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-high-aided-b2a4eef377",
+          "label": "European priority road yellow-and-white diamond sign mounted on residential facade",
+          "text": "European priority road yellow-and-white diamond sign mounted on residential facade",
+          "description": "European priority road yellow-and-white diamond sign mounted on residential facade.",
+          "groundingPhrase": "European priority road yellow-and-white diamond sign mounted on residential facade",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-2/report.md",
+              "text": "European priority road yellow-and-white diamond sign mounted on residential facade."
+            }
+          ],
+          "groundingLabel": "European priority road yellow-and-white diamond sign",
+          "ratingsReviewedAt": "2026-09-11T19:19:54.989Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-high-aided-6e4a0e3c50",
+          "label": "Smolyan Province",
+          "text": "Smolyan Province",
+          "description": "Smolyan Province.",
+          "groundingPhrase": "Smolyan Province",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Smolyan Province"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:20:53.394Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-high-aided-ace67bd913",
+          "label": "Varbina",
+          "text": "Varbina",
+          "description": "Varbina.",
+          "groundingPhrase": "Varbina",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Varbina"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gemini-3.8-flash-medium-aided",
+      "benchmarkId": "gemini-3-8-flash-medium-aided",
+      "model": "Gemini 3.8 Flash",
+      "reasoning": "medium, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-medium-aided-d832cf73e5",
+          "label": "Bulgarian galvanized steel cylindrical roll-top municipal dumpsters (bobur)",
+          "text": "Bulgarian galvanized steel cylindrical roll-top municipal dumpsters (bobur)",
+          "description": "Bulgarian galvanized steel cylindrical roll-top municipal dumpsters (bobur).",
+          "groundingPhrase": "Bulgarian galvanized steel cylindrical roll-top municipal dumpsters",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.30245447347585114,
+            "y": 0.5006148209490828,
+            "w": 0.031670625494853506,
+            "h": 0.06263645260859745
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Bulgarian galvanized steel cylindrical roll-top municipal dumpsters (bobur)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Bulgarian galvanized steel cylindrical roll-top municipal dumpsters (bobur)."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:20:59.424Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-medium-aided-f576c597e3",
+          "label": "Concrete road bridge over a mountain torrent",
+          "text": "Concrete road bridge over a mountain torrent",
+          "description": "Concrete road bridge over a mountain torrent with steel guardrails and Bulgarian infrastructure markings.",
+          "groundingPhrase": "Concrete road bridge over a mountain torrent",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.4505,
+            "y": 0.5425,
+            "w": 0.545,
+            "h": 0.448
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Concrete road bridge over a mountain torrent with steel guardrails and Bulgarian infrastructure markings."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Concrete road bridge over a mountain torrent with steel guardrails and Bulgarian infrastructure markings."
+            }
+          ],
+          "groundingLabel": "concrete road bridge",
+          "ratingsReviewedAt": "2026-09-11T19:21:04.755Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-medium-aided-0b76670acd",
+          "label": "Highland agricultural terrace plots cultivated",
+          "text": "Highland agricultural terrace plots cultivated",
+          "description": "Highland agricultural terrace plots cultivated with potatoes (kartofi), iconic to Smolyan Province.",
+          "groundingPhrase": "Highland agricultural terrace plots cultivated",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Highland agricultural terrace plots cultivated with potatoes (kartofi), iconic to Smolyan Province."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Highland agricultural terrace plots cultivated with potatoes (kartofi), iconic to Smolyan Province."
+            }
+          ],
+          "groundingLabel": "Highland agricultural terrace plots",
+          "ratingsReviewedAt": "2026-09-11T19:21:10.387Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-medium-aided-01f9ae48d6",
+          "label": "Cyrillic signage and village architecture",
+          "text": "Cyrillic signage and village architecture",
+          "description": "Multi-story whitewashed stone houses with dark timber balconies and low-slope hip tile roofs.",
+          "groundingPhrase": "Cyrillic signage and village architecture",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.18246991290577985,
+            "y": 0.3661662400562122,
+            "w": 0.11977988915281076,
+            "h": 0.15536339682300687
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Cyrillic signage and village architecture: multi-story whitewashed stone houses with dark timber balconies and low-slope hip tile roofs."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Cyrillic signage and village architecture: multi-story whitewashed stone houses with dark timber balconies and low-slope hip tile roofs."
+            }
+          ],
+          "groundingLabel": "Cyrillic signage",
+          "ratingsReviewedAt": "2026-09-11T19:21:15.453Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-medium-aided-6e4a0e3c50",
+          "label": "Smolyan Province",
+          "text": "Smolyan Province",
+          "description": "Smolyan Province.",
+          "groundingPhrase": "Smolyan Province",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Smolyan Province"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Smolyan Province"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:21:21.127Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-medium-aided-ace67bd913",
+          "label": "Varbina",
+          "text": "Varbina",
+          "description": "Varbina.",
+          "groundingPhrase": "Varbina",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Varbina"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Varbina"
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-8-flash-medium-aided-37167b9352",
+          "label": "Steep, majestic Rhodope mountain slopes covered in dense Scots pine and Norway spruce fo",
+          "text": "Steep, majestic Rhodope mountain slopes covered in dense Scots pine and Norway spruce fo",
+          "description": "Steep, majestic Rhodope mountain slopes covered in dense Scots pine and Norway spruce forests.",
+          "groundingPhrase": "Steep, majestic Rhodope mountain slopes covered in dense Scots pine and Norway spruce fo",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-high-aided/runs/run-1/report.md",
+              "text": "Steep, majestic Rhodope mountain slopes covered in dense Scots pine and Norway spruce forests."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.8-flash-medium-aided/runs/run-3/report.md",
+              "text": "Steep, majestic Rhodope mountain slopes covered in dense Scots pine and Norway spruce forests."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:21:38.302Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-xhigh",
+      "benchmarkId": "gpt-5-6-sol-xhigh",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-gpt-5-6-sol-xhigh-fde790af72",
+          "label": "North Macedonia as the main alternatives",
+          "text": "North Macedonia as the main alternatives",
+          "description": "North Macedonia as the main alternatives.",
+          "groundingPhrase": "North Macedonia as the main alternatives",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "North Macedonia as the main alternatives."
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:21:51.177Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-5-6-sol-xhigh-3526780747",
+          "label": "settlement/vegetation cues left Bulgaria",
+          "text": "settlement/vegetation cues left Bulgaria",
+          "description": "Settlement/vegetation cues left Bulgaria.",
+          "groundingPhrase": "settlement/vegetation cues left Bulgaria",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "settlement/vegetation cues left Bulgaria"
+            }
+          ],
+          "groundingLabel": "settlement/vegetation cues",
+          "ratingsReviewedAt": "2026-09-11T19:22:00.417Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-5-6-sol-xhigh-c83a702613",
+          "label": "Steep green Balkan mountains",
+          "text": "Steep green Balkan mountains",
+          "description": "Steep green Balkan mountains.",
+          "groundingPhrase": "Steep green Balkan mountains",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4145,
+            "y": 0.2815,
+            "w": 0.58,
+            "h": 0.195
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "Steep green Balkan mountains"
+            }
+          ],
+          "groundingLabel": "Steep green Balkan mountains",
+          "ratingsReviewedAt": "2026-09-11T19:22:05.047Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-5-6-sol-xhigh-346e9a109e",
+          "label": "modest road engineering",
+          "text": "modest road engineering",
+          "description": "Modest road engineering.",
+          "groundingPhrase": "modest road engineering",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0165,
+            "y": 0.4965,
+            "w": 0.673,
+            "h": 0.494
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-xhigh/runs/run-3/report.md",
+              "text": "modest road engineering"
+            }
+          ],
+          "groundingLabel": "modest road engineering",
+          "ratingsReviewedAt": "2026-09-11T19:22:10.441Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-6-astra-low",
+      "benchmarkId": "gpt-6-astra-low",
+      "model": "GPT-6 Astra",
+      "reasoning": "low",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-d1a051977a",
+          "label": "thin utility wires and simple concrete curb/bridge railing. Initial belief",
+          "text": "thin utility wires and simple concrete curb/bridge railing. Initial belief",
+          "description": "Bulgaria Rhodope mountains.",
+          "groundingPhrase": "thin utility wires and simple concrete curb/bridge railing. Initial belief",
+          "source": "panorama",
+          "category": "landmark",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "thin utility wires and simple concrete curb/bridge railing. Initial belief: Bulgaria Rhodope mountains"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "metal bridge railing"
+            }
+          ],
+          "groundingLabel": "thin utility wires",
+          "ratingsReviewedAt": "2026-09-11T19:22:18.357Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-ab53ea0eb6",
+          "label": "narrow unmarked hillside road",
+          "text": "narrow unmarked hillside road",
+          "description": "Narrow unmarked hillside road.",
+          "groundingPhrase": "narrow unmarked hillside road",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.15756136183689629,
+            "y": 0.4588571858766845,
+            "w": 0.5130641330166271,
+            "h": 0.5411428141233154
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "narrow unmarked hillside road"
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "narrow unmarked paved road"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:22:22.966Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-10123f5b9d",
+          "label": "(1) gravel broad ruralroad (2)",
+          "text": "(1) gravel broad ruralroad (2)",
+          "description": "(1) gravel broad ruralroad (2) visible road3426 (3) flat cropfields (4) abandoned white agricultural building (5) mixed deciduous/conifer windbreak and utility poles. Initial Lithuania80% due4digit ruralroad.",
+          "groundingPhrase": "gravel broad ruralroad",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "(1) gravel broad ruralroad (2) visible road3426 (3) flat cropfields (4) abandoned white agricultural building (5) mixed deciduous/conifer windbreak and utility poles. Initial Lithuania80% due4digit ruralroad"
+            }
+          ],
+          "groundingLabel": "Baltic rural road"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-6ef1eaf0a1",
+          "label": "signs or poles. Initial belief Baltic rural road",
+          "text": "signs or poles. Initial belief Baltic rural road",
+          "description": "Signs or poles. Initial belief Baltic rural road.",
+          "groundingPhrase": "signs or poles. Initial belief Baltic rural road",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "signs or poles. Initial belief Baltic rural road"
+            }
+          ],
+          "groundingLabel": "initial belief; initial belief Baltic rural road",
+          "ratingsReviewedAt": "2026-09-11T19:23:11.621Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-90db1eb163",
+          "label": "wooded rounded mountains and green valley",
+          "text": "wooded rounded mountains and green valley",
+          "description": "Wooded rounded mountains and green valley.",
+          "groundingPhrase": "wooded rounded mountains and green valley",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "wooded rounded mountains and green valley"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:23:22.616Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-ce65aba49a",
+          "label": "white rendered square houses",
+          "text": "white rendered square houses",
+          "description": "White rendered square houses with hipped tile roofs.",
+          "groundingPhrase": "white rendered square houses",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1855,
+            "y": 0.3635,
+            "w": 0.2783341250989707,
+            "h": 0.132909056689001
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "white rendered square houses with hipped tile roofs"
+            }
+          ],
+          "groundingLabel": "white rendered square houses",
+          "ratingsReviewedAt": "2026-09-11T19:23:26.455Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-214a0eb50f",
+          "label": "white plaster two/three-story homes",
+          "text": "white plaster two/three-story homes",
+          "description": "White plaster two/three-story homes with red roofs.",
+          "groundingPhrase": "white plaster two/three-story homes",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "white plaster two/three-story homes with red roofs"
+            }
+          ],
+          "groundingLabel": "white plaster two; white plaster two/three-story homes"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-7c4099e164",
+          "label": "forested steep rolling mountains",
+          "text": "forested steep rolling mountains",
+          "description": "Forested steep rolling mountains.",
+          "groundingPhrase": "forested steep rolling mountains",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4155,
+            "y": 0.2825,
+            "w": 0.58,
+            "h": 0.192
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "forested steep rolling mountains"
+            }
+          ],
+          "groundingLabel": "steep rolling mountains",
+          "ratingsReviewedAt": "2026-09-11T19:23:38.981Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-a048d54295",
+          "label": "gray metal communal bins",
+          "text": "gray metal communal bins",
+          "description": "Gray metal communal bins.",
+          "groundingPhrase": "gray metal communal bins",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.3015,
+            "y": 0.5045,
+            "w": 0.027,
+            "h": 0.051
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "gray metal communal bins"
+            }
+          ],
+          "groundingLabel": "gray metal communal bins",
+          "ratingsReviewedAt": "2026-09-11T19:23:45.700Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-55f774851b",
+          "label": "medium-low country confidence",
+          "text": "medium-low country confidence",
+          "description": "Medium-low country confidence.",
+          "groundingPhrase": "medium-low country confidence",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "medium-low country confidence"
+            }
+          ],
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T19:23:49.383Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-929663d60a",
+          "label": "likely northcentral area",
+          "text": "likely northcentral area",
+          "description": "Likely northcentral area.",
+          "groundingPhrase": "likely northcentral area",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-2/report.md",
+              "text": "likely northcentral area"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:23:54.318Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-6-astra-low-43d926d678",
+          "label": "low locality confidence",
+          "text": "low locality confidence",
+          "description": "Low locality confidence.",
+          "groundingPhrase": "low locality confidence",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-6-astra-low/runs/run-3/report.md",
+              "text": "low locality confidence."
+            }
+          ],
+          "ratingsPreviousStatus": "text-only",
+          "ratingsExclusionReason": "not-ratable",
+          "ratingsExcludedAt": "2026-09-11T19:23:55.938Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh",
+      "benchmarkId": "grok-4-6-xhigh",
+      "model": "Grok 4.6",
+      "reasoning": "xhigh",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-grok-4-6-xhigh-8435f84f5e",
+          "label": "Grok read a wooded Balkan mountain village as Bosnia and pinned the Bosnia-Serbia area",
+          "text": "Grok read a wooded Balkan mountain village as Bosnia and pinned the Bosnia-Serbia area",
+          "description": "Grok read a wooded Balkan mountain village as Bosnia and pinned the Bosnia-Serbia area.",
+          "groundingPhrase": "Grok read a wooded Balkan mountain village as Bosnia and pinned the Bosnia-Serbia area",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/run-1/report.md",
+              "text": "Grok read a wooded Balkan mountain village as Bosnia and pinned the Bosnia-Serbia area."
+            }
+          ],
+          "groundingLabel": "a wooded Balkan mountain village",
+          "ratingsReviewedAt": "2026-09-11T19:24:07.459Z"
+        }
+      ]
+    },
+    {
+      "id": "gpt-5-6-sol-max",
+      "benchmarkId": "gpt-5-6-sol-max",
+      "model": "GPT-5.6 Sol",
+      "reasoning": "max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-1/report.md"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-gpt-5-6-sol-max-6571df003c",
+          "label": "Steep Balkan mountain village",
+          "text": "Steep Balkan mountain village",
+          "description": "Steep Balkan mountain village.",
+          "groundingPhrase": "Steep Balkan mountain village",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Steep Balkan mountain village"
+            }
+          ],
+          "groundingLabel": "Steep Balkan mountain village",
+          "ratingsReviewedAt": "2026-09-11T19:24:26.672Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-5-6-sol-max-ba63d5e9a3",
+          "label": "Bulgarian-looking road/building context",
+          "text": "Bulgarian-looking road/building context",
+          "description": "Bulgarian-looking road/building context.",
+          "groundingPhrase": "Bulgarian-looking road/building context",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "Bulgarian-looking road/building context"
+            }
+          ],
+          "groundingLabel": "looking road/building context",
+          "ratingsReviewedAt": "2026-09-11T19:24:45.215Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-5-6-sol-max-67f28a587f",
+          "label": "dense wooded slopes",
+          "text": "dense wooded slopes",
+          "description": "Dense wooded slopes.",
+          "groundingPhrase": "dense wooded slopes",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.4175,
+            "y": 0.2835,
+            "w": 0.577,
+            "h": 0.189
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "dense wooded slopes"
+            }
+          ],
+          "groundingLabel": "dense wooded slopes",
+          "ratingsReviewedAt": "2026-09-11T19:24:50.734Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-5-6-sol-max-fe6cfedc2d",
+          "label": "a narrow valley",
+          "text": "a narrow valley",
+          "description": "A narrow valley.",
+          "groundingPhrase": "a narrow valley",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.0025,
+            "y": 0.3155,
+            "w": 0.218,
+            "h": 0.591
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "a narrow valley."
+            }
+          ],
+          "groundingLabel": "a narrow valley",
+          "ratingsReviewedAt": "2026-09-11T19:24:53.795Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gpt-5-6-sol-max-63a87cfa06",
+          "label": "tiled roofs",
+          "text": "tiled roofs",
+          "description": "Tiled roofs.",
+          "groundingPhrase": "tiled roofs",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.1885,
+            "y": 0.3785,
+            "w": 0.092,
+            "h": 0.041
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": false,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gpt-5.6-sol-max/runs/run-3/report.md",
+              "text": "tiled roofs"
+            }
+          ],
+          "groundingLabel": "roofs",
+          "ratingsReviewedAt": "2026-09-11T19:25:01.957Z"
+        }
+      ]
+    },
+    {
+      "id": "glm-5-3-flash-max",
+      "benchmarkId": "glm-5-3-flash-max",
+      "model": "GLM-5.3-Flash + MCP",
+      "reasoning": "Max",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-1/conversation.json"
+        },
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-3/conversation.json"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-glm-5-3-flash-max-5ad5119f01",
+          "label": "blue signpost bollard at bridge,",
+          "text": "blue signpost bollard at bridge,",
+          "description": "Blue signpost bollard at bridge,.",
+          "groundingPhrase": "blue signpost bollard at bridge,",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4046048513302034,
+            "y": 0.5451093943752789,
+            "w": 0.01325195618153363,
+            "h": 0.06645712018253064
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "blue signpost bollard at bridge,"
+            }
+          ],
+          "groundingLabel": "blue signpost bollard",
+          "ratingsReviewedAt": "2026-09-11T19:25:06.901Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-glm-5-3-flash-max-38171d86ab",
+          "label": "Balkan plastered hip-roof house,",
+          "text": "Balkan plastered hip-roof house,",
+          "description": "Balkan plastered hip-roof house,.",
+          "groundingPhrase": "Balkan plastered hip-roof house,",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.1865,
+            "y": 0.3695,
+            "w": 0.098,
+            "h": 0.14
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": false,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "Balkan plastered hip-roof house,"
+            }
+          ],
+          "groundingLabel": "plastered hip-roof house",
+          "ratingsReviewedAt": "2026-09-11T19:25:19.043Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-glm-5-3-flash-max-5001c3abb9",
+          "label": "metal-railed bridge over gorge,",
+          "text": "metal-railed bridge over gorge,",
+          "description": "Metal-railed bridge over gorge,.",
+          "groundingPhrase": "metal-railed bridge over gorge,",
+          "source": "panorama",
+          "category": "landmark",
+          "region": {
+            "x": 0.4525,
+            "y": 0.5465,
+            "w": 0.544,
+            "h": 0.447
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "metal-railed bridge over gorge,"
+            }
+          ],
+          "groundingLabel": "metal-railed bridge",
+          "ratingsReviewedAt": "2026-09-11T19:25:26.357Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-glm-5-3-flash-max-9bf30b7d07",
+          "label": "hillside road. Belief",
+          "text": "hillside road. Belief",
+          "description": "Bulgaria, Rhodope/Stara Planina foothills. Placing pin at 42.10, 24.80.",
+          "groundingPhrase": "hillside road. Belief",
+          "source": "panorama",
+          "category": "geography",
+          "region": {
+            "x": 0.09391940532081378,
+            "y": 0.4935638857199543,
+            "w": 0.6177652582159625,
+            "h": 0.5064361142800458
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "hillside road. Belief: Bulgaria, Rhodope/Stara Planina foothills. Placing pin at 42.10, 24.80."
+            }
+          ],
+          "groundingLabel": "road",
+          "ratingsReviewedAt": "2026-09-11T19:25:30.840Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-glm-5-3-flash-max-bd33c4cde3",
+          "label": "rounded forested ridge,",
+          "text": "rounded forested ridge,",
+          "description": "Rounded forested ridge,.",
+          "groundingPhrase": "rounded forested ridge,",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/glm-5.3-flash-max/runs/run-2/conversation.json",
+              "text": "rounded forested ridge,"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T19:25:36.410Z"
+        }
+      ]
+    },
+    {
+      "id": "gemini-3-7-flash-high-unaided",
+      "benchmarkId": "gemini-3-7-flash-high-unaided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, unaided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-high-unaided-284c28d958",
+          "label": "Bulgarian Cyrillic road infrastructure",
+          "text": "Bulgarian Cyrillic road infrastructure",
+          "description": "Bulgarian Cyrillic road infrastructure.",
+          "groundingPhrase": "Bulgarian Cyrillic road infrastructure",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Bulgarian Cyrillic road infrastructure"
+            }
+          ],
+          "groundingLabel": "Bulgarian Cyrillic road infrastructure",
+          "ratingsReviewedAt": "2026-09-11T19:25:44.670Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-gemini-3-7-flash-high-unaided-60567b008b",
+          "label": "Rhodope mountain valley",
+          "text": "Rhodope mountain valley",
+          "description": "Rhodope mountain valley.",
+          "groundingPhrase": "Rhodope mountain valley",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high/runs/run-1/report.md",
+              "text": "Rhodope mountain valley"
+            }
+          ],
+          "groundingLabel": "Rhodope mountain valley",
+          "ratingsReviewedAt": "2026-09-11T19:25:48.874Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-hard-loc-020-grok-4-6-xhigh-mcp-24948af80f",
+          "label": "Forested mountain village",
+          "text": "Forested mountain village",
+          "description": "Buildings climb a steep settlement surrounded by forested mountains.",
+          "groundingPhrase": "Forested mountain village",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "hard-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "hard-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+              "text": "Round 3 is a forested mountain village."
+            }
+          ],
+          "groundingLabel": "Forested mountain village",
+          "ratingsReviewedAt": "2026-09-12T17:04:39.094Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-grok-4-6-xhigh-mcp-a2b8deb275",
+          "label": "Yield sign",
+          "text": "Yield sign",
+          "description": "A yield sign stands among houses climbing the hillside.",
+          "groundingPhrase": "Yield sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "hard-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "hard-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+              "text": "Houses climb the hillside past a yield sign."
+            }
+          ],
+          "groundingLabel": "Yield sign",
+          "ratingsReviewedAt": "2026-09-12T17:04:48.319Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-grok-4-6-xhigh-mcp-c2d295931d",
+          "label": "Stucco house",
+          "text": "Stucco house",
+          "description": "A stucco-clad house is visible close to the road.",
+          "groundingPhrase": "Stucco house",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.1865,
+            "y": 0.3685,
+            "w": 0.098,
+            "h": 0.138
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "hard-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "hard-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+              "text": "Closer now: stucco house, satellite dish, blue hydrant."
+            }
+          ],
+          "groundingLabel": "Stucco house",
+          "ratingsReviewedAt": "2026-09-12T17:04:51.829Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-grok-4-6-xhigh-mcp-f4ffed6240",
+          "label": "Satellite dish",
+          "text": "Satellite dish",
+          "description": "A satellite dish is mounted on or near a house.",
+          "groundingPhrase": "Satellite dish",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "hard-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "hard-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+              "text": "Closer now: stucco house, satellite dish, blue hydrant."
+            }
+          ],
+          "groundingLabel": "Satellite dish",
+          "ratingsReviewedAt": "2026-09-12T17:05:21.065Z"
+        },
+        {
+          "id": "cue-europe-hard-loc-020-grok-4-6-xhigh-mcp-498096406c",
+          "label": "Blue hydrant",
+          "text": "Blue hydrant",
+          "description": "A blue hydrant is visible beside the road.",
+          "groundingPhrase": "Blue hydrant",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.40230839271575614,
+            "y": 0.5521061381715977,
+            "w": 0.020583531274742675,
+            "h": 0.06284850309919948
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "hard-r1"
+          ],
+          "provenance": [
+            {
+              "runId": "hard-r1",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+              "text": "Closer now: stucco house, satellite dish, blue hydrant."
+            }
+          ],
+          "groundingLabel": "Blue hydrant",
+          "ratingsReviewedAt": "2026-09-12T17:05:32.165Z"
+        }
+      ]
+    }
+  ]
+}

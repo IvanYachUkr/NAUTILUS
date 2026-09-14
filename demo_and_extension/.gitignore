@@ -1,0 +1,23 @@
+.DS_Store
+.env*
+!.env.example
+node_modules/
+coverage/
+dist/
+src/vendor/
+*.log
+.cache/
+__pycache__/
+*.pyc
+
+# Local collector audit log. It is append-only diagnostic history and is not
+# required to rebuild the atlas.
+data/recordings/index.jsonl
+
+# Temporary interactive-video chunks. Finalized WebM + JSON pairs are kept.
+data/exploration-videos/**/.partial/
+
+# Completed per-round JSON in data/recordings/inbox/ is intentionally NOT
+# ignored: the manual reference recordings are part of the reproducible demo.
+
+/.venv/

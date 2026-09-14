@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NAUTILUS · Visual clue review</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div><strong>NAUTILUS</strong><span>Visual clue review</span></div>
+      <div class="topbar__progress" data-progress>Loading clue documents…</div>
+      <button type="button" class="primary" data-save>Save location</button>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <label>Location<select data-location></select></label>
+        <label>Model clue set<select data-clue-set></select></label>
+        <label>Status filter<select data-status-filter>
+          <option value="">All clues</option>
+          <option value="rating-ready">Reviewed annotations (boxes + text)</option>
+          <option value="rating-excluded">Excluded during ratings</option>
+          <option value="needs-review">Needs review</option>
+          <option value="not-grounded">Not grounded</option>
+          <option value="reviewed">Reviewed</option>
+          <option value="text-only">Text only</option>
+          <option value="excluded">Excluded</option>
+        </select></label>
+        <button type="button" data-next-pending>Next unresolved clue</button>
+        <ol class="cue-list" data-cue-list></ol>
+      </aside>
+
+      <section class="canvas-column">
+        <div class="instructions" data-instructions>
+          <strong>Review and rate the Florence draft in one pass.</strong>
+          Drag or redraw the region, then tick every rating that applies. Approving a box or marking a clue text-only records every unticked rating as No. Numpad 1–4 toggles Visible, Correct, Useful, and Consistent.
+        </div>
+        <div class="image-stage" data-stage>
+          <img data-image alt="Benchmark starting scene" draggable="false" />
+          <div class="box-layer" data-box-layer></div>
+        </div>
+        <p class="stage-note" data-stage-note></p>
+      </section>
+
+      <aside class="inspector" data-inspector>
+        <div class="empty">Select a clue to review it.</div>
+      </aside>
+    </main>
+    <div class="toast" data-toast hidden></div>
+    <script type="module" src="./app.js?v=annotation-ratings-map"></script>
+  </body>
+</html>

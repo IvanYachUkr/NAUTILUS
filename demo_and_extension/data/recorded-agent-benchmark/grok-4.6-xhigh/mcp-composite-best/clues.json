@@ -1,0 +1,243 @@
+{
+  "schemaVersion": "1.0",
+  "description": "Human-cleaned visual clues from the Grok 4.6 + MCP transcript selected for each difficulty in the published tier-best composite. sourceText preserves the model statement from which each clue was extracted.",
+  "locations": [
+    {
+      "locationId": "europe-easy--loc-001",
+      "sourceRun": "easy-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+      "clues": [
+        { "label": "Road marking", "description": "A road marking was used as evidence for Place de la Bastille.", "sourceText": "Round 1 is Place de la Bastille in Paris: road marking, Bastille bus stop, and the July Column.", "category": "signage" },
+        { "label": "Bastille bus stop", "description": "A bus-stop sign identifying Bastille is visible.", "sourceText": "Round 1 is Place de la Bastille in Paris: road marking, Bastille bus stop, and the July Column.", "category": "signage" },
+        { "label": "July Column", "description": "The July Column is visible in the square.", "sourceText": "Round 1 is Place de la Bastille in Paris: road marking, Bastille bus stop, and the July Column.", "category": "landmark" }
+      ]
+    },
+    {
+      "locationId": "europe-easy--loc-002",
+      "sourceRun": "easy-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+      "clues": [
+        { "label": "Fernsehturm", "description": "Berlin's television tower is visible above Alexanderplatz.", "sourceText": "Round 2 is Alexanderplatz, Berlin: Fernsehturm, U-Bahn sign, Galeria, Berlin 030 number.", "category": "landmark" },
+        { "label": "U-Bahn sign", "description": "A blue U-Bahn station sign is visible at Alexanderplatz.", "sourceText": "Round 2 is Alexanderplatz, Berlin: Fernsehturm, U-Bahn sign, Galeria, Berlin 030 number.", "category": "signage" },
+        { "label": "Galeria", "description": "Galeria branding is visible on a building at Alexanderplatz.", "sourceText": "Round 2 is Alexanderplatz, Berlin: Fernsehturm, U-Bahn sign, Galeria, Berlin 030 number.", "category": "signage" },
+        { "label": "Berlin 030 phone number", "description": "A displayed telephone number uses Berlin's 030 area code.", "sourceText": "Round 2 is Alexanderplatz, Berlin: Fernsehturm, U-Bahn sign, Galeria, Berlin 030 number.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-easy--loc-003",
+      "sourceRun": "easy-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+      "clues": [
+        { "label": "Hohensalzburg Fortress", "description": "Hohensalzburg Fortress is visible across the city.", "sourceText": "Round 3 is Salzburg from Kapuzinerberg: Hohensalzburg Fortress across the Salzach.", "category": "landmark" },
+        { "label": "Salzach River", "description": "The Salzach River runs between the viewpoint and the fortress.", "sourceText": "Round 3 is Salzburg from Kapuzinerberg: Hohensalzburg Fortress across the Salzach.", "category": "geography" }
+      ]
+    },
+    {
+      "locationId": "europe-easy--loc-004",
+      "sourceRun": "easy-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+      "clues": [
+        { "label": "Red roofs", "description": "Dense red-tiled roofs are visible below the castle viewpoint.", "sourceText": "Round 4 looks like Český Krumlov Castle: red roofs, Vltava weir, and a castle-terrace saint statue.", "category": "architecture" },
+        { "label": "Vltava weir", "description": "A weir is visible across the Vltava River below.", "sourceText": "Round 4 looks like Český Krumlov Castle: red roofs, Vltava weir, and a castle-terrace saint statue.", "category": "geography" },
+        { "label": "Castle-terrace saint statue", "description": "A saint statue stands on the castle terrace.", "sourceText": "Round 4 looks like Český Krumlov Castle: red roofs, Vltava weir, and a castle-terrace saint statue.", "category": "landmark" }
+      ]
+    },
+    {
+      "locationId": "europe-easy--loc-005",
+      "sourceRun": "easy-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+      "clues": [
+        { "label": "Roman amphitheater", "description": "The large Roman amphitheater identifies the Pula Arena.", "sourceText": "Round 5 is the Pula Arena in Croatia: Roman amphitheater plus a yellow Croatian directional sign.", "category": "landmark" },
+        { "label": "Yellow Croatian directional sign", "description": "A yellow Croatian directional road sign is visible beside the arena.", "sourceText": "Round 5 is the Pula Arena in Croatia: Roman amphitheater plus a yellow Croatian directional sign.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-easy--loc-006",
+      "sourceRun": "easy-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+      "clues": [
+        { "label": "B178 road designation", "description": "The B178 designation is visible at a German–Polish border crossing near Zittau.", "sourceText": "Round 6 is a German–Polish border on B178 near Zittau.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-easy--loc-007",
+      "sourceRun": "easy-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+      "clues": [
+        { "label": "Ljubljana and Novo mesto signs", "description": "Directional signs point toward Ljubljana and Novo mesto.", "sourceText": "Round 7 is Slovenia: signs to Ljubljana and Novo mesto, likely Višnja Gora station.", "category": "signage" },
+        { "label": "Višnja Gora station sign", "description": "The railway-station sign reads Višnja Gora.", "sourceText": "Station sign reads Višnja Gora.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-easy--loc-008",
+      "sourceRun": "easy-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+      "clues": [
+        { "label": "FLÅM bus shelters", "description": "Bus shelters display the place name FLÅM.", "sourceText": "Round 8 is Flåm, Norway: FLÅM bus shelters, a Norwegian flag, and Aurlandsfjord.", "category": "signage" },
+        { "label": "Norwegian flag", "description": "A Norwegian flag is visible near the waterfront.", "sourceText": "Round 8 is Flåm, Norway: FLÅM bus shelters, a Norwegian flag, and Aurlandsfjord.", "category": "signage" },
+        { "label": "Aurlandsfjord", "description": "The steep-sided Aurlandsfjord landscape is visible beyond the waterfront.", "sourceText": "Round 8 is Flåm, Norway: FLÅM bus shelters, a Norwegian flag, and Aurlandsfjord.", "category": "geography" }
+      ]
+    },
+    {
+      "locationId": "europe-medium--loc-009",
+      "sourceRun": "medium-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+      "clues": [
+        { "label": "Catalan Carrer de text", "description": "A street label begins with the Catalan words Carrer de.", "sourceText": "Round 1 is on: Catalan Carrer de and a green igloo bin point to Barcelona.", "category": "signage" },
+        { "label": "Green igloo recycling bin", "description": "A large green igloo-shaped recycling container is visible on the street.", "sourceText": "Round 1 is on: Catalan Carrer de and a green igloo bin point to Barcelona.", "category": "infrastructure" },
+        { "label": "Red corner street plaque", "description": "A red street plaque is mounted at the building corner.", "sourceText": "There's a red corner plaque.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-medium--loc-010",
+      "sourceRun": "medium-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+      "clues": [
+        { "label": "Via Francesco road label", "description": "An Italian road label begins with Via Francesco.", "sourceText": "Round 2 is Italy (Via Francesco…).", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-medium--loc-011",
+      "sourceRun": "medium-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+      "clues": [
+        { "label": "Amsterdamsestraatweg label", "description": "The Dutch street name Amsterdamsestraatweg is visible.", "sourceText": "Round 3 is the Netherlands — Amsterdamsestraatweg and a red bike lane.", "category": "signage" },
+        { "label": "Red bicycle lane", "description": "A red-surfaced bicycle lane runs alongside the street.", "sourceText": "Round 3 is the Netherlands — Amsterdamsestraatweg and a red bike lane.", "category": "infrastructure" }
+      ]
+    },
+    {
+      "locationId": "europe-medium--loc-012",
+      "sourceRun": "medium-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+      "clues": [
+        { "label": "N44 road label", "description": "The road is labelled N44.", "sourceText": "N44 plus FOTO AKTIEF looks like Flanders.", "category": "signage" },
+        { "label": "FOTO AKTIEF sign", "description": "A storefront or roadside sign reads FOTO AKTIEF.", "sourceText": "N44 plus FOTO AKTIEF looks like Flanders.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-medium--loc-013",
+      "sourceRun": "medium-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+      "clues": [
+        { "label": "Granite facades", "description": "Urban building facades use prominent granite stonework.", "sourceText": "Round 5 is Portugal — granite facades and R. (Rua).", "category": "architecture" },
+        { "label": "R. Figueiredo da Foz road label", "description": "The visible Portuguese road label was read as R. Figueiredo da Foz.", "sourceText": "Granite and R. Figueiredo da Foz point to Porto.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-medium--loc-014",
+      "sourceRun": "medium-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+      "clues": [
+        { "label": "Bergagatan road label", "description": "The Swedish street name Bergagatan is visible.", "sourceText": "Bergagatan is Swedish.", "category": "signage" },
+        { "label": "House number 44", "description": "The number 44 is visible on a mailbox.", "sourceText": "House number 44 is on the mailbox.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-medium--loc-015",
+      "sourceRun": "medium-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+      "clues": [
+        { "label": "Sepaküla tee road label", "description": "The Estonian street name Sepaküla tee is visible.", "sourceText": "Sepaküla tee is Estonian.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-medium--loc-016",
+      "sourceRun": "medium-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+      "clues": [
+        { "label": "Jelšová road label", "description": "The visible road label reads Jelšová.", "sourceText": "Jelšová plus forested hills look Slovak.", "category": "signage" },
+        { "label": "Forested hills", "description": "Forested hills rise around the road and settlement.", "sourceText": "Jelšová plus forested hills look Slovak.", "category": "geography" }
+      ]
+    },
+    {
+      "locationId": "europe-medium--loc-017",
+      "sourceRun": "medium-r2",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+      "clues": [
+        { "label": "Yellow centre lines", "description": "Yellow centre lines are painted on the road.", "sourceText": "Yellow center lines and stone walls look like Ireland.", "category": "infrastructure" },
+        { "label": "Stone walls", "description": "Stone walls line the roadside.", "sourceText": "Yellow center lines and stone walls look like Ireland.", "category": "architecture" },
+        { "label": "L1322 road marking", "description": "The road marking shows route number L1322.", "sourceText": "Road paint shows L1322 and Bohonagh.", "category": "signage" },
+        { "label": "Bohonagh road text", "description": "The place name Bohonagh is visible in the road information.", "sourceText": "Road paint shows L1322 and Bohonagh.", "category": "signage" },
+        { "label": "Rahoon/Newcastle GAA sign", "description": "A GAA sign identifies Rahoon/Newcastle in Galway.", "sourceText": "The GAA sign is Rahoon/Newcastle in Galway.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-hard--loc-018",
+      "sourceRun": "hard-r1",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+      "clues": [
+        { "label": "Greek provincial-road text", "description": "Greek script identifies the road as an Eparchiaki Odos or provincial road.", "sourceText": "Clues are solid: Greek Eparchiaki Odos – Parakampsi, pine/maquis, dry grassland.", "category": "signage" },
+        { "label": "Mediterranean pine and maquis", "description": "Pine trees and Mediterranean maquis vegetation surround the road.", "sourceText": "Clues are solid: Greek Eparchiaki Odos – Parakampsi, pine/maquis, dry grassland.", "category": "vegetation" },
+        { "label": "Dry grassland", "description": "Dry, pale grassland is visible beyond the road.", "sourceText": "Clues are solid: Greek Eparchiaki Odos – Parakampsi, pine/maquis, dry grassland.", "category": "vegetation" }
+      ]
+    },
+    {
+      "locationId": "europe-hard--loc-019",
+      "sourceRun": "hard-r1",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+      "clues": [
+        { "label": "Village rooftops", "description": "Village rooftops are visible ahead along the rural road.", "sourceText": "Village rooftops are visible ahead.", "category": "architecture" },
+        { "label": "Romanian courtyard house", "description": "A courtyard-style village house was identified as Romanian.", "sourceText": "The courtyard house looks Romanian.", "category": "architecture" },
+        { "label": "DJ106S road marking", "description": "The painted road designation reads DJ106S.", "sourceText": "Road paint reads DJ106S — a Sibiu County road in Transylvania.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-hard--loc-020",
+      "sourceRun": "hard-r1",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+      "clues": [
+        { "label": "Forested mountain village", "description": "Buildings climb a steep settlement surrounded by forested mountains.", "sourceText": "Round 3 is a forested mountain village.", "category": "geography" },
+        { "label": "Stucco house", "description": "A stucco-clad house is visible close to the road.", "sourceText": "Closer now: stucco house, satellite dish, blue hydrant.", "category": "architecture" },
+        { "label": "Satellite dish", "description": "A satellite dish is mounted on or near a house.", "sourceText": "Closer now: stucco house, satellite dish, blue hydrant.", "category": "infrastructure" },
+        { "label": "Blue hydrant", "description": "A blue hydrant is visible beside the road.", "sourceText": "Closer now: stucco house, satellite dish, blue hydrant.", "category": "infrastructure" },
+        { "label": "Yield sign", "description": "A yield sign stands among houses climbing the hillside.", "sourceText": "Houses climb the hillside past a yield sign.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-hard--loc-021",
+      "sourceRun": "hard-r1",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+      "clues": [
+        { "label": "Flat agricultural plain", "description": "The road crosses an exceptionally flat agricultural plain.", "sourceText": "Round 4 is a dead-flat sunflower/wheat/corn plain.", "category": "geography" },
+        { "label": "Sunflower, wheat, and corn fields", "description": "Sunflower, wheat, and corn crops are visible beside the road.", "sourceText": "Sunflowers, wheat, corn, and a black-and-white roadside post point to the Hungarian Great Plain.", "category": "vegetation" },
+        { "label": "Black-and-white roadside post", "description": "A black-and-white roadside delineator stands beside the field road.", "sourceText": "Sunflowers, wheat, corn, and a black-and-white roadside post point to the Hungarian Great Plain.", "category": "infrastructure" }
+      ]
+    },
+    {
+      "locationId": "europe-hard--loc-022",
+      "sourceRun": "hard-r1",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+      "clues": [
+        { "label": "Straight dirt track", "description": "A straight unpaved track runs through the scene.", "sourceText": "Round 5 is a straight dirt track through temperate scrub.", "category": "infrastructure" },
+        { "label": "Temperate scrub", "description": "Dense temperate scrub vegetation borders the track.", "sourceText": "Round 5 is a straight dirt track through temperate scrub.", "category": "vegetation" }
+      ]
+    },
+    {
+      "locationId": "europe-hard--loc-023",
+      "sourceRun": "hard-r1",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+      "clues": [
+        { "label": "Road number 3426", "description": "The number 3426 is painted on the gravel road.", "sourceText": "Road 3426 is painted on the gravel, with Soviet-style farm ruins.", "category": "signage" },
+        { "label": "Soviet-style farm ruins", "description": "Ruined agricultural buildings with a Soviet-era appearance stand beside the road.", "sourceText": "Road 3426 is painted on the gravel, with Soviet-style farm ruins.", "category": "architecture" }
+      ]
+    },
+    {
+      "locationId": "europe-hard--loc-024",
+      "sourceRun": "hard-r1",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+      "clues": [
+        { "label": "Skalvej road label", "description": "The Danish road name Skalvej is visible.", "sourceText": "Road paint reads Skalvej — Danish.", "category": "signage" }
+      ]
+    },
+    {
+      "locationId": "europe-hard--loc-025",
+      "sourceRun": "hard-r1",
+      "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt",
+      "clues": [
+        { "label": "Boreal pine and birch", "description": "Pine and birch trees form a boreal forest beside the road.", "sourceText": "Boreal pine/birch, white lines, and a visible car hood point to Finland.", "category": "vegetation" },
+        { "label": "White road lines", "description": "White centre and edge lines mark the paved road.", "sourceText": "Boreal pine/birch, white lines, and a visible car hood point to Finland.", "category": "infrastructure" },
+        { "label": "Visible car hood", "description": "The survey vehicle's hood is visible at the bottom of the panorama.", "sourceText": "Boreal pine/birch, white lines, and a visible car hood point to Finland.", "category": "infrastructure" }
+      ]
+    }
+  ]
+}

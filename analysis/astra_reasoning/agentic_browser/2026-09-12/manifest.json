@@ -1,0 +1,52 @@
+{
+  "model": "GPT-6 Astra",
+  "reasoning": "low",
+  "condition": "interactive-panorama; browser visual controls",
+  "source_commit": "8c3039d",
+  "valid_scored_rounds": 75,
+  "runs": 3,
+  "recovered_original_submitted_pins": 11,
+  "coordinates_missing_or_invalid": 64,
+  "coordinate_status_counts": {
+    "invalid_ad_request_prediction": 59,
+    "recovered_original_map_click": 11,
+    "no_original_numeric_prediction_recovered": 5
+  },
+  "raw_records_inspected": 99,
+  "validation": "All 11 original leaflet-map-click coordinate pairs reproduce the distance in the corresponding valid-run report to its displayed rounding. Camera/spawn coordinates were used only to recompute distance and were never substituted for predictions.",
+  "limitations": [
+    "No claim that all 75 numeric guesses survived.",
+    "These are map-pin coordinates recorded from the agent-selected UI, not numeric coordinates spoken by the agent.",
+    "The 59 invalid canonical records captured advertising consent data as outgoing-request coordinates; those numeric values are not treated as predictions.",
+    "Five canonical rounds have no recoverable numeric record, including the three-round Medium continuation.",
+    "Run 1 Hard and Run 3 Medium are composites documented in original reports. Contaminated and unfinished attempts are excluded.",
+    "Earlier globe exclusion remains unchanged; no automatic visualization import is made."
+  ],
+  "units": {
+    "latitude": "decimal degrees",
+    "longitude": "decimal degrees",
+    "error": "metres"
+  },
+  "report_files": [
+    "NAUTILUS_ASTRA_LOW_RUN_20260906.md",
+    "NAUTILUS_ASTRA_LOW_HARD_FINAL2_20260907.md",
+    "NAUTILUS_ASTRA_LOW_RUN2_20260907.md",
+    "NAUTILUS_ASTRA_LOW_RUN3_20260907.md",
+    "NAUTILUS_ASTRA_LOW_RUN3_CLEAN_20260907.md"
+  ],
+  "reconstruction": {
+    "source_commit": "be3313f",
+    "complete_coordinate_export": "reconstruction/all_75_predictions.csv",
+    "complete_json_export": "reconstruction/all_75_predictions.json",
+    "total_coordinate_pairs": 75,
+    "original_recorded_pairs": 11,
+    "reconstructed_pairs": 64,
+    "call_sequence_rounds": 75,
+    "browser_call_records": 1917,
+    "unobscured_exact_controls": 10,
+    "held_out_max_error_map_pixels": 0.9751,
+    "uncertainty": "Four-map-pixel engineering estimate with one-metre minimum, not a statistical confidence interval; maximum 5297 metres.",
+    "verification": "reconstruction/verify_reconstruction.py",
+    "additional_original_result_screenshots_from_chat": 2
+  }
+}

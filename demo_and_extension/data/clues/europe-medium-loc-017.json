@@ -1,0 +1,553 @@
+{
+  "schemaVersion": "1.0",
+  "locationId": "europe-medium--loc-017",
+  "clueSets": [
+    {
+      "id": "gemini-3.7-flash-high-aided",
+      "model": "Gemini 3.7 Flash",
+      "reasoning": "high, aided",
+      "mergeStrategy": "canonical-model-set",
+      "sourceRuns": [
+        {
+          "runId": "r2",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md"
+        },
+        {
+          "runId": "r3",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md"
+        },
+        {
+          "runId": "r1",
+          "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-017-gemini-3-7-flash-high-aided-d175c19c61",
+          "label": "Irish Yellow Dashed Road Markings",
+          "text": "Irish Yellow Dashed Road Markings",
+          "description": "Yellow broken outer road line and broken yellow/white lane dividers combined with left-hand traffic driving rules.",
+          "groundingPhrase": "Irish Yellow Dashed Road Markings",
+          "source": "panorama",
+          "category": "signage",
+          "region": {
+            "x": 0.3195,
+            "y": 0.6695,
+            "w": 0.101,
+            "h": 0.17
+          },
+          "regionSource": "microsoft/Florence-2-large+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Irish Yellow Dashed Road Markings: Yellow dashed broken center lines and yellow edge lines (distinctive national road marking system in Ireland)."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md",
+              "text": "Irish Road Markings: Yellow broken outer road line and broken yellow/white lane dividers combined with left-hand traffic driving rules."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "Broken yellow centerline with solid white outer edge lines"
+            }
+          ],
+          "groundingLabel": "Irish Yellow Dashed Road Markings",
+          "ratingsReviewedAt": "2026-09-11T22:46:08.543Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-017-gemini-3-7-flash-high-aided-aac75ae8be",
+          "label": "Left-Hand Drive Traffic Layout",
+          "text": "Left-Hand Drive Traffic Layout",
+          "description": "British Isles driving on the left with raised pavement on the inside curve.",
+          "groundingPhrase": "Left-Hand Drive Traffic Layout",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Left-Hand Drive Traffic Layout: British Isles driving on the left with raised pavement on the inside curve."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "left-hand drive"
+            }
+          ],
+          "ratingsReviewedAt": "2026-09-11T22:46:26.462Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-017-gemini-3-7-flash-high-aided-2ad02b0b4a",
+          "label": "Irish Stone Walls & Cottages",
+          "text": "Irish Stone Walls & Cottages",
+          "description": "Curving mortared fieldstone boundary walls, whitewashed detached homes with slate roofs and brick chimneys.",
+          "groundingPhrase": "Irish Stone Walls & Cottages",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.584251968503937,
+            "y": 0.4254746598893706,
+            "w": 0.415748031496063,
+            "h": 0.3699606318831913
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Irish Stone Walls & Cottages: Curving mortared fieldstone boundary walls, whitewashed detached homes with slate roofs and brick chimneys."
+            },
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md",
+              "text": "Stone Masonry: Traditional curved drystone field wall construction characteristic of rural/suburban Ireland."
+            },
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "limestone dry-stone boundary walls"
+            }
+          ],
+          "groundingLabel": "Irish Stone Walls",
+          "ratingsReviewedAt": "2026-09-11T22:46:30.445Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-017-gemini-3-7-flash-high-aided-2c95c5c8b4",
+          "label": "Driveway Infrastructure",
+          "text": "Driveway Infrastructure",
+          "description": "Black wrought-iron security gate and entrance signage at property boundary.",
+          "groundingPhrase": "Driveway Infrastructure",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Driveway Infrastructure: Black wrought-iron security gate and entrance signage at property boundary."
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-medium-loc-017-gemini-3-7-flash-high-aided-f8e1e8608e",
+          "label": "Geographic Environment",
+          "text": "Geographic Environment",
+          "description": "Rolling green coastal topography with broadleaf trees and temperate oceanic sky.",
+          "groundingPhrase": "Geographic Environment",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": true,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r2"
+          ],
+          "provenance": [
+            {
+              "runId": "r2",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-2/report.md",
+              "text": "Geographic Environment: Rolling green coastal topography with broadleaf trees and temperate oceanic sky."
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-medium-loc-017-gemini-3-7-flash-high-aided-c6ca382df5",
+          "label": "Irish Residential Architecture",
+          "text": "Irish Residential Architecture",
+          "description": "White-rendered bungalow with multi-pane bay windows, traditional chimney pots, and slate hipped roof.",
+          "groundingPhrase": "Irish Residential Architecture",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7566496062992125,
+            "y": 0.2867427368316141,
+            "w": 0.24335039370078748,
+            "h": 0.256
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md",
+              "text": "Irish Residential Architecture: White-rendered bungalow with multi-pane bay windows, traditional chimney pots, and slate hipped roof."
+            }
+          ],
+          "groundingLabel": "Irish Residential Architecture",
+          "ratingsReviewedAt": "2026-09-11T22:46:34.299Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-017-gemini-3-7-flash-high-aided-fe1c43a909",
+          "label": "Estate Entry",
+          "text": "Estate Entry",
+          "description": "Iron driveway gates and stone pillar boundary.",
+          "groundingPhrase": "Estate Entry",
+          "source": "panorama",
+          "category": "architecture",
+          "region": {
+            "x": 0.7606496062992125,
+            "y": 0.4206940000996661,
+            "w": 0.23935039370078748,
+            "h": 0.12842736831614093
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md",
+              "text": "Estate Entry: Iron driveway gates and stone pillar boundary."
+            }
+          ],
+          "groundingLabel": "Estate Entry",
+          "ratingsReviewedAt": "2026-09-11T22:46:41.304Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-017-gemini-3-7-flash-high-aided-de21b989ef",
+          "label": "Atlantic Temperate Climate",
+          "text": "Atlantic Temperate Climate",
+          "description": "Typical Irish overcast maritime cloud structure and deep green lush hedgerows.",
+          "groundingPhrase": "Atlantic Temperate Climate",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r3"
+          ],
+          "provenance": [
+            {
+              "runId": "r3",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-3/report.md",
+              "text": "Atlantic Temperate Climate: Typical Irish overcast maritime cloud structure and deep green lush hedgerows."
+            }
+          ]
+        },
+        {
+          "id": "cue-europe-medium-loc-017-gemini-3-7-flash-high-aided-b6b4d8b4ae",
+          "label": "white rendered houses",
+          "text": "white rendered houses",
+          "description": "White rendered houses with dual chimneys.",
+          "groundingPhrase": "white rendered houses",
+          "source": "panorama",
+          "category": "geography",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "excluded",
+          "ratings": {
+            "visible": null,
+            "correct": null,
+            "useful": null,
+            "consistent": null
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "white rendered houses with dual chimneys"
+            }
+          ],
+          "groundingLabel": "white rendered houses"
+        },
+        {
+          "id": "cue-europe-medium-loc-017-gemini-3-7-flash-high-aided-465c995e85",
+          "label": "gorse bushes",
+          "text": "gorse bushes",
+          "description": "Gorse bushes.",
+          "groundingPhrase": "gorse bushes",
+          "source": "panorama",
+          "category": "vegetation",
+          "region": {
+            "x": 0.0025,
+            "y": 0.2695,
+            "w": 0.39322834645669286,
+            "h": 0.21834957891064932
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "r1"
+          ],
+          "provenance": [
+            {
+              "runId": "r1",
+              "report": "data/recorded-agent-benchmark/gemini-3.7-flash-high-aided/runs/run-1/report.md",
+              "text": "gorse bushes."
+            }
+          ],
+          "groundingLabel": "georse bushes",
+          "ratingsReviewedAt": "2026-09-11T22:46:43.848Z"
+        }
+      ]
+    },
+    {
+      "id": "grok-4-6-xhigh-mcp",
+      "benchmarkId": "grok-4-6-xhigh-mcp",
+      "model": "Grok 4.6 + MCP",
+      "reasoning": "xhigh",
+      "mergeStrategy": "tier-best-composite",
+      "sourceRuns": [
+        {
+          "runId": "easy-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt"
+        },
+        {
+          "runId": "medium-r2",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt"
+        },
+        {
+          "runId": "hard-r1",
+          "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-hard-r1/transcript.txt"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cue-europe-medium-loc-017-grok-4-6-xhigh-mcp-a8f682c5ef",
+          "label": "Bohonagh road text",
+          "text": "Bohonagh road text",
+          "description": "The place name Bohonagh is visible in the road information.",
+          "groundingPhrase": "Bohonagh road text",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "medium-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "medium-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+              "text": "Road paint shows L1322 and Bohonagh."
+            }
+          ],
+          "groundingLabel": "Bohonagh road text",
+          "ratingsReviewedAt": "2026-09-12T17:10:35.446Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-017-grok-4-6-xhigh-mcp-11106d8a02",
+          "label": "Rahoon/Newcastle GAA sign",
+          "text": "Rahoon/Newcastle GAA sign",
+          "description": "A GAA sign identifies Rahoon/Newcastle in Galway.",
+          "groundingPhrase": "Rahoon/Newcastle GAA sign",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "medium-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "medium-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+              "text": "The GAA sign is Rahoon/Newcastle in Galway."
+            }
+          ],
+          "groundingLabel": "Rahoon/Newcastle GAA sign",
+          "ratingsReviewedAt": "2026-09-12T17:10:42.946Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-017-grok-4-6-xhigh-mcp-23dfe0ff79",
+          "label": "Yellow centre lines",
+          "text": "Yellow centre lines",
+          "description": "Yellow centre lines are painted on the road.",
+          "groundingPhrase": "Yellow centre lines",
+          "source": "panorama",
+          "category": "infrastructure",
+          "region": {
+            "x": 0.33016825019794144,
+            "y": 0.5045303144369997,
+            "w": 0.233,
+            "h": 0.345
+          },
+          "regionSource": "manual+manual-review",
+          "annotationStatus": "reviewed",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "medium-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "medium-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+              "text": "Yellow center lines and stone walls look like Ireland."
+            }
+          ],
+          "groundingLabel": "Yellow centre lines",
+          "ratingsReviewedAt": "2026-09-12T17:10:50.642Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-017-grok-4-6-xhigh-mcp-4494b029ed",
+          "label": "L1322 road marking",
+          "text": "L1322 road marking",
+          "description": "The road marking shows route number L1322.",
+          "groundingPhrase": "L1322 road marking",
+          "source": "panorama",
+          "category": "signage",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": false,
+            "correct": false,
+            "useful": false,
+            "consistent": false
+          },
+          "sourceRuns": [
+            "medium-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "medium-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+              "text": "Road paint shows L1322 and Bohonagh."
+            }
+          ],
+          "groundingLabel": "L1322 road",
+          "ratingsReviewedAt": "2026-09-12T17:10:54.549Z"
+        },
+        {
+          "id": "cue-europe-medium-loc-017-grok-4-6-xhigh-mcp-cb0ce9c098",
+          "label": "Stone walls",
+          "text": "Stone walls",
+          "description": "Stone walls line the roadside.",
+          "groundingPhrase": "Stone walls",
+          "source": "panorama",
+          "category": "architecture",
+          "region": null,
+          "regionSource": null,
+          "annotationStatus": "text-only",
+          "ratings": {
+            "visible": true,
+            "correct": true,
+            "useful": true,
+            "consistent": true
+          },
+          "sourceRuns": [
+            "medium-r2"
+          ],
+          "provenance": [
+            {
+              "runId": "medium-r2",
+              "report": "data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-one-shot-medium-r2/transcript.txt",
+              "text": "Yellow center lines and stone walls look like Ireland."
+            }
+          ],
+          "groundingLabel": "Stone walls",
+          "ratingsReviewedAt": "2026-09-12T17:10:57.887Z"
+        }
+      ]
+    }
+  ]
+}

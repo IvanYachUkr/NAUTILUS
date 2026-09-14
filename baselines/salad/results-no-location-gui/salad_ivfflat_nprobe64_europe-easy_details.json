@@ -1,0 +1,778 @@
+[
+  {
+    "location_id": "loc_001",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_001.png",
+    "ground_truth": {
+      "lat": 48.8521298,
+      "lon": 2.3696389,
+      "country": "France",
+      "city_or_region": "Paris",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark"
+    },
+    "top1": {
+      "rank": 1,
+      "reference_row_id": 831472,
+      "reference_id": "1411365392596313",
+      "reference_split": "train",
+      "lat": 46.780565837023,
+      "lon": 6.6387742906776,
+      "distance": 1.5824806690216064,
+      "error_km": 393.9438990037655
+    },
+    "topk_mean": {
+      "lat": 45.417715744426744,
+      "lon": 1.7498738835200478,
+      "error_km": 384.69587017566755
+    },
+    "topk_weighted": {
+      "lat": 45.4147870793146,
+      "lon": 1.7561021946327926,
+      "error_km": 384.9617365128119
+    },
+    "topk_oracle": {
+      "rank": 1,
+      "reference_row_id": 831472,
+      "reference_id": "1411365392596313",
+      "reference_split": "train",
+      "lat": 46.780565837023,
+      "lon": 6.6387742906776,
+      "distance": 1.5824806690216064,
+      "error_km": 393.9438990037655
+    },
+    "descriptor_seconds": 0.05899460000000545,
+    "search_seconds": 0.8737556999985827,
+    "inference_seconds": 0.9327502999985882,
+    "candidates": [
+      {
+        "rank": 1,
+        "reference_row_id": 831472,
+        "reference_id": "1411365392596313",
+        "reference_split": "train",
+        "lat": 46.780565837023,
+        "lon": 6.6387742906776,
+        "distance": 1.5824806690216064,
+        "error_km": 393.9438990037655
+      },
+      {
+        "rank": 2,
+        "reference_row_id": 72656,
+        "reference_id": "1269607357171383",
+        "reference_split": "train",
+        "lat": 40.440748438235744,
+        "lon": -3.726670888572352,
+        "distance": 1.601365566253662,
+        "error_km": 1051.5782006392162
+      },
+      {
+        "rank": 3,
+        "reference_row_id": 109851,
+        "reference_id": "196070939011921",
+        "reference_split": "train",
+        "lat": 42.603497205954,
+        "lon": -5.5799492009687,
+        "distance": 1.610843300819397,
+        "error_km": 929.1818792952491
+      },
+      {
+        "rank": 4,
+        "reference_row_id": 1619790,
+        "reference_id": "214390033457821",
+        "reference_split": "train",
+        "lat": 56.14830609299,
+        "lon": 10.196812491013,
+        "distance": 1.6160106658935547,
+        "error_km": 969.0706171670473
+      },
+      {
+        "rank": 5,
+        "reference_row_id": 461512,
+        "reference_id": "1113200099579254",
+        "reference_split": "train",
+        "lat": 41.115461147930986,
+        "lon": 1.2204027254506915,
+        "distance": 1.6201279163360596,
+        "error_km": 864.5228011448585
+      }
+    ]
+  },
+  {
+    "location_id": "loc_002",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_002.png",
+    "ground_truth": {
+      "lat": 52.5206008,
+      "lon": 13.4151229,
+      "country": "Germany",
+      "city_or_region": "Berlin",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark"
+    },
+    "top1": {
+      "rank": 1,
+      "reference_row_id": 677575,
+      "reference_id": "138609754987570",
+      "reference_split": "train",
+      "lat": 41.037307938751,
+      "lon": 28.985547278835,
+      "distance": 1.5611028671264648,
+      "error_km": 1737.2497045255595
+    },
+    "topk_mean": {
+      "lat": 44.76193571582621,
+      "lon": 22.328336483632956,
+      "error_km": 1082.662943655189
+    },
+    "topk_weighted": {
+      "lat": 44.74995589534319,
+      "lon": 22.346364126594423,
+      "error_km": 1084.5649106657638
+    },
+    "topk_oracle": {
+      "rank": 3,
+      "reference_row_id": 366925,
+      "reference_id": "1097713170811788",
+      "reference_split": "train",
+      "lat": 57.14597840246896,
+      "lon": -2.098578931649421,
+      "distance": 1.5865848064422607,
+      "error_km": 1118.5098023411872
+    },
+    "descriptor_seconds": 0.058349000000816886,
+    "search_seconds": 0.92518039999959,
+    "inference_seconds": 0.9835294000004069,
+    "candidates": [
+      {
+        "rank": 1,
+        "reference_row_id": 677575,
+        "reference_id": "138609754987570",
+        "reference_split": "train",
+        "lat": 41.037307938751,
+        "lon": 28.985547278835,
+        "distance": 1.5611028671264648,
+        "error_km": 1737.2497045255595
+      },
+      {
+        "rank": 2,
+        "reference_row_id": 701632,
+        "reference_id": "1034518747078630",
+        "reference_split": "train",
+        "lat": 42.633940225644,
+        "lon": 23.333846079997,
+        "distance": 1.5732836723327637,
+        "error_km": 1325.892535132038
+      },
+      {
+        "rank": 3,
+        "reference_row_id": 366925,
+        "reference_id": "1097713170811788",
+        "reference_split": "train",
+        "lat": 57.14597840246896,
+        "lon": -2.098578931649421,
+        "distance": 1.5865848064422607,
+        "error_km": 1118.5098023411872
+      },
+      {
+        "rank": 4,
+        "reference_row_id": 735900,
+        "reference_id": "715307259508694",
+        "reference_split": "train",
+        "lat": 41.6528932138261,
+        "lon": 41.6342811894892,
+        "distance": 1.5895662307739258,
+        "error_km": 2437.092264820898
+      },
+      {
+        "rank": 5,
+        "reference_row_id": 587448,
+        "reference_id": "207754127825956",
+        "reference_split": "train",
+        "lat": 41.339558798441,
+        "lon": 19.786586801493,
+        "distance": 1.5925542116165161,
+        "error_km": 1333.0426348030026
+      }
+    ]
+  },
+  {
+    "location_id": "loc_003",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_003.png",
+    "ground_truth": {
+      "lat": 47.8005438,
+      "lon": 13.0529765,
+      "country": "Austria",
+      "city_or_region": "Salzburg",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark"
+    },
+    "top1": {
+      "rank": 1,
+      "reference_row_id": 350793,
+      "reference_id": "179450063962010",
+      "reference_split": "train",
+      "lat": 56.888560386684,
+      "lon": -4.8380147597886,
+      "distance": 1.5798637866973877,
+      "error_km": 1575.6944143805856
+    },
+    "topk_mean": {
+      "lat": 54.377303284934044,
+      "lon": 5.021474430682945,
+      "error_km": 921.7977884658206
+    },
+    "topk_weighted": {
+      "lat": 54.37772191590182,
+      "lon": 5.022403796275544,
+      "error_km": 921.793665385156
+    },
+    "topk_oracle": {
+      "rank": 4,
+      "reference_row_id": 1039210,
+      "reference_id": "386432476265207",
+      "reference_split": "train",
+      "lat": 48.15066697222221,
+      "lon": 14.031017972222225,
+      "distance": 1.5839585065841675,
+      "error_km": 82.749540720975
+    },
+    "descriptor_seconds": 0.058259800000087125,
+    "search_seconds": 0.975788099998681,
+    "inference_seconds": 1.0340478999987681,
+    "candidates": [
+      {
+        "rank": 1,
+        "reference_row_id": 350793,
+        "reference_id": "179450063962010",
+        "reference_split": "train",
+        "lat": 56.888560386684,
+        "lon": -4.8380147597886,
+        "distance": 1.5798637866973877,
+        "error_km": 1575.6944143805856
+      },
+      {
+        "rank": 2,
+        "reference_row_id": 905357,
+        "reference_id": "477740346814565",
+        "reference_split": "train",
+        "lat": 47.689521283698,
+        "lon": 9.8372284658642,
+        "distance": 1.5817068815231323,
+        "error_km": 241.45461673703656
+      },
+      {
+        "rank": 3,
+        "reference_row_id": 2056441,
+        "reference_id": "1394403697584794",
+        "reference_split": "train",
+        "lat": 63.34538968967,
+        "lon": 10.348778332438,
+        "distance": 1.5825504064559937,
+        "error_km": 1738.6362032895488
+      },
+      {
+        "rank": 4,
+        "reference_row_id": 1039210,
+        "reference_id": "386432476265207",
+        "reference_split": "train",
+        "lat": 48.15066697222221,
+        "lon": 14.031017972222225,
+        "distance": 1.5839585065841675,
+        "error_km": 82.749540720975
+      },
+      {
+        "rank": 5,
+        "reference_row_id": 353454,
+        "reference_id": "293510482234636",
+        "reference_split": "train",
+        "lat": 55.812378092396,
+        "lon": -4.2716378573211,
+        "distance": 1.5871365070343018,
+        "error_km": 1483.9747053352842
+      }
+    ]
+  },
+  {
+    "location_id": "loc_004",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_004.png",
+    "ground_truth": {
+      "lat": 48.8126024,
+      "lon": 14.3129755,
+      "country": "Czechia",
+      "city_or_region": "Český Krumlov",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark"
+    },
+    "top1": {
+      "rank": 1,
+      "reference_row_id": 395677,
+      "reference_id": "304135931288881",
+      "reference_split": "train",
+      "lat": 34.880227777778,
+      "lon": 32.839327777778,
+      "distance": 1.4248318672180176,
+      "error_km": 2170.9130076181223
+    },
+    "topk_mean": {
+      "lat": 46.2362667094542,
+      "lon": 21.62117416262746,
+      "error_km": 620.0786290166869
+    },
+    "topk_weighted": {
+      "lat": 46.162730680273604,
+      "lon": 21.67710775822949,
+      "error_km": 627.9387154245505
+    },
+    "topk_oracle": {
+      "rank": 3,
+      "reference_row_id": 1003329,
+      "reference_id": "506992697343462",
+      "reference_split": "train",
+      "lat": 46.0857297,
+      "lon": 18.237708,
+      "distance": 1.4692307710647583,
+      "error_km": 423.5903128687588
+    },
+    "descriptor_seconds": 0.05858350000016799,
+    "search_seconds": 0.7726705000004586,
+    "inference_seconds": 0.8312540000006265,
+    "candidates": [
+      {
+        "rank": 1,
+        "reference_row_id": 395677,
+        "reference_id": "304135931288881",
+        "reference_split": "train",
+        "lat": 34.880227777778,
+        "lon": 32.839327777778,
+        "distance": 1.4248318672180176,
+        "error_km": 2170.9130076181223
+      },
+      {
+        "rank": 2,
+        "reference_row_id": 1120319,
+        "reference_id": "140899824675122",
+        "reference_split": "train",
+        "lat": 49.701264642467,
+        "lon": 5.969493246637,
+        "distance": 1.4690220355987549,
+        "error_km": 615.0151331103747
+      },
+      {
+        "rank": 3,
+        "reference_row_id": 1003329,
+        "reference_id": "506992697343462",
+        "reference_split": "train",
+        "lat": 46.0857297,
+        "lon": 18.237708,
+        "distance": 1.4692307710647583,
+        "error_km": 423.5903128687588
+      },
+      {
+        "rank": 4,
+        "reference_row_id": 1714972,
+        "reference_id": "236407858280951",
+        "reference_split": "train",
+        "lat": 58.871121972219,
+        "lon": 9.4114719722163,
+        "distance": 1.4739097356796265,
+        "error_km": 1164.3085480202008
+      },
+      {
+        "rank": 5,
+        "reference_row_id": 735992,
+        "reference_id": "2023646177773486",
+        "reference_split": "train",
+        "lat": 41.642989454807,
+        "lon": 41.647869816506,
+        "distance": 1.476986050605774,
+        "error_km": 2274.760086133023
+      }
+    ]
+  },
+  {
+    "location_id": "loc_005",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_005.png",
+    "ground_truth": {
+      "lat": 44.8747121,
+      "lon": 13.849302,
+      "country": "Croatia",
+      "city_or_region": "Pula",
+      "difficulty": "easy",
+      "primary_clue_type": "landmark"
+    },
+    "top1": {
+      "rank": 1,
+      "reference_row_id": 812636,
+      "reference_id": "482737222842795",
+      "reference_split": "train",
+      "lat": 46.099367870514,
+      "lon": 7.0833599553555,
+      "distance": 1.5195281505584717,
+      "error_km": 545.9744834149183
+    },
+    "topk_mean": {
+      "lat": 46.409491824373234,
+      "lon": 24.076858718565042,
+      "error_km": 814.768838773908
+    },
+    "topk_weighted": {
+      "lat": 46.40543030045559,
+      "lon": 24.023743583266484,
+      "error_km": 810.6625508108419
+    },
+    "topk_oracle": {
+      "rank": 1,
+      "reference_row_id": 812636,
+      "reference_id": "482737222842795",
+      "reference_split": "train",
+      "lat": 46.099367870514,
+      "lon": 7.0833599553555,
+      "distance": 1.5195281505584717,
+      "error_km": 545.9744834149183
+    },
+    "descriptor_seconds": 0.051267200000438606,
+    "search_seconds": 1.6695211000005656,
+    "inference_seconds": 1.7207883000010042,
+    "candidates": [
+      {
+        "rank": 1,
+        "reference_row_id": 812636,
+        "reference_id": "482737222842795",
+        "reference_split": "train",
+        "lat": 46.099367870514,
+        "lon": 7.0833599553555,
+        "distance": 1.5195281505584717,
+        "error_km": 545.9744834149183
+      },
+      {
+        "rank": 2,
+        "reference_row_id": 659013,
+        "reference_id": "210480260664380",
+        "reference_split": "train",
+        "lat": 38.494537517,
+        "lon": 27.082583254016,
+        "distance": 1.5260531902313232,
+        "error_km": 1307.4570420724438
+      },
+      {
+        "rank": 3,
+        "reference_row_id": 1489554,
+        "reference_id": "776421280268176",
+        "reference_split": "train",
+        "lat": 53.17636185367868,
+        "lon": 22.07683871811067,
+        "distance": 1.5346612930297852,
+        "error_km": 1100.4055244084173
+      },
+      {
+        "rank": 4,
+        "reference_row_id": 1864468,
+        "reference_id": "845511526310340",
+        "reference_split": "train",
+        "lat": 55.777735317901,
+        "lon": 37.054047780543,
+        "distance": 1.544255018234253,
+        "error_km": 2033.445402059139
+      },
+      {
+        "rank": 5,
+        "reference_row_id": 659165,
+        "reference_id": "743819633681062",
+        "reference_split": "train",
+        "lat": 38.49945656277247,
+        "lon": 27.08746388480004,
+        "distance": 1.5514572858810425,
+        "error_km": 1307.4681821533613
+      }
+    ]
+  },
+  {
+    "location_id": "loc_006",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_006.png",
+    "ground_truth": {
+      "lat": 50.9008842,
+      "lon": 14.8455043,
+      "country": "Poland",
+      "city_or_region": "Sieniawka, Gmina Bogatynia",
+      "difficulty": "easy",
+      "primary_clue_type": "text"
+    },
+    "top1": {
+      "rank": 1,
+      "reference_row_id": 1487555,
+      "reference_id": "554724728830317",
+      "reference_split": "train",
+      "lat": 53.532592391508,
+      "lon": 20.274353422462,
+      "distance": 1.2791807651519775,
+      "error_km": 472.45342381515076
+    },
+    "topk_mean": {
+      "lat": 52.758648648868885,
+      "lon": 15.815951625010872,
+      "error_km": 217.25395347443833
+    },
+    "topk_weighted": {
+      "lat": 52.75558904691479,
+      "lon": 15.849838593688261,
+      "error_km": 217.66220087096315
+    },
+    "topk_oracle": {
+      "rank": 5,
+      "reference_row_id": 1658671,
+      "reference_id": "526447925201709",
+      "reference_split": "train",
+      "lat": 54.048123295034,
+      "lon": 18.757718667784,
+      "distance": 1.3210959434509277,
+      "error_km": 439.5347574934312
+    },
+    "descriptor_seconds": 0.05109939999965718,
+    "search_seconds": 1.154515199999878,
+    "inference_seconds": 1.2056145999995351,
+    "candidates": [
+      {
+        "rank": 1,
+        "reference_row_id": 1487555,
+        "reference_id": "554724728830317",
+        "reference_split": "train",
+        "lat": 53.532592391508,
+        "lon": 20.274353422462,
+        "distance": 1.2791807651519775,
+        "error_km": 472.45342381515076
+      },
+      {
+        "rank": 2,
+        "reference_row_id": 1664910,
+        "reference_id": "1271076893677122",
+        "reference_split": "train",
+        "lat": 53.8549003503384,
+        "lon": 22.58547647494635,
+        "distance": 1.2900450229644775,
+        "error_km": 620.6622295616545
+      },
+      {
+        "rank": 3,
+        "reference_row_id": 521023,
+        "reference_id": "461704385136392",
+        "reference_split": "train",
+        "lat": 44.067094893788,
+        "lon": 5.067302951738,
+        "distance": 1.3066134452819824,
+        "error_km": 1056.73868157402
+      },
+      {
+        "rank": 4,
+        "reference_row_id": 1727972,
+        "reference_id": "213102450277496",
+        "reference_split": "train",
+        "lat": 58.290532313676,
+        "lon": 12.394906608124,
+        "distance": 1.314190149307251,
+        "error_km": 837.5485665607254
+      },
+      {
+        "rank": 5,
+        "reference_row_id": 1658671,
+        "reference_id": "526447925201709",
+        "reference_split": "train",
+        "lat": 54.048123295034,
+        "lon": 18.757718667784,
+        "distance": 1.3210959434509277,
+        "error_km": 439.5347574934312
+      }
+    ]
+  },
+  {
+    "location_id": "loc_007",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_007.png",
+    "ground_truth": {
+      "lat": 45.9577599,
+      "lon": 14.7424922,
+      "country": "Slovenia",
+      "city_or_region": "Višnja Gora, Ivančna Gorica Municipality",
+      "difficulty": "easy",
+      "primary_clue_type": "text"
+    },
+    "top1": {
+      "rank": 1,
+      "reference_row_id": 356731,
+      "reference_id": "316442949856825",
+      "reference_split": "train",
+      "lat": 55.910595901192,
+      "lon": -3.5426065534872,
+      "distance": 1.5342650413513184,
+      "error_km": 1687.1786220704637
+    },
+    "topk_mean": {
+      "lat": 48.35395813460068,
+      "lon": 6.716430055804436,
+      "error_km": 663.9696851610253
+    },
+    "topk_weighted": {
+      "lat": 48.36117210623043,
+      "lon": 6.703974707829711,
+      "error_km": 665.1164697099869
+    },
+    "topk_oracle": {
+      "rank": 5,
+      "reference_row_id": 965783,
+      "reference_id": "3977550618990967",
+      "reference_split": "train",
+      "lat": 45.967433820905,
+      "lon": 14.413119311401,
+      "distance": 1.5467047691345215,
+      "error_km": 25.554111015427594
+    },
+    "descriptor_seconds": 0.05102690000057919,
+    "search_seconds": 1.0553588000002492,
+    "inference_seconds": 1.1063857000008284,
+    "candidates": [
+      {
+        "rank": 1,
+        "reference_row_id": 356731,
+        "reference_id": "316442949856825",
+        "reference_split": "train",
+        "lat": 55.910595901192,
+        "lon": -3.5426065534872,
+        "distance": 1.5342650413513184,
+        "error_km": 1687.1786220704637
+      },
+      {
+        "rank": 2,
+        "reference_row_id": 1193511,
+        "reference_id": "1412129352479526",
+        "reference_split": "train",
+        "lat": 49.96397102895,
+        "lon": 11.203134894254,
+        "distance": 1.5359883308410645,
+        "error_km": 517.828601592198
+      },
+      {
+        "rank": 3,
+        "reference_row_id": 523938,
+        "reference_id": "788630028458721",
+        "reference_split": "train",
+        "lat": 44.136916875851,
+        "lon": 5.3184275503231,
+        "distance": 1.5372533798217773,
+        "error_km": 769.001798125074
+      },
+      {
+        "rank": 4,
+        "reference_row_id": 778723,
+        "reference_id": "930449707584677",
+        "reference_split": "train",
+        "lat": 45.79087304610539,
+        "lon": 6.190075076531282,
+        "distance": 1.5405007600784302,
+        "error_km": 663.9371082584362
+      },
+      {
+        "rank": 5,
+        "reference_row_id": 965783,
+        "reference_id": "3977550618990967",
+        "reference_split": "train",
+        "lat": 45.967433820905,
+        "lon": 14.413119311401,
+        "distance": 1.5467047691345215,
+        "error_km": 25.554111015427594
+      }
+    ]
+  },
+  {
+    "location_id": "loc_008",
+    "image": "demo_and_extension/data/starting-images-no-gui-crop/no-location-gui/europe-easy/loc_008.png",
+    "ground_truth": {
+      "lat": 60.8634735,
+      "lon": 7.1179637,
+      "country": "Norway",
+      "city_or_region": "Flåm, Aurland Municipality",
+      "difficulty": "easy",
+      "primary_clue_type": "mixed"
+    },
+    "top1": {
+      "rank": 1,
+      "reference_row_id": 1724082,
+      "reference_id": "137803281598065",
+      "reference_split": "train",
+      "lat": 61.841826495194,
+      "lon": 6.8108679090605,
+      "distance": 1.4323796033859253,
+      "error_km": 110.25369619432216
+    },
+    "topk_mean": {
+      "lat": 51.8102293382898,
+      "lon": 7.853215320076541,
+      "error_km": 1009.0606342227371
+    },
+    "topk_weighted": {
+      "lat": 51.90351346873031,
+      "lon": 7.856483312346169,
+      "error_km": 998.6987557247036
+    },
+    "topk_oracle": {
+      "rank": 1,
+      "reference_row_id": 1724082,
+      "reference_id": "137803281598065",
+      "reference_split": "train",
+      "lat": 61.841826495194,
+      "lon": 6.8108679090605,
+      "distance": 1.4323796033859253,
+      "error_km": 110.25369619432216
+    },
+    "descriptor_seconds": 0.049208599999474245,
+    "search_seconds": 0.947609900000316,
+    "inference_seconds": 0.9968184999997902,
+    "candidates": [
+      {
+        "rank": 1,
+        "reference_row_id": 1724082,
+        "reference_id": "137803281598065",
+        "reference_split": "train",
+        "lat": 61.841826495194,
+        "lon": 6.8108679090605,
+        "distance": 1.4323796033859253,
+        "error_km": 110.25369619432216
+      },
+      {
+        "rank": 2,
+        "reference_row_id": 830487,
+        "reference_id": "756544755053544",
+        "reference_split": "train",
+        "lat": 46.30128672333,
+        "lon": 11.589899793268,
+        "distance": 1.4804575443267822,
+        "error_km": 1646.5979099477154
+      },
+      {
+        "rank": 3,
+        "reference_row_id": 832799,
+        "reference_id": "234474835107082",
+        "reference_split": "train",
+        "lat": 46.720646850038,
+        "lon": 8.2009175991697,
+        "distance": 1.4889857769012451,
+        "error_km": 1575.651429379382
+      },
+      {
+        "rank": 4,
+        "reference_row_id": 1709551,
+        "reference_id": "556662588906415",
+        "reference_split": "train",
+        "lat": 58.845687181142,
+        "lon": 6.3636009388808,
+        "distance": 1.4942407608032227,
+        "error_km": 228.73807826674428
+      },
+      {
+        "rank": 5,
+        "reference_row_id": 775378,
+        "reference_id": "319655729509272",
+        "reference_split": "train",
+        "lat": 45.341699441745,
+        "lon": 6.3007903600037,
+        "distance": 1.5191650390625,
+        "error_km": 1728.1946373219075
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+grok.exe : [2m2026-09-01T18:05:34.406375Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\tmp\nautilus-openguessr-mcp\demo_and_extension\openguessr-mcp\scripts\Sta
+rt-GrokOpenGuessr.ps1:297 char:5
++     & $grokCommand.Source @grokArgs 2>&1 | Tee-Object -FilePath $tran ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-09-01T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-09-01T18:05:34.406473Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-09-01T18:09:13.141953Z[0m [31mERROR[0m tool_error: 
+tool_output_error 
+[3msession_id[0m[2m=[0m01a05e25-dc85-7a11-bbcf-9c7d1346856d 
+[3mtool_name[0m[2m=[0m"use_tool" 
+[3meffective_tool_name[0m[2m=[0m"playwright__openguessr_place_guess" 
+[3mmodel_id[0m[2m=[0m"grok-4.6" 
+[3merror_kind[0m[2m=[0m"tool_output_error"
+I'll start by loading the OpenGuessr tool schemas, then screenshot the current competition view and play all 8 rounds from the pixels.Taking a full-viewport screenshot to confirm round 1/8 is on screen and whether cookie consent is blocking.Round 1 is live with about 4:36 left. Greek road lettering is already visible; I’ll pan around the panorama for a tighter location before placing.The first pan barely moved. I’ll drag farther across the panorama to look left and right for more signs.Panning isn’t rotating the street view, so I’ll click the panorama and use the keyboard to look around.Moved forward: same Greek bypass marking, open dry hills. I’ll look left and behind for a town name or more terrain.Keyboard look didn’t register. I’ll click the sky and drag, then move farther down the road.I’ll try a center-canvas drag to look sideways, then decide if the Greek-bypass clues are enough to pin.I’ll click the left field for a side view, then place a Greece pin if nothing more specific shows up.Greek bypass lettering is enough for a mainland Greece pin. I’ll expand the guess map, then place around Boeotia.Timer is at 1:24, so I’m placing the Greece pin now and will expand the map if the controller says it isn’t ready.The map isn’t open yet. I’ll click the mini-map from the latest screenshot, then retry the pin.The last click was still on the road, so the map sits farther right. I’ll click the mini-map there and place immediately — 44 seconds left.That click likely hit the small map. I’ll hover to expand it, then place the Greece pin — 23 seconds left.Round 1 timed out before the pin landed — the result map marks Greece, which matches the road text. Continuing to round 2 and I’ll open the guess map first next time.Round 2 looks like rural Eastern Europe. I’ll check the barn and roadside for language or other tells, then pin.I’ll move farther down the road for a village, sign, or plate before committing.A village is visible ahead. I’ll jump forward toward the buildings for a sign or plate.Village houses are coming into view. I’ll move closer for architecture, a car, or a sign.This matches rural Transylvania. I’ll hover-open the guess map and pin central Romania.Hover didn’t expand the map. I’ll move off it, then back onto the mini-map so it opens.Hover still isn’t opening the map. I’ll read the round controls, then click the mini-map directly.The mini-map has an expand control in its top-left. I’ll click that, then place.Clicks on the right missed the map, so I’m targeting the expand icon on a ~1280-wide layout.That click didn’t move the panorama, so it likely hit the map. Placing Romania now.Pin is down at 46.3, 24.2. Verifying, then submitting.Round 2 landed in Transylvania, 46.7 km off. Continuing to round 3.Round 3 is a forested mountain village. I’ll follow the curve and scan for language, plates, or architecture.Balkan house architecture is showing. I’ll go farther up the road for a plate or sign.Unfinished brick, a hanging rug, and a wooden cart point to Bosnia. I’ll open the map and pin central Bosnia.Round 3 was southern Bulgaria, not Bosnia — 613.7 km off. Continuing to round 4.Sunflowers on a flat plain — likely Hungary or a neighboring lowland. I’ll look down the road for signs or road paint.A roadside marker is visible. I’ll follow the road arrow to read it and look for more signs.Sunflower–wheat–corn on a dead-flat plain is enough for the Hungarian Alföld. Opening the map and pinning.Round 4 was Hungary, 17.7 km off. Continuing to round 5.Round 5 is a straight dirt track through dense temperate scrub. I’ll move forward and check the sides for water, signs, or soil.The guess map is open on round 5/8. Birch-alder scrub on a dirt track looks Baltic; I’ll pin central Estonia.Round 5 was Latvia, 160.6 km from the Estonia pin. Continuing to round 6.Road number 3426 is painted on the gravel — a strong ID. I’ll move up to the buildings for architecture and any more signs.Painted 4-digit road numbers plus kolkhoz-style buildings are a Lithuania tell. Opening the map and pinning central Lithuania.Round 6 was Lithuania, 28.4 km off. Continuing to round 7.The painted name `Skalvej` is Danish. I’ll pin Jutland, near Skals.Round 7 was Harboøre, Denmark — 84.2 km off. Continuing to the last round.Round 8 is a pine–birch highway with a visible car hood — Nordic, and white center lines rule out Norway. I’ll look for a sign or marker.Map is open on 8/8. Birch-and-pine forest with a car camera looks like Finland; placing central Finland.Round 8 was northern Finland, 356.9 km off. Continuing to the leaderboard for the official total.Competition complete. Leaderboard total: **29,646 Pts.** (Grok Hard OneShot 300s R2, 8/8).
+
+| Round | Belief (chosen pin) | Coordinates | Distance | Official pts | Controller |
+|---|---|---|---|---|---|
+| 1 | Greece, Boeotia/Attica | 38.25, 23.35 **never landed** | 4,756.5 km | **43** | Timeout; map not opened; no verified pin. Result map marked Greece/Athens |
+| 2 | Romania, Transylvania | 46.3, 24.2 | 46.7 km | **4,772** | OK after mini-map click |
+| 3 | Bosnia (central) | 44.05, 18.25 | 613.7 km | **2,706** | OK |
+| 4 | Hungary, Alföld | 46.85, 20.15 | 17.7 km | **4,912** | OK; ad click opened a spare tab, game tab stayed active |
+| 5 | Estonia, central | 58.5, 25.0 | 160.6 km | **4,258** | OK |
+| 6 | Lithuania, Kėdainiai | 55.35, 23.95 | 28.4 km | **4,860** | OK |
+| 7 | Denmark, Skals/Viborg | 56.48, 9.52 | 84.2 km | **4,596** | OK |
+| 8 | Finland, Jyväskylä | 61.8, 25.5 | 356.9 km | **3,499** | OK |
+
+**Official total:** 29,646  
+**Completed rounds:** 8/8  
+**Timeouts/defaults:** 1 (round 1)  
+**Belief-to-pin mismatches:** 1 (round 1 intended Greece, pin never verified)  
+**Semantic misses:** round 3 Bosnia vs southern Bulgaria; round 5 Estonia vs Latvia (neighbor). Country was right on 2, 4, 6, 7, 8; round 1 geography was also Greece but the pin never counted.
+
+Result bars showed `+N XP` with no separate point numeral. Those XP values sum to the leaderboard **29,646 Pts.**, so they are treated as official round scores.
+
+**MCP map control:** Helped after round 1. `place_guess` dropped the exact chosen coordinates once the mini-map was focused with a physical click; `get_state` confirmed the pin; `submit_guess` / `continue` were reliable. It did not help geography. Round 1 failed because hover/click never opened the map before the clock hit zero.

@@ -1,0 +1,551 @@
+[
+  {
+    "run": "mcp-assisted-r1",
+    "round": 1,
+    "atlasLocationId": "europe-easy--loc-001",
+    "startedAtMs": 1788223328813,
+    "startedAt": "2026-09-01T00:42:08.813Z",
+    "startEvidence": {
+      "kind": "process_start_proxy",
+      "file": "demo_and_extension/data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r1/transcript-easy.txt",
+      "line": 1
+    },
+    "durationMs": null,
+    "durationSeconds": null,
+    "method": "unresolved_controller_or_timeout_endpoint",
+    "timingEvents": "mcp-assisted-r1-events.jsonl",
+    "durationLowerBoundMs": 77256,
+    "durationUpperBoundMs": 140927,
+    "lastActiveEvidence": {
+      "toolCallId": "call-be23f695-bc72-4a4b-aeb8-5a8708fc0472-6",
+      "sourceLine": 33
+    },
+    "firstFollowingContinue": {
+      "toolCallId": "call-7e01d386-c8c6-42b0-b449-7611da5c19a3-13",
+      "sourceLine": 62
+    },
+    "note": "No trustworthy exact submission endpoint in the player log. Keep the measured observation interval; do not mistake the following Continue or late controller acknowledgement for solving time."
+  },
+  {
+    "run": "mcp-assisted-r1",
+    "round": 2,
+    "atlasLocationId": "europe-easy--loc-002",
+    "startedAtMs": 1788223470750,
+    "startedAt": "2026-09-01T00:44:30.750Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-7e01d386-c8c6-42b0-b449-7611da5c19a3-13",
+      "sourceLine": 64
+    },
+    "durationMs": null,
+    "durationSeconds": null,
+    "method": "unresolved_controller_or_timeout_endpoint",
+    "timingEvents": "mcp-assisted-r1-events.jsonl",
+    "durationLowerBoundMs": 100719,
+    "durationUpperBoundMs": 216294,
+    "lastActiveEvidence": {
+      "toolCallId": "call-9fe495f8-580c-40f9-ad87-b8a563a542e0-21",
+      "sourceLine": 101
+    },
+    "firstFollowingContinue": {
+      "toolCallId": "call-38357bf8-10bd-47da-9c53-fc04ff5e3fa6-31",
+      "sourceLine": 137
+    },
+    "note": "No trustworthy exact submission endpoint in the player log. Keep the measured observation interval; do not mistake the following Continue or late controller acknowledgement for solving time."
+  },
+  {
+    "run": "mcp-assisted-r1",
+    "round": 3,
+    "atlasLocationId": "europe-easy--loc-003",
+    "startedAtMs": 1788223688005,
+    "startedAt": "2026-09-01T00:48:08.005Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-38357bf8-10bd-47da-9c53-fc04ff5e3fa6-31",
+      "sourceLine": 139
+    },
+    "durationMs": 48437,
+    "durationSeconds": 48.437,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r1-events.jsonl",
+    "endedAtMs": 1788223736442,
+    "endedAt": "2026-09-01T00:48:56.442Z",
+    "endEvidence": {
+      "toolCallId": "call-6123958f-7f41-4092-ad9e-7a704dab1723-38",
+      "sourceLine": 167
+    }
+  },
+  {
+    "run": "mcp-assisted-r1",
+    "round": 4,
+    "atlasLocationId": "europe-easy--loc-004",
+    "startedAtMs": 1788223750263,
+    "startedAt": "2026-09-01T00:49:10.263Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-0a0c1dd4-41fd-48e7-81c6-874c26032973-40",
+      "sourceLine": 178
+    },
+    "durationMs": 44318,
+    "durationSeconds": 44.318,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r1-events.jsonl",
+    "endedAtMs": 1788223794581,
+    "endedAt": "2026-09-01T00:49:54.581Z",
+    "endEvidence": {
+      "toolCallId": "call-f35efb05-d12d-47d4-a347-0585ae83fe81-44",
+      "sourceLine": 193
+    }
+  },
+  {
+    "run": "mcp-assisted-r1",
+    "round": 5,
+    "atlasLocationId": "europe-easy--loc-005",
+    "startedAtMs": 1788223815014,
+    "startedAt": "2026-09-01T00:50:15.014Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-4396d1bd-e9ba-4a5c-893c-ae17b7a14ca2-46",
+      "sourceLine": 204
+    },
+    "durationMs": 58747,
+    "durationSeconds": 58.747,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r1-events.jsonl",
+    "endedAtMs": 1788223873761,
+    "endedAt": "2026-09-01T00:51:13.761Z",
+    "endEvidence": {
+      "toolCallId": "call-b287e172-deb0-47d1-98f1-258055006b42-50",
+      "sourceLine": 219
+    }
+  },
+  {
+    "run": "mcp-assisted-r1",
+    "round": 6,
+    "atlasLocationId": "europe-easy--loc-006",
+    "startedAtMs": 1788223885035,
+    "startedAt": "2026-09-01T00:51:25.035Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-462d7b25-4088-46f9-ad16-5f63ea84ca3c-52",
+      "sourceLine": 230
+    },
+    "durationMs": 49514,
+    "durationSeconds": 49.514,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r1-events.jsonl",
+    "endedAtMs": 1788223934549,
+    "endedAt": "2026-09-01T00:52:14.549Z",
+    "endEvidence": {
+      "toolCallId": "call-efe87acd-b800-4b5d-9d37-53ca9d58eda9-56",
+      "sourceLine": 245
+    }
+  },
+  {
+    "run": "mcp-assisted-r1",
+    "round": 7,
+    "atlasLocationId": "europe-easy--loc-007",
+    "startedAtMs": 1788223951728,
+    "startedAt": "2026-09-01T00:52:31.728Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-a4a31262-ab7a-43a6-b1fe-906c4aca2950-58",
+      "sourceLine": 256
+    },
+    "durationMs": 53369,
+    "durationSeconds": 53.369,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r1-events.jsonl",
+    "endedAtMs": 1788224005097,
+    "endedAt": "2026-09-01T00:53:25.097Z",
+    "endEvidence": {
+      "toolCallId": "call-aae85dd7-104f-4b28-8b1e-f628e5de39f4-62",
+      "sourceLine": 271
+    }
+  },
+  {
+    "run": "mcp-assisted-r1",
+    "round": 8,
+    "atlasLocationId": "europe-easy--loc-008",
+    "startedAtMs": 1788224039676,
+    "startedAt": "2026-09-01T00:53:59.676Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-42a6504e-0137-47cb-b7de-70521c191c3f-64",
+      "sourceLine": 282
+    },
+    "durationMs": 43675,
+    "durationSeconds": 43.675,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r1-events.jsonl",
+    "endedAtMs": 1788224083351,
+    "endedAt": "2026-09-01T00:54:43.351Z",
+    "endEvidence": {
+      "toolCallId": "call-706f2425-f32f-4f31-9ad3-9ca18ee55129-68",
+      "sourceLine": 297
+    }
+  },
+  {
+    "run": "mcp-assisted-r2",
+    "round": 1,
+    "atlasLocationId": "europe-easy--loc-001",
+    "startedAtMs": 1788225816539,
+    "startedAt": "2026-09-01T01:23:36.539Z",
+    "startEvidence": {
+      "kind": "process_start_proxy",
+      "file": "demo_and_extension/data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r2/transcript-easy.txt",
+      "line": 1
+    },
+    "durationMs": 52543,
+    "durationSeconds": 52.543,
+    "method": "process_start_to_submit_request",
+    "timingEvents": "mcp-assisted-r2-events.jsonl",
+    "endedAtMs": 1788225869082,
+    "endedAt": "2026-09-01T01:24:29.082Z",
+    "endEvidence": {
+      "toolCallId": "call-7fb831eb-f9d6-4ef6-8a06-1d4d74dab6e5-5",
+      "sourceLine": 25
+    }
+  },
+  {
+    "run": "mcp-assisted-r2",
+    "round": 2,
+    "atlasLocationId": "europe-easy--loc-002",
+    "startedAtMs": 1788225886515,
+    "startedAt": "2026-09-01T01:24:46.515Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-5de5861f-895f-4a7b-b2c1-5f752175e95c-7",
+      "sourceLine": 36
+    },
+    "durationMs": 95160,
+    "durationSeconds": 95.16,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r2-events.jsonl",
+    "endedAtMs": 1788225981675,
+    "endedAt": "2026-09-01T01:26:21.675Z",
+    "endEvidence": {
+      "toolCallId": "call-31fa3047-fdfe-41f6-a002-59d2331560d7-11",
+      "sourceLine": 51
+    }
+  },
+  {
+    "run": "mcp-assisted-r2",
+    "round": 3,
+    "atlasLocationId": "europe-easy--loc-003",
+    "startedAtMs": 1788225989180,
+    "startedAt": "2026-09-01T01:26:29.180Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-d2005640-8f55-4da4-bbf8-dcdc8e7ee9b3-13",
+      "sourceLine": 62
+    },
+    "durationMs": 42263,
+    "durationSeconds": 42.263,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r2-events.jsonl",
+    "endedAtMs": 1788226031443,
+    "endedAt": "2026-09-01T01:27:11.443Z",
+    "endEvidence": {
+      "toolCallId": "call-68283b95-a18a-4c4a-a588-28729ff4983d-17",
+      "sourceLine": 77
+    }
+  },
+  {
+    "run": "mcp-assisted-r2",
+    "round": 4,
+    "atlasLocationId": "europe-easy--loc-004",
+    "startedAtMs": 1788226041793,
+    "startedAt": "2026-09-01T01:27:21.793Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-fab73998-1aad-4dd0-ae45-7e7fc7083ea8-19",
+      "sourceLine": 88
+    },
+    "durationMs": 65076,
+    "durationSeconds": 65.076,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r2-events.jsonl",
+    "endedAtMs": 1788226106869,
+    "endedAt": "2026-09-01T01:28:26.869Z",
+    "endEvidence": {
+      "toolCallId": "call-81cde76c-2b85-484d-a092-881546993127-23",
+      "sourceLine": 103
+    }
+  },
+  {
+    "run": "mcp-assisted-r2",
+    "round": 5,
+    "atlasLocationId": "europe-easy--loc-005",
+    "startedAtMs": 1788226115248,
+    "startedAt": "2026-09-01T01:28:35.248Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-c1a32d35-ea74-42e1-bc81-ce8afef6aee4-25",
+      "sourceLine": 114
+    },
+    "durationMs": 69771,
+    "durationSeconds": 69.771,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r2-events.jsonl",
+    "endedAtMs": 1788226185019,
+    "endedAt": "2026-09-01T01:29:45.019Z",
+    "endEvidence": {
+      "toolCallId": "call-a162ea7d-8747-49d1-9284-4542c2a5ddcd-29",
+      "sourceLine": 129
+    }
+  },
+  {
+    "run": "mcp-assisted-r2",
+    "round": 6,
+    "atlasLocationId": "europe-easy--loc-006",
+    "startedAtMs": 1788226210786,
+    "startedAt": "2026-09-01T01:30:10.786Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-cba021e7-9e1d-4ccd-92bf-945646665542-31",
+      "sourceLine": 140
+    },
+    "durationMs": 180000,
+    "durationSeconds": 180.0,
+    "method": "configured_timeout_inferred",
+    "timingEvents": "mcp-assisted-r2-events.jsonl",
+    "durationLowerBoundMs": 154554,
+    "durationUpperBoundMs": 272545,
+    "lastActiveEvidence": {
+      "toolCallId": "call-99d4917b-8f99-4561-b8c3-3e3c6996449d-38",
+      "sourceLine": 170
+    },
+    "firstFollowingContinue": {
+      "toolCallId": "call-1222a8ed-22e9-4297-be78-893375f7732c-41",
+      "sourceLine": 182
+    },
+    "endedAtMs": 1788226390786,
+    "endedAt": "2026-09-01T01:33:10.786Z",
+    "note": "No successful player Submit occurs before the result. The parent recovery sees resultVisible=true before its submit acknowledgement. 180 seconds is the configured round limit, inferred rather than directly timestamped. Observation bounds retained; controller recovery and waiting are not counted as extra solving time.",
+    "endEvidence": {
+      "file": "controller-recovery.json",
+      "sourceLine": 40338
+    }
+  },
+  {
+    "run": "mcp-assisted-r2",
+    "round": 7,
+    "atlasLocationId": "europe-easy--loc-007",
+    "startedAtMs": 1788226484387,
+    "startedAt": "2026-09-01T01:34:44.387Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-1222a8ed-22e9-4297-be78-893375f7732c-41",
+      "sourceLine": 184
+    },
+    "durationMs": 65848,
+    "durationSeconds": 65.848,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r2-events.jsonl",
+    "endedAtMs": 1788226550235,
+    "endedAt": "2026-09-01T01:35:50.235Z",
+    "endEvidence": {
+      "toolCallId": "call-cc92ac7a-d5be-4c0a-b3fe-0694c72bcb4c-48",
+      "sourceLine": 212
+    }
+  },
+  {
+    "run": "mcp-assisted-r2",
+    "round": 8,
+    "atlasLocationId": "europe-easy--loc-008",
+    "startedAtMs": 1788226561970,
+    "startedAt": "2026-09-01T01:36:01.970Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-fa96a28b-2879-430a-80b0-eb48096f9730-50",
+      "sourceLine": 223
+    },
+    "durationMs": 26031,
+    "durationSeconds": 26.031,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r2-events.jsonl",
+    "endedAtMs": 1788226588001,
+    "endedAt": "2026-09-01T01:36:28.001Z",
+    "endEvidence": {
+      "toolCallId": "call-884d964a-5e95-42dc-8ae9-62d71d574707-54",
+      "sourceLine": 238
+    }
+  },
+  {
+    "run": "mcp-assisted-r3",
+    "round": 1,
+    "atlasLocationId": "europe-easy--loc-001",
+    "startedAtMs": 1788226827582,
+    "startedAt": "2026-09-01T01:40:27.582Z",
+    "startEvidence": {
+      "kind": "process_start_proxy",
+      "file": "demo_and_extension/data/recorded-agent-benchmark/grok-4.6-xhigh/runs/mcp-assisted-r3/transcript-easy.txt",
+      "line": 1
+    },
+    "durationMs": 54061,
+    "durationSeconds": 54.061,
+    "method": "process_start_to_submit_request",
+    "timingEvents": "mcp-assisted-r3-events.jsonl",
+    "endedAtMs": 1788226881643,
+    "endedAt": "2026-09-01T01:41:21.643Z",
+    "endEvidence": {
+      "toolCallId": "call-8fd594c7-0f52-4bf8-b703-6608b50051e6-5",
+      "sourceLine": 27
+    }
+  },
+  {
+    "run": "mcp-assisted-r3",
+    "round": 2,
+    "atlasLocationId": "europe-easy--loc-002",
+    "startedAtMs": 1788226902644,
+    "startedAt": "2026-09-01T01:41:42.644Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-cefd9545-38b0-4e06-b0c7-7ade3dfde74b-7",
+      "sourceLine": 38
+    },
+    "durationMs": 31408,
+    "durationSeconds": 31.408,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r3-events.jsonl",
+    "endedAtMs": 1788226934052,
+    "endedAt": "2026-09-01T01:42:14.052Z",
+    "endEvidence": {
+      "toolCallId": "call-eb08d5ae-bef8-45b3-a71c-9bbeee2db9c3-11",
+      "sourceLine": 53
+    }
+  },
+  {
+    "run": "mcp-assisted-r3",
+    "round": 3,
+    "atlasLocationId": "europe-easy--loc-003",
+    "startedAtMs": 1788226943980,
+    "startedAt": "2026-09-01T01:42:23.980Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-a5eaf6a7-e077-4a5e-a5bc-94221e43bae4-13",
+      "sourceLine": 64
+    },
+    "durationMs": 28599,
+    "durationSeconds": 28.599,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r3-events.jsonl",
+    "endedAtMs": 1788226972579,
+    "endedAt": "2026-09-01T01:42:52.579Z",
+    "endEvidence": {
+      "toolCallId": "call-57246fa4-611f-4af0-a628-baf6938fb547-17",
+      "sourceLine": 79
+    }
+  },
+  {
+    "run": "mcp-assisted-r3",
+    "round": 4,
+    "atlasLocationId": "europe-easy--loc-004",
+    "startedAtMs": 1788226980714,
+    "startedAt": "2026-09-01T01:43:00.714Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-597c5184-cfbb-484e-87e3-61d35e68c9f0-19",
+      "sourceLine": 90
+    },
+    "durationMs": 57489,
+    "durationSeconds": 57.489,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r3-events.jsonl",
+    "endedAtMs": 1788227038203,
+    "endedAt": "2026-09-01T01:43:58.203Z",
+    "endEvidence": {
+      "toolCallId": "call-a93b7807-a8bc-42f6-9c5a-3e75a95cb4d0-25",
+      "sourceLine": 114
+    }
+  },
+  {
+    "run": "mcp-assisted-r3",
+    "round": 5,
+    "atlasLocationId": "europe-easy--loc-005",
+    "startedAtMs": 1788227046225,
+    "startedAt": "2026-09-01T01:44:06.225Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-c96e4139-c475-416c-8d65-b6afc04b1100-27",
+      "sourceLine": 125
+    },
+    "durationMs": 84496,
+    "durationSeconds": 84.496,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r3-events.jsonl",
+    "endedAtMs": 1788227130721,
+    "endedAt": "2026-09-01T01:45:30.721Z",
+    "endEvidence": {
+      "toolCallId": "call-77c736ed-088d-48a5-8838-05fe226f34c9-33",
+      "sourceLine": 149
+    }
+  },
+  {
+    "run": "mcp-assisted-r3",
+    "round": 6,
+    "atlasLocationId": "europe-easy--loc-006",
+    "startedAtMs": 1788227139197,
+    "startedAt": "2026-09-01T01:45:39.197Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-308b229a-e568-42b6-b9c6-c50efb3a6da9-35",
+      "sourceLine": 160
+    },
+    "durationMs": 115994,
+    "durationSeconds": 115.994,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r3-events.jsonl",
+    "endedAtMs": 1788227255191,
+    "endedAt": "2026-09-01T01:47:35.191Z",
+    "endEvidence": {
+      "toolCallId": "call-cac89668-6889-4bd1-ace0-5cb5901acb87-41",
+      "sourceLine": 184
+    }
+  },
+  {
+    "run": "mcp-assisted-r3",
+    "round": 7,
+    "atlasLocationId": "europe-easy--loc-007",
+    "startedAtMs": 1788227277061,
+    "startedAt": "2026-09-01T01:47:57.061Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-54aead8a-cf1e-4e73-aee0-e15cdc911420-43",
+      "sourceLine": 195
+    },
+    "durationMs": 29222,
+    "durationSeconds": 29.222,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r3-events.jsonl",
+    "endedAtMs": 1788227306283,
+    "endedAt": "2026-09-01T01:48:26.283Z",
+    "endEvidence": {
+      "toolCallId": "call-e5a3155c-5f2e-4ab8-8930-10cb63b70c60-47",
+      "sourceLine": 210
+    }
+  },
+  {
+    "run": "mcp-assisted-r3",
+    "round": 8,
+    "atlasLocationId": "europe-easy--loc-008",
+    "startedAtMs": 1788227316469,
+    "startedAt": "2026-09-01T01:48:36.469Z",
+    "startEvidence": {
+      "kind": "continue_tool_completion",
+      "toolCallId": "call-eb0941d5-56f9-4dce-a952-e201f4b73cfd-49",
+      "sourceLine": 221
+    },
+    "durationMs": 37553,
+    "durationSeconds": 37.553,
+    "method": "continue_completion_to_submit_request",
+    "timingEvents": "mcp-assisted-r3-events.jsonl",
+    "endedAtMs": 1788227354022,
+    "endedAt": "2026-09-01T01:49:14.022Z",
+    "endEvidence": {
+      "toolCallId": "call-2a2bfd56-2711-4785-93eb-9b9a9d824088-53",
+      "sourceLine": 236
+    }
+  }
+]

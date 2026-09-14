@@ -1,0 +1,47 @@
+{
+  "dataset": "europe-easy",
+  "model": "Chipoint v2 public street-view fused-retrieval fallback",
+  "model_repo": "chiikabu-labs/chipoint-2",
+  "inference_service": "chiikabu-labs/chipoint-v2-geolocation",
+  "arm": "Street-view",
+  "top_k": 10,
+  "reranker": "off in official public Space; fused retrieval + cluster consensus",
+  "n_images": 8,
+  "generated_at_utc": "2026-09-09T08:59:31.615824+00:00",
+  "distance_unit": "km",
+  "prediction_error": {
+    "mean_km": 436.855,
+    "median_km": 111.937,
+    "std_km": 715.481,
+    "rmse_km": 838.305,
+    "min_km": 4.814,
+    "max_km": 2258.628
+  },
+  "prediction_threshold_accuracy": {
+    "within_1_km_percent": 0.0,
+    "within_25_km_percent": 25.0,
+    "within_200_km_percent": 62.5,
+    "within_750_km_percent": 87.5,
+    "within_2500_km_percent": 100.0
+  },
+  "best_prediction_case": {
+    "location_id": "loc_001",
+    "city_or_region": "Paris",
+    "error_km": 4.814
+  },
+  "worst_prediction_case": {
+    "location_id": "loc_005",
+    "city_or_region": "Pula",
+    "error_km": 2258.628
+  },
+  "timing": {
+    "client_connect_seconds": 4.586,
+    "mean_request_seconds": 21.24,
+    "median_request_seconds": 23.57,
+    "total_request_seconds": 169.924,
+    "timing_note": "Remote Hugging Face Space timing includes queue/network overhead and is not directly comparable with local inference timing.",
+    "mean_server_inference_seconds": 5.189,
+    "median_server_inference_seconds": 3.685,
+    "total_server_inference_seconds": 41.51
+  }
+}

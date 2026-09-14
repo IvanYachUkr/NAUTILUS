@@ -1,0 +1,58 @@
+grok.exe : [2m2026-09-01T17:09:07.582284Z[0m [33m WARN[0m config: ignored 
+unrecognized or invalid entry [3mpath[0m[2m=[0mprivacy 
+[3mfield[0m[2m=[0m"(entry)" [3mkind[0m[2m=[0mUnknownField 
+[3mreason[0m[2m=[0munrecognized config key
+At C:\tmp\nautilus-openguessr-mcp\demo_and_extension\openguessr-mcp\scripts\Sta
+rt-GrokOpenGuessr.ps1:297 char:5
++     & $grokCommand.Source @grokArgs 2>&1 | Tee-Object -FilePath $tran ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([2m2026-09-01T...ized config key 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[2m2026-09-01T17:09:07.582379Z[0m [33m WARN[0m config: parsed with 
+warnings; run `grok inspect` for details [3mwarnings[0m[2m=[0m1
+[2m2026-09-01T17:12:49.338558Z[0m [31mERROR[0m tool_error: 
+tool_output_error 
+[3msession_id[0m[2m=[0m01a05df2-2fdf-7a02-a984-123a2988ff03 
+[3mtool_name[0m[2m=[0m"use_tool" 
+[3meffective_tool_name[0m[2m=[0m"playwright__openguessr_place_guess" 
+[3mmodel_id[0m[2m=[0m"grok-4.6" 
+[3merror_kind[0m[2m=[0m"tool_output_error"
+[2m2026-09-01T17:19:12.590517Z[0m [31mERROR[0m tool_error: 
+tool_output_error 
+[3msession_id[0m[2m=[0m01a05df2-2fdf-7a02-a984-123a2988ff03 
+[3mtool_name[0m[2m=[0m"use_tool" 
+[3meffective_tool_name[0m[2m=[0m"playwright__openguessr_place_guess" 
+[3mmodel_id[0m[2m=[0m"grok-4.6" 
+[3merror_kind[0m[2m=[0m"tool_output_error"
+I'll start by discovering the OpenGuessr MCP tool schemas, then screenshot the current viewport and play all 9 rounds from visible clues only.Taking a full-viewport screenshot to confirm round 1 is already on screen.Round 1 is live: Catalan `Carrer de` street paint and Barcelona-style facades. I’ll pan for a fuller street name and more local signs.The first pan barely moved. I’ll look down at the road stencil and then sweep the shopfronts.Keyboard panning next — the mouse drag isn’t rotating the panorama.The van lists `46026 Castellón - Valencia`, so this is likely Valencia. I’ll pan for a street sign to pin it down.Belief: Barcelona, Carrer de Casanova in Eixample. Expanding the guess map, then placing the pin.Timer is 1:16 — hovering the mini-map and placing Barcelona, Carrer de Casanova.The mini-map is still collapsed. I’ll drag its resize handle open, then place the pin.Round 1 timed out on the default Africa pin. Continuing to round 2 and opening the guess map earlier.Round 2: Italian `Via Franc…` street paint. I’ll move forward to read the full name, then open the map.Hovering the mini-map higher to expand it, then placing Rome.Viewport is at least 1500px wide. Hovering further into the bottom-right map.Hover doesn’t expand the map. Dragging the resize handle, then placing immediately.Round 2 timed out on the default pin; the answer was Italy. Continuing and opening the map with 4K coordinates first.Round 3 is `Amsterdamseweg` in the Netherlands. I’ll click the 4K map coordinates to open it, then place.Scrolling on the mini-map to test whether those coordinates actually hit it.Calibrating coordinates by clicking the Menu button — it’s a known top-right target.Viewport looks ~1280px wide. Dragging the map’s top-left resize handle at those coordinates.Pin placed at 52.308, 4.846. Verifying state, then submitting.Round 3 scored 27 km from Amstelveen. Map opens at ~1100,550. Continuing to round 4.Round 4: `N444` and `FOTO AKTIEF` — Dutch-speaking, likely Zuid-Holland or Flanders. Moving forward for more clues.Flemish ribbon development on N444 — placing in East Flanders near Ghent.Round 4 was 7 km off, south of Ghent. Continuing to round 5.Round 5: Portuguese `R. Figueira da…`. Moving forward to read the full street name.Round 5 was Coimbra, 175 km from Lisbon. Continuing to round 6.Round 6: Swedish `Bergsgatan`. Moving forward for a town-level clue.Round 6 was Uppsala, 62.6 km from Stockholm. Continuing to round 7.Round 7: Estonian `tn` suffix — `Sepa… tn`. Moving forward to read the full name.Round 7 was Tartu, 162 km from Tallinn. Continuing to round 8.Round 8 was Banská Bystrica, 106 km from Vsetín. Continuing to the last round.Round 9 looks like Ireland: yellow center line and stone walls. Checking for a town sign.Round 9 was Galway, 92.3 km off. Continuing through to the leaderboard.Competition complete. Leaderboard total: **32,122 Pts.**
+
+Round result screens never showed a separate official-points field — only distance and `+XP`. Those XP values sum to **32,122**, matching the leaderboard.
+
+| Rd | Belief | Pin | Distance | Official (XP on result) | Controller |
+|---|---|---|---|---|---|
+| 1 | Barcelona, Carrer de Casanova, ES | *never placed* (default Gulf of Guinea) | 4,388.7 km | 62 | Map never opened; timed out |
+| 2 | Rome, Via Francesco…, IT | *never placed* (default Gulf of Guinea) | 5,072.4 km | 31 | Same; timed out |
+| 3 | Amstelveen, Amsterdamseweg, NL | 52.308, 4.846 | 27 km | 4,867 | Map opened after click ~1100,550 |
+| 4 | Ghent / N444, BE | 51.05, 3.75 | 7 km | 4,965 | OK |
+| 5 | Lisbon, R. Figueira da Foz, PT | 38.75, −9.19 | 175.4 km | 4,195 | OK |
+| 6 | Stockholm, Bergsgatan, SE | 59.33, 18.05 | 62.6 km | 4,696 | OK |
+| 7 | Tallinn, Sepa… tn, EE | 59.42, 24.80 | 162.4 km | 4,250 | OK |
+| 8 | Vsetín / Valašsko, CZ | 49.35, 18.00 | 106 km | 4,497 | OK |
+| 9 | North Kerry (L1322 Ballyb…), IE | 52.50, −9.60 | 92.3 km | 4,559 | OK |
+
+**Actual locations (from result maps):** 1 Spain; 2 Italy; 3 ~Utrecht, NL; 4 Merelbeke-Melle (south of Ghent); 5 Coimbra; 6 Uppsala; 7 Tartu; 8 Banská Bystrica, SK; 9 Galway.
+
+**Totals**
+- Official total: **32,122**
+- Completed rounds: **9/9**
+- Timeouts/defaults: **2** (rounds 1–2)
+- Semantic misses: **3** — Lisbon vs Coimbra; Tallinn vs Tartu; Czech vs Slovakia
+- Belief-to-pin mismatches: **2** (rounds 1–2 default Africa pin; rounds 3–9 verified pins matched chosen coords)
+- Footer never showed `1/9`; only “Competition” + timer
+
+**MCP map control:** Materially helped after round 2. `place_guess` / `get_state` / `submit` / `continue` were reliable once the mini-map was clicked at ~1100,550. Rounds 1–2 were lost to that open-map gate, not to geography (both beliefs were the correct country).
+[2m2026-09-01T17:36:52.670428Z[0m [33m WARN[0m Resident session actor 
+exited unexpectedly; reaping as DeadFailed 
+[3msession_id[0m[2m=[0m01a05df2-2fdf-7a02-a984-123a2988ff03
